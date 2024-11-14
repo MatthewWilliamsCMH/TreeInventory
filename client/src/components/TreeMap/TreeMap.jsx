@@ -247,10 +247,10 @@ const TreeMap = () => {
   const { loading: loadingGetAll, error: errorGetAll, data: dataGetAll } = useQuery(GET_TREES); //fetch all trees
   const [trees, setTrees] = useState(dataGetAll?.getTrees || []); //establish state that will store the list of trees; set to the list or to an empty array
 
-  const { loading: loadingGetOne, error: errorGetOne, data: dataGetOne } = useQuery(GET_TREE, { //fetch one tree
-    skip: !selectedTree,
-    variables: { id: selectedTree?.id }
-  });
+  // const { loading: loadingGetOne, error: errorGetOne, data: dataGetOne } = useQuery(GET_TREE, { //fetch one tree
+  //   skip: !selectedTree,
+  //   variables: { id: selectedTree?.id }
+  // });
 
   const [addTree, { loading: loadingAddOne, error: errorAddOne}] = useMutation(ADD_TREE); //add one tree
 
@@ -276,10 +276,20 @@ const TreeMap = () => {
           <i>${tree.species?.scientificName}</i><br>
           Id: ${treeID}
         `;
-        L.marker([northing, easting]) //add marker and bind popup to it
+        const marker = L.marker([northing, easting]) //add marker and bind popup to it
           .bindPopup(popupContent)
-          .on("click", () => setSelectedTree(tree)) //record what tree is selected when marker is clicked
           .addTo(map.current);
+        
+        marker.on("popupopen", (event) => {
+          const popup = event.popup;
+          const popupElement = popup.getElement();
+
+          popupElement.addEventListener("click", () => {
+            alert("Hello");
+            setSelectedTree(tree);
+            map.current.closePopup(popup);
+          })
+        })
       });
     }
 
@@ -317,11 +327,11 @@ const TreeMap = () => {
     });
   };
 
-  if (loadingGetAll || loadingGetOne || loadingAddOne || loadingUpdateOne) {
+  if (loadingGetAll || loadingAddOne || loadingUpdateOne) {
     return <p>Loading...</p>;
   }
-  if (errorGetAll || errorGetOne || errorAddOne || errorUpdateOne) {
-    return <p>Error: {errorGetAll?.message || errorGetOne?.message || errorAddOne?.message || errorUpdateOne?.message}</p>;
+  if (errorGetAll || errorAddOne || errorUpdateOne) {
+    return <p>Error: {errorGetAll?.message || errorAddOne?.message || errorUpdateOne?.message}</p>;
   }
   
   //the code below was provided by ChatGPT, but it's not what I want to happen. The <div ref={mapRef}...</div line is correct, but this is the flow I'm looking for
