@@ -29,7 +29,3 @@ server.start().then(() => { //not sure what this is for
     console.log(`Backend server running on http://localhost:${port}`);
   });
 });
-
-console.log("Resolvers loaded:", Object.keys(resolvers))
-console.log("TypeDefs loaded:", Object.keys(typeDefs))
-
