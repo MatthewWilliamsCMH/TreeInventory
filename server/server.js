@@ -11,6 +11,10 @@ require("dotenv").config;
 const app = express();
 const port = process.env.PORT || 3001;
 
+//enable cors to allow front-end and back-end ports to connect in any enviroment
+app.use(cors());
+app.use(express.json());
+
 //connect to db
 connectDB();
 
@@ -19,16 +23,13 @@ const server = new ApolloServer({
   typeDefs,
   resolvers
 });
-
 server.start().then(() => { //not sure what this is for
   app.use("/graphql", expressMiddleware(server));
-})
-
-//enable cors to allow front-end and back-end ports to connect in any enviroment
-app.use(cors());
-app.use(express.json());
-
-//start server //why do we need this start AND server.start above?
-app.listen(port, () => {
-  console.log(`Backend server running on http://localhost:${port}`);
+  app.listen(port, () => {
+    console.log(`Backend server running on http://localhost:${port}`);
+  });
 });
+
+console.log("Resolvers loaded:", Object.keys(resolvers))
+console.log("TypeDefs loaded:", Object.keys(typeDefs))
+

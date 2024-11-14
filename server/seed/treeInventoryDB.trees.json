@@ -1,0 +1,401 @@
+[
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "White Ash",
+    "scientificName": "Fraxinus americana"
+  },
+  "genus": "Fraxinus",
+  "variety": null,
+  "garden": "community garden lawn",
+  "location": { 
+    "northing": "39.97768230836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "6",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": true,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Green Ash",
+    "scientificName": "Fraxinus pennsylvanica"
+  },
+  "genus": "Fraxinus",
+  "variety": null,
+  "garden": "parking lot lawn",
+  "location": { 
+    "northing": "39.97770980836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "9",
+  "careHistory": "Treated for carpenter ants in 2023",
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": true,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "American Basswood",
+    "scientificName": "Tilia americana"
+  },
+  "genus": "Tilia",
+  "variety": null,
+  "garden": "meditation garden",
+  "location": { 
+    "northing": "39.97773730836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": "1/12/2024",
+  "dbh": "12",
+  "careHistory": "Pruned after lightning strike in 2002",
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": true,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": true,
+      "treeCluster": true
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "American Beech",
+    "scientificName": "Fagus Americana"
+  },
+  "genus": "Fagus",
+  "variety": null,
+  "garden": "meditation garden",
+  "location": { 
+    "northing": "39.97776480836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "< 3",
+  "careHistory": false,
+  "maintenanceNeeds": {
+      "install": true,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": true,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Black Birch",
+    "scientificName": "Betula nigra"
+  },
+  "genus": "Bitula",
+  "variety": null,
+  "garden": "community garden lawn",
+  "location": { 
+    "northing": "39.97779230836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "27",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": true,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": null,
+      "overheadLines": null,
+      "proximateStructure": null,
+      "proximateFence": null,
+      "treeCluster": null
+    },
+    "notes": "multistemmed",
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Boxelder",
+    "scientificName": "Acer negundo"
+  },
+  "genus": "Acer",
+  "variety": null,
+  "garden": "ravine",
+  "location": { 
+    "northing": "39.97781980836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "< 3",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Ohio Buckeye",
+    "scientificName": "Aesculus glabra"
+  },
+  "genus": "Aesculus",
+  "variety": null,
+  "garden": "woodland garden",
+  "location": { 
+    "northing": "39.97784730836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "6",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": true,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Northern Catalpa",
+    "scientificName": "Catalpa speciosa"
+  },
+  "genus": "Catalpa",
+  "variety": null,
+  "garden": "woodland garden",
+  "location": { 
+    "northing": "39.97787480836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "36",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Black Cherry",
+    "scientificName": "Prunus serotina"
+  },
+  "genus": "Prunus",
+  "variety": null,
+  "garden": "woodland garden",
+  "location": { 
+    "northing": "39.97790230836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "24",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": false,
+      "routinePrune": true,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": false,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+},
+
+{
+  "lastVisited": "11/13/2024",
+  "species": {
+    "commonName": "Eastern Cottonwood",
+    "scientificName": "Populus deltoides"
+  },
+  "genus": "Populus",
+  "variety": null,
+  "garden": "north of urlin drive",
+  "location": { 
+    "northing": "39.97792980836944",
+    "easting": "-83.04934859084177"
+  },
+  "installedDate": null,
+  "felledDate": null,
+  "dbh": "36",
+  "careHistory": null,
+  "maintenanceNeeds": {
+      "install": false,
+      "fell": false,
+      "priorityPrune": true,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "removeStump": false,
+      "raiseCrown": false,
+      "pestTreatment": false
+    },
+  "siteInfo": {
+      "slope": true,
+      "overheadLines": false,
+      "proximateStructure": false,
+      "proximateFence": true,
+      "treeCluster": false
+    },
+    "notes": null,
+    "photo": null
+}
+]

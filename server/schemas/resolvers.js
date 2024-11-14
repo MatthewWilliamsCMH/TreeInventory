@@ -2,9 +2,9 @@ const Tree = require("../models/Tree");
 
 const resolvers = {
   Query: {
-    trees: async () => {
+    getTrees: async () => {
       try {
-        return await Tree.find().sort({ species: 1 });  //find all trees and sort by species
+        return await Tree.find().sort({ genus: 1 });  //find all trees and sort by genus
       }
       catch (err) {
         console.error(err);
@@ -14,7 +14,7 @@ const resolvers = {
   }
 };
 
-  module.exports = resolvers;
+  module.exports = { resolvers} ;
 
   //we'll need a query for one tree and mutations to update and add a tree
 //chatgpt provided these below

@@ -4,19 +4,43 @@ import 'leaflet/dist/leaflet.css';
 import { useQuery, gql } from "@apollo/client";
 
 const GET_TREES = gql`
-  query GetTrees {
-    trees {
-      id
+  query getTrees {
+    getTrees {
+      lastVisited
       species {
         commonName
         scientificName
       }
       genus
+      variety
       garden
       location {
         northing
         easting
       }
+      installedDate
+      felledDate
+      dbh
+      careHistory
+      maintenanceNeeds {
+        install
+        fell
+        priorityPrune
+        routinePrune
+        trainingPrune
+        installGrate
+        removeGrate
+        raiseCrown
+        pestTreatment
+      }
+      siteInfo {
+        slope
+        overheadLines
+        proximateStructure
+        proximateFence
+        treeCluster
+      }
+      notes
       photo
     }
   }
@@ -35,11 +59,11 @@ const TreeMap = () => {
     }
 
     // Add markers for each tree if data is available
-    if (data && data.trees) {
-      data.trees.forEach((tree) => {
-        const { northing, easting } = tree.location[0];
+    if (data && data.getTrees) {
+      data.getTrees.forEach((tree) => {
+        const { northing, easting } = tree.location;
         const popupContent = `
-          <b>${tree.species[0]?.commonName || "Unknown"}</b><br>
+          <b>${tree.species?.commonName || "Unknown"}</b><br>
           Genus: ${tree.genus}<br>
           Garden: ${tree.garden}
         `;

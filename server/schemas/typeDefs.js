@@ -44,13 +44,14 @@ const typeDefs = gql `
     felledDate: String
     dbh: String!
     careHistory: String
-    maintenanceNeeds: [MaintenanceNeeds]
-    siteInfo: [SiteInfo]
+    maintenanceNeeds: MaintenanceNeeds
+    siteInfo: SiteInfo
+    notes: String
     photo: String
   }
 
   type Query {
-    trees: [Tree]
+    getTrees: [Tree]
   }
 `;
 

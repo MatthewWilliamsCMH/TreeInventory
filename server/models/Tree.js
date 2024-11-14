@@ -7,40 +7,37 @@ const treeSchema = new Schema({
     commonName: {type: String, required: true},
     scientificName: {type: String, required: true}
     },
-  genus: { type: String, required: true }, //automatically completed from the first word in the scientific name
   variety: { type: String },
+  genus: { type: String, required: true }, //automatically completed from the first word in the scientific name
   garden: { type: String, required: true }, //choose from fixed list
   location: { 
     northing: { type: Number, required: true }, //always positive at SC
     easting: { type: Number, required: true } //always negative at SC
     },
   installedDate: { type: Date },
-  felledData: { type: Date },
+  felledDate: { type: Date },
   dbh: { type: String, required: true }, //choose from fixed list
   careHistory: {type: String },
-  maintenanceNeeds: [
-    {
-      install: { type: Boolean},
-      fell: { type: Boolean},
-      priorityPrune: { type: Boolean},
-      routinePrune: { type: Boolean},
-      trainingPrune: { type: Boolean},
-      installGrate: { type: Boolean },
-      removeGrate: { type: Boolean},
-      removeStump: { type: Boolean},
-      raiseCrown: { type: Boolean},
-      pestTreatment: { type: Boolean}
-    }
-  ],
-  siteInfo: [
-    {
-      slope: { type: Boolean },
-      overheadLines: { type: Boolean },
-      proximateStructure: { type: Boolean },
-      proximateFence: { type: Boolean },
-      treeCluster: { type: Boolean },
-    }
-  ],
+  maintenanceNeeds: {
+    install: { type: Boolean},
+    fell: { type: Boolean},
+    priorityPrune: { type: Boolean},
+    routinePrune: { type: Boolean},
+    trainingPrune: { type: Boolean},
+    installGrate: { type: Boolean },
+    removeGrate: { type: Boolean},
+    removeStump: { type: Boolean},
+    raiseCrown: { type: Boolean},
+    pestTreatment: { type: Boolean}
+  },
+siteInfo: {
+    slope: { type: Boolean },
+    overheadLines: { type: Boolean },
+    proximateStructure: { type: Boolean },
+    proximateFence: { type: Boolean },
+    treeCluster: { type: Boolean },
+  },
+  notes: { type: String },
   photo: { type: String } //store base64-encoded image as string; see ChatGPT for instructions on how to convert the image to a base64 string
 });
 
