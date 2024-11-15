@@ -71,13 +71,16 @@ const typeDefs = gql `
     garden: String!
     location: Location!
     installedDate: String
+    installedBy: String
     felledDate: String
+    felledBy: String
     dbh: String!
     careHistory: String
     maintenanceNeeds: MaintenanceNeeds
     siteInfo: SiteInfo
     notes: String
     photo: String
+    nonNative: Boolean
   }
 
   type Query {
@@ -93,14 +96,17 @@ const typeDefs = gql `
       variety: String
       garden: String!
       location: LocationInput!
-      installDate: String
+      installedDate: String
+      installedBy: String
       felledDate: String
+      felledBy: String
       dbh: String!
       careHistory: String
       maintenanceNeeds: MaintenanceNeedsInput
       siteInfo: SiteInfoInput
       notes: String
       photo: String
+      nonNative: Boolean
     ): Tree
 
     updateTree (
@@ -111,18 +117,19 @@ const typeDefs = gql `
       variety: String
       garden: String!
       location: LocationInput!
-      installDate: String
+      installedDate: String
+      installedBy: String
       felledDate: String
+      felledBy: String
       dbh: String!
       careHistory: String
       maintenanceNeeds: MaintenanceNeedsInput
       siteInfo: SiteInfoInput
       notes: String
       photo: String
+      nonNative: Boolean
     ): Tree
   }
 `;
 
 module.exports = { typeDefs };
-
-//we'll also need a query to pull data on one tree and mutations to add and update a tree

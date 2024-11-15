@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
+import { useForm } from "react-hook-form";
 
 //This should be pulled from the database in the production app, and the object should indicate native or nonnative. These are all native except as marked.
 const commonToLatinNames = {
@@ -85,6 +87,8 @@ const commonToLatinNames = {
 }
 
 const TreeForm = () => {
+
+  //somewhere in here, if tree is nonnative, color the background of the form light orange
   const [commonName, setCommonName] = useState("");
   const [latinName, setLatinName] = useState("");
 
@@ -126,9 +130,8 @@ const TreeForm = () => {
 
   return (
     <div id="treeForm">
-      <H2>Data Input</H2>
-      <p>Key in the data you know about the tree. You can add or update information at a later time.</p>
       <form>
+        <p>Id: </p>
         <p>Genus: {latinName ? latinName.split(" ")[0] : ""}</p>
         <input 
           type = "text"

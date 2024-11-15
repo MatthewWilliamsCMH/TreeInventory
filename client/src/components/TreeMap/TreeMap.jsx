@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useQuery, useMutation, gql } from "@apollo/client";
+import TreeForm from "../TreeForm/TreeForm";  // Import the form component
 
 const GET_TREES = gql`
   query getTrees {
@@ -20,7 +21,9 @@ const GET_TREES = gql`
         easting
       }
       installedDate
+      installedBy
       felledDate
+      felledBy
       dbh
       careHistory
       maintenanceNeeds {
@@ -43,6 +46,7 @@ const GET_TREES = gql`
       }
       notes
       photo
+      nonNative
     }
   }
 `;
@@ -64,7 +68,9 @@ const GET_TREE = gql`
         easting
       }
       installedDate
+      installedBy
       felledDate
+      felledBy
       dbh
       careHistory
       maintenanceNeeds {
@@ -87,6 +93,7 @@ const GET_TREE = gql`
       }
       notes
       photo
+      nonNative
     }
   }
 `;
@@ -100,13 +107,16 @@ const ADD_TREE = gql`
     $garden: String!
     $location: LocationInput!
     $installedDate: String
+    $installedBy: String
     $felledDate: String
+    $felledBy: String
     $dbh: String
     $careHistory: String
     $maintenanceNeeds: MaintenanceNeedsInput
     $siteInfo: SiteInfoInput
     $notes: String
     $photo: String
+    $nonNative: Boolean
   ) {
     addTree(
       lastVisited: $lastVisited
@@ -116,13 +126,16 @@ const ADD_TREE = gql`
       garden: $garden
       location: $location
       installedDate: $installedDate
+      installedBy: $installedBy
       felledDate: $felledDate
+      felledDate: $felledBy
       dbh: $dbh
       careHistory: $careHistory
       maintenanceNeeds: $maintenanceNeeds
       siteInfo: $siteInfo
       notes: $notes
       photo: $photo
+      nonNative: $nonNative
     ) {
       id
       lastVisited
@@ -138,7 +151,9 @@ const ADD_TREE = gql`
         easting
       }
       installedDate
+      installedBy
       felledDate
+      felledBy
       dbh
       careHistory
       maintenanceNeeds {
@@ -161,6 +176,7 @@ const ADD_TREE = gql`
       }
       notes
       photo
+      nonNative
     }
   }
 `;
@@ -175,13 +191,16 @@ const UPDATE_TREE = gql`
     $garden: String
     $location: LocationInput
     $installedDate: String
+    $installedBy: String
     $felledDate: String
+    $felledBy: String
     $dbh: String
     $careHistory: String
     $maintenanceNeeds: MaintenanceNeedsInput
     $siteInfo: SiteInfoInput
     $notes: String
     $photo: String
+    $nonNative: Boolean
   ) {
     updateTree(
       id: $id
@@ -192,13 +211,16 @@ const UPDATE_TREE = gql`
       garden: $garden
       location: $location
       installedDate: $installedDate
+      installedBy: $installedBy
       felledDate: $felledDate
+      felledBy: $felledBy
       dbh: $dbh
       careHistory: $careHistory
       maintenanceNeeds: $maintenanceNeeds
       siteInfo: $siteInfo
       notes: $notes
       photo: $photo
+      nonNative: $nonNative
     ) {
       id
       lastVisited
@@ -214,7 +236,9 @@ const UPDATE_TREE = gql`
         easting
       }
       installedDate
+      installedBy
       felledDate
+      felledBy
       dbh
       careHistory
       maintenanceNeeds {
@@ -237,6 +261,7 @@ const UPDATE_TREE = gql`
       }
       notes
       photo
+      nonNative
     }
   }
 `;
@@ -357,7 +382,15 @@ const TreeMap = () => {
   //if I allow hidden, I'll need a way for users to toggle on and off the hidden trees, and those should have a different marker like an "X"
   //should I store the actual photo, or should I create an array of photoURLs so I can have multiple photos of a single tree but also store the image files outside the db to keep the db trim?
 
-  return <div ref={mapRef} style={{ height: '100vh', width: '100vw' }}></div>;
+  return (
+    <>
+      {selectedTree} ? (
+        <TreeForm selectedTree={selectedTree} setSelectedTree={setSelectedTree} />
+      ) : (
+        <div ref={mapRef} style={{ height: '100vh', width: '100vw' }}></div>;
+      )
+    </>
+  )
 };
 
 export default TreeMap;
