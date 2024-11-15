@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+// import ReactDOM from "react-dom";
+// import { useForm } from "react-hook-form";
 
 //This should be pulled from the database in the production app, and the object should indicate native or nonnative. These are all native except as marked.
-const commonToLatinNames = {
+const commonToscientificNames = {
   "American beech": "Fagus grandifolia",
   "American chestnut": "Castanea dentata",
   "Black oak": "Quercus velutina", 
@@ -87,68 +87,53 @@ const commonToLatinNames = {
 }
 
 const TreeForm = () => {
-
-  //somewhere in here, if tree is nonnative, color the background of the form light orange
   const [commonName, setCommonName] = useState("");
-  const [latinName, setLatinName] = useState("");
+  const [scientificName, setscientificName] = useState("");
 
-  const commonListRef = useRef(null);
-  const latinListRef = useRef(null);
-
-  useEffect(() => {
-    const speciesOptions = Object.keys(commonToLatinNames).map(common => ({
-      common,
-      latin: commonToLatinNames[common]
-    }));
-
-    speciesOptions.forEach(option => {
-      const commonOption = new Option(option.common);
-      const latinOption = new Option(option.latin);
-
-      commonListRef.current.appendChild(commonOption).add(commonOption);
-      latinListRef.current.appendChild(latinOption).add(latinOption);
-    });
-  }, []);
+  const speciesOptions = Object.keys(commonToscientificNames).map(common => ({
+    common,
+    scientific: commonToscientificNames[common]
+  }));
 
   const handleCommonChange = (event) => {
     const selectedCommonName = event.target.value;
     setCommonName(selectedCommonName);
 
-    const latinNameFromCommon = commonToLatinNames[selectedCommonName];
-    setLatinName(latinNameFromCommon || "");
+    const scientificNameFromCommon = commonToscientificNames[selectedCommonName];
+    setscientificName(scientificNameFromCommon || "");
   };
 
-  const handleLatinChange = (event) => {
-    const selectedLatinName = event.target.value;
-    setLatinName(selectedLatinName);
+  const handlescientificChange = (event) => {
+    const selectedscientificName = event.target.value;
+    setscientificName(selectedscientificName);
 
-    const commonNameFromLatin = Object.keys(commonToLatinNames).find(
-      common => commonToLatinNames[common] === selectedLatinName
+    const commonNameFromscientific = Object.keys(commonToscientificNames).find(
+      common => commonToscientificNames[common] === selectedscientificName
     );
-    setCommonName(commonNameFromLatin || "");
+    setCommonName(commonNameFromscientific || "");
   };
 
   return (
     <div id="treeForm">
       <form>
-        <p>Id: </p>
-        <p>Genus: {latinName ? latinName.split(" ")[0] : ""}</p>
-        <input 
-          type = "text"
-          value = {commonName}
-          onChange = {handleCommonChange}
-          list= "commonName"
-          placeholder = "Select common Name"
-        />
-        <datalist id="latinName"></datalist>
-        <input 
-          type = "text"
-          value = {latinName}
-          onChange = {handleLatinChange}
-          list= "latinName"
-          placeholder = "Select Latin Name"
-        />
-        <datalist id="latinName"></datalist>
+        <p>Id: {}</p>
+        <p>Last visited: </p>
+        <select id="commonName" value={commonName} onChange={handleCommonChange}>
+          <option value="">Select common name</option>
+          {speciesOptions.map((option) => {
+            <option key={option.common} value={option.common}>
+              {option.common}
+            </option>
+          })}
+        </select>
+        <select id="commonName" value={commonName} onChange={handleCommonChange}>
+          <option value="">Select common name</option>
+          {speciesOptions.map((option) => {
+            <option key={option.common} value={option.common}>
+              {option.common}
+            </option>
+          })}
+        </select>
       </form>
     </div>
   );

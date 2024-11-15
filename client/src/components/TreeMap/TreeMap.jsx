@@ -9,44 +9,45 @@ const GET_TREES = gql`
     getTrees {
       id
       lastVisited
+      nonNative
+      invasive
       species {
         commonName
         scientificName
       }
-      genus
       variety
       garden
       location {
         northing
         easting
       }
+      dbh
       installedDate
       installedBy
       felledDate
       felledBy
-      dbh
-      careHistory
       maintenanceNeeds {
         install
-        fell
-        priorityPrune
+        raiseCrown
         routinePrune
         trainingPrune
+        priorityPrune
+        pestTreatment
         installGrate
         removeGrate
-        raiseCrown
-        pestTreatment
+        fell
+        removeStump
       }
       siteInfo {
         slope
         overheadLines
+        treeCluster
         proximateStructure
         proximateFence
-        treeCluster
       }
+      careHistory
       notes
-      photo
-      nonNative
+      photos
     }
   }
 `;
@@ -56,44 +57,45 @@ const GET_TREE = gql`
     getTree {
       id
       lastVisited
+      nonNative
+      Invasive
       species {
         commonName
         scientificName
       }
-      genus
       variety
       garden
       location {
         northing
         easting
       }
+      dbh
       installedDate
       installedBy
       felledDate
       felledBy
-      dbh
-      careHistory
       maintenanceNeeds {
         install
-        fell
-        priorityPrune
+        raiseCrown
         routinePrune
         trainingPrune
+        priorityPrune
+        pestTreatment
         installGrate
         removeGrate
-        raiseCrown
-        pestTreatment
+        fell
+        removeStump
       }
       siteInfo {
         slope
         overheadLines
+        treeCluster
         proximateStructure
         proximateFence
-        treeCluster
       }
+      careHistory
       notes
-      photo
-      nonNative
+      photos
     }
   }
 `;
@@ -101,82 +103,83 @@ const GET_TREE = gql`
 const ADD_TREE = gql`
   mutation addTree (
     $lastVisited: String!
+    $nonNative: Boolean
+    $invasive: Boolean
     $species: SpeciesInput
-    $genus: String!
     $variety: String
     $garden: String!
     $location: LocationInput!
+    $dbh: String
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
-    $dbh: String
-    $careHistory: String
     $maintenanceNeeds: MaintenanceNeedsInput
     $siteInfo: SiteInfoInput
+    $careHistory: String
     $notes: String
-    $photo: String
-    $nonNative: Boolean
+    $photos: String
   ) {
     addTree(
       lastVisited: $lastVisited
+      nonNative: $nonNative
+      invasive: $invasive
       species: $species
-      genus: $genus
       variety: $variety
       garden: $garden
       location: $location
+      dbh: $dbh
       installedDate: $installedDate
       installedBy: $installedBy
       felledDate: $felledDate
-      felledDate: $felledBy
-      dbh: $dbh
-      careHistory: $careHistory
+      felledBy: $felledBy
       maintenanceNeeds: $maintenanceNeeds
       siteInfo: $siteInfo
+      careHistory: $careHistory
       notes: $notes
-      photo: $photo
-      nonNative: $nonNative
+      photos: $photos
     ) {
       id
       lastVisited
+      nonNative
+      invasive
       species {
         commonName
         scientificName
       }
-      genus
       variety
       garden
       location {
         northing
         easting
       }
+      dbh
       installedDate
       installedBy
       felledDate
       felledBy
-      dbh
-      careHistory
       maintenanceNeeds {
         install
-        fell
-        priorityPrune
+        raiseCrown
         routinePrune
         trainingPrune
+        priorityPrune
+        pestTreatment
         installGrate
         removeGrate
-        raiseCrown
-        pestTreatment
+        fell
+        removeStump
       }
       siteInfo {
         slope
         overheadLines
+        treeCluster
         proximateStructure
         proximateFence
-        treeCluster
       }
+      careHistory
       notes
-      photo
-      nonNative
+      photos
     }
   }
 `;
@@ -185,83 +188,84 @@ const UPDATE_TREE = gql`
   mutation updateTree(
     $id: ID!
     $lastVisited: String
+    $nonNative: Boolean
+    $invasive: Boolean
     $species: SpeciesInput
-    $genus: String
     $variety: String
     $garden: String
     $location: LocationInput
+    $dbh: String
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
-    $dbh: String
-    $careHistory: String
     $maintenanceNeeds: MaintenanceNeedsInput
     $siteInfo: SiteInfoInput
+    $careHistory: String
     $notes: String
-    $photo: String
-    $nonNative: Boolean
+    $photos: String
   ) {
     updateTree(
       id: $id
       lastVisited: $lastVisited
+      nonNative: $nonNative
+      invasive: $invasive
       species: $species
-      genus: $genus
       variety: $variety
       garden: $garden
       location: $location
+      dbh: $dbh
       installedDate: $installedDate
       installedBy: $installedBy
       felledDate: $felledDate
       felledBy: $felledBy
-      dbh: $dbh
-      careHistory: $careHistory
       maintenanceNeeds: $maintenanceNeeds
       siteInfo: $siteInfo
+      careHistory: $careHistory
       notes: $notes
-      photo: $photo
-      nonNative: $nonNative
+      photos: $photos
     ) {
       id
       lastVisited
+      nonNative
+      invasive
       species {
         commonName
         scientificName
       }
-      genus
       variety
       garden
       location {
         northing
         easting
       }
+      dbh
       installedDate
       installedBy
       felledDate
       felledBy
-      dbh
-      careHistory
       maintenanceNeeds {
         install
-        fell
-        priorityPrune
+        raiseCrown
         routinePrune
         trainingPrune
+        priorityPrune
+        pestTreatment
         installGrate
         removeGrate
-        raiseCrown
-        pestTreatment
+        fell
+        removeStump
       }
       siteInfo {
         slope
         overheadLines
+        treeCluster
         proximateStructure
         proximateFence
-        treeCluster
       }
+      careHistory
       notes
-      photo
-      nonNative
+      photos
     }
   }
 `;
@@ -369,7 +373,6 @@ const TreeMap = () => {
   //7. when the user clicks on or touches Cancel, the form closes.
 
   //lastVisited should be today's date
-  //genus should be generated automatically using the first word of the scientific name; does this need to be stored as a separate field? (Probably not.)
   //norhing and easting should be retrieved from the GIS data of the marker.
 
   //the list of common and scientific names should be pulled from the db, but the user should be able to add new ones by typing them into the respective inputs.

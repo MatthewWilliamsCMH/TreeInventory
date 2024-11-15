@@ -4,7 +4,7 @@ const resolvers = {
   Query: {
     getTrees: async () => {
       try {
-        return await Tree.find().sort({ genus: 1 });  //find all trees and sort by genus
+        return await Tree.find().sort({ "species.scientificName": 1 });  //find all trees and sort by scientific name
       }
       catch (err) {
         console.error(err);
