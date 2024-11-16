@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import { useQuery, useMutation, gql } from "@apollo/client";
 import TreeForm from "../TreeForm/TreeForm";  // Import the form component
 
+//I'll need to add a query, GET_HIDDEN_TREES for hidden trees
+
 const GET_TREES = gql`
   query getTrees {
     getTrees {
@@ -276,11 +278,6 @@ const TreeMap = () => {
   const { loading: loadingGetAll, error: errorGetAll, data: dataGetAll } = useQuery(GET_TREES); //fetch all trees
   const [trees, setTrees] = useState(dataGetAll?.getTrees || []); //establish state that will store the list of trees; set to the list or to an empty array
 
-  // const { loading: loadingGetOne, error: errorGetOne, data: dataGetOne } = useQuery(GET_TREE, { //fetch one tree
-  //   skip: !selectedTree,
-  //   variables: { id: selectedTree?.id }
-  // });
-
   const [addTree, { loading: loadingAddOne, error: errorAddOne}] = useMutation(ADD_TREE); //add one tree
 
   const [updateTree, { loading: loadingUpdateOne, error: errorUpdateOne}] = useMutation(UPDATE_TREE)//update one tree
@@ -314,7 +311,6 @@ const TreeMap = () => {
           const popupElement = popup.getElement();
 
           popupElement.addEventListener("click", () => {
-            alert("Hello");
             setSelectedTree(tree);
             map.current.closePopup(popup);
           })
@@ -387,13 +383,13 @@ const TreeMap = () => {
 
   return (
     <>
-      {selectedTree} ? (
+      {selectedTree ? (
         <TreeForm selectedTree={selectedTree} setSelectedTree={setSelectedTree} />
       ) : (
-        <div ref={mapRef} style={{ height: '100vh', width: '100vw' }}></div>;
-      )
+        <div ref={mapRef} style={{ height: '100vh', width: '100vw' }}></div>
+      )}
     </>
-  )
+  );
 };
 
 export default TreeMap;

@@ -82,6 +82,7 @@ const typeDefs = gql `
     careHistory: String
     notes: String
     photos: String
+    hidden: Boolean
   }
 
   type Query {

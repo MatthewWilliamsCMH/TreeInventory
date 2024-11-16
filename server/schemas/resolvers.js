@@ -1,5 +1,6 @@
 const Tree = require("../models/Tree");
 
+//I'll need to add a query resolver for retrieving hidden trees
 const resolvers = {
   Query: {
     getTrees: async () => {

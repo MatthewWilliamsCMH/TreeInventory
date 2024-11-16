@@ -24,6 +24,7 @@ const router = createBrowserRouter([
     path: "/TreeInventory",
     element: <TreeInventory />
   },
+  //I think is is probably not necessary because <App /> takes the user to the home page, which is the map
   {
     path: "/TreeMap",
     element: <TreeMap />

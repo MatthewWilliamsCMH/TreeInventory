@@ -41,7 +41,8 @@ siteInfo: {
   },
   careHistory: {type: String },
   notes: { type: String },
-  photos: { type: [String] } //store base64-encoded image as string; see ChatGPT for instructions on how to convert the image to a base64 string
+  photos: { type: [String] }, //store base64-encoded image as string; see ChatGPT for instructions on how to convert the image to a base64 string
+  hidden: { type: Boolean }
 });
 
 const Tree = model('Tree', treeSchema);
