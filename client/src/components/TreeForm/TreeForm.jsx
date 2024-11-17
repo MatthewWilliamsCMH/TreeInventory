@@ -84,8 +84,35 @@ const commonToScientificList = {
   "Red horse-chestnut": "Aesculus carnea", //nonnative
   "Japanese lilac tree": "Syringa reticulata", //nonnative
 }
-const dbhList = ["< 3", "3-6", "6-12", "12-18", "18-24", "24-30", "30-36", "36-42", "> 42"];
-const gardenList = ["Community garden and lawn", "Dog lawn", "Drainage rill", "Fire pit", "Glenn garden and lawn", "Goodale entrance beds", "Hosta bed", "Main sign bed", "Parking-lot beds and lawn", "Pool lawn", "South lawn", "Urlin driveway bed north", "Urlin driveway bed south", "Woodland garden"]
+const dbhList = [
+  "< 3", 
+  "3-6", 
+  "7-12", 
+  "13-18", 
+  "19-24", 
+  "25-30", 
+  "31-36", 
+  "37-42", 
+  "> 42"
+];
+const gardenList = [
+  "community garden and lawn", 
+  "dog lawn", 
+  "drainage rill", 
+  "fire pit", 
+  "Glenn garden and lawn", 
+  "Goodale entrance beds", 
+  "hosta bed", 
+  "main sign bed", 
+  "meditation garden", 
+  "parking-lot beds and lawn", 
+  "ravine",
+  "pool lawn", 
+  "south lawn", 
+  "Urlin driveway bed north", 
+  "Urlin driveway bed south", 
+  "woodland garden"
+]
 
 const TreeForm = ({ selectedTree, setSelectedTree }) => {
   //populate the drop-down combo boxes
@@ -152,11 +179,7 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
   //destructure the complex fields from selectedTree
   const { commonName, scientificName } = species;
   const { northing, easting } = location || {};
-  // const [commonName, setCommonName] = useState("");
-  // const [scientificName, setscientificName] = useState("");
-
-  //add other drop downs here like dbh, garden, etc.
-
+  
   const [idValue, setIdValue] = useState(id);
   const [lastVisitedDate, setLastVisitedDate] = useState(lastVisited || "");
   const [commonNameValue, setCommonNameValue] = useState(commonName || "");
@@ -227,29 +250,21 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
         </ul>
         <p>Variety or cultivar: {variety}</p>
         <p>DBH:
-          <select
-            id="dbh"
-            value={dbh}
-            onChange={handleDbhChange}
-          >
-            {/* {gardenList.map((garden, index) => (
-              <option key={index} value={option}>
-                {garden}
+          <select id="dbh" defaultValue={dbhValue}>
+            {dbhList.map((dbh, index) => (
+              <option key={index} value={dbh}>
+                {dbh}
               </option>
-            ))} */}
+            ))}
           </select>
         </p>
         <p>Garden:
-          <select
-            id="garden"
-            value={garden}
-            onChange={handleGardenChange}
-          >
-            {/* {gardenList.map((garden, index) => (
-              <option key={index} value={option}>
+          <select id="garden" defaultValue={gardenValue}>
+            {gardenList.map((garden, index) => (
+              <option key={index} value={garden}>
                 {garden}
               </option>
-            ))} */}
+            ))}
           </select>
         </p>
         <p>Location</p>

@@ -8,12 +8,12 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": null,
-  "garden": "community garden lawn",
+  "garden": "community garden and lawn",
   "location": { 
     "northing": "39.97768230836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "6",
+  "dbh": "3-6",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -52,12 +52,12 @@
     "scientificName": "Fraxinus pennsylvanica"
   },
   "variety": null,
-  "garden": "parking lot lawn",
+  "garden": "parking-lot beds and lawn",
   "location": { 
     "northing": "39.97770980836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "9",
+  "dbh": "7-12",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -101,7 +101,7 @@
     "northing": "39.97773730836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "12",
+  "dbh": "7-12",
   "installedDate": null,
   "installedBy": null,
   "felledDate": "2024-11-16T16:30:45.123Z",
@@ -140,7 +140,7 @@
     "scientificName": "Fagus Americana"
   },
   "variety": null,
-  "garden": "meditation garden",
+  "garden": "fire pit",
   "location": { 
     "northing": "39.97776480836944",
     "easting": "-83.04934859084177"
@@ -184,12 +184,12 @@
     "scientificName": "Betula nigra"
   },
   "variety": null,
-  "garden": "community garden lawn",
+  "garden": "pool lawn",
   "location": { 
     "northing": "39.97779230836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "27",
+  "dbh": "25-30",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -277,7 +277,7 @@
     "northing": "39.97784730836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "6",
+  "dbh": "3-6",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -316,12 +316,12 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": null,
-  "garden": "woodland garden",
+  "garden": "Urlin driveway bed south",
   "location": { 
     "northing": "39.97787480836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "36",
+  "dbh": "31-36",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -360,12 +360,12 @@
     "scientificName": "Prunus serotina"
   },
   "variety": null,
-  "garden": "woodland garden",
+  "garden": "hosta bed",
   "location": { 
     "northing": "39.97790230836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "24",
+  "dbh": "19-24",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
@@ -404,12 +404,12 @@
     "scientificName": "Populus deltoides"
   },
   "variety": null,
-  "garden": "north of urlin drive",
+  "garden": "dog lawn",
   "location": { 
     "northing": "39.97792980836944",
     "easting": "-83.04934859084177"
   },
-  "dbh": "36",
+  "dbh": "31-36",
   "installedDate": null,
   "installedBy": null,
   "felledDate": null,
