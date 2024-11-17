@@ -1,16 +1,14 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
+import Navbar from "./Navbar";
+import "./Header.css";
+
 function Header() {
   return (
-    <header className='header'>
-      <div>
+      <header id="header">
         Summit Chase Tree Inventory
-      </div>
-      <nav>
-        <p>Home | Inventory</p>
-      </nav>
+        <Navbar />
     </header>
   );
-}
+};
 
 export default Header;

@@ -11,23 +11,25 @@ import Header from "./components/Header/Header";
 import TreeForm from "./components/TreeForm/TreeForm";
 import TreeInventory from "./components/TreeInventory/TreeInventory";
 import TreeMap from "./components/TreeMap/TreeMap";
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
-  },
-  {
-    path: "/TreeForm",
-    element: <TreeForm />
-  },
-  {
-    path: "/TreeInventory",
-    element: <TreeInventory />
-  },
-  //I think is is probably not necessary because <App /> takes the user to the home page, which is the map
-  {
-    path: "/TreeMap",
-    element: <TreeMap />
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <TreeMap />
+      },
+      {
+        path: "/TreeForm",
+        element: <TreeForm />
+      },
+      {
+        path: "/TreeInventory",
+        element: <TreeInventory />
+      }
+    ]
   }
 ]);
 
@@ -43,7 +45,6 @@ const client = new ApolloClient({
 //wraps app with apollo provider
 createRoot(document.getElementById("root")).render(
   <ApolloProvider client={client}>
-    <Header />
     <RouterProvider router={router} />
   </ApolloProvider>
 );

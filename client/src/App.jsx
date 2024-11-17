@@ -1,11 +1,15 @@
 import React from "react";
-import TreeMap from "./components/TreeMap/TreeMap";  // Import the map component
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header/Header";
+import "./reset.css"
+import "./App.css"
+
 
 function App() {
- 
   return (
     <div className="App">
-      <TreeMap />
+      <Header />
+      <Outlet />
     </div>
   );
 }

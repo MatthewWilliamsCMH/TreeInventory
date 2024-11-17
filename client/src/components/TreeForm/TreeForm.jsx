@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import ReactDOM from "react-dom";
-// import { useForm } from "react-hook-form";
+import "./TreeForm.css"
 
 //This should be pulled from the database in the production app, and the object should indicate native or nonnative. These are all native except as marked.
 const commonToScientificList = {
@@ -114,6 +113,28 @@ const gardenList = [
   "woodland garden"
 ]
 
+const maintenanceNeedsList = [
+  "install",
+  "raiseCrown",
+  "routinePrune",
+  "trainingPrune",
+  "priorityPrune",
+  "pestTreatment",
+  "installGrate",
+  "removeGrate",
+  "fell",
+  "removeStump"
+];
+
+const siteInfoList = [
+  "slope",
+  "overheadLines",
+  "treeCluster",
+  "proximateStructure",
+  "proximateFence"
+];
+
+
 const TreeForm = ({ selectedTree, setSelectedTree }) => {
   //populate the drop-down combo boxes
   const speciesOptions = Object.keys(commonToScientificList).map(common => ({
@@ -155,6 +176,23 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
     setGardenValue(selectedGarden)
   })
 
+  const handleMaintenanceNeedChange = (event) => {
+    const { name, checked } = event.target;
+    setMaintenanceNeedsValue(prevState => ({
+      ...prevState,
+      [name]: checked
+    }));
+  };
+
+  const handleSiteInfoChange = (event) => {
+    const { name, checked } = event.target;
+    setSiteInfoValue(prevState => ({
+      ...prevState,
+      [name]: checked
+    }));
+  };
+
+
   //destructure selectedTree
   let  {
     id,
@@ -168,13 +206,14 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
     installedBy,
     felledDate,
     felledBy,
+    nonnative,
+    invasive,
     maintenanceNeeds,
     siteInfo,
     careHistory,
     notes,
     photos
   } = selectedTree;
-
 
   //destructure the complex fields from selectedTree
   const { commonName, scientificName } = species;
@@ -193,6 +232,8 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
   const [installedByValue, setInstalledByValue] = useState(installedBy || "");
   const [felledDateDate, setFelledDateDate] = useState(felledDate || "");
   const [felledByValue, setFelledByValue] = useState(felledBy || "");
+  const [nonnativeValue, setNonnativeValue] = useState(nonnative || false);
+  const [invasiveValue, setInvasiveValue] = useState(invasive || false);
   const [maintenanceNeedsValue, setMaintenanceNeedsValue] = useState(maintenanceNeeds || {});
   const [siteInfoValue, setSiteInfoValue] = useState(siteInfo || {});
   const [careHistoryValue, setCareHistoryValue] = useState(careHistory || "");
@@ -214,6 +255,8 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
       setInstalledByValue(installedBy || "");
       setFelledDateDate(felledDate || "");
       setFelledByValue(felledBy || "");
+      setNonnativeValue(nonnative || false);
+      setInvasiveValue(invasive || false);
       setMaintenanceNeedsValue(maintenanceNeeds || "");
       setSiteInfoValue(siteInfo || "");
       setCareHistoryValue(careHistory || "");
@@ -272,201 +315,49 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
           <li>Northing: {northing}</li>
           <li>Easting: {easting}</li>
         </ul>
-        {/* <p>DBH: {dbh}</p> this needs to be an option list */}
         <p>Installed on: {new Date(Number(installedDate) || installedDate).toLocaleString("en-US")}</p>
         <p>Installed by: {installedBy}</p>
         <p>Felled on: {new Date(Number(felledDate) || felledDate).toLocaleString("en-US")}</p>
         <p>Felled by: {felledBy}</p>
+        <p>
+          <label>
+            <input type="checkbox" defaultChecked={nonnativeValue || false} />
+            Nonnative
+          </label>
+          <label>
+            <input type="checkbox" defaultChecked={invasiveValue || false} />
+            Invasive
+          </label>
+        </p>
+        <p>Photos:
+        </p>
+        <p>Maintenance Needs:
+          {maintenanceNeedsList.map((need) => (
+            <label key={need}>
+              <input type="checkbox" name={need} defaultChecked={maintenanceNeedsValue[need] || false}
+              onChange={handleMaintenanceNeedChange}
+              />
+              {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+            </label>
+          ))}
+        </p>
+        <p>Site Info:
+          {siteInfoList.map((condition) => (
+            <label key={condition}>
+              <input type="checkbox" name={condition} defaultChecked={siteInfoValue[condition] || false}
+              onChange={handleSiteInfoChange}
+              />
+              {condition.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+            </label>
+          ))}
+        </p>
         <p>Care hitory: {careHistory}</p>
         <p>Notes: {notes}</p>
+        <button>Ok</button>
+        <button>Cancel</button>
       </form>
     </div>
   );
 };
 
 export default TreeForm;
-
-//ChatGPT provided this. Adapt
-// import React, { useState, useEffect } from "react";
-
-// // Destructure props directly to get the individual tree fields
-// const TreeForm = ({ selectedTree, setSelectedTree }) => {
-//   // Destructure selectedTree into individual variables
-//   const {
-//     id,
-//     lastVisited,
-//     species,
-//     variety,
-//     garden,
-//     location,
-//     dbh,
-//     installedDate,
-//     installedBy,
-//     felledDate,
-//     felledBy,
-//     maintenanceNeeds,
-//     siteInfo,
-//     careHistory,
-//     notes,
-//     photos
-//   } = selectedTree;
-
-//   // Default state for the form values
-//   const [commonName, setCommonName] = useState(species?.commonName || "");
-//   const [scientificName, setScientificName] = useState(species?.scientificName || "");
-//   const [lastVisitedDate, setLastVisitedDate] = useState(lastVisited || "");
-//   const [dbhValue, setDbhValue] = useState(dbh || "");
-//   const [gardenValue, setGardenValue] = useState(garden || "");
-//   const [varietyValue, setVarietyValue] = useState(variety || "");
-//   const [careHistoryValue, setCareHistoryValue] = useState(careHistory || "");
-//   const [notesValue, setNotesValue] = useState(notes || "");
-
-//   // More states for maintenance needs and site info can be handled similarly
-//   const [maintenance, setMaintenance] = useState(maintenanceNeeds || {});
-//   const [site, setSite] = useState(siteInfo || {});
-
-
-//++++++++++++++++++++++++++++++++I've adapted through here+++++++++++++++++++++++++++++++++++++
-
-
-//   useEffect(() => {
-//     if (selectedTree) {
-//       setCommonName(species?.commonName || "");
-//       setScientificName(species?.scientificName || "");
-//       setLastVisitedDate(lastVisited || "");
-//       setDbhValue(dbh || "");
-//       setGardenValue(garden || "");
-//       setVarietyValue(variety || "");
-//       setCareHistoryValue(careHistory || "");
-//       setNotesValue(notes || "");
-//       setMaintenance(maintenanceNeeds || {});
-//       setSite(siteInfo || {});
-//     }
-//   }, [selectedTree]);
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-
-//     // You can call a function to update the tree, such as handleUpdateTree
-//     // Example: handleUpdateTree(id, { lastVisited: lastVisitedDate, maintenanceNeeds: maintenance });
-//   };
-
-//   const handleMaintenanceChange = (field) => {
-//     setMaintenance(prev => ({
-//       ...prev,
-//       [field]: !prev[field]  // Toggle the value (true/false)
-//     }));
-//   };
-
-//   return (
-//     <div id="treeForm">
-//       <form onSubmit={handleSubmit}>
-//         <p>Tree ID: {id}</p>
-        
-//         <div>
-//           <label>Common Name</label>
-//           <input type="text" value={commonName} onChange={(e) => setCommonName(e.target.value)} />
-//         </div>
-
-//         <div>
-//           <label>Scientific Name</label>
-//           <input type="text" value={scientificName} onChange={(e) => setScientificName(e.target.value)} />
-//         </div>
-
-//         <div>
-//           <label>Last Visited</label>
-//           <input
-//             type="date"
-//             value={lastVisitedDate}
-//             onChange={(e) => setLastVisitedDate(e.target.value)}
-//           />
-//         </div>
-
-//         <div>
-//           <label>DBH (Diameter at Breast Height)</label>
-//           <input
-//             type="text"
-//             value={dbhValue}
-//             onChange={(e) => setDbhValue(e.target.value)}
-//           />
-//         </div>
-
-//         <div>
-//           <label>Variety</label>
-//           <input
-//             type="text"
-//             value={varietyValue}
-//             onChange={(e) => setVarietyValue(e.target.value)}
-//           />
-//         </div>
-
-//         <div>
-//           <label>Garden</label>
-//           <input
-//             type="text"
-//             value={gardenValue}
-//             onChange={(e) => setGardenValue(e.target.value)}
-//           />
-//         </div>
-
-//         {/* Maintenance Needs */}
-//         <div>
-//           <label>Maintenance Needs</label>
-//           {["install", "fell", "priorityPrune", "routinePrune", "pestTreatment"].map((need) => (
-//             <div key={need}>
-//               <input
-//                 type="checkbox"
-//                 checked={maintenance[need] || false}
-//                 onChange={() => handleMaintenanceChange(need)}
-//               />
-//               <label>{need}</label>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Site Info */}
-//         <div>
-//           <label>Site Info</label>
-//           <div>
-//             <input
-//               type="checkbox"
-//               checked={site?.slope || false}
-//               onChange={() => setSite({ ...site, slope: !site.slope })}
-//             />
-//             <label>Slope</label>
-//           </div>
-//           <div>
-//             <input
-//               type="checkbox"
-//               checked={site?.overheadLines || false}
-//               onChange={() => setSite({ ...site, overheadLines: !site.overheadLines })}
-//             />
-//             <label>Overhead Lines</label>
-//           </div>
-//         </div>
-
-//         {/* Care History */}
-//         <div>
-//           <label>Care History</label>
-//           <textarea
-//             value={careHistoryValue}
-//             onChange={(e) => setCareHistoryValue(e.target.value)}
-//           />
-//         </div>
-
-//         {/* Notes */}
-//         <div>
-//           <label>Notes</label>
-//           <textarea
-//             value={notesValue}
-//             onChange={(e) => setNotesValue(e.target.value)}
-//           />
-//         </div>
-
-//         <button type="submit">Save</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default TreeForm;
