@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import { useForm } from "react-hook-form";
 
 //This should be pulled from the database in the production app, and the object should indicate native or nonnative. These are all native except as marked.
-const commonToscientificNames = {
+const commonToScientificList = {
   "American beech": "Fagus grandifolia",
   "American chestnut": "Castanea dentata",
   "Black oak": "Quercus velutina", 
@@ -83,40 +83,53 @@ const commonToscientificNames = {
   "Blackhaw": "Viburnum prunifolium", //nonnative
   "Red horse-chestnut": "Aesculus carnea", //nonnative
   "Japanese lilac tree": "Syringa reticulata", //nonnative
-
 }
+const dbhList = ["< 3", "3-6", "6-12", "12-18", "18-24", "24-30", "30-36", "36-42", "> 42"];
+const gardenList = ["Community garden and lawn", "Dog lawn", "Drainage rill", "Fire pit", "Glenn garden and lawn", "Goodale entrance beds", "Hosta bed", "Main sign bed", "Parking-lot beds and lawn", "Pool lawn", "South lawn", "Urlin driveway bed north", "Urlin driveway bed south", "Woodland garden"]
 
 const TreeForm = ({ selectedTree, setSelectedTree }) => {
   //populate the drop-down combo boxes
-  const speciesOptions = Object.keys(commonToscientificNames).map(common => ({
+  const speciesOptions = Object.keys(commonToScientificList).map(common => ({
     common,
-    scientific: commonToscientificNames[common]
+    scientific: commonToScientificList[common]
   }));
+
+  useEffect(() => {
+    setCommonNameValue(selectedTree.species.commonName);
+    setScientificNameValue(selectedTree.species.scientificName);
+  }, [selectedTree]);
 
   const handleCommonChange = (event) => {
     const selectedCommonName = event.target.value;
-    setCommonName(selectedCommonName);
+    setCommonNameValue(selectedCommonName);
 
-    const scientificNameFromCommon = commonToscientificNames[selectedCommonName];
-    setscientificName(scientificNameFromCommon || "");
+    const scientificFromCommon = commonToScientificList[selectedCommonName];
+    console.log(scientificFromCommon)
+    setScientificNameValue(scientificFromCommon || "");
   };
 
-  const handlescientificChange = (event) => {
-    const selectedscientificName = event.target.value;
-    setscientificName(selectedscientificName);
+  const handleScientificChange = (event) => {
+    const selectedScientificName = event.target.value;
+    setScientificNameValue(selectedScientificName);
 
-    const commonNameFromscientific = Object.keys(commonToscientificNames).find(
-      common => commonToscientificNames[common] === selectedscientificName
+    const commonFromScientific = Object.keys(commonToScientificList).find(
+      common => commonToScientificList[common] === selectedScientificName
     );
-    setCommonName(commonNameFromscientific || "");
+    setCommonNameValue(commonFromScientific || "");
   };
 
-  //add other drop downs here like dbh, garden, etc.
+  const handleDbhChange = (event => {
+    const selectedDbh = event.target.value;
+    setDbhValue(selectedDbh)
+  });
 
-  // const [commonName, setCommonName] = useState("");
-  // const [scientificName, setscientificName] = useState("");
+  const handleGardenChange = (event => {
+    const selectedGarden = event.target.value;
+    setGardenValue(selectedGarden)
+  })
+
   //destructure selectedTree
-  const  {
+  let  {
     id,
     lastVisited,
     species,
@@ -135,9 +148,14 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
     photos
   } = selectedTree;
 
+
   //destructure the complex fields from selectedTree
   const { commonName, scientificName } = species;
   const { northing, easting } = location || {};
+  // const [commonName, setCommonName] = useState("");
+  // const [scientificName, setscientificName] = useState("");
+
+  //add other drop downs here like dbh, garden, etc.
 
   const [idValue, setIdValue] = useState(id);
   const [lastVisitedDate, setLastVisitedDate] = useState(lastVisited || "");
@@ -186,22 +204,66 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
       <form>
         <p>Id: {id}</p>
         <p>Last visited: {new Date(Number(lastVisited) || lastVisited).toLocaleString("en-US")}</p>
-        <select id="commonName" value={commonName} onChange={handleCommonChange}>
-          <option value="">Select common name</option>
-          {speciesOptions.map((option) => {
-            <option key={option.common} value={option.common}>
-              {option.common}
-            </option>
-          })}
-        </select>
-        <select id="commonName" value={commonName} onChange={handleCommonChange}>
-          <option value="">Select common name</option>
-          {speciesOptions.map((option) => {
-            <option key={option.common} value={option.common}>
-              {option.common}
-            </option>
-          })}
-        </select>
+        <p>Species</p>
+        <ul>
+          <li>Common name: 
+            <select id="commonName" value={commonNameValue} onChange={handleCommonChange}>
+              {speciesOptions.map((option) => (
+                <option key={option.common} value={option.common}>
+                  {option.common}
+                </option>
+              ))}
+            </select>
+          </li>
+          <li>Scientific name: 
+            <select id="scientificName" value={scientificNameValue} onChange={handleScientificChange}>
+              {speciesOptions.map((option) => (
+                <option key={option.scientific} value={option.scientific}>
+                  {option.scientific}
+                </option>
+              ))}
+            </select>
+          </li>
+        </ul>
+        <p>Variety or cultivar: {variety}</p>
+        <p>DBH:
+          <select
+            id="dbh"
+            value={dbh}
+            onChange={handleDbhChange}
+          >
+            {/* {gardenList.map((garden, index) => (
+              <option key={index} value={option}>
+                {garden}
+              </option>
+            ))} */}
+          </select>
+        </p>
+        <p>Garden:
+          <select
+            id="garden"
+            value={garden}
+            onChange={handleGardenChange}
+          >
+            {/* {gardenList.map((garden, index) => (
+              <option key={index} value={option}>
+                {garden}
+              </option>
+            ))} */}
+          </select>
+        </p>
+        <p>Location</p>
+        <ul>
+          <li>Northing: {northing}</li>
+          <li>Easting: {easting}</li>
+        </ul>
+        {/* <p>DBH: {dbh}</p> this needs to be an option list */}
+        <p>Installed on: {new Date(Number(installedDate) || installedDate).toLocaleString("en-US")}</p>
+        <p>Installed by: {installedBy}</p>
+        <p>Felled on: {new Date(Number(felledDate) || felledDate).toLocaleString("en-US")}</p>
+        <p>Felled by: {felledBy}</p>
+        <p>Care hitory: {careHistory}</p>
+        <p>Notes: {notes}</p>
       </form>
     </div>
   );
