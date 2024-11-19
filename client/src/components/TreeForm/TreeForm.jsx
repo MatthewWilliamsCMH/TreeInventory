@@ -268,91 +268,116 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
   return (
     <div id="treeForm">
       <form>
-        <p>Id: {id}</p>
-        <p>Last visited: {new Date(Number(lastVisited) || lastVisited).toLocaleString("en-US")}</p>
-        <p>Species</p>
-        <ul>
-          <li>Common name: 
-            <select id="commonName" value={commonNameValue} onChange={handleCommonChange}>
-              {speciesOptions.map((option) => (
-                <option key={option.common} value={option.common}>
-                  {option.common}
-                </option>
+        <div className="columns">
+          <div className="column">
+            <p><b>Id:</b> {id}</p>
+            <p><b>Last visited:</b> {new Date(Number(lastVisited) || lastVisited).toLocaleString("en-US")}</p>
+            <p><b>Species</b>
+              <ul>
+                <li><b>Common name:</b> 
+                  <select id="commonName" value={commonNameValue} onChange={handleCommonChange}>
+                    {speciesOptions.map((option) => (
+                      <option key={option.common} value={option.common}>
+                        {option.common}
+                      </option>
+                    ))}
+                  </select>
+                </li>
+                <li><b>Scientific name:</b> 
+                  <select id="scientificName" value={scientificNameValue} onChange={handleScientificChange}>
+                    {speciesOptions.map((option) => (
+                      <option key={option.scientific} value={option.scientific}>
+                        {option.scientific}
+                      </option>
+                    ))}
+                  </select>
+                </li>
+              </ul>
+            </p>
+            <p><b>Variety or cultivar:</b> {variety}</p>
+            <p><b>DBH:</b>
+              <select id="dbh" defaultValue={dbhValue}>
+                {dbhList.map((dbh, index) => (
+                  <option key={index} value={dbh}>
+                    {dbh}
+                  </option>
+                ))}
+              </select>
+            </p>
+            <p><b>Garden:</b>
+              <select id="garden" defaultValue={gardenValue}>
+                {gardenList.map((garden, index) => (
+                  <option key={index} value={garden}>
+                    {garden}
+                  </option>
+                ))}
+              </select>
+            </p>
+            <p><b>Location</b>
+              <ul>
+                <li><b>Northing:</b> {northing}</li>
+                <li><b>Easting:</b> {easting}</li>
+              </ul>
+            </p>
+            <p><b>Installed on:</b> {new Date(Number(installedDate) || installedDate).toLocaleString("en-US")}</p>
+            <p><b>Installed by:</b> {installedBy}</p>
+            <p><b>Felled on:</b> {new Date(Number(felledDate) || felledDate).toLocaleString("en-US")}</p>
+            <p><b>Felled by:</b> {felledBy}</p>
+          </div>
+          <div className="column">
+            <p>
+              <label>
+                <input type="checkbox" defaultChecked={nonnativeValue || false} />
+                <b>Nonnative</b>
+              </label>
+              <label>
+                <input type="checkbox" defaultChecked={invasiveValue || false} />
+                <b>Invasive</b>
+              </label>
+            </p>
+            <p><b>Photos:</b>
+            </p>
+            <p className="checklist-heading">
+              Maintenance Needs:
+            </p>
+            <p>
+            <div className="checklist">
+              {maintenanceNeedsList.map((need) => (
+                <label key={need}>
+                  <input
+                    type="checkbox"
+                    name={need}
+                    defaultChecked={maintenanceNeedsValue[need] || false}
+                    onChange={handleMaintenanceNeedChange}
+                  />
+                  {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                </label>
               ))}
-            </select>
-          </li>
-          <li>Scientific name: 
-            <select id="scientificName" value={scientificNameValue} onChange={handleScientificChange}>
-              {speciesOptions.map((option) => (
-                <option key={option.scientific} value={option.scientific}>
-                  {option.scientific}
-                </option>
+            </div>
+            </p>
+            <p className="checklist-heading">
+              Site Info:
+            </p>
+            <div class="checklist">
+              {siteInfoList.map((condition) => (
+                <label key={condition}>
+                  <input type="checkbox" name={condition} defaultChecked={siteInfoValue[condition] || false}
+                  onChange={handleSiteInfoChange}
+                  />
+                  {condition.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                </label>
               ))}
-            </select>
-          </li>
-        </ul>
-        <p>Variety or cultivar: {variety}</p>
-        <p>DBH:
-          <select id="dbh" defaultValue={dbhValue}>
-            {dbhList.map((dbh, index) => (
-              <option key={index} value={dbh}>
-                {dbh}
-              </option>
-            ))}
-          </select>
-        </p>
-        <p>Garden:
-          <select id="garden" defaultValue={gardenValue}>
-            {gardenList.map((garden, index) => (
-              <option key={index} value={garden}>
-                {garden}
-              </option>
-            ))}
-          </select>
-        </p>
-        <p>Location</p>
-        <ul>
-          <li>Northing: {northing}</li>
-          <li>Easting: {easting}</li>
-        </ul>
-        <p>Installed on: {new Date(Number(installedDate) || installedDate).toLocaleString("en-US")}</p>
-        <p>Installed by: {installedBy}</p>
-        <p>Felled on: {new Date(Number(felledDate) || felledDate).toLocaleString("en-US")}</p>
-        <p>Felled by: {felledBy}</p>
-        <p>
-          <label>
-            <input type="checkbox" defaultChecked={nonnativeValue || false} />
-            Nonnative
-          </label>
-          <label>
-            <input type="checkbox" defaultChecked={invasiveValue || false} />
-            Invasive
-          </label>
-        </p>
-        <p>Photos:
-        </p>
-        <p>Maintenance Needs:
-          {maintenanceNeedsList.map((need) => (
-            <label key={need}>
-              <input type="checkbox" name={need} defaultChecked={maintenanceNeedsValue[need] || false}
-              onChange={handleMaintenanceNeedChange}
-              />
-              {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-            </label>
-          ))}
-        </p>
-        <p>Site Info:
-          {siteInfoList.map((condition) => (
-            <label key={condition}>
-              <input type="checkbox" name={condition} defaultChecked={siteInfoValue[condition] || false}
-              onChange={handleSiteInfoChange}
-              />
-              {condition.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-            </label>
-          ))}
-        </p>
-        <p>Care hitory: {careHistory}</p>
-        <p>Notes: {notes}</p>
+              </div>
+          </div>
+        </div>
+        <div>
+          <p><b>Care history:</b>
+            <textarea>{careHistory}</textarea>
+          </p>
+          <p><b>Notes:</b>
+            <textarea>{notes}</textarea>
+          </p>
+        </div>
         <button>Ok</button>
         <button>Cancel</button>
       </form>

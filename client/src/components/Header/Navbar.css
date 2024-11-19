@@ -1,0 +1,7 @@
+#navbar a {
+    color: #FFF3B0;
+  }
+
+#navbar a:visited {
+  color: var(--peanut-butter);
+}

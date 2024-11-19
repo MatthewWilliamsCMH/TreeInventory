@@ -5,7 +5,7 @@ import "./Header.css";
 function Header() {
   return (
       <header id="header">
-        Summit Chase Tree Inventory
+        <h1>Summit Chase Tree Inventory</h1>
         <Navbar />
     </header>
   );
