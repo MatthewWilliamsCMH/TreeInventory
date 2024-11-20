@@ -6,3 +6,7 @@
   --grey-blue: #669BCC;
   --blue-green: #335C67;
 }
+
+* {
+  font-family: Arial, Helvetica, sans-serif
+}

@@ -270,32 +270,47 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
       <form>
         <div className="columns">
           <div className="column">
-            <p><b>Id:</b> {id}</p>
-            <p><b>Last visited:</b> {new Date(Number(lastVisited) || lastVisited).toLocaleString("en-US")}</p>
-            <p><b>Species</b>
-              <ul>
-                <li><b>Common name:</b> 
-                  <select id="commonName" value={commonNameValue} onChange={handleCommonChange}>
-                    {speciesOptions.map((option) => (
-                      <option key={option.common} value={option.common}>
-                        {option.common}
-                      </option>
-                    ))}
-                  </select>
-                </li>
-                <li><b>Scientific name:</b> 
-                  <select id="scientificName" value={scientificNameValue} onChange={handleScientificChange}>
-                    {speciesOptions.map((option) => (
-                      <option key={option.scientific} value={option.scientific}>
-                        {option.scientific}
-                      </option>
-                    ))}
-                  </select>
-                </li>
-              </ul>
-            </p>
-            <p><b>Variety or cultivar:</b> {variety}</p>
-            <p><b>DBH:</b>
+            <div>
+              <label>Id:</label>
+              <input type="text" value={id || ""} className="textinput"/>
+            </div>
+
+            <div>
+              <label>Last visited:</label>
+              <input type="text" value = {new Date(Number(lastVisited) || lastVisited).toLocaleString("en-US") || ""} className="textinput"/>
+            </div>
+
+            <div className="controlgroup">
+              <label>Species</label>
+              <div className="subcategory">
+                <label>Common name:</label> 
+                <select id="commonName" value={commonNameValue} onChange={handleCommonChange}>
+                  {speciesOptions.map((option) => (
+                    <option key={option.common} value={option.common}>
+                      {option.common}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="subcategory">
+                <label>Scientific name:</label> 
+                <select id="scientificName" value={scientificNameValue} onChange={handleScientificChange}>
+                  {speciesOptions.map((option) => (
+                    <option key={option.scientific} value={option.scientific}>
+                      {option.scientific}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label>Variety or cultivar:</label>
+              <input type="text" value={variety || ""} className="textinput"/>
+            </div>
+          
+            <div>
+              <label>DBH:</label>
               <select id="dbh" defaultValue={dbhValue}>
                 {dbhList.map((dbh, index) => (
                   <option key={index} value={dbh}>
@@ -303,8 +318,10 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
                   </option>
                 ))}
               </select>
-            </p>
-            <p><b>Garden:</b>
+            </div>
+
+            <div>
+              <label>Garden:</label>
               <select id="garden" defaultValue={gardenValue}>
                 {gardenList.map((garden, index) => (
                   <option key={index} value={garden}>
@@ -312,19 +329,42 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
                   </option>
                 ))}
               </select>
-            </p>
-            <p><b>Location</b>
-              <ul>
-                <li><b>Northing:</b> {northing}</li>
-                <li><b>Easting:</b> {easting}</li>
-              </ul>
-            </p>
-            <p><b>Installed on:</b> {new Date(Number(installedDate) || installedDate).toLocaleString("en-US")}</p>
-            <p><b>Installed by:</b> {installedBy}</p>
-            <p><b>Felled on:</b> {new Date(Number(felledDate) || felledDate).toLocaleString("en-US")}</p>
-            <p><b>Felled by:</b> {felledBy}</p>
+            </div>
+
+            <div className="controlgroup">
+              <label>Location</label>
+              <div className="subcategory">
+                <label>Northing:</label>
+                <input type="text" value={northing || ""} className="textinput"/>
+              </div>
+              <div className="subcategory">
+                <label>Easting:</label>
+                <input type="text" value={easting || ""} className="textinput"/>
+              </div>
+            </div>
+
+            <div>
+              <label>Installed on:</label>
+              <input type="text" value={new Date(Number(installedDate) || installedDate).toLocaleString("en-US") || ""} className="textinput"/>
+            </div>
+          
+            <div>
+              <label>Installed by:</label>
+              <input type="text" value={installedBy || ""} className="textinput"/>
+            </div>
+
+            <div>
+              <label>Felled on:</label>
+              <input type="text" value={new Date(Number(felledDate) || felledDate).toLocaleString("en-US") || ""} className="textinput"/>
+            </div>
+          
+            <div>
+              <label>Felled by:</label>
+              <input type="text" value={felledBy || ""} className="textinput"/>
+            </div>
           </div>
           <div className="column">
+
             <p>
               <label>
                 <input type="checkbox" defaultChecked={nonnativeValue || false} />
@@ -370,14 +410,19 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
               </div>
           </div>
         </div>
+
         <div>
-          <p><b>Care history:</b>
-            <textarea>{careHistory}</textarea>
-          </p>
-          <p><b>Notes:</b>
-            <textarea>{notes}</textarea>
-          </p>
+            <div>
+              <label>Care history:</label>
+              <textarea>{careHistory || ""}</textarea>
+            </div>
+
+            <div>
+              <label>Notes:</label>
+              <textarea>{notes || ""}</textarea>
+            </div>
         </div>
+
         <button>Ok</button>
         <button>Cancel</button>
       </form>
