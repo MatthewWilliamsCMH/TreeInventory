@@ -192,7 +192,6 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
     }));
   };
 
-
   //destructure selectedTree
   let  {
     id,
@@ -363,9 +362,9 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
               <input type="text" value={felledBy || ""} className="textinput"/>
             </div>
           </div>
-          <div className="column">
 
-            <p>
+          <div className="column">
+            <div className="danger">
               <label>
                 <input type="checkbox" defaultChecked={nonnativeValue || false} />
                 <b>Nonnative</b>
@@ -374,40 +373,34 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
                 <input type="checkbox" defaultChecked={invasiveValue || false} />
                 <b>Invasive</b>
               </label>
-            </p>
+            </div>
+
             <p><b>Photos:</b>
             </p>
-            <p className="checklist-heading">
-              Maintenance Needs:
-            </p>
-            <p>
-            <div className="checklist">
-              {maintenanceNeedsList.map((need) => (
-                <label key={need}>
-                  <input
-                    type="checkbox"
-                    name={need}
-                    defaultChecked={maintenanceNeedsValue[need] || false}
-                    onChange={handleMaintenanceNeedChange}
-                  />
-                  {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-                </label>
-              ))}
-            </div>
-            </p>
-            <p className="checklist-heading">
-              Site Info:
-            </p>
-            <div class="checklist">
-              {siteInfoList.map((condition) => (
-                <label key={condition}>
-                  <input type="checkbox" name={condition} defaultChecked={siteInfoValue[condition] || false}
-                  onChange={handleSiteInfoChange}
-                  />
-                  {condition.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-                </label>
-              ))}
+
+            <div className="controlgroup">
+              <label>Maintenance needs:</label>
+              <div className="checkboxgroup">
+                {maintenanceNeedsList.map((need) => (
+                  <label key={need}>
+                  <input type="checkbox" name={need} defaultChecked={maintenanceNeedsValue[need] || false} onChange={handleMaintenanceNeedChange} />
+                    {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                  </label>
+                ))}
               </div>
+            </div>
+
+            <div className="controlgroup">
+              <label>Site info</label>
+              <div className="checkboxgroup">
+                {siteInfoList.map((condition) => (
+                  <label key={condition}>
+                  <input type="checkbox" condition={condition} defaultChecked={siteInfoValue[condition] || false} onChange={handleSiteInfoChange} />
+                    {condition.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                  </label>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 

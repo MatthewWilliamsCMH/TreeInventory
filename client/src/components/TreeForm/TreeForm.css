@@ -59,30 +59,48 @@ form label {
   font-weight: bold;
   color: var(--blue-green);
   width: 32%;
+  white-space: nowrap;
 }
 
-textarea {
-  width:100%;
-  padding: 5px;
+form .danger {
+  display: flex;
+  justify-content:flex-end;
+  gap: 20px;
+  /* width:fit-content; */
 }
 
-.checklist-heading {
+form .danger label {
   display: block;
-  width: 100%;
-  font-weight: bold;
-  margin-bottom:0px;
+  text-align: right;
+  width: auto;
+  color: red;
 }
 
-.checklist {
+form .danger input {
+  margin-right: 10px;
+}
+
+/* ".column" is required below to increase the specficity of this selector; without it, "display: flex" from ".column div" above overrides the "display: block" here; adding "!important" after block would also work */
+form .column .checkboxgroup {
+  display: block;
+  white-space: normal;
   column-count: 2;
   column-gap: 20px;
 }
 
-.checklist label {
-  display: block;  
-  white-space: normal;
+form .checkboxgroup label {
+  display: block;
+  white-space: nowrap;
+  font-weight: normal;
+  color:black;
+  margin-left: 20px;
 }
 
-.checklist input {
+form .checkboxgroup input {
   margin-right: 10px;
+}
+
+form textarea {
+  width:100%;
+  padding: 5px;
 }
