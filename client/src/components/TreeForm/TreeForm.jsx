@@ -246,7 +246,7 @@ const TreeForm = ({ selectedTree, setSelectedTree }) => {
   // }
 
   const handleSubmit = (event) => {
-
+    event.preventDefault;
   }
 
   //destructure selectedTree
