@@ -3,31 +3,72 @@ import { useOutletContext } from "react-router-dom";
 
 //set up an object with values from selectedTree and set their values to ""
 const SiteDataForm = () => {
-  const { selectedTree, setSelectedTree, formStyle } = useOutletContext();
-
-  const [formValues, setFormValues] = useState(() => ({
-    location: {
-      northing: selectedTree?.location?.northing || "",
-      easting: selectedTree?.location?.easting || ""
-    },
-    garden: selectedTree?.garden || "",
-    siteData: {
-      slope: selectedTree?.sitedata?.slope || false,
-      overheadLines: selectedTree?.sitedata?.overhadeLines || false,
-      treeCluster: selectedTree?.sitedata?.treeCluster || false,
-      proximateStructure: selectedTree?.sitedata?.proximateStructure || false,
-      proximateFence: selectedTree?.sitedata?.proximateFence || false
-    },
-    nonnative: selectedTree?.nonnative || false,
-    invasive: selectedTree?.invasive || false,
-    hidden: selectedTree?.hidden || false
-  }));
+  const { selectedTree, updatedTree, setUpdatedTree, formStyle } = useOutletContext();
+  
+  const [formValues, setFormValues] = useState(() => {
+    return updatedTree || {
+      species: {
+        commonName: selectedTree?.species?.commonName || "",
+        scientificName: selectedTree?.species?.scientificName || ""
+      },
+      variety: selectedTree?.variety || "",
+      dbh: selectedTree?.dbh || "",
+      photos: selectedTree?.photos || null,
+      notes: selectedTree?.notes || "",
+      nonnative: selectedTree?.nonnative || false,
+      invasive: selectedTree?.invasive || false,
+      hidden: selectedTree?.hidden || false,
+      location: {
+        northing: selectedTree?.location?.northing || "",
+        easting: selectedTree?.location?.easting || ""
+      },
+      garden: selectedTree?.garden || "",
+      siteData: {
+        slope: selectedTree?.sitedata?.slope || false,
+        overheadLines: selectedTree?.sitedata?.overhadeLines || false,
+        treeCluster: selectedTree?.sitedata?.treeCluster || false,
+        proximateStructure: selectedTree?.sitedata?.proximateStructure || false,
+        proximateFence: selectedTree?.sitedata?.proximateFence || false
+      },
+      nonnative: selectedTree?.nonnative || false,
+      invasive: selectedTree?.invasive || false,
+      hidden: selectedTree?.hidden || false,
+      lastVisited: selectedTree?.lastVisited || "",
+      installedDate: selectedTree?.installedDate || "",
+      installedBy: selectedTree?.installedBy || "",
+      felledDate: selectedTree?.felledDate || "",
+      felledBy: selectedTree?.felledBy || "",
+      maintenanceNeeds: {
+        install: selectedTree?.maintenanceNeeds?.install || false,
+        raiseCrown: selectedTree?.maintenanceNeeds?.raiseCrown || false,
+        routinePrune: selectedTree?.maintenanceNeeds?.routinePrune || false,
+        trainingPrune: selectedTree?.maintenanceNeeds?.trainingPrune || false,
+        priorityPrune: selectedTree?.maintenanceNeeds?.priorityPrune || false,
+        pestTreatment: selectedTree?.maintenanceNeeds?.pestTreatment || false,
+        installGrate: selectedTree?.maintenanceNeeds?.installGrate || false,
+        removeGrate: selectedTree?.maintenanceNeeds?.removeGrate || false,
+        fell: selectedTree?.maintenanceNeeds?.fell || false,
+        removeStump: selectedTree?.maintenanceNeeds?.removeStump || false
+      }
+    };
+  });
 
   //sync form state with selectedTree when it changes
   useEffect(() => {
-    if (selectedTree) {
+    if (!updatedTree && selectedTree) {
       setFormValues({
-        location: {
+        species: {
+          commonName: selectedTree.species?.commonName || "",
+          scientificName: selectedTree.species?.scientificName || ""
+        },
+        variety: selectedTree.variety || "",
+        dbh: selectedTree.dbh || "",
+        photos: selectedTree.photos || "",
+        notes: selectedTree.notes || "",
+        nonnative: selectedTree.nonnative || false,
+        invasive: selectedTree.invasive || false,
+        hidden: selectedTree.hidden || false,
+                location: {
           northing: selectedTree.location?.northing || "",
           easting: selectedTree.location?.easting || ""
         },
@@ -41,17 +82,41 @@ const SiteDataForm = () => {
         },
         nonnative: selectedTree.nonnative || false,
         invasive: selectedTree.invasive || false,
-        hidden: selectedTree.hidden || false
+        hidden: selectedTree.hidden || false,
+        lastVisited: selectedTree.lastVisited || "",
+        installedDate: selectedTree.installedDate || "",
+        installedBy: selectedTree.installedBy || "",
+        felledDate: selectedTree.felledDate || "",
+        felledBy: selectedTree.felledBy || "",
+        maintenanceNeeds: {
+          install: selectedTree.maintenanceNeeds?.install || false,
+          raiseCrown: selectedTree.maintenanceNeeds?.raiseCrown || false,
+          routinePrune: selectedTree.maintenanceNeeds?.routinePrune || false,
+          trainingPrune: selectedTree.maintenanceNeeds?.trainingPrune || false,
+          priorityPrune: selectedTree.maintenanceNeeds?.priorityPrune || false,
+          pestTreatment: selectedTree.maintenanceNeeds?.pestTreatment || false,
+          installGrate: selectedTree.maintenanceNeeds?.installGrate || false,
+          removeGrate: selectedTree.maintenanceNeeds?.removeGrate || false,
+          fell: selectedTree.maintenanceNeeds?.fell || false,
+          removeStump: selectedTree.maintenanceNeeds?.removeStump || false
+        }
       });
-    };
-  }, [selectedTree]);
+    }
+  }, [selectedTree, updatedTree]);
 
+ useEffect(() => {
+    setUpdatedTree(formValues);
+  }, [formValues, setUpdatedTree]);
+
+//-------------------- handlers --------------------
   // generic handler for controls
   const handleFieldChange = (field, value) => {
     setFormValues(prevValues => {
+      let newValues;
+
       if (field.includes(".")) {
         const [parentField, childField] = field.split(".");
-        return {
+        newValues = {
           ...prevValues,
           [parentField]: {
             ...prevValues[parentField],
@@ -59,13 +124,12 @@ const SiteDataForm = () => {
           }
         };
       }
-      
       //handle grouped checkboxes
-      if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
+      else if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
         const inputType = value.target ? value.target.type : null;
         
         if (inputType === "checkbox") {
-          return {
+          newValues = {
             ...prevValues,
             [field]: {
               ...prevValues[field],
@@ -74,22 +138,78 @@ const SiteDataForm = () => {
           };
         }
       }
-
       //handle ungrouped checkboxes
-      if (value.target && value.target.type === "checkbox") {
-        return {
+      else if (value.target && value.target.type === "checkbox") {
+        newValues = {
           ...prevValues,
           [field]: value.target.checked
         };
       }
-      
       //handle standard inputs, selects, and direct value assignments
-      return {
-        ...prevValues,
-        [field]: value.target ? value.target.value : value
-      };
+      else {
+        newValues = {
+          ...prevValues,
+          [field]: value.target ? value.target.value : value
+        };
+      }
+
+      // Update selectedTree
+      // setSelectedTree(prevTree => ({
+      //   ...prevTree,
+      //   ...(field.includes(".") 
+      //     ? { [field.split(".")[0]]: newValues[field.split(".")[0]] } 
+      //     : { [field]: newValues[field] }
+      //   )
+      // }));
+      // setUpdatedTree(newValues)
+
+      return newValues;
     });
   };
+  // // generic handler for controls
+  // const handleFieldChange = (field, value) => {
+  //   setFormValues(prevValues => {
+  //     if (field.includes(".")) {
+  //       const [parentField, childField] = field.split(".");
+  //       return {
+  //         ...prevValues,
+  //         [parentField]: {
+  //           ...prevValues[parentField],
+  //           [childField]: value.target ? value.target.value : value
+  //         }
+  //       };
+  //     }
+      
+  //     //handle grouped checkboxes
+  //     if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
+  //       const inputType = value.target ? value.target.type : null;
+        
+  //       if (inputType === "checkbox") {
+  //         return {
+  //           ...prevValues,
+  //           [field]: {
+  //             ...prevValues[field],
+  //             [value.target.name]: value.target.checked
+  //           }
+  //         };
+  //       }
+  //     }
+
+  //     //handle ungrouped checkboxes
+  //     if (value.target && value.target.type === "checkbox") {
+  //       return {
+  //         ...prevValues,
+  //         [field]: value.target.checked
+  //       };
+  //     }
+      
+  //     //handle standard inputs, selects, and direct value assignments
+  //     return {
+  //       ...prevValues,
+  //       [field]: value.target ? value.target.value : value
+  //     };
+  //   });
+  // };
 
   //-------------------- render component--------------------//
   return (

@@ -7,6 +7,7 @@ import "./App.css";
 
 function App() {
   const [selectedTree, setSelectedTree] = useState(null);
+  const [updatedTree, setUpdatedTree] = useState(null);
 
   // Determine form background color based on 'invasive' flag in selectedTree
   const formStyle = {
@@ -17,7 +18,7 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
-      <Outlet context={{ selectedTree, setSelectedTree, formStyle }} />
+      <Outlet context={{ selectedTree, setSelectedTree, updatedTree, setUpdatedTree, formStyle }} />
     </div>
   );
 }
