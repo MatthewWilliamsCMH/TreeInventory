@@ -1,0 +1,88 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 60px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 2px;
+  height: 90%;
+  background-color: var(--brick-red);
+}
+
+.radiobuttonlist {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 75vh;
+  min-height: 300px;
+}
+
+.radiobuttonlist label {
+  display: flex;
+  align-items:center;
+  gap:10px;
+  position: relative;
+  width: 100%;
+}
+
+input[type="radio"] {
+  appearance: none;
+  margin: 0;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--brick-red);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  z-index:1000;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: var(--brick-red);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.radiooption {
+  position: relative;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  left: 110%;
+  background-color: var(--blue-green);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: .85rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.radiooption:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

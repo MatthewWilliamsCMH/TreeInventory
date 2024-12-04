@@ -10,3 +10,119 @@
 * {
   font-family: Arial, Helvetica, sans-serif
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./public/background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+form {
+  background-color: white;
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem; 
+}
+
+form > .controlgroup:first-of-type {
+  margin-top: 0px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--blue-green);
+  white-space: nowrap;
+}
+
+.controlgroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.controlgroup > .control:first-of-type {
+  margin-top: 10px;
+}
+.control {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin-top: 20px;
+}
+
+.control label {
+  flex: 0 0 16%;
+}
+
+.control select, .control input, .control textarea {
+  flex: 1;
+}
+
+.controlgroup .control {
+  margin-top: 10px;
+}
+
+.controlgroup .control label {
+  padding-left: 20px;
+}
+
+.checkboxgroup {
+  display: block;
+  column-count: 2;
+  width: max-content;
+}
+
+.checkboxgroup label {
+  display: block;
+}
+
+select, input, textarea {
+  padding: 2px;
+  border: 1px solid #888;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.photogroup {
+  display: flex;
+  justify-content: flex-start;
+  gap:20px;
+}
+
+.photo {
+  width: 100px;
+  height:100px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+.nestedcheckbox { /*adds space between box and label when checkbox input is nested inside a label */
+  margin-right: 5px;
+}
+
+.danger {
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.danger label {
+  display: block;
+  width: max-content;
+  color: red;
+}

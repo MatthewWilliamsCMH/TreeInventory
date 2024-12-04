@@ -66,8 +66,6 @@ const typeDefs = gql `
   type Tree {
     id: ID!
     lastVisited: String!
-    nonNative: Boolean
-    invasive: Boolean
     species: Species
     variety: String
     garden: String!
@@ -82,6 +80,8 @@ const typeDefs = gql `
     careHistory: String
     notes: String
     photos: String
+    nonNative: Boolean
+    invasive: Boolean
     hidden: Boolean
   }
 
@@ -93,8 +93,6 @@ const typeDefs = gql `
   type Mutation {
     addTree (
       lastVisited: String!
-      nonNative: Boolean
-      invasive: Boolean
       species: SpeciesInput
       variety: String
       garden: String!
@@ -109,13 +107,13 @@ const typeDefs = gql `
       careHistory: String
       notes: String
       photos: String
+      nonNative: Boolean
+      invasive: Boolean
     ): Tree
 
     updateTree (
       id: ID!
       lastVisited: String!
-      nonNative: Boolean
-      invasive: Boolean
       species: SpeciesInput
       variety: String
       garden: String!
@@ -130,6 +128,9 @@ const typeDefs = gql `
       careHistory: String
       notes: String
       photos: String
+      nonNative: Boolean
+      invasive: Boolean
+      hidden: Boolean
     ): Tree
   }
 `;
