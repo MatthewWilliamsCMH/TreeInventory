@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
+import Footer from "../footer/footer";
 
 //set up an object with values from selectedTree and set their values to ""
 const SiteDataForm = () => {
@@ -268,6 +269,8 @@ const SiteDataForm = () => {
           ))}
         </div>
       </div>
+      {/* <Footer updatedTree = {updatedTree} setUpdatedTree = {setUpdatedTree} /> */}
+      <Footer />
     </form>
   );
 };

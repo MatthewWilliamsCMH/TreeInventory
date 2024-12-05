@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import { formatDateForDisplay } from "../../utils/dateHandler";
+import Footer from "../footer/footer";
 
 //set up an object with values from selectedTree and set their values to ""
 const CareDataForm = () => {
@@ -233,6 +234,8 @@ const CareDataForm = () => {
           onChange = {(event) => handleFieldChange("careHistory", event)} 
         />
       </div>
+      {/* <Footer updatedTree = {updatedTree} setUpdatedTree = {setUpdatedTree} /> */}
+      <Footer />
     </form>
   );
 };

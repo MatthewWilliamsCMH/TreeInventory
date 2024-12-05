@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
+import Footer from "../footer/footer";
 
 //set up an object with values from selectedTree and set their values to ""
 const PhysicalDataForm = () => {
@@ -321,6 +322,7 @@ const PhysicalDataForm = () => {
         </div>
       </div>
       {/* <Footer updatedTree = {updatedTree} setUpdatedTree = {setUpdatedTree} /> */}
+      <Footer />
     </form>
   );
 };
@@ -357,7 +359,7 @@ const commonToScientificList = {
   "Eastern cottonwood": "Populus deltoides",
   "Eastern hemlock": "Tsuga canadensis",
   "Eastern red cedar": "Juniperus virginiana",
-  "Eastern redbud": "Cercis canadensis", //nonnative
+  "Eastern redbud": "Cercis canadensis",
   "Eastern white pine": "Pinus strobus",
   "Ginkgo": "Gingko biloba", //nonnative
   "Green ash": "Fraxinus pennsylvanica",
