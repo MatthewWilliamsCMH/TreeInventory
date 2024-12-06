@@ -1,11 +1,19 @@
 import React from "react";
 import "./Footer.css";
 
-function Footer() {
+const Footer = () => {
+  const handleOKButton = () => {
+    //mutation to write data to db
+  }
+
   return (
-      <footer id="footer">
-        <button id="ok">OK</button>
-        <button id="cancel">Cancel</button>
+      <footer>
+        <button type="submit">
+          OK
+        </button>
+        <button type="cancel">
+          Cancel
+        </button>
     </footer>
   );
 };
