@@ -24,27 +24,28 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <TreeMap />
+        element: <TreeMap />  // Map is a top-level route
       },
       {
-        path: "physicaldata",
+        path: "/physicaldata",
         element: <PhysicalDataForm />
       },
       {
-        path: "sitedata",
+        path: "/sitedata",
         element: <SiteDataForm />
       },
       {
-        path: "caredata",
+        path: "/caredata",
         element: <CareDataForm />
       },
       {
-        path: "inventory",
+        path: "/inventory",
         element: <TreeInventory />
       }
     ]
   }
 ]);
+
 
 //wraps app with apollo provider
 createRoot(document.getElementById("root")).render(

@@ -4,6 +4,7 @@ import { useQuery, useMutation, gql } from "@apollo/client";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import PhysicalDataForm from "../PhysicalData/PhysicalDataForm";
+import SiteDataForm from "../SiteData/SiteDataForm";
 
 //I"ll need to add a query, GET_HIDDEN_TREES for hidden trees
 
@@ -285,17 +286,22 @@ const TreeMap = () => {
   const map = useRef(null); //use ref to store Leaflet map instance
 
   useEffect(() => {
+console.log("1")
     if (mapRef.current && !map.current) {
-          map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
+      map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
+console.log("2")
     }
 
+console.log("3")
     if (map.current && dataGetAll && dataGetAll.getTrees) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
         }
-      });
+      },
+console.log("4")
+      );
 
       dataGetAll.getTrees.forEach((tree) => {
         const treeID = tree.id.toString();
@@ -364,13 +370,7 @@ const TreeMap = () => {
   }
   
   return (
-    <>
-      {selectedTree ? (
-        <PhysicalDataForm />
-      ) : (
-        <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
-      )}
-    </>
+    <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
   );
 };
 
