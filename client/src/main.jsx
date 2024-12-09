@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <TreeMap />  // Map is a top-level route
+        element: <TreeMap /> 
       },
       {
         path: "/physicaldata",
@@ -46,8 +46,6 @@ const router = createBrowserRouter([
   }
 ]);
 
-
-//wraps app with apollo provider
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ApolloProvider client={client}>

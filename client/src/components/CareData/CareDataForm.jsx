@@ -1,160 +1,114 @@
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
-import { formatDateForDisplay } from "../../utils/dateHandler";
 import Footer from "../footer/footer";
+import { formatDateForDisplay } from "../../utils/dateHandler";
 
 //set up an object with values from selectedTree and set their values to ""
 const CareDataForm = () => {
-  const { selectedTree, updatedTree, setUpdatedTree, formStyle } = useOutletContext();
-  
+  const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
+
   const [formValues, setFormValues] = useState(() => {
     return updatedTree || {
       species: {
-        commonName: selectedTree?.species?.commonName || "",
-        scientificName: selectedTree?.species?.scientificName || ""
+        commonName: updatedTree?.species?.commonName || "",
+        scientificName: updatedTree?.species?.scientificName || ""
       },
-      variety: selectedTree?.variety || "",
-      dbh: selectedTree?.dbh || "",
-      photos: selectedTree?.photos || null,
-      notes: selectedTree?.notes || "",
-      nonnative: selectedTree?.nonnative || false,
-      invasive: selectedTree?.invasive || false,
-      hidden: selectedTree?.hidden || false,
+      variety: updatedTree?.variety || "",
+      dbh: updatedTree?.dbh || "",
+      photos: updatedTree?.photos || null,
+      notes: updatedTree?.notes || "",
+      nonnative: updatedTree?.nonnative || false,
+      invasive: updatedTree?.invasive || false,
+      hidden: updatedTree?.hidden || false,
       location: {
-        northing: selectedTree?.location?.northing || "",
-        easting: selectedTree?.location?.easting || ""
+        northing: updatedTree?.location?.northing || "",
+        easting: updatedTree?.location?.easting || ""
       },
-      garden: selectedTree?.garden || "",
-      siteData: {
-        slope: selectedTree?.sitedata?.slope || false,
-        overheadLines: selectedTree?.sitedata?.overhadeLines || false,
-        treeCluster: selectedTree?.sitedata?.treeCluster || false,
-        proximateStructure: selectedTree?.sitedata?.proximateStructure || false,
-        proximateFence: selectedTree?.sitedata?.proximateFence || false
+      garden: updatedTree?.garden || "",
+      siteInfo: {
+        slope: updatedTree?.siteInfo?.slope || false,
+        overheadLines: updatedTree?.siteInfo?.overhadeLines || false,
+        treeCluster: updatedTree?.siteInfo?.treeCluster || false,
+        proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
+        proximateFence: updatedTree?.siteInfo?.proximateFence || false
       },
-      nonnative: selectedTree?.nonnative || false,
-      invasive: selectedTree?.invasive || false,
-      hidden: selectedTree?.hidden || false,
-      lastVisited: selectedTree?.lastVisited || "",
-      installedDate: selectedTree?.installedDate || "",
-      installedBy: selectedTree?.installedBy || "",
-      felledDate: selectedTree?.felledDate || "",
-      felledBy: selectedTree?.felledBy || "",
+      // nonnative: updatedTree?.nonnative || false,
+      // invasive: updatedTree?.invasive || false,
+      // hidden: updatedTree?.hidden || false,
+      lastVisited: updatedTree?.lastVisited || "",
+      installedDate: updatedTree?.installedDate || "",
+      installedBy: updatedTree?.installedBy || "",
+      felledDate: updatedTree?.felledDate || "",
+      felledBy: updatedTree?.felledBy || "",
       maintenanceNeeds: {
-        install: selectedTree?.maintenanceNeeds?.install || false,
-        raiseCrown: selectedTree?.maintenanceNeeds?.raiseCrown || false,
-        routinePrune: selectedTree?.maintenanceNeeds?.routinePrune || false,
-        trainingPrune: selectedTree?.maintenanceNeeds?.trainingPrune || false,
-        priorityPrune: selectedTree?.maintenanceNeeds?.priorityPrune || false,
-        pestTreatment: selectedTree?.maintenanceNeeds?.pestTreatment || false,
-        installGrate: selectedTree?.maintenanceNeeds?.installGrate || false,
-        removeGrate: selectedTree?.maintenanceNeeds?.removeGrate || false,
-        fell: selectedTree?.maintenanceNeeds?.fell || false,
-        removeStump: selectedTree?.maintenanceNeeds?.removeStump || false
+        install: updatedTree?.maintenanceNeeds?.install || false,
+        raiseCrown: updatedTree?.maintenanceNeeds?.raiseCrown || false,
+        routinePrune: updatedTree?.maintenanceNeeds?.routinePrune || false,
+        trainingPrune: updatedTree?.maintenanceNeeds?.trainingPrune || false,
+        priorityPrune: updatedTree?.maintenanceNeeds?.priorityPrune || false,
+        pestTreatment: updatedTree?.maintenanceNeeds?.pestTreatment || false,
+        installGrate: updatedTree?.maintenanceNeeds?.installGrate || false,
+        removeGrate: updatedTree?.maintenanceNeeds?.removeGrate || false,
+        fell: updatedTree?.maintenanceNeeds?.fell || false,
+        removeStump: updatedTree?.maintenanceNeeds?.removeStump || false
       }
     };
   });
 
-  //sync form state with selectedTree when it changes
+  //sync form state with updatedTree when it changes
   useEffect(() => {
-    if (!updatedTree && selectedTree) {
+    if (updatedTree) {
       setFormValues({
         species: {
-          commonName: selectedTree.species?.commonName || "",
-          scientificName: selectedTree.species?.scientificName || ""
+          commonName: updatedTree.species?.commonName || "",
+          scientificName: updatedTree.species?.scientificName || ""
         },
-        variety: selectedTree.variety || "",
-        dbh: selectedTree.dbh || "",
-        photos: selectedTree.photos || "",
-        notes: selectedTree.notes || "",
-        nonnative: selectedTree.nonnative || false,
-        invasive: selectedTree.invasive || false,
-        hidden: selectedTree.hidden || false,
+        variety: updatedTree.variety || "",
+        dbh: updatedTree.dbh || "",
+        photos: updatedTree.photos || "",
+        notes: updatedTree.notes || "",
+        nonnative: updatedTree.nonnative || false,
+        invasive: updatedTree.invasive || false,
+        hidden: updatedTree.hidden || false,
                 location: {
-          northing: selectedTree.location?.northing || "",
-          easting: selectedTree.location?.easting || ""
+          northing: updatedTree.location?.northing || "",
+          easting: updatedTree.location?.easting || ""
         },
-        garden: selectedTree.garden || "",
-        siteData: {
-          slope: selectedTree?.siteData?.slope || false,
-          overheadLines: selectedTree?.siteData?.overheadLines || false,
-          treeCluster: selectedTree?.siteData?.treeCluster || false,
-          proximateStructure: selectedTree?.siteData?.proximateStructure || false,
-          proximateFence: selectedTree?.siteData?.proximateFence || false
+        garden: updatedTree.garden || "",
+        siteInfo: {
+          slope: updatedTree?.siteInfo?.slope || false,
+          overheadLines: updatedTree?.siteInfo?.overheadLines || false,
+          treeCluster: updatedTree?.siteInfo?.treeCluster || false,
+          proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
+          proximateFence: updatedTree?.siteInfo?.proximateFence || false
         },
-        nonnative: selectedTree.nonnative || false,
-        invasive: selectedTree.invasive || false,
-        hidden: selectedTree.hidden || false,
-        lastVisited: selectedTree.lastVisited || "",
-        installedDate: selectedTree.installedDate || "",
-        installedBy: selectedTree.installedBy || "",
-        felledDate: selectedTree.felledDate || "",
-        felledBy: selectedTree.felledBy || "",
+        // nonnative: updatedTree.nonnative || false,
+        // invasive: updatedTree.invasive || false,
+        // hidden: updatedTree.hidden || false,
+        lastVisited: updatedTree.lastVisited || "",
+        installedDate: updatedTree.installedDate || "",
+        installedBy: updatedTree.installedBy || "",
+        felledDate: updatedTree.felledDate || "",
+        felledBy: updatedTree.felledBy || "",
         maintenanceNeeds: {
-          install: selectedTree.maintenanceNeeds?.install || false,
-          raiseCrown: selectedTree.maintenanceNeeds?.raiseCrown || false,
-          routinePrune: selectedTree.maintenanceNeeds?.routinePrune || false,
-          trainingPrune: selectedTree.maintenanceNeeds?.trainingPrune || false,
-          priorityPrune: selectedTree.maintenanceNeeds?.priorityPrune || false,
-          pestTreatment: selectedTree.maintenanceNeeds?.pestTreatment || false,
-          installGrate: selectedTree.maintenanceNeeds?.installGrate || false,
-          removeGrate: selectedTree.maintenanceNeeds?.removeGrate || false,
-          fell: selectedTree.maintenanceNeeds?.fell || false,
-          removeStump: selectedTree.maintenanceNeeds?.removeStump || false
+          install: updatedTree.maintenanceNeeds?.install || false,
+          raiseCrown: updatedTree.maintenanceNeeds?.raiseCrown || false,
+          routinePrune: updatedTree.maintenanceNeeds?.routinePrune || false,
+          trainingPrune: updatedTree.maintenanceNeeds?.trainingPrune || false,
+          priorityPrune: updatedTree.maintenanceNeeds?.priorityPrune || false,
+          pestTreatment: updatedTree.maintenanceNeeds?.pestTreatment || false,
+          installGrate: updatedTree.maintenanceNeeds?.installGrate || false,
+          removeGrate: updatedTree.maintenanceNeeds?.removeGrate || false,
+          fell: updatedTree.maintenanceNeeds?.fell || false,
+          removeStump: updatedTree.maintenanceNeeds?.removeStump || false
         }
-      });
+      })
     }
-  }, [selectedTree, updatedTree]);
+  }, [updatedTree]);
 
- useEffect(() => {
-    setUpdatedTree(formValues);
-  }, [formValues, setUpdatedTree]);
-
-//-------------------- handlers --------------------
-  // generic handler for controls
-  const handleFieldChange = (field, value) => {
-    setFormValues(prevValues => {
-      if (field.includes(".")) {
-        const [parentField, childField] = field.split(".");
-        return {
-          ...prevValues,
-          [parentField]: {
-            ...prevValues[parentField],
-            [childField]: value.target ? value.target.value : value
-          }
-        };
-      }
-      
-      //handle grouped checkboxes
-      if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
-        const inputType = value.target ? value.target.type : null;
-        
-        if (inputType === "checkbox") {
-          return {
-            ...prevValues,
-            [field]: {
-              ...prevValues[field],
-              [value.target.name]: value.target.checked
-            }
-          };
-        }
-      }
-
-      //handle ungrouped checkboxes
-      if (value.target && value.target.type === "checkbox") {
-        return {
-          ...prevValues,
-          [field]: value.target.checked
-        };
-      }
-      
-      //handle standard inputs, selects, and direct value assignments
-      return {
-        ...prevValues,
-        [field]: value.target ? value.target.value : value
-      };
-    });
-  };
+//  useEffect(() => {
+//     setUpdatedTree(formValues);
+//   }, [formValues, setUpdatedTree]);
 
   //-------------------- render component--------------------//
   return (

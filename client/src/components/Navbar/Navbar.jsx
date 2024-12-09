@@ -21,7 +21,7 @@ const Navbar = () => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    if ((selectedValue === "map" & "location.pathname" !== "") ||
+    if ((selectedValue === "map" & "location.pathname" !== "/") ||
       (selectedValue === "physicalData" & "location.pathname" !== "/physicaldata") ||
       (selectedValue === "siteData" & "location.pathname" !== "/siteData") ||
       (selectedValue === "careData" & "location.pathname" !== "/caredata") ||

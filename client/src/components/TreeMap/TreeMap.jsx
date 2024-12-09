@@ -4,7 +4,6 @@ import { useQuery, useMutation, gql } from "@apollo/client";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import PhysicalDataForm from "../PhysicalData/PhysicalDataForm";
-import SiteDataForm from "../SiteData/SiteDataForm";
 
 //I"ll need to add a query, GET_HIDDEN_TREES for hidden trees
 
@@ -13,7 +12,7 @@ const GET_TREES = gql`
     getTrees {
       id
       lastVisited
-      nonNative
+      nonnative
       invasive
       species {
         commonName
@@ -61,8 +60,8 @@ const GET_TREE = gql`
     getTree {
       id
       lastVisited
-      nonNative
-      Invasive
+      nonnative
+      invasive
       species {
         commonName
         scientificName
@@ -107,7 +106,7 @@ const GET_TREE = gql`
 const ADD_TREE = gql`
   mutation addTree (
     $lastVisited: String!
-    $nonNative: Boolean
+    $nonnative: Boolean
     $invasive: Boolean
     $species: SpeciesInput
     $variety: String
@@ -126,7 +125,7 @@ const ADD_TREE = gql`
   ) {
     addTree(
       lastVisited: $lastVisited
-      nonNative: $nonNative
+      nonnative: $nonnative
       invasive: $invasive
       species: $species
       variety: $variety
@@ -145,7 +144,7 @@ const ADD_TREE = gql`
     ) {
       id
       lastVisited
-      nonNative
+      nonnative
       invasive
       species {
         commonName
@@ -192,7 +191,7 @@ const UPDATE_TREE = gql`
   mutation updateTree(
     $id: ID!
     $lastVisited: String
-    $nonNative: Boolean
+    $nonnative: Boolean
     $invasive: Boolean
     $species: SpeciesInput
     $variety: String
@@ -212,7 +211,7 @@ const UPDATE_TREE = gql`
     updateTree(
       id: $id
       lastVisited: $lastVisited
-      nonNative: $nonNative
+      nonnative: $nonnative
       invasive: $invasive
       species: $species
       variety: $variety
@@ -231,7 +230,7 @@ const UPDATE_TREE = gql`
     ) {
       id
       lastVisited
-      nonNative
+      nonnative
       invasive
       species {
         commonName
@@ -277,8 +276,11 @@ const UPDATE_TREE = gql`
 const TreeMap = () => {
   const navigate = useNavigate();
   const { selectedTree, setSelectedTree } = useOutletContext();
+  const { updatedTree, setUpdatedTree } = useOutletContext();
+
   const { loading: loadingGetAll, error: errorGetAll, data: dataGetAll } = useQuery(GET_TREES); //fetch all trees
   const [trees, setTrees] = useState(dataGetAll?.getTrees || []); //establish state that will store the list of trees; set to the list or to an empty array
+  
   const [addTree, { loading: loadingAddOne, error: errorAddOne}] = useMutation(ADD_TREE); //add one tree
   const [updateTree, { loading: loadingUpdateOne, error: errorUpdateOne}] = useMutation(UPDATE_TREE)//update one tree
   
@@ -286,46 +288,43 @@ const TreeMap = () => {
   const map = useRef(null); //use ref to store Leaflet map instance
 
   useEffect(() => {
-console.log("1")
     if (mapRef.current && !map.current) {
       map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
-console.log("2")
     }
 
-console.log("3")
     if (map.current && dataGetAll && dataGetAll.getTrees) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
         }
       },
-console.log("4")
-      );
+    );
 
       dataGetAll.getTrees.forEach((tree) => {
-        const treeID = tree.id.toString();
-        const { northing, easting } = tree.location;
-        const popupContent = `
-          <b>${tree.species?.commonName}</b><br>
-          <i>${tree.species?.scientificName}</i><br>
-          Id: ${treeID}
-        `;
-        const marker = L.marker([northing, easting])
-          .bindPopup(popupContent)
-          .addTo(map.current);
-          
-          marker.on("popupopen", (event) => {
-            const popup = event.popup;
-            const popupElement = popup.getElement();
-            popupElement.addEventListener("click", () => {
-              setSelectedTree(tree);
-              navigate("/physicaldata");
-              map.current.closePopup(popup);
-            });
+      const treeID = tree.id.toString();
+      const { northing, easting } = tree.location;
+      const popupContent = `
+        <b>${tree.species?.commonName}</b><br>
+        <i>${tree.species?.scientificName}</i><br>
+        Id: ${treeID}
+      `;
+      const marker = L.marker([northing, easting])
+        .bindPopup(popupContent)
+        .addTo(map.current);
+        
+        marker.on("popupopen", (event) => {
+          const popup = event.popup;
+          const popupElement = popup.getElement();
+          popupElement.addEventListener("click", () => {
+            setSelectedTree(tree); //this will persist so that it can be recalled if the user cancels updates
+            setUpdatedTree(tree); //this will be updated when user changes data on the form
+            navigate("/physicaldata");
+            map.current.closePopup(popup);
           });
         });
-      }
+      });
+    }
 
     // Cleanup function
     return () => {
@@ -368,10 +367,15 @@ console.log("4")
   if (errorGetAll || errorAddOne || errorUpdateOne) {
     return <p>Error: {errorGetAll?.message || errorAddOne?.message || errorUpdateOne?.message}</p>;
   }
-  
+
   return (
-    <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
+    // <>
+    //   {updatedTree ? (
+    //     <PhysicalDataForm />
+    //   ) : (
+        <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
+  //     )}
+  //   </>
   );
 };
-
 export default TreeMap;

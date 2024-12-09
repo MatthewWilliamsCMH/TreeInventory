@@ -1,5 +1,5 @@
 export function formatDateForDisplay(dateStr) {
-  if (dateStr === "") return "";
+  if (dateStr === "" || !dateStr) return "";
 
   if (dateStr.startsWith("< ") || dateStr.toLowerCase().startsWith("before")) { //e.g. "< 2018" or "Before 2018" or "before 2018"
     const year = dateStr.split(" ")[1];
