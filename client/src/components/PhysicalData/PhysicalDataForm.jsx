@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import Footer from "../footer/footer";
 
-//set up an object with values from updatedTree and set their values to ""
+//set up an object with values from updatedTree or set the values to ""
 const PhysicalDataForm = () => {
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
   
   const [formValues, setFormValues] = useState(() => {
+
     return updatedTree || {
       species: {
         commonName: updatedTree?.species?.commonName || "",
@@ -105,102 +106,175 @@ const PhysicalDataForm = () => {
     }
   }, [updatedTree]);
 
-//  useEffect(() => {
-//     setUpdatedTree(formValues);
-//   }, [formValues, setUpdatedTree]);
-
 //-------------------- handlers --------------------
-  // generic handler for controls
-  const handleFieldChange = (field, value) => {
-    setFormValues(prevValues => {
-      let newValues;
+// generic handler for controls
+const getEffectiveValue = (val) => {
+  if (val && val.target) {
+    const target = val.target;
+    switch (target.type) {
+      case 'checkbox':
+        return target.checked;
+      case 'select-multiple':
+        return Array.from(target.selectedOptions).map(option => option.value);
+      default:
+        return target.value;
+    }
+  }
+  return val;
+};
 
-      if (field.includes(".")) {
-        const [parentField, childField] = field.split(".");
-        newValues = {
-          ...prevValues,
-          [parentField]: {
-            ...prevValues[parentField],
-            [childField]: value.target ? value.target.value : value
-          }
-        };
-      }
-      //handle grouped checkboxes
-      else if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
-        const inputType = value.target ? value.target.type : null;
-        
-        if (inputType === "checkbox") {
-          newValues = {
-            ...prevValues,
-            [field]: {
-              ...prevValues[field],
-              [value.target.name]: value.target.checked
+const handleFieldChange = (field, value) => {
+  setFormValues(prevValues => {
+    const effectiveValue = getEffectiveValue(value);
+    let updatedValues = { ...prevValues };
+
+    // Special handling for species names
+      if (field.startsWith('species.') && Object.keys(commonToScientificList).length > 0) {
+        if (field === 'species.commonName') {
+          const scientificFromCommon = commonToScientificList[effectiveValue];
+          updatedValues = {
+            ...updatedValues,
+            species: {
+              ...updatedValues.species,
+              commonName: effectiveValue,
+              scientificName: scientificFromCommon || ""
+            }
+          };
+        } else if (field === 'species.scientificName') {
+          const commonFromScientific = Object.keys(commonToScientificList)
+            .find(common => commonToScientificList[common] === effectiveValue);
+          updatedValues = {
+            ...updatedValues,
+            species: {
+              ...updatedValues.species,
+              scientificName: effectiveValue,
+              commonName: commonFromScientific || ""
             }
           };
         }
       }
-      //handle ungrouped checkboxes
-      else if (value.target && value.target.type === "checkbox") {
-        newValues = {
-          ...prevValues,
-          [field]: value.target.checked
+
+    // Handle nested fields (like species.commonName)
+    else if (field.includes('.')) {
+      const [parentField, childField] = field.split('.');
+      updatedValues = {
+        ...updatedValues,
+        [parentField]: {
+          ...updatedValues[parentField],
+          [childField]: effectiveValue
+        }
+      };
+    }
+
+    // Handle grouped checkboxes
+    else if (typeof prevValues[field] === 'object' && prevValues[field] !== null) {
+      if (value.target && value.target.type === 'checkbox') {
+        updatedValues = {
+          ...updatedValues,
+          [field]: {
+            ...updatedValues[field],
+            [value.target.name]: value.target.checked
+          }
         };
       }
-      //handle standard inputs, selects, and direct value assignments
-      else {
-        newValues = {
-          ...prevValues,
-          [field]: value.target ? value.target.value : value
+    }
+    
+    // Standard field update
+    else {
+      updatedValues = {
+        ...updatedValues,
+        [field]: effectiveValue
+      };
+    }
+
+    return updatedValues;
+  });
+
+  // Update updatedTree
+  setUpdatedTree(prevTree => {
+    const effectiveValue = getEffectiveValue(value);
+
+    // Handle species name updates
+    if (field.startsWith('species.') && Object.keys(commonToScientificList).length > 0) {
+      if (field === 'species.commonName') {
+        const scientificFromCommon = commonToScientificList[effectiveValue];
+        return {
+          ...prevTree,
+          species: {
+            ...prevTree.species,
+            commonName: effectiveValue,
+            scientificName: scientificFromCommon || ""
+          }
         };
       }
 
-      // Update updatedTree
-      // setupdatedTree(prevTree => ({
-      //   ...prevTree,
-      //   ...(field.includes(".") 
-      //     ? { [field.split(".")[0]]: newValues[field.split(".")[0]] } 
-      //     : { [field]: newValues[field] }
-      //   )
-      // }));
-      // setUpdatedTree(newValues)
+      if (field === 'species.scientificName') {
+        const commonFromScientific = Object.keys(commonToScientificList)
+          .find(common => commonToScientificList[common] === effectiveValue);
+        return {
+          ...prevTree,
+          species: {
+            ...prevTree.species,
+            scientificName: effectiveValue,
+            commonName: commonFromScientific || ""
+          }
+        };
+      }
+    }
 
-      return newValues;
-    });
-  };
- 
+    // Handle nested updates
+    if (field.includes('.')) {
+      const [parentField, childField] = field.split('.');
+      return {
+        ...prevTree,
+        [parentField]: {
+          ...prevTree[parentField],
+          [childField]: effectiveValue
+        }
+      };
+    }
+
+    // Standard field update
+    return {
+      ...prevTree,
+      [field]: effectiveValue
+    };
+  });
+};
+
   //create species list of commonName and scientificName controls
   const speciesOptions = Object.keys(commonToScientificList).map(common => ({
     common,
     scientific: commonToScientificList[common]
   }));
 
-  const handleCommonChange = (event) => {
-    const selectedCommonName = event.target.value;
-    const scientificFromCommon = commonToScientificList[selectedCommonName];
+  // const handleCommonChange = (event) => {
+  //   const selectedCommonName = event.target.value;
+  //   const scientificFromCommon = commonToScientificList[selectedCommonName];
 
-    setFormValues(prevValues => ({
-      ...prevValues,
-      species: {
-        commonName: selectedCommonName,
-        scientificName: scientificFromCommon || "",
-      },
-    }));
-  };
+  //   setFormValues(prevValues => ({
+  //     ...prevValues,
+  //     species: {
+  //       commonName: selectedCommonName,
+  //       scientificName: scientificFromCommon || "",
+  //     },
+  //   }));
+  // };
 
-  const handleScientificChange = (event) => {
-    const selectedScientificName = event.target.value;
-    const commonFromScientific = Object.keys(commonToScientificList).find(
-      (common) => commonToScientificList[common] === selectedScientificName
-    );
+  // const handleScientificChange = (event) => {
+  //   const selectedScientificName = event.target.value;
+  //   const commonFromScientific = Object.keys(commonToScientificList).find(
+  //     (common) => commonToScientificList[common] === selectedScientificName
+  //   );
 
-    setFormValues(prevValues => ({
-      ...prevValues,
-      species: {
-        commonName: commonFromScientific || "",
-        scientificName: selectedScientificName,
-      }
-    }));
-  };
+  //   setFormValues(prevValues => ({
+  //     ...prevValues,
+  //     species: {
+  //       commonName: commonFromScientific || "",
+  //       scientificName: selectedScientificName,
+  //     }
+  //   }));
+  // };
 
   // // Handle the form submission
   // const handleSubmit = (event) => {
@@ -219,7 +293,7 @@ const PhysicalDataForm = () => {
           <select
             id = "commonName"
             value = {formValues.species.commonName}
-            onChange = {handleCommonChange}
+            onChange = {(event) => handleFieldChange("species.commonName", event)}
           >
             {speciesOptions.map((option) => (
               <option key = {option.common} value = {option.common}>
@@ -229,11 +303,11 @@ const PhysicalDataForm = () => {
           </select>
         </div>
         <div className = "control">
-          <label htmlFor = "speciesName">Scientific name:</label>
+          <label htmlFor = "scientificName">Scientific name:</label>
           <select
             id = "scientificName"
             value = {formValues.species.scientificName}
-            onChange = {handleScientificChange}
+            onChange = {(event) => handleFieldChange("species.scientificName", event)}
           >
             {speciesOptions.map((option) => (
               <option key = {option.scientific} value = {option.scientific}>

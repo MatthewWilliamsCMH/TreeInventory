@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import Footer from "../footer/footer";
 
-//set up an object with values from selectedTree and set their values to ""
-const siteDataForm = () => {
+//set up an object with values from updatedTree or set the values to ""
+const SiteDataForm = () => {
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
   
   const [formValues, setFormValues] = useState(() => {
+
     return updatedTree || {
       species: {
         commonName: updatedTree?.species?.commonName || "",
@@ -31,9 +32,6 @@ const siteDataForm = () => {
         proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
         proximateFence: updatedTree?.siteInfo?.proximateFence || false
       },
-      // nonnative: updatedTree?.nonnative || false,
-      // invasive: updatedTree?.invasive || false,
-      // hidden: updatedTree?.hidden || false,
       lastVisited: updatedTree?.lastVisited || "",
       installedDate: updatedTree?.installedDate || "",
       installedBy: updatedTree?.installedBy || "",
@@ -81,9 +79,6 @@ const siteDataForm = () => {
           proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
           proximateFence: updatedTree?.siteInfo?.proximateFence || false
         },
-        // nonnative: updatedTree.nonnative || false,
-        // invasive: updatedTree.invasive || false,
-        // hidden: updatedTree.hidden || false,
         lastVisited: updatedTree.lastVisited || "",
         installedDate: updatedTree.installedDate || "",
         installedBy: updatedTree.installedBy || "",
@@ -105,114 +100,91 @@ const siteDataForm = () => {
     }
   }, [updatedTree]);
 
-//  useEffect(() => {
-//     setUpdatedTree(formValues);
-//   }, [formValues, setUpdatedTree]);
-
 //-------------------- handlers --------------------
-  // generic handler for controls
-  const handleFieldChange = (field, value) => {
-    setFormValues(prevValues => {
-      let newValues;
+//-------------------- handlers --------------------
+// generic handler for controls
+const getEffectiveValue = (val) => {
+  if (val && val.target) {
+    const target = val.target;
+    switch (target.type) {
+      case 'checkbox':
+        return target.checked;
+      case 'select-multiple':
+        return Array.from(target.selectedOptions).map(option => option.value);
+      default:
+        return target.value;
+    }
+  }
+  return val;
+};
 
-      if (field.includes(".")) {
-        const [parentField, childField] = field.split(".");
-        newValues = {
-          ...prevValues,
-          [parentField]: {
-            ...prevValues[parentField],
-            [childField]: value.target ? value.target.value : value
+const handleFieldChange = (field, value) => {
+  setFormValues(prevValues => {
+    const effectiveValue = getEffectiveValue(value);
+    let updatedValues = { ...prevValues };
+
+    // Handle nested fields (like species.commonName)
+    if (field.includes('.')) {
+    // else if (field.includes('.')) {
+      const [parentField, childField] = field.split('.');
+      updatedValues = {
+        ...updatedValues,
+        [parentField]: {
+          ...updatedValues[parentField],
+          [childField]: effectiveValue
+        }
+      };
+    }
+
+    // Handle grouped checkboxes
+    else if (typeof prevValues[field] === 'object' && prevValues[field] !== null) {
+      if (value.target && value.target.type === 'checkbox') {
+        updatedValues = {
+          ...updatedValues,
+          [field]: {
+            ...updatedValues[field],
+            [value.target.name]: value.target.checked
           }
         };
       }
-      //handle grouped checkboxes
-      else if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
-        const inputType = value.target ? value.target.type : null;
-        
-        if (inputType === "checkbox") {
-          newValues = {
-            ...prevValues,
-            [field]: {
-              ...prevValues[field],
-              [value.target.name]: value.target.checked
-            }
-          };
+    }
+    
+    // Standard field update
+    else {
+      updatedValues = {
+        ...updatedValues,
+        [field]: effectiveValue
+      };
+    }
+    return updatedValues;
+  });
+
+  // Update updatedTree
+  setUpdatedTree(prevTree => {
+    const effectiveValue = getEffectiveValue(value);
+
+    // Handle nested updates
+    if (field.includes('.')) {
+      const [parentField, childField] = field.split('.');
+      return {
+        ...prevTree,
+        [parentField]: {
+          ...prevTree[parentField],
+          [childField]: effectiveValue
         }
-      }
-      //handle ungrouped checkboxes
-      else if (value.target && value.target.type === "checkbox") {
-        newValues = {
-          ...prevValues,
-          [field]: value.target.checked
-        };
-      }
-      //handle standard inputs, selects, and direct value assignments
-      else {
-        newValues = {
-          ...prevValues,
-          [field]: value.target ? value.target.value : value
-        };
-      }
+      };
+    }
 
-      // Update selectedTree
-      // setSelectedTree(prevTree => ({
-      //   ...prevTree,
-      //   ...(field.includes(".") 
-      //     ? { [field.split(".")[0]]: newValues[field.split(".")[0]] } 
-      //     : { [field]: newValues[field] }
-      //   )
-      // }));
-      // setUpdatedTree(newValues)
+    // Standard field update
+    return {
+      ...prevTree,
+      [field]: effectiveValue
+    };
+  });
+};
 
-      return newValues;
-    });
-  };
-  // // generic handler for controls
-  // const handleFieldChange = (field, value) => {
-  //   setFormValues(prevValues => {
-  //     if (field.includes(".")) {
-  //       const [parentField, childField] = field.split(".");
-  //       return {
-  //         ...prevValues,
-  //         [parentField]: {
-  //           ...prevValues[parentField],
-  //           [childField]: value.target ? value.target.value : value
-  //         }
-  //       };
-  //     }
-      
-  //     //handle grouped checkboxes
-  //     if (typeof prevValues[field] === "object" && prevValues[field] !== null) {
-  //       const inputType = value.target ? value.target.type : null;
-        
-  //       if (inputType === "checkbox") {
-  //         return {
-  //           ...prevValues,
-  //           [field]: {
-  //             ...prevValues[field],
-  //             [value.target.name]: value.target.checked
-  //           }
-  //         };
-  //       }
-  //     }
 
-  //     //handle ungrouped checkboxes
-  //     if (value.target && value.target.type === "checkbox") {
-  //       return {
-  //         ...prevValues,
-  //         [field]: value.target.checked
-  //       };
-  //     }
-      
-  //     //handle standard inputs, selects, and direct value assignments
-  //     return {
-  //       ...prevValues,
-  //       [field]: value.target ? value.target.value : value
-  //     };
-  //   });
-  // };
-
-  //-------------------- render component--------------------//
+//-------------------- render component--------------------//
   return (
     <form style={formStyle}>
       <div className = "controlgroup">
@@ -269,7 +241,6 @@ const siteDataForm = () => {
           ))}
         </div>
       </div>
-      {/* <Footer updatedTree = {updatedTree} setUpdatedTree = {setUpdatedTree} /> */}
       <Footer />
     </form>
   );
@@ -303,4 +274,4 @@ const siteInfoList = [
   "ProximateFence"
 ];
 
-export default siteDataForm;
+export default SiteDataForm;
