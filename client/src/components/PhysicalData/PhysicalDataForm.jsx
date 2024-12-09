@@ -32,9 +32,6 @@ const PhysicalDataForm = () => {
         proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
         proximateFence: updatedTree?.siteInfo?.proximateFence || false
       },
-      // nonnative: updatedTree?.nonnative || false,
-      // invasive: updatedTree?.invasive || false,
-      // hidden: updatedTree?.hidden || false,
       lastVisited: updatedTree?.lastVisited || "",
       installedDate: updatedTree?.installedDate || "",
       installedBy: updatedTree?.installedBy || "",
@@ -82,9 +79,6 @@ const PhysicalDataForm = () => {
           proximateStructure: updatedTree?.siteInfo?.proximateStructure || false,
           proximateFence: updatedTree?.siteInfo?.proximateFence || false
         },
-        // nonnative: updatedTree.nonnative || false,
-        // invasive: updatedTree.invasive || false,
-        // hidden: updatedTree.hidden || false,
         lastVisited: updatedTree.lastVisited || "",
         installedDate: updatedTree.installedDate || "",
         installedBy: updatedTree.installedBy || "",
@@ -248,41 +242,6 @@ const handleFieldChange = (field, value) => {
     scientific: commonToScientificList[common]
   }));
 
-  // const handleCommonChange = (event) => {
-  //   const selectedCommonName = event.target.value;
-  //   const scientificFromCommon = commonToScientificList[selectedCommonName];
-
-  //   setFormValues(prevValues => ({
-  //     ...prevValues,
-  //     species: {
-  //       commonName: selectedCommonName,
-  //       scientificName: scientificFromCommon || "",
-  //     },
-  //   }));
-  // };
-
-  // const handleScientificChange = (event) => {
-  //   const selectedScientificName = event.target.value;
-  //   const commonFromScientific = Object.keys(commonToScientificList).find(
-  //     (common) => commonToScientificList[common] === selectedScientificName
-  //   );
-
-  //   setFormValues(prevValues => ({
-  //     ...prevValues,
-  //     species: {
-  //       commonName: commonFromScientific || "",
-  //       scientificName: selectedScientificName,
-  //     }
-  //   }));
-  // };
-
-  // // Handle the form submission
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-
-  //   // Only update updatedTree after the user submits the form
-  //   setupdatedTree(updatedTree);
-  // };
   //-------------------- render component--------------------//
   return (
     <form style={formStyle}>

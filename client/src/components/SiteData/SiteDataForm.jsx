@@ -101,7 +101,6 @@ const SiteDataForm = () => {
   }, [updatedTree]);
 
 //-------------------- handlers --------------------
-//-------------------- handlers --------------------
 // generic handler for controls
 const getEffectiveValue = (val) => {
   if (val && val.target) {
