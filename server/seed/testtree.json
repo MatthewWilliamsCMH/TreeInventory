@@ -1,0 +1,45 @@
+[
+  {
+    "lastVisited": "01/06/2022",
+    "nonnative": false,  
+    "invasive": false,
+    "species": {
+      "commonName": "Japanese maple",
+      "scientificName": "Acer palmatum var. atropurpureum"
+    },
+    "variety": "Bloodgood",
+    "garden": "Goodale entrance beds",
+    "location": {
+      "northing": "39.9771359301542",
+      "easting": "-83.0497698630152"
+    },
+    "dbh": "< 3",
+    "installedDate": "< 2018",
+    "installedBy": "Joseph Tree Service",
+    "felledDate": "",
+    "felledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "Treated for bag worms in 2022",
+    "notes": "This is a test tree",
+    "photos": null,
+    "hidden": false
+  }
+]

@@ -36,16 +36,37 @@ const resolvers = {
       }
     },
 
-    updateTree: async (_, { id, input }) => {
-      try {
-        return await Tree.findByIdAndUpdate(id, input, { new: true });
-      }
-      catch (err) {
-        console.error(err);
-        return null;
-      }
-    }
+updateTree: async (_, { id, lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
+  try {
+    return await Tree.findByIdAndUpdate(
+      id, 
+      { 
+        lastVisited, 
+        nonnative, 
+        invasive, 
+        species, 
+        variety, 
+        garden, 
+        location, 
+        dbh, 
+        installedDate, 
+        installedBy, 
+        felledDate, 
+        felledBy, 
+        maintenanceNeeds, 
+        siteInfo, 
+        careHistory, 
+        notes, 
+        photos 
+      }, 
+      { new: true }
+    );
   }
+  catch (err) {
+    console.error(err);
+    return null;
+  }
+}  }
 };
 
   module.exports = { resolvers} ;

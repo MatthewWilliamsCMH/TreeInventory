@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
-import Footer from "../footer/footer";
+import Footer from "../Footer/Footer";
 
 //set up an object with values from updatedTree or set the values to ""
 const PhysicalDataForm = () => {
@@ -19,7 +19,6 @@ const PhysicalDataForm = () => {
       notes: updatedTree?.notes || "",
       nonnative: updatedTree?.nonnative || false,
       invasive: updatedTree?.invasive || false,
-      hidden: updatedTree?.hidden || false,
       location: {
         northing: updatedTree?.location?.northing || "",
         easting: updatedTree?.location?.easting || ""
@@ -48,7 +47,9 @@ const PhysicalDataForm = () => {
         removeGrate: updatedTree?.maintenanceNeeds?.removeGrate || false,
         fell: updatedTree?.maintenanceNeeds?.fell || false,
         removeStump: updatedTree?.maintenanceNeeds?.removeStump || false
-      }
+      },
+      careHistory: updatedTree?.careHistory || false,
+      hidden: updatedTree?.hidden || false
     };
   });
 
@@ -66,8 +67,7 @@ const PhysicalDataForm = () => {
         notes: updatedTree.notes || "",
         nonnative: updatedTree.nonnative || false,
         invasive: updatedTree.invasive || false,
-        hidden: updatedTree.hidden || false,
-                location: {
+        location: {
           northing: updatedTree.location?.northing || "",
           easting: updatedTree.location?.easting || ""
         },
@@ -95,52 +95,109 @@ const PhysicalDataForm = () => {
           removeGrate: updatedTree.maintenanceNeeds?.removeGrate || false,
           fell: updatedTree.maintenanceNeeds?.fell || false,
           removeStump: updatedTree.maintenanceNeeds?.removeStump || false
-        }
+        },
+        careHistory: updatedTree.careHistory,
+        hidden: updatedTree.hidden || false
       })
     }
-  }, [updatedTree]);
-
-//-------------------- handlers --------------------
-// generic handler for controls
-const getEffectiveValue = (val) => {
-  if (val && val.target) {
-    const target = val.target;
-    switch (target.type) {
-      case 'checkbox':
-        return target.checked;
-      case 'select-multiple':
-        return Array.from(target.selectedOptions).map(option => option.value);
-      default:
-        return target.value;
+  }, [updatedTree]); 
+ 
+  //-------------------- handlers --------------------
+  // generic handler for controls
+  const getEffectiveValue = (val) => {
+    if (val && val.target) {
+      const target = val.target;
+      switch (target.type) {
+        case 'checkbox':
+          return target.checked;
+        case 'select-multiple':
+          return Array.from(target.selectedOptions).map(option => option.value);
+        default:
+          return target.value;
+      }
     }
-  }
-  return val;
-};
+    return val;
+  };
 
-const handleFieldChange = (field, value) => {
-  setFormValues(prevValues => {
-    const effectiveValue = getEffectiveValue(value);
-    let updatedValues = { ...prevValues };
+  const handleFieldChange = (field, value) => {
+    setFormValues(prevValues => {
+      const effectiveValue = getEffectiveValue(value);
+      let updatedValues = { ...prevValues };
 
-    // Special handling for species names
+      // Special handling for species names
+        if (field.startsWith('species.') && Object.keys(commonToScientificList).length > 0) {
+          if (field === 'species.commonName') {
+            const scientificFromCommon = commonToScientificList[effectiveValue];
+            updatedValues = {
+              ...updatedValues,
+              species: {
+                ...updatedValues.species,
+                commonName: effectiveValue,
+                scientificName: scientificFromCommon || ""
+              }
+            };
+          } else if (field === 'species.scientificName') {
+            const commonFromScientific = Object.keys(commonToScientificList)
+              .find(common => commonToScientificList[common] === effectiveValue);
+            updatedValues = {
+              ...updatedValues,
+              species: {
+                ...updatedValues.species,
+                scientificName: effectiveValue,
+                commonName: commonFromScientific || ""
+              }
+            };
+          }
+        }
+
+      // Handle nested fields (like species.commonName)
+      else if (field.includes('.')) {
+        const [parentField, childField] = field.split('.');
+        updatedValues = {
+          ...updatedValues,
+          [parentField]: {
+            ...updatedValues[parentField],
+            [childField]: effectiveValue
+          }
+        };
+      }
+
+      // Standard field update
+      else {
+        updatedValues = {
+          ...updatedValues,
+          [field]: effectiveValue
+        };
+      }
+
+      return updatedValues;
+    });
+
+    // Update updatedTree
+    setUpdatedTree(prevTree => {
+      const effectiveValue = getEffectiveValue(value);
+
+      // Handle species name updates
       if (field.startsWith('species.') && Object.keys(commonToScientificList).length > 0) {
         if (field === 'species.commonName') {
           const scientificFromCommon = commonToScientificList[effectiveValue];
-          updatedValues = {
-            ...updatedValues,
+          return {
+            ...prevTree,
             species: {
-              ...updatedValues.species,
+              ...prevTree.species,
               commonName: effectiveValue,
               scientificName: scientificFromCommon || ""
             }
           };
-        } else if (field === 'species.scientificName') {
+        }
+
+        if (field === 'species.scientificName') {
           const commonFromScientific = Object.keys(commonToScientificList)
             .find(common => commonToScientificList[common] === effectiveValue);
-          updatedValues = {
-            ...updatedValues,
+          return {
+            ...prevTree,
             species: {
-              ...updatedValues.species,
+              ...prevTree.species,
               scientificName: effectiveValue,
               commonName: commonFromScientific || ""
             }
@@ -148,93 +205,25 @@ const handleFieldChange = (field, value) => {
         }
       }
 
-    // Handle nested fields (like species.commonName)
-    else if (field.includes('.')) {
-      const [parentField, childField] = field.split('.');
-      updatedValues = {
-        ...updatedValues,
-        [parentField]: {
-          ...updatedValues[parentField],
-          [childField]: effectiveValue
-        }
-      };
-    }
-
-    // Handle grouped checkboxes
-    else if (typeof prevValues[field] === 'object' && prevValues[field] !== null) {
-      if (value.target && value.target.type === 'checkbox') {
-        updatedValues = {
-          ...updatedValues,
-          [field]: {
-            ...updatedValues[field],
-            [value.target.name]: value.target.checked
-          }
-        };
-      }
-    }
-    
-    // Standard field update
-    else {
-      updatedValues = {
-        ...updatedValues,
-        [field]: effectiveValue
-      };
-    }
-
-    return updatedValues;
-  });
-
-  // Update updatedTree
-  setUpdatedTree(prevTree => {
-    const effectiveValue = getEffectiveValue(value);
-
-    // Handle species name updates
-    if (field.startsWith('species.') && Object.keys(commonToScientificList).length > 0) {
-      if (field === 'species.commonName') {
-        const scientificFromCommon = commonToScientificList[effectiveValue];
+      // Handle nested updates
+      if (field.includes('.')) {
+        const [parentField, childField] = field.split('.');
         return {
           ...prevTree,
-          species: {
-            ...prevTree.species,
-            commonName: effectiveValue,
-            scientificName: scientificFromCommon || ""
+          [parentField]: {
+            ...prevTree[parentField],
+            [childField]: effectiveValue
           }
         };
       }
 
-      if (field === 'species.scientificName') {
-        const commonFromScientific = Object.keys(commonToScientificList)
-          .find(common => commonToScientificList[common] === effectiveValue);
-        return {
-          ...prevTree,
-          species: {
-            ...prevTree.species,
-            scientificName: effectiveValue,
-            commonName: commonFromScientific || ""
-          }
-        };
-      }
-    }
-
-    // Handle nested updates
-    if (field.includes('.')) {
-      const [parentField, childField] = field.split('.');
+      // Standard field update
       return {
         ...prevTree,
-        [parentField]: {
-          ...prevTree[parentField],
-          [childField]: effectiveValue
-        }
+        [field]: effectiveValue
       };
-    }
-
-    // Standard field update
-    return {
-      ...prevTree,
-      [field]: effectiveValue
-    };
-  });
-};
+    });
+  };
 
   //create species list of commonName and scientificName controls
   const speciesOptions = Object.keys(commonToScientificList).map(common => ({

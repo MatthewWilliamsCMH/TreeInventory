@@ -7,8 +7,8 @@ const typeDefs = gql `
   }
 
   input LocationInput {
-    northing: Float!
-    easting: Float!
+    northing: Float
+    easting: Float
   }
 
   input MaintenanceNeedsInput {
@@ -38,8 +38,8 @@ const typeDefs = gql `
   }
 
   type Location {
-    northing: Float!
-    easting: Float!
+    northing: Float
+    easting: Float
   }
 
   type MaintenanceNeeds {
@@ -65,12 +65,12 @@ const typeDefs = gql `
 
   type Tree {
     id: ID!
-    lastVisited: String!
+    lastVisited: String
     species: Species
     variety: String
-    garden: String!
-    location: Location!
-    dbh: String!
+    garden: String
+    location: Location
+    dbh: String
     installedDate: String
     installedBy: String
     felledDate: String
@@ -80,7 +80,7 @@ const typeDefs = gql `
     careHistory: String
     notes: String
     photos: String
-    nonNative: Boolean
+    nonnative: Boolean
     invasive: Boolean
     hidden: Boolean
   }
@@ -92,12 +92,12 @@ const typeDefs = gql `
 
   type Mutation {
     addTree (
-      lastVisited: String!
+      lastVisited: String
       species: SpeciesInput
       variety: String
-      garden: String!
-      location: LocationInput!
-      dbh: String!
+      garden: String
+      location: LocationInput
+      dbh: String
       installedDate: String
       installedBy: String
       felledDate: String
@@ -107,18 +107,18 @@ const typeDefs = gql `
       careHistory: String
       notes: String
       photos: String
-      nonNative: Boolean
+      nonnative: Boolean
       invasive: Boolean
     ): Tree
 
     updateTree (
       id: ID!
-      lastVisited: String!
+      lastVisited: String
       species: SpeciesInput
       variety: String
-      garden: String!
-      location: LocationInput!
-      dbh: String!
+      garden: String
+      location: LocationInput
+      dbh: String
       installedDate: String
       installedBy: String
       felledDate: String
@@ -128,7 +128,7 @@ const typeDefs = gql `
       careHistory: String
       notes: String
       photos: String
-      nonNative: Boolean
+      nonnative: Boolean
       invasive: Boolean
       hidden: Boolean
     ): Tree

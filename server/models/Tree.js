@@ -1,24 +1,30 @@
 const { Schema, model } = require('mongoose');
 
-// if (mongoose.models.treeSchema) {
-//   delete mongoose.models.treeSchema;
-// }
 // Define the schema for the Tree model
 const treeSchema = new Schema({
-  lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
-  nonNative: { type: Boolean },
-  invasive: { type: Boolean },
   species: { //compile common + scientific species names from db; user to choose one or the other from list or key in new
     commonName: {type: String}, //make required
     scientificName: {type: String} //make reqruired
   },
   variety: { type: String },
-  garden: { type: String}, //choose from fixed list //make required
+  dbh: { type: String }, //choose from fixed list //make required
+  notes: { type: String },
+  photos: { type: [String] }, //store url for image
+  nonnative: { type: Boolean },
+  invasive: { type: Boolean },
+  lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
   location: { 
     northing: { type: Number }, //always positive at SC //make required
     easting: { type: Number } //always negative at SC //make required
   },
-  dbh: { type: String }, //choose from fixed list //make required
+  garden: { type: String}, //choose from fixed list //make required
+siteInfo: {
+    slope: { type: Boolean },
+    overheadLines: { type: Boolean },
+    treeCluster: { type: Boolean },
+    proximateStructure: { type: Boolean },
+    proximateFence: { type: Boolean }
+  },
   installedDate: { type: Date },
   indstalledBy: { type: String },
   felledDate: { type: Date },
@@ -35,18 +41,7 @@ const treeSchema = new Schema({
     fell: { type: Boolean },
     removeStump: { type: Boolean }
   },
-siteInfo: {
-    slope: { type: Boolean },
-    overheadLines: { type: Boolean },
-    treeCluster: { type: Boolean },
-    proximateStructure: { type: Boolean },
-    proximateFence: { type: Boolean }
-  },
   careHistory: {type: String },
-  notes: { type: String },
-  photos: { type: [String] }, //store url for image
-  nonnative: { type: Boolean },
-  invasive: { type: Boolean },
   hidden: { type: Boolean }
 });
 

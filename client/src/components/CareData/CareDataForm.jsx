@@ -1,7 +1,7 @@
 import { formatDateForDisplay } from "../../utils/dateHandler";
 import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
-import Footer from "../footer/footer";
+import Footer from "../Footer/Footer";
 
 //set up an object with values from updatedTree or set the values to ""
 const CareDataForm = () => {
@@ -20,7 +20,6 @@ const CareDataForm = () => {
       notes: updatedTree?.notes || "",
       nonnative: updatedTree?.nonnative || false,
       invasive: updatedTree?.invasive || false,
-      hidden: updatedTree?.hidden || false,
       location: {
         northing: updatedTree?.location?.northing || "",
         easting: updatedTree?.location?.easting || ""
@@ -49,7 +48,9 @@ const CareDataForm = () => {
         removeGrate: updatedTree?.maintenanceNeeds?.removeGrate || false,
         fell: updatedTree?.maintenanceNeeds?.fell || false,
         removeStump: updatedTree?.maintenanceNeeds?.removeStump || false
-      }
+      },
+      careHistory: updatedTree?.careHistory || false,
+      hidden: updatedTree?.hidden || false
     };
   });
 
@@ -67,8 +68,7 @@ const CareDataForm = () => {
         notes: updatedTree.notes || "",
         nonnative: updatedTree.nonnative || false,
         invasive: updatedTree.invasive || false,
-        hidden: updatedTree.hidden || false,
-                location: {
+        location: {
           northing: updatedTree.location?.northing || "",
           easting: updatedTree.location?.easting || ""
         },
@@ -96,92 +96,93 @@ const CareDataForm = () => {
           removeGrate: updatedTree.maintenanceNeeds?.removeGrate || false,
           fell: updatedTree.maintenanceNeeds?.fell || false,
           removeStump: updatedTree.maintenanceNeeds?.removeStump || false
-        }
+        },
+        careHistory: updatedTree.careHistory,
+        hidden: updatedTree.hidden || false
       })
     }
-  }, [updatedTree]);
+  }, [updatedTree]); 
 
-//-------------------- handlers --------------------
-// generic handler for controls
-const getEffectiveValue = (val) => {
-  if (val && val.target) {
-    const target = val.target;
-    switch (target.type) {
-      case 'checkbox':
-        return target.checked;
-      case 'select-multiple':
-        return Array.from(target.selectedOptions).map(option => option.value);
-      default:
-        return target.value;
+  //-------------------- handlers --------------------
+  // generic handler for controls
+  const getEffectiveValue = (val) => {
+    if (val && val.target) {
+      const target = val.target;
+      switch (target.type) {
+        case 'checkbox':
+          return target.checked;
+        case 'select-multiple':
+          return Array.from(target.selectedOptions).map(option => option.value);
+        default:
+          return target.value;
+      }
     }
-  }
-  return val;
-};
+    return val;
+  };
 
-const handleFieldChange = (field, value) => {
-  setFormValues(prevValues => {
-    const effectiveValue = getEffectiveValue(value);
-    let updatedValues = { ...prevValues };
+  const handleFieldChange = (field, value) => {
+    setFormValues(prevValues => {
+      const effectiveValue = getEffectiveValue(value);
+      let updatedValues = { ...prevValues };
 
-    // Handle nested fields (like species.commonName)
-    if (field.includes('.')) {
-    // else if (field.includes('.')) {
-      const [parentField, childField] = field.split('.');
-      updatedValues = {
-        ...updatedValues,
-        [parentField]: {
-          ...updatedValues[parentField],
-          [childField]: effectiveValue
-        }
-      };
-    }
-
-    // Handle grouped checkboxes
-    else if (typeof prevValues[field] === 'object' && prevValues[field] !== null) {
-      if (value.target && value.target.type === 'checkbox') {
+      // Handle nested fields (like species.commonName)
+      if (field.includes('.')) {
+        const [parentField, childField] = field.split('.');
         updatedValues = {
           ...updatedValues,
-          [field]: {
-            ...updatedValues[field],
-            [value.target.name]: value.target.checked
+          [parentField]: {
+            ...updatedValues[parentField],
+            [childField]: effectiveValue
           }
         };
       }
-    }
-    
-    // Standard field update
-    else {
-      updatedValues = {
-        ...updatedValues,
-        [field]: effectiveValue
-      };
-    }
-    return updatedValues;
-  });
 
-  // Update updatedTree
-  setUpdatedTree(prevTree => {
-    const effectiveValue = getEffectiveValue(value);
+      // Handle grouped checkboxes
+      else if (typeof prevValues[field] === 'object' && prevValues[field] !== null) {
+        if (value.target && value.target.type === 'checkbox') {
+          updatedValues = {
+            ...updatedValues,
+            [field]: {
+              ...updatedValues[field],
+              [value.target.name]: value.target.checked
+            }
+          };
+        }
+      }
+      
+      // Standard field update
+      else {
+        updatedValues = {
+          ...updatedValues,
+          [field]: effectiveValue
+        };
+      }
+      return updatedValues;
+    });
 
-    // Handle nested updates
-    if (field.includes('.')) {
-      const [parentField, childField] = field.split('.');
+    // Update updatedTree
+    setUpdatedTree(prevTree => {
+      const effectiveValue = getEffectiveValue(value);
+
+      // Handle nested updates
+      if (field.includes('.')) {
+        const [parentField, childField] = field.split('.');
+        return {
+          ...prevTree,
+          [parentField]: {
+            ...prevTree[parentField],
+            [childField]: effectiveValue
+          }
+        };
+      }
+
+      // Standard field update
       return {
         ...prevTree,
-        [parentField]: {
-          ...prevTree[parentField],
-          [childField]: effectiveValue
-        }
+        [field]: effectiveValue
       };
-    }
-
-    // Standard field update
-    return {
-      ...prevTree,
-      [field]: effectiveValue
-    };
-  });
-};
+    });
+  };
 
   //-------------------- render component--------------------//
   return (
@@ -242,12 +243,16 @@ const handleFieldChange = (field, value) => {
             <label htmlFor = {need} key = {need}>
               <input
                 id = {need}
+                className = "nestedcheckbox"
                 type = "checkbox"
                 name = {need}
                 checked = {formValues.maintenanceNeeds[need] || false}
-                onChange = {(event) => handleFieldChange("maintenanceNeeds", event)} 
+                onChange = {(event) => handleFieldChange(`maintenanceNeeds.${need}`, event)} 
               />
-              {need.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+              {need
+                .replace(/([A-Z])/g, ' $1')
+                .replace(/^./, str => str.toUpperCase())
+              }
             </label>
           ))}
         </div>
@@ -261,23 +266,22 @@ const handleFieldChange = (field, value) => {
           onChange = {(event) => handleFieldChange("careHistory", event)} 
         />
       </div>
-      {/* <Footer updatedTree = {updatedTree} setUpdatedTree = {setUpdatedTree} /> */}
       <Footer />
     </form>
   );
 };
 
 const maintenanceNeedsList = [
-  "Install",
-  "RaiseCrown",
-  "RoutinePrune",
-  "TrainingPrune",
-  "PriorityPrune",
-  "PestTreatment",
-  "InstallGrate",
-  "RemoveGrate",
-  "Fell",
-  "RemoveStump"
+  "install",
+  "raiseCrown",
+  "routinePrune",
+  "trainingPrune",
+  "priorityPrune",
+  "pestTreatment",
+  "installGrate",
+  "removeGrate",
+  "fell",
+  "removeStump"
 ];
 
 export default CareDataForm;
