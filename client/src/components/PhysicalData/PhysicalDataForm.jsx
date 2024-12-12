@@ -351,6 +351,7 @@ const PhysicalDataForm = () => {
 //-------------------- list- and combo-box lists --------------------//
 //species should be pulled from db but allow user to create new
 const commonToScientificList = {
+  "": "",
   "American basswood": "Tilia americana",
   "American beech": "Fagus grandifolia",
   "American chestnut": "Castanea dentata",
@@ -429,7 +430,7 @@ const commonToScientificList = {
   "Swamp white oak": "Quercus bicolor",
   "Sweetbay magnolia": "Magnolia virginiana",
   "Sweetgum": "Liquidambar styraciflua",
-  "Tree of Heaven": "Ailantus altissima", //invasive, nonnative
+  "Tree of heaven": "Ailanthus altissima", //invasive, nonnative
   "Unknown species": "Unknown species",
   "Virginia pine": "Pinus virginiana",
   "Weeping cherry": "Prunus pendula",
@@ -442,6 +443,7 @@ const commonToScientificList = {
 }
 
 const dbhList = [
+  "",
   "< 3", 
   "3-6", 
   "7-12", 

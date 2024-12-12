@@ -5,7 +5,7 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
-  const { updatedTree, setUpdatedTree } = useOutletContext();
+  const { updatedTree, setUpdatedTree, setSelectedTree } = useOutletContext();
   const [updateTreeMutation, { loading, error }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ const Footer = () => {
       const { data } = await updateTreeMutation({
         variables: {
           id: updatedTree.id,
-          lastVisited: updatedTree.lastVisited,
+          lastVisited: new Date().toLocaleDateString("en-US"),
           species: updatedTree.species ? {
             commonName: updatedTree.species.commonName,
             scientificName: updatedTree.species.scientificName
@@ -63,9 +63,9 @@ const Footer = () => {
       });
 
       if (data) {
-        console.log(data)
         console.log("Tree updated:", data.updateTree);
         setUpdatedTree(null);
+        setSelectedTree(null);
         navigate("/");
       }
     } catch (err) {
@@ -75,6 +75,7 @@ const Footer = () => {
 
   const handleCancel = () => {
     setUpdatedTree(null);
+    setSelectedTree(null);
     navigate("/");
   };
 

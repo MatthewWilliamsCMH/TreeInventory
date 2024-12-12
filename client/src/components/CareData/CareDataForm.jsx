@@ -221,7 +221,7 @@ const CareDataForm = () => {
         <input 
           id = "felledDate"
           type = "text"
-          value = {formatDateForDisplay(formValues.felledDate)}
+          defaultValue = {formatDateForDisplay(formValues.felledDate)}
           onChange = {(event) => handleFieldChange("felledDate", event)} 
         />
       </div>

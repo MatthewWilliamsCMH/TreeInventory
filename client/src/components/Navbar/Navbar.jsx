@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ selectedTree }) => {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -18,14 +18,22 @@ const Navbar = () => {
   });
 
   const handleRadioChange = (event) => {
+  if (!selectedTree) {
+    alert ("You must select a tree or drop a new pin first.");
+    return;
+  }
+
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    if ((selectedValue === "map" & "location.pathname" !== "/") ||
-      (selectedValue === "physicalData" & "location.pathname" !== "/physicaldata") ||
-      (selectedValue === "siteData" & "location.pathname" !== "/siteData") ||
-      (selectedValue === "careData" & "location.pathname" !== "/caredata") ||
-      (selectedValue === "inventory" & "location.pathname" !== "/inventory")) {
+    const shouldNavigate = 
+      (selectedValue === "map" && "location.pathname" !== "/") ||
+      (selectedValue === "physicalData" && "location.pathname" !== "/physicaldata") ||
+      (selectedValue === "siteData" && "location.pathname" !== "/siteData") ||
+      (selectedValue === "careData" && "location.pathname" !== "/caredata") ||
+      (selectedValue === "inventory" && "location.pathname" !== "/inventory");
+
+    if (shouldNavigate) {
       switch (selectedValue) {
         case "map":
           navigate("/");
@@ -71,6 +79,10 @@ const Navbar = () => {
         break;
     }
   }, [location.pathname]);
+
+  if (!selectedTree) {
+    return null;
+  }
   
   return (
     <nav id="navbar">

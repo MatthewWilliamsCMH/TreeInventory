@@ -1,23 +1,23 @@
 [
   {
-    "lastVisited": "01/06/2022",
-    "nonnative": false,  
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
     "invasive": false,
     "species": {
       "commonName": "Japanese maple",
       "scientificName": "Acer palmatum var. atropurpureum"
     },
     "variety": "Bloodgood",
-    "garden": "Goodale entrance beds",
+    "garden": "",
     "location": {
-      "northing": "39.9771359301542",
-      "easting": "-83.0497698630152"
+      "northing": "39.9768820647066",
+      "easting": "-83.04858792455815886881356987"
     },
     "dbh": "< 3",
-    "installedDate": "< 2018",
-    "installedBy": "Joseph Tree Service",
+    "installedDate": "01/01/2019",
+    "installedBy": "Landscape Committee",
     "felledDate": "",
-    "felledBy": "",
+    "FelledBy": "",
     "maintenanceNeeds": {
       "install": false,
       "raiseCrown": false,
@@ -37,9 +37,52 @@
       "proximateStructure": false,
       "proximateFence": false
     },
-    "careHistory": "Treated for bag worms in 2022",
-    "notes": "This is a test tree",
+    "careHistory": "",
+    "notes": "",
     "photos": null,
     "hidden": false
+  },
+    {
+    "lastVisited": "01/06/2022",
+    "nonnative": false,  
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771359301542",
+      "easting": "-83.0497698630152286922488668 "
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2022",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
   }
 ]

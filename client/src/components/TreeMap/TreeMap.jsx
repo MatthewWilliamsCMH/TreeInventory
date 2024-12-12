@@ -10,7 +10,6 @@ import { ADD_TREE } from "../../mutations/add_tree";
 import { UPDATE_TREE } from "../../mutations/update_tree";
 // import { GET_HIDDEN_TREES } from "../queries/get_hidden_trees";
 
-// import PhysicalDataForm from "../PhysicalData/PhysicalDataForm";
 
 const TreeMap = () => {
   const navigate = useNavigate();
@@ -108,13 +107,8 @@ const TreeMap = () => {
   }
 
   return (
-    // <>
-    //   {updatedTree ? (
-    //     <PhysicalDataForm />
-    //   ) : (
-        <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
-  //     )}
-  //   </>
+    <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
   );
 };
+
 export default TreeMap;

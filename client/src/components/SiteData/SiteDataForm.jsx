@@ -251,6 +251,7 @@ const SiteDataForm = () => {
 
 //-------------------- combo- and check-box lists --------------------//
 const gardenList = [
+  "",
   "Community garden and lawn",
   "Dog lawn",
   "Drainage rill",
