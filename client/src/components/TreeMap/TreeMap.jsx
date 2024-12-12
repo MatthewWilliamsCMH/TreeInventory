@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
-import { useQuery, useMutation, gql } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -29,6 +29,8 @@ const TreeMap = () => {
     if (mapRef.current && !map.current) {
       map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
+  
+      map.current.on("click", handleAddTree);
     }
 
     if (map.current && dataGetAll && dataGetAll.getTrees) {
@@ -39,7 +41,7 @@ const TreeMap = () => {
       },
     );
 
-      dataGetAll.getTrees.forEach((tree) => {
+    dataGetAll.getTrees.forEach((tree) => {
       const treeID = tree.id.toString();
       const { northing, easting } = tree.location;
       const popupContent = `
@@ -73,31 +75,56 @@ const TreeMap = () => {
     };
   }, [dataGetAll]);
 
-  const handleAddTree = (treeInput) => {
-    addTree({ variables: treeInput })
-    .then(({ data }) => {
-      console.log("Tree added: ", data.addTree);
-      setTrees((prevTrees) => [...prevTrees, data.addTree])
-    })
-    .catch ((error) => {
-      console.error("Error adding tree: ", error);
-    })
+  const handleAddTree = (event) => {
+    const { lat, lng } = event.latlng;
+    const newTree = {
+       species: {
+        commonName: "",
+        scientificName: ""
+      },
+      variety: "",
+      dbh: "",
+      photos: null,
+      notes: "",
+      nonnative: false,
+      invasive: false,
+      location: {
+        northing: lat,
+        easting: lng
+      },
+      garden: "",
+      siteInfo: {
+        slope: false,
+        overheadLines: false,
+        treeCluster: false,
+        proximateStructure: false,
+        proximateFence: false
+      },
+      lastVisited: "",
+      installedDate: "",
+      installedBy: "",
+      felledDate: "",
+      felledBy: "",
+      maintenanceNeeds: {
+        install: false,
+        raiseCrown: false,
+        routinePrune: false,
+        trainingPrune: false,
+        priorityPrune: false,
+        pestTreatment: false,
+        installGrate: false,
+        removeGrate: false,
+        fell: false,
+        removeStump: false
+      },
+      careHistory: false,
+      hidden: false
+    };
+    console.log(newTree)
+    setSelectedTree(newTree);
+    setUpdatedTree(newTree);
+    navigate("/physicaldata")
   }
-
-  const handleUpdateTree = (treeId, treeInput) => {
-    updateTree({ variables: { id: treeId, ...treeInput } })
-    .then (({ data }) => {
-      console.log("Tree updated: ", data.updateTree);
-      setTrees((prevTrees) =>
-        prevTrees.map((tree) =>
-          tree.id === data.updateTree.id ? data.updateTree : tree
-        )
-      )
-    })
-    .catch((error) => {
-      console.error("Error updating tree: ", error);
-    });
-  };
 
   if (loadingGetAll || loadingAddOne || loadingUpdateOne) {
     return <p>Loading...</p>;

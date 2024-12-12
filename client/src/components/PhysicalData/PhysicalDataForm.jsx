@@ -5,8 +5,7 @@ import Footer from "../Footer/Footer";
 //set up an object with values from updatedTree or set the values to ""
 const PhysicalDataForm = () => {
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
-  
-  const [formValues, setFormValues] = useState(() => {
+    const [formValues, setFormValues] = useState(() => {
 
     return updatedTree || {
       species: {
@@ -240,6 +239,7 @@ const PhysicalDataForm = () => {
           <label htmlFor = "commonName">Common name:</label>
           <select
             id = "commonName"
+            placeholder = "Select a common name."
             value = {formValues.species.commonName}
             onChange = {(event) => handleFieldChange("species.commonName", event)}
           >
@@ -254,6 +254,7 @@ const PhysicalDataForm = () => {
           <label htmlFor = "scientificName">Scientific name:</label>
           <select
             id = "scientificName"
+            placeholder = "Select a scientific name."
             value = {formValues.species.scientificName}
             onChange = {(event) => handleFieldChange("species.scientificName", event)}
           >
@@ -280,6 +281,7 @@ const PhysicalDataForm = () => {
         <label htmlFor = "dbh">DBH:</label>
         <select 
           id = "dbh" 
+          placeholder = "Select a diameter."
           value = {formValues.dbh} 
           onChange = {event => handleFieldChange("dbh", event)} 
         >

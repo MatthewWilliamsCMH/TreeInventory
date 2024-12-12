@@ -25,10 +25,30 @@ const resolvers = {
   },
 
   Mutation: {
-    addTree: async (_, { input }) => {
+    addTree: async (_, { lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
       try {
-        const NewTree = new Tree(input);
-        return await NewTree.save();
+        return await Tree.save(
+          { 
+            lastVisited, 
+            nonnative, 
+            invasive, 
+            species, 
+            variety, 
+            garden, 
+            location, 
+            dbh, 
+            installedDate, 
+            installedBy, 
+            felledDate, 
+            felledBy, 
+            maintenanceNeeds, 
+            siteInfo, 
+            careHistory, 
+            notes, 
+            photos 
+          }, 
+          { new: true }
+        ) 
       }
       catch (err) {
         console.error(err);
@@ -36,37 +56,38 @@ const resolvers = {
       }
     },
 
-updateTree: async (_, { id, lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
-  try {
-    return await Tree.findByIdAndUpdate(
-      id, 
-      { 
-        lastVisited, 
-        nonnative, 
-        invasive, 
-        species, 
-        variety, 
-        garden, 
-        location, 
-        dbh, 
-        installedDate, 
-        installedBy, 
-        felledDate, 
-        felledBy, 
-        maintenanceNeeds, 
-        siteInfo, 
-        careHistory, 
-        notes, 
-        photos 
-      }, 
-      { new: true }
-    );
+    updateTree: async (_, { id, lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
+      try {
+        return await Tree.findByIdAndUpdate(
+          id, 
+          { 
+            lastVisited, 
+            nonnative, 
+            invasive, 
+            species, 
+            variety, 
+            garden, 
+            location, 
+            dbh, 
+            installedDate, 
+            installedBy, 
+            felledDate, 
+            felledBy, 
+            maintenanceNeeds, 
+            siteInfo, 
+            careHistory, 
+            notes, 
+            photos 
+          }, 
+          { new: true }
+        );
+      }
+      catch (err) {
+        console.error(err);
+        return null;
+      }
+    }  
   }
-  catch (err) {
-    console.error(err);
-    return null;
-  }
-}  }
 };
 
   module.exports = { resolvers} ;
