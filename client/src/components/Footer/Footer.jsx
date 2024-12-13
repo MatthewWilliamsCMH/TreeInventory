@@ -91,7 +91,7 @@ const Footer = () => {
             proximateStructure: updatedTree.siteInfo.proximateStructure,
             proximateFence: updatedTree.siteInfo.proximateFence,
           } : null,
-          lastVisited: updatedTree.lastVisited,
+          lastVisited: new Date().toLocaleDateString("en-US"),
           installedDate: updatedTree.installedDate,
           installedBy: updatedTree.installedBy,
           felledDate: updatedTree.felledDate,

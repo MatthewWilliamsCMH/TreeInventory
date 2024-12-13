@@ -113,6 +113,7 @@ textarea {
 
 .nestedcheckbox { /*adds space between box and label when checkbox input is nested inside a label */
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .danger {

@@ -189,11 +189,7 @@ const CareDataForm = () => {
     <form style={formStyle}>
       <div className="control">
         <label htmlFor = "lastVisited">Last visited:</label>
-        <input
-          id = "lastVisited"
-          type = "text"
-          defaultValue = {formatDateForDisplay(formValues.lastVisited)}
-        />
+        <p>{formatDateForDisplay(formValues.lastVisited)}</p>
       </div>
 
       <div className = "control">
