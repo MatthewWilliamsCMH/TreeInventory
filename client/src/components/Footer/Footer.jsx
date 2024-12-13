@@ -1,14 +1,14 @@
 import React from "react";
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import { UPDATE_TREE } from "../../mutations/update_tree";
 import { ADD_TREE } from "../../mutations/add_tree";
+import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
   const { updatedTree, setUpdatedTree } = useOutletContext();
-  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE);
+  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
@@ -16,19 +16,30 @@ const Footer = () => {
       if (!updatedTree?.id) {
         const { data } = await addTreeMutation({
           variables: {
-            id: updatedTree.id,
-            lastVisited: new Date().toLocaleDateString("en-US"),
+            // id: updatedTree.id,
             species: updatedTree.species ? {
               commonName: updatedTree.species.commonName,
               scientificName: updatedTree.species.scientificName
             } : null,
             variety: updatedTree.variety,
-            garden: updatedTree.garden,
+            dbh: updatedTree.dbh,
+            photos: updatedTree.photos,
+            notes: updatedTree.notes,
+            nonnative: updatedTree.nonnative,
+            invasive: updatedTree.invasive,
             location: updatedTree.location ? {
               northing: updatedTree.location.northing,
               easting: updatedTree.location.easting
             } : null,
-            dbh: updatedTree.dbh,
+            garden: updatedTree.garden,
+            siteInfo: updatedTree.siteInfo ? {
+              slope: updatedTree.siteInfo.slope,
+              overheadLines: updatedTree.siteInfo.overheadLines,
+              treeCluster: updatedTree.siteInfo.treeCluster,
+              proximateStructure: updatedTree.siteInfo.proximateStructure,
+              proximateFence: updatedTree.siteInfo.proximateFence,
+            } : null,
+            lastVisited: new Date().toLocaleDateString("en-US"),
             installedDate: updatedTree.installedDate,
             installedBy: updatedTree.installedBy,
             felledDate: updatedTree.felledDate,
@@ -45,39 +56,42 @@ const Footer = () => {
               fell: updatedTree.maintenanceNeeds.fell,
               removeStump: updatedTree.maintenanceNeeds.removeStump
             } : null,
-            siteInfo: updatedTree.siteInfo ? {
-              slope: updatedTree.siteInfo.slope,
-              overheadLines: updatedTree.siteInfo.overheadLines,
-              treeCluster: updatedTree.siteInfo.treeCluster,
-              proximateStructure: updatedTree.siteInfo.proximateStructure,
-              proximateFence: updatedTree.siteInfo.proximateFence,
-            } : null,
             careHistory: updatedTree.careHistory,
-            notes: updatedTree.notes,
-            photos: updatedTree.photos,
-            nonnative: updatedTree.nonnative,
-            invasive: updatedTree.invasive
+            hidden: updatedTree.hidden
           }
         });
         console.log("Tree added:", data.addTree);
+        setUpdatedTree(null);
+        navigate("/");
            }
       else {
 
       const { data } = await updateTreeMutation({
         variables: {
           id: updatedTree.id,
-          lastVisited: updatedTree.lastVisited,
           species: updatedTree.species ? {
             commonName: updatedTree.species.commonName,
             scientificName: updatedTree.species.scientificName
           } : null,
           variety: updatedTree.variety,
-          garden: updatedTree.garden,
+          dbh: updatedTree.dbh,
+          photos: updatedTree.photos,
+          notes: updatedTree.notes,
+          nonnative: updatedTree.nonnative,
+          invasive: updatedTree.invasive,
           location: updatedTree.location ? {
             northing: updatedTree.location.northing,
             easting: updatedTree.location.easting
           } : null,
-          dbh: updatedTree.dbh,
+          garden: updatedTree.garden,
+          siteInfo: updatedTree.siteInfo ? {
+            slope: updatedTree.siteInfo.slope,
+            overheadLines: updatedTree.siteInfo.overheadLines,
+            treeCluster: updatedTree.siteInfo.treeCluster,
+            proximateStructure: updatedTree.siteInfo.proximateStructure,
+            proximateFence: updatedTree.siteInfo.proximateFence,
+          } : null,
+          lastVisited: updatedTree.lastVisited,
           installedDate: updatedTree.installedDate,
           installedBy: updatedTree.installedBy,
           felledDate: updatedTree.felledDate,
@@ -94,33 +108,19 @@ const Footer = () => {
             fell: updatedTree.maintenanceNeeds.fell,
             removeStump: updatedTree.maintenanceNeeds.removeStump
           } : null,
-          siteInfo: updatedTree.siteInfo ? {
-            slope: updatedTree.siteInfo.slope,
-            overheadLines: updatedTree.siteInfo.overheadLines,
-            treeCluster: updatedTree.siteInfo.treeCluster,
-            proximateStructure: updatedTree.siteInfo.proximateStructure,
-            proximateFence: updatedTree.siteInfo.proximateFence,
-          } : null,
           careHistory: updatedTree.careHistory,
-          notes: updatedTree.notes,
-          photos: updatedTree.photos,
-          nonnative: updatedTree.nonnative,
-          invasive: updatedTree.invasive
+          hidden: updatedTree.hidden
         }
       });
 
       if (data) {
-        alert("1")
         console.log("Tree updated:", data.updateTree);
-        alert ("2")
         setUpdatedTree(null);
-        alert("3")
         navigate("/");
-        alert("4")
       }
       }
     } catch (err) {
-      console.error("Unable to update tree.", err);
+      console.error("Unable to update data.", err);
     }
   };
 

@@ -11,6 +11,14 @@ const typeDefs = gql `
     easting: Float
   }
 
+  input SiteInfoInput {
+    slope: Boolean
+    overheadLines: Boolean
+    treeCluster: Boolean
+    proximateStructure: Boolean
+    proximateFence: Boolean
+  }
+
   input MaintenanceNeedsInput {
     install: Boolean
     raiseCrown: Boolean
@@ -24,14 +32,6 @@ const typeDefs = gql `
     removeStump: Boolean
   }
 
-  input SiteInfoInput {
-    slope: Boolean
-    overheadLines: Boolean
-    treeCluster: Boolean
-    proximateStructure: Boolean
-    proximateFence: Boolean
-  }
-
   type Species {
     commonName: String!
     scientificName: String!
@@ -40,6 +40,14 @@ const typeDefs = gql `
   type Location {
     northing: Float
     easting: Float
+  }
+
+  type SiteInfo {
+    slope: Boolean
+    overheadLines: Boolean
+    treeCluster: Boolean
+    proximateStructure: Boolean
+    proximateFence: Boolean
   }
 
   type MaintenanceNeeds {
@@ -55,33 +63,25 @@ const typeDefs = gql `
     removeStump: Boolean
   }
 
-  type SiteInfo {
-    slope: Boolean
-    overheadLines: Boolean
-    treeCluster: Boolean
-    proximateStructure: Boolean
-    proximateFence: Boolean
-  }
-
   type Tree {
     id: ID!
-    lastVisited: String
     species: Species
     variety: String
-    garden: String
-    location: Location
     dbh: String
+    photos: String
+    notes: String
+    nonnative: Boolean
+    invasive: Boolean
+    location: Location
+    garden: String
+    siteInfo: SiteInfo
+    lastVisited: String
     installedDate: String
     installedBy: String
     felledDate: String
     felledBy: String
     maintenanceNeeds: MaintenanceNeeds
-    siteInfo: SiteInfo
     careHistory: String
-    notes: String
-    photos: String
-    nonnative: Boolean
-    invasive: Boolean
     hidden: Boolean
   }
 
@@ -92,44 +92,45 @@ const typeDefs = gql `
 
   type Mutation {
     addTree (
-      lastVisited: String
       species: SpeciesInput
       variety: String
-      garden: String
-      location: LocationInput
       dbh: String
+      photos: String
+      notes: String
+      nonnative: Boolean
+      invasive: Boolean
+      location: LocationInput
+      garden: String
+      siteInfo: SiteInfoInput
+      lastVisited: String
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
       maintenanceNeeds: MaintenanceNeedsInput
-      siteInfo: SiteInfoInput
       careHistory: String
-      notes: String
-      photos: String
-      nonnative: Boolean
-      invasive: Boolean
+      hidden: Boolean
     ): Tree
 
     updateTree (
       id: ID!
-      lastVisited: String
       species: SpeciesInput
       variety: String
-      garden: String
-      location: LocationInput
       dbh: String
+      photos: String
+      notes: String
+      nonnative: Boolean
+      invasive: Boolean
+      location: LocationInput
+      garden: String
+      siteInfo: SiteInfoInput
+      lastVisited: String
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
       maintenanceNeeds: MaintenanceNeedsInput
-      siteInfo: SiteInfoInput
       careHistory: String
-      notes: String
-      photos: String
-      nonnative: Boolean
-      invasive: Boolean
       hidden: Boolean
     ): Tree
   }

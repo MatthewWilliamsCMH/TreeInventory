@@ -117,10 +117,9 @@ const TreeMap = () => {
         fell: false,
         removeStump: false
       },
-      careHistory: false,
+      careHistory: "",
       hidden: false
     };
-    console.log(newTree)
     setSelectedTree(newTree);
     setUpdatedTree(newTree);
     navigate("/physicaldata")

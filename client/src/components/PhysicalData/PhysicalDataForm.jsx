@@ -47,7 +47,7 @@ const PhysicalDataForm = () => {
         fell: updatedTree?.maintenanceNeeds?.fell || false,
         removeStump: updatedTree?.maintenanceNeeds?.removeStump || false
       },
-      careHistory: updatedTree?.careHistory || false,
+      careHistory: updatedTree?.careHistory || "",
       hidden: updatedTree?.hidden || false
     };
   });
@@ -95,7 +95,7 @@ const PhysicalDataForm = () => {
           fell: updatedTree.maintenanceNeeds?.fell || false,
           removeStump: updatedTree.maintenanceNeeds?.removeStump || false
         },
-        careHistory: updatedTree.careHistory,
+        careHistory: updatedTree.careHistory || "",
         hidden: updatedTree.hidden || false
       })
     }

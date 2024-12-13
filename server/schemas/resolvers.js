@@ -25,30 +25,28 @@ const resolvers = {
   },
 
   Mutation: {
-    addTree: async (_, { lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
+    addTree: async (_, { species, variety, dbh, photos, notes, nonnative, invasive, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
-        return await Tree.save(
-          { 
-            lastVisited, 
-            nonnative, 
-            invasive, 
-            species, 
-            variety, 
-            garden, 
-            location, 
-            dbh, 
-            installedDate, 
-            installedBy, 
-            felledDate, 
-            felledBy, 
-            maintenanceNeeds, 
-            siteInfo, 
-            careHistory, 
-            notes, 
-            photos 
-          }, 
-          { new: true }
-        ) 
+        return await Tree.create({
+          species, 
+          variety, 
+          dbh, 
+          photos,
+          notes, 
+          nonnative, 
+          invasive, 
+          location, 
+          garden, 
+          siteInfo, 
+          lastVisited, 
+          installedDate, 
+          installedBy, 
+          felledDate, 
+          felledBy, 
+          maintenanceNeeds, 
+          careHistory,
+          hidden
+        });
       }
       catch (err) {
         console.error(err);
@@ -56,28 +54,29 @@ const resolvers = {
       }
     },
 
-    updateTree: async (_, { id, lastVisited, nonnative, invasive, species, variety, garden, location, dbh, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, siteInfo, careHistory, notes, photos }) => {
+    updateTree: async (_, { id, species, variety, dbh, photos, notes, nonnative, invasive, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
         return await Tree.findByIdAndUpdate(
           id, 
           { 
-            lastVisited, 
-            nonnative, 
-            invasive, 
             species, 
             variety, 
-            garden, 
-            location, 
             dbh, 
+            photos,
+            notes, 
+            nonnative, 
+            invasive, 
+            location, 
+            garden, 
+            siteInfo, 
+            lastVisited, 
             installedDate, 
             installedBy, 
             felledDate, 
             felledBy, 
             maintenanceNeeds, 
-            siteInfo, 
-            careHistory, 
-            notes, 
-            photos 
+            careHistory,
+            hidden
           }, 
           { new: true }
         );
@@ -90,4 +89,4 @@ const resolvers = {
   }
 };
 
-  module.exports = { resolvers} ;
+  module.exports = { resolvers } ;

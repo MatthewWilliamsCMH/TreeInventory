@@ -1,59 +1,69 @@
 import { gql } from "@apollo/client";
 
 export const ADD_TREE = gql`
-  mutation addTree (
-    $lastVisited: String!
-    $nonnative: Boolean
-    $invasive: Boolean
+  mutation addTree(
     $species: SpeciesInput
     $variety: String
-    $garden: String!
-    $location: LocationInput!
     $dbh: String
+    $photos: String
+    $notes: String
+    $nonnative: Boolean
+    $invasive: Boolean
+    $location: LocationInput
+    $garden: String
+    $siteInfo: SiteInfoInput
+    $lastVisited: String
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
     $maintenanceNeeds: MaintenanceNeedsInput
-    $siteInfo: SiteInfoInput
     $careHistory: String
-    $notes: String
-    $photos: String
+    $hidden: Boolean
   ) {
     addTree(
-      lastVisited: $lastVisited
-      nonnative: $nonnative
-      invasive: $invasive
       species: $species
       variety: $variety
-      garden: $garden
-      location: $location
       dbh: $dbh
+      photos: $photos
+      notes: $notes
+      nonnative: $nonnative
+      invasive: $invasive
+      location: $location
+      garden: $garden
+      siteInfo: $siteInfo
+      lastVisited: $lastVisited
       installedDate: $installedDate
       installedBy: $installedBy
       felledDate: $felledDate
       felledBy: $felledBy
       maintenanceNeeds: $maintenanceNeeds
-      siteInfo: $siteInfo
       careHistory: $careHistory
-      notes: $notes
-      photos: $photos
+      hidden: $hidden
     ) {
-      id
-      lastVisited
-      nonnative
-      invasive
       species {
         commonName
         scientificName
       }
       variety
-      garden
+      dbh
+      photos
+      notes
+      nonnative
+      invasive
       location {
         northing
         easting
       }
-      dbh
+      garden
+      siteInfo {
+        slope
+        overheadLines
+        treeCluster
+        proximateStructure
+        proximateFence
+      }
+      lastVisited
       installedDate
       installedBy
       felledDate
@@ -70,16 +80,8 @@ export const ADD_TREE = gql`
         fell
         removeStump
       }
-      siteInfo {
-        slope
-        overheadLines
-        treeCluster
-        proximateStructure
-        proximateFence
-      }
       careHistory
-      notes
-      photos
+      hidden
     }
   }
 `;
