@@ -62,6 +62,7 @@ const Footer = () => {
         });
         console.log("Tree added:", data.addTree);
         setUpdatedTree(null);
+        setSelectedTree(null)
         navigate("/");
            }
       else {
@@ -116,6 +117,7 @@ const Footer = () => {
       if (data) {
         console.log("Tree updated:", data.updateTree);
         setUpdatedTree(null);
+        setSelectedTree(null)
         navigate("/");
       }
       }

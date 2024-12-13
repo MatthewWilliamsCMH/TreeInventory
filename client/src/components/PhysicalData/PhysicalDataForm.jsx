@@ -296,15 +296,17 @@ const PhysicalDataForm = () => {
       <div className = "control">
         <label htmlFor = "photos">Photos</label>
         <div className = "photogroup">
-          <div className = "photo">
+          <div className = "photo" id = "bark">
           </div>
-          <div className = "photo">
+          <div className = "photo" id = "summerLeaf">
           </div>
-          <div className = "photo">
+          <div className = "photo" id = "autumnLeaf">
           </div>
-          <div className = "photo">
+          <div className = "photo" id = "fruit">
           </div>
-          <div className = "photo">
+          <div className = "photo" id = "flower">
+          </div>
+          <div className = "photo" id = "environs">
           </div>
         </div>
       </div>

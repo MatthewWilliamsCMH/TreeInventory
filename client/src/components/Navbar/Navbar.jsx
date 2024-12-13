@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = ({ selectedTree }) => {
+const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -18,22 +18,14 @@ const Navbar = ({ selectedTree }) => {
   });
 
   const handleRadioChange = (event) => {
-  if (!selectedTree) {
-    alert ("You must select a tree or drop a new pin first.");
-    return;
-  }
-
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    const shouldNavigate = 
-      (selectedValue === "map" && "location.pathname" !== "/") ||
-      (selectedValue === "physicalData" && "location.pathname" !== "/physicaldata") ||
-      (selectedValue === "siteData" && "location.pathname" !== "/siteData") ||
-      (selectedValue === "careData" && "location.pathname" !== "/caredata") ||
-      (selectedValue === "inventory" && "location.pathname" !== "/inventory");
-
-    if (shouldNavigate) {
+    if ((selectedValue === "map" & "location.pathname" !== "/") ||
+      (selectedValue === "physicalData" & "location.pathname" !== "/physicaldata") ||
+      (selectedValue === "siteData" & "location.pathname" !== "/siteData") ||
+      (selectedValue === "careData" & "location.pathname" !== "/caredata") ||
+      (selectedValue === "inventory" & "location.pathname" !== "/inventory")) {
       switch (selectedValue) {
         case "map":
           navigate("/");
@@ -56,7 +48,7 @@ const Navbar = ({ selectedTree }) => {
       }
     }
   };
-  
+
   useEffect(() => {
     switch (location.pathname) {
       case "/":
@@ -80,10 +72,6 @@ const Navbar = ({ selectedTree }) => {
     }
   }, [location.pathname]);
 
-  if (!selectedTree) {
-    return null;
-  }
-  
   return (
     <nav id="navbar">
       <div className="radiobuttonlist">
