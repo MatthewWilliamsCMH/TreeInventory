@@ -16,7 +16,7 @@ const TreeMap = () => {
   const { selectedTree, setSelectedTree } = useOutletContext();
   const { updatedTree, setUpdatedTree } = useOutletContext();
 
-  const { loading: loadingGetAll, error: errorGetAll, data: dataGetAll } = useQuery(GET_TREES); //fetch all trees
+  const { loading: loadingGetAll, error: errorGetAll, data: dataGetAll, refresh } = useQuery(GET_TREES, { fetchPolicy: "cache-and-network" }); //fetch all trees
   const [trees, setTrees] = useState(dataGetAll?.getTrees || []); //establish state that will store the list of trees; set to the list or to an empty array
 
   const [addTree, { loading: loadingAddOne, error: errorAddOne}] = useMutation(ADD_TREE); //add one tree

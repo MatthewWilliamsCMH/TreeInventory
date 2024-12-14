@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_TREE } from "../../mutations/add_tree";
@@ -6,8 +6,12 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
-  const { updatedTree, setUpdatedTree } = useOutletContext();
-  const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE);
+  const { updatedTree, setUpdatedTree, treesRefetch } = useOutletContext();
+  const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE, {
+    onCompleted: () => {
+      treesRefetch && treesRefetch();
+    }
+  });
   const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
 
@@ -62,11 +66,8 @@ const Footer = () => {
         });
         console.log("Tree added:", data.addTree);
         setUpdatedTree(null);
-        setSelectedTree(null)
-        navigate("/");
-           }
+      }
       else {
-
       const { data } = await updateTreeMutation({
         variables: {
           id: updatedTree.id,
@@ -117,14 +118,18 @@ const Footer = () => {
       if (data) {
         console.log("Tree updated:", data.updateTree);
         setUpdatedTree(null);
-        setSelectedTree(null)
-        navigate("/");
       }
       }
     } catch (err) {
       console.error("Unable to update data.", err);
     }
   };
+
+  useEffect(() => {
+    if (updatedTree === null) {
+      navigate("/")
+    }
+  }, [updatedTree, navigate])
 
   const handleCancel = () => {
     setUpdatedTree(null);

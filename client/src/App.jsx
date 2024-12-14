@@ -1,5 +1,8 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
+import { useQuery } from "@apollo/client"; // Make sure to import useQuery
+import { GET_TREES } from "./queries/get_trees"; // Import your GET_TREES query
+
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import "./reset.css";
@@ -8,6 +11,7 @@ import "./App.css";
 function App() {
   const [selectedTree, setSelectedTree] = useState(null);
   const [updatedTree, setUpdatedTree] = useState(null);
+  const { refetch } = useQuery(GET_TREES, { fetchPolicy: "cache-and-network" })
 
   // Determine form background color based on 'invasive' flag in selectedTree
   const formStyle = {
@@ -33,7 +37,14 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
-      <Outlet context={{ selectedTree, setSelectedTree, updatedTree, setUpdatedTree, formStyle }} />
+      <Outlet context = {{ 
+        selectedTree, 
+        setSelectedTree, 
+        updatedTree, 
+        setUpdatedTree, 
+        formStyle, 
+        treesRefetch: refetch 
+      }} />
     </div>
   );
 }
