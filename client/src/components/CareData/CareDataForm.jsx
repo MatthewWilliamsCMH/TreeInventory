@@ -16,7 +16,7 @@ const CareDataForm = () => {
       },
       variety: updatedTree?.variety || "",
       dbh: updatedTree?.dbh || "",
-      photos: updatedTree?.photos || null,
+      photos: updatedTree?.photos || "",
       notes: updatedTree?.notes || "",
       nonnative: updatedTree?.nonnative || false,
       invasive: updatedTree?.invasive || false,

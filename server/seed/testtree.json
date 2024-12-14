@@ -39,7 +39,7 @@
     },
     "careHistory": "",
     "notes": "",
-    "photos": null,
+    "photos": "",
     "hidden": false
   },
     {
@@ -82,7 +82,7 @@
     },
     "careHistory": "",
     "notes": "",
-    "photos": null,
-    "hidden": true
+    "photos": "",
+    "hidden": false
   }
 ]
