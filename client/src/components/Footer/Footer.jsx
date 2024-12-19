@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_TREE } from "../../mutations/add_tree";
@@ -6,141 +6,126 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
-  const { updatedTree, setUpdatedTree, treesRefetch } = useOutletContext();
-  const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE, {
-    onCompleted: () => {
-      treesRefetch && treesRefetch();
-    }
-  });
-  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE, {
-    onCompleted: () => {
-      treesRefetch && treesRefetch();
-    }
-  });
+  const { formValues, setFormValues, selectedTree, setSelectedTree } = useOutletContext();
+  const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE);
+  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
+console.log(selectedTree)
 
   const handleSubmit = async () => {
     try {
-      if (!updatedTree?.id) {
+      if (!formValues?.id) {
         const { data } = await addTreeMutation({
           variables: {
-            species: updatedTree.species ? {
-              commonName: updatedTree.species.commonName,
-              scientificName: updatedTree.species.scientificName
+            species: formValues.species ? {
+              commonName: formValues.species.commonName,
+              scientificName: formValues.species.scientificName
             } : null,
-            variety: updatedTree.variety,
-            dbh: updatedTree.dbh,
-            photos: updatedTree.photos,
-            notes: updatedTree.notes,
-            nonnative: updatedTree.nonnative,
-            invasive: updatedTree.invasive,
-            location: updatedTree.location ? {
-              northing: updatedTree.location.northing,
-              easting: updatedTree.location.easting
+            variety: formValues.variety,
+            dbh: formValues.dbh,
+            photos: formValues.photos,
+            notes: formValues.notes,
+            nonnative: formValues.nonnative,
+            invasive: formValues.invasive,
+            location: formValues.location ? {
+              northing: formValues.location.northing,
+              easting: formValues.location.easting
             } : null,
-            garden: updatedTree.garden,
-            siteInfo: updatedTree.siteInfo ? {
-              slope: updatedTree.siteInfo.slope,
-              overheadLines: updatedTree.siteInfo.overheadLines,
-              treeCluster: updatedTree.siteInfo.treeCluster,
-              proximateStructure: updatedTree.siteInfo.proximateStructure,
-              proximateFence: updatedTree.siteInfo.proximateFence,
+            garden: formValues.garden,
+            siteInfo: formValues.siteInfo ? {
+              slope: formValues.siteInfo.slope,
+              overheadLines: formValues.siteInfo.overheadLines,
+              treeCluster: formValues.siteInfo.treeCluster,
+              proximateStructure: formValues.siteInfo.proximateStructure,
+              proximateFence: formValues.siteInfo.proximateFence,
             } : null,
             lastVisited: new Date().toLocaleDateString("en-US"),
-            installedDate: updatedTree.installedDate,
-            installedBy: updatedTree.installedBy,
-            felledDate: updatedTree.felledDate,
-            felledBy: updatedTree.felledBy,
-            maintenanceNeeds: updatedTree.maintenanceNeeds ? {
-              install: updatedTree.maintenanceNeeds.install,
-              raiseCrown: updatedTree.maintenanceNeeds.raiseCrown,
-              routinePrune: updatedTree.maintenanceNeeds.routinePrune,
-              trainingPrune: updatedTree.maintenanceNeeds.trainingPrune,
-              priorityPrune: updatedTree.maintenanceNeeds.priorityPrune,
-              pestTreatment: updatedTree.maintenanceNeeds.pestTreatment,
-              installGrate: updatedTree.maintenanceNeeds.installGrate,
-              removeGrate: updatedTree.maintenanceNeeds.removeGrate,
-              fell: updatedTree.maintenanceNeeds.fell,
-              removeStump: updatedTree.maintenanceNeeds.removeStump
+            installedDate: formValues.installedDate,
+            installedBy: formValues.installedBy,
+            felledDate: formValues.felledDate,
+            felledBy: formValues.felledBy,
+            maintenanceNeeds: formValues.maintenanceNeeds ? {
+              install: formValues.maintenanceNeeds.install,
+              raiseCrown: formValues.maintenanceNeeds.raiseCrown,
+              routinePrune: formValues.maintenanceNeeds.routinePrune,
+              trainingPrune: formValues.maintenanceNeeds.trainingPrune,
+              priorityPrune: formValues.maintenanceNeeds.priorityPrune,
+              pestTreatment: formValues.maintenanceNeeds.pestTreatment,
+              installGrate: formValues.maintenanceNeeds.installGrate,
+              removeGrate: formValues.maintenanceNeeds.removeGrate,
+              fell: formValues.maintenanceNeeds.fell,
+              removeStump: formValues.maintenanceNeeds.removeStump
             } : null,
-            careHistory: updatedTree.careHistory,
-            hidden: updatedTree.hidden
+            careHistory: formValues.careHistory,
+            hidden: formValues.hidden
           }
         });
         console.log("Tree added:", data.addTree);
-        setUpdatedTree(null);
+        setFormValues(null);
+        setSelectedTree(null);
+        console.log("1")
         navigate("/")
       }
       else {
         const { data } = await updateTreeMutation({
           variables: {
-            id: updatedTree.id,
-            species: updatedTree.species ? {
-              commonName: updatedTree.species.commonName,
-              scientificName: updatedTree.species.scientificName
+            id: formValues.id,
+            species: formValues.species ? {
+              commonName: formValues.species.commonName,
+              scientificName: formValues.species.scientificName
             } : null,
-            variety: updatedTree.variety,
-            dbh: updatedTree.dbh,
-            photos: updatedTree.photos,
-            notes: updatedTree.notes,
-            nonnative: updatedTree.nonnative,
-            invasive: updatedTree.invasive,
-            location: updatedTree.location ? {
-              northing: updatedTree.location.northing,
-              easting: updatedTree.location.easting
+            variety: formValues.variety,
+            dbh: formValues.dbh,
+            photos: formValues.photos,
+            notes: formValues.notes,
+            nonnative: formValues.nonnative,
+            invasive: formValues.invasive,
+            location: formValues.location ? {
+              northing: formValues.location.northing,
+              easting: formValues.location.easting
             } : null,
-            garden: updatedTree.garden,
-            siteInfo: updatedTree.siteInfo ? {
-              slope: updatedTree.siteInfo.slope,
-              overheadLines: updatedTree.siteInfo.overheadLines,
-              treeCluster: updatedTree.siteInfo.treeCluster,
-              proximateStructure: updatedTree.siteInfo.proximateStructure,
-              proximateFence: updatedTree.siteInfo.proximateFence,
+            garden: formValues.garden,
+            siteInfo: formValues.siteInfo ? {
+              slope: formValues.siteInfo.slope,
+              overheadLines: formValues.siteInfo.overheadLines,
+              treeCluster: formValues.siteInfo.treeCluster,
+              proximateStructure: formValues.siteInfo.proximateStructure,
+              proximateFence: formValues.siteInfo.proximateFence,
             } : null,
             lastVisited: new Date().toLocaleDateString("en-US"),
-            installedDate: updatedTree.installedDate,
-            installedBy: updatedTree.installedBy,
-            felledDate: updatedTree.felledDate,
-            felledBy: updatedTree.felledBy,
-            maintenanceNeeds: updatedTree.maintenanceNeeds ? {
-              install: updatedTree.maintenanceNeeds.install,
-              raiseCrown: updatedTree.maintenanceNeeds.raiseCrown,
-              routinePrune: updatedTree.maintenanceNeeds.routinePrune,
-              trainingPrune: updatedTree.maintenanceNeeds.trainingPrune,
-              priorityPrune: updatedTree.maintenanceNeeds.priorityPrune,
-              pestTreatment: updatedTree.maintenanceNeeds.pestTreatment,
-              installGrate: updatedTree.maintenanceNeeds.installGrate,
-              removeGrate: updatedTree.maintenanceNeeds.removeGrate,
-              fell: updatedTree.maintenanceNeeds.fell,
-              removeStump: updatedTree.maintenanceNeeds.removeStump
+            installedDate: formValues.installedDate,
+            installedBy: formValues.installedBy,
+            felledDate: formValues.felledDate,
+            felledBy: formValues.felledBy,
+            maintenanceNeeds: formValues.maintenanceNeeds ? {
+              install: formValues.maintenanceNeeds.install,
+              raiseCrown: formValues.maintenanceNeeds.raiseCrown,
+              routinePrune: formValues.maintenanceNeeds.routinePrune,
+              trainingPrune: formValues.maintenanceNeeds.trainingPrune,
+              priorityPrune: formValues.maintenanceNeeds.priorityPrune,
+              pestTreatment: formValues.maintenanceNeeds.pestTreatment,
+              installGrate: formValues.maintenanceNeeds.installGrate,
+              removeGrate: formValues.maintenanceNeeds.removeGrate,
+              fell: formValues.maintenanceNeeds.fell,
+              removeStump: formValues.maintenanceNeeds.removeStump
             } : null,
-            careHistory: updatedTree.careHistory,
-            hidden: updatedTree.hidden
+            careHistory: formValues.careHistory,
+            hidden: formValues.hidden
           }
         });
         console.log("Tree updated:", data.updateTree);
-        setUpdatedTree(null);
+        setFormValues(null);
         navigate("/")
       }
     }
     catch (err) {
-      console.error("Unable to update data.", err);
     }
   };
 
-  // useEffect(() => {
-  //   if (updatedTree === null) {
-  //     navigate("/")
-  //   }
-  // }, [updatedTree, navigate])
-
   const handleCancel = () => {
-    setUpdatedTree(null);
+    setFormValues(null);
     navigate("/");
   };
-
-  // Only render footer buttons if there's an updated tree
-  // if (!updatedTree) return null;
 
   return (
     <div id="footer">

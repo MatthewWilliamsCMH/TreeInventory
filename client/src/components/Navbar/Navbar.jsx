@@ -29,6 +29,7 @@ const Navbar = () => {
       switch (selectedValue) {
         case "map":
           navigate("/");
+          //can I refetch here to redisplay the map instead of the hackey code in treemap?
           break;
         case "physicalData":
           navigate("/physicaldata");
