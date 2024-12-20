@@ -132,7 +132,7 @@ const TreeMap = () => {
   }
 
   return (
-    <div ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
+    <div id="map" ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
   );
 };
 

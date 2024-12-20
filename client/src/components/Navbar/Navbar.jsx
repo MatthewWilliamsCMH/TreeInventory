@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ selectedTree }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
       case "/": return "map";
@@ -21,11 +21,11 @@ const Navbar = () => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    if ((selectedValue === "map" & "location.pathname" !== "/") ||
-      (selectedValue === "physicalData" & "location.pathname" !== "/physicaldata") ||
-      (selectedValue === "siteData" & "location.pathname" !== "/siteData") ||
-      (selectedValue === "careData" & "location.pathname" !== "/caredata") ||
-      (selectedValue === "inventory" & "location.pathname" !== "/inventory")) {
+    if ((selectedValue === "map" && "location.pathname" !== "/") ||
+      (selectedValue === "physicalData" && "location.pathname" !== "/physicaldata") ||
+      (selectedValue === "siteData" && "location.pathname" !== "/siteData") ||
+      (selectedValue === "careData" && "location.pathname" !== "/caredata") ||
+      (selectedValue === "inventory" && "location.pathname" !== "/inventory")) {
       switch (selectedValue) {
         case "map":
           navigate("/");
@@ -73,6 +73,8 @@ const Navbar = () => {
     }
   }, [location.pathname]);
 
+  const isDisabled = selectedTree === null;
+
   return (
     <nav id="navbar">
       <div className="radiobuttonlist">
@@ -93,6 +95,7 @@ const Navbar = () => {
             value="physicalData"
             checked={selectedOption === "physicalData"}
             onChange={handleRadioChange}
+            disabled={isDisabled}
           />
           <span className="tooltip">Physical data</span>
         </label>
@@ -103,6 +106,7 @@ const Navbar = () => {
             value="siteData"
             checked={selectedOption === "siteData"}
             onChange={handleRadioChange}
+            disabled={isDisabled}
           />
           <span className="tooltip">Site data</span>
         </label>
@@ -113,6 +117,7 @@ const Navbar = () => {
             value="careData"
             checked={selectedOption === "careData"}
             onChange={handleRadioChange}
+            disabled={isDisabled}
           />
           <span className="tooltip">Care data</span>
         </label>
@@ -123,6 +128,7 @@ const Navbar = () => {
             value="inventory"
             checked={selectedOption === "inventory"}
             onChange={handleRadioChange}
+            disabled={isDisabled}
           />
           <span className="tooltip">Inventory</span>
         </label>

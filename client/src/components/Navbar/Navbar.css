@@ -63,6 +63,22 @@ input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
+/* Style the disabled radio button */
+input[type="radio"]:disabled {
+  border-color: lightgray;
+  background-color: #f5f5f5;  /* Light background to show it's inactive */
+  cursor: not-allowed;  /* Changes cursor to indicate it's not clickable */
+}
+
+/* Style the inner circle of disabled radio button */
+input[type="radio"]:disabled::before {
+  background-color: lightgray;
+}
+
+/* Style the tooltip when radio is disabled */
+input[type="radio"]:disabled + .tooltip {
+  color: lightgray;
+}
 .radiooption {
   position: relative;
 }

@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Navbar />
+      <Navbar selectedTree={selectedTree} />
       <Outlet context = {{ 
         selectedTree, 
         setSelectedTree, 

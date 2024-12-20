@@ -127,3 +127,7 @@ textarea {
   width: max-content;
   color: red;
 }
+
+#map {
+  cursor: pointer;
+}
