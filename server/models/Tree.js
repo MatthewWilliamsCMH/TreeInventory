@@ -18,7 +18,7 @@ const treeSchema = new Schema({
     easting: { type: Number } //always negative at SC //make required
   },
   garden: { type: String}, //choose from fixed list //make required
-siteInfo: {
+  siteInfo: {
     slope: { type: Boolean },
     overheadLines: { type: Boolean },
     treeCluster: { type: Boolean },
@@ -26,7 +26,7 @@ siteInfo: {
     proximateFence: { type: Boolean }
   },
   installedDate: { type: Date },
-  indstalledBy: { type: String },
+  installedBy: { type: String },
   felledDate: { type: Date },
   felledBy: { type: String },
   maintenanceNeeds: {
