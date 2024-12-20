@@ -55,7 +55,8 @@ const TreeMap = () => {
     const { northing, easting } = tree.location;
     const popupContent = `
       <b>${tree.species?.commonName}</b><br>
-      <i>${tree.species?.scientificName}</i><br>
+      <i>${tree.garden}</i><br>
+      <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
     const marker = L.marker([northing, easting])

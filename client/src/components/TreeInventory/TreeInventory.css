@@ -1,0 +1,31 @@
+table {
+  background-color: white;
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  border-spacing: 0px;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+tr {
+  height: 2rem;
+  border-style: none;
+}
+
+td {
+  padding: 5px;
+
+}
+
+tr:nth-child(even) {
+    background-color: var(--pale-yellow);
+}

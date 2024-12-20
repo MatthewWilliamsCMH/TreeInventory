@@ -128,7 +128,6 @@ const Navbar = ({ selectedTree }) => {
             value="inventory"
             checked={selectedOption === "inventory"}
             onChange={handleRadioChange}
-            disabled={isDisabled}
           />
           <span className="tooltip">Inventory</span>
         </label>
