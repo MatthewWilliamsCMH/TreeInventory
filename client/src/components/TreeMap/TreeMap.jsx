@@ -59,7 +59,7 @@ const TreeMap = () => {
       <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
-    const marker = L.marker([northing, easting])
+    const marker = L.marker([northing, easting], {draggable: "true"})
       .bindPopup(popupContent)
       .addTo(map.current);
 
