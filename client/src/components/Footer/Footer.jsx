@@ -10,7 +10,6 @@ const Footer = () => {
   const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE);
   const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
-console.log(selectedTree)
 
   const handleSubmit = async () => {
     try {

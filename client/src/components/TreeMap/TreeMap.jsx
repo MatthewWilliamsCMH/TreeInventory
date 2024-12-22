@@ -9,6 +9,7 @@ import { ADD_TREE } from "../../mutations/add_tree";
 import { UPDATE_TREE } from "../../mutations/update_tree";
 
 const TreeMap = () => {
+  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();  //enable routing
   
   //accept objects and functions for storing data
@@ -62,6 +63,20 @@ const TreeMap = () => {
     const marker = L.marker([northing, easting], {draggable: "true"})
       .bindPopup(popupContent)
       .addTo(map.current);
+
+    marker.on('dragend', function(event){
+      const { lat, lng } = event.target._latlng;
+      const draggedTreeId = tree.id;
+      const { data } = updateTreeMutation({
+        variables: {
+          id: draggedTreeId,
+          location: {
+            northing: lat,
+            easting: lng
+          }
+        }
+      })
+    });
 
     marker.on("popupopen", (event) => {
       const popup = event.popup;
