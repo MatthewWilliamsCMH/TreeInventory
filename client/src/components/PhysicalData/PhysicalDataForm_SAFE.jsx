@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import { handleFieldChange, commonToScientificList, dbhList } from "../../utils/fieldChangeHandler";
-import PhotoUploadModal from "../../utils/photoUploadModal"
 
 //set up an object with values from formValues or set the values to ""
 const PhysicalDataForm = () => {
   const { formValues, setFormValues, formStyle } = useOutletContext();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activePhotoType, setActivePhotoType] = useState(null);
  
 //-------------------- handle field changes --------------------
   const handleInputChange = (field, event) => {
@@ -16,20 +13,6 @@ const PhysicalDataForm = () => {
     setFormValues(prevValues => handleFieldChange(prevValues, field, value)); // Use imported updateFormField function
   };
 
-  const handlePhotoClick = (photoType) => {
-    if (formValues.photos?.[photoType]) {
-      window.open(formValues.photos[photoType], "_blank");
-      return;
-    }
-    setActivePhotoType(photoType);
-    setIsModalOpen(true);
-  };
-
-  const handlePhotoUpload = (file, isCapture) => {
-    // Implement your photo upload logic here
-    console.log("Uploading photo:", file, "for type:", activePhotoType, "capture:", isCapture);
-    setModalOpen(false);
-  };
   //-------------------- render component--------------------//
   return (
     <form style={formStyle}>
@@ -92,25 +75,23 @@ const PhysicalDataForm = () => {
         </select>
       </div>
 
-      <div className="control">
-        <label htmlFor="photos">Photos</label>
-        <div className="photogroup">
-          <div 
-            className="photo" 
-            onClick={() => handlePhotoClick("bark")}
-          >
-            <p>Bark photo</p>
+      <div className = "control">
+        <label htmlFor = "photos">Photos</label>
+        <div className = "photogroup">
+          <div className = "photo" id = "bark">
           </div>
-          <div 
-            className="photo" 
-            onClick={() => handlePhotoClick("summerLeaf")}
-          >
-            <p>Summer leaf</p>
+          <div className = "photo" id = "summerLeaf">
           </div>
-          {/* Add similar click handlers for other photo types */}
+          <div className = "photo" id = "autumnLeaf">
+          </div>
+          <div className = "photo" id = "fruit">
+          </div>
+          <div className = "photo" id = "flower">
+          </div>
+          <div className = "photo" id = "environs">
+          </div>
         </div>
       </div>
-
 
       <div className = "control">
         <label htmlFor = "notes">Notes:</label>
@@ -148,38 +129,6 @@ const PhysicalDataForm = () => {
           </label>
         </div>
       </div>
-      <div className="control">
-        <label htmlFor="photos">Photos</label>
-        <div className="photogroup">
-          <div className="photo" onClick={() => handlePhotoClick("bark")}>
-            <p>Bark photo</p>
-          </div>
-          <div className="photo" onClick={() => handlePhotoClick("summerLeaf")}>
-            <p>Summer leaf</p>
-          </div>
-          {/* Add other photo divs similarly */}
-        </div>
-      </div>
-
-      <PhotoUploadModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onUpload={() => {
-          const input = document.createElement('input');
-          input.type = 'file';
-          input.accept = 'image/*';
-          input.onchange = (e) => handlePhotoUpload(e.target.files[0], false);
-          input.click();
-        }}
-        onCapture={() => {
-          const input = document.createElement('input');
-          input.type = 'file';
-          input.accept = 'image/*';
-          input.capture = 'environment';
-          input.onchange = (e) => handlePhotoUpload(e.target.files[0], true);
-          input.click();
-        }}
-      />
       <Footer />
     </form>
   );
