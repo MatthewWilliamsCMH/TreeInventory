@@ -7010,7 +7010,7 @@
   {
     "species": {
       "commonName": "Red maple",
-      "scientificName": "Acer Rrubrum"
+      "scientificName": "Acer Rubrum"
     },
     "variety": "",
     "dbh": "12-18",
@@ -7052,7 +7052,7 @@
   },
   {
     "species": {
-      "commonName": "Red oak",
+      "commonName": "Pin oak",
       "scientificName": "Quercus palustris"
     },
     "variety": "",
@@ -7397,7 +7397,7 @@
   {
     "species": {
       "commonName": "Saucer magnolia",
-      "scientificName": "Magnolia soulangeana"
+      "scientificName": "Magnolia x soulangeana"
     },
     "variety": "",
     "dbh": "30-42",

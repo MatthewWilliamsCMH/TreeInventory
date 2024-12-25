@@ -56,7 +56,8 @@ const TreeInventory = () => {
       <table>
         <thead>
           <tr>
-            <th onClick={() => handleSort("commonName")}>Common Name</th>
+            <th onClick={() => handleSort("commonName")}>Common name</th>
+            <th onClick={() => handleSort("scientificName")}>Scientific name</th>
             <th onClick={() => handleSort("garden")}>Garden</th>
             <th onClick={() => handleSort("dbh")}>DBH</th>
             <th onClick={() => handleSort("notes")}>Notes</th>
@@ -67,6 +68,7 @@ const TreeInventory = () => {
           {sortedTrees.map((tree) => (
             <tr key={tree?.id || "unknown"} onClick={() => handleTreeClick(tree)}>
               <td>{tree?.species?.commonName || ""}</td>
+              <td>{tree?.species?.scientificName || ""}</td>
               <td>{tree?.garden || ""}</td>
               <td>{tree?.dbh ? `${tree.dbh} inches` : ""}</td>
               <td>{tree?.notes || ""}</td>

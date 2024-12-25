@@ -133,7 +133,7 @@ export const commonToScientificList = {
   "Red pine": "Pinus resinosa",
   "River birch": "Betula nigra",
   "Sassafrass": "Sassafras albidum",
-  "Saucer Magnolia": "Magnolia x soulangeana",
+  "Saucer magnolia": "Magnolia x soulangeana",
   "Sawtooth oak": "Quercus acutissima", //invasive, nonnative
   "Scarlet oak": "Quercus coccinea",
   "Scotch pine": "Pinus sylvetris",
