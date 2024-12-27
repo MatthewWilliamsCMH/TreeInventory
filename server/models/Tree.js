@@ -9,7 +9,14 @@ const treeSchema = new Schema({
   variety: { type: String },
   dbh: { type: String }, //choose from fixed list //make required
   notes: { type: String },
-  photos: { type: String }, //store url for image
+  photos: { //store url for images
+    bark: {type: String},
+    summerLeaf: {type: String},
+    autumnLeaf: {type: String},
+    fruit: {type: String},
+    flower: {type: String},
+    environs: {type: String}
+  },
   nonnative: { type: Boolean },
   invasive: { type: Boolean },
   lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated

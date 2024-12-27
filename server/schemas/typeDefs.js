@@ -32,6 +32,15 @@ const typeDefs = gql `
     removeStump: Boolean
   }
 
+  input PhotosInput {
+    bark: String
+    summerLeaf: String
+    autumnLeaf: String
+    fruit: String
+    flower: String
+    envorins: String
+  }
+
   type Species {
     commonName: String!
     scientificName: String!
@@ -63,12 +72,21 @@ const typeDefs = gql `
     removeStump: Boolean
   }
 
+  type Photos {
+    bark: String
+    summerLeaf: String
+    autumnLeaf: String
+    fruit: String
+    flower: String
+    environs: String
+  }
+
   type Tree {
     id: ID!
     species: Species
     variety: String
     dbh: String
-    photos: String
+    photos: Photos
     notes: String
     nonnative: Boolean
     invasive: Boolean
@@ -95,7 +113,7 @@ const typeDefs = gql `
       species: SpeciesInput
       variety: String
       dbh: String
-      photos: String
+      photos: PhotosInput
       notes: String
       nonnative: Boolean
       invasive: Boolean
@@ -117,7 +135,7 @@ const typeDefs = gql `
       species: SpeciesInput
       variety: String
       dbh: String
-      photos: String
+      photos: PhotosInput
       notes: String
       nonnative: Boolean
       invasive: Boolean

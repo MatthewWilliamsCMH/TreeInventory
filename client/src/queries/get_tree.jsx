@@ -5,20 +5,36 @@ export const GET_TREE = gql`
   query getTree {
     getTree {
       id
-      lastVisited
-      nonnative
-      invasive
       species {
         commonName
         scientificName
       }
       variety
-      garden
+      dbh
+      photos {
+        bark
+        summerLeaf
+        autumnLeaf
+        fruit
+        flower
+        environs
+      }
+      notes
+      nonnative
+      invasive
       location {
         northing
         easting
       }
-      dbh
+      garden
+      siteInfo {
+        slope
+        overheadLines
+        treeCluster
+        proximateStructure
+        proximateFence
+      }
+      lastVisited
       installedDate
       installedBy
       felledDate
@@ -35,16 +51,8 @@ export const GET_TREE = gql`
         fell
         removeStump
       }
-      siteInfo {
-        slope
-        overheadLines
-        treeCluster
-        proximateStructure
-        proximateFence
-      }
       careHistory
-      notes
-      photos
+      hidden
     }
   }
 `;

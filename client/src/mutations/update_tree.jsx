@@ -6,7 +6,7 @@ export const UPDATE_TREE = gql`
     $species: SpeciesInput
     $variety: String
     $dbh: String
-    $photos: String
+    $photos: PhotoInput
     $notes: String
     $nonnative: Boolean
     $invasive: Boolean
@@ -50,7 +50,14 @@ export const UPDATE_TREE = gql`
       }
       variety
       dbh
-      photos
+      photos {
+        bark
+        summerLeaf
+        autumnLeaf
+        fruit
+        flower
+        environs
+      }
       notes
       nonnative
       invasive

@@ -22,7 +22,14 @@ const Footer = () => {
             } : null,
             variety: formValues.variety,
             dbh: formValues.dbh,
-            photos: formValues.photos,
+            photos: formValues.photos ? {
+              bark: formValues.photos.bark,
+              summerLeaf: formValues.photos.summerLeaf,
+              autumnLeaf: formValues.photos.autumnLeaf,
+              fruit: formValues.photos.fruit,
+              flower: formValues.photos.flower,
+              environs: formValues.photos.environs
+            } : null,
             notes: formValues.notes,
             nonnative: formValues.nonnative,
             invasive: formValues.invasive,
@@ -75,7 +82,14 @@ const Footer = () => {
             } : null,
             variety: formValues.variety,
             dbh: formValues.dbh,
-            photos: formValues.photos,
+            photos: formValues.photos ? {
+              bark: formValues.photos.bark,
+              summerLeaf: formValues.photos.summerLeaf,
+              autumnLeaf: formValues.photos.autumnLeaf,
+              fruit: formValues.photos.fruit,
+              flower: formValues.photos.flower,
+              environs: formValues.photos.environs
+            } : null,
             notes: formValues.notes,
             nonnative: formValues.nonnative,
             invasive: formValues.invasive,

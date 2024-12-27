@@ -10,7 +10,14 @@ export const GET_TREES = gql`
       }
       variety
       dbh
-      photos
+      photos {
+        bark
+        summerLeaf
+        autumnLeaf
+        fruit
+        flower
+        environs
+      }
       notes
       nonnative
       invasive
@@ -44,6 +51,7 @@ export const GET_TREES = gql`
         removeStump
       }
       careHistory
+      hidden
     }
   }
 `;

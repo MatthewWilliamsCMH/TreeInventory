@@ -5,7 +5,6 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from "@ap
 import App from "./App";
 import TreeMap from "./components/TreeMap/TreeMap";
 import PhysicalDataForm from "./components/PhysicalData/PhysicalDataForm";
-// import UppyUploader from "./components/PhysicalData/UppyUploader";
 import SiteDataForm from "./components/SiteData/SiteDataForm";
 import CareDataForm from "./components/CareData/CareDataForm";
 import TreeInventory from "./components/TreeInventory/TreeInventory";
