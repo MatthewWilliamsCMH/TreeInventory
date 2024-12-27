@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
-// import { useQuery } from "@apollo/client"; // Make sure to import useQuery
-// import { GET_TREES } from "./queries/get_trees"; // Import your GET_TREES query
 
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import UppyUploader from "./components/PhysicalData/UppyUploader";
+
 import "./reset.css";
+import '@uppy/core/dist/style.css'
+import '@uppy/dashboard/dist/style.css'
+import '@uppy/webcam/dist/style.css'
 import "./App.css";
 
 function App() {
