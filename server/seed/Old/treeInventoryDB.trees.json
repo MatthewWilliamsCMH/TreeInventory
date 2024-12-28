@@ -1,0 +1,8086 @@
+[
+  {
+    "lastVisited": "01/06/2022",
+    "nonnative": false,  
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771359301542",
+      "easting": "-83.0497698630152286922488668 "
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2022",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "01/06/2022",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771385469564",
+      "easting": "-83.05016141616256516761471284"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2022",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769437524263",
+      "easting": "-83.04976715418348816634649414"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "10/21/2021",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "01/06/2023",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769894425444",
+      "easting": "-83.04999474679264813314845102"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2023",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "01/06/2023",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Tree of heaven",
+      "scientificName": "Ailanthus altissima"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769160111419",
+      "easting": "-83.05003284149115762585516978"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2023",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780625550231",
+      "easting": "-83.04901444721328108429555245"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "pruned in 2020",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779530895246",
+      "easting": "-83.04875937619599867541950563"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "bark damage and borer holes noted 2020",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780293162207",
+      "easting": "-83.04857482510594606625080955"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "bark damage and borer holes noted 2020",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779945872415",
+      "easting": "-83.04872166749745822493966785"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769525352842",
+      "easting": "-83.04871875982848046171519635"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White ash",
+      "scientificName": "Fraxinus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769168175949",
+      "easting": "-83.04917794"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American basswood",
+      "scientificName": "Tilia americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782107293033",
+      "easting": "-83.04870294046093349472656869"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American basswood",
+      "scientificName": "Tilia americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782933385841",
+      "easting": "-83.04879473725381477763817008"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American basswood",
+      "scientificName": "Tilia americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782391293414",
+      "easting": "-83.04863687765092965686453034"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "01/06/2023",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American basswood",
+      "scientificName": "Tilia americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.978288124937",
+      "easting": "-83.04879164566942513007257896"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/06/2023",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": true
+    },
+    "careHistory": "",
+    "notes": "carpenter-ant infestation noted in 2020",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American basswood",
+      "scientificName": "Tilia americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782017602743",
+      "easting": "-83.04865329281423105437619494"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/24/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Little leaf linden",
+      "scientificName": "Tilia cordata"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767766315268",
+      "easting": "-83.05045533951818634783019869"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Little leaf linden",
+      "scientificName": "Tilia cordata"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767463964834",
+      "easting": "-83.02117014"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/24/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "River birch",
+      "scientificName": "Betula nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780538956831",
+      "easting": "-83.04998466442116042760201772"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "River birch",
+      "scientificName": "Betula nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781183817936",
+      "easting": "-83.04862587073065658965300067"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "dying 2024",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Ohio buckeye",
+      "scientificName": "Aesculus glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9774207393019",
+      "easting": "-83.05029601990314305231857173"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Ohio buckeye",
+      "scientificName": "Aesculus glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781840614721",
+      "easting": "-83.04911021899784483668988206"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Ohio buckeye",
+      "scientificName": "Aesculus glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781969904027",
+      "easting": "-83.04912257450612284536298872"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Ohio buckeye",
+      "scientificName": "Aesculus glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780643607419",
+      "easting": "-83.05043334848020589091186709"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "dead or dying autumn 2021",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern catalpa",
+      "scientificName": "Catalpa speciosa"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9772076055749",
+      "easting": "-83.02126495"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern catalpa",
+      "scientificName": "Catalpa speciosa"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9783522462992",
+      "easting": "-83.01932562"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern catalpa",
+      "scientificName": "Catalpa speciosa"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782792143367",
+      "easting": "-83.04847265578466232884600718"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern catalpa",
+      "scientificName": "Catalpa speciosa"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778163865452",
+      "easting": "-83.05058549173678484935560413"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern catalpa",
+      "scientificName": "Catalpa speciosa"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9774339330734",
+      "easting": "-83.05051936445774734220142973"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black cherry",
+      "scientificName": "Prunus serotina"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778846876931",
+      "easting": "-83.05020507574666284909397771"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/24/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Weeping cherry",
+      "scientificName": "Prunus penudula"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779968488926",
+      "easting": "-83.04940899310589177835144426"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "pruned in 2020",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781694053375",
+      "easting": "-83.04896428975334112750749051"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9783722028969",
+      "easting": "-83.04893307233772741912644897"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "Cardinal",
+    "garden": "",
+    "location": {
+      "northing": "39.9767893484535",
+      "easting": "-83.04868862380049386305177807"
+    },
+    "dbh": "37-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "Cardinal",
+    "garden": "",
+    "location": {
+      "northing": "39.9767754585579",
+      "easting": "-83.04880433111983401147675722"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "Prairifire",
+    "garden": "",
+    "location": {
+      "northing": "39.9779290472973",
+      "easting": "-83.04845621813661920135110196"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Crabapple",
+      "scientificName": "Malus"
+    },
+    "variety": "Coronaria",
+    "garden": "",
+    "location": {
+      "northing": "39.9778833524433",
+      "easting": "-83.05024538518392332877179192"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Blackhaw",
+      "scientificName": "Viburnum prunifolium"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782234647943",
+      "easting": "-83.04883429965513925548693359"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American elm",
+      "scientificName": "Ulmus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768759368108",
+      "easting": "-83.04873785944064045980144157"
+    },
+    "dbh": "37-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American elm",
+      "scientificName": "Ulmus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769337968858",
+      "easting": "-83.04967015863236719006873503"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American elm",
+      "scientificName": "Ulmus americana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770120757789",
+      "easting": "-83.04972752004899330570148642"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768685143657",
+      "easting": "-83.05059442187581904685396594"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977761785983",
+      "easting": "-83.05060929310760606857960229"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977765785088",
+      "easting": "-83.05062243427524504591428491"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777422310605",
+      "easting": "-83.05059859006251028563248302"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977734316878",
+      "easting": "-83.05060525409281363684166907"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777372907648",
+      "easting": "-83.02144554"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777365825674",
+      "easting": "-83.05062106703560969180747055"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777175741523",
+      "easting": "-83.05059347375676776587559775"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus pumila"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777095563024",
+      "easting": "-83.05059404864216783336326951"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9783124156139",
+      "easting": "-83.0193449"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9783559520385",
+      "easting": "-83.04857174022020366083608707"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779201362793",
+      "easting": "-83.05023467511876309501583879"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778879166251",
+      "easting": "-83.0505406027186588164828412"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778723552991",
+      "easting": "-83.05054553214625581334400911"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777688617875",
+      "easting": "-83.05037064137850917883524429"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777925465767",
+      "easting": "-83.05047560061400997594100774"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777247495634",
+      "easting": "-83.05043393664171771087355252"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Siberian elm",
+      "scientificName": "Ulmus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777438414943",
+      "easting": "-83.05042818711326192067989732"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Ginkgo",
+      "scientificName": "Gingko biloba"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780156182017",
+      "easting": "-83.04978727323886687934773309"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782192957911",
+      "easting": "-83.0490772627694803634062674"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782907794233",
+      "easting": "-83.0489677503660088174866446"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782720217107",
+      "easting": "-83.04894306991175573339800784"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782606523496",
+      "easting": "-83.01980488"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782415064735",
+      "easting": "-83.04898381007583375702850119"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.978291846635",
+      "easting": "-83.04894581857344848423383665"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782777757422",
+      "easting": "-83.04896006491673211546998665"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781929925204",
+      "easting": "-83.04895801448532631719271767"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781905077797",
+      "easting": "-83.04890431133696120413039908"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781938333539",
+      "easting": "-83.04863304052854474373919258"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.976762512211",
+      "easting": "-83.05060536531116283852629664"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.976950159223",
+      "easting": "-83.04957594495778726883250786"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977040273703",
+      "easting": "-83.05005700847683847089536865"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Mulberry",
+      "scientificName": "Morus"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770016121761",
+      "easting": "-83.05008689173713991859273231"
+    },
+    "dbh": "< 3",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768624228587",
+      "easting": "-83.05015182920423114254160727"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780956762587",
+      "easting": "-83.05044310990969372379231454"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780647972208",
+      "easting": "-83.05044001371281441838662229"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780930397004",
+      "easting": "-83.05048681166475326062051166"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780890332836",
+      "easting": "-83.0504974464425586899613291"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780499610534",
+      "easting": "-83.05049989573942536656845892"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780124281461",
+      "easting": "-83.05049239200585591266944541"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780306853745",
+      "easting": "-83.05051364492601518238369962"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780165429951",
+      "easting": "-83.05051967540643883667978558"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779550026382",
+      "easting": "-83.05052015623373708043283558"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9772114166843",
+      "easting": "-83.04850989560673174938527683"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "10/21/2021",
+    "felledBy": "Landscape Committee",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779101224075",
+      "easting": "-83.05044046857538735300581278"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778663126648",
+      "easting": "-83.05045689400140188241255223"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779057862192",
+      "easting": "-83.05054221279752930688150971"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778355325205",
+      "easting": "-83.05026165282552944206179491"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/17/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780918887109",
+      "easting": "-83.04884984775329947978381759"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/17/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780922995596",
+      "easting": "-83.04882357625385980827778267"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/17/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Common hackberry",
+      "scientificName": "Celtis occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780651835198",
+      "easting": "-83.04887343844340492432551801"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Hawthorn",
+      "scientificName": "Crataegus phaenopyrum"
+    },
+    "variety": "Washington",
+    "garden": "",
+    "location": {
+      "northing": "39.9773089629525",
+      "easting": "-83.04890965551519774299218315"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Hawthorn",
+      "scientificName": "Crataegus phaenopyrum"
+    },
+    "variety": "Washington",
+    "garden": "",
+    "location": {
+      "northing": "39.977212816569",
+      "easting": "-83.04910500176655980916144809"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "1/3 lost due to breakage in 2019 or 2020",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Chinkapin oak",
+      "scientificName": "Quercus muehlenbergii"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771340457829",
+      "easting": "-83.04878164664371931666387146"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2020",
+    "installedBy": "Oakland Nursery",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Pignut hickory",
+      "scientificName": "Carya glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9781292127341",
+      "easting": "-83.04872078935366414726404996"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Pignut hickory",
+      "scientificName": "Carya glabra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782124147088",
+      "easting": "-83.04850203655569077153215104"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Scrub hickory",
+      "scientificName": "Carya floridana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778606899477",
+      "easting": "-83.02102835"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Horse chestnut",
+      "scientificName": "Aesculus hippocastanum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767395616554",
+      "easting": "-83.0497664088000031296553054"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2018",
+    "installedBy": "Grandview Heights",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Horse chestnut",
+      "scientificName": "Aesculus hippocastanum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767406513265",
+      "easting": "-83.04948876713132719299538348"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2018",
+    "installedBy": "Grandview Heights",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Horse chestnut",
+      "scientificName": "Aesculus hippocastanum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767330236282",
+      "easting": "-83.04941020271544928215325615"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2018",
+    "installedBy": "Grandview Heights",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Horse chestnut",
+      "scientificName": "Aesculus hippocastanum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767256683468",
+      "easting": "-83.02102835"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2018",
+    "installedBy": "Grandview Heights",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/19/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Japanese lilac",
+      "scientificName": "Syringa reticulata"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769004759413",
+      "easting": "-83.05029976718286044396855985"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2019",
+    "installedBy": "Landscape Committe",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/19/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Japanese lilac",
+      "scientificName": "Syringa reticulata"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769480109439",
+      "easting": "-83.0503549063655521680505664"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2019",
+    "installedBy": "Landscape Committe",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "08/19/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Japanese lilac",
+      "scientificName": "Syringa reticulata"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769468372405",
+      "easting": "-83.05031048869058110378216891"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/01/2019",
+    "installedBy": "Landscape Committe",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "European linden",
+      "scientificName": "Tilia x europaea"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782778353727",
+      "easting": "-83.04859781833086795626175209"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "European linden",
+      "scientificName": "Tilia x europaea"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782857822852",
+      "easting": "-83.04871338413976920720767953"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black locust",
+      "scientificName": "Robinia pseudoacacia"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780174250103",
+      "easting": "-83.05034593066971597782837943"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black locust",
+      "scientificName": "Robinia pseudoacacia"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778171212838",
+      "easting": "-83.05024485032296074522945298"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Honey locust",
+      "scientificName": "Gleditsia triacanthos"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777410920653",
+      "easting": "-83.05010792797323220138233069"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Honey locust",
+      "scientificName": "Gleditsia triacanthos"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780318875043",
+      "easting": "-83.02005672"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "crown raise in 2020",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Honey locust",
+      "scientificName": "Gleditsia triacanthos"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779096623707",
+      "easting": "-83.04865779406883102850807472"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "crown raise in 2020",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/15/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Honey locust",
+      "scientificName": "Gleditsia triacanthos"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.978062179731",
+      "easting": "-83.04876395019715850436286316"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/15/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Honey locust",
+      "scientificName": "Gleditsia triacanthos"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779861094644",
+      "easting": "-83.04931101992139119829157555"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "crown raise in 2020",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Magnolia",
+      "scientificName": "Magnolia"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977212816569",
+      "easting": "-83.04910500176664964068986004"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Saucer magnolia",
+      "scientificName": "Magnolia x soulangeana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "4862575.177142",
+      "easting": "-83.04865090262381512698129861"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "unauthorized prune in 2021 (nosy neighbor)",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sweetbay magnolia",
+      "scientificName": "Magnolia virginiana"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780369441797",
+      "easting": "-83.04989409202841813846334516"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "1/3 of tree lost in 2019; 1/2 of remaining tree lost in 2024",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black maple",
+      "scientificName": "Acer nigrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779738849624",
+      "easting": "-83.05025059295163650115787841"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black maple",
+      "scientificName": "Acer nigrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778988261625",
+      "easting": "-83.05027324599587906768548966"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black maple",
+      "scientificName": "Acer nigrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779123552401",
+      "easting": "-83.05029373964612614420373775"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black maple",
+      "scientificName": "Acer nigrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778953210922",
+      "easting": "-83.05030008156338581836872818"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "darkening of bark on north side—disease?",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black maple",
+      "scientificName": "Acer nigrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778276042838",
+      "easting": "-83.05035488671751044225995448"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "Crimson king",
+    "garden": "",
+    "location": {
+      "northing": "39.9774112063739",
+      "easting": "-83.01988723"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Japanese maple",
+      "scientificName": "Acer palmatum var. atropurpureum"
+    },
+    "variety": "Bloodgood",
+    "garden": "",
+    "location": {
+      "northing": "39.9768820647066",
+      "easting": "-83.04858792455815886881356987"
+    },
+    "dbh": "< 3",
+    "installedDate": "01/01/2019",
+    "installedBy": "Landscape Committee",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977116600189",
+      "easting": "-83.04953286775795615208545419"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770055544552",
+      "easting": "-83.04912644396453422023990058"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "significant root exposure",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768319319463",
+      "easting": "-83.0499634110668453810727982"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "heavy southward lean",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780269555879",
+      "easting": "-83.05033392986482116488527934"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780216221613",
+      "easting": "-83.05036504393968189261102351"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780335126797",
+      "easting": "-83.02120639"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780156914501",
+      "easting": "-83.0503518382247659847373944"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779765070059",
+      "easting": "-83.05029783626260139272529202"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778620266714",
+      "easting": "-83.05056675392604626446977391"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway maple",
+      "scientificName": "Acer platanoides"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777373839005",
+      "easting": "-83.05025241833718715334073864"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779964466933",
+      "easting": "-83.04936046096905302041352674"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "one trunk removed",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768933854388",
+      "easting": "-83.04931154745794011276538636"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780678103673",
+      "easting": "-83.01935677"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "chlorosis treatment in 2020; air spaded in 2023",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770959324345",
+      "easting": "-83.04970480365052633747406676"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9773763017689",
+      "easting": "-83.0489324672823187029561962"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "4862641.478306",
+      "easting": "-83.0494665820341586634582822"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768762776274",
+      "easting": "-83.04945645645693972678563847"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768222141759",
+      "easting": "-83.04954729039983637361329104"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "sunburned trunk",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977104051193",
+      "easting": "-83.05021443493814473247464035"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9774275174949",
+      "easting": "-83.04854943961496095335840159"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9775302999632",
+      "easting": "-83.02105747"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "10/21/2021",
+    "felledBy": "Landscape Committee",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9772367845131",
+      "easting": "-83.0502756841359394101133837"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "10/21/2021",
+    "felledBy": "Landscape Committee",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779880027737",
+      "easting": "-83.0499298683980513406720916"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977184772499",
+      "easting": "-83.02023788"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "01/01/2024",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778191904754",
+      "easting": "-83.04979336848333094224080636"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/01/2024",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "01/01/2024",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778656669478",
+      "easting": "-83.0206971"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/01/2024",
+    "felledBy": "Joseph Tree Service",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780065222156",
+      "easting": "-83.04866629384288907849710111"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771518663759",
+      "easting": "-83.0496778717060965201584826"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sugar maple",
+      "scientificName": "Acer saccharum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.978003283411",
+      "easting": "-83.02047188"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768310054896",
+      "easting": "-83.04972298422479574738325137"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.97673821997",
+      "easting": "-83.04916253784801650785771044"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767473241288",
+      "easting": "-83.04999899783526993963431819"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "extrememly stressed starting in 2021 due to aggressive trenching around mulch bed by Brightview; recovering slowly",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767801001857",
+      "easting": "-83.04983706028245201670074561"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Red maple",
+      "scientificName": "Acer rubrum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767319950018",
+      "easting": "-83.04905369871568073440618165"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "01/09/2023",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White mulberry",
+      "scientificName": "Morus alba"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771600595246",
+      "easting": "-83.0207246"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/09/2023",
+    "felledBy": "Landscapes by Terra",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "10/21/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White mulberry",
+      "scientificName": "Morus alba"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9775626201687",
+      "easting": "-83.04878090869037965798207867"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "10/21/2021",
+    "felledBy": "Landscape Committee",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "White mulberry",
+      "scientificName": "Morus alba"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777247495634",
+      "easting": "-83.02119546"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "Appears to have had a second trunk",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern red oak",
+      "scientificName": "Quercus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9772869103397",
+      "easting": "-83.02119546"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Pin oak",
+      "scientificName": "Quercus palustris"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771933706369",
+      "easting": "-83.04931159700631623894589858"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Pin oak",
+      "scientificName": "Quercus palustris"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770392676691",
+      "easting": "-83.05045948545890805914444428"
+    },
+    "dbh": "> 42",
+    "installedDate": "~ 1862",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern red oak",
+      "scientificName": "Quercus rubra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9783973227624",
+      "easting": "-83.04890608345043921440050168"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Northern pecan",
+      "scientificName": "Carya illinoinensis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9778054700404",
+      "easting": "-83.04857659552088953730771868"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Eastern white pine",
+      "scientificName": "Pinus strobus"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769967802669",
+      "easting": "-83.05015430448513690689116634"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Eastern redbud",
+      "scientificName": "Cercis canadensis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780527038718",
+      "easting": "-83.05019742212820009304007429"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/06/2019",
+    "installedBy": "Landscape Committe",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Eastern redbud",
+      "scientificName": "Cercis canadensis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9780543626875",
+      "easting": "-83.05029710728495855838053395"
+    },
+    "dbh": "4-6",
+    "installedDate": "01/06/2019",
+    "installedBy": "Landscape Committe",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Eastern redbud",
+      "scientificName": "Ceris canadensis"
+    },
+    "variety": "Forest pansy",
+    "garden": "",
+    "location": {
+      "northing": "39.976841859618",
+      "easting": "-83.0489604916089462238566536"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sassafras",
+      "scientificName": "Sassafras albidum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9771174503544",
+      "easting": "-83.04895085068162655945086472"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sassafras",
+      "scientificName": "Sassafras albidum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770877085069",
+      "easting": "-83.04890510337454035309740993"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sassafras",
+      "scientificName": "Sassafras albidum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770424001935",
+      "easting": "-83.04887507961727931146464004"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sassafras",
+      "scientificName": "Sassafras albidum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9770415229662",
+      "easting": "-83.04885794928146470290021794"
+    },
+    "dbh": "30-42",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Sassafras",
+      "scientificName": "Sassafras albidum"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769888938484",
+      "easting": "-83.04887832795786570094376196"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Blue spruce",
+      "scientificName": "Picea pungens"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977222960828",
+      "easting": "-83.04917026925932522726451024"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway spruce",
+      "scientificName": "Picea abies"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.977363598532",
+      "easting": "-83.04924020711283605595976878"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/01/2022",
+    "FelledBy": "Nature",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "toppled in windstorm",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "01/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Norway spruce",
+      "scientificName": "Picea abies"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9773553548162",
+      "easting": "-83.0493504676228557593220894"
+    },
+    "dbh": "4-6",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "01/01/2021",
+    "felledBy": "Brightview",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": true
+  },
+  {
+    "lastVisited": "07/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American sycamore",
+      "scientificName": "Platanus occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9767613560951",
+      "easting": "-83.02097036"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/21/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American sycamore",
+      "scientificName": "Platanus occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777188081979",
+      "easting": "-83.04885632474124527416023754"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American sycamore",
+      "scientificName": "Platanus occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768908893842",
+      "easting": "-83.04951262082649842938604283"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "09/22/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "American sycamore",
+      "scientificName": "Platanus occidentalis"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9768535149762",
+      "easting": "-83.04962232646549276391524496"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "11/01/2021",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Unknown species",
+      "scientificName": "Unknown species"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9777622961297",
+      "easting": "-83.05020985717250487390001109"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black walnut",
+      "scientificName": "Juglans nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9782532622614",
+      "easting": "-83.0487089336725916306423696"
+    },
+    "dbh": "13-18",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/26/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black walnut",
+      "scientificName": "Juglans nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9785567554012",
+      "easting": "-83.0489495645569867524277655"
+    },
+    "dbh": "",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "07/25/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black walnut",
+      "scientificName": "Juglans nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9769090735311",
+      "easting": "-83.04957398726908022375364358"
+    },
+    "dbh": "25-30",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black walnut",
+      "scientificName": "Juglans nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779847724834",
+      "easting": "-83.05053432640725080366324277"
+    },
+    "dbh": "19-24",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  },
+  {
+    "lastVisited": "10/23/2020",
+    "nonnative": false,
+    "invasive": false,
+    "species": {
+      "commonName": "Black walnut",
+      "scientificName": "Juglans nigra"
+    },
+    "variety": "",
+    "garden": "",
+    "location": {
+      "northing": "39.9779390964646",
+      "easting": "-83.05053873435438120547077394"
+    },
+    "dbh": "7-12",
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "FelledBy": "",
+    "maintenanceNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "careHistory": "",
+    "notes": "",
+    "photos": null,
+    "hidden": false
+  }
+]
