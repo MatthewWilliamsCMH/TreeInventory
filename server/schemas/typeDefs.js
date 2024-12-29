@@ -38,7 +38,7 @@ const typeDefs = gql `
     autumnLeaf: String
     fruit: String
     flower: String
-    envorins: String
+    environs: String
   }
 
   type Species {

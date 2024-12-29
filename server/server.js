@@ -5,8 +5,8 @@ const multer = require("multer");
 const path = require("path")
 const cors = require("cors");
 require("dotenv").config();
-
 const fs = require('fs');
+
 const uploadsDir = path.join(__dirname, 'public', 'uploads');
 
 if (!fs.existsSync(uploadsDir)) {
@@ -31,19 +31,22 @@ const storage = multer.diskStorage({
 // Initialize multer with the storage configuration
 const upload = multer({ storage: storage });
 
-app.post('/uploads', upload.single('photo'), (req, res) => {
-  console.log('Incoming file:', req.photo);  // Log the file information
-  console.log('Request body:', req.body);  // Log the body (should contain 'photo')
-
-  if (!req.photo) {
-    return res.status(400).send({ message: 'No photo uploaded' });
-  }
-  res.status(200).send({ message: 'Photo uploaded successfully', photo: req.photo });
-});
-
-//enable cors to allow front-end and back-end ports to connect in any enviroment
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
+
+app.post('/uploads', upload.single('photo'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ message: 'No file uploaded' });
+  }
+
+  const fileUrl = `http://localhost:${port}/uploads/${req.file.filename}`;
+  res.status(200).json({ 
+    message: 'File uploaded successfully',
+    url: fileUrl
+  });
+});
+
 
 //connect to db
 connectDB();
