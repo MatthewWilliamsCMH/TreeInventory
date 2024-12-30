@@ -54,13 +54,22 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree) => {
     const { northing, easting } = tree.location;
+    // to use the following, change species from key-value pair to an object and add markerColor to the object. Will require a lot of refactoring.
+    // const markerColor = tree.species.markerColor;
     const popupContent = `
       <b>${tree.species?.commonName}</b><br>
       <i>${tree.garden}</i><br>
       <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
-    const marker = L.marker([northing, easting], {draggable: "true"})
+    const marker = L.circleMarker([northing, easting], {
+      draggable: "true",
+      radius: 5,
+      //had to use a hard-coded color here; the var won't work
+      fillColor: "#9E2A2B",
+      weight: 0,
+      fillOpacity: 1
+    })
       .bindPopup(popupContent)
       .addTo(map.current);
 
@@ -100,7 +109,14 @@ const TreeMap = () => {
       },
       variety: "",
       dbh: "",
-      photos: "",
+      photos: {
+        bark: "",
+        summerLeaf: "",
+        autumnLeaf: "",
+        fruit: "",
+        flower: "",
+        environs: ""
+      },
       notes: "",
       nonnative: false,
       invasive: false,

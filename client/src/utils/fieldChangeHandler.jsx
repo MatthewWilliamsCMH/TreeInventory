@@ -96,6 +96,7 @@ export const commonToScientificList = {
   "Callery pear": "Pyrus calleryana", //invasive, nonnative
   "Chestnut oak": "Quercus montana",
   "Chinkapin oak": "Quercus muehlenbergii",
+  "Common hackberry": "Celtis occidentalis",
   "Crabapple": "Malus", //nonnative
   "Cucumbertree": "Magnolia acuminata",
   "Eastern cottonwood": "Populus deltoides",
@@ -103,9 +104,9 @@ export const commonToScientificList = {
   "Eastern red cedar": "Juniperus virginiana",
   "Eastern redbud": "Cercis canadensis",
   "Eastern white pine": "Pinus strobus",
+  "European linden": "Tilia x europaea",
   "Ginkgo": "Gingko biloba", //nonnative
   "Green ash": "Fraxinus pennsylvanica",
-  "Hackberry": "Celtis occidentalis",
   "Hawthorn": "Crataegus", //nonnative
   "Honey locust": "Gleditsia triacanthos",
   "Horse chestnut": "Aesculus hippocastanum",
@@ -115,7 +116,7 @@ export const commonToScientificList = {
   "Little leaf linden": "Tilia cordata", //nonnative
   "Loblolly pine": "Pinus taeda",
   "Mockernut hickory": "Carya tomentosa",
-  "Northern catalpa": "Catalpa speciose",
+  "Northern catalpa": "Catalpa speciosa",
   "Northern pecan": "Carya illinoiensis", //nonnative
   "Northern red oak": "Quercus rubra",
   "Norway maple": "Acer platanoides",

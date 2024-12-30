@@ -13,6 +13,7 @@
     "@uppy/react": "^4.0.4",
     "@uppy/tus": "^4.1.5",
     "@uppy/webcam": "^4.0.3",
+    "@uppy/xhr-upload": "^4.2.3",
     "dotenv": "^16.4.5",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
