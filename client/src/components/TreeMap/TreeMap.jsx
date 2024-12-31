@@ -28,7 +28,8 @@ const TreeMap = () => {
     //the map container exists but is empty
     if (mapRef.current && !map.current) {
       map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
+      // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
+      L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
       map.current.on("click", handleAddTree);
     }
 
@@ -58,17 +59,11 @@ const TreeMap = () => {
     // const markerColor = tree.species.markerColor;
     const popupContent = `
       <b>${tree.species?.commonName}</b><br>
-      <i>${tree.garden}</i><br>
       <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
-    const marker = L.circleMarker([northing, easting], {
-      draggable: "true",
-      radius: 5,
-      //had to use a hard-coded color here; the var won't work
-      fillColor: "#9E2A2B",
-      weight: 0,
-      fillOpacity: 1
+    const marker = L.marker([northing, easting], {
+      draggable: "true"
     })
       .bindPopup(popupContent)
       .addTo(map.current);
