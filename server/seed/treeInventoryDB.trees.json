@@ -19,12 +19,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97821072930314,
     "easting": -83.04870294046081
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -32,9 +34,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -72,12 +76,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97829333858399,
     "easting": -83.0487947372537
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -85,9 +91,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -178,12 +186,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97828812493684,
     "easting": -83.04879164566931
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -191,9 +201,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2023",
+  "felledDate": {
+    "$date": "2023-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -231,12 +245,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97820176027418,
     "easting": -83.04865329281412
   },
-  "garden": "",
+  "garden": "Goodale entrance beds",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -244,9 +260,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -496,12 +514,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97771880819777,
     "easting": -83.04885632474114
   },
-  "garden": "",
+  "garden": "Dog lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -509,9 +529,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -693,7 +715,7 @@
   },
   "species": {
     "commonName": "Black cherry",
-    "scientificName": "Prunus serotian"
+    "scientificName": "Prunus serotina"
   },
   "variety": "",
   "dbh": "6-12",
@@ -708,7 +730,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977884687693006,
     "easting": -83.05020507574656
@@ -721,9 +745,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -761,7 +787,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978017425010215,
     "easting": -83.05034593066961
@@ -774,9 +802,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -867,7 +897,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97797388496224,
     "easting": -83.05025059295153
@@ -880,9 +912,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1132,12 +1166,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97825326226124,
     "easting": -83.04870893367249
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1145,9 +1181,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1185,12 +1223,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97855675540101,
     "easting": -83.04894956455688
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1198,9 +1238,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1397,12 +1439,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978223464794176,
     "easting": -83.04883429965504
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1410,9 +1454,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1450,7 +1496,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97722296082788,
     "easting": -83.04917026925922
@@ -1463,9 +1511,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1503,12 +1553,14 @@
   },
   "nonnative": true,
   "invasive": true,
-  "lastVisited": "04/19/2024",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978016238081565,
     "easting": -83.04835796356203
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1516,9 +1568,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1556,12 +1610,14 @@
   },
   "nonnative": true,
   "invasive": true,
-  "lastVisited": "04/19/2024",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97738113115382,
     "easting": -83.04840892553331
   },
-  "garden": "",
+  "garden": "Hosta bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1569,9 +1625,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1609,12 +1667,14 @@
   },
   "nonnative": true,
   "invasive": true,
-  "lastVisited": "04/19/2024",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97751678555645,
     "easting": -83.04842233657838
   },
-  "garden": "",
+  "garden": "Hosta bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1622,9 +1682,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1662,12 +1724,14 @@
   },
   "nonnative": true,
   "invasive": true,
-  "lastVisited": "04/19/2024",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97769149158736,
     "easting": -83.04847329854967
   },
-  "garden": "",
+  "garden": "Hosta bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1675,9 +1739,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1716,13 +1782,13 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-21T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97809845213909,
     "easting": -83.04830163717271
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1756,7 +1822,7 @@
     "$oid": "6766db7cd30e06d30135a037"
   },
   "species": {
-    "commonName": "Chinqapin oak",
+    "commonName": "Chinkapin oak",
     "scientificName": "Quercus muehlenbergii"
   },
   "variety": "",
@@ -1772,22 +1838,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977134045782755,
     "easting": -83.0487816466436
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/01/2021",
+  "installedDate": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
   "installedBy": "Joseph Tree Service",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1825,12 +1895,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97821929579098,
     "easting": -83.04907726276937
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1838,9 +1910,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1878,12 +1952,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97829077942318,
     "easting": -83.04896775036589
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1891,9 +1967,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1931,12 +2009,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978272021710616,
     "easting": -83.04894306991164
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1944,9 +2024,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1984,12 +2066,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978260652349434,
     "easting": -83.0489527929553
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1997,9 +2081,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2037,12 +2123,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97824150647341,
     "easting": -83.04898381007573
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2050,9 +2138,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2090,12 +2180,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9782918466349,
     "easting": -83.04894581857333
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2103,9 +2195,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2143,12 +2237,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97827777574202,
     "easting": -83.04896006491661
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2156,9 +2252,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2196,12 +2294,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97819299252022,
     "easting": -83.04895801448521
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2209,9 +2309,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2249,12 +2351,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97819050777958,
     "easting": -83.04890431133686
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2262,9 +2366,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2302,12 +2408,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97819383335378,
     "easting": -83.04863304052843
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2315,9 +2423,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3044,12 +3154,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/21/2021",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9772114166842,
     "easting": -83.04850989560663
   },
-  "garden": "",
+  "garden": "Hosta bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3057,9 +3169,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": {
+    "$date": "2021-01-01T05:00:00.000Z"
+  },
   "felledBy": "Landscape committee",
   "maintenanceNeeds": {
     "install": false,
@@ -3309,12 +3425,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "08/17/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978091888710715,
     "easting": -83.04884984775319
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3322,9 +3440,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3362,12 +3482,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "08/17/2020",
-  "location": {
-    "northing": 39.97809229955949,
-    "easting": -83.04882357625375
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97809228608819,
+    "easting": -83.04882533848287
+  },
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3375,9 +3497,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3415,12 +3539,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "08/17/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97806518351964,
     "easting": -83.0488734384433
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3428,9 +3554,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4210,12 +4338,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9781694053374,
     "easting": -83.04896428975324
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4223,9 +4353,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4263,12 +4395,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978372202896715,
     "easting": -83.0489330723376
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4276,9 +4410,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4304,7 +4440,7 @@
     "scientificName": "Malus"
   },
   "variety": "Cardinal",
-  "dbh": "36-42",
+  "dbh": "37-42",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -4316,12 +4452,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976789348453345,
     "easting": -83.04868862380039
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4329,9 +4467,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4342,10 +4482,10 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "2024: Nearly dead",
   "hidden": false
 },
 {
@@ -4369,7 +4509,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976775458557725,
     "easting": -83.04880433111973
@@ -4382,9 +4524,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4422,12 +4566,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97792904729715,
     "easting": -83.04845621813651
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4435,9 +4581,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4565,7 +4713,7 @@
     "$oid": "6766db7cd30e06d30135a06c"
   },
   "species": {
-    "commonName": "Crimson maple",
+    "commonName": "Norway maple",
     "scientificName": "Acer platanoides"
   },
   "variety": "Crimson Kiing",
@@ -4579,24 +4727,28 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97741120637381,
     "easting": -83.04903517279315
   },
   "garden": "",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4632,10 +4784,10 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
+  "nonnative": true,
+  "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97640893338807,
@@ -4680,7 +4832,7 @@
   },
   "variety": "",
   "dbh": "3-6",
-  "notes": "Relocated seedling",
+  "notes": "",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -4691,22 +4843,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978052703871676,
     "easting": -83.05019742212808
   },
-  "garden": "",
+  "garden": "Urlin driveway bed south",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "06/01/2019",
-  "installedBy": "Landscape committe",
-  "felledDate": "",
+  "installedDate": {
+    "$date": "2019-06-01T04:00:00.000Z"
+  },
+  "installedBy": "Landscape committee",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4733,7 +4889,7 @@
   },
   "variety": "",
   "dbh": "3-6",
-  "notes": "Relocated seedling",
+  "notes": "",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -4744,22 +4900,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97805436268736,
     "easting": -83.05029710728486
   },
-  "garden": "",
+  "garden": "Urlin driveway bed south",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "06/01/2019",
+  "installedDate": {
+    "$date": "2019-06-01T04:00:00.000Z"
+  },
   "installedBy": "Landscape committe",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4850,12 +5010,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97827783537254,
     "easting": -83.04859781833076
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4863,9 +5025,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4903,12 +5067,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97828578228505,
     "easting": -83.04871338413966
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4916,9 +5082,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4944,7 +5112,7 @@
     "scientificName": "Gingko biloba"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4956,22 +5124,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978015618201525,
     "easting": -83.04978727323875
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5009,10 +5181,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.977741092065145,
-    "easting": -83.05010792797312
+    "northing": 39.97775109707218,
+    "easting": -83.0501013994217
   },
   "garden": "",
   "siteInfo": {
@@ -5022,9 +5196,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5062,12 +5238,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97803188750413,
     "easting": -83.04920471969427
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5075,9 +5253,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5115,12 +5295,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97790966237062,
     "easting": -83.04865779406872
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5128,9 +5310,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5168,12 +5352,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/15/2020",
-  "location": {
-    "northing": 39.9780621797309,
-    "easting": -83.04876395019704
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97804604068885,
+    "easting": -83.04877504706383
+  },
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5181,9 +5367,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5221,12 +5409,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/15/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97798610946431,
     "easting": -83.04931101992128
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5234,9 +5424,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5442,7 +5634,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97674065132639,
@@ -5596,7 +5788,7 @@
     "$oid": "6766db7cd30e06d30135a07f"
   },
   "species": {
-    "commonName": "Japanese lilac",
+    "commonName": "Japanese lilac tree",
     "scientificName": "Syringa reticulata"
   },
   "variety": "",
@@ -5610,14 +5802,16 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "08/19/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97690047594123,
     "easting": -83.05029976718275
   },
-  "garden": "",
+  "garden": "Main sign bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5625,9 +5819,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/01/2019",
+  "installedDate": {
+    "$date": "2019-01-01T05:00:00.000Z"
+  },
   "installedBy": "Landscape Committe",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5649,7 +5845,7 @@
     "$oid": "6766db7cd30e06d30135a080"
   },
   "species": {
-    "commonName": "Japanese lilac",
+    "commonName": "Japanese lilac tree",
     "scientificName": "Syringa reticulata"
   },
   "variety": "",
@@ -5663,14 +5859,16 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "08/19/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976948010943765,
     "easting": -83.05035490636543
   },
-  "garden": "",
+  "garden": "Main sign bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5678,9 +5876,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/01/2019",
+  "installedDate": {
+    "$date": "2019-01-01T05:00:00.000Z"
+  },
   "installedBy": "Landscape Committe",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5702,7 +5902,7 @@
     "$oid": "6766db7cd30e06d30135a081"
   },
   "species": {
-    "commonName": "Japanese lilac",
+    "commonName": "Japanese lilac tree",
     "scientificName": "Syringa reticulata"
   },
   "variety": "",
@@ -5716,14 +5916,16 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "08/19/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97694683724037,
     "easting": -83.05031048869046
   },
-  "garden": "",
+  "garden": "Main sign bed",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5731,9 +5933,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/01/2019",
+  "installedDate": {
+    "$date": "2019-01-01T05:00:00.000Z"
+  },
   "installedBy": "Landscape Committe",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5762,17 +5966,17 @@
   "dbh": "< 3",
   "notes": "",
   "photos": {
-    "bark": "",
-    "summerLeaf": "",
+    "bark": "http://localhost:3001/uploads/1735511312916.jpg",
+    "summerLeaf": "http://localhost:3001/uploads/1735599937101.jpg",
     "autumnLeaf": "",
     "fruit": "",
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2024-12-30T05:00:00.000Z"
   },
   "location": {
     "northing": 39.976882064706444,
@@ -5922,8 +6126,8 @@
     "$oid": "6766db7cd30e06d30135a085"
   },
   "species": {
-    "commonName": "Magnolia",
-    "scientificName": "Magnolia"
+    "commonName": "Saucer magnolia",
+    "scientificName": "Magnolia x soulangeana"
   },
   "variety": "",
   "dbh": "12-18",
@@ -5938,7 +6142,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977212816568844,
     "easting": -83.04910500176653
@@ -5951,9 +6157,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -5975,8 +6183,8 @@
     "$oid": "6766db7cd30e06d30135a086"
   },
   "species": {
-    "commonName": "Mulberry",
-    "scientificName": "Morus"
+    "commonName": "White mulberry",
+    "scientificName": "Morus alba"
   },
   "variety": "",
   "dbh": "< 3",
@@ -5991,7 +6199,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97700161217598,
     "easting": -83.05008689173704
@@ -6004,9 +6214,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6032,7 +6244,7 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": "",
-  "dbh": "",
+  "dbh": "31-36",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6044,12 +6256,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9772076055748,
     "easting": -83.05041337753525
   },
-  "garden": "",
+  "garden": "Woodland garden",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6057,9 +6271,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6097,12 +6313,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97835224629905,
     "easting": -83.04847336988735
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6110,9 +6328,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6150,12 +6370,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97827921433661,
     "easting": -83.04847265578455
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6163,9 +6385,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6244,7 +6468,7 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "37-42",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6256,12 +6480,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9774339330733,
     "easting": -83.05051936445764
   },
-  "garden": "",
+  "garden": "Woodland garden",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6269,9 +6495,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6294,7 +6522,7 @@
   },
   "species": {
     "commonName": "Northern pecan",
-    "scientificName": "Carya illinoinensis"
+    "scientificName": "Carya illinoiensis"
   },
   "variety": "",
   "dbh": "24-30",
@@ -6309,12 +6537,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9778054700403,
     "easting": -83.04857659552079
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6322,9 +6552,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6362,7 +6594,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97728691033958,
     "easting": -83.04882335276925
@@ -6375,9 +6609,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6413,9 +6649,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "07/25/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97711660018887,
     "easting": -83.04953286775783
@@ -6428,9 +6666,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6466,9 +6706,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "07/25/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977005554455104,
     "easting": -83.04912644396443
@@ -6481,9 +6723,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6519,9 +6763,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "09/22/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97683193194615,
     "easting": -83.04996341106674
@@ -6534,9 +6780,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6576,8 +6824,8 @@
   "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
-    "northing": 39.97802695558775,
-    "easting": -83.0503339298647
+    "northing": 39.97799106000666,
+    "easting": -83.05035084486009
   },
   "garden": "",
   "siteInfo": {
@@ -6678,9 +6926,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/23/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978033512679566,
     "easting": -83.05035479746044
@@ -6693,9 +6943,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6731,9 +6983,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/23/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97801569144997,
     "easting": -83.05035183822466
@@ -6746,9 +7000,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6784,9 +7040,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/23/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977976507005806,
     "easting": -83.0502978362625
@@ -6799,9 +7057,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6890,9 +7150,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "11/01/2021",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9777373839004,
     "easting": -83.0502524183371
@@ -6905,9 +7167,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6945,7 +7209,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977363598531866,
     "easting": -83.04924020711273
@@ -6958,9 +7224,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6996,9 +7264,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "07/25/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-30T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977355354816076,
     "easting": -83.04935046762274
@@ -7011,9 +7281,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": {
+    "$date": "2021-01-01T05:00:00.000Z"
+  },
   "felledBy": "Brightview",
   "maintenanceNeeds": {
     "install": false,
@@ -7096,7 +7370,7 @@
     "scientificName": "Aesculus glabra"
   },
   "variety": "",
-  "dbh": "",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7108,22 +7382,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97742073930177,
     "easting": -83.05029601990303
   },
-  "garden": "",
+  "garden": "Woodland garden",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7161,12 +7439,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97818406147198,
     "easting": -83.04911021899774
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7174,9 +7454,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7214,12 +7496,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978196990402516,
     "easting": -83.04912257450601
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7227,9 +7511,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7373,12 +7659,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97812921273392,
     "easting": -83.04872078935355
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7386,9 +7674,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7426,12 +7716,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97821241470867,
     "easting": -83.04850203655558
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7439,9 +7731,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7623,7 +7917,7 @@
   },
   "species": {
     "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida var. rubra"
+    "scientificName": "Cornus florida"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7636,24 +7930,28 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "10/14/2022",
-  "location": {
-    "northing": 39.97721875659055,
-    "easting": -83.0486959218979
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97722903347309,
+    "easting": -83.04873347282411
+  },
+  "garden": "Ravine",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/06/2021",
-  "installedBy": "",
-  "felledDate": "",
+  "installedDate": {
+    "$date": "2021-01-06T05:00:00.000Z"
+  },
+  "installedBy": "Oakland Nursery",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7667,7 +7965,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Suffered heavily in 2022",
+  "careHistory": "2022: Struggled\n2024: May have died",
   "hidden": false
 },
 {
@@ -7676,7 +7974,7 @@
   },
   "species": {
     "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida var. rubra"
+    "scientificName": "Cornus florida"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7689,24 +7987,28 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "lastVisited": "10/14/2022",
-  "location": {
-    "northing": 39.97734618982469,
-    "easting": -83.04874151945116
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97733591295978,
+    "easting": -83.04873347282411
+  },
+  "garden": "Ravine",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/06/2021",
-  "installedBy": "",
-  "felledDate": "",
+  "installedDate": {
+    "$date": "2021-01-06T05:00:00.000Z"
+  },
+  "installedBy": "Oakland Nursery",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7717,63 +8019,10 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
-  "careHistory": "Suffered heavily in 2022",
-  "hidden": false
-},
-{
-  "_id": {
-    "$oid": "6766db7cd30e06d30135a0a7"
-  },
-  "species": {
-    "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida var. rubra"
-  },
-  "variety": "",
-  "dbh": "< 3",
-  "notes": "",
-  "photos": {
-    "bark": "",
-    "summerLeaf": "",
-    "autumnLeaf": "",
-    "fruit": "",
-    "flower": "",
-    "environs": ""
-  },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/14/2022",
-  "location": {
-    "northing": 39.97660214081056,
-    "easting": -83.04892659187318
-  },
-  "garden": "",
-  "siteInfo": {
-    "slope": false,
-    "overheadLines": false,
-    "treeCluster": false,
-    "proximateStructure": false,
-    "proximateFence": false
-  },
-  "installedDate": "01/06/2021",
-  "installedBy": "",
-  "felledDate": "",
-  "felledBy": "",
-  "maintenanceNeeds": {
-    "install": false,
-    "raiseCrown": false,
-    "routinePrune": false,
-    "trainingPrune": false,
-    "priorityPrune": false,
-    "pestTreatment": false,
-    "installGrate": false,
-    "removeGrate": false,
-    "fell": false,
-    "removeStump": false
-  },
-  "careHistory": "Suffered heavily in 2022",
+  "careHistory": "2022: Struggled\n2024: May have died",
   "hidden": false
 },
 {
@@ -7797,12 +8046,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977996446693155,
     "easting": -83.04936046096894
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7810,9 +8061,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7903,12 +8156,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97806781036721,
     "easting": -83.04850452210584
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7916,9 +8171,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7932,7 +8189,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Chlorosis treatment in 2020.",
+  "careHistory": "2020: Chlorosis treatment\n2024: Air spaded",
   "hidden": false
 },
 {
@@ -8009,7 +8266,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977376301768736,
     "easting": -83.04893246728221
@@ -8022,9 +8281,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8275,13 +8536,13 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-21T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.977427517494725,
     "easting": -83.04854943961486
   },
-  "garden": "",
+  "garden": "Ravine",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -8331,22 +8592,28 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/21/2021",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9775302999631,
     "easting": -83.05020582465988
   },
-  "garden": "",
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": {
+    "$date": "2021-01-01T05:00:00.000Z"
+  },
   "felledBy": "Landscape Committee",
   "maintenanceNeeds": {
     "install": false,
@@ -8360,7 +8627,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Died",
+  "careHistory": "2022: Died",
   "hidden": false
 },
 {
@@ -8372,7 +8639,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8384,12 +8651,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/21/2021",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97723678451293,
     "easting": -83.05027568413583
   },
-  "garden": "",
+  "garden": "Woodland garden",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -8397,9 +8666,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": {
+    "$date": "2021-01-01T05:00:00.000Z"
+  },
   "felledBy": "Landscape Committee",
   "maintenanceNeeds": {
     "install": false,
@@ -8759,12 +9032,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97839732276221,
     "easting": -83.04890608345032
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -8772,9 +9047,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8800,7 +9077,7 @@
     "scientificName": "Betula nigra"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "19-24",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -8812,22 +9089,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/24/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978053895683004,
     "easting": -83.04998466442105
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8865,12 +9146,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978118381793436,
     "easting": -83.04862587073053
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -8878,9 +9161,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8891,10 +9176,10 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
-  "careHistory": "Dying 2023",
+  "careHistory": "2023: Severe decline",
   "hidden": false
 },
 {
@@ -8902,7 +9187,7 @@
     "$oid": "6766db7cd30e06d30135a0bd"
   },
   "species": {
-    "commonName": "Sassafras",
+    "commonName": "Sassafrass",
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
@@ -8918,7 +9203,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977117450354264,
     "easting": -83.0489508506815
@@ -8931,9 +9218,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8955,7 +9244,7 @@
     "$oid": "6766db7cd30e06d30135a0be"
   },
   "species": {
-    "commonName": "Sassafras",
+    "commonName": "Sassafrass",
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
@@ -8971,7 +9260,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977087708506765,
     "easting": -83.04890510337442
@@ -8984,9 +9275,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9008,7 +9301,7 @@
     "$oid": "6766db7cd30e06d30135a0bf"
   },
   "species": {
-    "commonName": "Sassafras",
+    "commonName": "Sassafrass",
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
@@ -9024,7 +9317,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97704240019331,
     "easting": -83.04887507961716
@@ -9037,9 +9332,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9061,7 +9358,7 @@
     "$oid": "6766db7cd30e06d30135a0c0"
   },
   "species": {
-    "commonName": "Sassafras",
+    "commonName": "Sassafrass",
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
@@ -9077,7 +9374,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97704152296605,
     "easting": -83.04885794928136
@@ -9090,9 +9389,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9114,7 +9415,7 @@
     "$oid": "6766db7cd30e06d30135a0c1"
   },
   "species": {
-    "commonName": "Sassafras",
+    "commonName": "Sassafrass",
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
@@ -9130,7 +9431,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97698889384824,
     "easting": -83.04887832795775
@@ -9143,9 +9446,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9168,7 +9473,7 @@
   },
   "species": {
     "commonName": "Saucer magnolia",
-    "scientificName": "Magnolia soulangeana"
+    "scientificName": "Magnolia x soulangeana"
   },
   "variety": "",
   "dbh": "30-42",
@@ -9183,7 +9488,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976825373102415,
     "easting": -83.0486509026237
@@ -9196,9 +9503,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9596,7 +9905,7 @@
   },
   "variety": "",
   "dbh": "30-42",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9607,22 +9916,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97776178598288,
-    "easting": -83.0506092931075
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97774493098992,
+    "easting": -83.05053859949113
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9649,7 +9962,7 @@
   },
   "variety": "",
   "dbh": "12-18",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9660,22 +9973,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97776578508784,
-    "easting": -83.05062243427514
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97774493098992,
+    "easting": -83.05053055286409
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9702,7 +10019,7 @@
   },
   "variety": "",
   "dbh": "6-12",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9713,22 +10030,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.977742231060326,
-    "easting": -83.05059859006239
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.977742875629076,
+    "easting": -83.05053859949113
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9755,7 +10076,7 @@
   },
   "variety": "",
   "dbh": "12-18",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9766,22 +10087,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97773431687783,
-    "easting": -83.05060525409269
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.977734654184985,
+    "easting": -83.05054396390916
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9808,7 +10133,7 @@
   },
   "variety": "",
   "dbh": "6-12",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9819,22 +10144,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97773729076467,
-    "easting": -83.05059402560197
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97772540505923,
+    "easting": -83.05054262280464
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9861,7 +10190,7 @@
   },
   "variety": "",
   "dbh": "6-12",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9872,22 +10201,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.977736582567275,
-    "easting": -83.0506210670355
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97773876490716,
+    "easting": -83.05053055286409
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9914,7 +10247,7 @@
   },
   "variety": "",
   "dbh": "18-24",
-  "notes": "",
+  "notes": "12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9925,22 +10258,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97771757415216,
-    "easting": -83.05059347375665
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97772643273993,
+    "easting": -83.05054664611816
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9967,7 +10304,7 @@
   },
   "variety": "",
   "dbh": "30-42",
-  "notes": "Quintuple trunk",
+  "notes": "Quintuple trunk\n12 sisters",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -9978,22 +10315,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
-  "location": {
-    "northing": 39.97770955630223,
-    "easting": -83.05059404864205
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.977704851441906,
+    "easting": -83.05054262280464
+  },
+  "garden": "Woodland garden",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
-    "treeCluster": false,
+    "treeCluster": true,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10084,12 +10425,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978312415613786,
     "easting": -83.04849266979059
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10097,9 +10440,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10137,12 +10482,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97835595203836,
     "easting": -83.04857174022008
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10150,9 +10497,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10190,7 +10539,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97792013627921,
     "easting": -83.05023467511865
@@ -10203,9 +10554,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10549,7 +10902,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10561,22 +10914,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977988002773614,
     "easting": -83.04992986839794
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10655,7 +11012,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10667,22 +11024,28 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97781919047529,
     "easting": -83.04979336848322
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
-    "proximateStructure": false,
+    "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2024",
+  "felledDate": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -10696,7 +11059,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "2023: Accidentally felled",
   "hidden": false
 },
 {
@@ -10708,7 +11071,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10720,22 +11083,28 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97786566694772,
     "easting": -83.0498453274162
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
-    "proximateStructure": false,
+    "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2024",
+  "felledDate": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -10749,7 +11118,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "Felled 2023",
   "hidden": false
 },
 {
@@ -10773,12 +11142,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97800652221546,
     "easting": -83.04866629384279
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10786,9 +11157,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10867,7 +11240,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10879,22 +11252,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/26/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97800328341082,
     "easting": -83.04962002651226
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10985,12 +11362,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97803694417956,
     "easting": -83.04989409202831
   },
-  "garden": "",
+  "garden": "Glenn garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10998,9 +11377,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11014,7 +11395,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "1/3 of the tree lost in 2019",
+  "careHistory": "2019: 1/3 of the tree lost\n2024: 1/3 of the tree lost",
   "hidden": false
 },
 {
@@ -11036,9 +11417,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "09/22/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97713593015406,
     "easting": -83.04976986301511
@@ -11051,9 +11434,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2022",
+  "felledDate": {
+    "$date": "2022-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -11089,9 +11476,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "09/22/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9771385469563,
     "easting": -83.05016141616245
@@ -11104,9 +11493,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2022",
+  "felledDate": {
+    "$date": "2022-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -11142,9 +11535,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/21/2021",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97694375242614,
     "easting": -83.04976715418337
@@ -11157,9 +11552,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2021",
+  "felledDate": {
+    "$date": "2021-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -11195,9 +11594,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "07/25/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97698944254429,
     "easting": -83.04999474679255
@@ -11210,9 +11611,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2023",
+  "felledDate": {
+    "$date": "2023-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -11248,9 +11653,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "07/25/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97691601114173,
     "easting": -83.05003284149106
@@ -11263,9 +11670,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/06/2023",
+  "felledDate": {
+    "$date": "2023-01-06T05:00:00.000Z"
+  },
   "felledBy": "Joseph Tree Service",
   "maintenanceNeeds": {
     "install": false,
@@ -11303,12 +11714,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/15/2022",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97775520779336,
     "easting": -83.04903924465181
   },
-  "garden": "",
+  "garden": "Dog lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11316,9 +11729,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/06/2021",
+  "installedDate": {
+    "$date": "2021-01-06T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11446,10 +11861,10 @@
     "$oid": "6766db7cd30e06d30135a0ed"
   },
   "species": {
-    "commonName": "Washington hawthorn",
-    "scientificName": "Crataegus phaenopyrum"
+    "commonName": "Hawthorn",
+    "scientificName": "Crataegus"
   },
-  "variety": "",
+  "variety": "Washington",
   "dbh": "6-12",
   "notes": "Double or triple trunk",
   "photos": {
@@ -11462,22 +11877,26 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97730896295233,
     "easting": -83.04890965551508
   },
   "garden": "",
   "siteInfo": {
-    "slope": false,
+    "slope": true,
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11491,7 +11910,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "2022(?): 1/3 of tree lost",
   "hidden": false
 },
 {
@@ -11569,13 +11988,13 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.9779968488925,
     "easting": -83.04940899310579
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11626,13 +12045,13 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
     "northing": 39.978129282385154,
     "easting": -83.04842770099641
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11682,12 +12101,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97806255502291,
     "easting": -83.04901444721317
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11695,9 +12116,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11705,13 +12128,13 @@
     "routinePrune": false,
     "trainingPrune": false,
     "priorityPrune": false,
-    "pestTreatment": false,
+    "pestTreatment": true,
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Pruned 2020",
+  "careHistory": "2020: Pruned\n2024: Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -11724,7 +12147,7 @@
   },
   "variety": "",
   "dbh": "12-18",
-  "notes": "",
+  "notes": "2024:  Emerald ash borer activity noted",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -11735,12 +12158,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977953089524505,
     "easting": -83.0487593761959
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11748,9 +12173,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11764,7 +12191,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": " Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -11788,12 +12215,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
-  "location": {
-    "northing": 39.978029316220535,
-    "easting": -83.04857482510583
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
   },
-  "garden": "",
+  "location": {
+    "northing": 39.97792169179314,
+    "easting": -83.04855912923814
+  },
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11801,9 +12230,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11817,7 +12248,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Bark damage and possible ash borer holes noted in 2020",
+  "careHistory": "2020: Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -11841,12 +12272,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97799458724134,
     "easting": -83.04872166749736
   },
-  "garden": "",
+  "garden": "Community garden and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11854,9 +12287,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11870,7 +12305,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "Bark damage and possible ash borer holes noted in 2020",
+  "careHistory": "2020:  Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -11894,7 +12329,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97695253528404,
     "easting": -83.04871875982836
@@ -11907,9 +12344,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11923,7 +12362,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "2024: Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -11947,7 +12386,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976916817594756,
     "easting": -83.04917794209963
@@ -11960,9 +12401,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11976,7 +12419,7 @@
     "fell": false,
     "removeStump": false
   },
-  "careHistory": "",
+  "careHistory": "2024: Emerald ash borer activity noted",
   "hidden": false
 },
 {
@@ -12000,7 +12443,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97716005952446,
     "easting": -83.04987283341696
@@ -12013,9 +12458,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/09/2023",
+  "felledDate": {
+    "$date": "2023-01-09T05:00:00.000Z"
+  },
   "felledBy": "Landscapes by Terra",
   "maintenanceNeeds": {
     "install": false,
@@ -12053,12 +12502,14 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/21/2021",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97756262016857,
     "easting": -83.04878090869028
   },
-  "garden": "",
+  "garden": "Dog lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12066,9 +12517,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": {
+    "$date": "2021-01-01T05:00:00.000Z"
+  },
   "felledBy": "Landscape Committee",
   "maintenanceNeeds": {
     "install": false,
@@ -12159,7 +12614,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "04/19/2024",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9764520967958,
     "easting": -83.04869860410692
@@ -12172,9 +12629,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "09/30/2023",
+  "installedDate": {
+    "$date": "2023-09-30T04:00:00.000Z"
+  },
   "installedBy": "Williams, Matthew (donated by �)",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -12196,7 +12655,7 @@
     "$oid": "6766db7cd30e06d30135a0fb"
   },
   "species": {
-    "commonName": "White pine",
+    "commonName": "Eastern white pine",
     "scientificName": "Pinus strobus"
   },
   "variety": "",
@@ -12212,7 +12671,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976996780266724,
     "easting": -83.05015430448503
@@ -12225,9 +12686,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -12243,4 +12706,286 @@
   },
   "careHistory": "",
   "hidden": false
+},
+{
+  "_id": {
+    "$oid": "6771f1aecd75568042c21d54"
+  },
+  "species": {
+    "commonName": "Pink dogwood",
+    "scientificName": "Cornus florida"
+  },
+  "variety": "",
+  "dbh": "< 3",
+  "notes": "",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": ""
+  },
+  "nonnative": true,
+  "invasive": false,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977434570799126,
+    "easting": -83.04872810840608
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false
+  },
+  "installedDate": {
+    "$date": "2021-01-06T05:00:00.000Z"
+  },
+  "installedBy": "Oakland Nursery",
+  "felledDate": null,
+  "felledBy": "",
+  "maintenanceNeeds": {
+    "install": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": true,
+    "removeStump": false
+  },
+  "careHistory": "2023: Died",
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771f868cd75568042c21e32"
+  },
+  "species": {
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila"
+  },
+  "variety": "",
+  "dbh": "",
+  "notes": "12 sisters",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": ""
+  },
+  "nonnative": false,
+  "invasive": false,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977724634298696,
+    "easting": -83.05054295808078
+  },
+  "garden": "Woodland garden",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false
+  },
+  "installedDate": null,
+  "installedBy": "",
+  "felledDate": null,
+  "felledBy": "",
+  "maintenanceNeeds": {
+    "install": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "careHistory": "",
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771f8e5cd75568042c21e3f"
+  },
+  "species": {
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila"
+  },
+  "variety": "",
+  "dbh": "",
+  "notes": "12 sisters",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": ""
+  },
+  "nonnative": false,
+  "invasive": false,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977722193556936,
+    "easting": -83.05054530501367
+  },
+  "garden": "Woodland garden",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false
+  },
+  "installedDate": null,
+  "installedBy": "",
+  "felledDate": null,
+  "felledBy": "",
+  "maintenanceNeeds": {
+    "install": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "careHistory": "",
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771f99ccd75568042c21e58"
+  },
+  "species": {
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila"
+  },
+  "variety": "",
+  "dbh": "",
+  "notes": "12 sisters",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": ""
+  },
+  "nonnative": false,
+  "invasive": false,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977718725134274,
+    "easting": -83.05054547265173
+  },
+  "garden": "Woodland garden",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false
+  },
+  "installedDate": null,
+  "installedBy": "",
+  "felledDate": null,
+  "felledBy": "",
+  "maintenanceNeeds": {
+    "install": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "careHistory": "",
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6771f9b6cd75568042c21e5d"
+  },
+  "species": {
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila"
+  },
+  "variety": "",
+  "dbh": "",
+  "notes": "12 sisters",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": ""
+  },
+  "nonnative": false,
+  "invasive": false,
+  "lastVisited": {
+    "$date": "2024-12-29T05:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97771744053325,
+    "easting": -83.05054530501367
+  },
+  "garden": "Woodland garden",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false
+  },
+  "installedDate": null,
+  "installedBy": "",
+  "felledDate": null,
+  "felledBy": "",
+  "maintenanceNeeds": {
+    "install": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "careHistory": "",
+  "hidden": false,
+  "__v": 0
 }]
