@@ -3,6 +3,7 @@ import { useOutletContext, useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet.gridlayer.googlemutant";
 
 import { GET_TREES } from "../../queries/get_trees";
 import { ADD_TREE } from "../../mutations/add_tree";
@@ -29,7 +30,14 @@ const TreeMap = () => {
     if (mapRef.current && !map.current) {
       map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
       // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
-      L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+      // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+      const googleMutant = L.gridLayer.googleMutant({
+        maxZoom: 23,
+        type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
+        attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
+        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs' // Make sure to replace this with your actual API key
+      }).addTo(map.current);
+
       map.current.on("click", handleAddTree);
     }
 
