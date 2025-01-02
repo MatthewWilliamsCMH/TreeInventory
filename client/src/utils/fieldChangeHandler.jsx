@@ -152,6 +152,7 @@ export const commonToScientificList = {
   "Sweetbay magnolia": "Magnolia virginiana",
   "Sweetgum": "Liquidambar styraciflua",
   "Tree of heaven": "Ailanthus altissima", //invasive, nonnative
+  "Tricolor beech": "Fagus sylvatica",
   "Unknown species": "Unknown species",
   "Virginia pine": "Pinus virginiana",
   "Weeping cherry": "Prunus pendula",

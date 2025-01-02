@@ -35,7 +35,7 @@ const TreeMap = () => {
         maxZoom: 23,
         type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
         attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
-        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs' // Make sure to replace this with your actual API key
+        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
       map.current.on("click", handleAddTree);
@@ -63,6 +63,19 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree) => {
     const { northing, easting } = tree.location;
+    // Create an inline SVG icon with dynamic color; when ready, set color based on tree species
+    const iconColor="gold";
+    const svgIcon = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+        <circle cx="6" cy="6" r="6" fill="${iconColor}"/>
+      </svg>
+    `;
+
+    const myIcon = L.icon({
+      iconUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
+      iconSize: [12, 12],
+      iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
+    });
     // to use the following, change species from key-value pair to an object and add markerColor to the object. Will require a lot of refactoring.
     // const markerColor = tree.species.markerColor;
     const popupContent = `
@@ -70,8 +83,10 @@ const TreeMap = () => {
       <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
+    
     const marker = L.marker([northing, easting], {
-      draggable: "true"
+      draggable: "true",
+      icon: myIcon
     })
       .bindPopup(popupContent)
       .addTo(map.current);

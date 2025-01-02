@@ -47,7 +47,6 @@ app.post('/uploads', upload.single('photo'), (req, res) => {
   });
 });
 
-
 //connect to db
 connectDB();
 

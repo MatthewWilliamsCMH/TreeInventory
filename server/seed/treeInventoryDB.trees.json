@@ -7,7 +7,7 @@
     "scientificName": "Tilia americana"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -64,7 +64,7 @@
     "scientificName": "Tilia americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -77,7 +77,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97829333858399,
@@ -121,7 +121,7 @@
     "scientificName": "Tilia americana"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -135,8 +135,8 @@
   "invasive": false,
   "lastVisited": "07/26/2020",
   "location": {
-    "northing": -83.04863687765082,
-    "easting": 39.97823912934129
+    "northing": 39.97823912934129,
+    "easting": -83.04863687765082
   },
   "garden": "",
   "siteInfo": {
@@ -174,7 +174,7 @@
     "scientificName": "Tilia americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -233,7 +233,7 @@
     "scientificName": "Tilia americana"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -290,7 +290,7 @@
     "scientificName": "Ulmus americana"
   },
   "variety": "",
-  "dbh": "36-42",
+  "dbh": "37-42",
   "notes": "",
   "photos": {
     "bark": "",
@@ -302,10 +302,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/21/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97687593681068,
-    "easting": -83.04873785944054
+    "northing": 39.97692689248152,
+    "easting": -83.04878979921342
   },
   "garden": "",
   "siteInfo": {
@@ -315,9 +317,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -343,7 +347,7 @@
     "scientificName": "Ulmus americana"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -355,7 +359,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97693379688566,
     "easting": -83.04967015863225
@@ -368,9 +374,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -396,7 +404,7 @@
     "scientificName": "Ulmus americana"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -408,7 +416,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97701207577875,
     "easting": -83.04972752004889
@@ -421,9 +431,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -449,7 +461,7 @@
     "scientificName": "Platanus occidentalis"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -461,10 +473,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.976761356094975,
-    "easting": -83.05011868720236
+    "northing": 39.976776849179764,
+    "easting": -83.05016845464708
   },
   "garden": "",
   "siteInfo": {
@@ -474,9 +488,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -502,7 +518,7 @@
     "scientificName": "Platanus occidentalis"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -515,11 +531,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97771880819777,
-    "easting": -83.04885632474114
+    "northing": 39.97778809355384,
+    "easting": -83.04889775812627
   },
   "garden": "Dog lawn",
   "siteInfo": {
@@ -559,7 +575,7 @@
     "scientificName": "Platanus occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -571,7 +587,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976890889384066,
     "easting": -83.04951262082639
@@ -584,9 +602,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -612,7 +632,7 @@
     "scientificName": "Platanus occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -624,7 +644,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97685351497605,
     "easting": -83.04962232646538
@@ -637,9 +659,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -718,7 +742,7 @@
     "scientificName": "Prunus serotina"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -731,7 +755,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.977884687693006,
@@ -775,7 +799,7 @@
     "scientificName": "Robinia pseudoacacia"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -788,7 +812,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.978017425010215,
@@ -832,7 +856,7 @@
     "scientificName": "Robinia pseudoacacia"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -844,7 +868,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97781712128366,
     "easting": -83.05024485032285
@@ -857,9 +883,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -885,7 +913,7 @@
     "scientificName": "Acer nigrum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -898,7 +926,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97797388496224,
@@ -942,7 +970,7 @@
     "scientificName": "Acer nigrum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -954,7 +982,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977898826162395,
     "easting": -83.05027324599577
@@ -967,9 +997,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -995,7 +1027,7 @@
     "scientificName": "Acer nigrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1007,7 +1039,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97791235524,
     "easting": -83.05029373964602
@@ -1020,9 +1054,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1048,7 +1084,7 @@
     "scientificName": "Acer nigrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1060,7 +1096,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97789532109209,
     "easting": -83.05030008156326
@@ -1073,9 +1111,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1101,7 +1141,7 @@
     "scientificName": "Acer nigrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1113,7 +1153,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9778276042836,
     "easting": -83.0503548867174
@@ -1126,9 +1168,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1154,7 +1198,7 @@
     "scientificName": "Juglans nigra"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1227,8 +1271,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97855675540101,
-    "easting": -83.04894956455688
+    "northing": 39.97858402689905,
+    "easting": -83.0489467084408
   },
   "garden": "Parking-lot beds and lawn",
   "siteInfo": {
@@ -1268,7 +1312,7 @@
     "scientificName": "Juglans nigra"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1280,10 +1324,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97690907353099,
-    "easting": -83.04957398726897
+    "northing": 39.97680716617482,
+    "easting": -83.04948784410955
   },
   "garden": "",
   "siteInfo": {
@@ -1293,9 +1339,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1321,7 +1369,7 @@
     "scientificName": "Juglans nigra"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1374,7 +1422,7 @@
     "scientificName": "Juglans nigra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1386,7 +1434,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97793909646449,
     "easting": -83.05053873435426
@@ -1399,9 +1449,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -1484,7 +1536,7 @@
     "scientificName": "Picea pungens"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1497,11 +1549,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97722296082788,
-    "easting": -83.04917026925922
+    "northing": 39.977275279425335,
+    "easting": -83.04919749498369
   },
   "garden": "",
   "siteInfo": {
@@ -1537,11 +1589,11 @@
     "$oid": "6766db7cd30e06d30135a032"
   },
   "species": {
-    "commonName": "Callary pear",
+    "commonName": "Callery pear",
     "scientificName": "Pyrus calleryana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1554,11 +1606,11 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978016238081565,
-    "easting": -83.04835796356203
+    "northing": 39.97803525009116,
+    "easting": -83.04833985865116
   },
   "garden": "Parking-lot beds and lawn",
   "siteInfo": {
@@ -1594,11 +1646,11 @@
     "$oid": "6766db7cd30e06d30135a033"
   },
   "species": {
-    "commonName": "Callary pear",
+    "commonName": "Callery pear",
     "scientificName": "Pyrus calleryana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1611,7 +1663,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97738113115382,
@@ -1655,7 +1707,7 @@
     "scientificName": "Pyrus calleryana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1668,11 +1720,11 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97751678555645,
-    "easting": -83.04842233657838
+    "northing": 39.97753477002142,
+    "easting": -83.04839417338373
   },
   "garden": "Hosta bed",
   "siteInfo": {
@@ -1708,11 +1760,11 @@
     "$oid": "6766db7cd30e06d30135a035"
   },
   "species": {
-    "commonName": "Callary pear",
+    "commonName": "Callery pear",
     "scientificName": "Pyrus calleryana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -1725,7 +1777,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97769149158736,
@@ -1765,7 +1817,7 @@
     "$oid": "6766db7cd30e06d30135a036"
   },
   "species": {
-    "commonName": "Callary pear",
+    "commonName": "Callery pear",
     "scientificName": "Pyrus calleryana"
   },
   "variety": "",
@@ -1782,11 +1834,11 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97809845213909,
-    "easting": -83.04830163717271
+    "northing": 39.97811438110129,
+    "easting": -83.04827883839609
   },
   "garden": "Parking-lot beds and lawn",
   "siteInfo": {
@@ -1842,8 +1894,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977134045782755,
-    "easting": -83.0487816466436
+    "northing": 39.977175079822565,
+    "easting": -83.04880455136299
   },
   "garden": "South lawn",
   "siteInfo": {
@@ -2282,7 +2334,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2295,7 +2347,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97819299252022,
@@ -2339,7 +2391,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2396,7 +2448,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2453,7 +2505,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2465,10 +2517,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97676251221081,
-    "easting": -83.05060536531104
+    "northing": 39.97681590157767,
+    "easting": -83.05057480931282
   },
   "garden": "",
   "siteInfo": {
@@ -2478,9 +2532,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2506,7 +2562,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2518,7 +2574,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97695015922287,
     "easting": -83.04957594495767
@@ -2531,9 +2589,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2559,7 +2619,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2571,10 +2631,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97704027370283,
-    "easting": -83.05005700847673
+    "northing": 39.97706665854841,
+    "easting": -83.05002227425575
   },
   "garden": "",
   "siteInfo": {
@@ -2584,9 +2646,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2612,7 +2676,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2624,7 +2688,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97686242285852,
     "easting": -83.05015182920411
@@ -2637,9 +2703,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2665,7 +2733,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2718,7 +2786,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2730,7 +2798,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978064797220604,
     "easting": -83.0504400137127
@@ -2743,9 +2813,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -2771,7 +2843,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2824,7 +2896,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2877,7 +2949,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -2889,7 +2961,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97804996105326,
     "easting": -83.05049989573932
@@ -2902,9 +2976,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3089,7 +3165,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3101,7 +3177,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97795500263807,
     "easting": -83.05052015623363
@@ -3114,9 +3192,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3201,7 +3281,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3213,7 +3293,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97791012240736,
     "easting": -83.05044046857527
@@ -3226,9 +3308,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3254,7 +3338,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3266,10 +3350,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97786631266463,
-    "easting": -83.0504568940013
+    "northing": 39.977865426412656,
+    "easting": -83.0504567921162
   },
   "garden": "",
   "siteInfo": {
@@ -3279,9 +3365,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3307,7 +3395,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -3319,7 +3407,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97790578621906,
     "easting": -83.05054221279741
@@ -3332,9 +3422,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3360,7 +3452,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3372,7 +3464,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9778355325204,
     "easting": -83.05026165282541
@@ -3385,9 +3479,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -3413,7 +3509,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3429,8 +3525,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978091888710715,
-    "easting": -83.04884984775319
+    "northing": 39.97809485527614,
+    "easting": -83.04886154830457
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -3470,7 +3566,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3527,7 +3623,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3540,7 +3636,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97806518351964,
@@ -3637,7 +3733,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3690,7 +3786,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3743,7 +3839,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3849,7 +3945,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3902,7 +3998,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -3955,7 +4051,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4008,7 +4104,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "0-3",
+  "dbh": "< 3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4061,7 +4157,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4167,7 +4263,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4220,7 +4316,7 @@
     "scientificName": "Celtis occidentalis"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4342,8 +4438,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9781694053374,
-    "easting": -83.04896428975324
+    "northing": 39.978178610749936,
+    "easting": -83.04899096488954
   },
   "garden": "Parking-lot beds and lawn",
   "siteInfo": {
@@ -4453,11 +4549,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976789348453345,
-    "easting": -83.04868862380039
+    "northing": 39.976829261603434,
+    "easting": -83.0487683415413
   },
   "garden": "South lawn",
   "siteInfo": {
@@ -4497,7 +4593,7 @@
     "scientificName": "Malus"
   },
   "variety": "Cardinal",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4510,11 +4606,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976775458557725,
-    "easting": -83.04880433111973
+    "northing": 39.97681795696643,
+    "easting": -83.04883405566216
   },
   "garden": "",
   "siteInfo": {
@@ -4570,8 +4666,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97792904729715,
-    "easting": -83.04845621813651
+    "northing": 39.97790730430298,
+    "easting": -83.04854303598405
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -4664,7 +4760,7 @@
     "scientificName": "Malus"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4717,7 +4813,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "Crimson Kiing",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -4730,11 +4826,11 @@
   "nonnative": true,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97741120637381,
-    "easting": -83.04903517279315
+    "northing": 39.977445875334126,
+    "easting": -83.0490580201149
   },
   "garden": "",
   "siteInfo": {
@@ -4844,11 +4940,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978052703871676,
-    "easting": -83.05019742212808
+    "northing": 39.978075843283115,
+    "easting": -83.050155043602
   },
   "garden": "Urlin driveway bed south",
   "siteInfo": {
@@ -4904,8 +5000,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97805436268736,
-    "easting": -83.05029710728486
+    "northing": 39.97808432160498,
+    "easting": -83.05022913962604
   },
   "garden": "Urlin driveway bed south",
   "siteInfo": {
@@ -4942,10 +5038,10 @@
   },
   "species": {
     "commonName": "Eastern redbud",
-    "scientificName": "Ceris canadensis"
+    "scientificName": "Cercis canadensis"
   },
   "variety": "Forest Pansy",
-  "dbh": "",
+  "dbh": "7-12",
   "notes": "Dedication plaque to",
   "photos": {
     "bark": "",
@@ -4957,10 +5053,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.976841859617835,
-    "easting": -83.04896049160884
+    "northing": 39.97687704936643,
+    "easting": -83.04900705814363
   },
   "garden": "",
   "siteInfo": {
@@ -4970,9 +5068,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -4998,7 +5098,7 @@
     "scientificName": "Tilia x europaea"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5055,7 +5155,7 @@
     "scientificName": "Tilia x europaea"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5128,8 +5228,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978015618201525,
-    "easting": -83.04978727323875
+    "northing": 39.97804424225601,
+    "easting": -83.049792945385
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -5169,7 +5269,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5182,11 +5282,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97775109707218,
-    "easting": -83.0501013994217
+    "northing": 39.97777267835557,
+    "easting": -83.05005848407747
   },
   "garden": "",
   "siteInfo": {
@@ -5226,7 +5326,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5239,11 +5339,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97803188750413,
-    "easting": -83.04920471969427
+    "northing": 39.97805940047409,
+    "easting": -83.04916866123678
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -5283,7 +5383,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5340,7 +5440,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5356,8 +5456,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97804604068885,
-    "easting": -83.04877504706383
+    "northing": 39.978078926309394,
+    "easting": -83.04877102375032
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -5397,7 +5497,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5410,11 +5510,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97798610946431,
-    "easting": -83.04931101992128
+    "northing": 39.97804758220266,
+    "easting": -83.04927192628385
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -5454,7 +5554,7 @@
     "scientificName": "Gleditsia triacanthos"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -5507,8 +5607,8 @@
     "scientificName": "Aesculus carnea"
   },
   "variety": "",
-  "dbh": "6-12",
-  "notes": "",
+  "dbh": "7-12",
+  "notes": "This is not correct",
   "photos": {
     "bark": "",
     "summerLeaf": "",
@@ -5520,7 +5620,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97786068994755,
@@ -5577,11 +5677,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976739561655265,
-    "easting": -83.04976640879988
+    "northing": 39.976744990628085,
+    "easting": -83.04952338337898
   },
   "garden": "",
   "siteInfo": {
@@ -5637,8 +5737,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97674065132639,
-    "easting": -83.04948876713121
+    "northing": 39.97675346911507,
+    "easting": -83.04966352880002
   },
   "garden": "",
   "siteInfo": {
@@ -5691,11 +5791,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976733023628064,
-    "easting": -83.04941020271534
+    "northing": 39.976743449084886,
+    "easting": -83.0494348704815
   },
   "garden": "",
   "siteInfo": {
@@ -5751,8 +5851,8 @@
     "$date": "2024-12-25T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97672566834671,
-    "easting": -83.04931315255465
+    "northing": 39.97673933830284,
+    "easting": -83.04934702813627
   },
   "garden": "",
   "siteInfo": {
@@ -5808,8 +5908,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97690047594123,
-    "easting": -83.05029976718275
+    "northing": 39.97693023248275,
+    "easting": -83.05032569915058
   },
   "garden": "Main sign bed",
   "siteInfo": {
@@ -5862,11 +5962,11 @@
   "nonnative": true,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976948010943765,
-    "easting": -83.05035490636543
+    "northing": 39.976970569408124,
+    "easting": -83.05037431418897
   },
   "garden": "Main sign bed",
   "siteInfo": {
@@ -5922,8 +6022,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97694683724037,
-    "easting": -83.05031048869046
+    "northing": 39.976963889409376,
+    "easting": -83.0503360927105
   },
   "garden": "Main sign bed",
   "siteInfo": {
@@ -5979,8 +6079,8 @@
     "$date": "2024-12-30T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976882064706444,
-    "easting": -83.04858792455805
+    "northing": 39.97690428323794,
+    "easting": -83.04862953722477
   },
   "garden": "Goodale entrance beds",
   "siteInfo": {
@@ -6020,7 +6120,7 @@
     "scientificName": "Tilia cordata"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6032,10 +6132,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/24/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97677663152667,
-    "easting": -83.05045533951807
+    "northing": 39.97680716617482,
+    "easting": -83.05045746266843
   },
   "garden": "",
   "siteInfo": {
@@ -6045,9 +6147,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6073,7 +6177,7 @@
     "scientificName": "Tilia cordata"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6086,11 +6190,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976746396483236,
-    "easting": -83.05031853265118
+    "northing": 39.97678095995954,
+    "easting": -83.05032268166542
   },
   "garden": "",
   "siteInfo": {
@@ -6130,7 +6234,7 @@
     "scientificName": "Magnolia x soulangeana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "Leaves are velvety above",
   "photos": {
     "bark": "",
@@ -6143,11 +6247,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977212816568844,
-    "easting": -83.04910500176653
+    "northing": 39.97719974435381,
+    "easting": -83.04917000234128
   },
   "garden": "",
   "siteInfo": {
@@ -6203,8 +6307,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97700161217598,
-    "easting": -83.05008689173704
+    "northing": 39.97707179700131,
+    "easting": -83.05023148655891
   },
   "garden": "",
   "siteInfo": {
@@ -6260,8 +6364,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9772076055748,
-    "easting": -83.05041337753525
+    "northing": 39.97734773135427,
+    "easting": -83.05041119456293
   },
   "garden": "Woodland garden",
   "siteInfo": {
@@ -6301,7 +6405,7 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "37-42",
   "notes": "Bird feeder on north side",
   "photos": {
     "bark": "",
@@ -6314,7 +6418,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97835224629905,
@@ -6358,7 +6462,7 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "37-42",
   "notes": "Chain on west side",
   "photos": {
     "bark": "",
@@ -6371,7 +6475,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97827921433661,
@@ -6415,7 +6519,7 @@
     "scientificName": "Catalpa speciosa"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6427,7 +6531,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97781638654509,
     "easting": -83.05058549173667
@@ -6440,9 +6546,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6484,8 +6592,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9774339330733,
-    "easting": -83.05051936445764
+    "northing": 39.977276820956554,
+    "easting": -83.0503521859646
   },
   "garden": "Woodland garden",
   "siteInfo": {
@@ -6525,7 +6633,7 @@
     "scientificName": "Carya illinoiensis"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6538,11 +6646,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9778054700403,
-    "easting": -83.04857659552079
+    "northing": 39.97782714537388,
+    "easting": -83.04861679673195
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -6582,7 +6690,7 @@
     "scientificName": "Quercus rubra"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6595,7 +6703,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97728691033958,
@@ -6639,7 +6747,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6652,7 +6760,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97711660018887,
@@ -6696,7 +6804,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "37-42",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6753,7 +6861,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6766,7 +6874,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97683193194615,
@@ -6810,7 +6918,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6822,7 +6930,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "10/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97799106000666,
     "easting": -83.05035084486009
@@ -6835,9 +6945,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6873,9 +6985,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "10/23/2020",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.978021622161165,
     "easting": -83.05036504393958
@@ -6888,9 +7002,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -6916,7 +7032,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -6929,7 +7045,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.978033512679566,
@@ -6986,7 +7102,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97801569144997,
@@ -7097,9 +7213,11 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": "11/01/2021",
+  "nonnative": true,
+  "invasive": true,
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97786202667132,
     "easting": -83.05056675392593
@@ -7112,9 +7230,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7140,7 +7260,7 @@
     "scientificName": "Acer platanoides"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -7153,7 +7273,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.9777373839004,
@@ -7197,7 +7317,7 @@
     "scientificName": "Picea abies"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7207,14 +7327,14 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
+  "nonnative": true,
+  "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977363598531866,
-    "easting": -83.04924020711273
+    "northing": 39.97737239582321,
+    "easting": -83.0491914600134
   },
   "garden": "",
   "siteInfo": {
@@ -7267,11 +7387,11 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-30T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977355354816076,
-    "easting": -83.04935046762274
+    "northing": 39.97730097160751,
+    "easting": -83.04932154715063
   },
   "garden": "",
   "siteInfo": {
@@ -7313,7 +7433,7 @@
     "scientificName": "Aesculus glabra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7386,8 +7506,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97742073930177,
-    "easting": -83.05029601990303
+    "northing": 39.97742840468835,
+    "easting": -83.05030658841135
   },
   "garden": "Woodland garden",
   "siteInfo": {
@@ -7594,7 +7714,7 @@
     "scientificName": "Aesculus glabra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7647,7 +7767,7 @@
     "scientificName": "Carya glabra"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7663,8 +7783,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97812921273392,
-    "easting": -83.04872078935355
+    "northing": 39.978121060987576,
+    "easting": -83.0486811697483
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -7704,7 +7824,7 @@
     "scientificName": "Carya glabra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7717,7 +7837,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97821241470867,
@@ -7761,7 +7881,7 @@
     "scientificName": "Quercus palustris"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "",
   "photos": {
     "bark": "",
@@ -7773,7 +7893,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977193370636805,
     "easting": -83.04931159700621
@@ -7786,9 +7908,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7826,10 +7950,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.977039267668964,
-    "easting": -83.05045948545879
+    "northing": 39.97706768623903,
+    "easting": -83.05044740438463
   },
   "garden": "",
   "siteInfo": {
@@ -7839,9 +7965,13 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 1862",
+  "installedDate": {
+    "$date": {
+      "$numberLong": "-3408116638000"
+    }
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -7936,8 +8066,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97722903347309,
-    "easting": -83.04873347282411
+    "northing": 39.97731073463422,
+    "easting": -83.04863288998605
   },
   "garden": "Ravine",
   "siteInfo": {
@@ -7993,8 +8123,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97733591295978,
-    "easting": -83.04873347282411
+    "northing": 39.97736931276507,
+    "easting": -83.04871000349523
   },
   "garden": "Ravine",
   "siteInfo": {
@@ -8034,7 +8164,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8047,11 +8177,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977996446693155,
-    "easting": -83.04936046096894
+    "northing": 39.97802445949176,
+    "easting": -83.04935038089754
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -8091,7 +8221,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8103,10 +8233,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97689338543865,
-    "easting": -83.04931154745782
+    "northing": 39.97691867093926,
+    "easting": -83.04931819438934
   },
   "garden": "",
   "siteInfo": {
@@ -8116,9 +8248,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8160,8 +8294,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97806781036721,
-    "easting": -83.04850452210584
+    "northing": 39.97806685112243,
+    "easting": -83.04849408566953
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -8201,7 +8335,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8213,7 +8347,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97709593243438,
     "easting": -83.04970480365041
@@ -8226,9 +8362,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8267,11 +8405,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977376301768736,
-    "easting": -83.04893246728221
+    "northing": 39.97734721751109,
+    "easting": -83.04899901151659
   },
   "garden": "",
   "siteInfo": {
@@ -8311,7 +8449,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "37-42",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8323,7 +8461,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.9772817774729,
     "easting": -83.04946658203406
@@ -8336,9 +8476,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8376,7 +8518,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.976876277627305,
     "easting": -83.04945645645684
@@ -8389,9 +8533,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8417,7 +8563,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8429,7 +8575,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97682221417572,
     "easting": -83.04954729039972
@@ -8442,9 +8590,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8470,7 +8620,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8482,10 +8632,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97710405119291,
-    "easting": -83.05021443493803
+    "northing": 39.977166858310184,
+    "easting": -83.0502086877823
   },
   "garden": "",
   "siteInfo": {
@@ -8495,9 +8647,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8596,8 +8750,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9775302999631,
-    "easting": -83.05020582465988
+    "northing": 39.97746694287163,
+    "easting": -83.05025227367878
   },
   "garden": "Woodland garden",
   "siteInfo": {
@@ -8655,8 +8809,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97723678451293,
-    "easting": -83.05027568413583
+    "northing": 39.97735184209973,
+    "easting": -83.05024892091753
   },
   "garden": "Woodland garden",
   "siteInfo": {
@@ -8695,10 +8849,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer buergerianum"
+    "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8710,7 +8864,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "09/22/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97683100548951,
     "easting": -83.04972298422469
@@ -8723,9 +8879,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8748,10 +8906,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer buergerianum"
+    "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8763,10 +8921,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97673821996984,
-    "easting": -83.0491625378479
+    "northing": 39.97678198765444,
+    "easting": -83.04920956492424
   },
   "garden": "",
   "siteInfo": {
@@ -8776,9 +8936,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8801,10 +8963,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer buergerianum"
+    "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8816,10 +8978,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97674732412869,
-    "easting": -83.04999899783516
+    "northing": 39.97680254154934,
+    "easting": -83.0500289797783
   },
   "garden": "",
   "siteInfo": {
@@ -8829,9 +8993,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8854,10 +9020,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer buergerianum"
+    "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8869,10 +9035,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/23/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97678010018558,
-    "easting": -83.04983706028234
+    "northing": 39.97679534768682,
+    "easting": -83.04987609386446
   },
   "garden": "",
   "siteInfo": {
@@ -8882,9 +9050,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8907,10 +9077,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer buergerianum"
+    "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -8922,10 +9092,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/21/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.976731995001664,
-    "easting": -83.04905369871557
+    "northing": 39.97678198765444,
+    "easting": -83.04908484220506
   },
   "garden": "",
   "siteInfo": {
@@ -8935,9 +9107,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -8963,7 +9137,7 @@
     "scientificName": "Acer rubrum"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9093,8 +9267,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978053895683004,
-    "easting": -83.04998466442105
+    "northing": 39.978077898633984,
+    "easting": -83.04996594786645
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -9134,7 +9308,7 @@
     "scientificName": "Betula nigra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "Triple trunk",
   "photos": {
     "bark": "",
@@ -9150,8 +9324,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978118381793436,
-    "easting": -83.04862587073053
+    "northing": 39.97811515185745,
+    "easting": -83.0485960096121
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -9191,7 +9365,7 @@
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9204,11 +9378,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977117450354264,
-    "easting": -83.0489508506815
+    "northing": 39.97718587055608,
+    "easting": -83.04898828268053
   },
   "garden": "",
   "siteInfo": {
@@ -9248,7 +9422,7 @@
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9261,11 +9435,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977087708506765,
-    "easting": -83.04890510337442
+    "northing": 39.977115987680264,
+    "easting": -83.04890714585783
   },
   "garden": "",
   "siteInfo": {
@@ -9305,7 +9479,7 @@
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9318,11 +9492,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97704240019331,
-    "easting": -83.04887507961716
+    "northing": 39.977086184667364,
+    "easting": -83.04893396794797
   },
   "garden": "",
   "siteInfo": {
@@ -9362,7 +9536,7 @@
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -9375,11 +9549,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97704152296605,
-    "easting": -83.04885794928136
+    "northing": 39.97705021549657,
+    "easting": -83.04891854524614
   },
   "garden": "",
   "siteInfo": {
@@ -9419,7 +9593,7 @@
     "scientificName": "Sassafras albidum"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9432,11 +9606,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97698889384824,
-    "easting": -83.04887832795775
+    "northing": 39.977151956816456,
+    "easting": -83.0489292740822
   },
   "garden": "",
   "siteInfo": {
@@ -9476,7 +9650,7 @@
     "scientificName": "Magnolia x soulangeana"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "Quadruple trunk",
   "photos": {
     "bark": "",
@@ -9489,11 +9663,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976825373102415,
-    "easting": -83.0486509026237
+    "northing": 39.976839538544546,
+    "easting": -83.04868988692762
   },
   "garden": "",
   "siteInfo": {
@@ -9639,7 +9813,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9692,7 +9866,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9745,7 +9919,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9798,7 +9972,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "I think this has white blooms in late spring, which means it's not an elm",
   "photos": {
     "bark": "",
@@ -9851,7 +10025,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "",
   "photos": {
     "bark": "",
@@ -9863,10 +10037,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.9768685143656,
-    "easting": -83.05059442187572
+    "northing": 39.97692380940328,
+    "easting": -83.05055066943171
   },
   "garden": "",
   "siteInfo": {
@@ -9876,9 +10052,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -9904,7 +10082,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -9917,7 +10095,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97774493098992,
@@ -9961,7 +10139,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -9974,7 +10152,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97774493098992,
@@ -10018,7 +10196,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -10031,7 +10209,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.977742875629076,
@@ -10075,7 +10253,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -10088,7 +10266,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.977734654184985,
@@ -10132,7 +10310,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -10145,7 +10323,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97772540505923,
@@ -10189,7 +10367,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -10246,7 +10424,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -10259,7 +10437,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97772643273993,
@@ -10303,7 +10481,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "30-42",
+  "dbh": "31-36",
   "notes": "Quintuple trunk\n12 sisters",
   "photos": {
     "bark": "",
@@ -10316,7 +10494,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.977704851441906,
@@ -10360,7 +10538,7 @@
     "scientificName": "Ulmus pumila"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10413,7 +10591,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -10426,7 +10604,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.978312415613786,
@@ -10470,7 +10648,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10483,7 +10661,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97835595203836,
@@ -10527,7 +10705,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "Double trunk",
   "photos": {
     "bark": "",
@@ -10540,7 +10718,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97792013627921,
@@ -10690,7 +10868,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10702,7 +10880,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97776886178739,
     "easting": -83.0503706413784
@@ -10715,9 +10895,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10743,7 +10925,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10755,7 +10937,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.977792546576524,
     "easting": -83.0504756006139
@@ -10768,9 +10952,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10796,7 +10982,7 @@
     "scientificName": "Ulmus rubra"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10808,7 +10994,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97772474956322,
     "easting": -83.05043393664161
@@ -10821,9 +11009,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -10918,8 +11108,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977988002773614,
-    "easting": -83.04992986839794
+    "northing": 39.97801983494864,
+    "easting": -83.04989621043205
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -10959,7 +11149,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -10971,10 +11161,12 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
-    "northing": 39.97718477249885,
-    "easting": -83.04938594936445
+    "northing": 39.977198202820865,
+    "easting": -83.04942548274995
   },
   "garden": "",
   "siteInfo": {
@@ -10984,9 +11176,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11028,8 +11222,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97781919047529,
-    "easting": -83.04979336848322
+    "northing": 39.97787082172511,
+    "easting": -83.04978556931019
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -11087,8 +11281,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97786566694772,
-    "easting": -83.0498453274162
+    "northing": 39.97794430070007,
+    "easting": -83.04986268281938
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -11187,7 +11381,7 @@
     "scientificName": "Acer saccharum"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11199,7 +11393,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "07/25/2020",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97715186637574,
     "easting": -83.049677871706
@@ -11212,9 +11408,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11256,8 +11454,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97800328341082,
-    "easting": -83.04962002651226
+    "northing": 39.977973589500245,
+    "easting": -83.04957166314126
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -11366,8 +11564,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97803694417956,
-    "easting": -83.04989409202831
+    "northing": 39.97806196966326,
+    "easting": -83.04981507360935
   },
   "garden": "Glenn garden and lawn",
   "siteInfo": {
@@ -11407,7 +11605,7 @@
     "scientificName": "Ailanthus altissima"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11420,7 +11618,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97713593015406,
@@ -11466,7 +11664,7 @@
     "scientificName": "Ailanthus altissima"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11479,11 +11677,11 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9771385469563,
-    "easting": -83.05016141616245
+    "northing": 39.97707076931076,
+    "easting": -83.05014096200468
   },
   "garden": "",
   "siteInfo": {
@@ -11525,7 +11723,7 @@
     "scientificName": "Ailanthus altissima"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11538,7 +11736,7 @@
   "nonnative": true,
   "invasive": true,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97694375242614,
@@ -11584,7 +11782,7 @@
     "scientificName": "Ailanthus altissima"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11643,7 +11841,7 @@
     "scientificName": "Ailanthus altissima"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11698,10 +11896,10 @@
     "$oid": "6766db7cd30e06d30135a0ea"
   },
   "species": {
-    "commonName": "Tricolor birch",
+    "commonName": "Tricolor beech",
     "scientificName": "Fagus sylvatica"
   },
-  "variety": "Tricolor",
+  "variety": "Purpurea tricolor",
   "dbh": "< 3",
   "notes": "",
   "photos": {
@@ -11715,11 +11913,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97775520779336,
-    "easting": -83.04903924465181
+    "northing": 39.97771846821408,
+    "easting": -83.04902818053962
   },
   "garden": "Dog lawn",
   "siteInfo": {
@@ -11759,7 +11957,7 @@
     "scientificName": "Unknown species"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -11771,7 +11969,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97776229612953,
     "easting": -83.05020985717239
@@ -11784,9 +11984,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -11865,7 +12067,7 @@
     "scientificName": "Crataegus"
   },
   "variety": "Washington",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "Double or triple trunk",
   "photos": {
     "bark": "",
@@ -11878,11 +12080,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97730896295233,
-    "easting": -83.04890965551508
+    "northing": 39.97740630945344,
+    "easting": -83.04900772869587
   },
   "garden": "",
   "siteInfo": {
@@ -11922,7 +12124,7 @@
     "scientificName": "Crataegus phaenopyrum"
   },
   "variety": "",
-  "dbh": "24-30",
+  "dbh": "25-30",
   "notes": "Quadruple trunk, one trunk dead and removed",
   "photos": {
     "bark": "",
@@ -11988,11 +12190,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.9779968488925,
-    "easting": -83.04940899310579
+    "northing": 39.978036149307684,
+    "easting": -83.04941542446615
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -12032,7 +12234,7 @@
     "scientificName": "Prunus pendula"
   },
   "variety": "Weeping extraordinaire",
-  "dbh": "2",
+  "dbh": "< 3",
   "notes": "Donated by Paul Hysell and Elizabeth Chrisman in memory of Bob Chrisman; plaque:",
   "photos": {
     "bark": "",
@@ -12045,11 +12247,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.978129282385154,
-    "easting": -83.04842770099641
+    "northing": 39.97818092301617,
+    "easting": -83.04845184087755
   },
   "garden": "Parking-lot beds and lawn",
   "siteInfo": {
@@ -12089,7 +12291,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "18-24",
+  "dbh": "19-24",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12102,11 +12304,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97806255502291,
-    "easting": -83.04901444721317
+    "northing": 39.978065566527945,
+    "easting": -83.04901778697969
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -12146,7 +12348,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "2024:  Emerald ash borer activity noted",
   "photos": {
     "bark": "",
@@ -12203,7 +12405,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12219,8 +12421,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97792169179314,
-    "easting": -83.04855912923814
+    "northing": 39.978044499174985,
+    "easting": -83.04857991635801
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -12260,7 +12462,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12276,8 +12478,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97799458724134,
-    "easting": -83.04872166749736
+    "northing": 39.97801880727236,
+    "easting": -83.04874420166017
   },
   "garden": "Community garden and lawn",
   "siteInfo": {
@@ -12317,7 +12519,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12330,7 +12532,7 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97695253528404,
@@ -12374,7 +12576,7 @@
     "scientificName": "Fraxinus americana"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12387,11 +12589,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976916817594756,
-    "easting": -83.04917794209963
+    "northing": 39.97692586478878,
+    "easting": -83.04921492934228
   },
   "garden": "",
   "siteInfo": {
@@ -12431,7 +12633,7 @@
     "scientificName": "Morus alba"
   },
   "variety": "",
-  "dbh": "6-12",
+  "dbh": "7-12",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12444,11 +12646,11 @@
   "nonnative": false,
   "invasive": false,
   "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-01-01T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97716005952446,
-    "easting": -83.04987283341696
+    "northing": 39.977170455221966,
+    "easting": -83.05000886321069
   },
   "garden": "",
   "siteInfo": {
@@ -12506,8 +12708,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.97756262016857,
-    "easting": -83.04878090869028
+    "northing": 39.9775620036308,
+    "easting": -83.04872810840608
   },
   "garden": "Dog lawn",
   "siteInfo": {
@@ -12549,7 +12751,7 @@
     "scientificName": "Morus alba"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12561,7 +12763,9 @@
   },
   "nonnative": false,
   "invasive": false,
-  "lastVisited": "11/01/2021",
+  "lastVisited": {
+    "$date": "2025-01-01T05:00:00.000Z"
+  },
   "location": {
     "northing": 39.97772474956322,
     "easting": -83.05034386069553
@@ -12574,9 +12778,11 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": {
+    "$date": "2018-01-01T05:00:00.000Z"
+  },
   "installedBy": "",
-  "felledDate": "",
+  "felledDate": null,
   "felledBy": "",
   "maintenanceNeeds": {
     "install": false,
@@ -12659,7 +12865,7 @@
     "scientificName": "Pinus strobus"
   },
   "variety": "",
-  "dbh": "12-18",
+  "dbh": "13-18",
   "notes": "",
   "photos": {
     "bark": "",
@@ -12675,8 +12881,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.976996780266724,
-    "easting": -83.05015430448503
+    "northing": 39.9769489878714,
+    "easting": -83.05017717182638
   },
   "garden": "",
   "siteInfo": {
@@ -12732,8 +12938,8 @@
     "$date": "2024-12-29T05:00:00.000Z"
   },
   "location": {
-    "northing": 39.977434570799126,
-    "easting": -83.04872810840608
+    "northing": 39.977472595136675,
+    "easting": -83.04873749613763
   },
   "garden": "Ravine",
   "siteInfo": {

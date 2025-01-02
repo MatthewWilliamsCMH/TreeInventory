@@ -50,7 +50,9 @@ const PhysicalDataForm = () => {
             value = {formValues.species.scientificName}
             onChange = {(event) => handleInputChange("species.scientificName", event)}
           >
-            {Object.entries(commonToScientificList).map(([common, scientific]) => (
+          {Object.entries(commonToScientificList)
+            .sort(([, a], [, b]) => a.localeCompare(b))
+            .map(([common, scientific]) => (
               <option key={scientific} value={scientific}>
                 {scientific}
               </option>

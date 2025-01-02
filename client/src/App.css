@@ -18,7 +18,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./public/background.jpg');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.35;
@@ -151,11 +151,9 @@ button:hover {
   background-color: darkgrey;
 }
 
-.dotmarker {
+/* .dotmarker {
   size: auto;
-  /* color:black; */
-  /* border-radius: .25rem; */
-}
+} */
 
 /*these are here to override some of the default css settings*/
 .photo-preview {
