@@ -63,8 +63,37 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree) => {
     const { northing, easting } = tree.location;
+    var iconColor
     // Create an inline SVG icon with dynamic color; when ready, set color based on tree species
-    const iconColor="gold";
+    switch (tree.species.commonName) {
+    case "Common hackberry":
+      iconColor = "green";
+      break;
+    case "Siberian elm":
+      iconColor = "blue"
+      break;
+    case "Red maple":
+      iconColor = "red"
+      break;
+    case "Eastern redbud":
+      iconColor = "pink"
+      break;
+    case "Black maple":
+      iconColor = "black"
+      break;
+    case "American sycamore":
+      iconColor = "purple"
+      break;
+    case "Honey locust":
+      iconColor = "gold"
+      break;
+    case "Norway maple":
+      iconColor = "orange"
+      break;
+    default:
+      iconColor = "white"
+    }
+    const iconSize = 10;
     const svgIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <circle cx="6" cy="6" r="6" fill="${iconColor}"/>
@@ -73,7 +102,7 @@ const TreeMap = () => {
 
     const myIcon = L.icon({
       iconUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
-      iconSize: [12, 12],
+      iconSize: [iconSize, iconSize],
       iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
     });
     // to use the following, change species from key-value pair to an object and add markerColor to the object. Will require a lot of refactoring.
