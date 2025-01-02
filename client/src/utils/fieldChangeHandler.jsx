@@ -67,9 +67,12 @@ export const handleFieldChange = (formValues, field, value) => {
 return formValues;
 };
 
-
 //-------------------- select lists --------------------//
 //species should be pulled from db but allow user to create new
+export const newCommonToScientificList = {
+  //write code here to compile common and scientific names to assign to drop-down boxes
+}
+
 export const commonToScientificList = {
   "": "",
   "American basswood": "Tilia americana",

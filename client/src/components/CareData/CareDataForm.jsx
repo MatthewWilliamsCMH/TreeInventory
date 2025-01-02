@@ -27,8 +27,8 @@ const CareDataForm = () => {
         <input 
           id = "installedDate"
           type = "text"
-          defaultValue = {formatDateForDisplay(formValues.installedDate)}
           onChange = {(event) => handleInputChange("installedDate", event)} 
+          defaultValue = {formatDateForDisplay(formValues.installedDate)}
         />
       </div>
 

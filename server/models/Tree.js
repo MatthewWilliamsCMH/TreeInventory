@@ -19,7 +19,7 @@ const treeSchema = new Schema({
   },
   nonnative: { type: Boolean },
   invasive: { type: Boolean },
-  lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
+  lastVisited: { type: String, required: true }, //automatically generated when the data is input or updated
   location: { 
     northing: { type: Number }, //always positive at SC //make required
     easting: { type: Number } //always negative at SC //make required
@@ -32,9 +32,9 @@ const treeSchema = new Schema({
     proximateStructure: { type: Boolean },
     proximateFence: { type: Boolean }
   },
-  installedDate: { type: Date },
+  installedDate: { type: String },
   installedBy: { type: String },
-  felledDate: { type: Date },
+  felledDate: { type: String },
   felledBy: { type: String },
   maintenanceNeeds: {
     install: { type: Boolean },
