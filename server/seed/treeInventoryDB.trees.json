@@ -7,7 +7,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ebae34"
   },
   "variety": "",
   "dbh": "7-12",
@@ -61,7 +61,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ebae34"
   },
   "variety": "",
   "dbh": "13-18",
@@ -115,7 +115,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ebae34"
   },
   "variety": "",
   "dbh": "7-12",
@@ -169,7 +169,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ebae34"
   },
   "variety": "",
   "dbh": "13-18",
@@ -223,7 +223,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ebae34"
   },
   "variety": "",
   "dbh": "7-12",
@@ -277,7 +277,7 @@
     "scientificName": "Ulmus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#dfeb34"
   },
   "variety": "",
   "dbh": "37-42",
@@ -331,7 +331,7 @@
     "scientificName": "Ulmus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#dfeb34"
   },
   "variety": "",
   "dbh": "25-30",
@@ -385,7 +385,7 @@
     "scientificName": "Ulmus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#dfeb34"
   },
   "variety": "",
   "dbh": "25-30",
@@ -439,7 +439,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9ceb34"
   },
   "variety": "",
   "dbh": "19-24",
@@ -493,7 +493,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9ceb34"
   },
   "variety": "",
   "dbh": "25-30",
@@ -547,7 +547,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9ceb34"
   },
   "variety": "",
   "dbh": "7-12",
@@ -601,7 +601,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9ceb34"
   },
   "variety": "",
   "dbh": "13-18",
@@ -655,7 +655,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9ceb34"
   },
   "variety": "",
   "dbh": "< 3",
@@ -709,7 +709,7 @@
     "scientificName": "Prunus serotina",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#9e103f"
   },
   "variety": "",
   "dbh": "7-12",
@@ -763,7 +763,7 @@
     "scientificName": "Robinia pseudoacacia",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#613b09"
   },
   "variety": "",
   "dbh": "13-18",
@@ -817,7 +817,7 @@
     "scientificName": "Robinia pseudoacacia",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#613b09"
   },
   "variety": "",
   "dbh": "13-18",
@@ -871,7 +871,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ab9d4"
   },
   "variety": "",
   "dbh": "19-24",
@@ -925,7 +925,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ab9d4"
   },
   "variety": "",
   "dbh": "19-24",
@@ -979,7 +979,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ab9d4"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1033,7 +1033,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ab9d4"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1087,7 +1087,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ab9d4"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1141,7 +1141,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#16637d"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1195,7 +1195,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#16637d"
   },
   "variety": "",
   "dbh": "",
@@ -1249,7 +1249,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#16637d"
   },
   "variety": "",
   "dbh": "25-30",
@@ -1303,7 +1303,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#16637d"
   },
   "variety": "",
   "dbh": "19-24",
@@ -1357,7 +1357,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#16637d"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1411,7 +1411,7 @@
     "scientificName": "Viburnum prunifolium",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#a6a82f"
   },
   "variety": "",
   "dbh": "3-6",
@@ -1465,7 +1465,7 @@
     "scientificName": "Picea pungens",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5a1b9e"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1623,11 +1623,11 @@
     "$oid": "6766db7cd30e06d30135a034"
   },
   "species": {
-    "commonName": "Callary pear",
+    "commonName": "Callery pear",
     "scientificName": "Pyrus calleryana",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#fff"
+    "markerColor": "#eb4034"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1789,7 +1789,7 @@
     "scientificName": "Quercus muehlenbergii",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#eda6d4"
   },
   "variety": "",
   "dbh": "3-6",
@@ -1843,7 +1843,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -1897,7 +1897,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -1951,7 +1951,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -2005,7 +2005,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -2059,7 +2059,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -2113,7 +2113,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -2167,7 +2167,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -2221,7 +2221,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2275,7 +2275,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2329,7 +2329,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2383,7 +2383,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2437,7 +2437,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2491,7 +2491,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2545,7 +2545,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2599,7 +2599,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "19-24",
@@ -2653,7 +2653,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2707,7 +2707,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -2761,7 +2761,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -2815,7 +2815,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2869,7 +2869,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -2923,7 +2923,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -2977,7 +2977,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -3031,7 +3031,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3085,7 +3085,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "",
@@ -3139,7 +3139,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3193,7 +3193,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3247,7 +3247,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3301,7 +3301,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3355,7 +3355,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3409,7 +3409,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "19-24",
@@ -3463,7 +3463,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3517,7 +3517,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "12-12",
@@ -3571,7 +3571,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3625,7 +3625,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3679,7 +3679,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3733,7 +3733,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -3787,7 +3787,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3841,7 +3841,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3895,7 +3895,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3949,7 +3949,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "< 3",
@@ -4003,7 +4003,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4057,7 +4057,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4111,7 +4111,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "13-18",
@@ -4165,7 +4165,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4219,7 +4219,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3c329c"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4273,7 +4273,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4327,7 +4327,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "",
   "dbh": "",
@@ -4381,7 +4381,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "Cardinal",
   "dbh": "37-42",
@@ -4435,7 +4435,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "Cardinal",
   "dbh": "13-18",
@@ -4489,7 +4489,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "Prairifire",
   "dbh": "3-6",
@@ -4543,7 +4543,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "Coronaria",
   "dbh": "3-6",
@@ -4597,7 +4597,7 @@
     "scientificName": "Malus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fa7b05"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4651,7 +4651,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "Crimson Kiing",
   "dbh": "7-12",
@@ -4705,7 +4705,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "Crimson sunset",
   "dbh": "2",
@@ -4759,7 +4759,7 @@
     "scientificName": "Cercis canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4b4366"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4813,7 +4813,7 @@
     "scientificName": "Cercis canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4b4366"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4867,7 +4867,7 @@
     "scientificName": "Cercis canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4b4366"
   },
   "variety": "Forest Pansy",
   "dbh": "7-12",
@@ -4921,7 +4921,7 @@
     "scientificName": "Tilia x europaea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#c38ced"
   },
   "variety": "",
   "dbh": "13-18",
@@ -4975,7 +4975,7 @@
     "scientificName": "Tilia x europaea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#c38ced"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5029,7 +5029,7 @@
     "scientificName": "Gingko biloba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#aae34f"
   },
   "variety": "",
   "dbh": "7-12",
@@ -5083,7 +5083,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "25-30",
@@ -5137,7 +5137,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5191,7 +5191,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5245,7 +5245,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5299,7 +5299,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "19-24",
@@ -5353,7 +5353,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5407,7 +5407,7 @@
     "scientificName": "Aesculus carnea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "7-12",
@@ -5461,7 +5461,7 @@
     "scientificName": "Aesculus carnea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#872d58"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5515,7 +5515,7 @@
     "scientificName": "Aesculus carnea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5569,7 +5569,7 @@
     "scientificName": "Aesculus carnea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5623,7 +5623,7 @@
     "scientificName": "Aesculus carnea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#29ba3f"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5677,7 +5677,7 @@
     "scientificName": "Syringa reticulata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#eddfe6"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5731,7 +5731,7 @@
     "scientificName": "Syringa reticulata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#eddfe6"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5785,7 +5785,7 @@
     "scientificName": "Syringa reticulata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#eddfe6"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5839,7 +5839,7 @@
     "scientificName": "Acer palmatum var. atropurpureum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a0a1f"
   },
   "variety": "Bloodgood",
   "dbh": "< 3",
@@ -5893,7 +5893,7 @@
     "scientificName": "Tilia cordata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#b2d4cc"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5947,7 +5947,7 @@
     "scientificName": "Tilia cordata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#b2d4cc"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6001,7 +6001,7 @@
     "scientificName": "Magnolia x soulangeana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d9146"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6055,7 +6055,7 @@
     "scientificName": "Morus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5194a8"
   },
   "variety": "",
   "dbh": "< 3",
@@ -6109,7 +6109,7 @@
     "scientificName": "Catalpa speciosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d02fa"
   },
   "variety": "",
   "dbh": "31-36",
@@ -6163,7 +6163,7 @@
     "scientificName": "Catalpa speciosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d02fa"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6217,7 +6217,7 @@
     "scientificName": "Catalpa speciosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d02fa"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6271,7 +6271,7 @@
     "scientificName": "Catalpa speciosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d02fa"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6325,7 +6325,7 @@
     "scientificName": "Catalpa speciosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d02fa"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6379,7 +6379,7 @@
     "scientificName": "Carya illinoiensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6e053f"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6433,7 +6433,7 @@
     "scientificName": "Quercus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#092a70"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6487,7 +6487,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "19-24",
@@ -6541,7 +6541,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6595,7 +6595,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "19-24",
@@ -6649,7 +6649,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "7-12",
@@ -6703,7 +6703,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6757,7 +6757,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6811,7 +6811,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6865,7 +6865,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6919,7 +6919,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6973,7 +6973,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#fcef35"
   },
   "variety": "",
   "dbh": "25-30",
@@ -7027,7 +7027,7 @@
     "scientificName": "Picea abies",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#f7faa0"
   },
   "variety": "",
   "dbh": "13-18",
@@ -7081,7 +7081,7 @@
     "scientificName": "Picea abies",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#f7faa0"
   },
   "variety": "",
   "dbh": "3-6",
@@ -7135,7 +7135,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7189,7 +7189,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7243,7 +7243,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "",
@@ -7297,7 +7297,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "",
@@ -7351,7 +7351,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "3-6",
@@ -7405,7 +7405,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#968e65"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7459,7 +7459,7 @@
     "scientificName": "Carya glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5f85a1"
   },
   "variety": "",
   "dbh": "13-18",
@@ -7513,7 +7513,7 @@
     "scientificName": "Carya glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5f85a1"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7567,7 +7567,7 @@
     "scientificName": "Quercus palustris",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#02a357"
   },
   "variety": "",
   "dbh": "31-36",
@@ -7621,7 +7621,7 @@
     "scientificName": "Quercus palustris",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#02a357"
   },
   "variety": "",
   "dbh": "> 42",
@@ -7679,7 +7679,7 @@
     "scientificName": "Quercus palustris",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#02a357"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7733,7 +7733,7 @@
     "scientificName": "Cornus florida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ff00aa"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7787,7 +7787,7 @@
     "scientificName": "Cornus florida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ff00aa"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7841,7 +7841,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7895,7 +7895,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7949,7 +7949,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8003,7 +8003,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8057,7 +8057,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8111,7 +8111,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "37-42",
@@ -8165,7 +8165,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8219,7 +8219,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8273,7 +8273,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8327,7 +8327,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "",
@@ -8381,7 +8381,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "",
@@ -8435,7 +8435,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8489,7 +8489,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8543,7 +8543,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8597,7 +8597,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "19-24",
@@ -8651,7 +8651,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8705,7 +8705,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8759,7 +8759,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4f8069"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8809,11 +8809,11 @@
     "$oid": "6766db7cd30e06d30135a0ba"
   },
   "species": {
-    "commonName": "Red oak",
+    "commonName": "Pin oak",
     "scientificName": "Quercus palustris",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#02a357"
   },
   "variety": "",
   "dbh": "",
@@ -8867,7 +8867,7 @@
     "scientificName": "Betula nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3e9e42"
   },
   "variety": "",
   "dbh": "19-24",
@@ -8921,7 +8921,7 @@
     "scientificName": "Betula nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#3e9e42"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8975,7 +8975,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#03fc0d"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9029,7 +9029,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#03fc0d"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9083,7 +9083,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#03fc0d"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9137,7 +9137,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#03fc0d"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9191,7 +9191,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#03fc0d"
   },
   "variety": "",
   "dbh": "25-30",
@@ -9245,7 +9245,7 @@
     "scientificName": "Magnolia x soulangeana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d9146"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9295,11 +9295,11 @@
     "$oid": "6766db7cd30e06d30135a0c3"
   },
   "species": {
-    "commonName": "Siberain elm",
+    "commonName": "Siberian elm",
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "> 36",
@@ -9349,11 +9349,11 @@
     "$oid": "6766db7cd30e06d30135a0c4"
   },
   "species": {
-    "commonName": "Siberain elm",
+    "commonName": "Siberian elm",
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "24-36",
@@ -9403,11 +9403,11 @@
     "$oid": "6766db7cd30e06d30135a0c5"
   },
   "species": {
-    "commonName": "Siberain elm",
+    "commonName": "Siberian elm",
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9457,11 +9457,11 @@
     "$oid": "6766db7cd30e06d30135a0c6"
   },
   "species": {
-    "commonName": "Siberain elm",
+    "commonName": "Siberian elm",
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9511,11 +9511,11 @@
     "$oid": "6766db7cd30e06d30135a0c7"
   },
   "species": {
-    "commonName": "Siberain elm",
+    "commonName": "Siberian elm",
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9569,7 +9569,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9623,7 +9623,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9677,7 +9677,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9731,7 +9731,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9785,7 +9785,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9839,7 +9839,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9893,7 +9893,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9947,7 +9947,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10001,7 +10001,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "19-24",
@@ -10055,7 +10055,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "31-36",
@@ -10109,7 +10109,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10163,7 +10163,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10217,7 +10217,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10271,7 +10271,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10325,7 +10325,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10379,7 +10379,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10433,7 +10433,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10487,7 +10487,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10541,7 +10541,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10595,7 +10595,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#8a7c4e"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10649,7 +10649,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "19-24",
@@ -10703,7 +10703,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10757,7 +10757,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10811,7 +10811,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10865,7 +10865,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "",
@@ -10919,7 +10919,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10973,7 +10973,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11027,7 +11027,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#d1504d"
   },
   "variety": "",
   "dbh": "",
@@ -11081,7 +11081,7 @@
     "scientificName": "Magnolia virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#b0b307"
   },
   "variety": "",
   "dbh": "3-6",
@@ -11135,7 +11135,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#333333"
   },
   "variety": "",
   "dbh": "7-12",
@@ -11189,7 +11189,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#333333"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11243,7 +11243,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#333333"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11297,7 +11297,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#333333"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11351,7 +11351,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#333333"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11405,7 +11405,7 @@
     "scientificName": "Fagus sylvatica",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4d4457"
   },
   "variety": "Purpurea tricolor",
   "dbh": "< 3",
@@ -11459,7 +11459,7 @@
     "scientificName": "Unknown species",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ffffff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -11513,7 +11513,7 @@
     "scientificName": "Unknown species",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ffffff"
   },
   "variety": "",
   "dbh": "24-36",
@@ -11563,11 +11563,11 @@
     "$oid": "6766db7cd30e06d30135a0ed"
   },
   "species": {
-    "commonName": "Hawthorn",
-    "scientificName": "Crataegus",
+    "commonName": "Washington hawthorn",
+    "scientificName": "Crataegus phaenopyrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#f05b32"
   },
   "variety": "Washington",
   "dbh": "7-12",
@@ -11621,7 +11621,7 @@
     "scientificName": "Crataegus phaenopyrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#f05b32"
   },
   "variety": "",
   "dbh": "25-30",
@@ -11675,7 +11675,7 @@
     "scientificName": "Prunus pendula",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6981fa"
   },
   "variety": "Subhirtella",
   "dbh": "3-6",
@@ -11729,7 +11729,7 @@
     "scientificName": "Prunus pendula",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6981fa"
   },
   "variety": "Weeping extraordinaire",
   "dbh": "< 3",
@@ -11783,7 +11783,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11837,7 +11837,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11891,7 +11891,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11945,7 +11945,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11999,7 +11999,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12053,7 +12053,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#6ec479"
   },
   "variety": "",
   "dbh": "7-12",
@@ -12107,7 +12107,7 @@
     "scientificName": "Morus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5194a8"
   },
   "variety": "",
   "dbh": "7-12",
@@ -12161,7 +12161,7 @@
     "scientificName": "Morus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5194a8"
   },
   "variety": "",
   "dbh": "",
@@ -12215,7 +12215,7 @@
     "scientificName": "Morus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#5194a8"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12269,7 +12269,7 @@
     "scientificName": "Quercus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#877412"
   },
   "variety": "",
   "dbh": "",
@@ -12323,7 +12323,7 @@
     "scientificName": "Pinus strobus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#7a755b"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12377,7 +12377,7 @@
     "scientificName": "Cornus florida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#ff00aa"
   },
   "variety": "",
   "dbh": "< 3",
@@ -12432,7 +12432,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "",
@@ -12487,7 +12487,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "",
@@ -12542,7 +12542,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "",
@@ -12597,7 +12597,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#734e8a"
   },
   "variety": "",
   "dbh": "",
@@ -12652,7 +12652,7 @@
     "scientificName": "Cercis canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#fff"
+    "markerColor": "#4b4366"
   },
   "variety": "",
   "dbh": "3-6",
