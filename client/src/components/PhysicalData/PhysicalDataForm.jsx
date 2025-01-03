@@ -5,7 +5,7 @@ import { handleFieldChange, commonToScientificList, dbhList } from "../../utils/
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
 
 const PhysicalDataForm = () => {
-  const { formValues, setFormValues, formStyle } = useOutletContext();
+  const { formValues, setFormValues, treeLocation, setTreeLocation, formStyle } = useOutletContext();
  
   //-------------------- handle field changes --------------------
   const handleInputChange = (field, event) => {

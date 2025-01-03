@@ -16,28 +16,6 @@ const SiteDataForm = () => {
 //-------------------- render component--------------------//
   return (
     <form style={formStyle}>
-      <div className = "controlgroup">
-        <label>Location</label>
-        <div className = "control">
-          <label htmlFor = "northing">Northing:</label>
-          <input
-            id = "northing"
-            type = "text"
-            value = {formValues.location.northing || ""}
-            onChange = {(event) => handleInputChange("location.northing", event)}
-          />
-        </div>
-        <div className = "control">
-          <label htmlFor = "easting">Easting:</label>
-          <input
-            id = "easting"
-            type = "text"
-            value = {formValues.location.easting || ""}
-            onChange = {(event) => handleInputChange("location.easting", event)}
-          />
-        </div>
-      </div>
-
       <div className="control">
         <label htmlFor = "garden">Garden:</label>
         <select

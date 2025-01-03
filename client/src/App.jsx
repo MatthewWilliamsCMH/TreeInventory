@@ -13,6 +13,7 @@ import "./App.css";
 
 function App() {
   const [selectedTree, setSelectedTree] = useState(null);
+  const [treeLocation, setTreeLocation] = useState(null);
   const [formValues, setFormValues] = useState(null);
 
   //determine forms' background color based on "invasive" flag in formValues
@@ -20,8 +21,8 @@ function App() {
     backgroundColor: formValues && formValues?.invasive ? "#FFDEDE" : "white",
   };
 
-  // //sync form state with selectedTree when selectedTree changes
-   useEffect(() => {
+    //sync form state with selectedTree when selectedTree changes
+    useEffect(() => {
     if (selectedTree) {
       setFormValues(selectedTree);
     }
@@ -32,11 +33,10 @@ function App() {
       <Header />
       <Navbar selectedTree={selectedTree} />
       <Outlet context = {{ 
-        selectedTree, 
-        setSelectedTree, 
-        formValues,
-        setFormValues,
-        formStyle, 
+        selectedTree, setSelectedTree, 
+        treeLocation, setTreeLocation,
+        formValues, setFormValues,
+        formStyle 
       }} />
     </div>
   );

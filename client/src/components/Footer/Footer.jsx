@@ -6,9 +6,9 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
-  const { formValues, setFormValues, selectedTree, setSelectedTree } = useOutletContext();
-  const [addTreeMutation, { loading: addLoading, error: addError }] = useMutation(ADD_TREE);
-  const [updateTreeMutation, { loading: updateLoading, error: updateError }] = useMutation(UPDATE_TREE);
+  const { formValues, setFormValues, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are treeLocation and setTreeLocationNecessary?
+  const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE);
+  const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE);
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
@@ -69,7 +69,7 @@ const Footer = () => {
         console.log("Tree added:", data.addTree);
         setFormValues(null);
         setSelectedTree(null);
-        console.log("1")
+        setTreeLocation(null); //necessary?
         navigate("/")
       }
       else {
@@ -93,10 +93,6 @@ const Footer = () => {
             notes: formValues.notes,
             nonnative: formValues.nonnative,
             invasive: formValues.invasive,
-            location: formValues.location ? {
-              northing: formValues.location.northing,
-              easting: formValues.location.easting
-            } : null,
             garden: formValues.garden,
             siteInfo: formValues.siteInfo ? {
               slope: formValues.siteInfo.slope,
@@ -128,6 +124,7 @@ const Footer = () => {
         });
         console.log("Tree updated:", data.updateTree);
         setFormValues(null);
+        setTreeLocation(null); //necessary?
         navigate("/")
       }
     }
@@ -137,13 +134,14 @@ const Footer = () => {
 
   const handleCancel = () => {
     setFormValues(null);
+    setTreeLocation(null); //necessary?
     navigate("/");
   };
 
   return (
     <div id="footer">
-      <button type="submit" onClick={handleSubmit} disabled={updateLoading || addLoading}>
-        {updateLoading || addLoading ? "Updating..." : "OK"}
+      <button type="submit" onClick={handleSubmit} disabled={updateTreeLoading || addTreeLoading}>
+        {updateTreeLoading || addTreeLoading ? "Updating..." : "OK"}
       </button>
       <button type="button" onClick={handleCancel}>
         Cancel

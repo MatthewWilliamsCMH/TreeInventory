@@ -10,6 +10,7 @@ export const UPDATE_TREE = gql`
     $notes: String
     $nonnative: Boolean
     $invasive: Boolean
+    $location: LocationInput
     $garden: String
     $siteInfo: SiteInfoInput
     $lastVisited: String
@@ -30,6 +31,7 @@ export const UPDATE_TREE = gql`
       notes: $notes
       nonnative: $nonnative
       invasive: $invasive
+      location: $location
       garden: $garden
       siteInfo: $siteInfo
       lastVisited: $lastVisited
@@ -59,6 +61,10 @@ export const UPDATE_TREE = gql`
       notes
       nonnative
       invasive
+      location {
+        northing
+        easting
+      }
       garden
       siteInfo {
         slope

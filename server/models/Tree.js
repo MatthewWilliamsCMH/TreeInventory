@@ -19,7 +19,7 @@ const treeSchema = new Schema({
   },
   nonnative: { type: Boolean },
   invasive: { type: Boolean },
-  lastVisited: { type: String, required: true }, //automatically generated when the data is input or updated
+  lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
   location: { 
     northing: { type: Number }, //always positive at SC //make required
     easting: { type: Number } //always negative at SC //make required
