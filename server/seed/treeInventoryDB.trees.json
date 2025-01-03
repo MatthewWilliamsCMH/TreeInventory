@@ -4,7 +4,10 @@
   },
   "species": {
     "commonName": "American basswood",
-    "scientificName": "Tilia americana"
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -17,11 +20,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97821072930314,
     "easting": -83.04870294046081
@@ -59,7 +58,10 @@
   },
   "species": {
     "commonName": "American basswood",
-    "scientificName": "Tilia americana"
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -72,11 +74,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97829333858399,
     "easting": -83.0487947372537
@@ -114,7 +112,10 @@
   },
   "species": {
     "commonName": "American basswood",
-    "scientificName": "Tilia americana"
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -127,8 +128,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "07/26/2020",
   "location": {
     "northing": 39.97823912934129,
@@ -167,7 +166,10 @@
   },
   "species": {
     "commonName": "American basswood",
-    "scientificName": "Tilia americana"
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -180,11 +182,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97828812493684,
     "easting": -83.04879164566931
@@ -222,7 +220,10 @@
   },
   "species": {
     "commonName": "American basswood",
-    "scientificName": "Tilia americana"
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -235,11 +236,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97820176027418,
     "easting": -83.04865329281412
@@ -277,7 +274,10 @@
   },
   "species": {
     "commonName": "American elm",
-    "scientificName": "Ulmus americana"
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -290,11 +290,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97692689248152,
     "easting": -83.04878979921342
@@ -332,7 +328,10 @@
   },
   "species": {
     "commonName": "American elm",
-    "scientificName": "Ulmus americana"
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -345,11 +344,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97693379688566,
     "easting": -83.04967015863225
@@ -387,7 +382,10 @@
   },
   "species": {
     "commonName": "American elm",
-    "scientificName": "Ulmus americana"
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -400,11 +398,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97701207577875,
     "easting": -83.04972752004889
@@ -442,7 +436,10 @@
   },
   "species": {
     "commonName": "American sycamore",
-    "scientificName": "Platanus occidentalis"
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -455,11 +452,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976776849179764,
     "easting": -83.05016845464708
@@ -497,7 +490,10 @@
   },
   "species": {
     "commonName": "American sycamore",
-    "scientificName": "Platanus occidentalis"
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -510,11 +506,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97778809355384,
     "easting": -83.04889775812627
@@ -552,7 +544,10 @@
   },
   "species": {
     "commonName": "American sycamore",
-    "scientificName": "Platanus occidentalis"
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -565,11 +560,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976890889384066,
     "easting": -83.04951262082639
@@ -607,7 +598,10 @@
   },
   "species": {
     "commonName": "American sycamore",
-    "scientificName": "Platanus occidentalis"
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -620,11 +614,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97685351497605,
     "easting": -83.04962232646538
@@ -662,7 +652,10 @@
   },
   "species": {
     "commonName": "American sycamore",
-    "scientificName": "Platanus occidentalis"
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -675,8 +668,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/15/2022",
   "location": {
     "northing": 39.97642537659423,
@@ -715,7 +706,10 @@
   },
   "species": {
     "commonName": "Black cherry",
-    "scientificName": "Prunus serotina"
+    "scientificName": "Prunus serotina",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -728,11 +722,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977884687693006,
     "easting": -83.05020507574656
@@ -770,7 +760,10 @@
   },
   "species": {
     "commonName": "Black locust",
-    "scientificName": "Robinia pseudoacacia"
+    "scientificName": "Robinia pseudoacacia",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -783,11 +776,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978017425010215,
     "easting": -83.05034593066961
@@ -825,7 +814,10 @@
   },
   "species": {
     "commonName": "Black locust",
-    "scientificName": "Robinia pseudoacacia"
+    "scientificName": "Robinia pseudoacacia",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -838,11 +830,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97781712128366,
     "easting": -83.05024485032285
@@ -880,7 +868,10 @@
   },
   "species": {
     "commonName": "Black maple",
-    "scientificName": "Acer nigrum"
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -893,11 +884,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97797388496224,
     "easting": -83.05025059295153
@@ -935,7 +922,10 @@
   },
   "species": {
     "commonName": "Black maple",
-    "scientificName": "Acer nigrum"
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -948,11 +938,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977898826162395,
     "easting": -83.05027324599577
@@ -990,7 +976,10 @@
   },
   "species": {
     "commonName": "Black maple",
-    "scientificName": "Acer nigrum"
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1003,11 +992,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97791235524,
     "easting": -83.05029373964602
@@ -1045,7 +1030,10 @@
   },
   "species": {
     "commonName": "Black maple",
-    "scientificName": "Acer nigrum"
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1058,11 +1046,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97789532109209,
     "easting": -83.05030008156326
@@ -1100,7 +1084,10 @@
   },
   "species": {
     "commonName": "Black maple",
-    "scientificName": "Acer nigrum"
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1113,11 +1100,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.9778276042836,
     "easting": -83.0503548867174
@@ -1155,7 +1138,10 @@
   },
   "species": {
     "commonName": "Black walnut",
-    "scientificName": "Juglans nigra"
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1168,11 +1154,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97825326226124,
     "easting": -83.04870893367249
@@ -1210,7 +1192,10 @@
   },
   "species": {
     "commonName": "Black walnut",
-    "scientificName": "Juglans nigra"
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -1223,11 +1208,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97858402689905,
     "easting": -83.0489467084408
@@ -1265,7 +1246,10 @@
   },
   "species": {
     "commonName": "Black walnut",
-    "scientificName": "Juglans nigra"
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -1278,11 +1262,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97680716617482,
     "easting": -83.04948784410955
@@ -1320,7 +1300,10 @@
   },
   "species": {
     "commonName": "Black walnut",
-    "scientificName": "Juglans nigra"
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -1333,8 +1316,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97798477248325,
@@ -1373,7 +1354,10 @@
   },
   "species": {
     "commonName": "Black walnut",
-    "scientificName": "Juglans nigra"
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1386,11 +1370,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97793909646449,
     "easting": -83.05053873435426
@@ -1428,7 +1408,10 @@
   },
   "species": {
     "commonName": "Blackhaw",
-    "scientificName": "Viburnum prunifolium"
+    "scientificName": "Viburnum prunifolium",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -1441,11 +1424,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978223464794176,
     "easting": -83.04883429965504
@@ -1483,7 +1462,10 @@
   },
   "species": {
     "commonName": "Blue spruce",
-    "scientificName": "Picea pungens"
+    "scientificName": "Picea pungens",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -1496,11 +1478,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977275279425335,
     "easting": -83.04919749498369
@@ -1538,7 +1516,10 @@
   },
   "species": {
     "commonName": "Callery pear",
-    "scientificName": "Pyrus calleryana"
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1551,11 +1532,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97803525009116,
     "easting": -83.04833985865116
@@ -1593,7 +1570,10 @@
   },
   "species": {
     "commonName": "Callery pear",
-    "scientificName": "Pyrus calleryana"
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1606,11 +1586,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97738113115382,
     "easting": -83.04840892553331
@@ -1648,7 +1624,10 @@
   },
   "species": {
     "commonName": "Callary pear",
-    "scientificName": "Pyrus calleryana"
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1661,11 +1640,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97753477002142,
     "easting": -83.04839417338373
@@ -1703,7 +1678,10 @@
   },
   "species": {
     "commonName": "Callery pear",
-    "scientificName": "Pyrus calleryana"
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -1716,11 +1694,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97769149158736,
     "easting": -83.04847329854967
@@ -1758,7 +1732,10 @@
   },
   "species": {
     "commonName": "Callery pear",
-    "scientificName": "Pyrus calleryana"
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -1771,11 +1748,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97811438110129,
     "easting": -83.04827883839609
@@ -1813,7 +1786,10 @@
   },
   "species": {
     "commonName": "Chinkapin oak",
-    "scientificName": "Quercus muehlenbergii"
+    "scientificName": "Quercus muehlenbergii",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -1826,11 +1802,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977175079822565,
     "easting": -83.04880455136299
@@ -1868,7 +1840,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -1881,11 +1856,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97821929579098,
     "easting": -83.04907726276937
@@ -1923,7 +1894,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -1936,11 +1910,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97829077942318,
     "easting": -83.04896775036589
@@ -1978,7 +1948,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -1991,11 +1964,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978272021710616,
     "easting": -83.04894306991164
@@ -2033,7 +2002,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -2046,11 +2018,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978260652349434,
     "easting": -83.0489527929553
@@ -2088,7 +2056,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -2101,11 +2072,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97824150647341,
     "easting": -83.04898381007573
@@ -2143,7 +2110,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -2156,11 +2126,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.9782918466349,
     "easting": -83.04894581857333
@@ -2198,7 +2164,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -2211,11 +2180,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97827777574202,
     "easting": -83.04896006491661
@@ -2253,7 +2218,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2266,11 +2234,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97819299252022,
     "easting": -83.04895801448521
@@ -2308,7 +2272,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2321,11 +2288,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97819050777958,
     "easting": -83.04890431133686
@@ -2363,7 +2326,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2376,11 +2342,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97819383335378,
     "easting": -83.04863304052843
@@ -2418,7 +2380,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2431,11 +2396,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97681590157767,
     "easting": -83.05057480931282
@@ -2473,7 +2434,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2486,11 +2450,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97695015922287,
     "easting": -83.04957594495767
@@ -2528,7 +2488,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2541,11 +2504,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97707076931076,
     "easting": -83.05001825094224
@@ -2583,7 +2542,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -2596,11 +2558,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97686242285852,
     "easting": -83.05015182920411
@@ -2638,7 +2596,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -2651,8 +2612,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97809567625855,
@@ -2691,7 +2650,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2704,11 +2666,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978064797220604,
     "easting": -83.0504400137127
@@ -2746,7 +2704,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -2759,8 +2720,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97809303970026,
@@ -2799,7 +2758,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -2812,8 +2774,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97808903328345,
@@ -2852,7 +2812,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -2865,11 +2828,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97804996105326,
     "easting": -83.05049989573932
@@ -2907,7 +2866,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -2920,8 +2882,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97801242814596,
@@ -2960,7 +2920,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -2973,8 +2936,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97803068537436,
@@ -3013,7 +2974,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -3026,8 +2990,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.978016542994965,
@@ -3066,7 +3028,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3079,11 +3044,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97795500263807,
     "easting": -83.05052015623363
@@ -3121,7 +3082,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -3134,11 +3098,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.9772114166842,
     "easting": -83.04850989560663
@@ -3176,7 +3136,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3189,11 +3152,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97791012240736,
     "easting": -83.05044046857527
@@ -3231,7 +3190,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3244,11 +3206,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977865426412656,
     "easting": -83.0504567921162
@@ -3286,7 +3244,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3299,11 +3260,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97790578621906,
     "easting": -83.05054221279741
@@ -3341,7 +3298,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3354,11 +3314,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.9778355325204,
     "easting": -83.05026165282541
@@ -3396,7 +3352,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -3409,11 +3368,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97809485527614,
     "easting": -83.04886154830457
@@ -3451,7 +3406,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -3464,11 +3422,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97809228608819,
     "easting": -83.04882533848287
@@ -3506,7 +3460,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3519,11 +3476,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97806518351964,
     "easting": -83.0488734384433
@@ -3561,7 +3514,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "12-12",
@@ -3574,8 +3530,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976503481769456,
@@ -3614,7 +3568,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3627,8 +3584,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.9763986563822,
@@ -3667,7 +3622,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3680,8 +3638,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976521980350505,
@@ -3720,7 +3676,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3733,8 +3692,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.9765877530426,
@@ -3773,7 +3730,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -3786,8 +3746,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97645004139603,
@@ -3826,7 +3784,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3839,8 +3800,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97637810236586,
@@ -3879,7 +3838,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3892,8 +3854,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97623627948453,
@@ -3932,7 +3892,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -3945,8 +3908,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97633699431459,
@@ -3985,7 +3946,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -3998,8 +3962,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97634727132973,
@@ -4038,7 +4000,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4051,8 +4016,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97627944300132,
@@ -4091,7 +4054,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4104,8 +4070,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97633699431459,
@@ -4144,7 +4108,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -4157,8 +4124,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976283553810994,
@@ -4197,7 +4162,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4210,8 +4178,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976565143686834,
@@ -4250,7 +4216,10 @@
   },
   "species": {
     "commonName": "Common hackberry",
-    "scientificName": "Celtis occidentalis"
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4263,8 +4232,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97658364225119,
@@ -4303,7 +4270,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4316,11 +4286,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978178610749936,
     "easting": -83.04899096488954
@@ -4358,7 +4324,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -4371,11 +4340,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978372202896715,
     "easting": -83.0489330723376
@@ -4413,7 +4378,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Cardinal",
   "dbh": "37-42",
@@ -4426,11 +4394,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976829261603434,
     "easting": -83.0487683415413
@@ -4468,7 +4432,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Cardinal",
   "dbh": "13-18",
@@ -4481,11 +4448,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97681795696643,
     "easting": -83.04883405566216
@@ -4523,7 +4486,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Prairifire",
   "dbh": "3-6",
@@ -4536,11 +4502,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97790730430298,
     "easting": -83.04854303598405
@@ -4578,7 +4540,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Coronaria",
   "dbh": "3-6",
@@ -4591,8 +4556,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97788335244315,
@@ -4631,7 +4594,10 @@
   },
   "species": {
     "commonName": "Crabapple",
-    "scientificName": "Malus"
+    "scientificName": "Malus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -4644,8 +4610,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.9765877530426,
@@ -4684,7 +4648,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Crimson Kiing",
   "dbh": "7-12",
@@ -4697,11 +4664,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977445875334126,
     "easting": -83.0490580201149
@@ -4739,7 +4702,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Crimson sunset",
   "dbh": "2",
@@ -4752,11 +4718,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97640893338807,
     "easting": -83.04832845926286
@@ -4794,7 +4756,10 @@
   },
   "species": {
     "commonName": "Eastern redbud",
-    "scientificName": "Cercis canadensis"
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4807,11 +4772,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978075843283115,
     "easting": -83.050155043602
@@ -4849,7 +4810,10 @@
   },
   "species": {
     "commonName": "Eastern redbud",
-    "scientificName": "Cercis canadensis"
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -4862,11 +4826,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97808432160498,
     "easting": -83.05022913962604
@@ -4904,7 +4864,10 @@
   },
   "species": {
     "commonName": "Eastern redbud",
-    "scientificName": "Cercis canadensis"
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Forest Pansy",
   "dbh": "7-12",
@@ -4917,11 +4880,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97687704936643,
     "easting": -83.04900705814363
@@ -4959,7 +4918,10 @@
   },
   "species": {
     "commonName": "European linden",
-    "scientificName": "Tilia x europaea"
+    "scientificName": "Tilia x europaea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -4972,11 +4934,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97827783537254,
     "easting": -83.04859781833076
@@ -5014,7 +4972,10 @@
   },
   "species": {
     "commonName": "European linden",
-    "scientificName": "Tilia x europaea"
+    "scientificName": "Tilia x europaea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5027,11 +4988,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97828578228505,
     "easting": -83.04871338413966
@@ -5069,7 +5026,10 @@
   },
   "species": {
     "commonName": "Ginkgo",
-    "scientificName": "Gingko biloba"
+    "scientificName": "Gingko biloba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -5082,11 +5042,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97804424225601,
     "easting": -83.049792945385
@@ -5124,7 +5080,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -5137,11 +5096,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97777267835557,
     "easting": -83.05005848407747
@@ -5179,7 +5134,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5192,11 +5150,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97805940047409,
     "easting": -83.04916866123678
@@ -5234,7 +5188,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5247,11 +5204,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97790966237062,
     "easting": -83.04865779406872
@@ -5289,7 +5242,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5302,11 +5258,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978078926309394,
     "easting": -83.04877102375032
@@ -5344,7 +5296,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -5357,11 +5312,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97804758220266,
     "easting": -83.04927192628385
@@ -5399,7 +5350,10 @@
   },
   "species": {
     "commonName": "Honey locust",
-    "scientificName": "Gleditsia triacanthos"
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5412,8 +5366,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97644387519642,
@@ -5452,7 +5404,10 @@
   },
   "species": {
     "commonName": "Red horse-chestnut",
-    "scientificName": "Aesculus carnea"
+    "scientificName": "Aesculus carnea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -5465,11 +5420,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97786068994755,
     "easting": -83.05017669510603
@@ -5507,7 +5458,10 @@
   },
   "species": {
     "commonName": "Red horse-chestnut",
-    "scientificName": "Aesculus carnea"
+    "scientificName": "Aesculus carnea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5520,11 +5474,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976744990628085,
     "easting": -83.04952338337898
@@ -5562,7 +5512,10 @@
   },
   "species": {
     "commonName": "Red horse-chestnut",
-    "scientificName": "Aesculus carnea"
+    "scientificName": "Aesculus carnea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5575,11 +5528,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97675346911507,
     "easting": -83.04966352880002
@@ -5617,7 +5566,10 @@
   },
   "species": {
     "commonName": "Red horse-chestnut",
-    "scientificName": "Aesculus carnea"
+    "scientificName": "Aesculus carnea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5630,11 +5582,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976743449084886,
     "easting": -83.0494348704815
@@ -5672,7 +5620,10 @@
   },
   "species": {
     "commonName": "Red horse-chestnut",
-    "scientificName": "Aesculus carnea"
+    "scientificName": "Aesculus carnea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5685,11 +5636,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
   "location": {
     "northing": 39.97673933830284,
     "easting": -83.04934702813627
@@ -5727,7 +5674,10 @@
   },
   "species": {
     "commonName": "Japanese lilac tree",
-    "scientificName": "Syringa reticulata"
+    "scientificName": "Syringa reticulata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5740,11 +5690,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97693023248275,
     "easting": -83.05032569915058
@@ -5782,7 +5728,10 @@
   },
   "species": {
     "commonName": "Japanese lilac tree",
-    "scientificName": "Syringa reticulata"
+    "scientificName": "Syringa reticulata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5795,11 +5744,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976970569408124,
     "easting": -83.05037431418897
@@ -5837,7 +5782,10 @@
   },
   "species": {
     "commonName": "Japanese lilac tree",
-    "scientificName": "Syringa reticulata"
+    "scientificName": "Syringa reticulata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -5850,11 +5798,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.976963889409376,
     "easting": -83.0503360927105
@@ -5892,7 +5836,10 @@
   },
   "species": {
     "commonName": "Japanese maple",
-    "scientificName": "Acer palmatum var. atropurpureum"
+    "scientificName": "Acer palmatum var. atropurpureum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Bloodgood",
   "dbh": "< 3",
@@ -5905,11 +5852,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-30T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-30T05:00:00.000Z"},
   "location": {
     "northing": 39.97690428323794,
     "easting": -83.04862953722477
@@ -5947,7 +5890,10 @@
   },
   "species": {
     "commonName": "Little leaf linden",
-    "scientificName": "Tilia cordata"
+    "scientificName": "Tilia cordata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -5960,11 +5906,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97680716617482,
     "easting": -83.05045746266843
@@ -6002,7 +5944,10 @@
   },
   "species": {
     "commonName": "Little leaf linden",
-    "scientificName": "Tilia cordata"
+    "scientificName": "Tilia cordata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6015,11 +5960,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97678095995954,
     "easting": -83.05032268166542
@@ -6057,7 +5998,10 @@
   },
   "species": {
     "commonName": "Saucer magnolia",
-    "scientificName": "Magnolia x soulangeana"
+    "scientificName": "Magnolia x soulangeana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6070,11 +6014,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97719974435381,
     "easting": -83.04917000234128
@@ -6112,7 +6052,10 @@
   },
   "species": {
     "commonName": "White mulberry",
-    "scientificName": "Morus alba"
+    "scientificName": "Morus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -6125,11 +6068,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97707179700131,
     "easting": -83.05023148655891
@@ -6167,7 +6106,10 @@
   },
   "species": {
     "commonName": "Northern catalpa",
-    "scientificName": "Catalpa speciosa"
+    "scientificName": "Catalpa speciosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -6180,11 +6122,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97734773135427,
     "easting": -83.05041119456293
@@ -6222,7 +6160,10 @@
   },
   "species": {
     "commonName": "Northern catalpa",
-    "scientificName": "Catalpa speciosa"
+    "scientificName": "Catalpa speciosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6235,11 +6176,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97835224629905,
     "easting": -83.04847336988735
@@ -6277,7 +6214,10 @@
   },
   "species": {
     "commonName": "Northern catalpa",
-    "scientificName": "Catalpa speciosa"
+    "scientificName": "Catalpa speciosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6290,11 +6230,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97827921433661,
     "easting": -83.04847265578455
@@ -6332,7 +6268,10 @@
   },
   "species": {
     "commonName": "Northern catalpa",
-    "scientificName": "Catalpa speciosa"
+    "scientificName": "Catalpa speciosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6345,11 +6284,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97781638654509,
     "easting": -83.05058549173667
@@ -6387,7 +6322,10 @@
   },
   "species": {
     "commonName": "Northern catalpa",
-    "scientificName": "Catalpa speciosa"
+    "scientificName": "Catalpa speciosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6400,11 +6338,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977276820956554,
     "easting": -83.0503521859646
@@ -6442,7 +6376,10 @@
   },
   "species": {
     "commonName": "Northern pecan",
-    "scientificName": "Carya illinoiensis"
+    "scientificName": "Carya illinoiensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -6455,11 +6392,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97782714537388,
     "easting": -83.04861679673195
@@ -6497,7 +6430,10 @@
   },
   "species": {
     "commonName": "Northern red oak",
-    "scientificName": "Quercus rubra"
+    "scientificName": "Quercus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6510,11 +6446,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97728691033958,
     "easting": -83.04882335276925
@@ -6552,7 +6484,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -6565,11 +6500,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97711660018887,
     "easting": -83.04953286775783
@@ -6607,7 +6538,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -6620,11 +6554,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977005554455104,
     "easting": -83.04912644396443
@@ -6662,7 +6592,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -6675,11 +6608,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97683193194615,
     "easting": -83.04996341106674
@@ -6717,7 +6646,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -6730,11 +6662,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97799106000666,
     "easting": -83.05035084486009
@@ -6772,7 +6700,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6785,11 +6716,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978021622161165,
     "easting": -83.05036504393958
@@ -6827,7 +6754,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -6840,11 +6770,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978033512679566,
     "easting": -83.05035479746044
@@ -6882,7 +6808,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6895,11 +6824,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97801569144997,
     "easting": -83.05035183822466
@@ -6937,7 +6862,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -6950,11 +6878,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977976507005806,
     "easting": -83.0502978362625
@@ -6992,7 +6916,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -7005,11 +6932,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97786202667132,
     "easting": -83.05056675392593
@@ -7047,7 +6970,10 @@
   },
   "species": {
     "commonName": "Norway maple",
-    "scientificName": "Acer platanoides"
+    "scientificName": "Acer platanoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -7060,11 +6986,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.9777373839004,
     "easting": -83.0502524183371
@@ -7102,7 +7024,10 @@
   },
   "species": {
     "commonName": "Norway spruce",
-    "scientificName": "Picea abies"
+    "scientificName": "Picea abies",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -7115,11 +7040,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97737239582321,
     "easting": -83.0491914600134
@@ -7157,7 +7078,10 @@
   },
   "species": {
     "commonName": "Norway spruce",
-    "scientificName": "Picea abies"
+    "scientificName": "Picea abies",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -7170,11 +7094,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97730097160751,
     "easting": -83.04932154715063
@@ -7212,7 +7132,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7225,11 +7148,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
   "location": {
     "northing": 39.9762732767863,
     "easting": -83.04850012063982
@@ -7267,7 +7186,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7280,11 +7202,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97742840468835,
     "easting": -83.05030658841135
@@ -7322,7 +7240,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -7335,11 +7256,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97818406147198,
     "easting": -83.04911021899774
@@ -7377,7 +7294,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -7390,11 +7310,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978196990402516,
     "easting": -83.04912257450601
@@ -7432,7 +7348,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -7445,8 +7364,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/23/2020",
   "location": {
     "northing": 39.97806436074177,
@@ -7485,7 +7402,10 @@
   },
   "species": {
     "commonName": "Ohio buckeye",
-    "scientificName": "Aesculus glabra"
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7498,8 +7418,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976314384875856,
@@ -7538,7 +7456,10 @@
   },
   "species": {
     "commonName": "Pignut hickory",
-    "scientificName": "Carya glabra"
+    "scientificName": "Carya glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -7551,11 +7472,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978121060987576,
     "easting": -83.0486811697483
@@ -7593,7 +7510,10 @@
   },
   "species": {
     "commonName": "Pignut hickory",
-    "scientificName": "Carya glabra"
+    "scientificName": "Carya glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7606,11 +7526,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97821241470867,
     "easting": -83.04850203655558
@@ -7648,7 +7564,10 @@
   },
   "species": {
     "commonName": "Pin oak",
-    "scientificName": "Quercus palustris"
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -7661,11 +7580,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977193370636805,
     "easting": -83.04931159700621
@@ -7703,7 +7618,10 @@
   },
   "species": {
     "commonName": "Pin oak",
-    "scientificName": "Quercus palustris"
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "> 42",
@@ -7716,11 +7634,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97706768623903,
     "easting": -83.05044740438463
@@ -7762,7 +7676,10 @@
   },
   "species": {
     "commonName": "Pin oak",
-    "scientificName": "Quercus palustris"
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7775,8 +7692,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "10/15/2022",
   "location": {
     "northing": 39.97638221316961,
@@ -7815,7 +7730,10 @@
   },
   "species": {
     "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida"
+    "scientificName": "Cornus florida",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7828,11 +7746,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97731073463422,
     "easting": -83.04863288998605
@@ -7870,7 +7784,10 @@
   },
   "species": {
     "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida"
+    "scientificName": "Cornus florida",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -7883,11 +7800,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97736931276507,
     "easting": -83.04871000349523
@@ -7925,7 +7838,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7938,11 +7854,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97802445949176,
     "easting": -83.04935038089754
@@ -7980,7 +7892,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -7993,11 +7908,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97691867093926,
     "easting": -83.04931819438934
@@ -8035,7 +7946,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8048,11 +7962,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97806685112243,
     "easting": -83.04849408566953
@@ -8090,7 +8000,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8103,11 +8016,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97709593243438,
     "easting": -83.04970480365041
@@ -8145,7 +8054,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8158,11 +8070,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97734721751109,
     "easting": -83.04899901151659
@@ -8200,7 +8108,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "37-42",
@@ -8213,11 +8124,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.9772817774729,
     "easting": -83.04946658203406
@@ -8255,7 +8162,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -8268,11 +8178,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976876277627305,
     "easting": -83.04945645645684
@@ -8310,7 +8216,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8323,11 +8232,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97682221417572,
     "easting": -83.04954729039972
@@ -8365,7 +8270,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8378,11 +8286,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977166858310184,
     "easting": -83.0502086877823
@@ -8420,7 +8324,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -8433,11 +8340,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977427517494725,
     "easting": -83.04854943961486
@@ -8475,7 +8378,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -8488,11 +8394,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97746694287163,
     "easting": -83.05025227367878
@@ -8530,7 +8432,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8543,11 +8448,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97735184209973,
     "easting": -83.05024892091753
@@ -8585,7 +8486,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8598,11 +8502,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97683100548951,
     "easting": -83.04972298422469
@@ -8640,7 +8540,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8653,11 +8556,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97678198765444,
     "easting": -83.04920956492424
@@ -8695,7 +8594,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -8708,11 +8610,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97680254154934,
     "easting": -83.0500289797783
@@ -8750,7 +8648,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -8763,11 +8664,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97679534768682,
     "easting": -83.04987609386446
@@ -8805,7 +8702,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8818,11 +8718,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97678198765444,
     "easting": -83.04908484220506
@@ -8860,7 +8756,10 @@
   },
   "species": {
     "commonName": "Red maple",
-    "scientificName": "Acer rubrum"
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -8873,11 +8772,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-25T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
   "location": {
     "northing": 39.97658569764695,
     "easting": -83.04903656244278
@@ -8915,7 +8810,10 @@
   },
   "species": {
     "commonName": "Red oak",
-    "scientificName": "Quercus palustris"
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -8928,11 +8826,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97839732276221,
     "easting": -83.04890608345032
@@ -8970,7 +8864,10 @@
   },
   "species": {
     "commonName": "River birch",
-    "scientificName": "Betula nigra"
+    "scientificName": "Betula nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -8983,11 +8880,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978077898633984,
     "easting": -83.04996594786645
@@ -9025,7 +8918,10 @@
   },
   "species": {
     "commonName": "River birch",
-    "scientificName": "Betula nigra"
+    "scientificName": "Betula nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9038,11 +8934,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97811515185745,
     "easting": -83.0485960096121
@@ -9080,7 +8972,10 @@
   },
   "species": {
     "commonName": "Sassafrass",
-    "scientificName": "Sassafras albidum"
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9093,11 +8988,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97718587055608,
     "easting": -83.04898828268053
@@ -9135,7 +9026,10 @@
   },
   "species": {
     "commonName": "Sassafrass",
-    "scientificName": "Sassafras albidum"
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9148,11 +9042,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977115987680264,
     "easting": -83.04890714585783
@@ -9190,7 +9080,10 @@
   },
   "species": {
     "commonName": "Sassafrass",
-    "scientificName": "Sassafras albidum"
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9203,11 +9096,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977086184667364,
     "easting": -83.04893396794797
@@ -9245,7 +9134,10 @@
   },
   "species": {
     "commonName": "Sassafrass",
-    "scientificName": "Sassafras albidum"
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9258,11 +9150,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97705021549657,
     "easting": -83.04891854524614
@@ -9300,7 +9188,10 @@
   },
   "species": {
     "commonName": "Sassafrass",
-    "scientificName": "Sassafras albidum"
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -9313,11 +9204,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977151956816456,
     "easting": -83.0489292740822
@@ -9355,7 +9242,10 @@
   },
   "species": {
     "commonName": "Saucer magnolia",
-    "scientificName": "Magnolia x soulangeana"
+    "scientificName": "Magnolia x soulangeana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9368,11 +9258,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.976839538544546,
     "easting": -83.04868988692762
@@ -9410,7 +9296,10 @@
   },
   "species": {
     "commonName": "Siberain elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "> 36",
@@ -9423,8 +9312,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97658158685542,
@@ -9463,7 +9350,10 @@
   },
   "species": {
     "commonName": "Siberain elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "24-36",
@@ -9476,8 +9366,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97651992495284,
@@ -9516,7 +9404,10 @@
   },
   "species": {
     "commonName": "Siberain elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9529,8 +9420,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.976577476063625,
@@ -9569,7 +9458,10 @@
   },
   "species": {
     "commonName": "Siberain elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -9582,8 +9474,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97644387519642,
@@ -9622,7 +9512,10 @@
   },
   "species": {
     "commonName": "Siberain elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9635,8 +9528,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97648292778464,
@@ -9675,7 +9566,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9688,8 +9582,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.9764932047778,
@@ -9728,7 +9620,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9741,11 +9636,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97692380940328,
     "easting": -83.05055066943171
@@ -9783,7 +9674,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -9796,11 +9690,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97774493098992,
     "easting": -83.05053859949113
@@ -9838,7 +9728,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9851,11 +9744,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97774493098992,
     "easting": -83.05053055286409
@@ -9893,7 +9782,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -9906,11 +9798,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977742875629076,
     "easting": -83.05053859949113
@@ -9948,7 +9836,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -9961,11 +9852,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977734654184985,
     "easting": -83.05054396390916
@@ -10003,7 +9890,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10016,11 +9906,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97772540505923,
     "easting": -83.05054262280464
@@ -10058,7 +9944,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10071,11 +9960,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97773876490716,
     "easting": -83.05053055286409
@@ -10113,7 +9998,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -10126,11 +10014,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97772643273993,
     "easting": -83.05054664611816
@@ -10168,7 +10052,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "31-36",
@@ -10181,11 +10068,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977704851441906,
     "easting": -83.05054262280464
@@ -10223,7 +10106,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10236,8 +10122,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97654458972054,
@@ -10276,7 +10160,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10289,11 +10176,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978312415613786,
     "easting": -83.04849266979059
@@ -10331,7 +10214,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10344,11 +10230,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97835595203836,
     "easting": -83.04857174022008
@@ -10386,7 +10268,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10399,11 +10284,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97792013627921,
     "easting": -83.05023467511865
@@ -10441,7 +10322,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10454,8 +10338,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "11/01/2021",
   "location": {
     "northing": 39.97788791662498,
@@ -10494,7 +10376,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10507,8 +10392,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "11/01/2021",
   "location": {
     "northing": 39.97787235529899,
@@ -10547,7 +10430,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10560,11 +10446,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97776886178739,
     "easting": -83.0503706413784
@@ -10602,7 +10484,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10615,11 +10500,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977792546576524,
     "easting": -83.0504756006139
@@ -10657,7 +10538,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10670,11 +10554,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97772474956322,
     "easting": -83.05043393664161
@@ -10712,7 +10592,10 @@
   },
   "species": {
     "commonName": "Slippery elm",
-    "scientificName": "Ulmus rubra"
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -10725,8 +10608,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "11/01/2021",
   "location": {
     "northing": 39.9777438414941,
@@ -10765,7 +10646,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -10778,11 +10662,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97801983494864,
     "easting": -83.04989621043205
@@ -10820,7 +10700,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10833,11 +10716,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977198202820865,
     "easting": -83.04942548274995
@@ -10875,7 +10754,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -10888,11 +10770,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97787082172511,
     "easting": -83.04978556931019
@@ -10930,7 +10808,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -10943,11 +10824,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97794430070007,
     "easting": -83.04986268281938
@@ -10985,7 +10862,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -10998,11 +10878,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97800652221546,
     "easting": -83.04866629384279
@@ -11040,7 +10916,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -11053,11 +10932,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97715186637574,
     "easting": -83.049677871706
@@ -11095,7 +10970,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11108,11 +10986,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977973589500245,
     "easting": -83.04957166314126
@@ -11150,7 +11024,10 @@
   },
   "species": {
     "commonName": "Sugar maple",
-    "scientificName": "Acer saccharum"
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -11163,8 +11040,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97634932673258,
@@ -11203,7 +11078,10 @@
   },
   "species": {
     "commonName": "Sweetbay magnolia",
-    "scientificName": "Magnolia virginiana"
+    "scientificName": "Magnolia virginiana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -11216,11 +11094,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97806196966326,
     "easting": -83.04981507360935
@@ -11258,7 +11132,10 @@
   },
   "species": {
     "commonName": "Tree of heaven",
-    "scientificName": "Ailanthus altissima"
+    "scientificName": "Ailanthus altissima",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -11271,11 +11148,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97713593015406,
     "easting": -83.04976986301511
@@ -11313,7 +11186,10 @@
   },
   "species": {
     "commonName": "Tree of heaven",
-    "scientificName": "Ailanthus altissima"
+    "scientificName": "Ailanthus altissima",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11326,11 +11202,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97707076931076,
     "easting": -83.05014096200468
@@ -11368,7 +11240,10 @@
   },
   "species": {
     "commonName": "Tree of heaven",
-    "scientificName": "Ailanthus altissima"
+    "scientificName": "Ailanthus altissima",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11381,11 +11256,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97694375242614,
     "easting": -83.04976715418337
@@ -11423,7 +11294,10 @@
   },
   "species": {
     "commonName": "Tree of heaven",
-    "scientificName": "Ailanthus altissima"
+    "scientificName": "Ailanthus altissima",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11436,11 +11310,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97698944254429,
     "easting": -83.04999474679255
@@ -11478,7 +11348,10 @@
   },
   "species": {
     "commonName": "Tree of heaven",
-    "scientificName": "Ailanthus altissima"
+    "scientificName": "Ailanthus altissima",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11491,11 +11364,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": true,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97691601114173,
     "easting": -83.05003284149106
@@ -11533,7 +11402,10 @@
   },
   "species": {
     "commonName": "Tricolor beech",
-    "scientificName": "Fagus sylvatica"
+    "scientificName": "Fagus sylvatica",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Purpurea tricolor",
   "dbh": "< 3",
@@ -11546,11 +11418,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97771846821408,
     "easting": -83.04902818053962
@@ -11588,7 +11456,10 @@
   },
   "species": {
     "commonName": "Unknown species",
-    "scientificName": "Unknown species"
+    "scientificName": "Unknown species",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -11601,11 +11472,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97776229612953,
     "easting": -83.05020985717239
@@ -11643,7 +11510,10 @@
   },
   "species": {
     "commonName": "Unknown species",
-    "scientificName": "Unknown species"
+    "scientificName": "Unknown species",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "24-36",
@@ -11656,8 +11526,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "04/19/2024",
   "location": {
     "northing": 39.97652814654308,
@@ -11696,7 +11564,10 @@
   },
   "species": {
     "commonName": "Hawthorn",
-    "scientificName": "Crataegus"
+    "scientificName": "Crataegus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Washington",
   "dbh": "7-12",
@@ -11709,11 +11580,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97740630945344,
     "easting": -83.04900772869587
@@ -11751,7 +11618,10 @@
   },
   "species": {
     "commonName": "Washington hawthorn",
-    "scientificName": "Crataegus phaenopyrum"
+    "scientificName": "Crataegus phaenopyrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "25-30",
@@ -11764,8 +11634,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "09/21/2020",
   "location": {
     "northing": 39.977212816568844,
@@ -11804,7 +11672,10 @@
   },
   "species": {
     "commonName": "Weeping cherry",
-    "scientificName": "Prunus pendula"
+    "scientificName": "Prunus pendula",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Subhirtella",
   "dbh": "3-6",
@@ -11817,11 +11688,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978036149307684,
     "easting": -83.04941542446615
@@ -11859,7 +11726,10 @@
   },
   "species": {
     "commonName": "Weeping cherry",
-    "scientificName": "Prunus pendula"
+    "scientificName": "Prunus pendula",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "Weeping extraordinaire",
   "dbh": "< 3",
@@ -11872,11 +11742,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97818092301617,
     "easting": -83.04845184087755
@@ -11914,7 +11780,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "19-24",
@@ -11927,11 +11796,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.978065566527945,
     "easting": -83.04901778697969
@@ -11969,7 +11834,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -11982,11 +11850,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977953089524505,
     "easting": -83.0487593761959
@@ -12024,7 +11888,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12037,11 +11904,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.978044499174985,
     "easting": -83.04857991635801
@@ -12079,7 +11942,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12092,11 +11958,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97801880727236,
     "easting": -83.04874420166017
@@ -12134,7 +11996,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12147,8 +12012,6 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
   "lastVisited": "1/2/2025",
   "location": {
     "northing": 39.97695253528404,
@@ -12187,7 +12050,10 @@
   },
   "species": {
     "commonName": "White ash",
-    "scientificName": "Fraxinus americana"
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -12200,11 +12066,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97692586478878,
     "easting": -83.04921492934228
@@ -12242,7 +12104,10 @@
   },
   "species": {
     "commonName": "White mulberry",
-    "scientificName": "Morus alba"
+    "scientificName": "Morus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "7-12",
@@ -12255,11 +12120,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.977170455221966,
     "easting": -83.05000886321069
@@ -12297,7 +12158,10 @@
   },
   "species": {
     "commonName": "White mulberry",
-    "scientificName": "Morus alba"
+    "scientificName": "Morus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12310,11 +12174,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.9775620036308,
     "easting": -83.04872810840608
@@ -12352,7 +12212,10 @@
   },
   "species": {
     "commonName": "White mulberry",
-    "scientificName": "Morus alba"
+    "scientificName": "Morus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12365,11 +12228,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97772474956322,
     "easting": -83.05034386069553
@@ -12407,7 +12266,10 @@
   },
   "species": {
     "commonName": "White oak",
-    "scientificName": "Quercus alba"
+    "scientificName": "Quercus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12420,11 +12282,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.9764520967958,
     "easting": -83.04869860410692
@@ -12462,7 +12320,10 @@
   },
   "species": {
     "commonName": "Eastern white pine",
-    "scientificName": "Pinus strobus"
+    "scientificName": "Pinus strobus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "13-18",
@@ -12475,11 +12336,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.9769489878714,
     "easting": -83.05017717182638
@@ -12517,7 +12374,10 @@
   },
   "species": {
     "commonName": "Pink dogwood",
-    "scientificName": "Cornus florida"
+    "scientificName": "Cornus florida",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "< 3",
@@ -12530,11 +12390,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": true,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977472595136675,
     "easting": -83.04873749613763
@@ -12573,7 +12429,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12586,11 +12445,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977724634298696,
     "easting": -83.05054295808078
@@ -12629,7 +12484,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12642,11 +12500,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977722193556936,
     "easting": -83.05054530501367
@@ -12685,7 +12539,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12698,11 +12555,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.977718725134274,
     "easting": -83.05054547265173
@@ -12741,7 +12594,10 @@
   },
   "species": {
     "commonName": "Siberian elm",
-    "scientificName": "Ulmus pumila"
+    "scientificName": "Ulmus pumila",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "",
@@ -12754,11 +12610,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2024-12-29T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
   "location": {
     "northing": 39.97771744053325,
     "easting": -83.05054530501367
@@ -12797,7 +12649,10 @@
   },
   "species": {
     "commonName": "Eastern redbud",
-    "scientificName": "Cercis canadensis"
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff"
   },
   "variety": "",
   "dbh": "3-6",
@@ -12810,11 +12665,7 @@
     "flower": "",
     "environs": ""
   },
-  "nonnative": false,
-  "invasive": false,
-  "lastVisited": {
-    "$date": "2025-01-01T05:00:00.000Z"
-  },
+  "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
   "location": {
     "northing": 39.97718175980065,
     "easting": -83.04995052516462

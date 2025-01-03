@@ -4,6 +4,9 @@ const typeDefs = gql `
   input SpeciesInput {
     commonName: String!
     scientificName: String!
+    nonnative: Boolean
+    invasive: Boolean
+    markerColor: String
   }
 
   input LocationInput {
@@ -44,6 +47,9 @@ const typeDefs = gql `
   type Species {
     commonName: String!
     scientificName: String!
+    nonnative: Boolean
+    invasive: Boolean
+    markerColor: String
   }
 
   type Location {
@@ -88,8 +94,6 @@ const typeDefs = gql `
     dbh: String
     photos: Photos
     notes: String
-    nonnative: Boolean
-    invasive: Boolean
     location: Location
     garden: String
     siteInfo: SiteInfo
@@ -115,8 +119,6 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      nonnative: Boolean
-      invasive: Boolean
       location: LocationInput
       garden: String
       siteInfo: SiteInfoInput
@@ -137,8 +139,6 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      nonnative: Boolean
-      invasive: Boolean
       location: LocationInput
       garden: String
       siteInfo: SiteInfoInput

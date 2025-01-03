@@ -34,7 +34,7 @@ const TreeMap = () => {
       // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
       const googleMutant = L.gridLayer.googleMutant({
-        maxZoom: 23,
+        maxZoom: 24,
         type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
         attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
@@ -65,46 +65,45 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree) => {
     const { northing, easting } = tree.location;
-    var iconColor
+    const markerColor = tree.species.markerColor || "white";
     // Create an inline SVG icon with dynamic color; when ready, set color based on tree species
-    switch (tree.species.commonName) {
-    case "Common hackberry":
-      iconColor = "green";
-      break;
-    case "Siberian elm":
-      iconColor = "blue"
-      break;
-    case "Red maple":
-      iconColor = "red"
-      break;
-    case "Eastern redbud":
-      iconColor = "pink"
-      break;
-    case "Black maple":
-      iconColor = "black"
-      break;
-    case "American sycamore":
-      iconColor = "purple"
-      break;
-    case "Honey locust":
-      iconColor = "gold"
-      break;
-    case "Norway maple":
-      iconColor = "orange"
-      break;
-    default:
-      iconColor = "white"
-    }
-    const iconSize = 10;
+    // switch (tree.species.commonName) {
+    // case "Common hackberry":
+    //   iconColor = "green";
+    //   break;
+    // case "Siberian elm":
+    //   iconColor = "blue"
+    //   break;
+    // case "Red maple":
+    //   iconColor = "red"
+    //   break;
+    // case "Eastern redbud":
+    //   iconColor = "pink"
+    //   break;
+    // case "Black maple":
+    //   iconColor = "lightBlue"
+    //   break;
+    // case "American sycamore":
+    //   iconColor = "purple"
+    //   break;
+    // case "Honey locust":
+    //   iconColor = "gold"
+    //   break;
+    // case "Norway maple":
+    //   iconColor = "orange"
+    //   break;
+    // default:
+    //   iconColor = "white"
+    // }
     const svgIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-        <circle cx="6" cy="6" r="6" fill="${iconColor}"/>
+        <circle cx="6" cy="6" r="6" fill="${markerColor}" stroke="black" stroke-width="1"/>
       </svg>
     `;
 
     const myIcon = L.icon({
       iconUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
-      iconSize: [iconSize, iconSize],
+      iconSize: [10, 10],
       iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
     });
     // to use the following, change species from key-value pair to an object and add markerColor to the object. Will require a lot of refactoring.
@@ -154,7 +153,10 @@ const TreeMap = () => {
     const newTree = {
        species: {
         commonName: "",
-        scientificName: ""
+        scientificName: "",
+        nonnative: false,
+        invasive: false,
+        markerColor: ""
       },
       variety: "",
       dbh: "",
@@ -167,8 +169,6 @@ const TreeMap = () => {
         environs: ""
       },
       notes: "",
-      nonnative: false,
-      invasive: false,
       location: {
         northing: lat,
         easting: lng

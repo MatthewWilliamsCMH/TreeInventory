@@ -25,7 +25,7 @@ const resolvers = {
   },
 
   Mutation: {
-    addTree: async (_, { species, variety, dbh, photos, notes, nonnative, invasive, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
+    addTree: async (_, { species, variety, dbh, photos, notes, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
         return await Tree.create({
           species, 
@@ -33,8 +33,6 @@ const resolvers = {
           dbh, 
           photos,
           notes, 
-          nonnative, 
-          invasive, 
           location, 
           garden, 
           siteInfo, 
@@ -54,7 +52,7 @@ const resolvers = {
       }
     },
 
-    updateTree: async (_, { id, species, variety, dbh, photos, notes, nonnative, invasive, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
+    updateTree: async (_, { id, species, variety, dbh, photos, notes, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
         return await Tree.findByIdAndUpdate(
           id, 
@@ -64,8 +62,6 @@ const resolvers = {
             dbh, 
             photos,
             notes, 
-            nonnative, 
-            invasive, 
             location, 
             garden, 
             siteInfo, 

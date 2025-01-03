@@ -7,6 +7,9 @@ export const GET_TREES = gql`
       species {
         commonName
         scientificName
+        nonnative
+        invasive
+        markerColor
       }
       variety
       dbh
@@ -19,8 +22,6 @@ export const GET_TREES = gql`
         environs
       }
       notes
-      nonnative
-      invasive
       location {
         northing
         easting

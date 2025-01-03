@@ -104,7 +104,7 @@ const PhysicalDataForm = () => {
         />
       </div>
 
-      <div className = "danger">
+      {/* <div className = "danger">
         <div className = "control">
           <label htmlFor = "nonnative">
             <input
@@ -130,7 +130,7 @@ const PhysicalDataForm = () => {
             />Invasive
           </label>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </form>

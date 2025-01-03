@@ -18,7 +18,8 @@ function App() {
 
   //determine forms' background color based on "invasive" flag in formValues
   const formStyle = {
-    backgroundColor: formValues && formValues?.invasive ? "#FFDEDE" : "white",
+    // backgroundColor: formValues && formValues?.invasive ? "#FFDEDE" : "white",
+    backgroundColor: selectedTree && selectedTree?.species.invasive ? "#FFDEDE" : "white",
   };
 
     //sync form state with selectedTree when selectedTree changes

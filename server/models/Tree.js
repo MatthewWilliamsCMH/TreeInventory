@@ -4,7 +4,10 @@ const { Schema, model } = require('mongoose');
 const treeSchema = new Schema({
   species: { //compile common + scientific species names from db; user to choose one or the other from list or key in new
     commonName: {type: String}, //make required
-    scientificName: {type: String} //make reqruired
+    scientificName: {type: String}, //make reqruired
+    nonnative: { type: Boolean },
+    invasive: { type: Boolean },
+    markerColor: { type: String}
   },
   variety: { type: String },
   dbh: { type: String }, //choose from fixed list //make required
@@ -17,8 +20,6 @@ const treeSchema = new Schema({
     flower: {type: String},
     environs: {type: String}
   },
-  nonnative: { type: Boolean },
-  invasive: { type: Boolean },
   lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
   location: { 
     northing: { type: Number }, //always positive at SC //make required

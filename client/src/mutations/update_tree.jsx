@@ -8,8 +8,6 @@ export const UPDATE_TREE = gql`
     $dbh: String
     $photos: PhotosInput
     $notes: String
-    $nonnative: Boolean
-    $invasive: Boolean
     $garden: String
     $siteInfo: SiteInfoInput
     $lastVisited: String
@@ -28,8 +26,6 @@ export const UPDATE_TREE = gql`
       dbh: $dbh
       photos: $photos
       notes: $notes
-      nonnative: $nonnative
-      invasive: $invasive
       garden: $garden
       siteInfo: $siteInfo
       lastVisited: $lastVisited
@@ -45,6 +41,9 @@ export const UPDATE_TREE = gql`
       species {
         commonName
         scientificName
+        nonnative
+        invasive
+        markerColor
       }
       variety
       dbh
@@ -57,8 +56,6 @@ export const UPDATE_TREE = gql`
         environs
       }
       notes
-      nonnative
-      invasive
       garden
       siteInfo {
         slope

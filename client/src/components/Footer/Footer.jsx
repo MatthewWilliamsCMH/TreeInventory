@@ -18,7 +18,10 @@ const Footer = () => {
           variables: {
             species: formValues.species ? {
               commonName: formValues.species.commonName,
-              scientificName: formValues.species.scientificName
+              scientificName: formValues.species.scientificName,
+              nonnative: false,
+              invasive: false,
+              markerColor: "black"
             } : null,
             variety: formValues.variety,
             dbh: formValues.dbh,
@@ -31,8 +34,6 @@ const Footer = () => {
               environs: formValues.photos.environs
             } : null,
             notes: formValues.notes,
-            nonnative: formValues.nonnative,
-            invasive: formValues.invasive,
             location: formValues.location ? {
               northing: formValues.location.northing,
               easting: formValues.location.easting
@@ -91,8 +92,6 @@ const Footer = () => {
               environs: formValues.photos.environs
             } : null,
             notes: formValues.notes,
-            nonnative: formValues.nonnative,
-            invasive: formValues.invasive,
             garden: formValues.garden,
             siteInfo: formValues.siteInfo ? {
               slope: formValues.siteInfo.slope,
