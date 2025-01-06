@@ -1,14 +1,6 @@
 const { gql } = require("apollo-server-express");
 
 const typeDefs = gql `
-  input SpeciesInput {
-    commonName: String!
-    scientificName: String!
-    nonnative: Boolean
-    invasive: Boolean
-    markerColor: String
-  }
-
   input LocationInput {
     northing: Float
     easting: Float
@@ -44,12 +36,13 @@ const typeDefs = gql `
     environs: String
   }
 
-  type Species {
+  input Species {
+    family: String
     commonName: String!
     scientificName: String!
-    nonnative: Boolean
-    invasive: Boolean
-    markerColor: String
+    nonnative: Boolean!
+    invasive: Boolean!
+    markerColor: String!
   }
 
   type Location {
@@ -87,8 +80,19 @@ const typeDefs = gql `
     environs: String
   }
 
+  type Species {
+    id: ID!
+    family: String
+    commonName: String!
+    scientificName: String!
+    nonnative: Boolean!
+    invasive: Boolean!
+    markerColor: String!
+  }
+
   type Tree {
     id: ID!
+    commonName: String!
     species: Species
     variety: String
     dbh: String
@@ -110,11 +114,14 @@ const typeDefs = gql `
   type Query {
     getTrees: [Tree]
     getTree(id: ID): Tree
+    getSpecies: [Species]
+    getSpeciesByCommonName(commonName: String!): Species
+    getSpeciesByScientificName(scientificName: String!): Species
   }
 
   type Mutation {
     addTree (
-      species: SpeciesInput
+      commonName: String!
       variety: String
       dbh: String
       photos: PhotosInput
@@ -134,7 +141,7 @@ const typeDefs = gql `
 
     updateTree (
       id: ID!
-      species: SpeciesInput
+      commonName: String!
       variety: String
       dbh: String
       photos: PhotosInput
@@ -151,6 +158,25 @@ const typeDefs = gql `
       careHistory: String
       hidden: Boolean
     ): Tree
+
+    addSpecies (
+      family: String
+      commonName: String!
+      scientificName: String!
+      nonnative: Boolean!
+      invasive: Boolean!
+      markerColor: String!
+    ): Species
+
+    updateSpecies (
+      id: ID!
+      family: String
+      commonName: String!
+      scientificName: String!
+      nonnative: Boolean!
+      invasive: Boolean!
+      markerColor: String!
+    ): Species
   }
 `;
 

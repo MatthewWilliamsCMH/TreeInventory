@@ -4,13 +4,7 @@ export const GET_TREES = gql`
   query getTrees {
     getTrees {
       id
-      species {
-        commonName
-        scientificName
-        nonnative
-        invasive
-        markerColor
-      }
+      commonName
       variety
       dbh
       photos {

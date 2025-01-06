@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.gridlayer.googlemutant";
 
 import { GET_TREES } from "../../queries/get_trees";
+import { GET_SPECIES } from "../../queries/get_species";
 import { ADD_TREE } from "../../mutations/add_tree";
 import { UPDATE_TREE } from "../../mutations/update_tree";
 import { UPDATE_TREE_LOCATION } from "../../mutations/update_tree_location";
@@ -18,13 +19,27 @@ const TreeMap = () => {
 
   //set up queries and mutations
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
+  
   const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE); //add one tree
-  const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE)//update one tree
-  const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION)//update location of one tree
+  const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE); //update one tree
+  const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION); //update location of one tree
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container
   const map = useRef(null); //use ref to store Leaflet map instance
+
+  const combineTreeAndSpeciesData = (tree, speciesMap) => {
+    const speciesInfo = speciesMap[tree.commonName] || {};
+    return {
+      ...tree,
+      scientificName: speciesInfo.scientificName || '',
+      nonnative: speciesInfo.nonnative || false,
+      invasive: speciesInfo.invasive || false,
+      markerColor: speciesInfo.markerColor || 'FFFFFF'
+    };
+  };
+
 
   useEffect(() => {
     //the map container exists but is empty
@@ -50,8 +65,23 @@ const TreeMap = () => {
           map.current.removeLayer(layer);
         }
       });
-      getAllData.getTrees.forEach(createTreeMarker);
+
+      // Ensure species data is ready before creating markers
+      if (getSpeciesData?.getSpecies) {
+        const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
+          acc[species.commonName] = species;
+          return acc;
+        }, {});
+
+        getAllData.getTrees.forEach((tree) => {
+          const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
+          createTreeMarker(completeTree, speciesMap);
+        });
+      }
     }
+    //   getAllData.getTrees.forEach(createTreeMarker);
+    //   //somewhere here, we need to pull in the data from species normalized on commonName
+    // }
 
     //clear the map container and instance before unmounting the component
     return () => {
@@ -63,41 +93,14 @@ const TreeMap = () => {
   }, [getAllData, selectedTree]);
 
   //create the tree markers and attach popups
-  const createTreeMarker = (tree) => {
+  const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
-    const markerColor = tree.species.markerColor || "white";
-    // Create an inline SVG icon with dynamic color; when ready, set color based on tree species
-    // switch (tree.species.commonName) {
-    // case "Common hackberry":
-    //   iconColor = "green";
-    //   break;
-    // case "Siberian elm":
-    //   iconColor = "blue"
-    //   break;
-    // case "Red maple":
-    //   iconColor = "red"
-    //   break;
-    // case "Eastern redbud":
-    //   iconColor = "pink"
-    //   break;
-    // case "Black maple":
-    //   iconColor = "lightBlue"
-    //   break;
-    // case "American sycamore":
-    //   iconColor = "purple"
-    //   break;
-    // case "Honey locust":
-    //   iconColor = "gold"
-    //   break;
-    // case "Norway maple":
-    //   iconColor = "orange"
-    //   break;
-    // default:
-    //   iconColor = "white"
-    // }
+//the line below has to change to access the markerColor from the species collection
+    const speciesInfo = speciesMap[tree.commonName];
+    const markerColor = speciesInfo.markerColor || "FFFFFF";
     const svgIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-        <circle cx="6" cy="6" r="6" fill="${markerColor}" stroke="black" stroke-width="1"/>
+        <circle cx="6" cy="6" r="6" fill="#${markerColor}" stroke="black" stroke-width="1"/>
       </svg>
     `;
 
@@ -106,10 +109,9 @@ const TreeMap = () => {
       iconSize: [10, 10],
       iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
     });
-    // to use the following, change species from key-value pair to an object and add markerColor to the object. Will require a lot of refactoring.
-    // const markerColor = tree.species.markerColor;
+
     const popupContent = `
-      <b>${tree.species?.commonName}</b><br>
+      <b>${tree.commonName}</b><br>
       <i>${tree.dbh} inches</i><br>
       Id: ${tree.id}
     `;
@@ -151,13 +153,8 @@ const TreeMap = () => {
   const handleAddTree = (event) => {
     const { lat, lng } = event.latlng;
     const newTree = {
-       species: {
-        commonName: "",
-        scientificName: "",
-        nonnative: false,
-        invasive: false,
-        markerColor: ""
-      },
+      commonName: "",
+      scientificName: "",
       variety: "",
       dbh: "",
       photos: {

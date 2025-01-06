@@ -1,6 +1,6 @@
 #footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top:20px;
   padding: 20px; 
   border-top: 1px solid black;

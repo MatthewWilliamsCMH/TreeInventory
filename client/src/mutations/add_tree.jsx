@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const ADD_TREE = gql`
   mutation addTree(
-    $species: SpeciesInput
+    $commonName: String!
     $variety: String
     $dbh: String
     $photos: PhotosInput
@@ -20,7 +20,7 @@ export const ADD_TREE = gql`
     $hidden: Boolean
   ) {
     addTree(
-      species: $species
+      commonName: $commonName
       variety: $variety
       dbh: $dbh
       photos: $photos
@@ -37,13 +37,7 @@ export const ADD_TREE = gql`
       careHistory: $careHistory
       hidden: $hidden
     ) {
-      species {
-        commonName
-        scientificName
-        nonnative
-        invasive
-        markerColor
-      }
+      commonName
       variety
       dbh
       photos {

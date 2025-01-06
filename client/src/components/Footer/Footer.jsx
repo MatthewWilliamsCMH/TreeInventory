@@ -1,6 +1,7 @@
 import React from "react";
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+
 import { ADD_TREE } from "../../mutations/add_tree";
 import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
@@ -16,13 +17,7 @@ const Footer = () => {
       if (!formValues?.id) {
         const { data } = await addTreeMutation({
           variables: {
-            species: formValues.species ? {
-              commonName: formValues.species.commonName,
-              scientificName: formValues.species.scientificName,
-              nonnative: false,
-              invasive: false,
-              markerColor: "black"
-            } : null,
+            commonName: formValues.commonName,
             variety: formValues.variety,
             dbh: formValues.dbh,
             photos: formValues.photos ? {
@@ -77,10 +72,7 @@ const Footer = () => {
         const { data } = await updateTreeMutation({
           variables: {
             id: formValues.id,
-            species: formValues.species ? {
-              commonName: formValues.species.commonName,
-              scientificName: formValues.species.scientificName
-            } : null,
+            commonName: formValues.commonName,
             variety: formValues.variety,
             dbh: formValues.dbh,
             photos: formValues.photos ? {
@@ -139,12 +131,21 @@ const Footer = () => {
 
   return (
     <div id="footer">
-      <button type="submit" onClick={handleSubmit} disabled={updateTreeLoading || addTreeLoading}>
-        {updateTreeLoading || addTreeLoading ? "Updating..." : "OK"}
-      </button>
-      <button type="button" onClick={handleCancel}>
-        Cancel
-      </button>
+      <div id = "autodata">
+        <p>Last visited: { 
+          formValues.lastVisited 
+            ? new Date(parseInt(formValues.lastVisited)).toLocaleDateString('en-US') 
+            : new Date().toLocaleDateString('en-US')
+        }</p>
+      </div>
+      <div id = "buttongroup">
+        <button type="submit" onClick={handleSubmit} disabled={updateTreeLoading || addTreeLoading}>
+          {updateTreeLoading || addTreeLoading ? "Updating..." : "OK"}
+        </button>
+        <button type="button" onClick={handleCancel}>
+          Cancel
+        </button>
+      </div>
     </div>
   );
 };

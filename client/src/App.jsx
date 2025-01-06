@@ -16,10 +16,9 @@ function App() {
   const [treeLocation, setTreeLocation] = useState(null);
   const [formValues, setFormValues] = useState(null);
 
-  //determine forms' background color based on "invasive" flag in formValues
+  //determine forms' background color based on "invasive" flag in selectedTree
   const formStyle = {
-    // backgroundColor: formValues && formValues?.invasive ? "#FFDEDE" : "white",
-    backgroundColor: selectedTree && selectedTree?.species.invasive ? "#FFDEDE" : "white",
+    backgroundColor: selectedTree && selectedTree?.invasive ? "#FFDEDE" : "white"
   };
 
     //sync form state with selectedTree when selectedTree changes

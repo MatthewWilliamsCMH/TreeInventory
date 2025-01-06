@@ -2,6 +2,7 @@ import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from "@apollo/client";
+
 import App from "./App";
 import TreeMap from "./components/TreeMap/TreeMap";
 import PhysicalDataForm from "./components/PhysicalData/PhysicalDataForm";

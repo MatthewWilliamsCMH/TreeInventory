@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
 import { useQuery } from "@apollo/client";
+
 import { GET_TREES } from "../../queries/get_trees";
+import { GET_SPECIES } from "../../queries/get_species";
 import "./TreeInventory.css";
 
 const TreeInventory = () => {
@@ -12,6 +14,7 @@ const TreeInventory = () => {
   if (loading) return <div>Loading trees...</div>;
   if (error) return <div>Error loading trees: {error.message}</div>;
 
+  //is this enough to pull the species data as well?
   const trees = data?.getTrees || [];
   if (!trees.length) return <div>No trees found</div>;
 
@@ -67,7 +70,8 @@ const TreeInventory = () => {
         <tbody>
           {sortedTrees.map((tree) => (
             <tr key={tree?.id || "unknown"} onClick={() => handleTreeClick(tree)}>
-              <td>{tree?.species?.commonName || ""}</td>
+              <td>{tree?.commonName || ""}</td>
+{/* The line below needs to be updated to reflect the new data structure */}
               <td>{tree?.species?.scientificName || ""}</td>
               <td>{tree?.garden || ""}</td>
               <td>{tree?.dbh ? `${tree.dbh} inches` : ""}</td>

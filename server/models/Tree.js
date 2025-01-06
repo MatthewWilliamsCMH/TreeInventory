@@ -1,29 +1,23 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 // Define the schema for the Tree model
 const treeSchema = new Schema({
-  species: { //compile common + scientific species names from db; user to choose one or the other from list or key in new
-    commonName: {type: String}, //make required
-    scientificName: {type: String}, //make reqruired
-    nonnative: { type: Boolean },
-    invasive: { type: Boolean },
-    markerColor: { type: String}
-  },
+  commonName: {type: String, required: true},
   variety: { type: String },
   dbh: { type: String }, //choose from fixed list //make required
   notes: { type: String },
   photos: { //store url for images
-    bark: {type: String},
-    summerLeaf: {type: String},
-    autumnLeaf: {type: String},
-    fruit: {type: String},
-    flower: {type: String},
-    environs: {type: String}
+    bark: { type: String, unique: true },
+    summerLeaf: { type: String, unique: true },
+    autumnLeaf: { type: String, unique: true },
+    fruit: { type: String, unique: true },
+    flower: { type: String, unique: true },
+    environs: { type: String, unique: true }
   },
   lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
   location: { 
-    northing: { type: Number }, //always positive at SC //make required
-    easting: { type: Number } //always negative at SC //make required
+    northing: { type: Number, required: true }, //always positive at SC
+    easting: { type: Number, required: true } //always negative at SC
   },
   garden: { type: String}, //choose from fixed list //make required
   siteInfo: {
@@ -53,6 +47,6 @@ const treeSchema = new Schema({
   hidden: { type: Boolean }
 });
 
-const Tree = model('Tree', treeSchema);
+const Tree = model("Tree", treeSchema);
 
 module.exports = Tree;

@@ -10,3 +10,8 @@
  #header h1 {
   font-size:2rem;
  }
+
+ .danger {
+  font-weight: 700;
+  color: red;
+ }

@@ -4,48 +4,48 @@ export const handleFieldChange = (formValues, field, value) => {
   if (field.includes(".")) {
     const [parentField, childField] = field.split('.'); //split the field into parent and child
 
-    if (parentField === "species") {  //species names interrelate; this "if" case syncs them
-      switch (childField) {
-        case "commonName":
-        const scientificFromCommon = commonToScientificList[value]; 
-        formValues = {
-          ...formValues,
-          species: {
-            ...formValues.species,
-            commonName: value,
-            scientificName: scientificFromCommon || ""
-          }
-        };
-        break;
+    // if (parentField === "species") {  //species names interrelate; this "if" case syncs them
+    //   switch (childField) {
+    //     case "commonName":
+    //     const scientificFromCommon = commonToScientificList[value]; 
+    //     formValues = {
+    //       ...formValues,
+    //       species: {
+    //         ...formValues.species,
+    //         commonName: value,
+    //         scientificName: scientificFromCommon || ""
+    //       }
+    //     };
+    //     break;
 
-        case "scientificName":
-        const commonFromScientific = Object.keys(commonToScientificList)
-        .find(common => commonToScientificList[common] === value); 
-        formValues = {
-          ...formValues,
-          species: {
-            ...formValues.species,
-            scientificName: value,
-            commonName: commonFromScientific || ""
-          }
-        };
-          break;
+    //     case "scientificName":
+    //     const commonFromScientific = Object.keys(commonToScientificList)
+    //     .find(common => commonToScientificList[common] === value); 
+    //     formValues = {
+    //       ...formValues,
+    //       species: {
+    //         ...formValues.species,
+    //         scientificName: value,
+    //         commonName: commonFromScientific || ""
+    //       }
+    //     };
+    //       break;
 
-        default:
-        //default if neither of the above matches the species field structure (unlikely)
-        formValues = {
-          ...formValues,
-          species: {
-            ...formValues.species,
-            commonName: "",
-            scientificName: ""
-          }
-        };
-        break;
-      }
-    } 
+    //     default:
+    //     //default if neither of the above matches the species field structure (unlikely)
+    //     formValues = {
+    //       ...formValues,
+    //       species: {
+    //         ...formValues.species,
+    //         commonName: "",
+    //         scientificName: ""
+    //       }
+    //     };
+    //     break;
+    //   }
+    // } 
 
-    else {
+    // else {
       //the field is nested, but it's not the special case of "species"
       formValues = {
         ...formValues,
@@ -54,7 +54,7 @@ export const handleFieldChange = (formValues, field, value) => {
           [childField]: value
         }
       };
-    }
+    // }
   }
    
   else {
@@ -70,7 +70,8 @@ return formValues;
 //-------------------- select lists --------------------//
 //species should be pulled from db but allow user to create new
 export const newCommonToScientificList = {
-  //write code here to compile common and scientific names to assign to drop-down boxes
+  //write code here(?) to compile common and scientific names to assign to drop-down boxes
+  //do I need to import get_species?
 }
 
 export const commonToScientificList = {
@@ -107,12 +108,12 @@ export const commonToScientificList = {
   "Eastern red cedar": "Juniperus virginiana",
   "Eastern redbud": "Cercis canadensis",
   "Eastern white pine": "Pinus strobus",
+  "European beech": "Fagus sylvatica",
   "European linden": "Tilia x europaea",
-  "Ginkgo": "Gingko biloba", //nonnative
+  "Ginkgo": "Ginkgo biloba", //nonnative
   "Green ash": "Fraxinus pennsylvanica",
   "Hawthorn": "Crataegus", //nonnative
   "Honey locust": "Gleditsia triacanthos",
-  "Horse chestnut": "Aesculus hippocastanum",
   "Japanese lilac tree": "Syringa reticulata", //nonnative
   "Japanese maple": "Acer palmatum var. atropurpureum",
   "Kentucky coffeetree": "Gymnocladus dioicus",
@@ -131,7 +132,7 @@ export const commonToScientificList = {
   "Pin oak": "Quercus palustris",
   "Pink dogwood": "Cornus florida", //nonnative
   "Pitch pine": "Pinus rigida",
-  "Red horse-chestnut": "Aesculus carnea", //nonnative
+  "Red horse-chestnut": "Aesculus x carnea", //nonnative
   "Red maple": "Acer rubrum",
   "Red mulberry": "Morus rubra",
   "Red pine": "Pinus resinosa",
@@ -155,7 +156,6 @@ export const commonToScientificList = {
   "Sweetbay magnolia": "Magnolia virginiana",
   "Sweetgum": "Liquidambar styraciflua",
   "Tree of heaven": "Ailanthus altissima", //invasive, nonnative
-  "Tricolor beech": "Fagus sylvatica",
   "Unknown species": "Unknown species",
   "Virginia pine": "Pinus virginiana",
   "Weeping cherry": "Prunus pendula",

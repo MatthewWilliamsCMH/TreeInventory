@@ -1,5 +1,6 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
+
 import Footer from "../Footer/Footer";
 import { handleFieldChange, commonToScientificList, dbhList } from "../../utils/fieldChangeHandler";
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
@@ -32,9 +33,10 @@ const PhysicalDataForm = () => {
           <label htmlFor = "commonName">Common name:</label>
           <select
             id = "commonName"
-            value = {formValues.species.commonName}
-            onChange = {(event) => handleInputChange("species.commonName", event)}
+            value = {formValues.commonName}
+            onChange = {(event) => handleInputChange("commonName", event)}
           >
+{/* The remainer of this block needs to be updated to reflect the new data structure. commonToScientificList will still exist, but it will be dynamically created */}
             {Object.keys(commonToScientificList).map((common) => (
               <option key={common} value={common}>
                 {common}
@@ -47,8 +49,8 @@ const PhysicalDataForm = () => {
           <select
             id = "scientificName"
             placeholder = "Select a scientific name."
-            value = {formValues.species.scientificName}
-            onChange = {(event) => handleInputChange("species.scientificName", event)}
+            value = {formValues.scientificName}
+            onChange = {(event) => handleInputChange("scientificName", event)}
           >
           {Object.entries(commonToScientificList)
             .sort(([, a], [, b]) => a.localeCompare(b))
@@ -104,6 +106,7 @@ const PhysicalDataForm = () => {
         />
       </div>
 
+{/* I may need these for a newSpecies form; save for now */}
       {/* <div className = "danger">
         <div className = "control">
           <label htmlFor = "nonnative">
