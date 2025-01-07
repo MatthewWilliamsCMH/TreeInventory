@@ -95,7 +95,7 @@ const TreeMap = () => {
     const markerColor = speciesInfo.markerColor || "FFFFFF";
     const svgIcon = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-        <circle cx="6" cy="6" r="6" fill="#${markerColor}" stroke="black" stroke-width="1"/>
+        <circle cx="6" cy="6" r="6" fill="#${markerColor}" stroke="lightgray" stroke-width="1"/>
       </svg>
     `;
 
