@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import UppyUploader from "./components/PhysicalData/UppyUploader";
 
 import "./reset.css";
 import '@uppy/core/dist/style.css'
@@ -31,7 +30,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Header formValues={formValues} /> */}
       <Navbar selectedTree={selectedTree} />
       <Outlet context = {{ 
         selectedTree, setSelectedTree, 

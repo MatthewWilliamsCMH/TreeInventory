@@ -124,18 +124,6 @@ textarea {
   margin-bottom: 5px;
 }
 
-.danger {
-  display: inline-flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.danger label {
-  display: block;
-  width: max-content;
-  color: red;
-}
-
 #map {
   cursor: pointer;
 }
@@ -149,6 +137,26 @@ button {
 
 button:hover {
   background-color: darkgrey;
+}
+
+/* .danger {
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.danger label {
+  display: block;
+  width: max-content;
+  color: red;
+} */
+
+.danger-flags-container {
+  padding: 20px 20px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:"9999"
 }
 
 /*these are here to override some of the default css settings*/

@@ -2,6 +2,7 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 import Footer from "../Footer/Footer";
+import DangerFlags from "../Header/DangerFlags";
 import { handleFieldChange, maintenanceNeedsList } from "../../utils/fieldChangeHandler";
 import { formatDateForDisplay } from "../../utils/dateHandler";
 
@@ -17,7 +18,10 @@ const CareDataForm = () => {
 
   //-------------------- render component--------------------//
   return (
-    <form style={formStyle}>
+    <>
+      <div className = "danger-flags-container">
+        <DangerFlags formValues = {formValues}/>
+      </div>    <form style={formStyle}>
       <div className="control">
         <label htmlFor = "lastVisited">Last visited:</label>
         <p id="lastVisited">{formatDateForDisplay(formValues.lastVisited)}</p>
@@ -95,6 +99,7 @@ const CareDataForm = () => {
       </div>
       <Footer />
     </form>
+    </>
   );
 };
 
