@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import L from "leaflet";
@@ -40,7 +40,6 @@ const TreeMap = () => {
     };
   };
 
-
   useEffect(() => {
     //the map container exists but is empty
     if (mapRef.current && !map.current) {
@@ -79,9 +78,6 @@ const TreeMap = () => {
         });
       }
     }
-    //   getAllData.getTrees.forEach(createTreeMarker);
-    //   //somewhere here, we need to pull in the data from species normalized on commonName
-    // }
 
     //clear the map container and instance before unmounting the component
     return () => {
@@ -95,7 +91,6 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
-//the line below has to change to access the markerColor from the species collection
     const speciesInfo = speciesMap[tree.commonName];
     const markerColor = speciesInfo.markerColor || "FFFFFF";
     const svgIcon = `
@@ -118,7 +113,8 @@ const TreeMap = () => {
     
     const marker = L.marker([northing, easting], {
       draggable: "true",
-      icon: myIcon
+      icon: myIcon,
+      riseOnHover: "true"
     })
       .bindPopup(popupContent)
       .addTo(map.current);
@@ -146,6 +142,14 @@ const TreeMap = () => {
         navigate("/physicaldata");
         map.current.closePopup();
       })
+    });
+
+    marker.on("mouseover", () => {
+      map.current.getContainer().style.cursor = "pointer"; // Change the cursor to pointer on mouseover
+    });
+
+    marker.on("mouseout", () => {
+      map.current.getContainer().style.cursor = "default"; // Reset the cursor to default on mouseout
     });
   };
 
