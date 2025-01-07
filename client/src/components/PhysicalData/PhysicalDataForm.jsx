@@ -36,7 +36,6 @@ const PhysicalDataForm = () => {
             value = {formValues.commonName}
             onChange = {(event) => handleInputChange("commonName", event)}
           >
-{/* The remainer of this block needs to be updated to reflect the new data structure. commonToScientificList will still exist, but it will be dynamically created */}
             {Object.keys(commonToScientificList).map((common) => (
               <option key={common} value={common}>
                 {common}

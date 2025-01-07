@@ -126,7 +126,7 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      location: LocationInput!
+      location: LocationInput
       garden: String
       siteInfo: SiteInfoInput
       lastVisited: String!
@@ -146,7 +146,7 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      location: LocationInput!
+      location: LocationInput
       garden: String
       siteInfo: SiteInfoInput
       lastVisited: String!

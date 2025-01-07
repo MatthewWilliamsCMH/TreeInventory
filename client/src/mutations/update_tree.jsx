@@ -10,14 +10,14 @@ export const UPDATE_TREE = gql`
     $notes: String
     $garden: String
     $siteInfo: SiteInfoInput
-    $lastVisited: String
+    $lastVisited: String!
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
     $maintenanceNeeds: MaintenanceNeedsInput
     $careHistory: String
-    $hidden: Boolean
+    $hidden: Boolean!
   ) {
     updateTree(
       id: $id

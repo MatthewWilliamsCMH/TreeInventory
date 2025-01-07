@@ -298,7 +298,7 @@
   {
     "family": "Lauraceae",
     "commonName": "Sassafras",
-    "scientificName": "Sassafras",
+    "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
     "markerColor": "FF6347"
@@ -314,7 +314,7 @@
   {
     "family": "Magnoliaceae",
     "commonName": "Chinese magnolia",
-    "scientificName": "Magnolia x soulangiana",
+    "scientificName": "Magnolia x soulangeana",
     "nonnative": true,
     "invasive": false,
     "markerColor": "9e069e"
@@ -537,7 +537,7 @@
   },
   {
     "family": "Rosaceae",
-    "commonName": "Washington hawthorn",
+    "commonName": "Hawthorn",
     "scientificName": "Crataegus phaenopyrum",
     "nonnative": false,
     "invasive": false,

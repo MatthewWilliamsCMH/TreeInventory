@@ -12,10 +12,9 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import { UPDATE_TREE_LOCATION } from "../../mutations/update_tree_location";
 
 const TreeMap = () => {
-  const navigate = useNavigate();  //enable routing
-  
-  //accept objects and functions for storing data
-  const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setFormValues } = useOutletContext();
+  const navigate = useNavigate();
+  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setFormValues } = useOutletContext();
+  const { selectedTree, setSelectedTree, setFormValues } = useOutletContext();
 
   //set up queries and mutations
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees

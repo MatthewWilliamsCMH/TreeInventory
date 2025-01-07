@@ -7,33 +7,32 @@ import { GET_SPECIES } from "../../queries/get_species";
 import "./TreeInventory.css";
 
 const TreeInventory = () => {
-  const { setSelectedTree, setFormValues } = useOutletContext();
-  const { loading, error, data } = useQuery(GET_TREES);
   const navigate = useNavigate();
+  const { selectedTree, setSelectedTree, setFormValues } = useOutletContext();
 
-  if (loading) return <div>Loading trees...</div>;
-  if (error) return <div>Error loading trees: {error.message}</div>;
-
-  //is this enough to pull the species data as well?
-  const trees = data?.getTrees || [];
-  if (!trees.length) return <div>No trees found</div>;
+  // set up queries
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
 
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
-  // Sorting handler
-  const handleSort = (columnKey) => {
-    // If the same column is clicked, reverse the direction
-    if (sortConfig.key === columnKey) {
-      setSortConfig((prev) => ({
-        key: columnKey,
-        direction: prev.direction === "asc" ? "desc" : "asc",
-      }));
-    } 
-    else {
-      // If a different column is clicked, sort it ascending
-      setSortConfig({ key: columnKey, direction: "asc" });
-    }
+  const combineTreeAndSpeciesData = (tree, speciesMap) => {
+    const speciesInfo = speciesMap[tree.commonName] || {};
+    return {
+      ...tree,
+      scientificName: speciesInfo.scientificName || '',
+    };
   };
+
+  let trees = [];
+  if (getAllData?.getTrees && getSpeciesData?.getSpecies) {
+    const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
+      acc[species.commonName] = species;
+      return acc;
+    }, {});
+
+    trees = getAllData.getTrees.map(tree => combineTreeAndSpeciesData(tree, speciesMap))
+  }
 
   // Sort trees based on sortConfig
   const sortedTrees = [...trees].sort((a, b) => {
@@ -48,11 +47,25 @@ const TreeInventory = () => {
     return 0;
   });
 
-  const handleTreeClick = (tree) => {
-    setSelectedTree(tree);
-    setFormValues(tree);
+  // Sorting handler
+  const handleSort = (columnKey) => {
+    // If the same column is clicked, reverse the direction
+    setSortConfig((prev) => ({
+      key: columnKey,
+      direction: prev.key === columnKey ? 
+      (prev.direction === "asc" ? "desc" : "asc") : "asc",
+    }));
+  }; 
+
+  const handleTreeClick = (completeTree) => {
+    setSelectedTree(completeTree);
+    setFormValues(completeTree);
     navigate("/physicaldata");
   };
+
+  if (getAllLoading) return <div>Loading trees...</div>;
+  if (getAllError) return <div>Error loading trees: {error.message}</div>;
+  if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
 
   return (
     <div>
@@ -60,6 +73,7 @@ const TreeInventory = () => {
         <thead>
           <tr>
             <th onClick={() => handleSort("commonName")}>Common name</th>
+            {/* This is not populating */}
             <th onClick={() => handleSort("scientificName")}>Scientific name</th>
             <th onClick={() => handleSort("garden")}>Garden</th>
             <th onClick={() => handleSort("dbh")}>DBH</th>
@@ -71,8 +85,7 @@ const TreeInventory = () => {
           {sortedTrees.map((tree) => (
             <tr key={tree?.id || "unknown"} onClick={() => handleTreeClick(tree)}>
               <td>{tree?.commonName || ""}</td>
-{/* The line below needs to be updated to reflect the new data structure */}
-              <td>{tree?.species?.scientificName || ""}</td>
+              <td>{tree?.scientificName || ""}</td>
               <td>{tree?.garden || ""}</td>
               <td>{tree?.dbh ? `${tree.dbh} inches` : ""}</td>
               <td>{tree?.notes || ""}</td>

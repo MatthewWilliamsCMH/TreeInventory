@@ -13,13 +13,9 @@ export const handleFieldChange = (formValues, field, value) => {
 
   //the field is not nested
   if (field === "commonName") {  //species names interrelate; this "if" case syncs scientific name to common
-  console.log(field)
-
     const scientificFromCommon = commonToScientificList[value]; 
     formValues = {
       ...formValues,
-      // species: {
-      //   ...formValues.species,
          commonName: value,
          scientificName: scientificFromCommon || ""
       // }
@@ -75,9 +71,10 @@ export const commonToScientificList = {
   "Butternut": "Juglans cinerea",
   "Callery pear": "Pyrus calleryana", //invasive, nonnative
   "Chestnut oak": "Quercus montana",
-  "Chinkapin oak": "Quercus muehlenbergii",
+  "Chinese magnolia": "Magnolia x soulangeana",
+  "Chinquapin oak": "Quercus muehlenbergii",
   "Common hackberry": "Celtis occidentalis",
-  "Crabapple": "Malus", //nonnative
+  "Common linden": "Tilia x europaea",
   "Cucumbertree": "Magnolia acuminata",
   "Eastern cottonwood": "Populus deltoides",
   "Eastern hemlock": "Tsuga canadensis",
@@ -85,15 +82,15 @@ export const commonToScientificList = {
   "Eastern redbud": "Cercis canadensis",
   "Eastern white pine": "Pinus strobus",
   "European beech": "Fagus sylvatica",
-  "European linden": "Tilia x europaea",
+  "Flowering dogwood": "Cornus florida", //nonnative
   "Ginkgo": "Ginkgo biloba", //nonnative
   "Green ash": "Fraxinus pennsylvanica",
-  "Hawthorn": "Crataegus", //nonnative
+  "Hawthorn": "Crataegus phaenopyrum", //nonnative
   "Honey locust": "Gleditsia triacanthos",
-  "Japanese lilac tree": "Syringa reticulata", //nonnative
-  "Japanese maple": "Acer palmatum var. atropurpureum",
+  "Japanese tree lilac": "Syringa reticulata", //nonnative
+  "Japanese maple": "Acer palmatum",
   "Kentucky coffeetree": "Gymnocladus dioicus",
-  "Little leaf linden": "Tilia cordata", //nonnative
+  "Littleleaf linden": "Tilia cordata", //nonnative
   "Loblolly pine": "Pinus taeda",
   "Mockernut hickory": "Carya tomentosa",
   "Northern catalpa": "Catalpa speciosa",
@@ -102,19 +99,18 @@ export const commonToScientificList = {
   "Norway maple": "Acer platanoides",
   "Norway spruce": "Picea abies",
   "Ohio buckeye": "Aesculus glabra",
-  "Osage orange": "Maclura pomifera",
+  "Osage-orange": "Maclura pomifera",
   "Persimmon": "Diospyros virginiana",
   "Pignut hickory": "Carya glabra",
   "Pin oak": "Quercus palustris",
-  "Pink dogwood": "Cornus florida", //nonnative
   "Pitch pine": "Pinus rigida",
+  "Prairie crab apple": "Malus ioensis", //nonnative
   "Red horse-chestnut": "Aesculus x carnea", //nonnative
   "Red maple": "Acer rubrum",
   "Red mulberry": "Morus rubra",
   "Red pine": "Pinus resinosa",
   "River birch": "Betula nigra",
-  "Sassafrass": "Sassafras albidum",
-  "Saucer magnolia": "Magnolia x soulangeana",
+  "Sassafras": "Sassafras albidum",
   "Sawtooth oak": "Quercus acutissima", //invasive, nonnative
   "Scarlet oak": "Quercus coccinea",
   "Scotch pine": "Pinus sylvetris",
@@ -129,7 +125,7 @@ export const commonToScientificList = {
   "Slippery elm": "Ulmus rubra",
   "Sugar maple": "Acer saccharum",
   "Swamp white oak": "Quercus bicolor",
-  "Sweetbay magnolia": "Magnolia virginiana",
+  "Sweetbay": "Magnolia virginiana",
   "Sweetgum": "Liquidambar styraciflua",
   "Tree of heaven": "Ailanthus altissima", //invasive, nonnative
   "Unknown species": "Unknown species",
