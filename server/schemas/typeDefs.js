@@ -2,29 +2,29 @@ const { gql } = require("apollo-server-express");
 
 const typeDefs = gql `
   input LocationInput {
-    northing: Float
-    easting: Float
+    northing: Float!
+    easting: Float!
   }
 
   input SiteInfoInput {
-    slope: Boolean
-    overheadLines: Boolean
-    treeCluster: Boolean
-    proximateStructure: Boolean
-    proximateFence: Boolean
+    slope: Boolean!
+    overheadLines: Boolean!
+    treeCluster: Boolean!
+    proximateStructure: Boolean!
+    proximateFence: Boolean!
   }
 
   input MaintenanceNeedsInput {
-    install: Boolean
-    raiseCrown: Boolean
-    routinePrune: Boolean
-    trainingPrune: Boolean
-    priorityPrune: Boolean
-    pestTreatment: Boolean
-    installGrate: Boolean
-    removeGrate: Boolean
-    fell: Boolean
-    removeStump: Boolean
+    install: Boolean!
+    raiseCrown: Boolean!
+    routinePrune: Boolean!
+    trainingPrune: Boolean!
+    priorityPrune: Boolean!
+    pestTreatment: Boolean!
+    installGrate: Boolean!
+    removeGrate: Boolean!
+    fell: Boolean!
+    removeStump: Boolean!
   }
 
   input PhotosInput {
@@ -37,7 +37,7 @@ const typeDefs = gql `
   }
 
   input Species {
-    family: String
+    family: String!
     commonName: String!
     scientificName: String!
     nonnative: Boolean!
@@ -46,29 +46,29 @@ const typeDefs = gql `
   }
 
   type Location {
-    northing: Float
-    easting: Float
+    northing: Float!
+    easting: Float!
   }
 
   type SiteInfo {
-    slope: Boolean
-    overheadLines: Boolean
-    treeCluster: Boolean
-    proximateStructure: Boolean
-    proximateFence: Boolean
+    slope: Boolean!
+    overheadLines: Boolean!
+    treeCluster: Boolean!
+    proximateStructure: Boolean!
+    proximateFence: Boolean!
   }
 
   type MaintenanceNeeds {
-    install: Boolean
-    raiseCrown: Boolean
-    routinePrune: Boolean
-    trainingPrune: Boolean
-    priorityPrune: Boolean
-    pestTreatment: Boolean
-    installGrate: Boolean
-    removeGrate: Boolean
-    fell: Boolean
-    removeStump: Boolean
+    install: Boolean!
+    raiseCrown: Boolean!
+    routinePrune: Boolean!
+    trainingPrune: Boolean!
+    priorityPrune: Boolean!
+    pestTreatment: Boolean!
+    installGrate: Boolean!
+    removeGrate: Boolean!
+    fell: Boolean!
+    removeStump: Boolean!
   }
 
   type Photos {
@@ -82,7 +82,7 @@ const typeDefs = gql `
 
   type Species {
     id: ID!
-    family: String
+    family: String!
     commonName: String!
     scientificName: String!
     nonnative: Boolean!
@@ -93,22 +93,22 @@ const typeDefs = gql `
   type Tree {
     id: ID!
     commonName: String!
-    species: Species
+    species: Species!
     variety: String
     dbh: String
     photos: Photos
     notes: String
-    location: Location
+    location: Location!
     garden: String
     siteInfo: SiteInfo
-    lastVisited: String
+    lastVisited: String!
     installedDate: String
     installedBy: String
     felledDate: String
     felledBy: String
     maintenanceNeeds: MaintenanceNeeds
     careHistory: String
-    hidden: Boolean
+    hidden: Boolean!
   }
 
   type Query {
@@ -126,17 +126,17 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      location: LocationInput
+      location: LocationInput!
       garden: String
       siteInfo: SiteInfoInput
-      lastVisited: String
+      lastVisited: String!
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
       maintenanceNeeds: MaintenanceNeedsInput
       careHistory: String
-      hidden: Boolean
+      hidden: Boolean!
     ): Tree
 
     updateTree (
@@ -146,21 +146,21 @@ const typeDefs = gql `
       dbh: String
       photos: PhotosInput
       notes: String
-      location: LocationInput
+      location: LocationInput!
       garden: String
       siteInfo: SiteInfoInput
-      lastVisited: String
+      lastVisited: String!
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
       maintenanceNeeds: MaintenanceNeedsInput
       careHistory: String
-      hidden: Boolean
+      hidden: Boolean!
     ): Tree
 
     addSpecies (
-      family: String
+      family: String!
       commonName: String!
       scientificName: String!
       nonnative: Boolean!
@@ -170,7 +170,7 @@ const typeDefs = gql `
 
     updateSpecies (
       id: ID!
-      family: String
+      family: String!
       commonName: String!
       scientificName: String!
       nonnative: Boolean!

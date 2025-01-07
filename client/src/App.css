@@ -162,7 +162,3 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
-
-.marker:hover {
-  cursor: crosshair;
-}
