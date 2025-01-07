@@ -157,7 +157,7 @@ const TreeMap = () => {
     const { lat, lng } = event.latlng;
     const newTree = {
       commonName: "",
-      scientificName: "",
+      // scientificName: "", this shouldn't be necessary; it's not part of the tree definition.
       variety: "",
       dbh: "",
       photos: {

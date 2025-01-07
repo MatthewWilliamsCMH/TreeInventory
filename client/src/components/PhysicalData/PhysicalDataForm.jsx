@@ -105,35 +105,6 @@ const PhysicalDataForm = () => {
         />
       </div>
 
-{/* I may need these for a newSpecies form; save for now */}
-      {/* <div className = "danger">
-        <div className = "control">
-          <label htmlFor = "nonnative">
-            <input
-              id = "nonnative"
-              className = "nestedcheckbox"
-              type = "checkbox"
-              name = "nonnative"
-              checked = {formValues.nonnative || false}
-              onChange = {(event) => handleInputChange("nonnative", event)}
-            />Nonnative
-          </label>
-        </div>
-
-        <div className = "control">
-          <label htmlFor = "invasive">
-            <input
-              id = "invasive"
-              className = "nestedcheckbox"
-              type = "checkbox"
-              name = "invasive"
-              checked = {formValues.invasive || false}
-              onChange = {(event) => handleInputChange("invasive", event)}
-            />Invasive
-          </label>
-        </div>
-      </div> */}
-
       <Footer />
     </form>
   );

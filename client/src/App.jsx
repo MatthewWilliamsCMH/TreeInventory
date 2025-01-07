@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <Header formValues={formValues} /> */}
       <Navbar selectedTree={selectedTree} />
       <Outlet context = {{ 
         selectedTree, setSelectedTree, 
