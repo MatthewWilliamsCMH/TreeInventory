@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Header.css";
 
 function DangerFlags({ formValues }) {
-  // State to track nonnative and invasive status
+  //track nonnative and invasive status
   const [nonnativeStatus, setNonnativeStatus] = useState(false);
   const [invasiveStatus, setInvasiveStatus] = useState(false);
 

@@ -10,8 +10,6 @@ const Navbar = ({ selectedTree }) => {
     switch (location.pathname) {
       case "/": return "map";
       case "/TreeData": return "TreeData";
-      // case "/sitedata": return "siteData";
-      // case "/caredata": return "careData";
       case "/inventory": return "inventory";
       default: return "map";
     }
@@ -23,23 +21,14 @@ const Navbar = ({ selectedTree }) => {
 
     if ((selectedValue === "map" && "location.pathname" !== "/") ||
       (selectedValue === "TreeData" && "location.pathname" !== "/TreeData") ||
-      // (selectedValue === "siteData" && "location.pathname" !== "/siteData") ||
-      // (selectedValue === "careData" && "location.pathname" !== "/caredata") ||
       (selectedValue === "inventory" && "location.pathname" !== "/inventory")) {
       switch (selectedValue) {
         case "map":
           navigate("/");
-          //can I refetch here to redisplay the map instead of the hackey code in treemap?
           break;
         case "TreeData":
           navigate("/TreeData");
           break;
-        // case "siteData":
-        //   navigate("/sitedata");
-        //   break;
-        // case "careData":
-        //   navigate("/caredata");
-        //   break;
         case "inventory":
           navigate("/inventory");
           break;
@@ -58,12 +47,6 @@ const Navbar = ({ selectedTree }) => {
       case "/TreeData":
         setSelectedOption("TreeData");
         break;
-      // case "/sitedata":
-      //   setSelectedOption("siteData");
-      //   break;
-      // case "/caredata":
-      //   setSelectedOption("careData");
-      //   break;
       case "/inventory":
         setSelectedOption("inventory");
         break;
@@ -99,28 +82,6 @@ const Navbar = ({ selectedTree }) => {
           />
           <span className="tooltip">Physical data</span>
         </label>
-        {/* <label className="radiooption">
-          <input
-            type="radio"
-            name="nav"
-            value="siteData"
-            checked={selectedOption === "siteData"}
-            onChange={handleRadioChange}
-            disabled={isDisabled}
-          />
-          <span className="tooltip">Site data</span>
-        </label>
-        <label className="radiooption">
-          <input
-            type="radio"
-            name="nav"
-            value="careData"
-            checked={selectedOption === "careData"}
-            onChange={handleRadioChange}
-            disabled={isDisabled}
-          />
-          <span className="tooltip">Care data</span>
-        </label> */}
         <label className="radiooption">
           <input
             type="radio"

@@ -1,17 +1,17 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
 
-import Footer from "../Footer/Footer";
-import DangerFlags from "../Header/DangerFlags";
-import { handleFieldChange, commonToScientificList, dbhList, gardenList, siteInfoList, maintenanceNeedsList } from "../../utils/fieldChangeHandler";
-import { formatDateForDisplay } from "../../utils/dateHandler";
+import Footer from "../Footer/Footer.jsx";
+import DangerFlags from "../Header/DangerFlags.jsx";
+import { handleFieldChange, commonToScientificList, dbhList, gardenList, siteInfoList, careNeedsList } from "../../utils/fieldChangeHandler.jsx";
+import { formatDateForDisplay } from "../../utils/dateHandler.jsx";
 
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
 
 const TreeData = () => {
   const { formValues, setFormValues, treeLocation, setTreeLocation, formStyle } = useOutletContext();
  
-  //-------------------- handle field changes --------------------
+  //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
     const value = event.target.type === "checkbox" ? event.target.checked : event.target.value; //handle checkboxes differently; they don't return a value
     setFormValues(prevValues => handleFieldChange(prevValues, field, value)); // Use imported handleFieldChange function
@@ -183,15 +183,15 @@ const TreeData = () => {
               <label>Care needs</label>
               <div className = "column">
                 <div className = "checkboxgroup">
-                  {maintenanceNeedsList.map((need) => (
+                  {careNeedsList.map((need) => (
                     <label htmlFor = {need} key = {need}>
                       <input
                         id = {need}
                         className = "checkbox"
                         type = "checkbox"
                         name = {need}
-                        checked = {formValues.maintenanceNeeds[need] || false}
-                        onChange = {(event) => handleInputChange(`maintenanceNeeds.${need}`, event)} 
+                        checked = {formValues.careNeeds[need] || false}
+                        onChange = {(event) => handleInputChange(`careNeeds.${need}`, event)} 
                       />
                       {need
                         .replace(/([A-Z])/g, ' $1')

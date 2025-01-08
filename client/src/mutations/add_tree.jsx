@@ -15,7 +15,7 @@ export const ADD_TREE = gql`
     $installedBy: String
     $felledDate: String
     $felledBy: String
-    $maintenanceNeeds: MaintenanceNeedsInput
+    $careNeeds: careNeedsInput
     $careHistory: String
     $hidden: Boolean
   ) {
@@ -33,7 +33,7 @@ export const ADD_TREE = gql`
       installedBy: $installedBy
       felledDate: $felledDate
       felledBy: $felledBy
-      maintenanceNeeds: $maintenanceNeeds
+      careNeeds: $careNeeds
       careHistory: $careHistory
       hidden: $hidden
     ) {
@@ -66,7 +66,7 @@ export const ADD_TREE = gql`
       installedBy
       felledDate
       felledBy
-      maintenanceNeeds {
+      careNeeds {
         install
         raiseCrown
         routinePrune

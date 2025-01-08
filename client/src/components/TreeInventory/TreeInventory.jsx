@@ -47,7 +47,6 @@ const TreeInventory = () => {
     return 0;
   });
 
-  // Sorting handler
   const handleSort = (columnKey) => {
     // If the same column is clicked, reverse the direction
     setSortConfig((prev) => ({

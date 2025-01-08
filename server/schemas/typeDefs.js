@@ -14,7 +14,7 @@ const typeDefs = gql `
     proximateFence: Boolean!
   }
 
-  input MaintenanceNeedsInput {
+  input careNeedsInput {
     install: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
@@ -58,7 +58,7 @@ const typeDefs = gql `
     proximateFence: Boolean!
   }
 
-  type MaintenanceNeeds {
+  type careNeeds {
     install: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
@@ -106,7 +106,7 @@ const typeDefs = gql `
     installedBy: String
     felledDate: String
     felledBy: String
-    maintenanceNeeds: MaintenanceNeeds
+    careNeeds: careNeeds
     careHistory: String
     hidden: Boolean!
   }
@@ -134,7 +134,7 @@ const typeDefs = gql `
       installedBy: String
       felledDate: String
       felledBy: String
-      maintenanceNeeds: MaintenanceNeedsInput
+      careNeeds: careNeedsInput
       careHistory: String
       hidden: Boolean!
     ): Tree
@@ -154,7 +154,7 @@ const typeDefs = gql `
       installedBy: String
       felledDate: String
       felledBy: String
-      maintenanceNeeds: MaintenanceNeedsInput
+      careNeeds: careNeedsInput
       careHistory: String
       hidden: Boolean!
     ): Tree

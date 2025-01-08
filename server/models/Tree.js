@@ -5,7 +5,7 @@ const treeSchema = new Schema({
   commonName: {type: String, required: true},
   species: { type: Schema.Types.ObjectId, ref: 'Species', required: true },
   variety: { type: String },
-  dbh: { type: String }, //make required once all trees have been placed; can add enum to this to validate user choices; can create a file of constants to contain the list of choices then import it into here and into the front end so that choices are not repeated in two places
+  dbh: { type: String }, //require once all trees have a value; can add "enum" to this to validate input; create a file of constants for lists?
   notes: { type: String },
   photos: { //store url for images
     bark: { type: String, unique: true },
@@ -20,7 +20,7 @@ const treeSchema = new Schema({
     northing: { type: Number, required: true }, //always positive at SC
     easting: { type: Number, required: true } //always negative at SC
   },
-  garden: { type: String }, //make required once all trees have been placed; can add enum to this to validate user choices; can create a file of constants to contain the list of choices then import it into here and into the front end so that choices are not repeated in two places
+  garden: { type: String }, //require once all trees have a value; can add "enum" to this to validate input; create a file of constants for lists?
   siteInfo: {
     slope: { type: Boolean, required: true, default: false },
     overheadLines: { type: Boolean, required: true, default: false },
@@ -32,7 +32,7 @@ const treeSchema = new Schema({
   installedBy: { type: String },
   felledDate: { type: String },
   felledBy: { type: String },
-  maintenanceNeeds: {
+  careNeeds: {
     install: { type: Boolean, required: true, default: false },
     raiseCrown: { type: Boolean, required: true, default: false },
     routinePrune: { type: Boolean, required: true, default: false },

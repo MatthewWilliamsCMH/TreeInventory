@@ -180,7 +180,7 @@ export const siteInfoList = [
   "proximateFence"
 ]
 
-export const maintenanceNeedsList = [
+export const careNeedsList = [
   "install",
   "raiseCrown",
   "routinePrune",

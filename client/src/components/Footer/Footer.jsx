@@ -46,17 +46,17 @@ const Footer = () => {
             installedBy: formValues.installedBy,
             felledDate: formValues.felledDate,
             felledBy: formValues.felledBy,
-            maintenanceNeeds: formValues.maintenanceNeeds ? {
-              install: formValues.maintenanceNeeds.install,
-              raiseCrown: formValues.maintenanceNeeds.raiseCrown,
-              routinePrune: formValues.maintenanceNeeds.routinePrune,
-              trainingPrune: formValues.maintenanceNeeds.trainingPrune,
-              priorityPrune: formValues.maintenanceNeeds.priorityPrune,
-              pestTreatment: formValues.maintenanceNeeds.pestTreatment,
-              installGrate: formValues.maintenanceNeeds.installGrate,
-              removeGrate: formValues.maintenanceNeeds.removeGrate,
-              fell: formValues.maintenanceNeeds.fell,
-              removeStump: formValues.maintenanceNeeds.removeStump
+            careNeeds: formValues.careNeeds ? {
+              install: formValues.careNeeds.install,
+              raiseCrown: formValues.careNeeds.raiseCrown,
+              routinePrune: formValues.careNeeds.routinePrune,
+              trainingPrune: formValues.careNeeds.trainingPrune,
+              priorityPrune: formValues.careNeeds.priorityPrune,
+              pestTreatment: formValues.careNeeds.pestTreatment,
+              installGrate: formValues.careNeeds.installGrate,
+              removeGrate: formValues.careNeeds.removeGrate,
+              fell: formValues.careNeeds.fell,
+              removeStump: formValues.careNeeds.removeStump
             } : null,
             careHistory: formValues.careHistory,
             hidden: formValues.hidden
@@ -97,17 +97,17 @@ const Footer = () => {
             installedBy: formValues.installedBy,
             felledDate: formValues.felledDate,
             felledBy: formValues.felledBy,
-            maintenanceNeeds: formValues.maintenanceNeeds ? {
-              install: formValues.maintenanceNeeds.install,
-              raiseCrown: formValues.maintenanceNeeds.raiseCrown,
-              routinePrune: formValues.maintenanceNeeds.routinePrune,
-              trainingPrune: formValues.maintenanceNeeds.trainingPrune,
-              priorityPrune: formValues.maintenanceNeeds.priorityPrune,
-              pestTreatment: formValues.maintenanceNeeds.pestTreatment,
-              installGrate: formValues.maintenanceNeeds.installGrate,
-              removeGrate: formValues.maintenanceNeeds.removeGrate,
-              fell: formValues.maintenanceNeeds.fell,
-              removeStump: formValues.maintenanceNeeds.removeStump
+            careNeeds: formValues.careNeeds ? {
+              install: formValues.careNeeds.install,
+              raiseCrown: formValues.careNeeds.raiseCrown,
+              routinePrune: formValues.careNeeds.routinePrune,
+              trainingPrune: formValues.careNeeds.trainingPrune,
+              priorityPrune: formValues.careNeeds.priorityPrune,
+              pestTreatment: formValues.careNeeds.pestTreatment,
+              installGrate: formValues.careNeeds.installGrate,
+              removeGrate: formValues.careNeeds.removeGrate,
+              fell: formValues.careNeeds.fell,
+              removeStump: formValues.careNeeds.removeStump
             } : null,
             careHistory: formValues.careHistory,
             hidden: formValues.hidden

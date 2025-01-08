@@ -18,7 +18,7 @@
     "installedBy": "Landscape Committee",
     "felledDate": "",
     "FelledBy": "",
-    "maintenanceNeeds": {
+    "careNeeds": {
       "install": false,
       "raiseCrown": false,
       "routinePrune": false,
@@ -61,7 +61,7 @@
     "installedBy": "",
     "felledDate": "01/06/2022",
     "felledBy": "Joseph Tree Service",
-    "maintenanceNeeds": {
+    "careNeeds": {
       "install": false,
       "raiseCrown": false,
       "routinePrune": false,

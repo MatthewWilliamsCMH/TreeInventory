@@ -34,7 +34,7 @@ export const GET_TREE = gql`
       installedBy
       felledDate
       felledBy
-      maintenanceNeeds {
+      careNeeds {
         install
         raiseCrown
         routinePrune
