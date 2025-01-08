@@ -6,8 +6,8 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from "@ap
 import App from "./App";
 import TreeMap from "./components/TreeMap/TreeMap";
 import PhysicalDataForm from "./components/PhysicalData/PhysicalDataForm";
-import SiteDataForm from "./components/SiteData/SiteDataForm";
-import CareDataForm from "./components/CareData/CareDataForm";
+// import SiteDataForm from "./components/SiteData/SiteDataForm";
+// import CareDataForm from "./components/CareData/CareDataForm";
 import TreeInventory from "./components/TreeInventory/TreeInventory";
 
 const httpLink = createHttpLink({
@@ -31,14 +31,14 @@ const router = createBrowserRouter([
         path: "/physicaldata",
         element: <PhysicalDataForm />
       },
-      {
-        path: "/sitedata",
-        element: <SiteDataForm />
-      },
-      {
-        path: "/caredata",
-        element: <CareDataForm />
-      },
+      // {
+      //   path: "/sitedata",
+      //   element: <SiteDataForm />
+      // },
+      // {
+      //   path: "/caredata",
+      //   element: <CareDataForm />
+      // },
       {
         path: "/inventory",
         element: <TreeInventory />
