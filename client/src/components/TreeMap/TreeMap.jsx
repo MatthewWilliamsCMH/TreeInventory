@@ -42,7 +42,9 @@ const TreeMap = () => {
   useEffect(() => {
     //the map container exists but is empty
     if (mapRef.current && !map.current) {
-      map.current = L.map(mapRef.current).setView([39.97738230836944, -83.04934859084177], 19);
+      map.current = L.map(mapRef.current, {zoomControl: false,
+      center: [39.97738230836944, -83.04934859084177],
+      zoom: 19});
       //alternate tile layers
       // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);

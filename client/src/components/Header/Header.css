@@ -1,14 +1,12 @@
 #header {
-    display: flex;
-    justify-content: space-between;
     background-color: var(--blue-green);
     color: var(--pale-yellow);
     padding: 20px; 
     position: relative;
-    
+    width: 100vw;
   }
  #header h1 {
-  font-size:2rem;
+  font-size: 2rem;
  }
 
  .danger {
