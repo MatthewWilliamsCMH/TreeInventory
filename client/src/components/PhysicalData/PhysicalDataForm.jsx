@@ -3,7 +3,9 @@ import { useOutletContext } from "react-router-dom";
 
 import Footer from "../Footer/Footer";
 import DangerFlags from "../Header/DangerFlags";
-import { handleFieldChange, commonToScientificList, dbhList, gardenList } from "../../utils/fieldChangeHandler";
+import { handleFieldChange, commonToScientificList, dbhList, gardenList, siteInfoList, maintenanceNeedsList } from "../../utils/fieldChangeHandler";
+import { formatDateForDisplay } from "../../utils/dateHandler";
+
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
 
 const PhysicalDataForm = () => {
@@ -50,6 +52,7 @@ const PhysicalDataForm = () => {
                   ))}
                 </select>
               </div>
+
               <div className = "control">
                 <label htmlFor = "scientificName">Scientific</label>
                 <select
@@ -78,9 +81,7 @@ const PhysicalDataForm = () => {
                 onChange = {(event) => handleInputChange("variety", event)}
               />
             </div>
-          </div>
 
-          <div className = "column">
             <div className = "control">
               <label htmlFor = "dbh">DBH</label>
               <select 
@@ -110,6 +111,96 @@ const PhysicalDataForm = () => {
                   </option>
                 ))}
               </select>
+            </div>
+
+            <div className = "control">
+              <label>Site data</label>
+              <div className = "column">
+                <div className = "checkboxgroup">
+                  {siteInfoList.map((condition) => (
+                    <label htmlFor = {condition} key = {condition}>
+                      <input
+                        id = {condition}
+                        className = "checkbox"
+                        type = "checkbox"
+                        name = {condition}
+                        checked = {formValues.siteInfo[condition] || false}
+                        onChange = {(event) => handleInputChange(`siteInfo.${condition}`, event)}
+                      />
+                      {condition
+                        .replace(/([A-Z])/g, ' $1')
+                        .replace(/^./, str => str.toUpperCase())
+                      }
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className = "column">
+            <div className = "control">
+              <label htmlFor = "installedDate">Installed on</label>
+              <input 
+                id = "installedDate"
+                type = "text"
+                onChange = {(event) => handleInputChange("installedDate", event)} 
+                defaultValue = {formatDateForDisplay(formValues.installedDate)}
+              />
+            </div>
+
+            <div className = "control">
+              <label htmlFor = "installedBy">Installed by</label>
+              <input
+                id = "installedBy"
+                type = "text"
+                defaultValue = {formValues.installedBy || ""} 
+                onChange = {(event) => handleInputChange("installedBy", event)}
+              />
+            </div>
+
+            <div className = "control">
+              <label htmlFor = "felledDate">Felled on</label>
+              <input 
+                id = "felledDate"
+                type = "text"
+                defaultValue = {formatDateForDisplay(formValues.felledDate)}
+                onChange = {(event) => handleInputChange("felledDate", event)} 
+              />
+            </div>
+
+            <div className = "control">
+              <label htmlFor = "felledBy">Felled by</label>
+              <input
+                id = "felledBy"
+                type = "text"
+                defaultValue = {formValues.felledBy || ""} 
+                onChange = {(event) => handleInputChange("felledBy", event)}
+              />
+            </div>
+
+            <div className = "control">
+              <label>Care needs</label>
+              <div className = "column">
+                <div className = "checkboxgroup">
+                  {maintenanceNeedsList.map((need) => (
+                    <label htmlFor = {need} key = {need}>
+                      <input
+                        id = {need}
+                        className = "checkbox"
+                        type = "checkbox"
+                        name = {need}
+                        checked = {formValues.maintenanceNeeds[need] || false}
+                        onChange = {(event) => handleInputChange(`maintenanceNeeds.${need}`, event)} 
+                      />
+                      {need
+                        .replace(/([A-Z])/g, ' $1')
+                        .replace(/^./, str => str.toUpperCase())
+                      }
+                    </label>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

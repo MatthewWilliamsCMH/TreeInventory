@@ -21,11 +21,8 @@ const CareDataForm = () => {
     <>
       <div className = "danger-flags-container">
         <DangerFlags formValues = {formValues}/>
-      </div>    <form style={formStyle}>
-      <div className="control">
-        <label htmlFor = "lastVisited">Last visited:</label>
-        <p id="lastVisited">{formatDateForDisplay(formValues.lastVisited)}</p>
       </div>
+      <form style={formStyle}>
 
       <div className = "control">
         <label htmlFor = "installedDate">Installed on:</label>

@@ -36,9 +36,9 @@ form {
   border-radius: 1rem; 
 }
 
-form > .controlgroup:first-of-type {
+/* form > .controlgroup:first-of-type {
   margin-top: 0px;
-}
+} */
 
 .columns {
   display: flex;
@@ -46,7 +46,7 @@ form > .controlgroup:first-of-type {
 }
 
 .column {
-  width: calc(100% - 40px)
+  width: calc(100% - 40px);
 }
 
 label {
@@ -73,7 +73,7 @@ label {
 
 .control label {
   padding-top: 5px;
-  width: 70px;
+  width: 90px;
   margin-right: 10px;
 }
 
@@ -82,19 +82,23 @@ label {
 }
 
 .checkboxgroup {
-  display: block;
-  column-count: 2;
-  width: max-content;
-}
-
-.checkboxgroup label {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc((21px * 5) + (5px * 4));
+  gap: 5px 40px;
+  margin-bottom: 10px;
 }
 
 select, input, textarea {
   padding: 2px;
   border: 1px solid #888;
   height: 32px;
+}
+
+.checkbox {
+  height: unset;
+  margin-right: 5px;
 }
 
 textarea {
@@ -107,11 +111,10 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
-  width: calc(100% - 80px);
+  width: calc(100% - 100px);
 }
 
 .photo {
-  /* width: calc((100% - 100px) / 6); */
   min-width: 100px;
   flex: 1 1 calc((100% - 100px) / 6);
   color: #aaa;
@@ -125,7 +128,7 @@ textarea {
 
 .nestedcheckbox { /*adds space between box and label when checkbox input is nested inside a label */
   margin-right: 5px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 #map {
