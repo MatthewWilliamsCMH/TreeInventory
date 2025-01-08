@@ -1,5 +1,5 @@
 {
-  "name": "tree-mapper",
+  "name": "summit-chase-tree-inventory",
   "version": "1.0.0",
   "scripts": {
     "start": "node server/server.js",

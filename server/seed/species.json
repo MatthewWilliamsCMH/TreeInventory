@@ -37,7 +37,7 @@
     "scientificName": "Cornus florida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "6a00b8"
+    "markerColor": "6A00B8"
   },
   {
     "family": "Cupressaceae",
@@ -317,7 +317,7 @@
     "scientificName": "Magnolia x soulangeana",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "9e069e"
+    "markerColor": "9E069E"
   },
   {
     "family": "Magnoliaceae",
@@ -325,7 +325,7 @@
     "scientificName": "Magnolia virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "9e069e"
+    "markerColor": "9E069E"
   },
   {
     "family": "Magnoliaceae",
@@ -333,7 +333,7 @@
     "scientificName": "Liriodendron tulipifera",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "9e069e"
+    "markerColor": "9E069E"
   },
   {
     "family": "Malvaceae",
