@@ -1,9 +1,9 @@
 table {
   background-color: white;
-  max-width: 1024px;
   width: 100%;
-  margin: auto;
-  margin-top: 10px;
+  max-width: calc(100% - 3rem - 60px);
+  margin-left: calc(3rem + 40px);
+  margin-top: 5rem;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;

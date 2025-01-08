@@ -1,10 +1,13 @@
 #header {
-    background-color: var(--blue-green);
-    color: var(--pale-yellow);
-    padding: 20px; 
-    position: relative;
-    width: 100vw;
-  }
+  background-color: var(--blue-green);
+  color: var(--pale-yellow);
+  padding: 20px; 
+  position:absolute;
+  width: 100vmax;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
  #header h1 {
   font-size: 2rem;
  }
