@@ -7,9 +7,9 @@ import { UPDATE_TREE } from "../../mutations/update_tree";
 import "./Footer.css";
 
 const Footer = () => {
-  const { formValues, setFormValues, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are treeLocation and setTreeLocationNecessary?
-  const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE);
-  const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE);
+  const { formValues, setFormValues, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation?
+  const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
+  const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
@@ -41,7 +41,7 @@ const Footer = () => {
               proximateStructure: formValues.siteInfo.proximateStructure,
               proximateFence: formValues.siteInfo.proximateFence,
             } : null,
-            lastVisited: new Date().toLocaleDateString("en-US"),
+            lastUpdated: new Date().toLocaleDateString("en-US"),
             installedDate: formValues.installedDate,
             installedBy: formValues.installedBy,
             felledDate: formValues.felledDate,
@@ -92,7 +92,7 @@ const Footer = () => {
               proximateStructure: formValues.siteInfo.proximateStructure,
               proximateFence: formValues.siteInfo.proximateFence,
             } : null,
-            lastVisited: new Date().toLocaleDateString("en-US"),
+            lastUpdated: new Date().toLocaleDateString("en-US"),
             installedDate: formValues.installedDate,
             installedBy: formValues.installedBy,
             felledDate: formValues.felledDate,
@@ -132,9 +132,9 @@ const Footer = () => {
   return (
     <div id="footer">
       <div id = "autodata">
-        <p>Last visited: { 
-          formValues.lastVisited 
-            ? new Date(parseInt(formValues.lastVisited)).toLocaleDateString('en-US') 
+        <p>Last updated: { 
+          formValues.lastUpdated 
+            ? new Date(parseInt(formValues.lastUpdated)).toLocaleDateString('en-US') 
             : new Date().toLocaleDateString('en-US')
         }</p>
       </div>

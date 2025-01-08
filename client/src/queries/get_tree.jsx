@@ -29,7 +29,7 @@ export const GET_TREE = gql`
         proximateStructure
         proximateFence
       }
-      lastVisited
+      lastUpdated
       installedDate
       installedBy
       felledDate

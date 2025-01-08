@@ -10,7 +10,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97821072930314,
       "easting": -83.04870294046081
@@ -53,7 +53,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97829333858399,
       "easting": -83.0487947372537
@@ -96,7 +96,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": -83.04863687765082,
       "easting": 39.97823912934129    },
@@ -138,7 +138,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97828812493684,
       "easting": -83.04879164566931
@@ -181,7 +181,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97820176027418,
       "easting": -83.04865329281412
@@ -224,7 +224,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97687593681068,
       "easting": -83.04873785944054
@@ -267,7 +267,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97693379688566,
       "easting": -83.04967015863225
@@ -310,7 +310,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97701207577875,
       "easting": -83.04972752004889
@@ -353,7 +353,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.976761356094975,
       "easting": -83.05011868720236
@@ -396,7 +396,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.97771880819777,
       "easting": -83.04885632474114
@@ -439,7 +439,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976890889384066,
       "easting": -83.04951262082639
@@ -482,7 +482,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97685351497605,
       "easting": -83.04962232646538
@@ -525,7 +525,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/15/2022",
+    "lastUpdated": "10/15/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -568,7 +568,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.977884687693006,
       "easting": -83.05020507574656
@@ -611,7 +611,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978017425010215,
       "easting": -83.05034593066961
@@ -654,7 +654,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97781712128366,
       "easting": -83.05024485032285
@@ -697,7 +697,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97797388496224,
       "easting": -83.05025059295153
@@ -740,7 +740,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.977898826162395,
       "easting": -83.05027324599577
@@ -783,7 +783,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97791235524,
       "easting": -83.05029373964602
@@ -826,7 +826,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97789532109209,
       "easting": -83.05030008156326
@@ -869,7 +869,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9778276042836,
       "easting": -83.0503548867174
@@ -912,7 +912,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97825326226124,
       "easting": -83.04870893367249
@@ -955,7 +955,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97855675540101,
       "easting": -83.04894956455688
@@ -998,7 +998,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97690907353099,
       "easting": -83.04957398726897
@@ -1041,7 +1041,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97798477248325,
       "easting": -83.05053432640715
@@ -1084,7 +1084,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97793909646449,
       "easting": -83.05053873435426
@@ -1127,7 +1127,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.978223464794176,
       "easting": -83.04883429965504
@@ -1170,7 +1170,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97722296082788,
       "easting": -83.04917026925922
@@ -1213,7 +1213,7 @@
     "photos": "",
     "nonnative": true,
     "invasive": true,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -1256,7 +1256,7 @@
     "photos": "",
     "nonnative": true,
     "invasive": true,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -1299,7 +1299,7 @@
     "photos": "",
     "nonnative": true,
     "invasive": true,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -1342,7 +1342,7 @@
     "photos": "",
     "nonnative": true,
     "invasive": true,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -1385,7 +1385,7 @@
     "photos": "",
     "nonnative": true,
     "invasive": true,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -1428,7 +1428,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977134045782755,
       "easting": -83.0487816466436
@@ -1471,7 +1471,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97821929579098,
       "easting": -83.04907726276937
@@ -1514,7 +1514,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97829077942318,
       "easting": -83.04896775036589
@@ -1557,7 +1557,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.978272021710616,
       "easting": -83.04894306991164
@@ -1600,7 +1600,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.978260652349434,
       "easting": -83.0489527929553
@@ -1643,7 +1643,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97824150647341,
       "easting": -83.04898381007573
@@ -1686,7 +1686,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.9782918466349,
       "easting": -83.04894581857333
@@ -1729,7 +1729,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97827777574202,
       "easting": -83.04896006491661
@@ -1772,7 +1772,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97819299252022,
       "easting": -83.04895801448521
@@ -1815,7 +1815,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97819050777958,
       "easting": -83.04890431133686
@@ -1858,7 +1858,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97819383335378,
       "easting": -83.04863304052843
@@ -1901,7 +1901,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97676251221081,
       "easting": -83.05060536531104
@@ -1944,7 +1944,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97695015922287,
       "easting": -83.04957594495767
@@ -1987,7 +1987,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97704027370283,
       "easting": -83.05005700847673
@@ -2030,7 +2030,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97686242285852,
       "easting": -83.05015182920411
@@ -2073,7 +2073,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97809567625855,
       "easting": -83.05044310990957
@@ -2116,7 +2116,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978064797220604,
       "easting": -83.0504400137127
@@ -2159,7 +2159,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97809303970026,
       "easting": -83.05048681166464
@@ -2202,7 +2202,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97808903328345,
       "easting": -83.05049744644245
@@ -2245,7 +2245,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97804996105326,
       "easting": -83.05049989573932
@@ -2288,7 +2288,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97801242814596,
       "easting": -83.05049239200575
@@ -2331,7 +2331,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97803068537436,
       "easting": -83.0505136449259
@@ -2374,7 +2374,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978016542994965,
       "easting": -83.05051967540633
@@ -2417,7 +2417,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97795500263807,
       "easting": -83.05052015623363
@@ -2460,7 +2460,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.9772114166842,
       "easting": -83.04850989560663
@@ -2503,7 +2503,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97791012240736,
       "easting": -83.05044046857527
@@ -2546,7 +2546,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97786631266463,
       "easting": -83.0504568940013
@@ -2589,7 +2589,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97790578621906,
       "easting": -83.05054221279741
@@ -2632,7 +2632,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9778355325204,
       "easting": -83.05026165282541
@@ -2675,7 +2675,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/17/2020",
+    "lastUpdated": "08/17/2020",
     "location": {
       "northing": 39.978091888710715,
       "easting": -83.04884984775319
@@ -2718,7 +2718,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/17/2020",
+    "lastUpdated": "08/17/2020",
     "location": {
       "northing": 39.97809229955949,
       "easting": -83.04882357625375
@@ -2761,7 +2761,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/17/2020",
+    "lastUpdated": "08/17/2020",
     "location": {
       "northing": 39.97806518351964,
       "easting": -83.0488734384433
@@ -2804,7 +2804,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -2847,7 +2847,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -2890,7 +2890,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -2933,7 +2933,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -2976,7 +2976,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3019,7 +3019,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3062,7 +3062,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3105,7 +3105,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3148,7 +3148,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3191,7 +3191,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3234,7 +3234,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3277,7 +3277,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3320,7 +3320,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3363,7 +3363,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3406,7 +3406,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.9781694053374,
       "easting": -83.04896428975324
@@ -3449,7 +3449,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.978372202896715,
       "easting": -83.0489330723376
@@ -3492,7 +3492,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.976789348453345,
       "easting": -83.04868862380039
@@ -3535,7 +3535,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.976775458557725,
       "easting": -83.04880433111973
@@ -3578,7 +3578,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.97792904729715,
       "easting": -83.04845621813651
@@ -3621,7 +3621,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97788335244315,
       "easting": -83.05024538518383
@@ -3664,7 +3664,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3707,7 +3707,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97741120637381,
       "easting": -83.04903517279315
@@ -3750,7 +3750,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -3793,7 +3793,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978052703871676,
       "easting": -83.05019742212808
@@ -3836,7 +3836,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97805436268736,
       "easting": -83.05029710728486
@@ -3879,7 +3879,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.976841859617835,
       "easting": -83.04896049160884
@@ -3922,7 +3922,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97827783537254,
       "easting": -83.04859781833076
@@ -3965,7 +3965,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97828578228505,
       "easting": -83.04871338413966
@@ -4008,7 +4008,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.978015618201525,
       "easting": -83.04978727323875
@@ -4051,7 +4051,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977741092065145,
       "easting": -83.05010792797312
@@ -4094,7 +4094,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97803188750413,
       "easting": -83.04920471969427
@@ -4137,7 +4137,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97790966237062,
       "easting": -83.04865779406872
@@ -4180,7 +4180,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/15/2020",
+    "lastUpdated": "09/15/2020",
     "location": {
       "northing": 39.9780621797309,
       "easting": -83.04876395019704
@@ -4223,7 +4223,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/15/2020",
+    "lastUpdated": "09/15/2020",
     "location": {
       "northing": 39.97798610946431,
       "easting": -83.04931101992128
@@ -4266,7 +4266,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -4309,7 +4309,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97786068994755,
       "easting": -83.05017669510603
@@ -4352,7 +4352,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976739561655265,
       "easting": -83.04976640879988
@@ -4395,7 +4395,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97674065132639,
       "easting": -83.04948876713121
@@ -4438,7 +4438,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976733023628064,
       "easting": -83.04941020271534
@@ -4481,7 +4481,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97672566834671,
       "easting": -83.04931315255465
@@ -4524,7 +4524,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/19/2020",
+    "lastUpdated": "08/19/2020",
     "location": {
       "northing": 39.97690047594123,
       "easting": -83.05029976718275
@@ -4567,7 +4567,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/19/2020",
+    "lastUpdated": "08/19/2020",
     "location": {
       "northing": 39.976948010943765,
       "easting": -83.05035490636543
@@ -4610,7 +4610,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "08/19/2020",
+    "lastUpdated": "08/19/2020",
     "location": {
       "northing": 39.97694683724037,
       "easting": -83.05031048869046
@@ -4653,7 +4653,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.976882064706444,
       "easting": -83.04858792455805
@@ -4696,7 +4696,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/24/2020",
+    "lastUpdated": "07/24/2020",
     "location": {
       "northing": 39.97677663152667,
       "easting": -83.05045533951807
@@ -4739,7 +4739,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.976746396483236,
       "easting": -83.05031853265118
@@ -4782,7 +4782,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977212816568844,
       "easting": -83.04910500176653
@@ -4825,7 +4825,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97700161217598,
       "easting": -83.05008689173704
@@ -4868,7 +4868,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.9772076055748,
       "easting": -83.05041337753525
@@ -4911,7 +4911,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97835224629905,
       "easting": -83.04847336988735
@@ -4954,7 +4954,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97827921433661,
       "easting": -83.04847265578455
@@ -4997,7 +4997,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97781638654509,
       "easting": -83.05058549173667
@@ -5040,7 +5040,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9774339330733,
       "easting": -83.05051936445764
@@ -5083,7 +5083,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.9778054700403,
       "easting": -83.04857659552079
@@ -5126,7 +5126,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97728691033958,
       "easting": -83.04882335276925
@@ -5169,7 +5169,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97711660018887,
       "easting": -83.04953286775783
@@ -5212,7 +5212,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977005554455104,
       "easting": -83.04912644396443
@@ -5255,7 +5255,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97683193194615,
       "easting": -83.04996341106674
@@ -5298,7 +5298,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97802695558775,
       "easting": -83.0503339298647
@@ -5341,7 +5341,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978021622161165,
       "easting": -83.05036504393958
@@ -5384,7 +5384,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978033512679566,
       "easting": -83.05035479746044
@@ -5427,7 +5427,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97801569144997,
       "easting": -83.05035183822466
@@ -5470,7 +5470,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.977976507005806,
       "easting": -83.0502978362625
@@ -5513,7 +5513,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97786202667132,
       "easting": -83.05056675392593
@@ -5556,7 +5556,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9777373839004,
       "easting": -83.0502524183371
@@ -5599,7 +5599,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977363598531866,
       "easting": -83.04924020711273
@@ -5642,7 +5642,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977355354816076,
       "easting": -83.04935046762274
@@ -5685,7 +5685,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -5728,7 +5728,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.97742073930177,
       "easting": -83.05029601990303
@@ -5771,7 +5771,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97818406147198,
       "easting": -83.04911021899774
@@ -5814,7 +5814,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.978196990402516,
       "easting": -83.04912257450601
@@ -5857,7 +5857,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97806436074177,
       "easting": -83.05043334848008
@@ -5900,7 +5900,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -5943,7 +5943,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97812921273392,
       "easting": -83.04872078935355
@@ -5986,7 +5986,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97821241470867,
       "easting": -83.04850203655558
@@ -6029,7 +6029,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977193370636805,
       "easting": -83.04931159700621
@@ -6072,7 +6072,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.977039267668964,
       "easting": -83.05045948545879
@@ -6115,7 +6115,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/15/2022",
+    "lastUpdated": "10/15/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -6158,7 +6158,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/14/2022",
+    "lastUpdated": "10/14/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -6201,7 +6201,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/14/2022",
+    "lastUpdated": "10/14/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -6244,7 +6244,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/14/2022",
+    "lastUpdated": "10/14/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -6287,7 +6287,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977996446693155,
       "easting": -83.04936046096894
@@ -6330,7 +6330,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97689338543865,
       "easting": -83.04931154745782
@@ -6373,7 +6373,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.97806781036721,
       "easting": -83.04850452210584
@@ -6416,7 +6416,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97709593243438,
       "easting": -83.04970480365041
@@ -6459,7 +6459,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977376301768736,
       "easting": -83.04893246728221
@@ -6502,7 +6502,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.9772817774729,
       "easting": -83.04946658203406
@@ -6545,7 +6545,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976876277627305,
       "easting": -83.04945645645684
@@ -6588,7 +6588,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97682221417572,
       "easting": -83.04954729039972
@@ -6631,7 +6631,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97710405119291,
       "easting": -83.05021443493803
@@ -6674,7 +6674,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.977427517494725,
       "easting": -83.04854943961486
@@ -6717,7 +6717,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.9775302999631,
       "easting": -83.05020582465988
@@ -6760,7 +6760,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.97723678451293,
       "easting": -83.05027568413583
@@ -6803,7 +6803,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97683100548951,
       "easting": -83.04972298422469
@@ -6846,7 +6846,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.97673821996984,
       "easting": -83.0491625378479
@@ -6889,7 +6889,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.97674732412869,
       "easting": -83.04999899783516
@@ -6932,7 +6932,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/23/2020",
+    "lastUpdated": "07/23/2020",
     "location": {
       "northing": 39.97678010018558,
       "easting": -83.04983706028234
@@ -6975,7 +6975,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.976731995001664,
       "easting": -83.04905369871557
@@ -7018,7 +7018,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7061,7 +7061,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97839732276221,
       "easting": -83.04890608345032
@@ -7104,7 +7104,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/24/2020",
+    "lastUpdated": "07/24/2020",
     "location": {
       "northing": 39.978053895683004,
       "easting": -83.04998466442105
@@ -7147,7 +7147,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.978118381793436,
       "easting": -83.04862587073053
@@ -7190,7 +7190,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977117450354264,
       "easting": -83.0489508506815
@@ -7233,7 +7233,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977087708506765,
       "easting": -83.04890510337442
@@ -7276,7 +7276,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97704240019331,
       "easting": -83.04887507961716
@@ -7319,7 +7319,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97704152296605,
       "easting": -83.04885794928136
@@ -7362,7 +7362,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97698889384824,
       "easting": -83.04887832795775
@@ -7405,7 +7405,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/21/2020",
+    "lastUpdated": "07/21/2020",
     "location": {
       "northing": 39.976825373102415,
       "easting": -83.0486509026237
@@ -7448,7 +7448,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7491,7 +7491,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7534,7 +7534,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7577,7 +7577,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7620,7 +7620,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7663,7 +7663,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -7706,7 +7706,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.9768685143656,
       "easting": -83.05059442187572
@@ -7749,7 +7749,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97776178598288,
       "easting": -83.0506092931075
@@ -7792,7 +7792,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97776578508784,
       "easting": -83.05062243427514
@@ -7835,7 +7835,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.977742231060326,
       "easting": -83.05059859006239
@@ -7878,7 +7878,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97773431687783,
       "easting": -83.05060525409269
@@ -7921,7 +7921,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97773729076467,
       "easting": -83.05059402560197
@@ -7964,7 +7964,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.977736582567275,
       "easting": -83.0506210670355
@@ -8007,7 +8007,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97771757415216,
       "easting": -83.05059347375665
@@ -8050,7 +8050,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97770955630223,
       "easting": -83.05059404864205
@@ -8093,7 +8093,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -8136,7 +8136,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.978312415613786,
       "easting": -83.04849266979059
@@ -8179,7 +8179,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97835595203836,
       "easting": -83.04857174022008
@@ -8222,7 +8222,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97792013627921,
       "easting": -83.05023467511865
@@ -8265,7 +8265,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97788791662498,
       "easting": -83.05054060271854
@@ -8308,7 +8308,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97787235529899,
       "easting": -83.05054553214615
@@ -8351,7 +8351,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97776886178739,
       "easting": -83.0503706413784
@@ -8394,7 +8394,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.977792546576524,
       "easting": -83.0504756006139
@@ -8437,7 +8437,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97772474956322,
       "easting": -83.05043393664161
@@ -8480,7 +8480,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9777438414941,
       "easting": -83.05042818711314
@@ -8523,7 +8523,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.977988002773614,
       "easting": -83.04992986839794
@@ -8566,7 +8566,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97718477249885,
       "easting": -83.04938594936445
@@ -8609,7 +8609,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97781919047529,
       "easting": -83.04979336848322
@@ -8652,7 +8652,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97786566694772,
       "easting": -83.0498453274162
@@ -8695,7 +8695,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97800652221546,
       "easting": -83.04866629384279
@@ -8738,7 +8738,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97715186637574,
       "easting": -83.049677871706
@@ -8781,7 +8781,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97800328341082,
       "easting": -83.04962002651226
@@ -8824,7 +8824,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -8867,7 +8867,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97803694417956,
       "easting": -83.04989409202831
@@ -8910,7 +8910,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97713593015406,
       "easting": -83.04976986301511
@@ -8953,7 +8953,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.9771385469563,
       "easting": -83.05016141616245
@@ -8996,7 +8996,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.97694375242614,
       "easting": -83.04976715418337
@@ -9039,7 +9039,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97698944254429,
       "easting": -83.04999474679255
@@ -9082,7 +9082,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97691601114173,
       "easting": -83.05003284149106
@@ -9125,7 +9125,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/15/2022",
+    "lastUpdated": "10/15/2022",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -9168,7 +9168,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97776229612953,
       "easting": -83.05020985717239
@@ -9211,7 +9211,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -9254,7 +9254,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97730896295233,
       "easting": -83.04890965551508
@@ -9297,7 +9297,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977212816568844,
       "easting": -83.04910500176645
@@ -9340,7 +9340,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/24/2020",
+    "lastUpdated": "07/24/2020",
     "location": {
       "northing": 39.9779968488925,
       "easting": -83.04940899310579
@@ -9383,7 +9383,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -9426,7 +9426,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97806255502291,
       "easting": -83.04901444721317
@@ -9469,7 +9469,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.977953089524505,
       "easting": -83.0487593761959
@@ -9512,7 +9512,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.978029316220535,
       "easting": -83.04857482510583
@@ -9555,7 +9555,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "07/25/2020",
+    "lastUpdated": "07/25/2020",
     "location": {
       "northing": 39.97799458724134,
       "easting": -83.04872166749736
@@ -9598,7 +9598,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.97695253528404,
       "easting": -83.04871875982836
@@ -9641,7 +9641,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976916817594756,
       "easting": -83.04917794209963
@@ -9684,7 +9684,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.97716005952446,
       "easting": -83.04987283341696
@@ -9727,7 +9727,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "10/21/2021",
+    "lastUpdated": "10/21/2021",
     "location": {
       "northing": 39.97756262016857,
       "easting": -83.04878090869028
@@ -9770,7 +9770,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97772474956322,
       "easting": -83.05034386069553
@@ -9813,7 +9813,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97659876297287,
       "easting": -83.04905428617559
@@ -9856,7 +9856,7 @@
     "photos": "",
     "nonnative": false,
     "invasive": false,
-    "lastVisited": "09/22/2020",
+    "lastUpdated": "09/22/2020",
     "location": {
       "northing": 39.976996780266724,
       "easting": -83.05015430448503

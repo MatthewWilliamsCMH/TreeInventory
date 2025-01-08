@@ -60,7 +60,7 @@ const TreeInventory = () => {
   const handleTreeClick = (completeTree) => {
     setSelectedTree(completeTree);
     setFormValues(completeTree);
-    navigate("/physicaldata");
+    navigate("/TreeData");
   };
 
   if (getAllLoading) return <div>Loading trees...</div>;

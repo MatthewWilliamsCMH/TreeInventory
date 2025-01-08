@@ -69,7 +69,7 @@ const resolvers = {
   },
 
   Mutation: {
-    addTree: async (_, { commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
+    addTree: async (_, { commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
         const speciesExists = await Species.findOne({ commonName });
         if (!speciesExists) {
@@ -84,7 +84,7 @@ const resolvers = {
           location,
           garden,
           siteInfo,
-          lastVisited,
+          lastUpdated,
           installedDate,
           installedBy,
           felledDate,
@@ -100,7 +100,7 @@ const resolvers = {
       }
     },
 
-    updateTree: async (_, { id, commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastVisited, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
+    updateTree: async (_, { id, commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, maintenanceNeeds, careHistory, hidden }) => {
       try {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
@@ -119,7 +119,7 @@ const resolvers = {
             location,
             garden,
             siteInfo,
-            lastVisited,
+            lastUpdated,
             installedDate,
             installedBy,
             felledDate,

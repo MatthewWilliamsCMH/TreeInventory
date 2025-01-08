@@ -140,7 +140,7 @@ const TreeMap = () => {
       popupElement.addEventListener("click", () => {
         setSelectedTree(tree);
         setFormValues(tree);
-        navigate("/physicaldata");
+        navigate("/TreeData");
         map.current.closePopup();
       })
     });
@@ -183,7 +183,7 @@ const TreeMap = () => {
         proximateStructure: false,
         proximateFence: false
       },
-      lastVisited: "",
+      lastUpdated: "",
       installedDate: "",
       installedBy: "",
       felledDate: "",
@@ -204,7 +204,7 @@ const TreeMap = () => {
       hidden: false
     };
     setFormValues(newTree);
-    navigate("/physicaldata")
+    navigate("/TreeData")
   }
 
   if (getAllLoading || addTreeLoading || updateTreeLoading|| updateTreeLocationLoading) {

@@ -9,7 +9,7 @@ const Navbar = ({ selectedTree }) => {
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
       case "/": return "map";
-      case "/physicaldata": return "physicalData";
+      case "/TreeData": return "TreeData";
       // case "/sitedata": return "siteData";
       // case "/caredata": return "careData";
       case "/inventory": return "inventory";
@@ -22,7 +22,7 @@ const Navbar = ({ selectedTree }) => {
     setSelectedOption(selectedValue);
 
     if ((selectedValue === "map" && "location.pathname" !== "/") ||
-      (selectedValue === "physicalData" && "location.pathname" !== "/physicaldata") ||
+      (selectedValue === "TreeData" && "location.pathname" !== "/TreeData") ||
       // (selectedValue === "siteData" && "location.pathname" !== "/siteData") ||
       // (selectedValue === "careData" && "location.pathname" !== "/caredata") ||
       (selectedValue === "inventory" && "location.pathname" !== "/inventory")) {
@@ -31,8 +31,8 @@ const Navbar = ({ selectedTree }) => {
           navigate("/");
           //can I refetch here to redisplay the map instead of the hackey code in treemap?
           break;
-        case "physicalData":
-          navigate("/physicaldata");
+        case "TreeData":
+          navigate("/TreeData");
           break;
         // case "siteData":
         //   navigate("/sitedata");
@@ -55,8 +55,8 @@ const Navbar = ({ selectedTree }) => {
       case "/":
         setSelectedOption("map");
         break;
-      case "/physicaldata":
-        setSelectedOption("physicalData");
+      case "/TreeData":
+        setSelectedOption("TreeData");
         break;
       // case "/sitedata":
       //   setSelectedOption("siteData");
@@ -92,8 +92,8 @@ const Navbar = ({ selectedTree }) => {
           <input
             type="radio"
             name="nav"
-            value="physicalData"
-            checked={selectedOption === "physicalData"}
+            value="TreeData"
+            checked={selectedOption === "TreeData"}
             onChange={handleRadioChange}
             disabled={isDisabled}
           />

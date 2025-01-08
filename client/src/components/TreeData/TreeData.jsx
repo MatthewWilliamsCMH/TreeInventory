@@ -8,7 +8,7 @@ import { formatDateForDisplay } from "../../utils/dateHandler";
 
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
 
-const PhysicalDataForm = () => {
+const TreeData = () => {
   const { formValues, setFormValues, treeLocation, setTreeLocation, formStyle } = useOutletContext();
  
   //-------------------- handle field changes --------------------
@@ -227,4 +227,4 @@ const PhysicalDataForm = () => {
   );
 };
 
-export default PhysicalDataForm;
+export default TreeData;

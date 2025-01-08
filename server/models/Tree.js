@@ -15,7 +15,7 @@ const treeSchema = new Schema({
     flower: { type: String, unique: true },
     environs: { type: String, unique: true }
   },
-  lastVisited: { type: Date, required: true }, //automatically generated when the data is input or updated
+  lastUpdated: { type: Date, required: true }, //automatically generated when the data is input or updated
   location: { 
     northing: { type: Number, required: true }, //always positive at SC
     easting: { type: Number, required: true } //always negative at SC

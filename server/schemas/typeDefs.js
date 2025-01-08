@@ -101,7 +101,7 @@ const typeDefs = gql `
     location: Location!
     garden: String
     siteInfo: SiteInfo
-    lastVisited: String!
+    lastUpdated: String!
     installedDate: String
     installedBy: String
     felledDate: String
@@ -129,7 +129,7 @@ const typeDefs = gql `
       location: LocationInput
       garden: String
       siteInfo: SiteInfoInput
-      lastVisited: String!
+      lastUpdated: String!
       installedDate: String
       installedBy: String
       felledDate: String
@@ -149,7 +149,7 @@ const typeDefs = gql `
       location: LocationInput
       garden: String
       siteInfo: SiteInfoInput
-      lastVisited: String!
+      lastUpdated: String!
       installedDate: String
       installedBy: String
       felledDate: String

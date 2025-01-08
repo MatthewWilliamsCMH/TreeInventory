@@ -10,7 +10,7 @@ export const UPDATE_TREE = gql`
     $notes: String
     $garden: String
     $siteInfo: SiteInfoInput
-    $lastVisited: String!
+    $lastUpdated: String!
     $installedDate: String
     $installedBy: String
     $felledDate: String
@@ -28,7 +28,7 @@ export const UPDATE_TREE = gql`
       notes: $notes
       garden: $garden
       siteInfo: $siteInfo
-      lastVisited: $lastVisited
+      lastUpdated: $lastUpdated
       installedDate: $installedDate
       installedBy: $installedBy
       felledDate: $felledDate
@@ -58,7 +58,7 @@ export const UPDATE_TREE = gql`
         proximateStructure
         proximateFence
       }
-      lastVisited
+      lastUpdated
       installedDate
       installedBy
       felledDate

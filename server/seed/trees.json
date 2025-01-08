@@ -12,7 +12,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97821072930314,
       "easting": -83.04870294046081
@@ -57,7 +57,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97829333858399,
       "easting": -83.0487947372537
@@ -102,7 +102,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "07/26/2020",
+    "lastUpdated": "07/26/2020",
     "location": {
       "northing": 39.97823912934129,
       "easting": -83.04863687765082
@@ -147,7 +147,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97828812493684,
       "easting": -83.04879164566931
@@ -192,7 +192,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97820176027418,
       "easting": -83.04865329281412
@@ -237,7 +237,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97692689248152,
       "easting": -83.04878979921342
@@ -282,7 +282,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97693379688566,
       "easting": -83.04967015863225
@@ -327,7 +327,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97701207577875,
       "easting": -83.04972752004889
@@ -372,7 +372,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976776849179764,
       "easting": -83.05016845464708
@@ -417,7 +417,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97778809355384,
       "easting": -83.04889775812627
@@ -462,7 +462,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976890889384066,
       "easting": -83.04951262082639
@@ -507,7 +507,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97685351497605,
       "easting": -83.04962232646538
@@ -552,7 +552,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/15/2022",
+    "lastUpdated": "10/15/2022",
     "location": {
       "northing": 39.97642537659423,
       "easting": -83.04922431707382
@@ -597,7 +597,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977884687693006,
       "easting": -83.05020507574656
@@ -642,7 +642,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978017425010215,
       "easting": -83.05034593066961
@@ -687,7 +687,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97781712128366,
       "easting": -83.05024485032285
@@ -732,7 +732,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97797388496224,
       "easting": -83.05025059295153
@@ -777,7 +777,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977898826162395,
       "easting": -83.05027324599577
@@ -822,7 +822,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97791235524,
       "easting": -83.05029373964602
@@ -867,7 +867,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97789532109209,
       "easting": -83.05030008156326
@@ -912,7 +912,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.9778276042836,
       "easting": -83.0503548867174
@@ -957,7 +957,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97825326226124,
       "easting": -83.04870893367249
@@ -1002,7 +1002,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97858402689905,
       "easting": -83.0489467084408
@@ -1047,7 +1047,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97680716617482,
       "easting": -83.04948784410955
@@ -1092,7 +1092,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97798477248325,
       "easting": -83.05053432640715
@@ -1137,7 +1137,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97793909646449,
       "easting": -83.05053873435426
@@ -1182,7 +1182,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978223464794176,
       "easting": -83.04883429965504
@@ -1227,7 +1227,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977275279425335,
       "easting": -83.04919749498369
@@ -1272,7 +1272,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97803525009116,
       "easting": -83.04833985865116
@@ -1317,7 +1317,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97738113115382,
       "easting": -83.04840892553331
@@ -1362,7 +1362,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97753477002142,
       "easting": -83.04839417338373
@@ -1407,7 +1407,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97769149158736,
       "easting": -83.04847329854967
@@ -1452,7 +1452,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97811438110129,
       "easting": -83.04827883839609
@@ -1497,7 +1497,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977175079822565,
       "easting": -83.04880455136299
@@ -1542,7 +1542,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97821929579098,
       "easting": -83.04907726276937
@@ -1587,7 +1587,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97829077942318,
       "easting": -83.04896775036589
@@ -1632,7 +1632,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978272021710616,
       "easting": -83.04894306991164
@@ -1677,7 +1677,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978260652349434,
       "easting": -83.0489527929553
@@ -1722,7 +1722,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97824150647341,
       "easting": -83.04898381007573
@@ -1767,7 +1767,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.9782918466349,
       "easting": -83.04894581857333
@@ -1812,7 +1812,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97827777574202,
       "easting": -83.04896006491661
@@ -1857,7 +1857,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97819299252022,
       "easting": -83.04895801448521
@@ -1902,7 +1902,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97819050777958,
       "easting": -83.04890431133686
@@ -1947,7 +1947,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97819383335378,
       "easting": -83.04863304052843
@@ -1992,7 +1992,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97681590157767,
       "easting": -83.05057480931282
@@ -2037,7 +2037,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97695015922287,
       "easting": -83.04957594495767
@@ -2082,7 +2082,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97707076931076,
       "easting": -83.05001825094224
@@ -2127,7 +2127,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97686242285852,
       "easting": -83.05015182920411
@@ -2172,7 +2172,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97809567625855,
       "easting": -83.05044310990957
@@ -2217,7 +2217,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978064797220604,
       "easting": -83.0504400137127
@@ -2262,7 +2262,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97809303970026,
       "easting": -83.05048681166464
@@ -2307,7 +2307,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97808903328345,
       "easting": -83.05049744644245
@@ -2352,7 +2352,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97804996105326,
       "easting": -83.05049989573932
@@ -2397,7 +2397,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97801242814596,
       "easting": -83.05049239200575
@@ -2442,7 +2442,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97803068537436,
       "easting": -83.0505136449259
@@ -2487,7 +2487,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.978016542994965,
       "easting": -83.05051967540633
@@ -2532,7 +2532,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97795500263807,
       "easting": -83.05052015623363
@@ -2577,7 +2577,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.9772114166842,
       "easting": -83.04850989560663
@@ -2622,7 +2622,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97791012240736,
       "easting": -83.05044046857527
@@ -2667,7 +2667,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977865426412656,
       "easting": -83.0504567921162
@@ -2712,7 +2712,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97790578621906,
       "easting": -83.05054221279741
@@ -2757,7 +2757,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.9778355325204,
       "easting": -83.05026165282541
@@ -2802,7 +2802,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97809485527614,
       "easting": -83.04886154830457
@@ -2847,7 +2847,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97809228608819,
       "easting": -83.04882533848287
@@ -2892,7 +2892,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97806518351964,
       "easting": -83.0488734384433
@@ -2937,7 +2937,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976503481769456,
       "easting": -83.04843306541443
@@ -2982,7 +2982,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.9763986563822,
       "easting": -83.04858595132829
@@ -3027,7 +3027,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976521980350505,
       "easting": -83.04862886667253
@@ -3072,7 +3072,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.9765877530426,
       "easting": -83.04839819669725
@@ -3117,7 +3117,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97645004139603,
       "easting": -83.04850548505785
@@ -3162,7 +3162,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97637810236586,
       "easting": -83.04891586303712
@@ -3207,7 +3207,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97623627948453,
       "easting": -83.04905265569688
@@ -3252,7 +3252,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97633699431459,
       "easting": -83.04930210113527
@@ -3297,7 +3297,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97634727132973,
       "easting": -83.0487307906151
@@ -3342,7 +3342,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97627944300132,
       "easting": -83.04895877838136
@@ -3387,7 +3387,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97633699431459,
       "easting": -83.04914921522142
@@ -3432,7 +3432,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976283553810994,
       "easting": -83.04884344339372
@@ -3477,7 +3477,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976565143686834,
       "easting": -83.04855912923814
@@ -3522,7 +3522,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97658364225119,
       "easting": -83.04923772811891
@@ -3567,7 +3567,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978178610749936,
       "easting": -83.04899096488954
@@ -3612,7 +3612,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978372202896715,
       "easting": -83.0489330723376
@@ -3657,7 +3657,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976829261603434,
       "easting": -83.0487683415413
@@ -3702,7 +3702,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97681795696643,
       "easting": -83.04883405566216
@@ -3747,7 +3747,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97790730430298,
       "easting": -83.04854303598405
@@ -3792,7 +3792,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97788335244315,
       "easting": -83.05024538518383
@@ -3837,7 +3837,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.9765877530426,
       "easting": -83.04936915636064
@@ -3882,7 +3882,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977445875334126,
       "easting": -83.0490580201149
@@ -3927,7 +3927,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97640893338807,
       "easting": -83.04832845926286
@@ -3972,7 +3972,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978075843283115,
       "easting": -83.050155043602
@@ -4017,7 +4017,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97808432160498,
       "easting": -83.05022913962604
@@ -4062,7 +4062,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97687704936643,
       "easting": -83.04900705814363
@@ -4107,7 +4107,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97827783537254,
       "easting": -83.04859781833076
@@ -4152,7 +4152,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97828578228505,
       "easting": -83.04871338413966
@@ -4197,7 +4197,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97804424225601,
       "easting": -83.049792945385
@@ -4242,7 +4242,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97777267835557,
       "easting": -83.05005848407747
@@ -4287,7 +4287,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97805940047409,
       "easting": -83.04916866123678
@@ -4332,7 +4332,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97790966237062,
       "easting": -83.04865779406872
@@ -4377,7 +4377,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978078926309394,
       "easting": -83.04877102375032
@@ -4422,7 +4422,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97804758220266,
       "easting": -83.04927192628385
@@ -4467,7 +4467,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97644387519642,
       "easting": -83.04935306310655
@@ -4512,7 +4512,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97786068994755,
       "easting": -83.05017669510603
@@ -4557,7 +4557,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976744990628085,
       "easting": -83.04952338337898
@@ -4602,7 +4602,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97675346911507,
       "easting": -83.04966352880002
@@ -4647,7 +4647,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976743449084886,
       "easting": -83.0494348704815
@@ -4692,7 +4692,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-25T05:00:00.000Z"},
     "location": {
       "northing": 39.97673933830284,
       "easting": -83.04934702813627
@@ -4737,7 +4737,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97693023248275,
       "easting": -83.05032569915058
@@ -4782,7 +4782,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976970569408124,
       "easting": -83.05037431418897
@@ -4827,7 +4827,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.976963889409376,
       "easting": -83.0503360927105
@@ -4872,7 +4872,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-30T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-30T05:00:00.000Z"},
     "location": {
       "northing": 39.97690428323794,
       "easting": -83.04862953722477
@@ -4917,7 +4917,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97680716617482,
       "easting": -83.05045746266843
@@ -4962,7 +4962,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97678095995954,
       "easting": -83.05032268166542
@@ -5007,7 +5007,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97719974435381,
       "easting": -83.04917000234128
@@ -5052,7 +5052,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97707179700131,
       "easting": -83.05023148655891
@@ -5097,7 +5097,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97734773135427,
       "easting": -83.05041119456293
@@ -5142,7 +5142,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97835224629905,
       "easting": -83.04847336988735
@@ -5187,7 +5187,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97827921433661,
       "easting": -83.04847265578455
@@ -5232,7 +5232,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97781638654509,
       "easting": -83.05058549173667
@@ -5277,7 +5277,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977276820956554,
       "easting": -83.0503521859646
@@ -5322,7 +5322,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97782714537388,
       "easting": -83.04861679673195
@@ -5367,7 +5367,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97728691033958,
       "easting": -83.04882335276925
@@ -5412,7 +5412,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97711660018887,
       "easting": -83.04953286775783
@@ -5457,7 +5457,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977005554455104,
       "easting": -83.04912644396443
@@ -5502,7 +5502,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97683193194615,
       "easting": -83.04996341106674
@@ -5547,7 +5547,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97799106000666,
       "easting": -83.05035084486009
@@ -5592,7 +5592,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978021622161165,
       "easting": -83.05036504393958
@@ -5637,7 +5637,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978033512679566,
       "easting": -83.05035479746044
@@ -5682,7 +5682,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97801569144997,
       "easting": -83.05035183822466
@@ -5727,7 +5727,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977976507005806,
       "easting": -83.0502978362625
@@ -5772,7 +5772,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97786202667132,
       "easting": -83.05056675392593
@@ -5817,7 +5817,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.9777373839004,
       "easting": -83.0502524183371
@@ -5862,7 +5862,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97737239582321,
       "easting": -83.0491914600134
@@ -5907,7 +5907,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97730097160751,
       "easting": -83.04932154715063
@@ -5952,7 +5952,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-25T05:00:00.000Z"},
     "location": {
       "northing": 39.9762732767863,
       "easting": -83.04850012063982
@@ -5997,7 +5997,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97742840468835,
       "easting": -83.05030658841135
@@ -6042,7 +6042,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97818406147198,
       "easting": -83.04911021899774
@@ -6087,7 +6087,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978196990402516,
       "easting": -83.04912257450601
@@ -6132,7 +6132,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/23/2020",
+    "lastUpdated": "10/23/2020",
     "location": {
       "northing": 39.97806436074177,
       "easting": -83.05043334848008
@@ -6177,7 +6177,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976314384875856,
       "easting": -83.04863691329957
@@ -6222,7 +6222,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978121060987576,
       "easting": -83.0486811697483
@@ -6267,7 +6267,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97821241470867,
       "easting": -83.04850203655558
@@ -6312,7 +6312,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977193370636805,
       "easting": -83.04931159700621
@@ -6357,7 +6357,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97706768623903,
       "easting": -83.05044740438463
@@ -6406,7 +6406,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "10/15/2022",
+    "lastUpdated": "10/15/2022",
     "location": {
       "northing": 39.97638221316961,
       "easting": -83.04903656244278
@@ -6451,7 +6451,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97731073463422,
       "easting": -83.04863288998605
@@ -6496,7 +6496,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97736931276507,
       "easting": -83.04871000349523
@@ -6541,7 +6541,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97802445949176,
       "easting": -83.04935038089754
@@ -6586,7 +6586,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97691867093926,
       "easting": -83.04931819438934
@@ -6631,7 +6631,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97806685112243,
       "easting": -83.04849408566953
@@ -6676,7 +6676,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97709593243438,
       "easting": -83.04970480365041
@@ -6721,7 +6721,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97734721751109,
       "easting": -83.04899901151659
@@ -6766,7 +6766,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.9772817774729,
       "easting": -83.04946658203406
@@ -6811,7 +6811,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976876277627305,
       "easting": -83.04945645645684
@@ -6856,7 +6856,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97682221417572,
       "easting": -83.04954729039972
@@ -6901,7 +6901,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977166858310184,
       "easting": -83.0502086877823
@@ -6946,7 +6946,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977427517494725,
       "easting": -83.04854943961486
@@ -6991,7 +6991,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97746694287163,
       "easting": -83.05025227367878
@@ -7036,7 +7036,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97735184209973,
       "easting": -83.05024892091753
@@ -7081,7 +7081,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97683100548951,
       "easting": -83.04972298422469
@@ -7126,7 +7126,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97678198765444,
       "easting": -83.04920956492424
@@ -7171,7 +7171,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97680254154934,
       "easting": -83.0500289797783
@@ -7216,7 +7216,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97679534768682,
       "easting": -83.04987609386446
@@ -7261,7 +7261,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97678198765444,
       "easting": -83.04908484220506
@@ -7306,7 +7306,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-25T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-25T05:00:00.000Z"},
     "location": {
       "northing": 39.97658569764695,
       "easting": -83.04903656244278
@@ -7351,7 +7351,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97839732276221,
       "easting": -83.04890608345032
@@ -7396,7 +7396,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978077898633984,
       "easting": -83.04996594786645
@@ -7441,7 +7441,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97811515185745,
       "easting": -83.0485960096121
@@ -7486,7 +7486,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97718587055608,
       "easting": -83.04898828268053
@@ -7531,7 +7531,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977115987680264,
       "easting": -83.04890714585783
@@ -7576,7 +7576,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977086184667364,
       "easting": -83.04893396794797
@@ -7621,7 +7621,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97705021549657,
       "easting": -83.04891854524614
@@ -7666,7 +7666,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977151956816456,
       "easting": -83.0489292740822
@@ -7711,7 +7711,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.976839538544546,
       "easting": -83.04868988692762
@@ -7756,7 +7756,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97658158685542,
       "easting": -83.0491626262665
@@ -7801,7 +7801,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97651992495284,
       "easting": -83.049433529377
@@ -7846,7 +7846,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.976577476063625,
       "easting": -83.04872006177904
@@ -7891,7 +7891,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97644387519642,
       "easting": -83.0488568544388
@@ -7936,7 +7936,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97648292778464,
       "easting": -83.04910361766817
@@ -7981,7 +7981,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.9764932047778,
       "easting": -83.04900705814363
@@ -8026,7 +8026,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97692380940328,
       "easting": -83.05055066943171
@@ -8071,7 +8071,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97774493098992,
       "easting": -83.05053859949113
@@ -8116,7 +8116,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97774493098992,
       "easting": -83.05053055286409
@@ -8161,7 +8161,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977742875629076,
       "easting": -83.05053859949113
@@ -8206,7 +8206,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977734654184985,
       "easting": -83.05054396390916
@@ -8251,7 +8251,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97772540505923,
       "easting": -83.05054262280464
@@ -8296,7 +8296,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97773876490716,
       "easting": -83.05053055286409
@@ -8341,7 +8341,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97772643273993,
       "easting": -83.05054664611816
@@ -8386,7 +8386,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977704851441906,
       "easting": -83.05054262280464
@@ -8431,7 +8431,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97654458972054,
       "easting": -83.04883003234865
@@ -8476,7 +8476,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978312415613786,
       "easting": -83.04849266979059
@@ -8521,7 +8521,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97835595203836,
       "easting": -83.04857174022008
@@ -8566,7 +8566,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97792013627921,
       "easting": -83.05023467511865
@@ -8611,7 +8611,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97788791662498,
       "easting": -83.05054060271854
@@ -8656,7 +8656,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.97787235529899,
       "easting": -83.05054553214615
@@ -8701,7 +8701,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97776886178739,
       "easting": -83.0503706413784
@@ -8746,7 +8746,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977792546576524,
       "easting": -83.0504756006139
@@ -8791,7 +8791,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97772474956322,
       "easting": -83.05043393664161
@@ -8836,7 +8836,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "11/01/2021",
+    "lastUpdated": "11/01/2021",
     "location": {
       "northing": 39.9777438414941,
       "easting": -83.05042818711314
@@ -8881,7 +8881,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97801983494864,
       "easting": -83.04989621043205
@@ -8926,7 +8926,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977198202820865,
       "easting": -83.04942548274995
@@ -8971,7 +8971,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97787082172511,
       "easting": -83.04978556931019
@@ -9016,7 +9016,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97794430070007,
       "easting": -83.04986268281938
@@ -9061,7 +9061,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97800652221546,
       "easting": -83.04866629384279
@@ -9106,7 +9106,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97715186637574,
       "easting": -83.049677871706
@@ -9151,7 +9151,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977973589500245,
       "easting": -83.04957166314126
@@ -9196,7 +9196,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97634932673258,
       "easting": -83.04844647645952
@@ -9241,7 +9241,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97806196966326,
       "easting": -83.04981507360935
@@ -9286,7 +9286,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97713593015406,
       "easting": -83.04976986301511
@@ -9331,7 +9331,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97707076931076,
       "easting": -83.05014096200468
@@ -9376,7 +9376,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97694375242614,
       "easting": -83.04976715418337
@@ -9421,7 +9421,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97698944254429,
       "easting": -83.04999474679255
@@ -9466,7 +9466,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97691601114173,
       "easting": -83.05003284149106
@@ -9511,7 +9511,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97771846821408,
       "easting": -83.04902818053962
@@ -9556,7 +9556,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97776229612953,
       "easting": -83.05020985717239
@@ -9601,7 +9601,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "04/19/2024",
+    "lastUpdated": "04/19/2024",
     "location": {
       "northing": 39.97652814654308,
       "easting": -83.04927527904512
@@ -9646,7 +9646,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97740630945344,
       "easting": -83.04900772869587
@@ -9691,7 +9691,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "09/21/2020",
+    "lastUpdated": "09/21/2020",
     "location": {
       "northing": 39.977212816568844,
       "easting": -83.04910500176645
@@ -9736,7 +9736,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978036149307684,
       "easting": -83.04941542446615
@@ -9781,7 +9781,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97818092301617,
       "easting": -83.04845184087755
@@ -9826,7 +9826,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.978065566527945,
       "easting": -83.04901778697969
@@ -9871,7 +9871,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977953089524505,
       "easting": -83.0487593761959
@@ -9916,7 +9916,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.978044499174985,
       "easting": -83.04857991635801
@@ -9961,7 +9961,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97801880727236,
       "easting": -83.04874420166017
@@ -10006,7 +10006,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": "1/2/2025",
+    "lastUpdated": "1/2/2025",
     "location": {
       "northing": 39.97695253528404,
       "easting": -83.04871875982836
@@ -10051,7 +10051,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97692586478878,
       "easting": -83.04921492934228
@@ -10096,7 +10096,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.977170455221966,
       "easting": -83.05000886321069
@@ -10141,7 +10141,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.9775620036308,
       "easting": -83.04872810840608
@@ -10186,7 +10186,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97772474956322,
       "easting": -83.05034386069553
@@ -10231,7 +10231,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.9764520967958,
       "easting": -83.04869860410692
@@ -10276,7 +10276,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.9769489878714,
       "easting": -83.05017717182638
@@ -10321,7 +10321,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977472595136675,
       "easting": -83.04873749613763
@@ -10366,7 +10366,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977724634298696,
       "easting": -83.05054295808078
@@ -10411,7 +10411,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977722193556936,
       "easting": -83.05054530501367
@@ -10456,7 +10456,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.977718725134274,
       "easting": -83.05054547265173
@@ -10501,7 +10501,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2024-12-29T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2024-12-29T05:00:00.000Z"},
     "location": {
       "northing": 39.97771744053325,
       "easting": -83.05054530501367
@@ -10546,7 +10546,7 @@
       "flower": "",
       "environs": ""
     },
-    "lastVisited": {"$date": "2025-01-01T05:00:00.000Z"},
+    "lastUpdated": {"$date": "2025-01-01T05:00:00.000Z"},
     "location": {
       "northing": 39.97718175980065,
       "easting": -83.04995052516462
