@@ -31,13 +31,22 @@ form {
   max-width: calc(100% - 3rem - 60px);
   margin-left: calc(3rem + 40px);
   margin-top: 10px;
-  padding: 1rem;
+  padding: 20px 20px 0 20px;
   border: 1px solid black;
   border-radius: 1rem; 
 }
 
 form > .controlgroup:first-of-type {
   margin-top: 0px;
+}
+
+.columns {
+  display: flex;
+  column-gap: 40px;
+}
+
+.column {
+  width: calc(100% - 40px)
 }
 
 label {
@@ -49,33 +58,27 @@ label {
 .controlgroup {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
-.controlgroup > .control:first-of-type {
-  margin-top: 10px;
+.controlgroup label {
+  margin-bottom: 10px;
 }
+
 .control {
   display: flex;
   flex-direction: row;
   width:100%;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .control label {
-  flex: 0 0 16%;
+  padding-top: 5px;
+  width: 70px;
+  margin-right: 10px;
 }
 
 .control select, .control input, .control textarea {
   flex: 1;
-}
-
-.controlgroup .control {
-  margin-top: 10px;
-}
-
-.controlgroup .control label {
-  padding-left: 20px;
 }
 
 .checkboxgroup {
@@ -91,32 +94,33 @@ label {
 select, input, textarea {
   padding: 2px;
   border: 1px solid #888;
+  height: 32px;
 }
 
 textarea {
   width: 100%;
   margin-top: 5px;
+  height: 96px;
 }
 
 .photogroup {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  gap:20px;
+  column-gap: 20px;
+  width: calc(100% - 80px);
 }
 
 .photo {
-  width: calc((100% - 100px) / 6);
+  /* width: calc((100% - 100px) / 6); */
   min-width: 100px;
-  flex: 0 0 auto;
-  line-height:100px; /* complements the vertical-align below */
+  flex: 1 1 calc((100% - 100px) / 6);
   color: #aaa;
   background-color: white;
   text-align: center;
   vertical-align: middle;
-  height: 100px;
+  line-height:150px; /* centers text on 100px height */
+  height: 175px;
   border: 1px solid #888;
-  border-radius: 4px;
 }
 
 .nestedcheckbox { /*adds space between box and label when checkbox input is nested inside a label */
@@ -138,18 +142,6 @@ button {
 button:hover {
   background-color: darkgrey;
 }
-
-/* .danger {
-  display: inline-flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.danger label {
-  display: block;
-  width: max-content;
-  color: red;
-} */
 
 .danger-flags-container {
   padding: 20px 20px 0px 0px;

@@ -56,7 +56,7 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
   return (
     <>
       <div className="photogroup">
-        {["bark", "summerLeaf", "autumnLeaf", "fruit", "flower", "environs"].map((photoType) => (
+        {["bark", "summer", "autumn", "fruit", "flower", "environs"].map((photoType) => (
           <div
             key={photoType}
             className="photo"
@@ -67,7 +67,7 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
                 <img
                   src={formValues.photos[photoType]}
                   alt={photoType}
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                 />
               </div>
             ) : (

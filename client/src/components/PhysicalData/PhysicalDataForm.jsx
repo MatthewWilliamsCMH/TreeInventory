@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 
 import Footer from "../Footer/Footer";
 import DangerFlags from "../Header/DangerFlags";
-import { handleFieldChange, commonToScientificList, dbhList } from "../../utils/fieldChangeHandler";
+import { handleFieldChange, commonToScientificList, dbhList, gardenList } from "../../utils/fieldChangeHandler";
 import PhotoUploadForm from "./PhotoUploadForm.jsx"
 
 const PhysicalDataForm = () => {
@@ -32,65 +32,86 @@ const PhysicalDataForm = () => {
         <DangerFlags formValues = {formValues}/>
       </div>
       <form style={formStyle}>
-        <div className = "controlgroup">
-          <label>Species</label>
-          <div className = "control">
-            <label htmlFor = "commonName">Common name:</label>
-            <select
-              id = "commonName"
-              value = {formValues.commonName}
-              onChange = {(event) => handleInputChange("commonName", event)}
-            >
-              {Object.keys(commonToScientificList).map((common) => (
-                <option key={common} value={common}>
-                  {common}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className = "control">
-            <label htmlFor = "scientificName">Scientific name:</label>
-            <select
-              id = "scientificName"
-              placeholder = "Select a scientific name."
-              value = {formValues.scientificName}
-              onChange = {(event) => handleInputChange("scientificName", event)}
-            >
-            {Object.entries(commonToScientificList)
-              .sort(([, a], [, b]) => a.localeCompare(b))
-              .map(([common, scientific]) => (
-                <option key={scientific} value={scientific}>
-                  {scientific}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
+        <div className = "columns">
+          <div className = "column">
+            <div className = "controlgroup">
+              <label>Species name</label>
+              <div className = "control">
+                <label htmlFor = "commonName">Common</label>
+                <select
+                  id = "commonName"
+                  value = {formValues.commonName}
+                  onChange = {(event) => handleInputChange("commonName", event)}
+                >
+                  {Object.keys(commonToScientificList).map((common) => (
+                    <option key={common} value={common}>
+                      {common}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className = "control">
+                <label htmlFor = "scientificName">Scientific</label>
+                <select
+                  id = "scientificName"
+                  placeholder = "Select a scientific name."
+                  value = {formValues.scientificName}
+                  onChange = {(event) => handleInputChange("scientificName", event)}
+                >
+                {Object.entries(commonToScientificList)
+                  .sort(([, a], [, b]) => a.localeCompare(b))
+                  .map(([common, scientific]) => (
+                    <option key={scientific} value={scientific}>
+                      {scientific}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
 
-        <div className = "control">
-          <label htmlFor = "variety">Variety or cultivar:</label>
-          <input
-            id = "variety"
-            type = "text" 
-            value = {formValues.variety} 
-            onChange = {(event) => handleInputChange("variety", event)}
-          />
-        </div>
+            <div className = "control">
+              <label htmlFor = "variety">Variety</label>
+              <input
+                id = "variety"
+                type = "text" 
+                value = {formValues.variety} 
+                onChange = {(event) => handleInputChange("variety", event)}
+              />
+            </div>
+          </div>
 
-        <div className = "control">
-          <label htmlFor = "dbh">DBH:</label>
-          <select 
-            id = "dbh" 
-            placeholder = "Select a diameter."
-            value = {formValues.dbh} 
-            onChange = {event => handleInputChange("dbh", event)} 
-          >
-            {dbhList.map((dbh, index) => (
-              <option key = {index} value = {dbh}>
-                {dbh}
-              </option>
-            ))}
-          </select>
+          <div className = "column">
+            <div className = "control">
+              <label htmlFor = "dbh">DBH</label>
+              <select 
+                id = "dbh" 
+                placeholder = "Select a diameter."
+                value = {formValues.dbh} 
+                onChange = {event => handleInputChange("dbh", event)} 
+              >
+                {dbhList.map((dbh, index) => (
+                  <option key = {index} value = {dbh}>
+                    {dbh}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="control">
+              <label htmlFor = "garden">Garden</label>
+              <select
+                id = "garden"
+                value = {formValues.garden}
+                onChange = {(event) => handleInputChange("garden", event)}
+              >
+                {gardenList.map((garden, index) => (
+                  <option key = {index} value = {garden}>
+                    {garden}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
 
         <div className="control">
@@ -102,7 +123,7 @@ const PhysicalDataForm = () => {
         </div>
 
         <div className = "control">
-          <label htmlFor = "notes">Notes:</label>
+          <label htmlFor = "notes">Notes</label>
           <textarea
             id = "notes"
             value = {formValues.notes}
