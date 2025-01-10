@@ -31,7 +31,8 @@ const storage = multer.diskStorage({
 // Initialize multer with the storage configuration
 const upload = multer({ storage: storage });
 
-app.use(cors({origin: 'https://https://treeinventory.onrender.com'}));
+// app.use(cors({origin: "https://https://treeinventory.onrender.com"}));
+app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "public", "uploads")));
 
@@ -40,7 +41,7 @@ app.post("/uploads", upload.single("photo"), (req, res) => {
     return res.status(400).json({ message: "No file uploaded" });
   }
 
-  const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
+  const fileUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
 // const fileUrl = `http://localhost:${port}/uploads/${req.file.filename}`;
   res.status(200).json({ 
     message: "File uploaded successfully",
@@ -69,6 +70,6 @@ server.start().then(() => {
   }
 
   app.listen(port, "0.0.0.0", () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on port ${port}`);
   });
 });

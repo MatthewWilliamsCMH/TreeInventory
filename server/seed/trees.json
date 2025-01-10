@@ -4865,8 +4865,8 @@
     "dbh": "< 3",
     "notes": "",
     "photos": {
-      "bark": "http://localhost:3001/uploads/1735511312916.jpg",
-      "summerLeaf": "http://localhost:3001/uploads/1735599937101.jpg",
+      "bark": "",
+      "summerLeaf": "",
       "autumnLeaf": "",
       "fruit": "",
       "flower": "",
