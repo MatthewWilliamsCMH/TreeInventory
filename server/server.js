@@ -31,7 +31,7 @@ const storage = multer.diskStorage({
 // Initialize multer with the storage configuration
 const upload = multer({ storage: storage });
 
-app.use(cors());
+app.use(cors({origin: 'https://https://treeinventory.onrender.com'}));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "public", "uploads")));
 
