@@ -17,7 +17,7 @@ const { typeDefs } = require("./schemas/typeDefs");
 const { resolvers } = require("./schemas/resolvers");
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001; //use host (e.g., Render) port or 3001
 
 const storage = multer.diskStorage({
   destination: (req, photo, cb) => {
@@ -67,7 +67,7 @@ server.start().then(() => {
     });
   }
 
-  app.listen(port, () => {
-    console.log(`Backend server running on http://localhost:${port}`);
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`Server running on http://localhost:${port}`);
   });
 });
