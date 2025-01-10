@@ -1,10 +1,10 @@
 {
     "name": "server",
     "version": "1.0.0",
-    "main": "server.js",
+    "main": "test-server.js",
     "scripts": {
-        "start": "node server.js",
-        "watch": "nodemon server.js"
+        "start": "node test-server.js",
+        "watch": "nodemon test-server.js"
     },
     "author": "",
     "license": "ISC",
