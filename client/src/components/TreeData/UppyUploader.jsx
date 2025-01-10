@@ -16,7 +16,7 @@ const UppyUploader = ({ photoType, onUploadComplete }) => {
       }
     })
     .use(Tus, { 
-      endpoint: "http://localhost:3001/uploads",
+      endpoint: import.meta.env.VITE_API_URL || "http://localhost:3001/uploads",
       headers: {
         'Photo-Type': photoType
       }
