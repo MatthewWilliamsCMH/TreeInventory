@@ -55,8 +55,18 @@ const server = new ApolloServer({
   typeDefs,
   resolvers
 });
+
 server.start().then(() => {
   app.use("/graphql", expressMiddleware(server));
+
+  // Serve the static React files after build (Production)
+  if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../client/dist"))); // Vite build output
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
+    });
+  }
+
   app.listen(port, () => {
     console.log(`Backend server running on http://localhost:${port}`);
   });
