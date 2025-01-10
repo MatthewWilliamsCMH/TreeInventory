@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
+import envCompatible from "vite-plugin-env-compatible";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), envCompatible()],
   build: {
   	outDir: "dist",
   },
@@ -11,7 +12,7 @@ export default defineConfig({
     open: true,
     proxy: {
       "/api": {
-        target: "http://localhost:3001",
+        target: process.env.VITE_API_URL || "http://localhost:3001",
         secure: false,
         changeOrigin: true
       }

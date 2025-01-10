@@ -25,7 +25,7 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
       showVideoSourceDropdown: true,
     })
     .use(XHRUpload, {
-      endpoint: "http://localhost:3001/uploads",
+      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : "http://localhost:3001"}/uploads`,
       fieldName: "photo",
       formData: true,
     });

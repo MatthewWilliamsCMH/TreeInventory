@@ -9,8 +9,9 @@ import TreeData from "./components/TreeData/TreeData";
 import TreeInventory from "./components/TreeInventory/TreeInventory";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:3001/graphql"
+  uri: import.meta.env.VITE_GRAPHQL_URL ||"http://localhost:3001/graphql"
 });
+
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache()
