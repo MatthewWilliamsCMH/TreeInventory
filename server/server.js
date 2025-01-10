@@ -40,7 +40,8 @@ app.post("/uploads", upload.single("photo"), (req, res) => {
     return res.status(400).json({ message: "No file uploaded" });
   }
 
-  const fileUrl = `http://localhost:${port}/uploads/${req.file.filename}`;
+  const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
+// const fileUrl = `http://localhost:${port}/uploads/${req.file.filename}`;
   res.status(200).json({ 
     message: "File uploaded successfully",
     url: fileUrl
