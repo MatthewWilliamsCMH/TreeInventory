@@ -4,16 +4,42 @@ const Species = require("../models/Species");
 //I'll need to add a query resolver for retrieving hidden trees
 const resolvers = {
   Query: {
-    getTrees: async () => {
-      try {
-        const trees = await Tree.find({hidden: false}).sort({ "commonName": 1 });  //find all trees and sort by common name
-        return trees
+    // getTrees: async () => {
+    //   try {
+    //     const trees = await Tree.find({hidden: false}).sort({ "commonName": 1 });  //find all trees and sort by common name
+    //     return trees
+    //   }
+    //   catch (err) {
+    //     console.error(err);
+    //     return [];
+    //   }
+    // },
+
+      getTrees: async () => {
+    try {
+      console.log("Starting getTrees resolver");
+      console.log("MongoDB URI:", process.env.MONGODB_URI); // This will help verify we're connecting to the right database
+      const trees = await Tree.find({hidden: false}).sort({ "commonName": 1 });
+      console.log("Query completed, found trees:", trees.length);
+      if (trees.length > 0) {
+        console.log("Sample tree:", {
+          id: trees[0]._id,
+          commonName: trees[0].commonName,
+          hidden: trees[0].hidden
+        });
+      } else {
+        console.log("No trees found with hidden: false");
+        // Let's try a query without the hidden filter to see if we can find any documents
+        const allTrees = await Tree.find({});
+        console.log("Total trees in collection (including hidden):", allTrees.length);
       }
-      catch (err) {
-        console.error(err);
-        return [];
-      }
-    },
+      return trees;
+    }
+    catch (err) {
+      console.error("Error in getTrees resolver:", err);
+      return [];
+    }
+  },
 
     getTree: async (_, { id }) => {
       try {
