@@ -63,7 +63,10 @@ const server = new ApolloServer({
 
 server.start().then(() => {
   app.use("/graphql", 
-    cors(),
+    cors({
+      origin: ['https://treeinventory.onrender.com', 'http://localhost:3000'],
+      credentials: true
+    }),
     express.json(),
     expressMiddleware(server, {
       context: async ({ req }) => ({ req })
