@@ -9,7 +9,6 @@ import TreeData from "./components/TreeData/TreeData";
 import TreeInventory from "./components/TreeInventory/TreeInventory";
 
 const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || "http://localhost:3001/graphql";
-console.log("GraphQL URL:", graphqlUrl); // Log the URL to check the correct value
 
 const httpLink = createHttpLink({
   uri: graphqlUrl,  // This will use the URL from the .env file
