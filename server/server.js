@@ -31,8 +31,11 @@ const storage = multer.diskStorage({
 // Initialize multer with the storage configuration
 const upload = multer({ storage: storage });
 
-app.use(cors({origin: "https://https://treeinventory.onrender.com"}));
-// app.use(cors());
+app.use(cors({
+  origin: ["https://treeinventory.onrender.com", "http://localhost:3000"],
+  credentials: true
+}));
+
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "public", "uploads")));
 
@@ -59,7 +62,15 @@ const server = new ApolloServer({
 });
 
 server.start().then(() => {
-  app.use("/graphql", expressMiddleware(server));
+  app.use("/graphql", 
+  cors({
+    origin: ['https://treeinventory.onrender.com', 'http://localhost:3000'],
+    credentials: true
+  }),
+  express.json,
+  expressMiddleware(server, {
+    context: async ({req}_) => ({req})
+  })
 
   // Serve the static React files after build (Production)
   if (process.env.NODE_ENV === "production") {
