@@ -63,14 +63,12 @@ const server = new ApolloServer({
 
 server.start().then(() => {
   app.use("/graphql", 
-  cors({
-    origin: ['https://treeinventory.onrender.com', 'http://localhost:3000'],
-    credentials: true
-  }),
-  express.json,
-  expressMiddleware(server, {
-    context: async ({req}_) => ({req})
-  })
+    cors(),
+    express.json(),
+    expressMiddleware(server, {
+      context: async ({ req }) => ({ req })
+    })
+  );
 
   // Serve the static React files after build (Production)
   if (process.env.NODE_ENV === "production") {
