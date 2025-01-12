@@ -13,7 +13,6 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   //set up queries and mutations
