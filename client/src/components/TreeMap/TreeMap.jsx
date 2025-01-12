@@ -13,8 +13,8 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setupdatedTree } = useOutletContext();
-  const { selectedTree, setSelectedTree, setupdatedTree } = useOutletContext();
+  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
+  const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   //set up queries and mutations
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
@@ -139,7 +139,7 @@ const TreeMap = () => {
       const popupElement = popup.getElement();
       popupElement.addEventListener('click', () => {
         setSelectedTree(tree);
-        setupdatedTree(tree);
+        setUpdatedTree(tree);
         navigate('/TreeData');
         map.current.closePopup();
       })
@@ -202,7 +202,7 @@ const TreeMap = () => {
       careHistory: '',
       hidden: false
     };
-    setupdatedTree(newTree);
+    setUpdatedTree(newTree);
     navigate('/TreeData')
   }
 

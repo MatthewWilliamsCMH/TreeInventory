@@ -13,7 +13,7 @@ import './App.css';
 function App() {
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
-  const [updatedTree, setupdatedTree] = useState(null);
+  const [updatedTree, setUpdatedTree] = useState(null);
 
   //determine forms' background color based on 'invasive' flag in selectedTree
   const formStyle = {
@@ -23,7 +23,7 @@ function App() {
     //sync form state with selectedTree when selectedTree changes
     useEffect(() => {
     if (selectedTree) {
-      setupdatedTree(selectedTree);
+      setUpdatedTree(selectedTree);
     }
   }, [selectedTree]);
 
@@ -34,7 +34,7 @@ function App() {
       <Outlet context = {{ 
         selectedTree, setSelectedTree, 
         treeLocation, setTreeLocation,
-        updatedTree, setupdatedTree,
+        updatedTree, setUpdatedTree,
         formStyle 
       }} />
     </div>

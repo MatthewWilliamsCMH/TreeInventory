@@ -7,7 +7,7 @@ import { UPDATE_TREE } from '../../mutations/update_tree';
 import './Footer.css';
 
 const Footer = () => {
-  const { updatedTree, setupdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation?
+  const { updatedTree, setUpdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation?
   const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
   const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
   const navigate = useNavigate();
@@ -63,7 +63,7 @@ const Footer = () => {
           }
         });
         console.log('Tree added:', data.addTree);
-        setupdatedTree(null);
+        setUpdatedTree(null);
         setSelectedTree(null);
         setTreeLocation(null); //necessary?
         navigate('/')
@@ -114,7 +114,7 @@ const Footer = () => {
           }
         });
         console.log('Tree updated:', data.updateTree);
-        setupdatedTree(null);
+        setUpdatedTree(null);
         setTreeLocation(null); //necessary?
         navigate('/')
       }
@@ -124,7 +124,7 @@ const Footer = () => {
   };
 
   const handleCancel = () => {
-    setupdatedTree(null);
+    setUpdatedTree(null);
     setTreeLocation(null); //necessary?
     navigate('/');
   };

@@ -8,7 +8,7 @@ import './TreeInventory.css';
 
 const TreeInventory = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setupdatedTree } = useOutletContext();
+  const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   // set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
@@ -58,7 +58,7 @@ const TreeInventory = () => {
 
   const handleTreeClick = (completeTree) => {
     setSelectedTree(completeTree);
-    setupdatedTree(completeTree);
+    setUpdatedTree(completeTree);
     navigate('/TreeData');
   };
 
