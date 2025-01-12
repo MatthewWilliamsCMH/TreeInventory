@@ -13,7 +13,6 @@ import { UPDATE_TREE_LOCATION } from "../../mutations/update_tree_location";
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setFormValues } = useOutletContext();
   const { selectedTree, setSelectedTree, setFormValues } = useOutletContext();
 
   //set up queries and mutations
@@ -40,23 +39,30 @@ const TreeMap = () => {
   };
 
   useEffect(() => {
-    //the map container exists but is empty
-    if (mapRef.current && !map.current) {
-      map.current = L.map(mapRef.current, {zoomControl: false,
-      center: [39.97738230836944, -83.04934859084177],
-      zoom: 19});
-      //alternate tile layers
-      // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
-      // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
-      const googleMutant = L.gridLayer.googleMutant({
-        maxZoom: 24,
-        type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
-        attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
-        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
-      }).addTo(map.current);
-
-      map.current.on("click", handleAddTree);
+    const initMap = async () => {
+      //the map container exists but is empty
+      if (mapRef.current && !map.current) {
+        map.current = L.map(mapRef.current, {zoomControl: false,
+        center: [39.97738230836944, -83.04934859084177],
+        zoom: 19});
+        //alternate tile layers
+        // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
+        // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+        await new Promise((resolve) => {
+          const googleMutant = L.gridLayer.googleMutant({
+            maxZoom: 24,
+            type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
+            attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
+            apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
+          });
+          googleMutant.on("load", resolve);
+          googleMutant.addTo(map.current);
+        })
+        map.current.on("click", handleAddTree);
+      }
     }
+
+    initMap();
 
     //remove old data and fetch the data anew
     if (map.current && getAllData?.getTrees) {
