@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
-import "./Header.css";
+import React, { useEffect, useState } from 'react';
+import './Header.css';
 
-function DangerFlags({ formValues }) {
+function DangerFlags({ updatedTree }) {
   //track nonnative and invasive status
   const [nonnativeStatus, setNonnativeStatus] = useState(false);
   const [invasiveStatus, setInvasiveStatus] = useState(false);
 
   useEffect(() => {
-    if (formValues) {
-      setNonnativeStatus(formValues.nonnative || false);
-      setInvasiveStatus(formValues.invasive || false);
+    if (updatedTree) {
+      setNonnativeStatus(updatedTree.nonnative || false);
+      setInvasiveStatus(updatedTree.invasive || false);
     }
-  }, [formValues]);
+  }, [updatedTree]);
 
   return (
-    <div id="reactcontainer">
-        {nonnativeStatus && <p className="danger">Nonnative</p>}
-        {invasiveStatus && <p className="danger">Invasive</p>}
+    <div id='reactcontainer'>
+        {nonnativeStatus && <p className='danger'>Nonnative</p>}
+        {invasiveStatus && <p className='danger'>Invasive</p>}
     </div>
   );
 }

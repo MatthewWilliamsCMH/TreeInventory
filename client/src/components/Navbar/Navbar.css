@@ -9,7 +9,7 @@
 }
 
 #navbar::before {
-  content: "";
+  content: '';
   position: absolute;
   left:0;
   right:0;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   appearance: none;
   margin: 0;
   background-color: white;
@@ -47,8 +47,8 @@ input[type="radio"] {
   z-index:1000;
 }
 
-input[type="radio"]::before {
-  content: "";
+input[type='radio']::before {
+  content: '';
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -57,24 +57,24 @@ input[type="radio"]::before {
   background-color: var(--brick-red);
 }
 
-input[type="radio"]:checked::before {
+input[type='radio']:checked::before {
   transform: scale(1);
 }
 
 /*disabled radio button */
-input[type="radio"]:disabled {
+input[type='radio']:disabled {
   border-color: lightgray;
   background-color: #f5f5f5;
   cursor: not-allowed;
 }
 
 /*inner circle of disabled radio button */
-input[type="radio"]:disabled::before {
+input[type='radio']:disabled::before {
   background-color: lightgray;
 }
 
 /*tooltip when radio is disabled */
-input[type="radio"]:disabled + .tooltip {
+input[type='radio']:disabled + .tooltip {
   color: lightgray;
 }
 .radiooption {

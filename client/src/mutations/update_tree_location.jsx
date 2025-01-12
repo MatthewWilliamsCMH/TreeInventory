@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const UPDATE_TREE_LOCATION = gql`
   mutation updateTreeLocation(

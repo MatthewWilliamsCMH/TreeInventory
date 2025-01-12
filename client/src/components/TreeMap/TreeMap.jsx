@@ -1,22 +1,23 @@
-import React, { useEffect, useRef } from "react";
-import { useOutletContext, useNavigate } from "react-router-dom";
-import { useQuery, useMutation } from "@apollo/client";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import "leaflet.gridlayer.googlemutant";
+import React, { useEffect, useRef } from 'react';
+import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useQuery, useMutation } from '@apollo/client';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.gridlayer.googlemutant';
 
-import { GET_TREES } from "../../queries/get_trees";
-import { GET_SPECIES } from "../../queries/get_species";
-import { ADD_TREE } from "../../mutations/add_tree";
-import { UPDATE_TREE } from "../../mutations/update_tree";
-import { UPDATE_TREE_LOCATION } from "../../mutations/update_tree_location";
+import { GET_TREES } from '../../queries/get_trees';
+import { GET_SPECIES } from '../../queries/get_species';
+import { ADD_TREE } from '../../mutations/add_tree';
+import { UPDATE_TREE } from '../../mutations/update_tree';
+import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setFormValues } = useOutletContext();
+  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setupdatedTree } = useOutletContext();
+  const { selectedTree, setSelectedTree, setupdatedTree } = useOutletContext();
 
   //set up queries and mutations
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
   
   const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE); //add one tree
@@ -39,30 +40,23 @@ const TreeMap = () => {
   };
 
   useEffect(() => {
-    const initMap = async () => {
-      //the map container exists but is empty
-      if (mapRef.current && !map.current) {
-        map.current = L.map(mapRef.current, {zoomControl: false,
-        center: [39.97738230836944, -83.04934859084177],
-        zoom: 19});
-        //alternate tile layers
-        // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:23}).addTo(map.current);
-        // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
-        await new Promise((resolve) => {
-          const googleMutant = L.gridLayer.googleMutant({
-            maxZoom: 24,
-            type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
-            attribution: '&copy; <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html">Google</a>',
-            apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
-          });
-          googleMutant.on("load", resolve);
-          googleMutant.addTo(map.current);
-        })
-        map.current.on("click", handleAddTree);
-      }
-    }
+    //the map container exists but is empty
+    if (mapRef.current && !map.current) {
+      map.current = L.map(mapRef.current, {zoomControl: false,
+      center: [39.97738230836944, -83.04934859084177],
+      zoom: 19});
+      //alternate tile layers
+      // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
+      // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+      const googleMutant = L.gridLayer.googleMutant({
+        maxZoom: 24,
+        type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
+        attribution: "&copy; <a href='https://www.google.com/intl/en-US_US/help/terms_maps.html'>Google</a>",
+        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
+      }).addTo(map.current);
 
-    initMap();
+      map.current.on('click', handleAddTree);
+    }
 
     //remove old data and fetch the data anew
     if (map.current && getAllData?.getTrees) {
@@ -99,17 +93,17 @@ const TreeMap = () => {
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
     const speciesInfo = speciesMap[tree.commonName];
-    const markerColor = speciesInfo.markerColor || "FFFFFF";
+    const markerColor = speciesInfo.markerColor || 'FFFFFF';
     const svgIcon = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-        <circle cx="6" cy="6" r="6" fill="#${markerColor}" stroke="lightgray" stroke-width="1"/>
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
+        <circle cx='6' cy='6' r='6' fill='#${markerColor}' stroke='lightgray' stroke-width='1'/>
       </svg>
     `;
 
     const myIcon = L.icon({
-      iconUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
+      iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
       iconSize: [10, 10],
-      iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
+      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
     });
 
     const popupContent = `
@@ -119,9 +113,9 @@ const TreeMap = () => {
     `;
     
     const marker = L.marker([northing, easting], {
-      draggable: "true",
+      draggable: 'true',
       icon: myIcon,
-      riseOnHover: "true"
+      riseOnHover: 'true'
     })
       .bindPopup(popupContent)
       .addTo(map.current);
@@ -140,23 +134,23 @@ const TreeMap = () => {
       })
     });
 
-    marker.on("popupopen", (event) => {
+    marker.on('popupopen', (event) => {
       const popup = event.popup;
       const popupElement = popup.getElement();
-      popupElement.addEventListener("click", () => {
+      popupElement.addEventListener('click', () => {
         setSelectedTree(tree);
-        setFormValues(tree);
-        navigate("/TreeData");
+        setupdatedTree(tree);
+        navigate('/TreeData');
         map.current.closePopup();
       })
     });
 
-    marker.on("mouseover", () => {
-      map.current.getContainer().style.cursor = "pointer"; // Change the cursor to pointer on mouseover
+    marker.on('mouseover', () => {
+      map.current.getContainer().style.cursor = 'pointer'; // Change the cursor to pointer on mouseover
     });
 
-    marker.on("mouseout", () => {
-      map.current.getContainer().style.cursor = "default"; // Reset the cursor to default on mouseout
+    marker.on('mouseout', () => {
+      map.current.getContainer().style.cursor = 'default'; // Reset the cursor to default on mouseout
     });
   };
 
@@ -164,23 +158,23 @@ const TreeMap = () => {
   const handleAddTree = (event) => {
     const { lat, lng } = event.latlng;
     const newTree = {
-      commonName: "",
-      variety: "",
-      dbh: "",
+      commonName: '',
+      variety: '',
+      dbh: '',
       photos: {
-        bark: "",
-        summerLeaf: "",
-        autumnLeaf: "",
-        fruit: "",
-        flower: "",
-        environs: ""
+        bark: '',
+        summerLeaf: '',
+        autumnLeaf: '',
+        fruit: '',
+        flower: '',
+        environs: ''
       },
-      notes: "",
+      notes: '',
       location: {
         northing: lat,
         easting: lng
       },
-      garden: "",
+      garden: '',
       siteInfo: {
         slope: false,
         overheadLines: false,
@@ -188,11 +182,11 @@ const TreeMap = () => {
         proximateStructure: false,
         proximateFence: false
       },
-      lastUpdated: "",
-      installedDate: "",
-      installedBy: "",
-      felledDate: "",
-      felledBy: "",
+      lastUpdated: '',
+      installedDate: '',
+      installedBy: '',
+      felledDate: '',
+      felledBy: '',
       careNeeds: {
         install: false,
         raiseCrown: false,
@@ -205,11 +199,11 @@ const TreeMap = () => {
         fell: false,
         removeStump: false
       },
-      careHistory: "",
+      careHistory: '',
       hidden: false
     };
-    setFormValues(newTree);
-    navigate("/TreeData")
+    setupdatedTree(newTree);
+    navigate('/TreeData')
   }
 
   if (getAllLoading || addTreeLoading || updateTreeLoading|| updateTreeLocationLoading) {
@@ -220,7 +214,7 @@ const TreeMap = () => {
   }
 
   return (
-    <div id="map" ref = {mapRef} style = {{ height: "100vh", width: "100vw" }}></div>
+    <div id='map' ref = {mapRef} style = {{ height: '100vh', width: '100vw' }}></div>
   );
 };
 

@@ -1,7 +1,7 @@
 export function formatDateForDisplay(dateStr) {
-  if (dateStr === "" || !dateStr) return "";
+  if (dateStr === '' || !dateStr) return '';
 
-  //"before"
+  //'before'
   const beforeMatch = dateStr.match(/^(?:<\s*|before\s+)(\d{4})$/i);
   if (beforeMatch) {
     return `< ${beforeMatch[1]}`;
@@ -10,13 +10,13 @@ export function formatDateForDisplay(dateStr) {
   //Unix timestamp
   if (/^\d{13}$/.test(String(dateStr))) {
     const date = new Date(Number(dateStr));
-    return date.toLocaleDateString("en-US");
+    return date.toLocaleDateString('en-US');
   }
   
   //regular date
   const date = new Date(dateStr);
   if (!isNaN(date.getTime())) {
-    return date.toLocaleDateString("en-US");
+    return date.toLocaleDateString('en-US');
   }
   return dateStr;
 }
@@ -25,7 +25,7 @@ export function formatDateForDisplay(dateStr) {
 export function validateDateField(dateStr) {
   if (!dateStr) return true; // Allow empty for optional fields
   
-  //"before"
+  //'before'
   if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
     return true;
   }

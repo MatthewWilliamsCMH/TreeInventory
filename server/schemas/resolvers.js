@@ -1,18 +1,18 @@
-const Tree = require("../models/Tree");
-const Species = require("../models/Species");
+const Tree = require('../models/Tree');
+const Species = require('../models/Species');
 
 //I'll need to add a query resolver for retrieving hidden trees
 const resolvers = {
   Query: {
     getTrees: async () => {
-      try {
-        return await Tree.find().sort({ "commonName": 1 });
-      }
-      catch (err) {
-        console.error("Error in getTrees resolver:", err);
-        return [];
-      }
-    },
+    try {
+      return await Tree.find({hidden: false}).sort({ 'commonName': 1 });
+    }
+    catch (err) {
+      console.error(err);
+      return [];
+    }
+  },
 
     getTree: async (_, { id }) => {
       try {
@@ -26,7 +26,7 @@ const resolvers = {
 
     getSpecies: async () => {
       try {
-        return await Species.find().sort({ "scientificName": 1 });
+        return await Species.find().sort({ 'scientificName': 1 });
       }
       catch (err) {
         console.error(err);
@@ -72,7 +72,7 @@ const resolvers = {
       try {
         const speciesExists = await Species.findOne({ commonName });
         if (!speciesExists) {
-          throw new Error(`Species with common name "${commonName} not found.`);
+          throw new Error(`Species with common name '${commonName} not found.`);
         }
         return await Tree.create({
           commonName,
@@ -104,7 +104,7 @@ const resolvers = {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
           if (!speciesExists) {
-            throw new Error(`Species with common name "${commonName} not found.`);
+            throw new Error(`Species with common name '${commonName} not found.`);
           }
         }
         return await Tree.findByIdAndUpdate(
@@ -147,7 +147,7 @@ const resolvers = {
 
         if (existingSpecies) {
           throw new Error(
-            `Species already exists with common name "${existingSpecies.commonName}" or scientific name "${existingSpecies.scientificName}"`
+            `Species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`
           );
         }
 
@@ -178,7 +178,7 @@ const resolvers = {
 
         if (existingSpecies) {
           throw new Error(
-            `Another species already exists with common name "${existingSpecies.commonName}" or scientific name "${existingSpecies.scientificName}"`
+            `Another species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`
           );
         }
 

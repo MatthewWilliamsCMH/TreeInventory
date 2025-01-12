@@ -1,5 +1,5 @@
 // /Not sure I need this query; leaflet handles getting the tree
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const GET_TREE = gql`
   query getTree {

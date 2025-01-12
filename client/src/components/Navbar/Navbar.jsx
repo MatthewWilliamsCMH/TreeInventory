@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import "./Navbar.css";
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = ({ selectedTree }) => {
   const navigate = useNavigate();
@@ -8,10 +8,10 @@ const Navbar = ({ selectedTree }) => {
 
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
-      case "/": return "map";
-      case "/TreeData": return "TreeData";
-      case "/inventory": return "inventory";
-      default: return "map";
+      case '/': return 'map';
+      case '/TreeData': return 'TreeData';
+      case '/inventory': return 'inventory';
+      default: return 'map';
     }
   });
 
@@ -19,21 +19,21 @@ const Navbar = ({ selectedTree }) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    if ((selectedValue === "map" && "location.pathname" !== "/") ||
-      (selectedValue === "TreeData" && "location.pathname" !== "/TreeData") ||
-      (selectedValue === "inventory" && "location.pathname" !== "/inventory")) {
+    if ((selectedValue === 'map' && 'location.pathname' !== '/') ||
+      (selectedValue === 'TreeData' && 'location.pathname' !== '/TreeData') ||
+      (selectedValue === 'inventory' && 'location.pathname' !== '/inventory')) {
       switch (selectedValue) {
-        case "map":
-          navigate("/");
+        case 'map':
+          navigate('/');
           break;
-        case "TreeData":
-          navigate("/TreeData");
+        case 'TreeData':
+          navigate('/TreeData');
           break;
-        case "inventory":
-          navigate("/inventory");
+        case 'inventory':
+          navigate('/inventory');
           break;
         default:
-          navigate("/");
+          navigate('/');
           break;
       }
     }
@@ -41,17 +41,17 @@ const Navbar = ({ selectedTree }) => {
 
   useEffect(() => {
     switch (location.pathname) {
-      case "/":
-        setSelectedOption("map");
+      case '/':
+        setSelectedOption('map');
         break;
-      case "/TreeData":
-        setSelectedOption("TreeData");
+      case '/TreeData':
+        setSelectedOption('TreeData');
         break;
-      case "/inventory":
-        setSelectedOption("inventory");
+      case '/inventory':
+        setSelectedOption('inventory');
         break;
       default:
-        setSelectedOption("map");
+        setSelectedOption('map');
         break;
     }
   }, [location.pathname]);
@@ -59,38 +59,38 @@ const Navbar = ({ selectedTree }) => {
   const isDisabled = selectedTree === null;
 
   return (
-    <nav id="navbar">
-      <div className="radiobuttonlist">
-        <label className="radiooption">
+    <nav id='navbar'>
+      <div className='radiobuttonlist'>
+        <label className='radiooption'>
           <input
-            type="radio"
-            name="nav"
-            value="map"
-            checked={selectedOption === "map"}
+            type='radio'
+            name='nav'
+            value='map'
+            checked={selectedOption === 'map'}
             onChange={handleRadioChange}
           />
-          <span className="tooltip">Map</span>
+          <span className='tooltip'>Map</span>
         </label>
-        <label className="radiooption">
+        <label className='radiooption'>
           <input
-            type="radio"
-            name="nav"
-            value="TreeData"
-            checked={selectedOption === "TreeData"}
+            type='radio'
+            name='nav'
+            value='TreeData'
+            checked={selectedOption === 'TreeData'}
             onChange={handleRadioChange}
             disabled={isDisabled}
           />
-          <span className="tooltip">Physical data</span>
+          <span className='tooltip'>Physical data</span>
         </label>
-        <label className="radiooption">
+        <label className='radiooption'>
           <input
-            type="radio"
-            name="nav"
-            value="inventory"
-            checked={selectedOption === "inventory"}
+            type='radio'
+            name='nav'
+            value='inventory'
+            checked={selectedOption === 'inventory'}
             onChange={handleRadioChange}
           />
-          <span className="tooltip">Inventory</span>
+          <span className='tooltip'>Inventory</span>
         </label>
       </div>
     </nav>

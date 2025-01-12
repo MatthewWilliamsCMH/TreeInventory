@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Uppy from "@uppy/core";
-import { DashboardModal } from "@uppy/react";
-import XHRUpload from "@uppy/xhr-upload";
-import Webcam from "@uppy/webcam";
-import "@uppy/core/dist/style.css"
-import "@uppy/dashboard/dist/style.css"
-import "@uppy/webcam/dist/style.css"
+import React, { useState, useEffect } from 'react';
+import Uppy from '@uppy/core';
+import { DashboardModal } from '@uppy/react';
+import XHRUpload from '@uppy/xhr-upload';
+import Webcam from '@uppy/webcam';
+import '@uppy/core/dist/style.css'
+import '@uppy/dashboard/dist/style.css'
+import '@uppy/webcam/dist/style.css'
 
-const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
+const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [activePhotoType, setActivePhotoType] = useState(null);
   const [uppy, setUppy] = useState(null);
 
@@ -15,18 +15,18 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
     const uppyInstance = new Uppy({
       restrictions: {
         maxNumberOfFiles: 1,
-        allowedFileTypes: ["image/*"]
+        allowedFileTypes: ['image/*']
       },
       autoProceed: false,
     })
     .use(Webcam, {
       mirror: true,
-      facingMode: "environment",
+      facingMode: 'environment',
       showVideoSourceDropdown: true,
     })
     .use(XHRUpload, {
-      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : "http://localhost:3001"}/uploads`,
-      fieldName: "photo",
+      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'http://localhost:3001'}/uploads`,
+      fieldName: 'photo',
       formData: true,
     });
 
@@ -38,12 +38,12 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
       setActivePhotoType(null);
     };
 
-    uppyInstance.on("upload-success", handleUploadSuccess);
+    uppyInstance.on('upload-success', handleUploadSuccess);
 
     setUppy(uppyInstance);
 
     return () => {
-      uppyInstance.off("upload-success", handleUploadSuccess);
+      uppyInstance.off('upload-success', handleUploadSuccess);
       uppyInstance.destroy();
     };
   }, [activePhotoType, onPhotoUpload]); // Add dependencies
@@ -55,26 +55,26 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
 
   return (
     <>
-      <div className="photogroup">
-        {["bark", "summerLeaf", "autumnLeaf", "fruit", "flower", "environs"].map((photoType) => (
+      <div className='photogroup'>
+        {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
           <div
             key={photoType}
-            className="photo"
+            className='photo'
             onClick={() => handlePhotoClick(photoType)}
           >
-            {formValues.photos?.[photoType] ? (
-              <div className="photo-preview">
+            {updatedTree.photos?.[photoType] ? (
+              <div className='photo-preview'>
                 <img
-                  src={formValues.photos[photoType]}
+                  src={updatedTree.photos[photoType]}
                   alt={photoType}
-                  className="object-cover"
+                  className='object-cover'
                 />
               </div>
             ) : (
-              <div className="photo-placeholder">
+              <div className='photo-placeholder'>
                 <p>
                   {photoType
-                    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+                    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
                     .replace(/^([a-z])/g, (match) => match.toUpperCase())}
                 </p>
               </div>
@@ -88,7 +88,7 @@ const PhotoUploadForm = ({ formValues, onPhotoUpload }) => {
           uppy={uppy}
           open={activePhotoType !== null}
           onRequestClose={() => setActivePhotoType(null)}
-          plugins={["Webcam"]}
+          plugins={['Webcam']}
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
           note={`Upload or take a photo of the tree's ${activePhotoType}`}

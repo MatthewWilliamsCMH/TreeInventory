@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import Uppy from "@uppy/core";
-import Tus from "@uppy/tus";
-import Webcam from "@uppy/webcam";
-import { Dashboard, useUppyState } from "@uppy/react";
+import React, { useEffect } from 'react';
+import Uppy from '@uppy/core';
+import Tus from '@uppy/tus';
+import Webcam from '@uppy/webcam';
+import { Dashboard, useUppyState } from '@uppy/react';
 
 const UppyUploader = ({ photoType, onUploadComplete }) => {
   // Initialize Uppy with a unique ID for each photo type
@@ -16,7 +16,7 @@ const UppyUploader = ({ photoType, onUploadComplete }) => {
       }
     })
     .use(Tus, { 
-      endpoint: import.meta.env.VITE_API_URL || "http://localhost:3001/uploads",
+      endpoint: import.meta.env.VITE_API_URL || 'http://localhost:3001/uploads',
       headers: {
         'Photo-Type': photoType
       }
@@ -52,17 +52,17 @@ const UppyUploader = ({ photoType, onUploadComplete }) => {
   }, [uppy, onUploadComplete]);
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white p-4 rounded-lg shadow-lg">
+    <div className='w-full max-w-md mx-auto bg-white p-4 rounded-lg shadow-lg'>
       <Dashboard
         uppy={uppy}
         plugins={['Webcam']}
-        width="100%"
-        height="400px"
+        width='100%'
+        height='400px'
         showProgressDetails={true}
         proudlyDisplayPoweredByUppy={false}
       />
       {fileCount > 0 && (
-        <div className="mt-2 text-sm text-gray-600">
+        <div className='mt-2 text-sm text-gray-600'>
           Upload progress: {Math.round(totalProgress)}%
         </div>
       )}
