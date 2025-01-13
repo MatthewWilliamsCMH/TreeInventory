@@ -14,7 +14,7 @@ const TreeData = () => {
   //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
     const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value; //handle checkboxes differently; they don't return a value
-    setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value)); // Use imported handleFieldChange function
+    setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
   };
 
    const handlePhotoUpload = (url, photoType) => {

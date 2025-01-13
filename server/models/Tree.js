@@ -1,11 +1,11 @@
 const { Schema, model } = require('mongoose');
 
-// Define the schema for the Tree model
+//define the schema for the Tree model
 const treeSchema = new Schema({
   commonName: {type: String, required: true},
   species: { type: Schema.Types.ObjectId, ref: 'Species', required: true },
   variety: { type: String },
-  dbh: { type: String }, //require once all trees have a value; can add 'enum' to this to validate input; create a file of constants for lists?
+  dbh: { type: String }, //require once all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
   notes: { type: String },
   photos: { //store url for images
     bark: { type: String, unique: true },
@@ -15,12 +15,12 @@ const treeSchema = new Schema({
     flower: { type: String, unique: true },
     environs: { type: String, unique: true }
   },
-  lastUpdated: { type: Date, required: true }, //automatically generated when the data is input or updated
+  lastUpdated: { type: Date, required: true }, //auto generated
   location: { 
     northing: { type: Number, required: true }, //always positive at SC
     easting: { type: Number, required: true } //always negative at SC
   },
-  garden: { type: String }, //require once all trees have a value; can add 'enum' to this to validate input; create a file of constants for lists?
+  garden: { type: String }, //require when all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
   siteInfo: {
     slope: { type: Boolean, required: true, default: false },
     overheadLines: { type: Boolean, required: true, default: false },

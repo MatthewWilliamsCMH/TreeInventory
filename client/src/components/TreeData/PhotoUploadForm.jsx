@@ -30,7 +30,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       formData: true,
     });
 
-    // Add cleanup for upload events
+    //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
       console.log('Upload success:', uploadedUrl);

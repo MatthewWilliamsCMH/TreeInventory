@@ -1,10 +1,12 @@
 export const dragHandler = (id, northing, eastingvalue) => {
 
-  //is the field nested (e.g., 'species.commonName')
-  if (field.includes('.')) {
-    const [parentField, childField] = field.split('.'); //split the field into parent and child
+//not sure why this exists. Needed?
 
-    if (parentField === 'species') {  //species names interrelate; this 'if' case syncs them
+  //if field nested (e.g., 'siteData.slope')
+  if (field.includes('.')) {
+    const [parentField, childField] = field.split('.'); //split field into parent & child
+
+    if (parentField === 'species') { //common and scientific names sync'd here
       switch (childField) {
         case 'commonName':
         const scientificFromCommon = commonToScientificList[value]; 

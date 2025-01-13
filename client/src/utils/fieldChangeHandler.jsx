@@ -1,7 +1,7 @@
 export const handleFieldChange = (updatedTree, field, value) => {
-  //is the field nested (e.g., 'species.commonName')
+  //if field nested (e.g., 'siteData.slope')
   if (field.includes('.')) {
-    const [parentField, childField] = field.split('.'); //split the field into parent and child
+    const [parentField, childField] = field.split('.'); //split field into parent & child
     updatedTree = {
       ...updatedTree,
       [parentField]: {
@@ -11,14 +11,13 @@ export const handleFieldChange = (updatedTree, field, value) => {
     };
   }
 
-  //the field is not nested
-  if (field === 'commonName') {  //species names interrelate; this 'if' case syncs scientific name to common
+  //if field not nested
+  if (field === 'commonName') {  //common and scientific names sync'd here
     const scientificFromCommon = commonToScientificList[value]; 
     updatedTree = {
       ...updatedTree,
-         commonName: value,
-         scientificName: scientificFromCommon || ''
-      // }
+      commonName: value,
+      scientificName: scientificFromCommon || ''
     };
   };
 
@@ -40,11 +39,9 @@ export const handleFieldChange = (updatedTree, field, value) => {
 };
 
 //-------------------- select lists --------------------//
-//species should be pulled from db but allow user to create new
-export const newCommonToScientificList = {
-  //write code here(?) to compile common and scientific names to assign to drop-down boxes
-  //do I need to import get_species?
-}
+//code to compile commonToScientificList from db entries and populate dropdowns
+// export const commonToScientificList = {
+// }
 
 export const commonToScientificList = {
   '': '',
@@ -64,12 +61,12 @@ export const commonToScientificList = {
   'Black walnut': 'Juglans nigra',
   'Black willow': 'Salix nigra',
   'Blackgum': 'Nyssa sylvatica',
-  'Blackhaw': 'Viburnum prunifolium', //nonnative
+  'Blackhaw': 'Viburnum prunifolium',
   'Blue spruce': 'Picea pungens',
   'Boxelder': 'Acer negundo',
   'Bur oak': 'Quercus macrocarpa',
   'Butternut': 'Juglans cinerea',
-  'Callery pear': 'Pyrus calleryana', //invasive, nonnative
+  'Callery pear': 'Pyrus calleryana',
   'Chestnut oak': 'Quercus montana',
   'Chinese magnolia': 'Magnolia x soulangeana',
   'Chinquapin oak': 'Quercus muehlenbergii',
@@ -82,19 +79,19 @@ export const commonToScientificList = {
   'Eastern redbud': 'Cercis canadensis',
   'Eastern white pine': 'Pinus strobus',
   'European beech': 'Fagus sylvatica',
-  'Flowering dogwood': 'Cornus florida', //nonnative
-  'Ginkgo': 'Ginkgo biloba', //nonnative
+  'Flowering dogwood': 'Cornus florida',
+  'Ginkgo': 'Ginkgo biloba',
   'Green ash': 'Fraxinus pennsylvanica',
-  'Hawthorn': 'Crataegus phaenopyrum', //nonnative
+  'Hawthorn': 'Crataegus phaenopyrum',
   'Honey locust': 'Gleditsia triacanthos',
-  'Japanese tree lilac': 'Syringa reticulata', //nonnative
+  'Japanese tree lilac': 'Syringa reticulata',
   'Japanese maple': 'Acer palmatum',
   'Kentucky coffeetree': 'Gymnocladus dioicus',
-  'Littleleaf linden': 'Tilia cordata', //nonnative
+  'Littleleaf linden': 'Tilia cordata',
   'Loblolly pine': 'Pinus taeda',
   'Mockernut hickory': 'Carya tomentosa',
   'Northern catalpa': 'Catalpa speciosa',
-  'Northern pecan': 'Carya illinoiensis', //nonnative
+  'Northern pecan': 'Carya illinoiensis',
   'Northern red oak': 'Quercus rubra',
   'Norway maple': 'Acer platanoides',
   'Norway spruce': 'Picea abies',
@@ -104,14 +101,14 @@ export const commonToScientificList = {
   'Pignut hickory': 'Carya glabra',
   'Pin oak': 'Quercus palustris',
   'Pitch pine': 'Pinus rigida',
-  'Prairie crab apple': 'Malus ioensis', //nonnative
-  'Red horse-chestnut': 'Aesculus x carnea', //nonnative
+  'Prairie crab apple': 'Malus ioensis',
+  'Red horse-chestnut': 'Aesculus x carnea',
   'Red maple': 'Acer rubrum',
   'Red mulberry': 'Morus rubra',
   'Red pine': 'Pinus resinosa',
   'River birch': 'Betula nigra',
   'Sassafras': 'Sassafras albidum',
-  'Sawtooth oak': 'Quercus acutissima', //invasive, nonnative
+  'Sawtooth oak': 'Quercus acutissima',
   'Scarlet oak': 'Quercus coccinea',
   'Scotch pine': 'Pinus sylvetris',
   'Scrub hickory': 'Carya floridana',
@@ -120,25 +117,26 @@ export const commonToScientificList = {
   'Shingle oak': 'Quercus imbricaria',
   'Shortleaf pine': 'Pinus echinata',
   'Shumard oak': 'Quercus shumardii',
-  'Siberian elm': 'Ulmus pumila', //invasive, nonnative
+  'Siberian elm': 'Ulmus pumila',
   'Silver maple': 'Acer saccharinum',
   'Slippery elm': 'Ulmus rubra',
   'Sugar maple': 'Acer saccharum',
   'Swamp white oak': 'Quercus bicolor',
   'Sweetbay': 'Magnolia virginiana',
   'Sweetgum': 'Liquidambar styraciflua',
-  'Tree of heaven': 'Ailanthus altissima', //invasive, nonnative
+  'Tree of heaven': 'Ailanthus altissima',
   'Unknown species': 'Unknown species',
   'Virginia pine': 'Pinus virginiana',
   'Weeping cherry': 'Prunus pendula',
   'White ash': 'Fraxinus americana',
-  'White mulberry': 'Morus alba', //invasive, nonnative
+  'White mulberry': 'Morus alba',
   'White oak': 'Quercus alba',
   'Yellow birch': 'Betula alleghaniensis',
   'Yellow buckeye': 'Aesculus flava',
   'Yellow poplar': 'Liriodendron tulipifera'
 }
 
+//move the below into a file of constants?
 export const dbhList = [
   '',
   '< 3', 

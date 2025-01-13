@@ -5,7 +5,7 @@ import Webcam from '@uppy/webcam';
 import { Dashboard, useUppyState } from '@uppy/react';
 
 const UppyUploader = ({ photoType, onUploadComplete }) => {
-  // Initialize Uppy with a unique ID for each photo type
+  //initialize Uppy with unique ID for each photo type
   const [uppy] = React.useState(() => {
     return new Uppy({ 
       id: `uppy-${photoType}`,
@@ -31,7 +31,7 @@ const UppyUploader = ({ photoType, onUploadComplete }) => {
   const totalProgress = useUppyState(uppy, (state) => state.totalProgress);
 
   useEffect(() => {
-    // Listen for upload completion
+    //listen for upload completion
     const handleComplete = (result) => {
       if (result.successful && result.successful.length > 0) {
         const uploadedFile = result.successful[0];
@@ -43,10 +43,10 @@ const UppyUploader = ({ photoType, onUploadComplete }) => {
 
     uppy.on('complete', handleComplete);
 
-    // Cleanup
+    //cleanup
     return () => {
       uppy.off('complete', handleComplete);
-      // Remove event listeners and cleanup
+      //remove event listeners and cleanup
       uppy.cancelAll();
     };
   }, [uppy, onUploadComplete]);

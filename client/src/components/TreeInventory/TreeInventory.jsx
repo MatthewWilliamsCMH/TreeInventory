@@ -10,9 +10,9 @@ const TreeInventory = () => {
   const navigate = useNavigate();
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
-  // set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES); //fetch all trees
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
+  //set up queries
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
@@ -34,21 +34,21 @@ const TreeInventory = () => {
     trees = getAllData.getTrees.map(tree => combineTreeAndSpeciesData(tree, speciesMap))
   }
 
-  // Sort trees based on sortConfig
+  //sort trees based on sortConfig
   const sortedTrees = [...trees].sort((a, b) => {
     if (sortConfig.key === null) return 0;
 
     const aValue = a[sortConfig.key] ?? '';
     const bValue = b[sortConfig.key] ?? '';
 
-    // Sort based on direction (ascending/descending)
+    //sort based on direction (ascending/descending)
     if (aValue < bValue) return sortConfig.direction === 'asc' ? -1 : 1;
     if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1;
     return 0;
   });
 
   const handleSort = (columnKey) => {
-    // If the same column is clicked, reverse the direction
+    //ifsame column clicked, reverse the sort
     setSortConfig((prev) => ({
       key: columnKey,
       direction: prev.key === columnKey ? 
@@ -72,7 +72,6 @@ const TreeInventory = () => {
         <thead>
           <tr>
             <th onClick={() => handleSort('commonName')}>Common name</th>
-            {/* This is not populating */}
             <th onClick={() => handleSort('scientificName')}>Scientific name</th>
             <th onClick={() => handleSort('garden')}>Garden</th>
             <th onClick={() => handleSort('dbh')}>DBH</th>

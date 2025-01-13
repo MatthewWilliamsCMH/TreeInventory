@@ -15,18 +15,20 @@ const TreeMap = () => {
   const navigate = useNavigate();
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
-  //set up queries and mutations
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES); //fetch all trees
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
+  //set up queries
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   
-  const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE); //add one tree
-  const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE); //update one tree
-  const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION); //update location of one tree
+  //set up mutations
+  const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
+  const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE);
+  const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION);
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container
   const map = useRef(null); //use ref to store Leaflet map instance
 
+  //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     const speciesInfo = speciesMap[tree.commonName] || {};
     return {
@@ -39,8 +41,8 @@ const TreeMap = () => {
   };
 
   useEffect(() => {
-    //the map container exists but is empty
     if (mapRef.current && !map.current) {
+    //generate map
       map.current = L.map(mapRef.current, {
       zoomControl: false,
       center: [39.97738230836944, -83.04934859084177],
@@ -50,7 +52,7 @@ const TreeMap = () => {
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
       const googleMutant = L.gridLayer.googleMutant({
         maxZoom: 24,
-        type: 'satellite', // Choose your tile type (e.g., 'roadmap', 'satellite', 'terrain', 'hybrid')
+        type: 'satellite', //other tile types: 'roadmap','terrain', 'hybrid'
         attribution: "&copy; <a href='https://www.google.com/intl/en-US_US/help/terms_maps.html'>Google</a>",
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
@@ -66,7 +68,7 @@ const TreeMap = () => {
         }
       });
 
-      //ensure species data is ready before creating markers
+      //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
         return acc;
@@ -143,16 +145,17 @@ const TreeMap = () => {
       })
     });
 
+    //change cursor when hovering over marker
     marker.on('mouseover', () => {
-      map.current.getContainer().style.cursor = 'pointer'; // Change the cursor to pointer on mouseover
+      map.current.getContainer().style.cursor = 'pointer';
     });
 
     marker.on('mouseout', () => {
-      map.current.getContainer().style.cursor = 'default'; // Reset the cursor to default on mouseout
+      map.current.getContainer().style.cursor = 'default';
     });
   };
 
-  //create new tree object with lat and lng
+  //create new tree object with lat and lng complete but other fields blank
   const handleAddTree = (event) => {
     const { lat, lng } = event.latlng;
     const newTree = {

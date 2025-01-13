@@ -7,13 +7,13 @@ export function formatDateForDisplay(dateStr) {
     return `< ${beforeMatch[1]}`;
   }
   
-  //Unix timestamp
+  //'Unix timestamp'
   if (/^\d{13}$/.test(String(dateStr))) {
     const date = new Date(Number(dateStr));
     return date.toLocaleDateString('en-US');
   }
   
-  //regular date
+  //'mm/dd/yyyy'
   const date = new Date(dateStr);
   if (!isNaN(date.getTime())) {
     return date.toLocaleDateString('en-US');
@@ -21,21 +21,21 @@ export function formatDateForDisplay(dateStr) {
   return dateStr;
 }
 
-//validate dates
+//validate input
 export function validateDateField(dateStr) {
-  if (!dateStr) return true; // Allow empty for optional fields
+  if (!dateStr) return true;
   
   //'before'
   if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
     return true;
   }
   
-  //Unix timestamp
+  //'Unix timestamp'
   if (/^\d{13}$/.test(String(dateStr))) {
     return true;
   }
   
-  //valid date
+  //'mm/dd/yyy'
   const date = new Date(dateStr);
   return !isNaN(date.getTime());
 }

@@ -7,7 +7,7 @@ import { UPDATE_TREE } from '../../mutations/update_tree';
 import './Footer.css';
 
 const Footer = () => {
-  const { updatedTree, setUpdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation?
+  const { updatedTree, setUpdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation necessary?
   const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
   const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
   const navigate = useNavigate();
