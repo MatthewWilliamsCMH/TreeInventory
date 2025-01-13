@@ -11,7 +11,7 @@ const TreeInventory = () => {
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   // set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES); //fetch all species
 
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
