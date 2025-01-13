@@ -3,13 +3,16 @@ import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
 import Webcam from '@uppy/webcam';
-import '@uppy/core/dist/style.css'
-import '@uppy/dashboard/dist/style.css'
-import '@uppy/webcam/dist/style.css'
+import '@uppy/core/dist/style.css';
+import '@uppy/dashboard/dist/style.css';
+import '@uppy/webcam/dist/style.css';
+import FullSizePhoto from './FullSizePhoto.jsx';
 
 const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [activePhotoType, setActivePhotoType] = useState(null);
   const [uppy, setUppy] = useState(null);
+  const [showFullSize, setShowFullSize] = useState(false);
+  const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
 
   useEffect(() => {
     const uppyInstance = new Uppy({
@@ -49,8 +52,65 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   }, [activePhotoType, onPhotoUpload]); // Add dependencies
 
   const handlePhotoClick = (photoType) => {
-    setActivePhotoType(photoType);
-    uppy?.cancelAll();
+    const photoUrl = updatedTree.photos[photoType];
+
+  if (photoUrl) {
+    //open a new browser window
+    const newWindow = window.open('', '_blank', 'width=1024,height=768');
+    
+    //write custom html for new window
+    newWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Tree Photo</title>
+          <style>
+            body {
+              margin: 0;
+              background: black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+            }
+            img {
+              max-width: 100%;
+              max-height: 100vh;
+              object-fit: contain;
+              cursor: pointer;
+            }
+          </style>
+        </head>
+        <body>
+          <img 
+            src="${photoUrl}" 
+            alt="Full size view" 
+            onclick="window.opener.postMessage('openUppy', '*')"
+          />
+        </body>
+      </html>
+    `);
+    
+    // Handle message from the new window
+    const handleMessage = (event) => {
+      if (event.data === 'openUppy') {
+        newWindow.close();
+        setActivePhotoType(photoType);
+        uppy?.cancelAll();
+      }
+    };
+    
+    window.addEventListener('message', handleMessage);
+    
+    //cleanup
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+    } 
+    else {
+      setActivePhotoType(photoType);
+      uppy?.cancelAll();
+    }
   };
 
   return (
@@ -92,6 +152,17 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
           note={`Upload or take a photo of the tree's ${activePhotoType}`}
+        />
+      )}
+
+      {showFullSize && (
+        <FullSizePhoto
+          photoUrl = {selectedPhotoUrl}
+          onClose = {() => setShowFullSize(false)}
+          onEdit={() => {
+            setShowFullSize(false)
+            setActivePhotoType(activePhotoType)
+          }}
         />
       )}
     </>

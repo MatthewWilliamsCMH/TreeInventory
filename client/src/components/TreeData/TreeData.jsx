@@ -17,7 +17,8 @@ const TreeData = () => {
     setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
   };
 
-   const handlePhotoUpload = (url, photoType) => {
+  {/*  photo upload process: If clicked div has URL, open URL in new window; if not, open uploader. If click in new window, open uploader*/}
+  const handlePhotoUpload = (url, photoType) => {
     setUpdatedTree(prevValues => ({
       ...prevValues,
       photos: {
