@@ -41,7 +41,8 @@ const TreeMap = () => {
   useEffect(() => {
     //the map container exists but is empty
     if (mapRef.current && !map.current) {
-      map.current = L.map(mapRef.current, {zoomControl: false,
+      map.current = L.map(mapRef.current, {
+      zoomControl: false,
       center: [39.97738230836944, -83.04934859084177],
       zoom: 19});
       //alternate tile layers
@@ -58,25 +59,23 @@ const TreeMap = () => {
     }
 
     //remove old data and fetch the data anew
-    if (map.current && getAllData?.getTrees) {
+    if (getAllData?.getTrees && getSpeciesData?.getSpecies) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
         }
       });
 
-      // Ensure species data is ready before creating markers
-      if (getSpeciesData?.getSpecies) {
-        const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
-          acc[species.commonName] = species;
-          return acc;
-        }, {});
+      //ensure species data is ready before creating markers
+      const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
+        acc[species.commonName] = species;
+        return acc;
+      }, {});
 
-        getAllData.getTrees.forEach((tree) => {
-          const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
-          createTreeMarker(completeTree, speciesMap);
-        });
-      }
+      getAllData.getTrees.forEach((tree) => {
+        const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
+        createTreeMarker(completeTree, speciesMap);
+      });
     }
 
     //clear the map container and instance before unmounting the component
