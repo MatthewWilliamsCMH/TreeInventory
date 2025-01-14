@@ -16,8 +16,8 @@ const TreeMap = () => {
   const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
 
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES, {fetchPolicy: "network-only"});
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES); //fetch all trees
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   
   //set up mutations
   const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
@@ -71,7 +71,6 @@ const TreeMap = () => {
         }
       });
 
-//THIS IS THE PROBLEMATIC BLOCK. GETALLDATA IS CHANGING WHEN THE SPECIES DATA IS ADDED TO IT. HOW TO PREVENT THIS FROM TRIGGERING A RERENDER
       //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
@@ -106,7 +105,7 @@ const TreeMap = () => {
 
     const myIcon = L.icon({
       iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-      iconSize: [13, 13],
+      iconSize: [12, 12],
       iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
     });
 
