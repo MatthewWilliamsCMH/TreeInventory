@@ -13,11 +13,11 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
+  const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
 
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES, {fetchPolicy: "network-only"});
   
   //set up mutations
   const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
@@ -41,12 +41,13 @@ const TreeMap = () => {
   };
 
   useEffect(() => {
-    if (mapRef.current && !map.current) {
+  if (mapRef.current && !map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
     //generate map
       map.current = L.map(mapRef.current, {
       zoomControl: false,
       center: [39.97738230836944, -83.04934859084177],
       zoom: 19});
+
       //alternate tile layers
       // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
@@ -61,13 +62,14 @@ const TreeMap = () => {
     }
 
     //remove old data and fetch the data anew
-    if (getAllData?.getTrees && getSpeciesData?.getSpecies) {
+    if (map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
         }
       });
 
+//THIS IS THE PROBLEMATIC BLOCK. GETALLDATA IS CHANGING WHEN THE SPECIES DATA IS ADDED TO IT. HOW TO PREVENT THIS FROM TRIGGERING A RERENDER
       //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
@@ -123,7 +125,7 @@ const TreeMap = () => {
     marker.on('dragend', function(event){
       const { lat, lng } = event.target._latlng;
       const draggedTreeId = tree.id;
-      const { data } = updateTreeLocationMutation({
+      const { data } = updateTreeLocation({
         variables: {
           id: draggedTreeId,
           location: {
@@ -207,11 +209,12 @@ const TreeMap = () => {
     navigate('/TreeData')
   }
 
-  if (getAllLoading || addTreeLoading || updateTreeLoading|| updateTreeLocationLoading) {
+  if (getAllLoading || getSpeciesLoading) {
     return <p>Loading...</p>;
   }
-  if (getAllError || addTreeError || updateTreeError) {
-    return <p>Error: {getAllError?.message || addTreeError?.message || updateTreeError?.message}</p>;
+
+  if (getAllError || getSpeciesError) {
+    return <p>Error: {getAllError?.message || getSpeciesError?.message}</p>;
   }
 
   return (

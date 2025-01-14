@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer.jsx';
 import DangerFlags from '../Header/DangerFlags.jsx';
 import { handleFieldChange, commonToScientificList, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler.jsx';
 import { formatDateForDisplay } from '../../utils/dateHandler.jsx';
-
 import PhotoUploadForm from './PhotoUploadForm.jsx'
 
 const TreeData = () => {

@@ -136,6 +136,22 @@ const resolvers = {
       }
     },
 
+    updateTreeLocation: async (_, { id, location }) => {
+      try {
+        return await Tree.findByIdAndUpdate(
+          id,
+          {
+            location,
+          },
+          { new: true }
+        );
+      }
+      catch (err) {
+        console.error(err);
+        return null;
+      }
+    },
+
     addSpecies: async (_, { family, commonName, scientificName, nonnative, invasive, markerColor }) => {
       try {
         const existingSpecies = await Species.findOne({

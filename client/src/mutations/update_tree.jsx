@@ -17,7 +17,7 @@ export const UPDATE_TREE = gql`
     $felledBy: String
     $careNeeds: careNeedsInput
     $careHistory: String
-    $hidden: Boolean!
+    $hidden: Boolean
   ) {
     updateTree(
       id: $id

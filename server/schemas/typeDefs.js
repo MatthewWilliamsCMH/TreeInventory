@@ -108,7 +108,7 @@ const typeDefs = gql `
     felledBy: String
     careNeeds: careNeeds
     careHistory: String
-    hidden: Boolean!
+    hidden: Boolean
   }
 
   type Query {
@@ -136,7 +136,7 @@ const typeDefs = gql `
       felledBy: String
       careNeeds: careNeedsInput
       careHistory: String
-      hidden: Boolean!
+      hidden: Boolean
     ): Tree
 
     updateTree (
@@ -156,7 +156,12 @@ const typeDefs = gql `
       felledBy: String
       careNeeds: careNeedsInput
       careHistory: String
-      hidden: Boolean!
+      hidden: Boolean
+    ): Tree
+
+    updateTreeLocation (
+      id: ID!
+      location: LocationInput
     ): Tree
 
     addSpecies (
