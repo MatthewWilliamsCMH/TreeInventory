@@ -44,9 +44,11 @@ const TreeMap = () => {
   if (mapRef.current && !map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
     //generate map
       map.current = L.map(mapRef.current, {
-      zoomControl: false,
-      center: [39.97738230836944, -83.04934859084177],
-      zoom: 19});
+        zoomControl: false,
+        center: [39.97738230836944, -83.04934859084177],
+        zoom: 19,
+        tapTolerance: 30
+      });
 
       //alternate tile layers
       // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
@@ -98,7 +100,7 @@ const TreeMap = () => {
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
-        <circle cx='6' cy='6' r='6' fill='#${markerColor}' stroke='lightgray' stroke-width='1'/>
+        <circle cx='6' cy='6' r='8' fill='#${markerColor}' stroke='lightgray' stroke-width='1'/>
       </svg>
     `;
 
