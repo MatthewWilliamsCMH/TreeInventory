@@ -20,25 +20,16 @@ const TreeMap = () => {
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   
   //set up mutations
-  const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
-  const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE);
-  const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION);
+  const [addTree] = useMutation(ADD_TREE);
+  // const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
+  const [updateTree] = useMutation(UPDATE_TREE);
+  // const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE);
+  const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION);
+  // const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION);
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container
   const map = useRef(null); //use ref to store Leaflet map instance
-
-  //combine add species fields to tree object, which already has tree fields
-  const combineTreeAndSpeciesData = (tree, speciesMap) => {
-    const speciesInfo = speciesMap[tree.commonName] || {};
-    return {
-      ...tree,
-      scientificName: speciesInfo.scientificName || '',
-      nonnative: speciesInfo.nonnative || false,
-      invasive: speciesInfo.invasive || false,
-      markerColor: speciesInfo.markerColor || 'FFFFFF'
-    };
-  };
 
   useEffect(() => {
   if (mapRef.current && !map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
@@ -64,7 +55,8 @@ const TreeMap = () => {
     }
 
     //remove old data and fetch the data anew
-    if (map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
+    if (map.current && getAllData?.getTrees) {
+    // if (map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
@@ -92,6 +84,18 @@ const TreeMap = () => {
     };
   }, [getAllData, selectedTree]);
 
+  //combine add species fields to tree object, which already has tree fields
+  const combineTreeAndSpeciesData = (tree, speciesMap) => {
+    const speciesInfo = speciesMap[tree.commonName] || {};
+    return {
+      ...tree,
+      scientificName: speciesInfo.scientificName || '',
+      nonnative: speciesInfo.nonnative || false,
+      invasive: speciesInfo.invasive || false,
+      markerColor: speciesInfo.markerColor || 'FFFFFF'
+    };
+  };
+
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
@@ -115,18 +119,21 @@ const TreeMap = () => {
       Id: ${tree.id}
     `;
     
-    const marker = L.marker([northing, easting], {
-      draggable: 'true',
-      icon: myIcon,
-      riseOnHover: 'true'
-    })
-      .bindPopup(popupContent)
-      .addTo(map.current);
+    const marker = L
+    .marker(
+      [northing, easting], {
+        draggable: 'true',
+        icon: myIcon,
+        riseOnHover: 'true'
+      }
+    )
+    .bindPopup(popupContent)
+    .addTo(map.current);
 
     marker.on('dragend', function(event){
       const { lat, lng } = event.target._latlng;
       const draggedTreeId = tree.id;
-      const { data } = updateTreeLocation({
+      updateTreeLocation({
         variables: {
           id: draggedTreeId,
           location: {
@@ -134,7 +141,7 @@ const TreeMap = () => {
             easting: lng
           }
         }
-      })
+      });
     });
 
     marker.on('popupopen', (event) => {
@@ -145,7 +152,7 @@ const TreeMap = () => {
         setUpdatedTree(tree);
         navigate('/TreeData');
         map.current.closePopup();
-      })
+      });
     });
 
     //change cursor when hovering over marker
