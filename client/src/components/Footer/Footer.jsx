@@ -13,6 +13,7 @@ const Footer = () => {
   // const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
   const [updateTreeMutation, { loading: updateTreeLoading }] = useMutation(UPDATE_TREE);
   // const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
+
   const navigate = useNavigate();
 
   const handleSubmit = async () => {

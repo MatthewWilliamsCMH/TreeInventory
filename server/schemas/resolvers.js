@@ -99,7 +99,7 @@ const resolvers = {
       }
     },
 
-    updateTree: async (_, { id, commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, careNeeds, careHistory, hidden }) => {
+    updateTree: async (_, { id, commonName, variety, dbh, photos, notes, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, careNeeds, careHistory, hidden }) => {
       try {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
@@ -115,7 +115,6 @@ const resolvers = {
             dbh,
             photos,
             notes,
-            location,
             garden,
             siteInfo,
             lastUpdated,
