@@ -10,7 +10,10 @@ const Footer = () => {
   const { updatedTree, setUpdatedTree, setSelectedTree } = useOutletContext();
   // const { updatedTree, setUpdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation necessary?
   const [addTreeMutation, { loading: addTreeLoading }] = useMutation(ADD_TREE);
-  const [updateTreeMutation, { loading: updateTreeLoading, }] = useMutation(UPDATE_TREE);
+  // const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
+  const [updateTreeMutation, { loading: updateTreeLoading }] = useMutation(UPDATE_TREE);
+  // const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
+
   const navigate = useNavigate();
 
   const handleSubmit = async () => {

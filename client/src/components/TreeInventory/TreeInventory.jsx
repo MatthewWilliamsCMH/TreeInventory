@@ -65,7 +65,7 @@ const TreeInventory = () => {
 
   if (getAllLoading) return <div>Loading trees...</div>;
   if (getAllError) return <div>Error loading trees: {error.message}</div>;
-  if (getSpeciesLoading) return <div>Loading species...</div>;
+  if (getSpeciesLoading) return <div>Error loading species...</div>;
   if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
 
   return (

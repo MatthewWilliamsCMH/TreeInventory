@@ -17,16 +17,14 @@ const TreeMap = () => {
   // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
 
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, { fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   
   //set up mutations
-  // const [addTree] = useMutation(ADD_TREE);
   // const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
-  // const [updateTree] = useMutation(UPDATE_TREE);
   // const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE);
-  const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, { fetchPolicy: "no-cache"});
-  // const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION);
+  const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:"no-cache"});
+  // const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:"no-cache"});
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container
