@@ -8,7 +8,8 @@ import './TreeInventory.css';
 
 const TreeInventory = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
+  const { setSelectedTree, setUpdatedTree } = useOutletContext();
+  // const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
@@ -64,6 +65,7 @@ const TreeInventory = () => {
 
   if (getAllLoading) return <div>Loading trees...</div>;
   if (getAllError) return <div>Error loading trees: {error.message}</div>;
+  if (getSpeciesLoading) return <div>Error loading species...</div>;
   if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
 
   return (

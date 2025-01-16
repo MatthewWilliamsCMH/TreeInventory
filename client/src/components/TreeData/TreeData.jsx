@@ -8,7 +8,8 @@ import { formatDateForDisplay } from '../../utils/dateHandler.jsx';
 import PhotoUploadForm from './PhotoUploadForm.jsx'
 
 const TreeData = () => {
-  const { updatedTree, setUpdatedTree, treeLocation, setTreeLocation, formStyle } = useOutletContext();
+  const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
+  // const { updatedTree, setUpdatedTree, treeLocation, setTreeLocation, formStyle } = useOutletContext();
  
   //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
