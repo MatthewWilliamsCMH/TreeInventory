@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from '@apollo/client';
 import L from 'leaflet';
@@ -15,7 +15,7 @@ const TreeMap = () => {
   const navigate = useNavigate();
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
   // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
-
+const [mapLoaded, setMapLoaded] = useState(false)
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
@@ -50,6 +50,10 @@ const TreeMap = () => {
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
+      map.current.on('load', () => {
+        setMapLoaded(true)
+      })
+
       map.current.on('click', handleAddTree);
     }
 
@@ -81,7 +85,7 @@ const TreeMap = () => {
         map.current = null;
       }
     };
-  }, [getAllData, selectedTree]);
+  }, [getAllData, selectedTree, mapLoaded]);
 
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
