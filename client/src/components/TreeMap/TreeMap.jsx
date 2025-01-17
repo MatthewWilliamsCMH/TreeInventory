@@ -143,16 +143,26 @@ const TreeMap = () => {
       });
     });
 
-    marker.on('popupopen', (event) => {
-      const popup = event.popup;
-      const popupElement = popup.getElement();
-      popupElement.addEventListener('click', () => {
-        setSelectedTree(tree);
-        setUpdatedTree(tree);
-        navigate('/TreeData');
-        map.current.closePopup();
+  marker.on('popupopen', (event) => {
+    const popup = event.popup;
+    const popupElement = popup.getElement();
+
+    //prevent navigation when clicking the close button
+    const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
+    if (closeButton) {
+      closeButton.addEventListener('click', (event) => {
+        event.stopPropagation();
       });
+    }
+
+    //allow navigation when any part of the popup is clicked except for the close button.
+    popupElement.addEventListener('click', () => {
+      setSelectedTree(tree);
+      setUpdatedTree(tree);
+      navigate('/TreeData');
+      map.current.closePopup();
     });
+  });
 
     //change cursor when hovering over marker
     marker.on('mouseover', () => {
