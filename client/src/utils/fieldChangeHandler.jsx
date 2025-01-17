@@ -40,8 +40,15 @@ export const handleFieldChange = (updatedTree, field, value) => {
 
 //-------------------- select lists --------------------//
 //code to compile commonToScientificList from db entries and populate dropdowns
-// export const commonToScientificList = {
-// }
+export const newCommonToScientificList = (getAllData) => {
+  const commonList = new Set();
+
+  getAllData.forEach(tree => {
+    commonList.add(tree.commonName);  // Add the commonName of each tree
+  });
+
+  return commonList;
+};
 
 export const commonToScientificList = {
   '': '',

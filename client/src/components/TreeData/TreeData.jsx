@@ -1,15 +1,53 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
 
 import Footer from '../Footer/Footer.jsx';
 import DangerFlags from '../Header/DangerFlags.jsx';
-import { handleFieldChange, commonToScientificList, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler.jsx';
+import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler.jsx';
 import { formatDateForDisplay } from '../../utils/dateHandler.jsx';
-import PhotoUploadForm from './PhotoUploadForm.jsx'
+import PhotoUploadForm from './PhotoUploadForm.jsx';
+import { GET_TREES } from '../../queries/get_trees';
+import { GET_SPECIES } from '../../queries/get_species';
 
 const TreeData = () => {
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
-  // const { updatedTree, setUpdatedTree, treeLocation, setTreeLocation, formStyle } = useOutletContext();
+
+  // Set up queries
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
+
+  // Create state for mapped common-to-scientific species names
+  const [commonToScientificList, setCommonToScientificList] = useState(null);
+
+  // Collect list of commonNames
+  useEffect(() => {
+    if (getSpeciesData?.getSpecies && getAllData?.getTrees) {
+      const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
+        acc[species.commonName] = species.scientificName;
+        return acc;
+      }, {});
+
+      const newCommonToScientificList = getAllData.getTrees.reduce((acc, tree) => {
+        const commonName = tree.commonName;
+        if (speciesMap[commonName]) {
+          acc[commonName] = speciesMap[commonName];
+        }
+        return acc;
+      }, {});
+
+      setCommonToScientificList(newCommonToScientificList);
+    }
+  }, [getSpeciesData, getAllData]);
+
+  // Handle loading and error states
+  if (getAllLoading || getSpeciesLoading) {
+    return <div>Loading species and tree data...</div>;
+  }
+
+  if (getAllError || getSpeciesError) {
+    return <div>Error loading data</div>;
+  }
  
   //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
@@ -45,11 +83,18 @@ const TreeData = () => {
                   value = {updatedTree.commonName}
                   onChange = {(event) => handleInputChange('commonName', event)}
                 >
-                  {Object.keys(commonToScientificList).map((common) => (
-                    <option key={common} value={common}>
-                      {common}
-                    </option>
-                  ))}
+                  {commonToScientificList && Object.keys(commonToScientificList).length > 0 
+                    ? (
+                      Object.keys(commonToScientificList).map((common) => (
+                        <option key={common} value={common}>
+                          {common}
+                        </option>
+                      ))
+                    ) 
+                    : (
+                      <option value=''>No species available</option>
+                    )
+                  }
                 </select>
               </div>
 
@@ -61,13 +106,15 @@ const TreeData = () => {
                   value = {updatedTree.scientificName}
                   onChange = {(event) => handleInputChange('scientificName', event)}
                 >
-                {Object.entries(commonToScientificList)
-                  .sort(([, a], [, b]) => a.localeCompare(b))
-                  .map(([common, scientific]) => (
-                    <option key={scientific} value={scientific}>
-                      {scientific}
-                    </option>
-                  ))}
+                  {commonToScientificList && Object.entries(commonToScientificList).length > 0
+                    ? Object.entries(commonToScientificList)
+                        .sort(([, a], [, b]) => a.localeCompare(b))
+                        .map(([common, scientific]) => (
+                          <option key={scientific} value={scientific}>
+                            {scientific}
+                          </option>
+                        ))
+                    : <option value=''>No scientific names available</option>}
                 </select>
               </div>
             </div>
