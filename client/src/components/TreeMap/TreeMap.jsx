@@ -50,10 +50,12 @@ const [mapLoaded, setMapLoaded] = useState(false)
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
+      //ensure map is loaded; this is an attempt to prevent intermittent failure to load map and/or markers
       map.current.on('load', () => {
         setMapLoaded(true)
       })
 
+      //add new tree when user clicks on empty area of map
       map.current.on('click', handleAddTree);
     }
 

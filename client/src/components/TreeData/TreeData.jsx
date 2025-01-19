@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import Select from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 
 import Footer from '../Footer/Footer.jsx';
 import DangerFlags from '../Header/DangerFlags.jsx';
@@ -64,6 +66,40 @@ const TreeData = () => {
       }
     }));
   };
+
+//example for react-select NOTE: THIS USES THE DEPRICATED CLASS COMPONENT; RECAST AS A FUNCTION COMPONENT
+
+
+// const options = [
+//   { value: 'chocolate', label: 'Chocolate' },
+//   { value: 'strawberry', label: 'Strawberry' },
+//   { value: 'vanilla', label: 'Vanilla' },
+// ];
+
+// class App extends React.Component {
+//   state = {
+//     selectedOption: null,
+//   };
+//   handleChange = (selectedOption) => {
+//     this.setState({ selectedOption }, () =>
+//       console.log(`Option selected:`, this.state.selectedOption)
+//     );
+//   };
+//   render() {
+//     const { selectedOption } = this.state;
+
+//     return (
+//       <Select
+//         value={selectedOption}
+//         onChange={this.handleChange}
+//         options={options}
+//       />
+//     );
+//   }
+// }
+
+
+
 
   //-------------------- render component--------------------//
   return (
