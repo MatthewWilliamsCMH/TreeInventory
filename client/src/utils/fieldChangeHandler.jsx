@@ -1,4 +1,4 @@
-export const handleFieldChange = (updatedTree, field, value) => {
+export const handleFieldChange = (updatedTree, field, value, commonToScientificList) => {
   //if field nested (e.g., 'siteData.slope')
   if (field.includes('.')) {
     const [parentField, childField] = field.split('.'); //split field into parent & child

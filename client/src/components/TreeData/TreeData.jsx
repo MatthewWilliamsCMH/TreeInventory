@@ -15,14 +15,14 @@ import { GET_SPECIES } from '../../queries/get_species';
 const TreeData = () => {
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
 
-  // Set up queries
+  //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
-  // Create state for mapped common-to-scientific species names
+  //state for mapped common-to-scientific species names
   const [commonToScientificList, setCommonToScientificList] = useState(null);
 
-  // Collect list of commonNames
+  //compile list of commonNames
   useEffect(() => {
     if (getSpeciesData?.getSpecies && getAllData?.getTrees) {
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
@@ -30,7 +30,7 @@ const TreeData = () => {
         return acc;
       }, {});
 
-      const newCommonToScientificList = getAllData.getTrees.reduce((acc, tree) => {
+      const commonToScientificList = getAllData.getTrees.reduce((acc, tree) => {
         const commonName = tree.commonName;
         if (speciesMap[commonName]) {
           acc[commonName] = speciesMap[commonName];
@@ -38,11 +38,11 @@ const TreeData = () => {
         return acc;
       }, {});
 
-      setCommonToScientificList(newCommonToScientificList);
+      setCommonToScientificList(commonToScientificList);
     }
   }, [getSpeciesData, getAllData]);
 
-  // Handle loading and error states
+  //loading and error states
   if (getAllLoading || getSpeciesLoading) {
     return <div>Loading species and tree data...</div>;
   }
@@ -50,11 +50,28 @@ const TreeData = () => {
   if (getAllError || getSpeciesError) {
     return <div>Error loading data</div>;
   }
- 
+
   //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
-    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value; //handle checkboxes differently; they don't return a value
-    setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
+    if (event.target && event.target.type === 'checkbox') { //handle checkboxes separately; they return 'checked,' not 'value'
+      const value = event.target.checked;
+      setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
+    }
+    else if (event.target && event.target.value !== undefined) {
+      const value = event.target.value;
+      setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
+    }
+    //hanld react-select Selects and CreatableSelects (which pass an object with label and value)
+    else if (event && event.value !== undefined) {
+      const value = event.value;
+      
+      //if it's a CreatableSelect (commonName or scientificName), pass `commonToScientificList` to sync them
+      if (field === 'commonName' || field === 'scientificName') {
+        setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value, commonToScientificList));
+      } else {
+        setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
+      }
+    }
   };
 
   const handlePhotoUpload = (url, photoType) => {
@@ -67,43 +84,9 @@ const TreeData = () => {
     }));
   };
 
-//example for react-select NOTE: THIS USES THE DEPRICATED CLASS COMPONENT; RECAST AS A FUNCTION COMPONENT
-
-
-// const options = [
-//   { value: 'chocolate', label: 'Chocolate' },
-//   { value: 'strawberry', label: 'Strawberry' },
-//   { value: 'vanilla', label: 'Vanilla' },
-// ];
-
-// class App extends React.Component {
-//   state = {
-//     selectedOption: null,
-//   };
-//   handleChange = (selectedOption) => {
-//     this.setState({ selectedOption }, () =>
-//       console.log(`Option selected:`, this.state.selectedOption)
-//     );
-//   };
-//   render() {
-//     const { selectedOption } = this.state;
-
-//     return (
-//       <Select
-//         value={selectedOption}
-//         onChange={this.handleChange}
-//         options={options}
-//       />
-//     );
-//   }
-// }
-
-
-
-
-  //-------------------- render component--------------------//
   return (
     <>
+      {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}
       <div className = 'danger-flags-container'>
         <DangerFlags updatedTree = {updatedTree}/>
       </div>
@@ -113,53 +96,54 @@ const TreeData = () => {
             <div className = 'controlgroup'>
               <label>Species name</label>
               <div className = 'control'>
-                <label htmlFor = 'commonName'>Common</label>
-                <select
-                  id = 'commonName'
-                  value = {updatedTree.commonName}
-                  onChange = {(event) => handleInputChange('commonName', event)}
-                >
-                  {commonToScientificList && Object.keys(commonToScientificList).length > 0 
-                    ? (
-                      Object.keys(commonToScientificList).map((common) => (
-                        <option key={common} value={common}>
-                          {common}
-                        </option>
-                      ))
-                    ) 
-                    : (
-                      <option value=''>No species available</option>
-                    )
-                  }
-                </select>
+                <label htmlFor='commonName'>Common</label>
+                <CreatableSelect
+                  id='commonName'
+                  value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
+                  onChange={(selectedOption) => handleInputChange('commonName', selectedOption)} // Handle change for CreatableSelect
+                  options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
+                    label: common,
+                    value: common
+                  })) : []}
+                  styles={{
+                    control: (base) => ({
+                      ...base,
+                      border: '1px solid #888',
+                      borderRadius: '0px',
+                    })
+                  }}
+                />
               </div>
 
               <div className = 'control'>
-                <label htmlFor = 'scientificName'>Scientific</label>
-                <select
-                  id = 'scientificName'
-                  placeholder = 'Select a scientific name.'
-                  value = {updatedTree.scientificName}
-                  onChange = {(event) => handleInputChange('scientificName', event)}
-                >
-                  {commonToScientificList && Object.entries(commonToScientificList).length > 0
-                    ? Object.entries(commonToScientificList)
-                        .sort(([, a], [, b]) => a.localeCompare(b))
-                        .map(([common, scientific]) => (
-                          <option key={scientific} value={scientific}>
-                            {scientific}
-                          </option>
-                        ))
-                    : <option value=''>No scientific names available</option>}
-                </select>
+                <label htmlFor="scientificName">Scientific</label>
+                <CreatableSelect
+                  id="scientificName"
+                  value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
+                  onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)} // Handle change for CreatableSelect
+                  options={commonToScientificList ? Object.entries(commonToScientificList)
+                    .sort(([, a], [, b]) => a.localeCompare(b))
+                    .map(([common, scientific]) => ({
+                      label: scientific,
+                      value: scientific
+                    })) : []}
+                  styles={{
+                    control: (base) => ({
+                      ...base,
+                      border: '1px solid #888',
+                      borderRadius: '0px',
+                    })
+                  }}
+                />
               </div>
             </div>
 
             <div className = 'control'>
               <label htmlFor = 'variety'>Variety</label>
               <input
-                id = 'variety'
                 type = 'text' 
+                className = 'standard'
+                id = 'variety'
                 value = {updatedTree.variety} 
                 onChange = {(event) => handleInputChange('variety', event)}
               />
@@ -167,33 +151,44 @@ const TreeData = () => {
 
             <div className = 'control'>
               <label htmlFor = 'dbh'>DBH</label>
-              <select 
+              <Select 
                 id = 'dbh' 
-                placeholder = 'Select a diameter.'
-                value = {updatedTree.dbh} 
-                onChange = {event => handleInputChange('dbh', event)} 
-              >
-                {dbhList.map((dbh, index) => (
-                  <option key = {index} value = {dbh}>
-                    {dbh}
-                  </option>
-                ))}
-              </select>
+                value={{ label: updatedTree.dbh, value: updatedTree.dbh }}
+                onChange = {event => handleInputChange('dbh', event)}
+                options = {dbhList.map((dbh) => ({
+                  label: dbh,
+                  value: dbh
+                }))}
+                placeholder = ''
+                styles={{
+                  control: (base) => ({
+                    ...base,
+                    border: '1px solid #888',
+                    borderRadius: '0px',
+                  })
+                }}              
+              />
             </div>
 
             <div className='control'>
               <label htmlFor = 'garden'>Garden</label>
-              <select
+              <Select
                 id = 'garden'
-                value = {updatedTree.garden}
+                value={{ label: updatedTree.garden, value: updatedTree.garden }}
                 onChange = {(event) => handleInputChange('garden', event)}
-              >
-                {gardenList.map((garden, index) => (
-                  <option key = {index} value = {garden}>
-                    {garden}
-                  </option>
-                ))}
-              </select>
+                options = {gardenList.map((garden) => ({
+                  label: garden,
+                  value: garden
+                }))}
+                placeholder = ''
+                styles={{
+                  control: (base) => ({
+                    ...base,
+                    border: '1px solid #888',
+                    borderRadius: '0px',
+                  })
+                }}
+              />
             </div>
 
             <div className = 'control'>
@@ -225,6 +220,7 @@ const TreeData = () => {
             <div className = 'control'>
               <label htmlFor = 'installedDate'>Installed on</label>
               <input 
+                className = 'standard'
                 id = 'installedDate'
                 type = 'text'
                 onChange = {(event) => handleInputChange('installedDate', event)} 
@@ -235,6 +231,7 @@ const TreeData = () => {
             <div className = 'control'>
               <label htmlFor = 'installedBy'>Installed by</label>
               <input
+                className = 'standard'
                 id = 'installedBy'
                 type = 'text'
                 defaultValue = {updatedTree.installedBy || ''} 
@@ -245,6 +242,7 @@ const TreeData = () => {
             <div className = 'control'>
               <label htmlFor = 'felledDate'>Felled on</label>
               <input 
+                className = 'standard'
                 id = 'felledDate'
                 type = 'text'
                 defaultValue = {formatDateForDisplay(updatedTree.felledDate)}
@@ -255,6 +253,7 @@ const TreeData = () => {
             <div className = 'control'>
               <label htmlFor = 'felledBy'>Felled by</label>
               <input
+                className = 'standard'
                 id = 'felledBy'
                 type = 'text'
                 defaultValue = {updatedTree.felledBy || ''} 
