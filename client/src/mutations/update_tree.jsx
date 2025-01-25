@@ -16,7 +16,6 @@ export const UPDATE_TREE = gql`
     $felledDate: String
     $felledBy: String
     $careNeeds: careNeedsInput
-    $careHistory: String
     $hidden: Boolean
   ) {
     updateTree(
@@ -34,7 +33,6 @@ export const UPDATE_TREE = gql`
       felledDate: $felledDate
       felledBy: $felledBy
       careNeeds: $careNeeds
-      careHistory: $careHistory
       hidden: $hidden
     ) {
       id
@@ -75,7 +73,6 @@ export const UPDATE_TREE = gql`
         fell
         removeStump
       }
-      careHistory
       hidden
     }
   }

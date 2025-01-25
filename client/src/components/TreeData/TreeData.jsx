@@ -6,14 +6,17 @@ import CreatableSelect from 'react-select/creatable';
 
 import Footer from '../Footer/Footer.jsx';
 import DangerFlags from '../Header/DangerFlags.jsx';
+import PhotoUploadForm from './PhotoUploadForm.jsx';
+
 import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler.jsx';
 import { formatDateForDisplay } from '../../utils/dateHandler.jsx';
-import PhotoUploadForm from './PhotoUploadForm.jsx';
+
 import { GET_TREES } from '../../queries/get_trees';
 import { GET_SPECIES } from '../../queries/get_species';
 
 const TreeData = () => {
-  const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
+  const { updatedTree, setUpdatedTree, formStyle, openOverlay } = useOutletContext();
+  console.log(updatedTree)
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
@@ -53,24 +56,55 @@ const TreeData = () => {
 
   //-------------------- handle field changes --------------------//
   const handleInputChange = (field, event) => {
-    if (event.target && event.target.type === 'checkbox') { //handle checkboxes separately; they return 'checked,' not 'value'
+    if (event.target && event.target.type === 'checkbox') {
+      //handle checkboxes separately; they return 'checked,' not 'value'
       const value = event.target.checked;
       setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
-    }
+    } 
     else if (event.target && event.target.value !== undefined) {
+      //handle text fields and other inputs
       const value = event.target.value;
       setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
+      
+      //if the field is commonName or scientificName, trigger the species existence check
+      if (field === 'commonName' || field === 'scientificName') {
+        checkSpeciesExistence(value);  // Check existence in DB when the field loses focus (onBlur)
+      }
     }
-    //hanld react-select Selects and CreatableSelects (which pass an object with label and value)
+    //handle react-select Selects and CreatableSelects (which pass an object with label and value)
     else if (event && event.value !== undefined) {
       const value = event.value;
       
-      //if it's a CreatableSelect (commonName or scientificName), pass `commonToScientificList` to sync them
       if (field === 'commonName' || field === 'scientificName') {
         setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value, commonToScientificList));
       } else {
         setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
       }
+    }
+  };
+
+  //trigger the check when the input field loses focus
+  const handleBlur = (field, value) => {
+    if (field === 'commonName' || field === 'scientificName') {
+      checkSpeciesExistence(value);
+    }
+  };
+
+  //check if the species exists in the database
+  const checkSpeciesExistence = (name) => {
+    try {
+      console.log(getSpeciesData)
+if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === name) || getSpeciesData.getSpecies.some(species => species.scientificName === name)) {
+
+        console.log(`Species ${name} exists.`);
+      } 
+      else {
+        console.log(`Species ${name} does not exist.`);
+        openOverlay();
+      }
+    } 
+    catch (error) {
+      console.error("Error checking species existence:", error);
     }
   };
 
@@ -100,7 +134,8 @@ const TreeData = () => {
                 <CreatableSelect
                   id='commonName'
                   value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
-                  onChange={(selectedOption) => handleInputChange('commonName', selectedOption)} // Handle change for CreatableSelect
+                  onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
+                  onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
                   options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
                     label: common,
                     value: common
@@ -121,6 +156,7 @@ const TreeData = () => {
                   id="scientificName"
                   value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
                   onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)} // Handle change for CreatableSelect
+                  onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
                   options={commonToScientificList ? Object.entries(commonToScientificList)
                     .sort(([, a], [, b]) => a.localeCompare(b))
                     .map(([common, scientific]) => ({

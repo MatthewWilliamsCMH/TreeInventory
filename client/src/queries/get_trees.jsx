@@ -45,7 +45,6 @@ export const GET_TREES = gql`
         fell
         removeStump
       }
-      careHistory
       hidden
     }
   }

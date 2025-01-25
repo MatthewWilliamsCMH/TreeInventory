@@ -1,0 +1,31 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay form {
+  padding: 20px;
+  max-width: 500px;
+  overflow-y: auto;
+}
+
+.overlay .control label {
+  width: 120px;
+}
+
+.overlay input[type='text'] {
+  padding: 10px;
+}
+
+.overlay .checkboxgroup {
+  height: calc((21px * 2) + 5px);
+  margin-left: -7px;
+}

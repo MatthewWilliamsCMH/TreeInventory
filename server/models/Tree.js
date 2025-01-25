@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 //define the schema for the Tree model
 const treeSchema = new Schema({
   commonName: {type: String, required: true},
-  species: { type: Schema.Types.ObjectId, ref: 'Species', required: true },
+  // species: { type: Schema.Types.ObjectId, ref: 'Species', required: true },
   variety: { type: String },
   dbh: { type: String }, //require once all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
   notes: { type: String },
@@ -44,7 +44,6 @@ const treeSchema = new Schema({
     fell: { type: Boolean, required: true, default: false },
     removeStump: { type: Boolean, required: true, default: false }
   },
-  careHistory: {type: String },
   hidden: { type: Boolean, required: true, default: false }
 });
 

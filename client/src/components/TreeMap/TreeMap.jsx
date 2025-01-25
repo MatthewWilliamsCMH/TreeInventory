@@ -7,24 +7,18 @@ import 'leaflet.gridlayer.googlemutant';
 
 import { GET_TREES } from '../../queries/get_trees';
 import { GET_SPECIES } from '../../queries/get_species';
-// import { ADD_TREE } from '../../mutations/add_tree';
-// import { UPDATE_TREE } from '../../mutations/update_tree';
 import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
-  // const { selectedTree, setSelectedTree, treeLocation, setTreeLocation, setUpdatedTree } = useOutletContext();
 const [mapLoaded, setMapLoaded] = useState(false)
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData, refetch: refetchSpecies } = useQuery(GET_SPECIES);
   
   //set up mutations
-  // const [addTree, { loading: addTreeLoading, error: addTreeError}] = useMutation(ADD_TREE);
-  // const [updateTree, { loading: updateTreeLoading, error: updateTreeError}] = useMutation(UPDATE_TREE);
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:"no-cache"});
-  // const [updateTreeLocation, { loading: updateTreeLocationLoading, error: updateTreeLocationError}] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:"no-cache"});
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container
@@ -61,7 +55,6 @@ const [mapLoaded, setMapLoaded] = useState(false)
 
     //remove old data and fetch the data anew
     if (map.current && getAllData?.getTrees) {
-    // if (map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
       map.current.eachLayer((layer) => {
         if (layer instanceof L.Marker) {
           map.current.removeLayer(layer);
@@ -87,12 +80,12 @@ const [mapLoaded, setMapLoaded] = useState(false)
         map.current = null;
       }
     };
-  }, [getAllData, selectedTree, mapLoaded]);
+  }, [getAllData, getSpeciesData, selectedTree, mapLoaded]);
 
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     const speciesInfo = speciesMap[tree.commonName] || {};
-    return {
+  return {
       ...tree,
       scientificName: speciesInfo.scientificName || '',
       nonnative: speciesInfo.nonnative || false,
@@ -105,6 +98,7 @@ const [mapLoaded, setMapLoaded] = useState(false)
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
     const speciesInfo = speciesMap[tree.commonName];
+console.log('SpeciesInfo:', speciesInfo);
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
@@ -225,7 +219,6 @@ const [mapLoaded, setMapLoaded] = useState(false)
         fell: false,
         removeStump: false
       },
-      careHistory: '',
       hidden: false
     };
     setUpdatedTree(newTree);

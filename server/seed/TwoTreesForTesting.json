@@ -1,0 +1,94 @@
+[
+  {
+    "commonName": "American basswood",
+    "variety": "",
+    "dbh": "7-12",
+    "notes": "",
+    "photos": {
+      "bark": "",
+      "summerLeaf": "",
+      "autumnLeaf": "",
+      "fruit": "",
+      "flower": "",
+      "environs": ""
+    },
+    "lastUpdated": {
+      "$date": "2024-12-29T05:00:00.000Z"
+    },
+    "location": {
+      "northing": 39.97821072930314,
+      "easting": -83.04870294046081
+    },
+    "garden": "Parking-lot beds and lawn",
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "felledBy": "",
+    "careNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "hidden": false
+  },
+  {
+    "commonName": "Eastern redbud",
+    "variety": "",
+    "dbh": "3-6",
+    "notes": "Grew up engulfed by honeysuckle, so no low branches",
+    "photos": {
+      "bark": "",
+      "summerLeaf": "",
+      "autumnLeaf": "",
+      "fruit": "",
+      "flower": "",
+      "environs": ""
+    },
+    "lastUpdated": {
+      "$date": "2025-01-01T05:00:00.000Z"
+    },
+    "location": {
+      "northing": 39.97718175980065,
+      "easting": -83.04995052516462
+    },
+    "garden": "South lawn",
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": true
+    },
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "felledBy": "",
+    "careNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "hidden": false
+  }
+]

@@ -8,18 +8,16 @@ import './Footer.css';
 
 const Footer = () => {
   const { updatedTree, setUpdatedTree, setSelectedTree } = useOutletContext();
-  // const { updatedTree, setUpdatedTree, selectedTree, setSelectedTree, treeLocation, setTreeLocation } = useOutletContext(); //are selectedTree and treeLocation necessary?
-  const [addTreeMutation, { loading: addTreeLoading }] = useMutation(ADD_TREE);
-  // const [addTreeMutation, { loading: addTreeLoading, error: addTreeError }] = useMutation(ADD_TREE); //is addTreeError necessary?
-  const [updateTreeMutation, { loading: updateTreeLoading }] = useMutation(UPDATE_TREE);
-  // const [updateTreeMutation, { loading: updateTreeLoading, error: updateTreeError }] = useMutation(UPDATE_TREE); //is updateTreeError necessary?
+  const [addTree, { loading: addTreeLoading }] = useMutation(ADD_TREE);
+  const [updateTree, { loading: updateTreeLoading }] = useMutation(UPDATE_TREE);
 
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
+    console.log(updatedTree.id)
     try {
       if (!updatedTree?.id) {
-        const { data } = await addTreeMutation({
+        const { data } = await addTree({
           variables: {
             commonName: updatedTree.commonName,
             variety: updatedTree.variety,
@@ -62,7 +60,6 @@ const Footer = () => {
               fell: updatedTree.careNeeds.fell,
               removeStump: updatedTree.careNeeds.removeStump
             } : null,
-            careHistory: updatedTree.careHistory,
             hidden: updatedTree.hidden
           }
         });
@@ -73,7 +70,7 @@ const Footer = () => {
         navigate('/')
       }
       else {
-        const { data } = await updateTreeMutation({
+        const { data } = await updateTree({
           variables: {
             id: updatedTree.id,
             commonName: updatedTree.commonName,
@@ -113,17 +110,18 @@ const Footer = () => {
               fell: updatedTree.careNeeds.fell,
               removeStump: updatedTree.careNeeds.removeStump
             } : null,
-            careHistory: updatedTree.careHistory,
             hidden: updatedTree.hidden
           }
         });
         console.log('Tree updated:', data.updateTree);
         setUpdatedTree(null);
+        setSelectedTree(null);
         // setTreeLocation(null); //necessary?
         navigate('/')
       }
     }
     catch (err) {
+      console.error('Error adding tree:', err);
     }
   };
 

@@ -10,13 +10,12 @@ export const ADD_TREE = gql`
     $location: LocationInput
     $garden: String
     $siteInfo: SiteInfoInput
-    $lastUpdated: String
+    $lastUpdated: String!
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
     $careNeeds: careNeedsInput
-    $careHistory: String
     $hidden: Boolean
   ) {
     addTree(
@@ -34,7 +33,6 @@ export const ADD_TREE = gql`
       felledDate: $felledDate
       felledBy: $felledBy
       careNeeds: $careNeeds
-      careHistory: $careHistory
       hidden: $hidden
     ) {
       commonName
@@ -78,7 +76,6 @@ export const ADD_TREE = gql`
         fell
         removeStump
       }
-      careHistory
       hidden
     }
   }

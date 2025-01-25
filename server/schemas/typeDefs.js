@@ -107,7 +107,6 @@ const typeDefs = gql `
     felledDate: String
     felledBy: String
     careNeeds: careNeeds
-    careHistory: String
     hidden: Boolean
   }
 
@@ -135,7 +134,6 @@ const typeDefs = gql `
       felledDate: String
       felledBy: String
       careNeeds: careNeedsInput
-      careHistory: String
       hidden: Boolean
     ): Tree
 
@@ -155,7 +153,6 @@ const typeDefs = gql `
       felledDate: String
       felledBy: String
       careNeeds: careNeedsInput
-      careHistory: String
       hidden: Boolean
     ): Tree
 

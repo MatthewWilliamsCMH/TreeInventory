@@ -1,0 +1,18 @@
+[
+  {
+    "family": "Fabaceae",
+    "commonName": "Eastern redbud",
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "30a130"
+  },
+  {
+    "family": "Malvaceae",
+    "commonName": "American basswood",
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "0000FF"
+  }
+]

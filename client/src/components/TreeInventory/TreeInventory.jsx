@@ -9,7 +9,6 @@ import './TreeInventory.css';
 const TreeInventory = () => {
   const navigate = useNavigate();
   const { setSelectedTree, setUpdatedTree } = useOutletContext();
-  // const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
@@ -49,7 +48,7 @@ const TreeInventory = () => {
   });
 
   const handleSort = (columnKey) => {
-    //ifsame column clicked, reverse the sort
+    //if same column clicked, reverse the sort
     setSortConfig((prev) => ({
       key: columnKey,
       direction: prev.key === columnKey ? 
