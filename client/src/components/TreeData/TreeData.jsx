@@ -1,31 +1,45 @@
-import React, { useEffect, useState } from 'react';
+//---------imports----------
+//external libraries
+import React, { useEffect, useRef, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 
-import Footer from '../Footer/Footer.jsx';
-import DangerFlags from '../Header/DangerFlags.jsx';
-import PhotoUploadForm from './PhotoUploadForm.jsx';
+//components
+import Footer from '../Footer/Footer';
+import DangerFlags from '../Header/DangerFlags';
+import PhotoUploadForm from './PhotoUploadForm';
+import Overlay from './Overlay';
 
-import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler.jsx';
-import { formatDateForDisplay } from '../../utils/dateHandler.jsx';
+//functions
+import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler';
+import { formatDateForDisplay } from '../../utils/dateHandler';
 
+//queries
 import { GET_TREES } from '../../queries/get_trees';
 import { GET_SPECIES } from '../../queries/get_species';
 
 const TreeData = () => {
-  const { updatedTree, setUpdatedTree, formStyle, openOverlay } = useOutletContext();
-  console.log(updatedTree)
+  //-----------data reception and transmission----------
+  //get current global states using context
+  const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
-  //state for mapped common-to-scientific species names
+  //set local states to initial values
+  //common-to-scientific species names
   const [commonToScientificList, setCommonToScientificList] = useState(null);
 
-  //compile list of commonNames
+  //overlay visiblity
+  const [overlayVisible, setOverlayVisible] = useState(false);
+
+  //reference to commonName field
+  const inputRef = useRef(null);
+
+  //compile list of species names for combo boxes
   useEffect(() => {
     if (getSpeciesData?.getSpecies && getAllData?.getTrees) {
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
@@ -40,12 +54,15 @@ const TreeData = () => {
         }
         return acc;
       }, {});
-
       setCommonToScientificList(commonToScientificList);
     }
   }, [getSpeciesData, getAllData]);
 
-  //loading and error states
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
+  //handle loading and error states
   if (getAllLoading || getSpeciesLoading) {
     return <div>Loading species and tree data...</div>;
   }
@@ -54,24 +71,21 @@ const TreeData = () => {
     return <div>Error loading data</div>;
   }
 
-  //-------------------- handle field changes --------------------//
+  //----------called functions----------
+  //handle field changes
   const handleInputChange = (field, event) => {
     if (event.target && event.target.type === 'checkbox') {
-      //handle checkboxes separately; they return 'checked,' not 'value'
+      //checkboxes (return 'checked,' not a value)
       const value = event.target.checked;
       setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
     } 
     else if (event.target && event.target.value !== undefined) {
-      //handle text fields and other inputs
+      //text fields and other inputs
       const value = event.target.value;
       setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
       
-      //if the field is commonName or scientificName, trigger the species existence check
-      if (field === 'commonName' || field === 'scientificName') {
-        checkSpeciesExistence(value);  // Check existence in DB when the field loses focus (onBlur)
-      }
     }
-    //handle react-select Selects and CreatableSelects (which pass an object with label and value)
+    //react-select Selects and CreatableSelects (label and value are required)
     else if (event && event.value !== undefined) {
       const value = event.value;
       
@@ -83,31 +97,7 @@ const TreeData = () => {
     }
   };
 
-  //trigger the check when the input field loses focus
-  const handleBlur = (field, value) => {
-    if (field === 'commonName' || field === 'scientificName') {
-      checkSpeciesExistence(value);
-    }
-  };
-
-  //check if the species exists in the database
-  const checkSpeciesExistence = (name) => {
-    try {
-      console.log(getSpeciesData)
-if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === name) || getSpeciesData.getSpecies.some(species => species.scientificName === name)) {
-
-        console.log(`Species ${name} exists.`);
-      } 
-      else {
-        console.log(`Species ${name} does not exist.`);
-        openOverlay();
-      }
-    } 
-    catch (error) {
-      console.error("Error checking species existence:", error);
-    }
-  };
-
+  //photo uploads
   const handlePhotoUpload = (url, photoType) => {
     setUpdatedTree(prevValues => ({
       ...prevValues,
@@ -117,7 +107,25 @@ if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonNa
       }
     }));
   };
+  //decide whether or not to open overlay
+  const handleBlur = (field, value) => {
+    if (field === 'commonName' || field === 'scientificName') {
+      try {
+        if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === value) || getSpeciesData.getSpecies.some(species => species.scientificName === value)) {
+          console.log(`Species ${value} exists.`);
+        } 
+        else {
+          console.log(`Species ${value} does not exist.`);
+          setOverlayVisible(true); // Set overlay visibility to true when opening
+        }
+      } 
+      catch (error) {
+        console.error('Error checking species existence:', error);
+      }
+    }
+  };
 
+  //render component
   return (
     <>
       {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}
@@ -132,6 +140,7 @@ if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonNa
               <div className = 'control'>
                 <label htmlFor='commonName'>Common</label>
                 <CreatableSelect
+                  ref={inputRef}
                   id='commonName'
                   value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
                   onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
@@ -151,11 +160,11 @@ if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonNa
               </div>
 
               <div className = 'control'>
-                <label htmlFor="scientificName">Scientific</label>
+                <label htmlFor='scientificName'>Scientific</label>
                 <CreatableSelect
-                  id="scientificName"
+                  id='scientificName'
                   value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
-                  onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)} // Handle change for CreatableSelect
+                  onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)}
                   onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
                   options={commonToScientificList ? Object.entries(commonToScientificList)
                     .sort(([, a], [, b]) => a.localeCompare(b))
@@ -341,6 +350,7 @@ if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonNa
         </div>
         <Footer />
       </form>
+    {overlayVisible && <Overlay setOverlayVisible={setOverlayVisible} />}
     </>
   );
 };

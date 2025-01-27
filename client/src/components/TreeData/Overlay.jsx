@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useMutation } from '@apollo/client';
+import { useOutletContext } from 'react-router-dom';
 
 import { ADD_SPECIES } from '../../mutations/add_species.jsx';
 
 import './Overlay.css';
 
-const Overlay = ({ closeOverlay, updatedTree, setUpdatedTree }) => {
+const Overlay = ({ setOverlayVisible }) => {
   // State to manage new species input
+  const { updatedTree, setUpdatedTree } = useOutletContext();
+  const overlayCommonName = useRef(null);
+  const overlayScientificName = useRef(null);
   const [commonName, setCommonName] = useState(updatedTree?.commonName || '');
   const [scientificName, setScientificName] = useState(updatedTree?.scientificName || '');
   const [family, setFamily] = useState('');
@@ -48,10 +52,46 @@ const Overlay = ({ closeOverlay, updatedTree, setUpdatedTree }) => {
     }
   };
 
+  useEffect (() => {
+    if (commonName) {
+      overlayScientificName.current?.focus()
+    }
+    else {
+      overlayCommonName.current?.focus();
+    }
+  }, []);
+
+  // Disable interaction with the background when modal is open
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'; // Prevent scrolling on the background
+
+    // Disable interaction with the background elements (except modal) when modal is open
+    const body = document.body;
+    body.style.pointerEvents = 'none'; // Disable pointer events on the body
+
+    // We need to ensure the modal is still interactive
+    const modal = document.getElementById('overlay');
+    if (modal) {
+      modal.style.pointerEvents = 'auto'; // Enable pointer events only for the modal
+    }
+
+    return () => {
+      body.style.pointerEvents = 'auto'; // Restore pointer events to the body
+      body.style.overflow = 'auto'; // Restore scrolling on the background
+    };
+  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+
+
+
   // Handle cancel action
   const handleCancel = () => {
     closeOverlay();  // Close the overlay without making changes
   };
+
+  const closeOverlay = () => {
+    setOverlayVisible(false); // Set overlay visibility to false when closing
+  };
+
 
   // Handle changes in form inputs
   const handleInputChange = (field, value) => {
@@ -80,11 +120,12 @@ const Overlay = ({ closeOverlay, updatedTree, setUpdatedTree }) => {
   };
 
   return (
-    <div className='overlay'>
+    <div id = 'overlay' className='overlay'>
       <form onSubmit={handleSubmit}>
         <div className='control'>
           <label htmlFor='commonName'>Common name</label>
           <input
+            ref={overlayCommonName}
             type='text'
             className = 'standard'
             id='commonName'
@@ -96,6 +137,7 @@ const Overlay = ({ closeOverlay, updatedTree, setUpdatedTree }) => {
         <div className='control'>
           <label htmlFor='scientificName'>Scientific name</label>
           <input
+            ref={overlayScientificName}
             type='text'
             className='standard'
             id='scientificName'
