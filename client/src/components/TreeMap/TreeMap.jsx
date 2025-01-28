@@ -14,11 +14,11 @@ const TreeMap = () => {
   const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
 const [mapLoaded, setMapLoaded] = useState(false)
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: "network-only"}); //fetch all trees
+  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData, refetch: refetchSpecies } = useQuery(GET_SPECIES);
   
   //set up mutations
-  const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:"no-cache"});
+  const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:'no-cache'});
   
   //initialize map
   const mapRef = useRef(null); //use ref for map container

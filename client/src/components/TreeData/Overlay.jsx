@@ -1,16 +1,25 @@
+//---------imports----------
+//external libraries
 import React, { useEffect, useRef, useState } from 'react';
-import { useMutation } from '@apollo/client';
+import { useMutation, useQuery } from '@apollo/client';
 import { useOutletContext } from 'react-router-dom';
 
+//queries
+import { GET_SPECIES } from '../../queries/get_species';
+
+//mutations
 import { ADD_SPECIES } from '../../mutations/add_species.jsx';
 
+//stylesheets
 import './Overlay.css';
 
 const Overlay = ({ setOverlayVisible }) => {
-  // State to manage new species input
+  //----------data reception and transmission----------
+  //get current global states using context
   const { updatedTree, setUpdatedTree } = useOutletContext();
-  const overlayCommonName = useRef(null);
-  const overlayScientificName = useRef(null);
+
+  //set local states to initial values
+  //If I get rid of the switch statement, I won't need to track these states, though I will have to assign the values for species names to the form controls.
   const [commonName, setCommonName] = useState(updatedTree?.commonName || '');
   const [scientificName, setScientificName] = useState(updatedTree?.scientificName || '');
   const [family, setFamily] = useState('');
@@ -18,41 +27,22 @@ const Overlay = ({ setOverlayVisible }) => {
   const [nonnative, setNonnative] = useState(false);
   const [invasive, setInvasive] = useState(false);
 
-  // Mutation hook to add a species
-  const [addSpecies, { loading: addSpeciesLoading }] = useMutation(ADD_SPECIES);
+  //set local references to initial values
+  const overlayCommonName = useRef(null);
+  const overlayScientificName = useRef(null);
 
-  // Handle submit action
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const { refetch: refetchSpecies } = useQuery(GET_SPECIES, {
+    fetchPolicy: 'network-only'
+  });
 
-    try {
-      const { data } = await addSpecies({
-        variables: {
-          commonName,
-          scientificName,
-          family,
-          markerColor,
-          nonnative,
-          invasive,
-        },
-      });
-
-      // Update the parent form with the new species
-      setUpdatedTree(prevState => ({
-        ...prevState,
-        commonName: commonName,
-        scientificName: scientificName,
-      }));
-
-      // Close the overlay after successful submission
-      closeOverlay();
-
-    } catch (err) {
-      console.error('Error adding species:', err);
+  //set up mutations
+  const [addSpecies, { loading: addSpeciesLoading }] = useMutation(ADD_SPECIES, {
+    onCompleted: async () => {
+      await refetchSpecies()
     }
-  };
+  });
 
-  useEffect (() => {
+    useEffect (() => {
     if (commonName) {
       overlayScientificName.current?.focus()
     }
@@ -61,39 +51,28 @@ const Overlay = ({ setOverlayVisible }) => {
     }
   }, []);
 
-  // Disable interaction with the background when modal is open
+  //----------useEffects----------
+  //disable interaction with the background when modal is open
   useEffect(() => {
-    document.body.style.overflow = 'hidden'; // Prevent scrolling on the background
-
-    // Disable interaction with the background elements (except modal) when modal is open
     const body = document.body;
-    body.style.pointerEvents = 'none'; // Disable pointer events on the body
+    body.style.overflow = 'hidden'; //prevent scrolling on the background
+    body.style.pointerEvents = 'none'; //prevent pointer events on the background
 
-    // We need to ensure the modal is still interactive
-    const modal = document.getElementById('overlay');
+    const modal = document.getElementById('overlay'); //make sure modal is active
     if (modal) {
-      modal.style.pointerEvents = 'auto'; // Enable pointer events only for the modal
+      modal.style.pointerEvents = 'auto'; //allow pointer events on the modal
     }
 
     return () => {
-      body.style.pointerEvents = 'auto'; // Restore pointer events to the body
-      body.style.overflow = 'auto'; // Restore scrolling on the background
+      body.style.pointerEvents = 'auto'; //allow pointer events on the background
+      body.style.overflow = 'auto'; //allow scrolling on the background
     };
-  }, []); // Empty dependency array ensures this effect runs only on mount and unmount
+  }, []);
 
-
-
-  // Handle cancel action
-  const handleCancel = () => {
-    closeOverlay();  // Close the overlay without making changes
-  };
-
-  const closeOverlay = () => {
-    setOverlayVisible(false); // Set overlay visibility to false when closing
-  };
-
-
-  // Handle changes in form inputs
+  
+  //----------called functions----------
+  //handle control changes
+  //This seems like an unnecessary and inefficient step; are we using these values other than to write to the db? In TreeData, the data for the event target is written to an object (updatedTree), and that's written to the db. Think about this.
   const handleInputChange = (field, value) => {
     switch (field) {
       case 'commonName':
@@ -119,6 +98,43 @@ const Overlay = ({ setOverlayVisible }) => {
     }
   };
 
+  //handle submit
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await addSpecies({
+        variables: {
+          commonName,
+          scientificName,
+          family,
+          markerColor,
+          nonnative,
+          invasive
+        }
+      });
+
+      setUpdatedTree(prevState => ({
+        ...prevState,
+        commonName: commonName,
+        scientificName: scientificName
+      }));
+
+      //I think I need to recall the getSpecies query here, yes?
+
+    setOverlayVisible(false);
+    }
+    catch (err) {
+      console.error('Error adding species:', err);
+    }
+  };
+
+  //handle cancel
+  const handleCancel = () => {
+    setOverlayVisible(false);
+  };
+
+  //render component
   return (
     <div id = 'overlay' className='overlay'>
       <form onSubmit={handleSubmit}>

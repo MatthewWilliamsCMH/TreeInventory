@@ -25,20 +25,18 @@ const TreeData = () => {
   //get current global states using context
   const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
 
+  //set local states to initial values
+  const [commonToScientificList, setCommonToScientificList] = useState(null);
+  const [overlayVisible, setOverlayVisible] = useState(false);
+
+  //set local references to initial values
+  const inputRef = useRef(null);
+
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
-  //set local states to initial values
-  //common-to-scientific species names
-  const [commonToScientificList, setCommonToScientificList] = useState(null);
-
-  //overlay visiblity
-  const [overlayVisible, setOverlayVisible] = useState(false);
-
-  //reference to commonName field
-  const inputRef = useRef(null);
-
+  //----------useEffects----------
   //compile list of species names for combo boxes
   useEffect(() => {
     if (getSpeciesData?.getSpecies && getAllData?.getTrees) {
@@ -58,6 +56,7 @@ const TreeData = () => {
     }
   }, [getSpeciesData, getAllData]);
 
+  //set focus of correct form field
   useEffect(() => {
     inputRef.current.focus();
   }, []);
@@ -72,7 +71,7 @@ const TreeData = () => {
   }
 
   //----------called functions----------
-  //handle field changes
+  //handle control changes
   const handleInputChange = (field, event) => {
     if (event.target && event.target.type === 'checkbox') {
       //checkboxes (return 'checked,' not a value)

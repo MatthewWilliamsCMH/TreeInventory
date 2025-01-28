@@ -83,9 +83,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         </head>
         <body>
           <img 
-            src="${photoUrl}" 
-            alt="Full size view" 
-            onclick="window.opener.postMessage('openUppy', '*')"
+            src='${photoUrl}' 
+            alt='Full size view' 
+            onclick='window.opener.postMessage('openUppy', '*')'
           />
         </body>
       </html>

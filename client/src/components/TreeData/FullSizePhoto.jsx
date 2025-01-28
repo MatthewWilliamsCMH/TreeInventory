@@ -12,7 +12,7 @@ const FullSizePhoto = ({ photoUrl, onClose, onEdit }) => {
         </div>
         <img 
           src={photoUrl} 
-          alt="Full size view"
+          alt='Full size view'
         />
       </div>
     </div>

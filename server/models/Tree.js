@@ -8,12 +8,12 @@ const treeSchema = new Schema({
   dbh: { type: String }, //require once all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
   notes: { type: String },
   photos: { //store url for images
-    bark: { type: String, unique: true },
-    summerLeaf: { type: String, unique: true },
-    autumnLeaf: { type: String, unique: true },
-    fruit: { type: String, unique: true },
-    flower: { type: String, unique: true },
-    environs: { type: String, unique: true }
+    bark: { type: String },
+    summerLeaf: { type: String },
+    autumnLeaf: { type: String },
+    fruit: { type: String },
+    flower: { type: String },
+    environs: { type: String }
   },
   lastUpdated: { type: Date, required: true }, //auto generated
   location: { 

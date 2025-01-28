@@ -23,7 +23,7 @@ const TreeDataRoute = () => {
   const { updatedTree } = useOutletContext(); // Using context passed from App.jsx
 
   if (!updatedTree) {
-    return <Navigate to="/" />;
+    return <Navigate to='/' />;
   }
 
   return <TreeData updatedTree={updatedTree} />;
