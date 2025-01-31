@@ -3,6 +3,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import { useOutletContext } from 'react-router-dom';
+import CreatableSelect from 'react-select/creatable';
+import { GithubPicker } from 'react-color'
+
+//functions and constants
+import { markerColorList } from '../../utils/fieldChangeHandler.jsx';
 
 //queries
 import { GET_SPECIES } from '../../queries/get_species';
@@ -15,22 +20,9 @@ import './Overlay.css';
 
 const Overlay = ({ setOverlayVisible }) => {
   //----------data reception and transmission----------
-  //get current global states using context
-  const { updatedTree, setUpdatedTree } = useOutletContext();
-
-  //set local states to initial values
-  //If I get rid of the switch statement, I won't need to track these states, though I will have to assign the values for species names to the form controls.
-  const [commonName, setCommonName] = useState(updatedTree?.commonName || '');
-  const [scientificName, setScientificName] = useState(updatedTree?.scientificName || '');
-  const [family, setFamily] = useState('');
-  const [markerColor, setMarkerColor] = useState('');
-  const [nonnative, setNonnative] = useState(false);
-  const [invasive, setInvasive] = useState(false);
-
-  //set local references to initial values
-  const overlayCommonName = useRef(null);
-  const overlayScientificName = useRef(null);
-
+  //set up queries
+  //do i need both of these? Can't i get rid of the refetch since I'm running the query in full?
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   const { refetch: refetchSpecies } = useQuery(GET_SPECIES, {
     fetchPolicy: 'network-only'
   });
@@ -42,14 +34,46 @@ const Overlay = ({ setOverlayVisible }) => {
     }
   });
 
-    useEffect (() => {
-    if (commonName) {
-      overlayScientificName.current?.focus()
+  //get current global states using context
+  const { updatedTree, setUpdatedTree } = useOutletContext();
+
+  //set local states to initial values
+  const [commonName, setCommonName] = useState(updatedTree?.commonName || '');
+  const [scientificName, setScientificName] = useState(updatedTree?.scientificName || '');
+  const [family, setFamily] = useState('');
+  const [markerColor, setMarkerColor] = useState('');
+  const [nonnative, setNonnative] = useState(false);
+  const [invasive, setInvasive] = useState(false);
+  const [showColorPicker, setShowColorPicker] = useState(false);
+  const { familyList, usedColors } = getSpeciesData.getSpecies.reduce((acc, species) => {
+    //add unique families
+    if (!acc.familySet.has(species.family)) {
+      acc.familySet.add(species.family);
+      acc.familyList.push({
+        label: species.family,
+        value: species.family
+      });
     }
-    else {
-      overlayCommonName.current?.focus();
+
+    //add unique colors
+    if (!acc.colorSet.has(species.markerColor)) {
+      acc.colorSet.add(species.markerColor);
+      acc.usedColors.push(species.markerColor);
     }
-  }, []);
+    return acc;
+  },
+  {
+    familyList: [],
+    usedColors: [],
+    familySet: new Set(),
+    colorSet: new Set()
+  });
+
+  const availableColors = markerColorList.filter(color => !usedColors.includes(color));
+
+  //set local references to initial values
+  const overlayCommonName = useRef(null);
+  const overlayScientificName = useRef(null);
 
   //----------useEffects----------
   //disable interaction with the background when modal is open
@@ -69,10 +93,17 @@ const Overlay = ({ setOverlayVisible }) => {
     };
   }, []);
 
+  useEffect (() => {
+    if (commonName) {
+      overlayScientificName.current?.focus()
+    }
+    else {
+      overlayCommonName.current?.focus();
+    }
+  }, []);
   
   //----------called functions----------
   //handle control changes
-  //This seems like an unnecessary and inefficient step; are we using these values other than to write to the db? In TreeData, the data for the event target is written to an object (updatedTree), and that's written to the db. Think about this.
   const handleInputChange = (field, value) => {
     switch (field) {
       case 'commonName':
@@ -83,9 +114,9 @@ const Overlay = ({ setOverlayVisible }) => {
         break;
       case 'family':
         setFamily(value);
-        break;
-      case 'markerColor':
-        setMarkerColor(value);
+        if (!familyList.some(item => item.value === value)) {
+          setShowColorPicker(true);
+        }
         break;
       case 'nonnative':
         setNonnative(value);
@@ -101,7 +132,6 @@ const Overlay = ({ setOverlayVisible }) => {
   //handle submit
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
       const { data } = await addSpecies({
         variables: {
@@ -120,9 +150,7 @@ const Overlay = ({ setOverlayVisible }) => {
         scientificName: scientificName
       }));
 
-      //I think I need to recall the getSpecies query here, yes?
-
-    setOverlayVisible(false);
+      setOverlayVisible(false);
     }
     catch (err) {
       console.error('Error adding species:', err);
@@ -162,26 +190,32 @@ const Overlay = ({ setOverlayVisible }) => {
           />
         </div>
 
-        <div className='control'>
-          <label htmlFor='family'>Family name</label>
-          <input
-            type='text'
-            className='standard'
-            id='family'
-            value={family}
-            onChange={(e) => handleInputChange('family', e.target.value)}
+        <div className = 'control'>
+          <label htmlFor = 'family'>Family name</label>
+          <CreatableSelect
+            id = 'family'
+            onChange = {(selectedOption) => handleInputChange('family', selectedOption?.value || '')}
+            options = {familyList}
+            styles = {{
+              control: (base) => ({
+                ...base,
+                border: '1px solid #888',
+                borderRadius: '0px',
+              })
+            }}
           />
-        </div>
-
-        <div className='control'>
-          <label htmlFor='markerColor'>Marker color</label>
-          <input
-            type='text'
-            className='standard'
-            id='markerColor'
-            value={markerColor}
-            onChange={(e) => handleInputChange('markerColor', e.target.value)}
-          />
+          {showColorPicker && (
+            <GithubPicker
+              color = {markerColor}
+              colors = {availableColors}
+              onChangeComplete={(colorResult) => {
+                setMarkerColor(colorResult.hex);
+                setShowColorPicker(false);
+              }}
+              triangle="hide"
+              width="188px"
+            />
+          )}
         </div>
 
         <div className='checkboxgroup'>

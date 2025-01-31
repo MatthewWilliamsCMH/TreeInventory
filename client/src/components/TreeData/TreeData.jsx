@@ -12,7 +12,7 @@ import DangerFlags from '../Header/DangerFlags';
 import PhotoUploadForm from './PhotoUploadForm';
 import Overlay from './Overlay';
 
-//functions
+//functions and constants
 import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler';
 import { formatDateForDisplay } from '../../utils/dateHandler';
 

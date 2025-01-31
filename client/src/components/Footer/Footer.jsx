@@ -14,7 +14,6 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
-    console.log(updatedTree.id)
     try {
       if (!updatedTree?.id) {
         const { data } = await addTree({

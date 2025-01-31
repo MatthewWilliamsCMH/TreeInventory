@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 //define the schema for the Species model
 const speciesSchema = new Schema({
-  family: {type: String}, //for grouping purposes only; not used in app
+  family: {type: String, required: true},
   commonName: {type: String, required: true, unique: true},
   scientificName: {type: String, required: true, unique: true},
   markerColor: {type: String, required: true, unique: true},
