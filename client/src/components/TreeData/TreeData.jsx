@@ -108,7 +108,7 @@ const TreeData = () => {
   };
   //decide whether or not to open overlay
   const handleBlur = (field, value) => {
-    if (field === 'commonName' || field === 'scientificName') {
+    if ((field === 'commonName' || field === 'scientificName') && value.trim() !=='') {
       try {
         if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === value) || getSpeciesData.getSpecies.some(species => species.scientificName === value)) {
           console.log(`Species ${value} exists.`);

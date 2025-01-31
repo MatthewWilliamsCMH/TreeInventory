@@ -52,8 +52,9 @@ const Overlay = ({ setOverlayVisible }) => {
       acc.familyList.push({
         label: species.family,
         value: species.family
-      });
+      })
     }
+    acc.familyList.sort((a, b) => a.label.localeCompare(b.label));
 
     //add unique colors
     if (!acc.colorSet.has(species.markerColor)) {
@@ -69,7 +70,9 @@ const Overlay = ({ setOverlayVisible }) => {
     colorSet: new Set()
   });
 
-  const availableColors = markerColorList.filter(color => !usedColors.includes(color));
+  const availableColors = markerColorList
+    .filter(color => !usedColors.includes(color))
+    .sort();
 
   //set local references to initial values
   const overlayCommonName = useRef(null);
@@ -196,11 +199,16 @@ const Overlay = ({ setOverlayVisible }) => {
             id = 'family'
             onChange = {(selectedOption) => handleInputChange('family', selectedOption?.value || '')}
             options = {familyList}
+            menuPosition = 'fixed'
             styles = {{
               control: (base) => ({
                 ...base,
                 border: '1px solid #888',
                 borderRadius: '0px',
+              }),
+              menu: (provided) => ({
+                ...provided,
+                maxHeight: 300,
               })
             }}
           />
