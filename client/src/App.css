@@ -1,17 +1,12 @@
 :root {
   --pale-yellow: #FFF3B0;
-  --peanut-butter: #E09F3E;
   --brick-red: #9E2A2B;
-  --warm-brown: #540B0E;
-  --grey-blue: #669BCC;
   --blue-green: #335C67;
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif
 }
-
-
 
 body::before {
   content: '';
@@ -39,9 +34,10 @@ form {
   border-radius: 1rem; 
 }
 
-.columns {
+.columngroup {
   display: flex;
   column-gap: 40px;
+  row-gap: 20px;
 }
 
 .column {
@@ -55,38 +51,28 @@ label {
 }
 
 .controlgroup {
-  display: flex;
   flex-direction: column;
-}
-
-.controlgroup label {
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: -10px;
 }
 
 .control {
   display: flex;
-  flex-direction: row;
-  width: 100%;
   margin-bottom: 10px;
-}
-
-.control label {
-  padding-top: 5px;
-  width: 90px;
-  margin-right: 10px;
 }
 
 .control select, .control input, .control textarea, .control .css-b62m3t-container {
   flex: 1;
 }
 
-.checkboxgroup {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: calc((21px * 5) + (5px * 4));
-  gap: 5px 40px;
-  margin-bottom: 10px;
+.standard {
+  height: 38px;
+}
+
+.control label {
+  padding-top: 12px;
+  min-width: 5.75rem;
+  margin-right: 10px;
 }
 
 input, textarea {
@@ -94,20 +80,23 @@ input, textarea {
   border: 1px solid #888;
 }
 
-.standard {
-  height: 38px;
-}
-
-.checkbox {
-  height: unset;
-  margin-left: 7px;
-  margin-right: 5px;
-}
-
 textarea {
-  width: 100%;
-  margin-top: 5px;
   min-height: 114px;
+}
+
+.checkboxgroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc((21px * 5) + (10px * 4));
+  column-gap: 40px;
+}
+
+.checkboxgroup label {
+  height: 25px;
+}
+.checkbox {
+  margin-right: 5px;
 }
 
 .photogroup {
@@ -124,14 +113,9 @@ textarea {
   background-color: white;
   text-align: center;
   vertical-align: middle;
-  line-height:100px; /* centers text on 100px height */
+  line-height: 100px; /* centers text on 100px height */
   height: 100px;
   border: 1px solid #888;
-}
-
-.nestedcheckbox { /*adds space between box and label when checkbox input is nested inside a label */
-  margin-right: 5px;
-  /* margin-bottom: 5px; */
 }
 
 #map {
@@ -139,7 +123,7 @@ textarea {
 }
 
 button {
-  background-color: lightgrey;
+  background-color: #DDD;
   margin-left: 5px;
   padding: 2px;
   width: 75px;
@@ -168,3 +152,15 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+
+/* Small devices (phones) */
+@media (max-width: 767px) { }
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) { }
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/* Extra large devices (large desktops) */
+/* @media (min-width: 1200px) { } */

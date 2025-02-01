@@ -98,7 +98,6 @@ const [mapLoaded, setMapLoaded] = useState(false)
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
     const speciesInfo = speciesMap[tree.commonName];
-console.log('SpeciesInfo:', speciesInfo);
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>

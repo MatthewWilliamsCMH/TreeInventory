@@ -10,11 +10,11 @@ import CreatableSelect from 'react-select/creatable';
 import Footer from '../Footer/Footer';
 import DangerFlags from '../Header/DangerFlags';
 import PhotoUploadForm from './PhotoUploadForm';
-import Overlay from './Overlay';
+import Overlay from './NewSpeciesOverlay';
 
 //functions and constants
-import { handleFieldChange, dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/fieldChangeHandler';
-import { formatDateForDisplay } from '../../utils/dateHandler';
+import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/constants';
+import { handleFieldChange, formatDateForDisplay } from '../../utils/helpers';
 
 //queries
 import { GET_TREES } from '../../queries/get_trees';
@@ -132,53 +132,55 @@ const TreeData = () => {
         <DangerFlags updatedTree = {updatedTree}/>
       </div>
       <form style={formStyle}>
-        <div className = 'columns'>
+        <div className = 'columngroup'>
           <div className = 'column'>
-            <div className = 'controlgroup'>
-              <label>Species name</label>
-              <div className = 'control'>
-                <label htmlFor='commonName'>Common</label>
-                <CreatableSelect
-                  ref={inputRef}
-                  id='commonName'
-                  value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
-                  onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
-                  onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
-                  options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
-                    label: common,
-                    value: common
-                  })) : []}
-                  styles={{
-                    control: (base) => ({
-                      ...base,
-                      border: '1px solid #888',
-                      borderRadius: '0px',
-                    })
-                  }}
-                />
-              </div>
-
-              <div className = 'control'>
-                <label htmlFor='scientificName'>Scientific</label>
-                <CreatableSelect
-                  id='scientificName'
-                  value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
-                  onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)}
-                  onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
-                  options={commonToScientificList ? Object.entries(commonToScientificList)
-                    .sort(([, a], [, b]) => a.localeCompare(b))
-                    .map(([common, scientific]) => ({
-                      label: scientific,
-                      value: scientific
+            <div className = 'control'>
+              <label>Species <br />name</label>
+              <div className = 'controlgroup'>
+                <div className = 'control'>
+                  <label htmlFor='commonName'>Common</label>
+                  <CreatableSelect
+                    ref={inputRef}
+                    id='commonName'
+                    value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
+                    onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
+                    onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
+                    options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
+                      label: common,
+                      value: common
                     })) : []}
-                  styles={{
-                    control: (base) => ({
-                      ...base,
-                      border: '1px solid #888',
-                      borderRadius: '0px',
-                    })
-                  }}
-                />
+                    styles={{
+                      control: (base) => ({
+                        ...base,
+                        border: '1px solid #888',
+                        borderRadius: '0px',
+                      })
+                    }}
+                  />
+                </div>
+
+                <div className = 'control'>
+                  <label htmlFor='scientificName'>Scientific</label>
+                  <CreatableSelect
+                    id='scientificName'
+                    value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
+                    onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)}
+                    onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
+                    options={commonToScientificList ? Object.entries(commonToScientificList)
+                      .sort(([, a], [, b]) => a.localeCompare(b))
+                      .map(([common, scientific]) => ({
+                        label: scientific,
+                        value: scientific
+                      })) : []}
+                    styles={{
+                      control: (base) => ({
+                        ...base,
+                        border: '1px solid #888',
+                        borderRadius: '0px',
+                      })
+                    }}
+                  />
+                </div>
               </div>
             </div>
 

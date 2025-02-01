@@ -7,16 +7,16 @@ import CreatableSelect from 'react-select/creatable';
 import { GithubPicker } from 'react-color'
 
 //functions and constants
-import { markerColorList } from '../../utils/fieldChangeHandler.jsx';
+import { markerColorList } from '../../utils/constants.js';
 
 //queries
-import { GET_SPECIES } from '../../queries/get_species';
+import { GET_SPECIES } from '../../queries/get_species.jsx';
 
 //mutations
 import { ADD_SPECIES } from '../../mutations/add_species.jsx';
 
 //stylesheets
-import './Overlay.css';
+import './NewSpeciesOverlay.css';
 
 const Overlay = ({ setOverlayVisible }) => {
   //----------data reception and transmission----------
