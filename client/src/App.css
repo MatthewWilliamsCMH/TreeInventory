@@ -61,7 +61,7 @@ label {
 }
 
 .standard {
-  height: 2rem;
+  height: 38px;
 }
 
 .control label {
@@ -71,7 +71,7 @@ label {
 }
 
 input, textarea {
-  padding: 2px;
+  padding: 2px 2px 2px 10px;
   border: 1px solid #888;
 }
 
@@ -151,10 +151,6 @@ button:hover {
 
 /* Small devices (phones) */
 @media (max-width: 844px) {
-  * {
-    font-family: 'Roboto Condensed'
-  }
-
   form {
       max-width: calc(100% - 6rem);
   }
@@ -170,12 +166,14 @@ button:hover {
     flex-direction: column;
   }
 
-.control label {
-  min-width: 100px;
-}
+  .control label {
+    min-width: 100px;
+    font-family: 'Roboto Condensed'
+  }
 
   .control {
     font-size: .75rem;
+    border-radius: 0px;
   }
 
   .control label {
@@ -189,8 +187,11 @@ button:hover {
 
   .checkboxgroup label {
     height: 1rem;
+    font-family: 'Roboto'
   }
-
+  .checkbox {
+    height: .7rem;
+  }
   .photogroup {
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +201,7 @@ button:hover {
 
   button {
     margin-bottom: 5px;
+    font-family: 'Roboto';
   }
 }
 
