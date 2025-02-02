@@ -125,6 +125,7 @@ button {
   margin-left: 5px;
   padding: 2px;
   width: 75px;
+  -webkit-appearance: none;
 }
 
 button:hover {
