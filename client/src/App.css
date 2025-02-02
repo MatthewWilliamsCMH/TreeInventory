@@ -173,7 +173,6 @@ button:hover {
 
   .control {
     font-size: .75rem;
-    border-radius: 0px;
   }
 
   .control label {
@@ -202,6 +201,10 @@ button:hover {
   button {
     margin-bottom: 5px;
     font-family: 'Roboto';
+  }
+
+  #scientificName {
+    border-radius: 0px;
   }
 }
 
