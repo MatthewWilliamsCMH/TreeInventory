@@ -308,7 +308,7 @@ const TreeData = () => {
             </div>
 
             <div className = 'control'>
-              <label>Care needs</label>
+              <label>Care</label>
               <div className = 'column'>
                 <div className = 'checkboxgroup'>
                   {careNeedsList.map((need) => (

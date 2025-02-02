@@ -17,5 +17,13 @@ export default defineConfig({
         changeOrigin: true
       }
     }
+  },
+  preview: {
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 1,
+      userScalable: false
+    }
   }
 });

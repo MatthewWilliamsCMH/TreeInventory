@@ -3,7 +3,7 @@
   color: var(--pale-yellow);
   padding: 20px; 
   position:absolute;
-  width: 100vmax;
+  width: 100%;
   left: 0;
   top: 0;
   z-index: 9999;
@@ -16,3 +16,19 @@
   font-weight: 700;
   color: white;
  }
+
+/* Small devices (phones) */
+@media (max-width: 844px) {
+  #header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) { }
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/* Extra large devices (large desktops) */
+/* @media (min-width: 1200px) { } */

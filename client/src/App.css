@@ -1,47 +1,42 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
 :root {
   --pale-yellow: #FFF3B0;
   --brick-red: #9E2A2B;
   --blue-green: #335C67;
 }
 
-* {
-  font-family: Arial, Helvetica, sans-serif
-}
-
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/background.jpg');
+html {
+  background-image: url('/background.png');
   background-size: cover;
   background-position:top;
   background-repeat: repeat-y;
-  opacity: 0.35;
-  z-index: -1;
 }
 
 form {
   background-color: white;
   width: 100%;
-  max-width: calc(100% - 3rem - 60px);
-  margin-left: calc(3rem + 40px);
+  max-width: calc(100% - 7rem);
+  margin-left: 5.25rem;
   margin-top: 5rem;
-  padding: 20px 20px 20px 20px;
+  padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem; 
 }
 
 .columngroup {
   display: flex;
-  column-gap: 40px;
-  row-gap: 20px;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .column {
-  width: calc(100% - 40px);
+  width: calc(100% - 2rem);
 }
 
 label {
@@ -53,12 +48,12 @@ label {
 .controlgroup {
   flex-direction: column;
   width: 100%;
-  margin-bottom: -10px;
+  margin-bottom: -.55rem;;
 }
 
 .control {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: .5rem;
 }
 
 .control select, .control input, .control textarea, .control .css-b62m3t-container {
@@ -66,13 +61,13 @@ label {
 }
 
 .standard {
-  height: 38px;
+  height: 2rem;
 }
 
 .control label {
-  padding-top: 12px;
+  padding-top: .5rem;
   min-width: 5.75rem;
-  margin-right: 10px;
+  margin-right: .5rem;
 }
 
 input, textarea {
@@ -81,40 +76,41 @@ input, textarea {
 }
 
 textarea {
-  min-height: 114px;
+  min-height: 6rem;
 }
 
 .checkboxgroup {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: calc((21px * 5) + (10px * 4));
-  column-gap: 40px;
+  height: 8.25rem;
+  column-gap: 2rem;
 }
 
 .checkboxgroup label {
-  height: 25px;
+  height: 1.5rem;
 }
+
 .checkbox {
-  margin-right: 5px;
+  margin-right: .25rem;
 }
 
 .photogroup {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  width: calc(100% - 100px);
+  gap: 1rem;
+  width: calc(100% - 5rem);
 }
 
 .photo {
-  min-width: 100px;
-  flex: 1 1 calc((100% - 120px) / 6);
+  min-width: 5rem;
+  flex: 1 1 calc((100% - 6rem) / 6);
   color: #aaa;
   background-color: white;
   text-align: center;
   vertical-align: middle;
-  line-height: 100px; /* centers text on 100px height */
-  height: 100px;
+  line-height: 8rem; /* centers text on 100px height */
+  height: 8rem;
   border: 1px solid #888;
 }
 
@@ -134,7 +130,7 @@ button:hover {
 }
 
 .danger-flags-container {
-  padding: 20px 20px 0px 0px;
+  padding: 1rem 1rem 0px 0px;
   position: absolute;
   top: 0;
   right: 0;
@@ -154,7 +150,58 @@ button:hover {
 }
 
 /* Small devices (phones) */
-@media (max-width: 767px) { }
+@media (max-width: 844px) {
+  * {
+    font-family: 'Roboto Condensed'
+  }
+
+  form {
+      max-width: calc(100% - 6rem);
+  }
+  .columngroup {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .controlgroup {
+    flex-direction: column;
+  }
+
+.control label {
+  min-width: 100px;
+}
+
+  .control {
+    font-size: .75rem;
+  }
+
+  .control label {
+    min-width: 3.5rem;
+  }
+
+  .checkboxgroup {
+    flex-wrap: nowrap;
+    height:unset;
+  }
+
+  .checkboxgroup label {
+    height: 1rem;
+  }
+
+  .photogroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  button {
+    margin-bottom: 5px;
+  }
+}
 
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) { }

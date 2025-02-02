@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto'
 }
 
 /* Gives the body element a parent height to compare against */
@@ -11,9 +12,10 @@ html {
 }
 
 body {
-  /* min-height: 100%; */
+  min-height: 100%;
   line-height: 1;
-  font-family: sans-serif;
+  overflow-x: hidden;  /* prevent horizontal scroll */
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
