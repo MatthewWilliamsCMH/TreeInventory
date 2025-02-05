@@ -12,7 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "concurrently": "^9.1.0",
-    "react-color": "^2.19.3"
+    "concurrently": "^9.1.0"
   }
 }
