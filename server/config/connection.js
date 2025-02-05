@@ -3,7 +3,6 @@ require('dotenv').config();
 
 const connectDB = async () => {
   try {
-    console.log(process.env.MONGODB_URI)
     await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://matthewwilliamscmh:ehesCWOxppqtvtUh@local.vbxwz.mongodb.net/treeinventorydb'); //use environment variable (production) or local (development)
     console.log('Connected to the tree inventory database.');
   } 
