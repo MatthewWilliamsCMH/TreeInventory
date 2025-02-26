@@ -3,9 +3,10 @@ import envCompatible from 'vite-plugin-env-compatible';
 import react from '@vitejs/plugin-react';
 import path from 'path'
 
-export default defineConfig(({ comman, mode }) => {
+export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd());
-  const apiUrl = env.VITE_API_URL || 'https://treeinventory.clickps.synology.me';
+  // const apiUrl = env.VITE_API_URL || 'https://treeinventory.clickps.synology.me';
+  const apiUrl = env.VITE_API_URL || 'http://localhost:3001/api';
 
   return {
     plugins: [react(), envCompatible()],
