@@ -113,7 +113,7 @@ server.start().then(() => {
       clientPath = path.join(__dirname, '../client/dist');
     } else {
       // For Render.com deployment
-      clientPath = path.join(__dirname, './dist');
+      clientPath = path.join(__dirname, '../../dist');
     }
     
     app.use(express.static(clientPath));
