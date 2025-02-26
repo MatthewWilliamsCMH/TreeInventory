@@ -72,7 +72,7 @@ const resolvers = {
       try {
         const speciesExists = await Species.findOne({ commonName });
         if (!speciesExists) {
-          throw new Error(`Species with common name '${commonName} not found.`);
+          throw new Error(`Species with common name '${commonName}' not found.`);
         }
         return await Tree.create({
           commonName,
@@ -103,7 +103,7 @@ const resolvers = {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
           if (!speciesExists) {
-            throw new Error(`Species with common name '${commonName} not found.`);
+            throw new Error(`Species with common name '${commonName}' not found.`);
           }
         }
         return await Tree.findByIdAndUpdate(
