@@ -90,50 +90,6 @@ app.post('/uploads', upload.single('photo'), (req, res) => {
 //connect to db
 connectDB();
 
-
-
-
-
-
-// Add this before your Apollo server setup
-app.get('/debug-dir', (req, res) => {
-  const listDir = (directory, prefix = '') => {
-    const files = {};
-    try {
-      const items = fs.readdirSync(directory);
-      items.forEach(item => {
-        const itemPath = path.join(directory, item);
-        const stats = fs.statSync(itemPath);
-        if (stats.isDirectory()) {
-          files[item] = listDir(itemPath, prefix + '  ');
-        } else {
-          files[item] = stats.size + ' bytes';
-        }
-      });
-    } catch (err) {
-      files['ERROR'] = err.message;
-    }
-    return files;
-  };
-  
-  const dirStructure = {
-    'Current directory': __dirname,
-    'Directory structure': {
-      '.': listDir(__dirname),
-      '..': listDir(path.join(__dirname, '..')),
-      '../..': listDir(path.join(__dirname, '../..')),
-      '../../..': listDir(path.join(__dirname, '../../..'))
-    }
-  };
-  
-  res.json(dirStructure);
-});
-
-
-
-
-
-
 //initialize apollo server
 const server = new ApolloServer({
   typeDefs,
