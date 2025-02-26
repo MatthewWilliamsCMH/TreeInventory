@@ -5,7 +5,7 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "build": "cd client && npm install && npm run build",
-    "build:demo": "cd client && npm install && npm run build -- --mode=demo",
+    "build:demo": "cd client && npm install && npm run build:demo -- --mode=demo",
     "build:production": "cd client && npm install && npm run build -- --mode=production",
     "start": "cd server && node server.js",
     "start:demo": "cd server && node server.js",

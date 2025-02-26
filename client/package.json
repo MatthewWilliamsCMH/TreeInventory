@@ -38,7 +38,7 @@
   "scripts": {
     "demo": "vite --mode demo",
     "dev": "vite --mode development",
-    "build:demo": "vite build --mode production",
+    "build:demo": "vite build --mode demo",
     "build:production": "vite build --mode production",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
