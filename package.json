@@ -2,14 +2,14 @@
   "name": "summit-chase-tree-inventory",
   "version": "1.0.0",
   "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "build": "cd client && npm install && npm run build --mode production",
     "build:demo": "cd client && npm install && npm run build --mode demo",
     "start": "cd server && node server.js",
     "start:develop": "cd server && cross-env NODE_ENV=development nodemon server.js",
-    "start:demo": "cd server && cross-env NODE_ENV=demo node server.js",
-    "start:prod": "cd server && cross-env NODE_ENV=production node server.js",
-    "install": "cd server && npm i && cd ../client && npm i"
+    "start:demo": "cd server && node server.js",
+    "start:production": "cd server && cross-env NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
