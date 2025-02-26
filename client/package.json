@@ -36,6 +36,7 @@
     "vite": "^5.4.10"
   },
   "scripts": {
+    "demo": "vite --mode demo",
     "dev": "vite --mode development",
     "build": "vite build --mode production",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
