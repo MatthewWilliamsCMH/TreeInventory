@@ -25,8 +25,10 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     .use(Webcam, {
       modes: ['picture'],
       mirror: false,
-      facingMode: 'environment',
-      // showVideoSourceDropdown: true,
+      videoConstraints: {
+        facingMode: 'environment'
+      },
+      showVideoSourceDropdown: true,
       mobileNativeCamera: true
     })
     .use(XHRUpload, {
