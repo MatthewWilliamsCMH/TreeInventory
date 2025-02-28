@@ -11,6 +11,7 @@ RUN npm install
 # Copy all other files
 COPY . .
 
+
 # Environment Variables
 ARG VITE_API_URL
 ARG VITE_GRAPHQL_URL
@@ -22,7 +23,7 @@ ENV VITE_PUBLIC_PATH=$VITE_PUBLIC_PATH
 ENV NODE_ENV=production
 
 # Build the app
-RUN npm run build:production
+RUN npm run build
 
 # Ensure public files are copied to dist
 RUN cp -r public/* dist/ || true

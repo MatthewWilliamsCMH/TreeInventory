@@ -23,9 +23,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       autoProceed: false,
     })
     .use(Webcam, {
-      mirror: true,
+      modes: ['picture'],
+      mirror: false,
       facingMode: 'environment',
       showVideoSourceDropdown: true,
+      mobileNativeCamera: true
     })
     .use(XHRUpload, {
       endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'http://localhost:3001'}/uploads`,
