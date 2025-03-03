@@ -11,14 +11,10 @@ function App() {
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
   const [updatedTree, setUpdatedTree] = useState(null);
+  const [formStyle, setFormStyle] = useState({ backgroundColor: 'white' });
 
-  //determine form background color based on 'invasive' flag in selectedTree
-  const formStyle = {
-    backgroundColor: selectedTree && selectedTree?.invasive ? '#FFDEDE' : 'white'
-  };
-
-    //sync form state with selectedTree when selectedTree changes
-    useEffect(() => {
+  //sync form state with selectedTree when selectedTree changes
+  useEffect(() => {
     if (selectedTree) {
       setUpdatedTree(selectedTree);
     }
@@ -32,7 +28,7 @@ function App() {
         selectedTree, setSelectedTree, 
         treeLocation, setTreeLocation,
         updatedTree, setUpdatedTree,
-        formStyle 
+        formStyle, setFormStyle 
       }} />
     </div>
   );

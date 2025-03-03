@@ -11,8 +11,9 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setUpdatedTree } = useOutletContext();
-const [mapLoaded, setMapLoaded] = useState(false)
+  const { selectedTree, setSelectedTree, setUpdatedTree, setFormStyle } = useOutletContext();
+  const [mapLoaded, setMapLoaded] = useState(false)
+
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData, refetch: refetchSpecies } = useQuery(GET_SPECIES);
@@ -31,7 +32,8 @@ const [mapLoaded, setMapLoaded] = useState(false)
         zoomControl: false,
         center: [39.97738230836944, -83.04934859084177],
         zoom: 19,
-        tapTolerance: 30
+        tapTolerance: 45, //changed from 30; default is 15
+        tapHold: false
       });
 
       //alternate tile layers
@@ -122,7 +124,10 @@ const [mapLoaded, setMapLoaded] = useState(false)
       [northing, easting], {
         draggable: 'true',
         icon: myIcon,
-        riseOnHover: 'true'
+        riseOnHover: 'true',
+        // contextmenu: false,
+        interactive: true,     // Keep it clickable
+        bubblingMouseEvents: false // Prevent event bubbling      
       }
     )
     .bindPopup(popupContent)
@@ -142,26 +147,27 @@ const [mapLoaded, setMapLoaded] = useState(false)
       });
     });
 
-  marker.on('popupopen', (event) => {
-    const popup = event.popup;
-    const popupElement = popup.getElement();
+    marker.on('popupopen', (event) => {
+      const popup = event.popup;
+      const popupElement = popup.getElement();
 
-    //prevent navigation when clicking the close button
-    const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
-    if (closeButton) {
-      closeButton.addEventListener('click', (event) => {
-        event.stopPropagation();
+      //prevent navigation when clicking the close button
+      const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
+      if (closeButton) {
+        closeButton.addEventListener('click', (event) => {
+          event.stopPropagation();
+        });
+      }
+
+      //allow navigation when any part of the popup is clicked except for the close button.
+      popupElement.addEventListener('click', () => {
+        setSelectedTree(tree);
+        setUpdatedTree(tree);
+        setFormStyle({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
+        navigate('/TreeData');
+        map.current.closePopup();
       });
-    }
-
-    //allow navigation when any part of the popup is clicked except for the close button.
-    popupElement.addEventListener('click', () => {
-      setSelectedTree(tree);
-      setUpdatedTree(tree);
-      navigate('/TreeData');
-      map.current.closePopup();
     });
-  });
 
     //change cursor when hovering over marker
     marker.on('mouseover', () => {
@@ -221,6 +227,7 @@ const [mapLoaded, setMapLoaded] = useState(false)
       hidden: false
     };
     setUpdatedTree(newTree);
+    setFormStyle({ backgroundColor: 'white' })
     navigate('/TreeData')
   }
 

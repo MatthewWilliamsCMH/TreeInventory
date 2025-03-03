@@ -14,5 +14,13 @@
     "nonnative": false,
     "invasive": false,
     "markerColor": "#FF8C00"
+  },
+  {
+    "family": "Simaroubaceae",
+    "commonName": "Tree of heaven",
+    "scientificName": "Ailanthus altissima",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#A0522D"
   }
 ]
