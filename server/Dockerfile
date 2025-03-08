@@ -18,4 +18,5 @@ COPY . .
 # Expose port
 EXPOSE 3001
 
-CMD ["npm", "start:production"]
+# CMD ["npm", "start"]
+CMD ["node", "server.js"]
