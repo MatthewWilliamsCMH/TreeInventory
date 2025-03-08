@@ -702,5 +702,13 @@
     "nonnative": false,
     "invasive": false,
     "markerColor": "#FFFFFF"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Korean maple",
+    "scientificName": "Acer pseudosieboldianum",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#00BFFF"
   }
 ]
