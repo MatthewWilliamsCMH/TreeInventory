@@ -71,7 +71,9 @@ const TreeMap = () => {
 
       getAllData.getTrees.forEach((tree) => {
         const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
-        createTreeMarker(completeTree, speciesMap);
+        if (tree.felledDate === '') {
+          createTreeMarker(completeTree, speciesMap);
+        }
       });
     }
 
@@ -101,9 +103,13 @@ const TreeMap = () => {
     const { northing, easting } = tree.location;
     const speciesInfo = speciesMap[tree.commonName];
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
+    let strokeWidth = '1';
+    if (tree.lastUpdated > '1741132800') { //this is a temporary condition to isolate trees that have already been updated
+      strokeWidth = '3'
+    };
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
-        <circle cx='6' cy='6' r='6' fill='${markerColor}' stroke='lightgray' stroke-width='1'/>
+        <circle cx='6' cy='6' r='6' fill='${markerColor}' stroke='lightgray' stroke-width='${strokeWidth}'/>
       </svg>
     `;
 
