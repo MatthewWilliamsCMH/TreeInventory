@@ -11,7 +11,21 @@ function App() {
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
   const [updatedTree, setUpdatedTree] = useState(null);
+  const [mapZoom, setMapZoom] = useState(18);
+  const [mapCenter, setMapCenter] = useState([99.977985303479336, -83.04964455222637]);
   const [formStyle, setFormStyle] = useState({ backgroundColor: 'white' });
+
+  //the function below sets default value for lat and lng for the initial render
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      ({ coords: { latitude, longitude } }) => {
+        setMapCenter([latitude, longitude]);
+      },
+      (error) => {
+        console.log("Geolocation error:", error);
+      }
+    );
+  }, []);
 
   //sync form state with selectedTree when selectedTree changes
   useEffect(() => {
@@ -28,7 +42,10 @@ function App() {
         selectedTree, setSelectedTree, 
         treeLocation, setTreeLocation,
         updatedTree, setUpdatedTree,
-        formStyle, setFormStyle 
+        mapZoom, setMapZoom,
+        mapCenter, setMapCenter,
+        // isMapInitialized, setIsMapInitialized,
+        formStyle, setFormStyle
       }} />
     </div>
   );

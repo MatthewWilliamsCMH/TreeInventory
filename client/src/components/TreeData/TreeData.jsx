@@ -23,7 +23,7 @@ import { GET_SPECIES } from '../../queries/get_species';
 const TreeData = () => {
   //-----------data reception and transmission----------
   //get current global states using context
-  const { updatedTree, setUpdatedTree, formStyle } = useOutletContext();
+  const { updatedTree, setUpdatedTree, formStyle, setFormStyle } = useOutletContext();
 
   //set local states to initial values
   const [commonToScientificList, setCommonToScientificList] = useState(null);
@@ -53,6 +53,7 @@ const TreeData = () => {
         return acc;
       }, {});
       setCommonToScientificList(commonToScientificList);
+      setFormStyle({ backgroundColor: updatedTree.invasive ? '#FFDEDE' : 'white' });
     }
   }, [getSpeciesData, getAllData]);
 

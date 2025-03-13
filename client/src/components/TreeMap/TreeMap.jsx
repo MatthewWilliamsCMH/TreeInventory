@@ -11,32 +11,42 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
   const navigate = useNavigate();
-  const { selectedTree, setSelectedTree, setUpdatedTree, setFormStyle } = useOutletContext();
-  const [mapLoaded, setMapLoaded] = useState(false)
+
+  //initialize map
+  const mapRef = useRef(null); //map container
+  const map = useRef(null); //Leaflet map instance
+
+  const { 
+    setSelectedTree, 
+    setUpdatedTree, 
+    mapZoom, setMapZoom, 
+    mapCenter, setMapCenter,
+    setFormStyle 
+  } = useOutletContext();
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData, refetch: refetchSpecies } = useQuery(GET_SPECIES);
-  
+  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
+
   //set up mutations
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:'no-cache'});
   
-  //initialize map
-  const mapRef = useRef(null); //use ref for map container
-  const map = useRef(null); //use ref to store Leaflet map instance
-
   useEffect(() => {
-  if (mapRef.current && !map.current && getAllData?.getTrees && getSpeciesData?.getSpecies) {
-    //generate map
+    //if the map hasn't been initialize or tree and species data hasn't been return, abort
+    if (!mapRef.current || !getAllData?.getTrees ||!getSpeciesData?.getSpecies) {
+      return;
+    }
+console.log(mapCenter)
+    if (!map.current) {
       map.current = L.map(mapRef.current, {
         zoomControl: false,
-        center: [39.97738230836944, -83.04934859084177],
-        zoom: 19,
-        tapTolerance: 45, //changed from 30; default is 15
+        center: mapCenter,
+        zoom: mapZoom,
+        tapTolerance: 15,
         tapHold: false
       });
 
-      //alternate tile layers
+      //other tile layers
       // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
       const googleMutant = L.gridLayer.googleMutant({
@@ -46,45 +56,35 @@ const TreeMap = () => {
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
-      //ensure map is loaded; this is an attempt to prevent intermittent failure to load map and/or markers
-      map.current.on('load', () => {
-        setMapLoaded(true)
-      })
-
-      //add new tree when user clicks on empty area of map
-      map.current.on('click', handleAddTree);
-    }
-
-    //remove old data and fetch the data anew
-    if (map.current && getAllData?.getTrees) {
-      map.current.eachLayer((layer) => {
-        if (layer instanceof L.Marker) {
-          map.current.removeLayer(layer);
-        }
-      });
-
-      //ensure species data is ready before creating markers; not sure why this is necessary
+     //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
         return acc;
-      }, {});
+      }, []);
 
       getAllData.getTrees.forEach((tree) => {
         const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
         if (tree.felledDate === '') {
           createTreeMarker(completeTree, speciesMap);
         }
-      });
-    }
+      }, []);
 
-    //clear the map container and instance before unmounting the component
+      //handle map events
+      map.current.on('click', handleAddTree);
+    }
+    
+    //cleanup
     return () => {
       if (map.current) {
+        const leafletCenter = map.current.getCenter();
+        setMapCenter([leafletCenter.lat, leafletCenter.lng]);
+        setMapZoom(map.current.getZoom());
+        
         map.current.remove();
         map.current = null;
       }
     };
-  }, [getAllData, getSpeciesData, selectedTree, mapLoaded]);
+  }, [getAllData, getSpeciesData]);
 
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
