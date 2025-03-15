@@ -16,6 +16,7 @@ const TreeMap = () => {
   const mapRef = useRef(null); //map container
   const map = useRef(null); //Leaflet map instance
   const markersRef = useRef([]); 
+  const userLocationRef = useRef(null);
 
   const { 
     setSelectedTree, 
@@ -60,7 +61,12 @@ const TreeMap = () => {
 
     navigator.geolocation.watchPosition(
       ({ coords: { latitude, longitude } }) => {
-        L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
+
+        if (userLocationRef.current) {
+          map.current.removeLayer(userLocationRef.current);
+        }
+
+        userLocationRef.current = L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
       },
       (error) => {
         console.log("Geolocation error:", error);
