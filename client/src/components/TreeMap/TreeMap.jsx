@@ -58,6 +58,14 @@ const TreeMap = () => {
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
+    navigator.geolocation.watchPosition(
+      ({ coords: { latitude, longitude } }) => {
+        L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
+      },
+      (error) => {
+        console.log("Geolocation error:", error);
+      }
+    );
      //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
@@ -71,11 +79,9 @@ const TreeMap = () => {
         }
       }, []);
 
-      ///////////////
-      map.current.on('zoomend', () => { setMapZoom(map.current.getZoom()) });
-      //////////////
       //handle map events
       map.current.on('click', handleAddTree);
+      map.current.on('zoomend', () => { setMapZoom(map.current.getZoom()) });
     }
     
     //cleanup
@@ -277,7 +283,7 @@ const TreeMap = () => {
   }
 
   if (getAllLoading || getSpeciesLoading) {
-    return <p>Loading...</p>;
+    return <p>Wait...</p>;
   }
 
   if (getAllError || getSpeciesError) {
