@@ -44,7 +44,6 @@ function App() {
         updatedTree, setUpdatedTree,
         mapZoom, setMapZoom,
         mapCenter, setMapCenter,
-        // isMapInitialized, setIsMapInitialized,
         formStyle, setFormStyle
       }} />
     </div>

@@ -15,6 +15,7 @@ const TreeMap = () => {
   //initialize map
   const mapRef = useRef(null); //map container
   const map = useRef(null); //Leaflet map instance
+  const markersRef = useRef([]); 
 
   const { 
     setSelectedTree, 
@@ -23,6 +24,8 @@ const TreeMap = () => {
     mapCenter, setMapCenter,
     setFormStyle 
   } = useOutletContext();
+
+  const [markerRadius, setMarkerRadius] = useState(6) //do I still need this?
 
   //set up queries
   const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
@@ -36,7 +39,6 @@ const TreeMap = () => {
     if (!mapRef.current || !getAllData?.getTrees ||!getSpeciesData?.getSpecies) {
       return;
     }
-console.log(mapCenter)
     if (!map.current) {
       map.current = L.map(mapRef.current, {
         zoomControl: false,
@@ -69,6 +71,9 @@ console.log(mapCenter)
         }
       }, []);
 
+      ///////////////
+      map.current.on('zoomend', () => { setMapZoom(map.current.getZoom()) });
+      //////////////
       //handle map events
       map.current.on('click', handleAddTree);
     }
@@ -78,14 +83,43 @@ console.log(mapCenter)
       if (map.current) {
         const leafletCenter = map.current.getCenter();
         setMapCenter([leafletCenter.lat, leafletCenter.lng]);
-        setMapZoom(map.current.getZoom());
+        setMapZoom(map.current.getZoom()); //do I need this since I'm getting the zoom above?
         
         map.current.remove();
         map.current = null;
+        markersRef.current = [];
       }
     };
   }, [getAllData, getSpeciesData]);
 
+  useEffect(() => {
+    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
+    const iconSize = newRadius * 2
+    setMarkerRadius(newRadius);
+
+    markersRef.current.forEach(markerInfo => {
+      const { marker, tree, speciesInfo } = markerInfo;
+      
+      let strokeWidth = '1';
+      if (tree.lastUpdated > '1741132800') {
+        strokeWidth = '3';
+      }
+
+      const svgIcon = `
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
+        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${newRadius}' fill='${speciesInfo.markerColor || 'FFFFFF'}' stroke='lightgray' stroke-width='${strokeWidth}'/>
+        </svg>
+      `;
+      const myIcon = L.icon({
+        iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+        iconSize: [iconSize, iconSize],
+        iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+      });
+
+      marker.setIcon(myIcon);
+    });
+  }, [mapZoom]);
+  
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     const speciesInfo = speciesMap[tree.commonName] || {};
@@ -109,7 +143,7 @@ console.log(mapCenter)
     };
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
-        <circle cx='6' cy='6' r='6' fill='${markerColor}' stroke='lightgray' stroke-width='${strokeWidth}'/>
+        <circle cx='6' cy='6' r='${markerRadius}' fill='${markerColor}' stroke='lightgray' stroke-width='${strokeWidth}'/>
       </svg>
     `;
 
@@ -138,7 +172,11 @@ console.log(mapCenter)
     )
     .bindPopup(popupContent)
     .addTo(map.current);
-
+    markersRef.current.push({
+      marker,
+      tree,
+      speciesInfo
+    });
     marker.on('dragend', function(event){
       const { lat, lng } = event.target._latlng;
       const draggedTreeId = tree.id;
