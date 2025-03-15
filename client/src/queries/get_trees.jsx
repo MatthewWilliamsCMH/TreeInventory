@@ -13,6 +13,7 @@ export const GET_TREES = gql`
         autumnLeaf
         fruit
         flower
+        bud
         environs
       }
       notes

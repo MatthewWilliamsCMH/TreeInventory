@@ -33,6 +33,7 @@ const typeDefs = gql `
     autumnLeaf: String
     fruit: String
     flower: String
+    bud: String
     environs: String
   }
 
@@ -77,6 +78,7 @@ const typeDefs = gql `
     autumnLeaf: String
     fruit: String
     flower: String
+    bud: String
     environs: String
   }
 

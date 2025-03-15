@@ -110,7 +110,7 @@ textarea {
 
 .photo {
   min-width: 5rem;
-  flex: 1 1 calc((100% - 6rem) / 6);
+  flex: 1 1 calc((100% - 7rem) / 7);
   color: #aaa;
   background-color: white;
   text-align: center;

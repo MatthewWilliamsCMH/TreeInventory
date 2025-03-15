@@ -19,7 +19,7 @@ export const gardenList = [
   'Fire pit',
   'Glenn garden and lawn',
   'Goodale entrance beds',
-  'Hosta bed',
+  'Hosta bed and east lawn',
   'Main sign bed',
   'Meditation garden',
   'Parking-lot beds and lawn',
@@ -28,7 +28,7 @@ export const gardenList = [
   'South lawn',
   'Urlin driveway bed north',
   'Urlin driveway bed south',
-  'Woodland garden'
+  'Woodland garden and west lawn'
 ]
 
 export const siteInfoList = [

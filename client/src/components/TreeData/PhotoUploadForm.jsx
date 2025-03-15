@@ -120,7 +120,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   return (
     <>
       <div className='photogroup'>
-        {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
+        {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'bud', 'environs'].map((photoType) => (
           <div
             key={photoType}
             className='photo'
