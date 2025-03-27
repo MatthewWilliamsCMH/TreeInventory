@@ -13,8 +13,8 @@ const TreeMap = () => {
   const navigate = useNavigate();
 
   //initialize map
-  const mapRef = useRef(null); //map container
-  const map = useRef(null); //Leaflet map instance
+  const mapRef = useRef(null);
+  const map = useRef(null);
   const markersRef = useRef([]); 
   const userLocationRef = useRef(null);
 
@@ -59,24 +59,25 @@ const TreeMap = () => {
         apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
       }).addTo(map.current);
 
-    navigator.geolocation.watchPosition(
-      ({ coords: { latitude, longitude } }) => {
+      navigator.geolocation.watchPosition(
+        ({ coords: { latitude, longitude } }) => {
 
-        if (userLocationRef.current) {
-          map.current.removeLayer(userLocationRef.current);
+          if (userLocationRef.current) {
+            map.current.removeLayer(userLocationRef.current);
+          }
+
+          userLocationRef.current = L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
+        },
+        (error) => {
+          console.log("Geolocation error:", error);
         }
-
-        userLocationRef.current = L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
-      },
-      (error) => {
-        console.log("Geolocation error:", error);
-      }
-    );
+      );
+      
      //ensure species data is ready before creating markers; not sure why this is necessary
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species;
         return acc;
-      }, []);
+      }, {});
 
       getAllData.getTrees.forEach((tree) => {
         const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
@@ -106,7 +107,7 @@ const TreeMap = () => {
 
   useEffect(() => {
     const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
-    const iconSize = newRadius * 2
+    let iconSize = newRadius * 2
     setMarkerRadius(newRadius);
 
     markersRef.current.forEach(markerInfo => {
@@ -115,6 +116,7 @@ const TreeMap = () => {
       let strokeWidth = '1';
       if (tree.lastUpdated > '1741132800') {
         strokeWidth = '3';
+        iconSize = iconSize + 2
       }
 
       const svgIcon = `
@@ -130,7 +132,7 @@ const TreeMap = () => {
 
       marker.setIcon(myIcon);
     });
-  }, [mapZoom]);
+  }, [mapZoom, getAllData]);
   
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
