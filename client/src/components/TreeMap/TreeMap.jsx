@@ -85,7 +85,7 @@ const TreeMap = () => {
             map.current.removeLayer(userLocationRef.current);
           }
 
-          userLocationRef.current = L.circle([latitude, longitude], {radius: 4, stroke: false, fillOpacity: .75 }).addTo(map.current);
+          userLocationRef.current = L.circle([latitude, longitude], {radius: 4, weight: 3, color: '#f542ef', fillOpacity: .5 }).addTo(map.current);
         },
         (error) => {
           console.log("Geolocation error:", error);
