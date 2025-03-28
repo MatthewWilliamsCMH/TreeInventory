@@ -11,7 +11,7 @@ const TreeInventory = () => {
   const { setSelectedTree, setUpdatedTree } = useOutletContext();
 
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
+  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
@@ -25,13 +25,13 @@ const TreeInventory = () => {
   };
 
   let trees = [];
-  if (getAllData?.getTrees && getSpeciesData?.getSpecies) {
+  if (getTreesData?.getTrees && getSpeciesData?.getSpecies) {
     const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
       acc[species.commonName] = species;
       return acc;
     }, {});
 
-    trees = getAllData.getTrees.map(tree => combineTreeAndSpeciesData(tree, speciesMap))
+    trees = getTreesData.getTrees.map(tree => combineTreeAndSpeciesData(tree, speciesMap))
   }
 
   //sort trees based on sortConfig
@@ -62,8 +62,8 @@ const TreeInventory = () => {
     navigate('/TreeData');
   };
 
-  if (getAllLoading) return <div>Loading trees...</div>;
-  if (getAllError) return <div>Error loading trees: {error.message}</div>;
+  if (getTreesLoading) return <div>Loading trees...</div>;
+  if (getTreesError) return <div>Error loading trees: {error.message}</div>;
   if (getSpeciesLoading) return <div>Error loading species...</div>;
   if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
 

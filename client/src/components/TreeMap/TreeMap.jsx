@@ -18,6 +18,7 @@ const TreeMap = () => {
   const markersRef = useRef([]); 
   const userLocationRef = useRef(null);
 
+  //get global states from parent component
   const { 
     setSelectedTree, 
     setUpdatedTree, 
@@ -26,18 +27,36 @@ const TreeMap = () => {
     setFormStyle 
   } = useOutletContext();
 
-  const [markerRadius, setMarkerRadius] = useState(6) //do I still need this?
+  //establish local states
+  const [markerRadius, setMarkerRadius] = useState(6)
 
-  //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
+  //set up queries and mutations
+  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
-
-  //set up mutations
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:'no-cache'});
+
+  //centralized code to generate markers
+  const generateTreeMarkerIcon = (tree, speciesInfo, radius) => {
+    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' :  '1';
+    const iconSize = (radius * 2) + parseInt(markerStrokeWidth); //parseInt converts string '3' or '1' to integer
+    const markerColor = speciesInfo.markerColor || 'FFFFFF';
+
+    const svgIcon = `
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
+        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${radius}' fill='${markerColor}' stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
+      </svg>
+    `;
+
+    return L.icon({
+      iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+      iconSize: [iconSize, iconSize],
+      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon)
+    });
+  };
   
   useEffect(() => {
     //if the map hasn't been initialize or tree and species data hasn't been return, abort
-    if (!mapRef.current || !getAllData?.getTrees ||!getSpeciesData?.getSpecies) {
+    if (!mapRef.current || !getTreesData?.getTrees ||!getSpeciesData?.getSpecies) {
       return;
     }
     if (!map.current) {
@@ -49,7 +68,7 @@ const TreeMap = () => {
         tapHold: false
       });
 
-      //other tile layers
+      //tile-layer options
       // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
       // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
       const googleMutant = L.gridLayer.googleMutant({
@@ -79,7 +98,7 @@ const TreeMap = () => {
         return acc;
       }, {});
 
-      getAllData.getTrees.forEach((tree) => {
+      getTreesData.getTrees.forEach((tree) => {
         const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
         if (tree.felledDate === '') {
           createTreeMarker(completeTree, speciesMap);
@@ -96,43 +115,24 @@ const TreeMap = () => {
       if (map.current) {
         const leafletCenter = map.current.getCenter();
         setMapCenter([leafletCenter.lat, leafletCenter.lng]);
-        setMapZoom(map.current.getZoom()); //do I need this since I'm getting the zoom above?
-        
         map.current.remove();
         map.current = null;
         markersRef.current = [];
       }
     };
-  }, [getAllData, getSpeciesData]);
+  }, [getTreesData, getSpeciesData]);
 
   useEffect(() => {
     const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
-    let iconSize = newRadius * 2
+    const iconSize = newRadius * 2
     setMarkerRadius(newRadius);
 
     markersRef.current.forEach(markerInfo => {
       const { marker, tree, speciesInfo } = markerInfo;
-      
-      let strokeWidth = '1';
-      if (tree.lastUpdated > '1741132800') {
-        strokeWidth = '3';
-        iconSize = iconSize + 2
-      }
-
-      const svgIcon = `
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
-        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${newRadius}' fill='${speciesInfo.markerColor || 'FFFFFF'}' stroke='lightgray' stroke-width='${strokeWidth}'/>
-        </svg>
-      `;
-      const myIcon = L.icon({
-        iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-        iconSize: [iconSize, iconSize],
-        iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-      });
-
-      marker.setIcon(myIcon);
+      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, newRadius);
+      marker.setIcon(updatedIcon);
     });
-  }, [mapZoom, getAllData]);
+  }, [mapZoom, getTreesData]);
   
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
@@ -150,22 +150,7 @@ const TreeMap = () => {
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
     const speciesInfo = speciesMap[tree.commonName];
-    const markerColor = speciesInfo.markerColor || 'FFFFFF';
-    let strokeWidth = '1';
-    if (tree.lastUpdated > '1741132800') { //this is a temporary condition to isolate trees that have already been updated
-      strokeWidth = '3'
-    };
-    const svgIcon = `
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'>
-        <circle cx='6' cy='6' r='${markerRadius}' fill='${markerColor}' stroke='lightgray' stroke-width='${strokeWidth}'/>
-      </svg>
-    `;
-
-    const myIcon = L.icon({
-      iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-      iconSize: [12, 12],
-      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-    });
+    const myIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius);
 
     const popupContent = `
       <b>${tree.commonName}</b><br>
@@ -179,9 +164,8 @@ const TreeMap = () => {
         draggable: 'true',
         icon: myIcon,
         riseOnHover: 'true',
-        // contextmenu: false,
-        interactive: true,     // Keep it clickable
-        bubblingMouseEvents: false // Prevent event bubbling      
+        interactive: true,
+        bubblingMouseEvents: false
       }
     )
     .bindPopup(popupContent)
@@ -191,6 +175,7 @@ const TreeMap = () => {
       tree,
       speciesInfo
     });
+
     marker.on('dragend', function(event){
       const { lat, lng } = event.target._latlng;
       const draggedTreeId = tree.id;
@@ -217,7 +202,7 @@ const TreeMap = () => {
         });
       }
 
-      //allow navigation when any part of the popup is clicked except for the close button.
+      //allow navigation when any part of the popup is clicked except the close button
       popupElement.addEventListener('click', () => {
         setSelectedTree(tree);
         setUpdatedTree(tree);
@@ -290,12 +275,12 @@ const TreeMap = () => {
     navigate('/TreeData')
   }
 
-  if (getAllLoading || getSpeciesLoading) {
+  if (getTreesLoading || getSpeciesLoading) {
     return <p>Wait...</p>;
   }
 
-  if (getAllError || getSpeciesError) {
-    return <p>Error: {getAllError?.message || getSpeciesError?.message}</p>;
+  if (getTreesError || getSpeciesError) {
+    return <p>Error: {getTreesError?.message || getSpeciesError?.message}</p>;
   }
 
   return (

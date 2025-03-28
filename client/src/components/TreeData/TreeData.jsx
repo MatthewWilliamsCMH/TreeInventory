@@ -33,19 +33,19 @@ const TreeData = () => {
   const inputRef = useRef(null);
 
   //set up queries
-  const { loading: getAllLoading, error: getAllError, data: getAllData } = useQuery(GET_TREES);
+  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
   //----------useEffects----------
   //compile list of species names for combo boxes
   useEffect(() => {
-    if (getSpeciesData?.getSpecies && getAllData?.getTrees) {
+    if (getSpeciesData?.getSpecies && getTreesData?.getTrees) {
       const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
         acc[species.commonName] = species.scientificName;
         return acc;
       }, {});
 
-      const commonToScientificList = getAllData.getTrees.reduce((acc, tree) => {
+      const commonToScientificList = getTreesData.getTrees.reduce((acc, tree) => {
         const commonName = tree.commonName;
         if (speciesMap[commonName]) {
           acc[commonName] = speciesMap[commonName];
@@ -55,7 +55,7 @@ const TreeData = () => {
       setCommonToScientificList(commonToScientificList);
       setFormStyle({ backgroundColor: updatedTree.invasive ? '#FFDEDE' : 'white' });
     }
-  }, [getSpeciesData, getAllData]);
+  }, [getSpeciesData, getTreesData]);
 
   //set focus of correct form field
   useEffect(() => {
@@ -63,11 +63,11 @@ const TreeData = () => {
   }, []);
 
   //handle loading and error states
-  if (getAllLoading || getSpeciesLoading) {
+  if (getTreesLoading || getSpeciesLoading) {
     return <div>Loading species and tree data...</div>;
   }
 
-  if (getAllError || getSpeciesError) {
+  if (getTreesError || getSpeciesError) {
     return <div>Error loading data</div>;
   }
 

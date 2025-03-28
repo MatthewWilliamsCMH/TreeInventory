@@ -143,7 +143,7 @@ const Footer = () => {
       </div>
       <div id = 'buttongroup'>
         <button type='submit' onClick={handleSubmit} disabled={updateTreeLoading || addTreeLoading}>
-          {updateTreeLoading || addTreeLoading ? 'Updating...' : 'OK'}
+          {updateTreeLoading || addTreeLoading ? 'Wait...' : 'OK'}
         </button>
         <button type='button' onClick={handleCancel}>
           Cancel
