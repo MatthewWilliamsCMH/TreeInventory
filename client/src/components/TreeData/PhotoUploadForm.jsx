@@ -32,7 +32,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       mobileNativeCamera: true
     })
     .use(XHRUpload, {
-      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'http://localhost:3001'}/uploads`,
+      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
       fieldName: 'photo',
       formData: true,
     });

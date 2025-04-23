@@ -1,19 +1,27 @@
 [
   {
-    "family": "Fabaceae",
-    "commonName": "Eastern redbud",
-    "scientificName": "Cercis canadensis",
-    "nonnative": false,
-    "invasive": false,
-    "markerColor": "#DC143C"
-  },
-  {
     "family": "Malvaceae",
     "commonName": "American basswood",
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF8C00"
+    "markerColor": "#42D2D5"
+  },
+  {
+    "family": "Ulmaceae",
+    "commonName": "American elm",
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#C14890"
+  },
+  {
+    "family": "Platanaceae",
+    "commonName": "American sycamore",
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#6A5CE3"
   },
   {
     "family": "Simaroubaceae",
@@ -21,6 +29,6 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#A0522D"
+    "markerColor": "#C0469A"
   }
 ]

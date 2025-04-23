@@ -517,7 +517,7 @@
     "scientificName": "Prunus serotina",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#B241CA!!!"
+    "markerColor": "#B241CA"
   },
   {
     "family": "Rosaceae",
@@ -525,7 +525,7 @@
     "scientificName": "Pyrus calleryana",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#B241CA!!!"
+    "markerColor": "#B241CA"
   },
   {
     "family": "Rosaceae",
@@ -533,7 +533,7 @@
     "scientificName": "Malus ioensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#B241CA!!!"
+    "markerColor": "#B241CA"
   },
   {
     "family": "Rosaceae",
@@ -541,7 +541,7 @@
     "scientificName": "Crataegus phaenopyrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#B241CA!!!"
+    "markerColor": "#B241CA"
   },
   {
     "family": "Rosaceae",
@@ -549,7 +549,7 @@
     "scientificName": "Prunus pendula",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#B241CA!!!"
+    "markerColor": "#B241CA"
   },
   {
     "family": "Salicaceae",

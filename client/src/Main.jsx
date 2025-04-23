@@ -8,7 +8,7 @@ import TreeMap from './components/TreeMap/TreeMap';
 import TreeData from './components/TreeData/TreeData';
 import TreeInventory from './components/TreeInventory/TreeInventory';
 
-const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'http://localhost:3001/graphql';
+const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 
 const httpLink = createHttpLink({
   uri: graphqlUrl,

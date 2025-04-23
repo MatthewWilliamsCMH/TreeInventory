@@ -46,10 +46,10 @@
     "hidden": false
   },
   {
-    "commonName": "Eastern redbud",
+    "commonName": "American elm",
     "variety": "",
-    "dbh": "3-6",
-    "notes": "Grew up engulfed by honeysuckle, so no low branches",
+    "dbh": "37-42",
+    "notes": "",
     "photos": {
       "bark": "",
       "summerLeaf": "",
@@ -62,16 +62,16 @@
       "$date": "2025-01-01T05:00:00.000Z"
     },
     "location": {
-      "northing": 39.97718175980065,
-      "easting": -83.04995052516462
+      "northing": 39.97692689248152,
+      "easting": -83.04878979921342
     },
-    "garden": "South lawn",
+    "garden": "",
     "siteInfo": {
       "slope": false,
       "overheadLines": false,
       "treeCluster": false,
       "proximateStructure": false,
-      "proximateFence": true
+      "proximateFence": false
     },
     "installedDate": "< 2018",
     "installedBy": "",
@@ -91,7 +91,53 @@
     },
     "hidden": false
   },
-    {
+  {
+    "commonName": "American sycamore",
+    "variety": "",
+    "dbh": "19-24",
+    "notes": "",
+    "photos": {
+      "bark": "",
+      "summerLeaf": "",
+      "autumnLeaf": "",
+      "fruit": "",
+      "flower": "",
+      "environs": ""
+    },
+    "lastUpdated": {
+      "$date": "2025-01-01T05:00:00.000Z"
+    },
+    "location": {
+      "northing": 39.976776849179764,
+      "easting": -83.05016845464708
+    },
+    "garden": "",
+    "siteInfo": {
+      "slope": false,
+      "overheadLines": false,
+      "treeCluster": false,
+      "proximateStructure": false,
+      "proximateFence": false
+    },
+    "installedDate": "< 2018",
+    "installedBy": "",
+    "felledDate": "",
+    "felledBy": "",
+    "careNeeds": {
+      "install": false,
+      "raiseCrown": false,
+      "routinePrune": false,
+      "trainingPrune": false,
+      "priorityPrune": false,
+      "pestTreatment": false,
+      "installGrate": false,
+      "removeGrate": false,
+      "fell": false,
+      "removeStump": false
+    },
+    "hidden": false
+  },
+  {
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "7-12",
@@ -105,13 +151,13 @@
       "environs": ""
     },
     "lastUpdated": {
-      "$date": "2024-12-29T05:00:00.000Z"
+      "$date": "2025-01-01T05:00:00.000Z"
     },
     "location": {
-      "northing": 39.97831072930314,
-      "easting": -83.04880294046081
+      "northing": 39.97713593015406,
+      "easting": -83.04976986301511
     },
-    "garden": "Parking-lot beds and lawn",
+    "garden": "",
     "siteInfo": {
       "slope": false,
       "overheadLines": false,
@@ -121,8 +167,8 @@
     },
     "installedDate": "< 2018",
     "installedBy": "",
-    "felledDate": "",
-    "felledBy": "",
+    "felledDate": "2022-01-06T05:00:00.000Z",
+    "felledBy": "Joseph Tree Service",
     "careNeeds": {
       "install": false,
       "raiseCrown": false,
