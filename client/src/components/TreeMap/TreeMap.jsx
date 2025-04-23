@@ -142,7 +142,8 @@ const TreeMap = () => {
       scientificName: speciesInfo.scientificName || '',
       nonnative: speciesInfo.nonnative || false,
       invasive: speciesInfo.invasive || false,
-      markerColor: speciesInfo.markerColor || 'FFFFFF'
+      markerColor: speciesInfo.markerColor || 'FFFFFF',
+      family: speciesInfo.family || ''
     };
   };
 
@@ -153,9 +154,11 @@ const TreeMap = () => {
     const myIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius);
 
     const popupContent = `
+      Id: ${tree.id}<br>
       <b>${tree.commonName}</b><br>
-      <i>${tree.dbh} inches</i><br>
-      Id: ${tree.id}
+      <i>${tree.scientificName}</i><br>
+      Family: ${tree.family}<br>
+      ${tree.dbh} inches
     `;
     
     const marker = L
