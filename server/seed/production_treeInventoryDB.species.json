@@ -5,7 +5,7 @@
     "scientificName": "Betula nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#8B0000"
+    "markerColor": "#F06B66!!!"
   },
   {
     "family": "Betulaceae",
@@ -13,7 +13,7 @@
     "scientificName": "Betula alleghaniensis Britton",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#8B0000"
+    "markerColor": "#F06B66!!!"
   },
   {
     "family": "Bignoniaceae",
@@ -21,7 +21,7 @@
     "scientificName": "Catalpa speciosa (Warder) Warder ex Engelm.",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF4500"
+    "markerColor": "#F79063!!!"
   },
   {
     "family": "Ulmaceae",
@@ -29,7 +29,7 @@
     "scientificName": "Celtis occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#BDB76B"
+    "markerColor": "#F3A043!!!"
   },
   {
     "family": "Cornaceae",
@@ -37,7 +37,7 @@
     "scientificName": "Cornus florida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#6A00B8"
+    "markerColor": "#F6B060!!!"
   },
   {
     "family": "Cupressaceae",
@@ -45,7 +45,7 @@
     "scientificName": "Juniperus virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#191970"
+    "markerColor": "#F4C05A!!!"
   },
   {
     "family": "Ebanaceae",
@@ -53,7 +53,7 @@
     "scientificName": "Diospyros virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#008080"
+    "markerColor": "#F3D25D!!!"
   },
   {
     "family": "Fabaceae",
@@ -61,7 +61,7 @@
     "scientificName": "Robinia pseudoacacia",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#30a130"
+    "markerColor": "#E6E342!!!"
   },
   {
     "family": "Fabaceae",
@@ -69,7 +69,7 @@
     "scientificName": "Cercis canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#30a130"
+    "markerColor": "#E6E342!!!"
   },
   {
     "family": "Fabaceae",
@@ -77,7 +77,7 @@
     "scientificName": "Gleditsia triacanthos",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#30a130"
+    "markerColor": "#E6E342!!!"
   },
   {
     "family": "Fabaceae",
@@ -85,7 +85,7 @@
     "scientificName": "Gymnocladus dioicus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#30a130"
+    "markerColor": "#E6E342!!!"
   },
   {
     "family": "Fagaceae",
@@ -93,7 +93,7 @@
     "scientificName": "Quercus alba",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -101,7 +101,7 @@
     "scientificName": "Fagus grandifolia",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -109,7 +109,7 @@
     "scientificName": "Castanea dentata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -117,7 +117,7 @@
     "scientificName": "Quercus velutina",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -125,7 +125,7 @@
     "scientificName": "Quercus macrocarpa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -133,7 +133,7 @@
     "scientificName": "Quercus montana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -141,7 +141,7 @@
     "scientificName": "Quercus muehlenbergii",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -149,7 +149,7 @@
     "scientificName": "Quercus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -157,7 +157,7 @@
     "scientificName": "Quercus palustris",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -165,7 +165,7 @@
     "scientificName": "Quercus acutissima",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -173,7 +173,7 @@
     "scientificName": "Quercus coccinea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -181,7 +181,7 @@
     "scientificName": "Quercus imbricaria",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -189,7 +189,7 @@
     "scientificName": "Quercus shumardii",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -197,7 +197,7 @@
     "scientificName": "Quercus bicolor",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Fagaceae",
@@ -205,7 +205,7 @@
     "scientificName": "Fagus sylvatica",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FFE4E1"
+    "markerColor": "#C8E65E!!!"
   },
   {
     "family": "Ginkgoaceae",
@@ -213,7 +213,7 @@
     "scientificName": "Ginkgo biloba",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FF1493"
+    "markerColor": "#B4E548!!!"
   },
   {
     "family": "Hamamelidaceae",
@@ -221,7 +221,7 @@
     "scientificName": "Liquidambar styraciflua",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#C71585"
+    "markerColor": "#AEE666!!!"
   },
   {
     "family": "Juglandaceae",
@@ -229,7 +229,7 @@
     "scientificName": "Carya cordiformis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -237,7 +237,7 @@
     "scientificName": "Juglans nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -245,7 +245,7 @@
     "scientificName": "Juglans cinerea",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -253,7 +253,7 @@
     "scientificName": "Carya tomentosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -261,7 +261,7 @@
     "scientificName": "Carya illinoinensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -269,7 +269,7 @@
     "scientificName": "Carya glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -277,7 +277,7 @@
     "scientificName": "Carya floridana",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -285,7 +285,7 @@
     "scientificName": "Carya ovata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Juglandaceae",
@@ -293,7 +293,7 @@
     "scientificName": "Carya laciniosa",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF0000"
+    "markerColor": "#7AE267!!!"
   },
   {
     "family": "Lauraceae",
@@ -301,7 +301,7 @@
     "scientificName": "Sassafras albidum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF6347"
+    "markerColor": "#60E487!!!"
   },
   {
     "family": "Magnoliaceae",
@@ -309,7 +309,7 @@
     "scientificName": "Magnolia acuminata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#9e069e"
+    "markerColor": "#43CDAA!!!"
   },
   {
     "family": "Magnoliaceae",
@@ -317,7 +317,7 @@
     "scientificName": "Magnolia x soulangeana",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#9E069E"
+    "markerColor": "#43CDAA!!!"
   },
   {
     "family": "Magnoliaceae",
@@ -325,7 +325,7 @@
     "scientificName": "Magnolia virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#9E069E"
+    "markerColor": "#43CDAA!!!"
   },
   {
     "family": "Magnoliaceae",
@@ -333,7 +333,7 @@
     "scientificName": "Liriodendron tulipifera",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#9E069E"
+    "markerColor": "#43CDAA!!!"
   },
   {
     "family": "Malvaceae",
@@ -341,7 +341,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Malvaceae",
@@ -349,7 +349,7 @@
     "scientificName": "Tilia x europaea",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Malvaceae",
@@ -357,7 +357,7 @@
     "scientificName": "Tilia cordata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Moraceae",
@@ -365,7 +365,7 @@
     "scientificName": "Maclura pomifera",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Moraceae",
@@ -373,7 +373,7 @@
     "scientificName": "Morus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Moraceae",
@@ -381,7 +381,7 @@
     "scientificName": "Morus alba",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#0000FF"
+    "markerColor": "#42D2D5!!!"
   },
   {
     "family": "Nyssaceae",
@@ -389,7 +389,7 @@
     "scientificName": "Myssa sylvatica",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#20B2AA"
+    "markerColor": "#45D0C7!!!"
   },
   {
     "family": "Oleaceae",
@@ -397,7 +397,7 @@
     "scientificName": "Fraxinus pennsylvanica",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#808000"
+    "markerColor": "#4AA1E4!!!"
   },
   {
     "family": "Oleaceae",
@@ -405,7 +405,7 @@
     "scientificName": "Syringa reticulata",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FF69B4"
+    "markerColor": "#5D84DC!!!"
   },
   {
     "family": "Oleaceae",
@@ -413,7 +413,7 @@
     "scientificName": "Fraxinus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF69B4"
+    "markerColor": "#5D84DC!!!"
   },
   {
     "family": "Pinaceae",
@@ -421,7 +421,7 @@
     "scientificName": "Pinus nigra",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -429,7 +429,7 @@
     "scientificName": "Picea pungens",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -437,7 +437,7 @@
     "scientificName": "Tsuga canadensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -445,7 +445,7 @@
     "scientificName": "Pinus strobus",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -453,7 +453,7 @@
     "scientificName": "Pinus taeda",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -461,7 +461,7 @@
     "scientificName": "Picea abies",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -469,7 +469,7 @@
     "scientificName": "Pinus rigida",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -477,7 +477,7 @@
     "scientificName": "Pinus resinosa",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -485,7 +485,7 @@
     "scientificName": "Pinus sylvestris",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -493,7 +493,7 @@
     "scientificName": "Pinus echinata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Pinaceae",
@@ -501,7 +501,7 @@
     "scientificName": "Pinus virginiana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#F08080"
+    "markerColor": "#7670D0!!!"
   },
   {
     "family": "Platanaceae",
@@ -509,7 +509,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFA500"
+    "markerColor": "#6A5CE3!!!"
   },
   {
     "family": "Rosaceae",
@@ -517,7 +517,7 @@
     "scientificName": "Prunus serotina",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFFF00"
+    "markerColor": "#B241CA!!!!!!"
   },
   {
     "family": "Rosaceae",
@@ -525,7 +525,7 @@
     "scientificName": "Pyrus calleryana",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#FFFF00"
+    "markerColor": "#B241CA!!!!!!"
   },
   {
     "family": "Rosaceae",
@@ -533,7 +533,7 @@
     "scientificName": "Malus ioensis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFFF00"
+    "markerColor": "#B241CA!!!!!!"
   },
   {
     "family": "Rosaceae",
@@ -541,7 +541,7 @@
     "scientificName": "Crataegus phaenopyrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FFFF00"
+    "markerColor": "#B241CA!!!!!!"
   },
   {
     "family": "Rosaceae",
@@ -549,7 +549,7 @@
     "scientificName": "Prunus pendula",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#FFFF00"
+    "markerColor": "#B241CA!!!!!!"
   },
   {
     "family": "Salicaceae",
@@ -557,7 +557,7 @@
     "scientificName": "Populus grandidentata",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF00FF"
+    "markerColor": "#A24FAB!!!"
   },
   {
     "family": "Salicaceae",
@@ -565,7 +565,7 @@
     "scientificName": "Salix nigra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF00FF"
+    "markerColor": "#A24FAB!!!"
   },
   {
     "family": "Salicaceae",
@@ -573,7 +573,7 @@
     "scientificName": "Populus deltoides",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#FF00FF"
+    "markerColor": "#A24FAB!!!"
   },
   {
     "family": "Sapindaceae",
@@ -581,7 +581,7 @@
     "scientificName": "Acer nigrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -589,7 +589,7 @@
     "scientificName": "Acer negundo",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -597,7 +597,7 @@
     "scientificName": "Acer palmatum",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -605,7 +605,7 @@
     "scientificName": "Acer platanoides",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -613,7 +613,7 @@
     "scientificName": "Aesculus glabra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -621,7 +621,7 @@
     "scientificName": "Aesculus x carnea",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -629,7 +629,7 @@
     "scientificName": "Acer rubrum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -637,7 +637,7 @@
     "scientificName": "Acer saccharinum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -645,7 +645,7 @@
     "scientificName": "Acer saccharum",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Sapindaceae",
@@ -653,7 +653,7 @@
     "scientificName": "Aesculus flava",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   },
   {
     "family": "Simaroubaceae",
@@ -661,7 +661,7 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#00FFFF"
+    "markerColor": "#C0469A!!!"
   },
   {
     "family": "Ulmaceae",
@@ -669,7 +669,7 @@
     "scientificName": "Ulmus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00FF00"
+    "markerColor": "#C14890!!!"
   },
   {
     "family": "Ulmaceae",
@@ -677,7 +677,7 @@
     "scientificName": "Ulmus pumila",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#00FF00"
+    "markerColor": "#C14890!!!"
   },
   {
     "family": "Ulmaceae",
@@ -685,7 +685,7 @@
     "scientificName": "Ulmus rubra",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#00FF00"
+    "markerColor": "#C14890!!!"
   },
   {
     "family": "Viburnaceae",
@@ -693,7 +693,7 @@
     "scientificName": "Viburnum prunifolium",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#D2691E"
+    "markerColor": "#EC4E8D!!!"
   },
   {
     "family": "Unknown family",
@@ -709,6 +709,6 @@
     "scientificName": "Acer pseudosieboldianum",
     "nonnative": true,
     "invasive": false,
-    "markerColor": "#00BFFF"
+    "markerColor": "#D241AE!!!"
   }
 ]
