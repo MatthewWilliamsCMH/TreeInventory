@@ -23,15 +23,15 @@ const Overlay = ({ setOverlayVisible }) => {
   //set up queries
   //do i need both of these? Can't i get rid of the refetch since I'm running the query in full?
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
-  // const { refetch: refetchSpecies } = useQuery(GET_SPECIES, {
-  //   fetchPolicy: 'network-only'
-  // });
+  const { refetch: refetchSpecies } = useQuery(GET_SPECIES, {
+    fetchPolicy: 'network-only'
+  });
 
   //set up mutations
   const [addSpecies, { loading: addSpeciesLoading }] = useMutation(ADD_SPECIES, {
     onCompleted: async () => {
-      // await refetchSpecies()
-      await getSpeciesData();
+      await refetchSpecies()
+      // await getSpeciesData()
     }
   });
 
