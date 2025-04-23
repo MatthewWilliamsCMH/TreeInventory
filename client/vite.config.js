@@ -8,6 +8,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd());
   // const apiUrl = env.VITE_API_URL || 'https://treeinventory.clickps.synology.me';
   const apiUrl = env.VITE_API_URL || 'https://localhost:3001/api';
+  const isDev = mode === 'development';
 
   return {
     plugins: [react(), envCompatible()],
@@ -26,10 +27,12 @@ export default defineConfig(({ command, mode }) => {
     server: {
       port: env.VITE_PORT || 3000,
       open: true,
-      https: {
-        key: fs.readFileSync(path.resolve(__dirname, '../localhost-key.pem')),
-        cert: fs.readFileSync(path.resolve(__dirname, '../localhost.pem')),
-      },
+      ...(isDev && {
+        https: {
+          key: fs.readFileSync(path.resolve(__dirname, '../localhost-key.pem')),
+          cert: fs.readFileSync(path.resolve(__dirname, '../localhost.pem')),
+        },
+      }),
       proxy: {
         '/graphql': {
           target: `${apiUrl}/graphql`,

@@ -21,7 +21,6 @@ import './NewSpeciesOverlay.css';
 const Overlay = ({ setOverlayVisible }) => {
   //----------data reception and transmission----------
   //set up queries
-  //do i need both of these? Can't i get rid of the refetch since I'm running the query in full?
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   const { refetch: refetchSpecies } = useQuery(GET_SPECIES, {
     fetchPolicy: 'network-only'
