@@ -141,7 +141,7 @@ const TreeData = () => {
                 <div className = 'control'>
                   <label htmlFor='commonName'>Common</label>
                   <CreatableSelect
-                    ref={inputRef}
+                    // ref={inputRef}
                     id='commonName'
                     value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
                     onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
