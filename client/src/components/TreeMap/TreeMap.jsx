@@ -157,8 +157,8 @@ const TreeMap = () => {
       Id: ${tree.id}<br>
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
-      Family: ${tree.family}<br>
-      ${tree.dbh} inches
+       Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
+      DBH: ${tree.dbh} inches
     `;
     
     const marker = L
