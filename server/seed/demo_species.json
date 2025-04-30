@@ -1,0 +1,250 @@
+[
+  {
+    "family": "Betulaceae",
+    "commonName": "Black birch",
+    "scientificName": "Betula nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#F06B66"
+  },
+  {
+    "family": "Bignoniaceae",
+    "commonName": "Northern catalpa",
+    "scientificName": "Catalpa speciosa (Warder) Warder ex Engelm.",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#F79063"
+  },
+  {
+    "family": "Ulmaceae",
+    "commonName": "Common hackberry",
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#F3A043"
+  },
+  {
+    "family": "Fabaceae",
+    "commonName": "Black locust",
+    "scientificName": "Robinia pseudoacacia",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#E6E342"
+  },
+  {
+    "family": "Fabaceae",
+    "commonName": "Eastern redbud",
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#E6E342"
+  },
+  {
+    "family": "Fabaceae",
+    "commonName": "Honey locust",
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#E6E342"
+  },
+  {
+    "family": "Fagaceae",
+    "commonName": "Chinquapin oak",
+    "scientificName": "Quercus muehlenbergii",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#C8E65E"
+  },
+  {
+    "family": "Fagaceae",
+    "commonName": "Northern red oak",
+    "scientificName": "Quercus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#C8E65E"
+  },
+  {
+    "family": "Fagaceae",
+    "commonName": "Pin oak",
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#C8E65E"
+  },
+  {
+    "family": "Ginkgoaceae",
+    "commonName": "Ginkgo",
+    "scientificName": "Ginkgo biloba",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#B4E548"
+  },
+  {
+    "family": "Juglandaceae",
+    "commonName": "Black walnut",
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#7AE267"
+  },
+  {
+    "family": "Lauraceae",
+    "commonName": "Sassafras",
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#60E487"
+  },
+  {
+    "family": "Magnoliaceae",
+    "commonName": "Chinese magnolia",
+    "scientificName": "Magnolia x soulangeana",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#43CDAA"
+  },
+  {
+    "family": "Malvaceae",
+    "commonName": "American basswood",
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#42D2D5"
+  },
+  {
+    "family": "Malvaceae",
+    "commonName": "Littleleaf linden",
+    "scientificName": "Tilia cordata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#42D2D5"
+  },
+  {
+    "family": "Moraceae",
+    "commonName": "White mulberry",
+    "scientificName": "Morus alba",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#42D2D5"
+  },
+  {
+    "family": "Oleaceae",
+    "commonName": "Japanese tree lilac",
+    "scientificName": "Syringa reticulata",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#5D84DC"
+  },
+  {
+    "family": "Pinaceae",
+    "commonName": "Blue spruce",
+    "scientificName": "Picea pungens",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#7670D0"
+  },
+  {
+    "family": "Pinaceae",
+    "commonName": "Norway spruce",
+    "scientificName": "Picea abies",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#7670D0"
+  },
+  {
+    "family": "Platanaceae",
+    "commonName": "American sycamore",
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#6A5CE3"
+  },
+  {
+    "family": "Rosaceae",
+    "commonName": "Black cherry",
+    "scientificName": "Prunus serotina",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#B241CA"
+  },
+  {
+    "family": "Rosaceae",
+    "commonName": "Callery pear",
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#B241CA"
+  },
+  {
+    "family": "Rosaceae",
+    "commonName": "Prairie crab apple",
+    "scientificName": "Malus ioensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#B241CA"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Black maple",
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Japanese maple",
+    "scientificName": "Acer palmatum",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Norway maple",
+    "scientificName": "Acer platanoides",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Ohio buckeye",
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Red horse-chestnut",
+    "scientificName": "Aesculus x carnea",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Sapindaceae",
+    "commonName": "Red maple",
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#D241AE"
+  },
+  {
+    "family": "Ulmaceae",
+    "commonName": "American elm",
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#C14890"
+  },
+  {
+    "family": "Unknown family",
+    "commonName": "Unknown species",
+    "scientificName": "Unknown species",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#FFFFFF"
+  }
+]
