@@ -1,6 +1,6 @@
 //---------imports----------
 //external libraries
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import Select from 'react-select';
@@ -25,12 +25,12 @@ const TreeData = () => {
   //get current global states using context
   const { updatedTree, setUpdatedTree, formStyle, setFormStyle } = useOutletContext();
 
+
   //set local states to initial values
   const [commonToScientificList, setCommonToScientificList] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
-
-  //set local references to initial values
-  // const inputRef = useRef(null);
+  const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
+  const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);
 
   //set up queries
   const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
@@ -56,11 +56,6 @@ const TreeData = () => {
       setFormStyle({ backgroundColor: updatedTree.invasive ? '#FFDEDE' : 'white' });
     }
   }, [getSpeciesData, getTreesData]);
-
-  //set focus of correct form field
-  // useEffect(() => {
-  //   inputRef.current.focus();
-  // }, []);
 
   //handle loading and error states
   if (getTreesLoading || getSpeciesLoading) {
@@ -90,12 +85,32 @@ const TreeData = () => {
       const value = event.value;
       
       if (field === 'commonName' || field === 'scientificName') {
+        setUpdatedSpeciesField(field);
+        setUpdatedSpeciesValue(value);
         setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value, commonToScientificList));
       } else {
         setUpdatedTree(prevValues => handleFieldChange(prevValues, field, value));
       }
     }
   };
+
+  useEffect(() => {
+    if (updatedSpeciesField && updatedSpeciesValue && updatedSpeciesValue.trim() !=='') {
+      try {
+        if (getSpeciesData && (getSpeciesData.getSpecies.some(species => species.commonName === updatedSpeciesValue) || getSpeciesData.getSpecies.some(species => species.scientificName === updatedSpeciesValue))) {
+          console.log('Species $updatedSpeciesValue} exists.');
+        }
+        else {
+          setOverlayVisible(true);
+        }
+        setUpdatedSpeciesField(null);
+        setupdatedspeciesvalue('');
+      }
+      catch (error) {
+        console.error('Error checking species existence:', error);
+      }
+    }
+  }, [updatedSpeciesField, updatedSpeciesValue, getSpeciesData]);
 
   //photo uploads
   const handlePhotoUpload = (url, photoType) => {
@@ -108,22 +123,22 @@ const TreeData = () => {
     }));
   };
   //decide whether or not to open overlay
-  const handleBlur = (field, value) => {
-    if ((field === 'commonName' || field === 'scientificName') && value.trim() !=='') {
-      try {
-        if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === value) || getSpeciesData.getSpecies.some(species => species.scientificName === value)) {
-          console.log(`Species ${value} exists.`);
-        } 
-        else {
-          console.log(`Species ${value} does not exist.`);
-          setOverlayVisible(true); // Set overlay visibility to true when opening
-        }
-      } 
-      catch (error) {
-        console.error('Error checking species existence:', error);
-      }
-    }
-  };
+  // const handleBlur = (field, value) => {
+  //   if ((field === 'commonName' || field === 'scientificName') && value.trim() !=='') {
+  //     try {
+  //       if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === value) || getSpeciesData.getSpecies.some(species => species.scientificName === value)) {
+  //         console.log(`Species ${value} exists.`);
+  //       } 
+  //       else {
+  //         console.log(`Species ${value} does not exist.`);
+  //         setOverlayVisible(true); // Set overlay visibility to true when opening
+  //       }
+  //     } 
+  //     catch (error) {
+  //       console.error('Error checking species existence:', error);
+  //     }
+  //   }
+  // };
 
   //render component
   return (
@@ -141,11 +156,10 @@ const TreeData = () => {
                 <div className = 'control'>
                   <label htmlFor='commonName'>Common</label>
                   <CreatableSelect
-                    // ref={inputRef}
                     id='commonName'
                     value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
                     onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
-                    onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
+                    // onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
                     options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
                       label: common,
                       value: common
@@ -166,7 +180,7 @@ const TreeData = () => {
                     id='scientificName'
                     value={{ label: updatedTree.scientificName, value: updatedTree.scientificName }}
                     onChange={(selectedOption) => handleInputChange('scientificName', selectedOption)}
-                    onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
+                    // onBlur={(event) => handleBlur('scientificName', updatedTree.scientificName, event)}
                     options={commonToScientificList ? Object.entries(commonToScientificList)
                       .sort(([, a], [, b]) => a.localeCompare(b))
                       .map(([common, scientific]) => ({
