@@ -39,7 +39,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     });
 
     //select the default camera
-    uppyInstance.mediaDevices.on('webcam:init', () => {
+    uppyInstance.on('webcam:init', () => {
       navigator.mediaDevices.enumerateDevices()
       .then(devices => {
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
