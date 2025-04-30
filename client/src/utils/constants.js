@@ -8,7 +8,7 @@ export const dbhList = [
   '24-30', 
   '30-36', 
   '36-42', 
-  '> 42'in 
+  '> 42' 
 ];
 
 export const gardenList = [
