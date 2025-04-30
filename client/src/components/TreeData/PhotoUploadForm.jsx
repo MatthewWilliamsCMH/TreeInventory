@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
@@ -13,16 +13,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [uppy, setUppy] = useState(null);
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
-  
-  // Use a ref to keep track of the current activePhotoType
-  const activePhotoTypeRef = useRef(null);
-  
-  // Update the ref whenever activePhotoType changes
-  useEffect(() => {
-    activePhotoTypeRef.current = activePhotoType;
-  }, [activePhotoType]);
 
-  // Initialize Uppy only once when component mounts
   useEffect(() => {
     const uppyInstance = new Uppy({
       restrictions: {
@@ -34,11 +25,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     .use(Webcam, {
       modes: ['picture'],
       mirror: false,
-      videoConstraints: {
-        facingMode: 'environment'
-      },
+      // videoConstraints: {
+      //   facingMode: 'environment'
+      // },
       showVideoSourceDropdown: true,
-      mobileNativeCamera: true
+      mobileNativeCamera: false
     })
     .use(XHRUpload, {
       endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
@@ -46,11 +37,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       formData: true,
     });
 
-    // Handle upload success using the ref to access current activePhotoType
+    //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
       console.log('Upload success:', uploadedUrl);
-      onPhotoUpload(uploadedUrl, activePhotoTypeRef.current);
+      onPhotoUpload(uploadedUrl, activePhotoType);
       setActivePhotoType(null);
     };
 
@@ -62,63 +53,64 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       uppyInstance.off('upload-success', handleUploadSuccess);
       uppyInstance.destroy();
     };
-  }, []); // Empty dependency array - only run once on mount
+  // }, [activePhotoType, onPhotoUpload]); // Add dependencies
+  }, []); // Add dependencies
 
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
 
-    if (photoUrl) {
-      // Open a new browser window
-      const newWindow = window.open('', '_blank', 'width=1024,height=768');
-      
-      // Write custom html for new window
-      newWindow.document.write(`
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Tree Photo</title>
-            <style>
-              body {
-                margin: 0;
-                background: black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-              }
-              img {
-                max-width: 100%;
-                max-height: 100vh;
-                object-fit: contain;
-                cursor: pointer;
-              }
-            </style>
-          </head>
-          <body>
-            <img 
-              src="${photoUrl}" 
-              alt="Full size view" 
-              onclick="window.opener.postMessage('openUppy', '*')"
-            />
-          </body>
-        </html>
-      `);
-      
-      // Handle message from the new window
-      const handleMessage = (event) => {
-        if (event.data === 'openUppy') {
-          newWindow.close();
-          setActivePhotoType(photoType);
-          uppy?.cancelAll();
-        }
-      };
-      
-      window.addEventListener('message', handleMessage);
-      
-      // Cleanup
-      newWindow.addEventListener('beforeunload', () => {
-        window.removeEventListener('message', handleMessage);
-      });
+  if (photoUrl) {
+    //open a new browser window
+    const newWindow = window.open('', '_blank', 'width=1024,height=768');
+    
+    //write custom html for new window
+    newWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Tree Photo</title>
+          <style>
+            body {
+              margin: 0;
+              background: black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+            }
+            img {
+              max-width: 100%;
+              max-height: 100vh;
+              object-fit: contain;
+              cursor: pointer;
+            }
+          </style>
+        </head>
+        <body>
+          <img 
+            src='${photoUrl}' 
+            alt='Full size view' 
+            onclick='window.opener.postMessage('openUppy', '*')'
+          />
+        </body>
+      </html>
+    `);
+    
+    // Handle message from the new window
+    const handleMessage = (event) => {
+      if (event.data === 'openUppy') {
+        newWindow.close();
+        setActivePhotoType(photoType);
+        uppy?.cancelAll();
+      }
+    };
+    
+    window.addEventListener('message', handleMessage);
+    
+    //cleanup
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
     } 
     else {
       setActivePhotoType(photoType);
@@ -170,11 +162,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
       {showFullSize && (
         <FullSizePhoto
-          photoUrl={selectedPhotoUrl}
-          onClose={() => setShowFullSize(false)}
+          photoUrl = {selectedPhotoUrl}
+          onClose = {() => setShowFullSize(false)}
           onEdit={() => {
-            setShowFullSize(false);
-            setActivePhotoType(activePhotoType);
+            setShowFullSize(false)
+            setActivePhotoType(activePhotoType)
           }}
         />
       )}
