@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
@@ -14,14 +14,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
   const [cameraDevices, setCameraDevices] = useState([]);
-  const activePhotoTypeRef = useRef(null);
-  
-  // Update the ref whenever activePhotoType changes
-  useEffect(() => {
-    activePhotoTypeRef.current = activePhotoType;
-  }, [activePhotoType]);
 
-  // Initialize Uppy only once when component mounts
   useEffect(() => {
     const uppyInstance = new Uppy({
       restrictions: {
@@ -33,9 +26,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     .use(Webcam, {
       modes: ['picture'],
       mirror: false,
-      videoConstraints: {
-        // No specific constraints that would force a certain camera
-      },
+      // videoConstraints: {
+      //   facingMode: 'environment'
+      // },
       showVideoSourceDropdown: true,
       mobileNativeCamera: false
     })
@@ -45,40 +38,34 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       formData: true,
     });
 
-    // Handle webcam initialization
+    //select the default camera
     uppyInstance.on('webcam:init', () => {
-      // Get all available camera devices
       navigator.mediaDevices.enumerateDevices()
-        .then(devices => {
-          // Filter for video input devices (cameras)
-          const videoDevices = devices.filter(device => device.kind === 'videoinput');
-          setCameraDevices(videoDevices);
-          console.log('Available cameras:', videoDevices);
-          
-          // Give the webcam plugin time to initialize
-          setTimeout(() => {
-            const webcamPlugin = uppyInstance.getPlugin('Webcam');
-            
-            // Try to find the "Back Dual Wide" camera
-            const backDualWide = videoDevices.find(device => 
-              device.label.includes('Back Dual Wide'));
-            
-            if (backDualWide && webcamPlugin && typeof webcamPlugin.selectDevice === 'function') {
-              console.log('Setting default camera to Back Dual Wide:', backDualWide.deviceId);
-              webcamPlugin.selectDevice(backDualWide.deviceId);
-            }
-          }, 500);
-        })
-        .catch(error => {
-          console.error('Error getting camera devices:', error);
-        });
+      .then(devices => {
+        const videoDevices = devices.filter(device => device.kind === 'videoinput');
+        setCameraDevices(videoDevices);
+        console.log(cameraDevices)
+
+        setTimeout(() => {
+          const webcamPlugin = uppyInstance.getPlugin('Webcam');
+
+          const backDualWide = videoDevices.find(device => device.label.includes('back dual wide'));
+
+          if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
+            webcamPlugin.selectCamera(backDualWide.deviceId);
+          }
+        }, 500);
+      })
+      .catch(error => {
+        console.error('Error accessing media devices:', error);
+      });
     });
 
-    // Handle upload success using the ref to access current activePhotoType
+    //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
       console.log('Upload success:', uploadedUrl);
-      onPhotoUpload(uploadedUrl, activePhotoTypeRef.current);
+      onPhotoUpload(uploadedUrl, activePhotoType);
       setActivePhotoType(null);
     };
 
@@ -87,86 +74,67 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     setUppy(uppyInstance);
 
     return () => {
-      uppyInstance.off('webcam:init');
       uppyInstance.off('upload-success', handleUploadSuccess);
       uppyInstance.destroy();
     };
-  }, []); // Empty dependency array - only run once on mount
-
-  // Set default camera when the Uppy modal opens
-  useEffect(() => {
-    if (activePhotoType && uppy && cameraDevices.length > 0) {
-      const webcamPlugin = uppy.getPlugin('Webcam');
-      
-      // Try to find "Back Dual Wide" camera
-      const backDualWide = cameraDevices.find(device => 
-        device.label.includes('Back Dual Wide'));
-      
-      if (backDualWide && webcamPlugin && typeof webcamPlugin.selectDevice === 'function') {
-        // Small delay to ensure the webcam UI is fully initialized
-        setTimeout(() => {
-          console.log('Setting camera to Back Dual Wide when modal opens');
-          webcamPlugin.selectDevice(backDualWide.deviceId);
-        }, 300);
-      }
-    }
-  }, [activePhotoType, uppy, cameraDevices]);
+  // }, [activePhotoType, onPhotoUpload]); // Add dependencies
+  }, []); // Add dependencies
 
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
 
-    if (photoUrl) {
-      // Open a new browser window
-      const newWindow = window.open('', '_blank', 'width=1024,height=768');
-      
-      // Write custom html for new window
-      newWindow.document.write(`
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Tree Photo</title>
-            <style>
-              body {
-                margin: 0;
-                background: black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-              }
-              img {
-                max-width: 100%;
-                max-height: 100vh;
-                object-fit: contain;
-                cursor: pointer;
-              }
-            </style>
-          </head>
-          <body>
-            <img 
-              src="${photoUrl}" 
-              alt="Full size view" 
-              onclick="window.opener.postMessage('openUppy', '*')"
-            />
-          </body>
-        </html>
-      `);
-      
-      // Handle message from the new window
-      const handleMessage = (event) => {
-        if (event.data === 'openUppy') {
-          newWindow.close();
-          setActivePhotoType(photoType);
-          uppy?.cancelAll();
-        }
-      };
-      
-      window.addEventListener('message', handleMessage);
-      
-      // Cleanup
-      newWindow.addEventListener('beforeunload', () => {
-        window.removeEventListener('message', handleMessage);
-      });
+  if (photoUrl) {
+    //open a new browser window
+    const newWindow = window.open('', '_blank', 'width=1024,height=768');
+    
+    //write custom html for new window
+    newWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Tree Photo</title>
+          <style>
+            body {
+              margin: 0;
+              background: black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+            }
+            img {
+              max-width: 100%;
+              max-height: 100vh;
+              object-fit: contain;
+              cursor: pointer;
+            }
+          </style>
+        </head>
+        <body>
+          <img 
+            src='${photoUrl}' 
+            alt='Full size view' 
+            onclick='window.opener.postMessage('openUppy', '*')'
+          />
+        </body>
+      </html>
+    `);
+    
+    // Handle message from the new window
+    const handleMessage = (event) => {
+      if (event.data === 'openUppy') {
+        newWindow.close();
+        setActivePhotoType(photoType);
+        uppy?.cancelAll();
+      }
+    };
+    
+    window.addEventListener('message', handleMessage);
+    
+    //cleanup
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
     } 
     else {
       setActivePhotoType(photoType);
@@ -218,11 +186,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
       {showFullSize && (
         <FullSizePhoto
-          photoUrl={selectedPhotoUrl}
-          onClose={() => setShowFullSize(false)}
+          photoUrl = {selectedPhotoUrl}
+          onClose = {() => setShowFullSize(false)}
           onEdit={() => {
-            setShowFullSize(false);
-            setActivePhotoType(activePhotoType);
+            setShowFullSize(false)
+            setActivePhotoType(activePhotoType)
           }}
         />
       )}
