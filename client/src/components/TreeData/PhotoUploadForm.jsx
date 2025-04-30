@@ -13,6 +13,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [uppy, setUppy] = useState(null);
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
+  const [cameraDevices, setCameraDevices] = useState([]);
 
   useEffect(() => {
     const uppyInstance = new Uppy({
@@ -35,6 +36,28 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
       fieldName: 'photo',
       formData: true,
+    });
+
+    //select the default camera
+    uppyInstance.mediaDevices.on('webcam:init', () => {
+      navigator.mediaDevices.enumerateDevices()
+      .then(devices => {
+        const videoDevices = devices.filter(device => device.kind === 'videoinput');
+        setCameraDevices(videoDevices);
+
+        setTimeout(() => {
+          const webcamPlugin = uppyInstance.getPlugin('Webcam');
+
+          const backDualWide && videoDevices.find(device => device.label.includes('back dual wide'));
+
+          if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
+            webcamPlugin.selectCamera(backDualWide.deviceId);
+          }
+        }, 500);
+      })
+      .catch(error => {
+        console.error('Error accessing media devices:', error);
+      });
     });
 
     //cleanup for upload events
