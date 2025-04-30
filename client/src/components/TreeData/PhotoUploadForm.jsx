@@ -48,7 +48,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         setTimeout(() => {
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
 
-          const backDualWide && videoDevices.find(device => device.label.includes('back dual wide'));
+          const backDualWide = videoDevices.find(device => device.label.includes('back dual wide'));
 
           if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
             webcamPlugin.selectCamera(backDualWide.deviceId);
