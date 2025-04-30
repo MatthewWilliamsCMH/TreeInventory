@@ -40,25 +40,33 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
     //select the default camera
     uppyInstance.on('webcam:init', () => {
+      // Get all available camera devices
       navigator.mediaDevices.enumerateDevices()
-      .then(devices => {
-        const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        setCameraDevices(videoDevices);
-
-        setTimeout(() => {
-          const webcamPlugin = uppyInstance.getPlugin('Webcam');
-
-          const backDualWide = videoDevices.find(device => device.label.includes('back dual wide'));
-
-          if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
-            webcamPlugin.selectCamera(backDualWide.deviceId);
-          }
-        }, 500);
-      })
-      .catch(error => {
-        console.error('Error accessing media devices:', error);
-      });
+        .then(devices => {
+          // Filter for video input devices (cameras)
+          const videoDevices = devices.filter(device => device.kind === 'videoinput');
+          setCameraDevices(videoDevices);
+          console.log('Available cameras:', videoDevices);
+          
+          // Give the webcam plugin time to initialize
+          setTimeout(() => {
+            const webcamPlugin = uppyInstance.getPlugin('Webcam');
+            
+            // Try to find the "Back Dual Wide" camera
+            const backDualWide = videoDevices.find(device => 
+              device.label.includes('Back Dual Wide'));
+            
+            if (backDualWide && webcamPlugin && typeof webcamPlugin.selectDevice === 'function') {
+              console.log('Setting default camera to Back Dual Wide:', backDualWide.deviceId);
+              webcamPlugin.selectDevice(backDualWide.deviceId);
+            }
+          }, 500);
+        })
+        .catch(error => {
+          console.error('Error getting camera devices:', error);
+        });
     });
+
 
     //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
