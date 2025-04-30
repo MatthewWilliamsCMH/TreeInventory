@@ -30,7 +30,7 @@ const TreeData = () => {
   const [overlayVisible, setOverlayVisible] = useState(false);
 
   //set local references to initial values
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
   //set up queries
   const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
@@ -58,9 +58,9 @@ const TreeData = () => {
   }, [getSpeciesData, getTreesData]);
 
   //set focus of correct form field
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // }, []);
 
   //handle loading and error states
   if (getTreesLoading || getSpeciesLoading) {
