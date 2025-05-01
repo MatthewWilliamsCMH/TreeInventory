@@ -117,8 +117,20 @@ const Overlay = ({ setOverlayVisible }) => {
         break;
       case 'family':
         setFamily(value);
+
         if (!familyList.some(item => item.value === value)) {
+          //new family
           setShowColorPicker(true);
+          setMarkerColor('');
+        } else {
+          //existing family
+          const existingSpecies = getSpeciesData.getSpecies.find(
+            (s) => s.family === value
+          );
+          if (existingSpecies) {
+            setMarkerColor(existingSpecies.markerColor);
+          }
+          setShowColorPicker(false);
         }
         break;
       case 'nonnative':
