@@ -26,9 +26,6 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     .use(Webcam, {
       modes: ['picture'],
       mirror: false,
-      videoConstraints: {
-        facingMode: 'environment'
-      },
       showVideoSourceDropdown: true,
       mobileNativeCamera: false
     })
@@ -39,22 +36,24 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     });
 
     //select the default camera
-    uppyInstance.on('webcam:init', () => {
+    uppyInstance.on('webcam:ready', () => {
       navigator.mediaDevices.enumerateDevices()
-      .then(devices => {
-        const videoDevices = devices.filter(device => device.kind === 'videoinput');
+      .then((devices) => {
+        const videoDevices = devices.filter((device) => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
-        console.log(cameraDevices)
 
         setTimeout(() => {
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
 
-          const backDualWide = videoDevices.find(device => device.label.includes('back dual wide'));
+          const backCamera = videoDevices.find(device => 
+            device.label.toLowerCase().includes('back') ||
+            device.label.toLowerCase().includes('dual')
+          );
 
-          if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
-            webcamPlugin.selectCamera(backDualWide.deviceId);
+          if (backCamera && webcamPlugin?.selectCamera){
+            webcamPlugin.selectCamera(backCamera.deviceId);
           }
-        }, 500);
+        }, 1000);
       })
       .catch(error => {
         console.error('Error accessing media devices:', error);
