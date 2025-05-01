@@ -47,9 +47,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const selectDefaultCamera = async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
-        console.log('Devices:', devices);
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
+        console.log('cameraDevices:', cameraDevices);
 
         if (videoDevices.length) {
           const defaultDevice = videoDevices.find(device => device.label.includes('back')) || videoDevices[0];
