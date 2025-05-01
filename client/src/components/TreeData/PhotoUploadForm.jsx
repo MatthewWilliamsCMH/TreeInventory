@@ -38,8 +38,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     // Log when Uppy is initialized
     console.log('Uppy initialized');
 
-    // select the default camera
+    // Event listener for when the webcam is ready
     uppyInstance.on('webcam:ready', async () => {
+      console.log('Webcam is ready!');
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
@@ -68,18 +69,18 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
             webcamPlugin.selectCamera(selectedDevice.deviceId);
           }, 500);
         } else {
-          console.log('No camera selected, defaulting...');
+          console.log('No preferred camera found, defaulting...');
         }
-
       } catch (err) {
         console.error('Failed to set camera:', err);
       }
     });
 
-    // Save preferred camera to local storage when the user selects a camera
+    // Log when the camera is selected
     uppyInstance.on('camera:select', (deviceId) => {
-      console.log('Camera selected, saving to localStorage:', deviceId);
+      console.log('Camera selected:', deviceId);
       localStorage.setItem('preferredCameraId', deviceId);
+      console.log('Preferred Camera saved to localStorage:', deviceId);
     });
 
     // Handle upload success
