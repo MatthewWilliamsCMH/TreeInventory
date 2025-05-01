@@ -70,6 +70,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       });
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
+        console.log('videoDevices:', videoDevices);
         console.log('cameraDevices:', cameraDevices);
 
         if (cameraDevices.length) {
