@@ -36,28 +36,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     });
 
     //select the default camera
-useEffect(() => {
-  const uppyInstance = new Uppy({
-    restrictions: {
-      maxNumberOfFiles: 1,
-      allowedFileTypes: ['image/*']
-    },
-    autoProceed: false,
-  })
-  .use(Webcam, {
-    modes: ['picture'],
-    mirror: false,
-    showVideoSourceDropdown: true,
-    mobileNativeCamera: false
-  })
-  .use(XHRUpload, {
-    endpoint: `${import.meta.env.VITE_API_URL || 'https://localhost:3001'}/uploads`,
-    fieldName: 'photo',
-    formData: true,
-  });
-
-  //select default camera
-  uppyInstance.on('webcam:ready', async () => {
+    uppyInstance.on('webcam:ready', async () => {
     try {
       const devices = await navigator.mediaDevices.enumerateDevices();
       const videoDevices = devices.filter(device => device.kind === 'videoinput');
