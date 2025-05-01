@@ -26,9 +26,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     .use(Webcam, {
       modes: ['picture'],
       mirror: false,
-      // videoConstraints: {
-      //   facingMode: 'environment'
-      // },
+      videoConstraints: {
+        facingMode: 'environment'
+      },
       showVideoSourceDropdown: true,
       mobileNativeCamera: false
     })
@@ -154,9 +154,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
             {updatedTree.photos?.[photoType] ? (
               <div className='photo-preview'>
                 <img
-                  src={updatedTree.photos[photoType]}
-                  alt={photoType}
-                  className='object-cover'
+                  src = {updatedTree.photos[photoType]}
+                  alt = {photoType}
+                  className = 'object-cover'
                 />
               </div>
             ) : (
@@ -174,13 +174,13 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
       {uppy && (
         <DashboardModal
-          uppy={uppy}
-          open={activePhotoType !== null}
-          onRequestClose={() => setActivePhotoType(null)}
-          plugins={['Webcam']}
+          uppy = {uppy}
+          open = {activePhotoType !== null}
+          onRequestClose = {() => setActivePhotoType(null)}
+          plugins = {['Webcam']}
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
-          note={`Upload or take a photo of the tree's ${activePhotoType}`}
+          note = {`Upload or take a photo of the tree's ${activePhotoType}`}
         />
       )}
 
@@ -188,7 +188,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         <FullSizePhoto
           photoUrl = {selectedPhotoUrl}
           onClose = {() => setShowFullSize(false)}
-          onEdit={() => {
+          onEdit = {() => {
             setShowFullSize(false)
             setActivePhotoType(activePhotoType)
           }}
