@@ -68,9 +68,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         devices.forEach(device => {
           console.log(`${device.kind}: ${device.label} id = ${device.deviceId}`);
       });
-        const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        setCameraDevices(videoDevices);
-        console.log('videoDevices:', videoDevices);
+        const cameraDevices = devices.filter(device => device.kind === 'videoinput');
         console.log('cameraDevices:', cameraDevices);
 
         if (cameraDevices.length) {
