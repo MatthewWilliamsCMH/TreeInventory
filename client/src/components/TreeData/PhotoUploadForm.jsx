@@ -46,15 +46,18 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       console.log('Webcam plugin loaded successfully!');
     }
 
-    // Event listener for when the webcam is ready
-    uppyInstance.on('webcam:ready', async () => {
-      console.log('Webcam is ready!');
+    // Explicitly request permissions and check for camera devices
+    const getDevices = async () => {
       try {
-        // Request permissions explicitly
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        setCameraDevices(videoDevices);
-        console.log('Devices found:', videoDevices);
+        
+        if (videoDevices.length === 0) {
+          console.warn('No video devices found.');
+        } else {
+          console.log('Devices found:', videoDevices);
+          setCameraDevices(videoDevices);
+        }
 
         const preferredCameraId = localStorage.getItem('preferredCameraId');
         console.log('Preferred Camera ID from localStorage:', preferredCameraId);
@@ -69,15 +72,22 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
         if (selectedDevice) {
           console.log('Selected Camera Device:', selectedDevice);
+          // Use setTimeout to delay selection slightly and ensure video sources are ready
           setTimeout(() => {
             webcamPlugin.selectCamera(selectedDevice.deviceId);
-          }, 500);
+          }, 1000);
         } else {
           console.log('No preferred camera found, defaulting...');
         }
       } catch (err) {
-        console.error('Failed to set camera:', err);
+        console.error('Failed to enumerate devices:', err);
       }
+    };
+
+    // Ensure webcam is initialized and permission is requested
+    uppyInstance.on('webcam:ready', async () => {
+      console.log('Webcam is ready! Requesting camera devices...');
+      await getDevices();
     });
 
     // Log when the camera is selected
@@ -211,6 +221,8 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
       {showFullSize && (
         <FullSizePhoto
+         
+
           photoUrl={selectedPhotoUrl}
           onClose={() => setShowFullSize(false)}
           onEdit={() => {

@@ -82,7 +82,7 @@ const TreeMap = () => {
         ({ coords: { latitude, longitude } }) => {
 
           if (userLocationRef.current) {
-            map.current.removeLayer(userLocationRef.current);
+            map.current.removeLayer (userLocationRef.current);//this is throwing an error
           }
 
           userLocationRef.current = L.circle([latitude, longitude], {radius: 4, weight: 3, color: '#F542EF', fillOpacity: .5 }).addTo(map.current);
