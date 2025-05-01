@@ -54,6 +54,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         if (videoDevices.length) {
           const defaultDevice = videoDevices.find(device => device.label.includes('back')) || videoDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
+          console.log("hello")
           console.log(defaultDevice)
         }
       } catch (error) {
