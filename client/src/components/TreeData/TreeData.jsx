@@ -104,7 +104,7 @@ const TreeData = () => {
           setOverlayVisible(true);
         }
         setUpdatedSpeciesField(null);
-        setupdatedspeciesvalue('');
+        setUpdatedSpeciesValue('');
       }
       catch (error) {
         console.error('Error checking species existence:', error);

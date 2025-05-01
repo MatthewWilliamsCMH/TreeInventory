@@ -78,7 +78,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       uppyInstance.destroy();
     };
   // }, [activePhotoType, onPhotoUpload]); // Add dependencies
-  }, []); // Add dependencies
+  }, [activePhotoType, onPhotoUpload]); // Add dependencies
 
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];

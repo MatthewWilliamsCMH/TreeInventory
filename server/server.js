@@ -24,10 +24,12 @@ if (process.env.NODE_ENV === 'production') {
   uploadsDir = '/app/public/uploads';
   console.log('Running in PRODUCTION mode - using mapped volume path:', uploadsDir);
 } else if (process.env.NODE_ENV === 'demo') {
-  uploadsDir = path.join(__dirname, 'public', 'uploads');
+uploadsDir = path.resolve(__dirname, '../uploads');
+  // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log('Running in DEMO mode - using path:', uploadsDir);
 } else {
-  uploadsDir = path.join(__dirname, 'public', 'uploads');
+uploadsDir = path.resolve(__dirname, '../uploads');
+  // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log('Running in DEVELOPMENT mode - using path:', uploadsDir);
 }
 
@@ -45,7 +47,8 @@ try {
     } catch (dirCreateError) {
       console.error(`ERROR creating directory ${uploadsDir}:`, dirCreateError);
       // Fallback to a directory we know will work
-      uploadsDir = path.join(__dirname, 'public', 'uploads');
+uploadsDir = path.resolve(__dirname, '../uploads');
+      // uploadsDir = path.join(__dirname, 'public', 'uploads');
       console.log(`Falling back to container path: ${uploadsDir}`);
       if (!fs.existsSync(uploadsDir)) {
         fs.mkdirSync(uploadsDir, { recursive: true });
@@ -62,7 +65,8 @@ try {
     } catch (writeError) {
       console.error('ERROR: Directory exists but is not writable:', writeError);
       // Fallback to a directory we know will work
-      uploadsDir = path.join(__dirname, 'public', 'uploads');
+uploadsDir = path.resolve(__dirname, '../uploads');
+      // uploadsDir = path.join(__dirname, 'public', 'uploads');
       console.log(`Falling back to container path: ${uploadsDir}`);
       if (!fs.existsSync(uploadsDir)) {
         fs.mkdirSync(uploadsDir, { recursive: true });
@@ -72,7 +76,8 @@ try {
 } catch (error) {
   console.error('ERROR checking directory:', error);
   // Fallback to a directory we know will work
-  uploadsDir = path.join(__dirname, 'public', 'uploads');
+uploadsDir = path.resolve(__dirname, '../uploads');
+  // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log(`Falling back to container path: ${uploadsDir}`);
   if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
