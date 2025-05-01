@@ -47,6 +47,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const selectDefaultCamera = async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
+        console.log('devices:', devices);
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
         console.log('cameraDevices:', cameraDevices);
@@ -54,8 +55,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         if (cameraDevices.length) {
           const defaultDevice = cameraDevices.find(device => device.label.includes('back')) || cameraDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
-          console.log("hello")
-          console.log(defaultDevice)
+          console.log('default device', defaultDevice)
         }
       } catch (error) {
         console.error('Error accessing media devices:', error);
