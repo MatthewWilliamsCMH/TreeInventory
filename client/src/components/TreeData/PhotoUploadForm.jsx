@@ -51,8 +51,8 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         setCameraDevices(videoDevices);
         console.log('cameraDevices:', cameraDevices);
 
-        if (videoDevices.length) {
-          const defaultDevice = videoDevices.find(device => device.label.includes('back')) || videoDevices[0];
+        if (cameraDevices.length) {
+          const defaultDevice = cameraDevices.find(device => device.label.includes('back')) || cameraDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
           console.log("hello")
           console.log(defaultDevice)
