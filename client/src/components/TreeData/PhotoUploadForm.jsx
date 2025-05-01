@@ -68,7 +68,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   });
 
   //save preferred camera to local storage
-  uppyInstance.getPlugin('Webcam')?.on('camera:select', (deviceId) => {
+  uppyInstance.on('camera:select', (deviceId) => {
     localStorage.setItem('preferredCameraId', deviceId);
   });
 
@@ -85,7 +85,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
   return () => {
     uppyInstance.off('upload-success', handleUploadSuccess);
-    uppyInstance.getPlugin('Webcam')?.off('camera:select');
+    uppyInstance.off('camera:select');
     uppyInstance.destroy();
   };
 }, [activePhotoType, onPhotoUpload]);
