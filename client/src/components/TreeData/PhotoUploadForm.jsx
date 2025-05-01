@@ -16,46 +16,53 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [cameraDevices, setCameraDevices] = useState([]);
 
   useEffect(() => {
-    const uppyInstance = new Uppy({
+    const uppyConfig = {
       restrictions: {
         maxNumberOfFiles: 1,
         allowedFileTypes: ['image/*']
       },
       autoProceed: false,
-    })
-    .use(Webcam, {
+    };
+    
+    const webcamConfig = {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
       mobileNativeCamera: false
-    })
-    .use(XHRUpload, {
+    };
+
+    //if I'm using this, do I need multer at all?
+    const XHRUploadConfig = {
       endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
       fieldName: 'photo',
       formData: true,
-    });
+    };
+
+    const uppyInstance = new Uppy(uppyConfig)
+    uppyInstance
+      .use(Webcam, webcamConfig)
+      .use(XHRUpload, XHRUploadConfig);
 
     //select the default camera
-    uppyInstance.on('webcam:init', () => {
-      navigator.mediaDevices.enumerateDevices()
-      .then(devices => {
+    const selectDefaultCamera = async () => {
+      try {
+        const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
-        console.log(cameraDevices)
 
-        setTimeout(() => {
+        if (videoDevices.length) {
+          const defaultDevice = videoDevices.find(device => device.label.includes('back')) || videoDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
-
-          const backDualWide = videoDevices.find(device => device.label.includes('back dual wide'));
-
-          if (backDualWide && webcamPlugin && typeof webcamPlugin.selectCamera === 'function') {
-            webcamPlugin.selectCamera(backDualWide.deviceId);
-          }
-        }, 500);
-      })
-      .catch(error => {
+        }
+      } catch (error) {
         console.error('Error accessing media devices:', error);
-      });
+      }
+    };
+
+    uppyInstance.on('plugin:init', (plugin) => {
+      if (plugin.name === 'Webcam') {
+        selectDefaultCamera();
+      }
     });
 
     //cleanup for upload events
