@@ -36,48 +36,80 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     });
 
     //select the default camera
-    uppyInstance.on('webcam:ready', () => {
-      navigator.mediaDevices.enumerateDevices()
-      .then((devices) => {
-        const videoDevices = devices.filter((device) => device.kind === 'videoinput');
-        setCameraDevices(videoDevices);
+useEffect(() => {
+  const uppyInstance = new Uppy({
+    restrictions: {
+      maxNumberOfFiles: 1,
+      allowedFileTypes: ['image/*']
+    },
+    autoProceed: false,
+  })
+  .use(Webcam, {
+    modes: ['picture'],
+    mirror: false,
+    showVideoSourceDropdown: true,
+    mobileNativeCamera: false
+  })
+  .use(XHRUpload, {
+    endpoint: `${import.meta.env.VITE_API_URL || 'https://localhost:3001'}/uploads`,
+    fieldName: 'photo',
+    formData: true,
+  });
 
-        setTimeout(() => {
-          const webcamPlugin = uppyInstance.getPlugin('Webcam');
+  //select default camera
+  uppyInstance.on('webcam:ready', async () => {
+    try {
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const videoDevices = devices.filter(device => device.kind === 'videoinput');
+      setCameraDevices(videoDevices);
 
-          const backCamera = videoDevices.find(device => 
-            device.label.toLowerCase().includes('back') ||
-            device.label.toLowerCase().includes('dual')
-          );
+      const webcamPlugin = uppyInstance.getPlugin('Webcam');
 
-          if (backCamera && webcamPlugin?.selectCamera){
-            webcamPlugin.selectCamera(backCamera.deviceId);
-          }
-        }, 1000);
-      })
-      .catch(error => {
-        console.error('Error accessing media devices:', error);
-      });
-    });
+      //get preferred camera ID from localStorage
+      const preferredCameraId = localStorage.getItem('preferredCameraId');
 
-    //cleanup for upload events
-    const handleUploadSuccess = (file, response) => {
-      const uploadedUrl = response.body.url;
-      console.log('Upload success:', uploadedUrl);
-      onPhotoUpload(uploadedUrl, activePhotoType);
-      setActivePhotoType(null);
-    };
+      //find preferred device or default to back-facing one
+      const preferredDevice = videoDevices.find(device => device.deviceId === preferredCameraId);
+      const backCamera = videoDevices.find(device =>
+        device.label.toLowerCase().includes('back') ||
+        device.label.toLowerCase().includes('dual')
+      );
 
-    uppyInstance.on('upload-success', handleUploadSuccess);
+      const selectedDevice = preferredDevice || backCamera;
 
-    setUppy(uppyInstance);
+      //wait for camera dropdown to populate
+      setTimeout(() => {
+        if (selectedDevice && webcamPlugin?.selectCamera) {
+          webcamPlugin.selectCamera(selectedDevice.deviceId);
+        }
+      }, 500);
+    } catch (err) {
+      console.error('Failed to set camera:', err);
+    }
+  });
 
-    return () => {
-      uppyInstance.off('upload-success', handleUploadSuccess);
-      uppyInstance.destroy();
-    };
-  // }, [activePhotoType, onPhotoUpload]); // Add dependencies
-  }, [activePhotoType, onPhotoUpload]); // Add dependencies
+  //save preferred camera to local storage
+  uppyInstance.getPlugin('Webcam')?.on('camera:select', (deviceId) => {
+    localStorage.setItem('preferredCameraId', deviceId);
+  });
+
+  //cleanup
+  const handleUploadSuccess = (file, response) => {
+    const uploadedUrl = response.body.url;
+    console.log('Upload success:', uploadedUrl);
+    onPhotoUpload(uploadedUrl, activePhotoType);
+    setActivePhotoType(null);
+  };
+
+  uppyInstance.on('upload-success', handleUploadSuccess);
+  setUppy(uppyInstance);
+
+  return () => {
+    uppyInstance.off('upload-success', handleUploadSuccess);
+    uppyInstance.getPlugin('Webcam')?.off('camera:select');
+    uppyInstance.destroy();
+  };
+}, [activePhotoType, onPhotoUpload]);
 
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
