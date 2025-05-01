@@ -47,24 +47,22 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const selectDefaultCamera = async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
+        console.log('Devices:', devices);
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
 
         if (videoDevices.length) {
           const defaultDevice = videoDevices.find(device => device.label.includes('back')) || videoDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
+          console.log(defaultDevice)
         }
       } catch (error) {
         console.error('Error accessing media devices:', error);
       }
     };
 
-    uppyInstance.on('plugin:init', (plugin) => {
-      if (plugin.name === 'Webcam') {
-        selectDefaultCamera();
-      }
-    });
-
+    selectDefaultCamera();
+    
     //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
