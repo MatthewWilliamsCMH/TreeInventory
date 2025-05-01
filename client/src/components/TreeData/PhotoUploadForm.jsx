@@ -14,8 +14,26 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
   const [cameraDevices, setCameraDevices] = useState([]);
+  const [hasPermission, setHasPermission] = useState(false);
 
   useEffect(() => {
+    // Request camera permission before initializing Uppy
+    const requestCameraPermission = async () => {
+      try {
+        // Request access to the user's camera
+        await navigator.mediaDevices.getUserMedia({ video: true });
+        setHasPermission(true);
+      } catch (error) {
+        console.error('Camera permission denied or failed:', error);
+        setHasPermission(false);
+      }
+    };
+
+    requestCameraPermission();
+  }, []);
+
+  useEffect(() => {
+    if (!hasPermission) return; // Don't proceed if permission hasn't been granted yet
     const uppyConfig = {
       restrictions: {
         maxNumberOfFiles: 1,
@@ -47,7 +65,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const selectDefaultCamera = async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
-        console.log('devices:', devices);
+        devices.forEach(device => {
+          console.log(`${device.kind}: ${device.label} id = ${device.deviceId}`);
+      });
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
         console.log('cameraDevices:', cameraDevices);
