@@ -35,25 +35,30 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         formData: true,
       });
 
-    // Log when Uppy is initialized
+    // Log Uppy initialization
     console.log('Uppy initialized');
+
+    // Check if Webcam plugin is properly loaded
+    const webcamPlugin = uppyInstance.getPlugin('Webcam');
+    if (!webcamPlugin) {
+      console.error('Webcam plugin is not loaded!');
+    } else {
+      console.log('Webcam plugin loaded successfully!');
+    }
 
     // Event listener for when the webcam is ready
     uppyInstance.on('webcam:ready', async () => {
       console.log('Webcam is ready!');
       try {
+        // Request permissions explicitly
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
         console.log('Devices found:', videoDevices);
 
-        const webcamPlugin = uppyInstance.getPlugin('Webcam');
-
-        // Get preferred camera ID from localStorage
         const preferredCameraId = localStorage.getItem('preferredCameraId');
         console.log('Preferred Camera ID from localStorage:', preferredCameraId);
 
-        // If a preferred camera is found, select it; otherwise, select the back camera
         const preferredDevice = videoDevices.find(device => device.deviceId === preferredCameraId);
         const backCamera = videoDevices.find(device =>
           device.label.toLowerCase().includes('back') ||
@@ -65,7 +70,6 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         if (selectedDevice) {
           console.log('Selected Camera Device:', selectedDevice);
           setTimeout(() => {
-            // Select the camera if available
             webcamPlugin.selectCamera(selectedDevice.deviceId);
           }, 500);
         } else {
