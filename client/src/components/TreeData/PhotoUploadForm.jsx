@@ -35,20 +35,24 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         formData: true,
       });
 
-    // Select the default camera when ready
+    // Log when Uppy is initialized
+    console.log('Uppy initialized');
+
+    // select the default camera
     uppyInstance.on('webcam:ready', async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         setCameraDevices(videoDevices);
+        console.log('Devices found:', videoDevices);
 
         const webcamPlugin = uppyInstance.getPlugin('Webcam');
 
         // Get preferred camera ID from localStorage
         const preferredCameraId = localStorage.getItem('preferredCameraId');
-        console.log('Preferred Camera ID:', preferredCameraId);
+        console.log('Preferred Camera ID from localStorage:', preferredCameraId);
 
-        // Find preferred device or default to back-facing one
+        // If a preferred camera is found, select it; otherwise, select the back camera
         const preferredDevice = videoDevices.find(device => device.deviceId === preferredCameraId);
         const backCamera = videoDevices.find(device =>
           device.label.toLowerCase().includes('back') ||
@@ -57,12 +61,15 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
         const selectedDevice = preferredDevice || backCamera;
 
-        // Apply selected device to the webcam
-        setTimeout(() => {
-          if (selectedDevice && webcamPlugin?.selectCamera) {
+        if (selectedDevice) {
+          console.log('Selected Camera Device:', selectedDevice);
+          setTimeout(() => {
+            // Select the camera if available
             webcamPlugin.selectCamera(selectedDevice.deviceId);
-          }
-        }, 500);
+          }, 500);
+        } else {
+          console.log('No camera selected, defaulting...');
+        }
 
       } catch (err) {
         console.error('Failed to set camera:', err);
@@ -71,7 +78,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
     // Save preferred camera to local storage when the user selects a camera
     uppyInstance.on('camera:select', (deviceId) => {
-      console.log('Camera selected:', deviceId);
+      console.log('Camera selected, saving to localStorage:', deviceId);
       localStorage.setItem('preferredCameraId', deviceId);
     });
 
