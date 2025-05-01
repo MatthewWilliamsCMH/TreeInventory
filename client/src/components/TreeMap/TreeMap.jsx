@@ -37,7 +37,7 @@ const TreeMap = () => {
 
   //centralized code to generate markers
   const generateTreeMarkerIcon = (tree, speciesInfo, radius) => {
-    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' :  '1';
+    const markerStrokeWidth = tree.lastUpdated > '1746105784' ? '3' :  '1'; //this is temporary to distinguish verified trees from unverfied ones
     const iconSize = (radius * 2) + parseInt(markerStrokeWidth); //parseInt converts string '3' or '1' to integer
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
 
