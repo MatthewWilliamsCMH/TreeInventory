@@ -13,28 +13,62 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [uppy, setUppy] = useState(null);
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
-  const [cameraDevices, setCameraDevices] = useState([]);
+  // const [cameraDevices, setCameraDevices] = useState([]);
   const [hasPermission, setHasPermission] = useState(false);
   const [preferredCameraId, setPreferredCameraId] = useState(null);
 
   //get permission to use camera before initializing Uppy
-  useEffect(() => {
+  // useEffect(() => {
+  //   const requestCameraPermission = async () => {
+  //     try {
+  //       await navigator.mediaDevices.getUserMedia({ video: true }); //request permission
+  //       setHasPermission(true);
+
+  //       const devices = await navigator.mediaDevices.enumerateDevices(); //get the list of devices
+  //       const videoDevices = devices.filter(device => device.kind === 'videoinput'); //filter list to just video devices
+  //       //why can't the line below be combined with the line above; why the second variable?
+  //       setCameraDevices(videoDevices);
+  //       console.log('camera devices:', cameraDevices);
+  //       console.log('video devices:', videoDevices);
+
+  //       const backCamera = videoDevices.find(device => device.label.toLowerCase().includes('back')); //find the first item with "back" in the label
+
+  //       if (backCamera) {
+  //         setPreferredCameraId(backCamera.deviceId);
+  //       } else if (videoDevices.length > 0) {
+  //         setPreferredCameraId(videoDevices[0].deviceId); //fallback if no back camera is found
+  //       }
+  //     } catch (error) {
+  //       console.error('Camera permission denied or failed:', error);
+  //       setHasPermission(false);
+  //     }
+  //   };
+
+  //   requestCameraPermission();
+  // }, []);
+    useEffect(() => {
     const requestCameraPermission = async () => {
       try {
-        await navigator.mediaDevices.getUserMedia({ video: true }); //request permission
+        // Request access to the user's camera
+        await navigator.mediaDevices.getUserMedia({ video: true });
         setHasPermission(true);
-
-        const devices = await navigator.mediaDevices.enumerateDevices(); //get the list of devices
-        const videoDevices = devices.filter(device => device.kind === 'videoinput'); //filter list to just video devices
-        //why can't the line below be combined with the line above; why the second variable?
-        setCameraDevices(videoDevices);
-
-        const backCamera = videoDevices.find(device => device.label.toLowerCase().includes('back')); //find the first item with "back" in the label
-
+        
+        // Now that we have permission, enumerate devices
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const videoDevices = devices.filter(device => device.kind === 'videoinput');
+        // setCameraDevices(videoDevices);
+        // console.log('camera devices:', cameraDevices);
+        console.log('video devices:', videoDevices);
+        
+        // Find the back camera or default to the first camera
+        const backCamera = videoDevices.find(device => 
+          device.label.toLowerCase().includes('back')
+        );
+        
         if (backCamera) {
           setPreferredCameraId(backCamera.deviceId);
         } else if (videoDevices.length > 0) {
-          setPreferredCameraId(videoDevices[0].deviceId); //fallback if no back camera is found
+          setPreferredCameraId(videoDevices[0].deviceId);
         }
       } catch (error) {
         console.error('Camera permission denied or failed:', error);
@@ -44,6 +78,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
     requestCameraPermission();
   }, []);
+
 
   //initialize Uppy
   useEffect(() => {
@@ -64,6 +99,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       mobileNativeCamera: false,
       preferredVideoInput: preferredCameraId
     };
+    console.log('preferred camera id:', preferredCameraId);
 
     //if I'm using this, do I need multer at all?
     const XHRUploadConfig = {
