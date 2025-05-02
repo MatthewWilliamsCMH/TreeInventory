@@ -53,7 +53,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const XHRUploadConfig = {
       endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
       fieldName: 'photo',
-      formData: true,
+      formData: true
     };
 
     const uppyInstance = new Uppy(uppyConfig)
@@ -65,16 +65,14 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const selectDefaultCamera = async () => {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices();
-        devices.forEach(device => {
-          console.log(`${device.kind}: ${device.label} id = ${device.deviceId}`);
-      });
         const cameraDevices = devices.filter(device => device.kind === 'videoinput');
-        console.log('cameraDevices:', cameraDevices);
 
         if (cameraDevices.length) {
           const defaultDevice = cameraDevices.find(device => device.label.toLowerCase().includes('back')) || cameraDevices[0];
           const webcamPlugin = uppyInstance.getPlugin('Webcam');
-          console.log('default device', defaultDevice)
+          webcamPlugin.setOptions({facingMode: { exact: defaultDevice.deviceId }});
+          // webcamPlugin.selectCamera(defaultDevice.deviceId);
+
         }
       } catch (error) {
         console.error('Error accessing media devices:', error);
