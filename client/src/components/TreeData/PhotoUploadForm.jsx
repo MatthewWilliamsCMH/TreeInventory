@@ -13,9 +13,10 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [uppy, setUppy] = useState(null);
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
+  const [cameraDevices, setCameraDevices] = useState([]);
   const [hasPermission, setHasPermission] = useState(false);
   const [preferredCameraId, setPreferredCameraId] = useState(null);
-  
+
   useEffect(() => {
     const requestCameraPermission = async () => {
       try {
@@ -26,7 +27,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         // Now that we have permission, enumerate devices
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        console.log('video devices:', videoDevices);
+        setCameraDevices(videoDevices);
         
         // Find the back camera or default to the first camera
         const backCamera = videoDevices.find(device => 
@@ -47,78 +48,55 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     requestCameraPermission();
   }, []);
 
-
-  //initialize Uppy
-useEffect(() => {
-  if (!hasPermission || preferredCameraId === null) return;
-  
-  const uppyConfig = {
-    restrictions: {
-      maxNumberOfFiles: 1,
-      allowedFileTypes: ['image/*']
-    },
-    autoProceed: false,
-  };
-  
-  const webcamConfig = {
-    modes: ['picture'],
-    mirror: false,
-    showVideoSourceDropdown: true,
-    mobileNativeCamera: false
-  };
-
-  const XHRUploadConfig = {
-    endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
-    fieldName: 'photo',
-    formData: true
-  };
-
-  const uppyInstance = new Uppy(uppyConfig)
-    .use(Webcam, webcamConfig)
-    .use(XHRUpload, XHRUploadConfig);
-  
-  // Listen for webcam initialization
-  uppyInstance.on('webcam:init', () => {
-    console.log('Webcam initialized, preferred camera ID:', preferredCameraId);
+  // Then, initialize Uppy with the detected camera
+  useEffect(() => {
+    if (!hasPermission || preferredCameraId === null) return;
     
-    // Get the webcam plugin
-    const webcamPlugin = uppyInstance.getPlugin('Webcam');
+    const uppyConfig = {
+      restrictions: {
+        maxNumberOfFiles: 1,
+        allowedFileTypes: ['image/*']
+      },
+      autoProceed: false,
+    };
     
-    // Log available methods for debugging
-    console.log('Webcam plugin methods:', 
-      Object.getOwnPropertyNames(Object.getPrototypeOf(webcamPlugin))
-        .filter(prop => typeof webcamPlugin[prop] === 'function')
-    );
+    const webcamConfig = {
+      modes: ['picture'],
+      mirror: false,
+      showVideoSourceDropdown: true,
+      mobileNativeCamera: false,
+      facingMode: 'environment', // Use the back camera by default
+      preferredVideoInput: preferredCameraId  // This is the key addition
+    };
+
+    const XHRUploadConfig = {
+      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
+      fieldName: 'photo',
+      formData: true
+    };
+
+    const uppyInstance = new Uppy(uppyConfig)
+      .use(Webcam, webcamConfig)
+      .use(XHRUpload, XHRUploadConfig);
     
-    // Try to select the device, if the method exists
-    if (typeof webcamPlugin.selectDevice === 'function') {
-      console.log('Using selectDevice method');
-      webcamPlugin.selectDevice(preferredCameraId);
-    } else if (typeof webcamPlugin.selectDeviceById === 'function') {
-      console.log('Using selectDeviceById method');
-      webcamPlugin.selectDeviceById(preferredCameraId);
-    } else {
-      console.log('No method available to select device');
-    }
-  });
-  
-  const handleUploadSuccess = (file, response) => {
-    const uploadedUrl = response.body.url;
-    console.log('Upload success:', uploadedUrl);
-    onPhotoUpload(uploadedUrl, activePhotoType);
-    setActivePhotoType(null);
-  };
+    const handleUploadSuccess = (file, response) => {
+      const uploadedUrl = response.body.url;
+      console.log('Upload success:', uploadedUrl);
+      onPhotoUpload(uploadedUrl, activePhotoType);
+      setActivePhotoType(null);
+    };
 
-  uppyInstance.on('upload-success', handleUploadSuccess);
+    uppyInstance.on('upload-success', handleUploadSuccess);
 
-  setUppy(uppyInstance);
+    setUppy(uppyInstance);
 
-  return () => {
-    uppyInstance.off('upload-success', handleUploadSuccess);
-    uppyInstance.off('webcam:init');
-    uppyInstance.destroy();
-  };
-}, [hasPermission, preferredCameraId, activePhotoType, onPhotoUpload]);
+    return () => {
+      uppyInstance.off('upload-success', handleUploadSuccess);
+      uppyInstance.destroy();
+    };
+  }, [hasPermission, preferredCameraId, activePhotoType, onPhotoUpload]);
+
+
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
 
