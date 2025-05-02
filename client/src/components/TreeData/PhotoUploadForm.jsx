@@ -50,6 +50,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
           });
           
           console.log('Opened stream with preferred camera:', selectedCameraId);
+          console.log('Video devices:', videoDevices);
           
           // Stop the stream right away - we just needed to set it as the default
           stream.getTracks().forEach(track => track.stop());
