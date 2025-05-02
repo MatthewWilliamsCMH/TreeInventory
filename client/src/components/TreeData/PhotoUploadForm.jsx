@@ -27,17 +27,32 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         // Now that we have permission, enumerate devices
         const devices = await navigator.mediaDevices.enumerateDevices();
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        setCameraDevices(videoDevices);
         
-        // Find the back camera or default to the first camera
+        // Find the back camera
         const backCamera = videoDevices.find(device => 
           device.label.toLowerCase().includes('back')
         );
         
+        let selectedCameraId = null;
         if (backCamera) {
-          setPreferredCameraId(backCamera.deviceId);
+          selectedCameraId = backCamera.deviceId;
         } else if (videoDevices.length > 0) {
-          setPreferredCameraId(videoDevices[0].deviceId);
+          selectedCameraId = videoDevices[0].deviceId;
+        }
+        
+        if (selectedCameraId) {
+          setPreferredCameraId(selectedCameraId);
+          
+          // This is the key part - open a stream with the specific camera
+          // This will make the browser "remember" this camera as the last used one
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: { deviceId: { exact: selectedCameraId } }
+          });
+          
+          console.log('Opened stream with preferred camera:', selectedCameraId);
+          
+          // Stop the stream right away - we just needed to set it as the default
+          stream.getTracks().forEach(track => track.stop());
         }
       } catch (error) {
         console.error('Camera permission denied or failed:', error);
@@ -64,9 +79,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
-      mobileNativeCamera: false,
       facingMode: 'environment', // Use the back camera by default
-      preferredVideoInput: preferredCameraId  // This is the key addition
+
+      // preferredVideoInput: preferredCameraId  // This is the key addition
     };
 
     const XHRUploadConfig = {
