@@ -49,70 +49,76 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
 
   //initialize Uppy
-  useEffect(() => {
-    if (!hasPermission || preferredCameraId === null) return;
+useEffect(() => {
+  if (!hasPermission || preferredCameraId === null) return;
+  
+  const uppyConfig = {
+    restrictions: {
+      maxNumberOfFiles: 1,
+      allowedFileTypes: ['image/*']
+    },
+    autoProceed: false,
+  };
+  
+  const webcamConfig = {
+    modes: ['picture'],
+    mirror: false,
+    showVideoSourceDropdown: true,
+    mobileNativeCamera: false
+  };
 
-    const uppyConfig = {
-      restrictions: {
-        maxNumberOfFiles: 1,
-        allowedFileTypes: ['image/*']
-      },
-      autoProceed: false,
-    };
+  const XHRUploadConfig = {
+    endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
+    fieldName: 'photo',
+    formData: true
+  };
+
+  const uppyInstance = new Uppy(uppyConfig)
+    .use(Webcam, webcamConfig)
+    .use(XHRUpload, XHRUploadConfig);
+  
+  // Listen for webcam initialization
+  uppyInstance.on('webcam:init', () => {
+    console.log('Webcam initialized, preferred camera ID:', preferredCameraId);
     
-    const webcamConfig = {
-      modes: ['picture'],
-      mirror: false,
-      showVideoSourceDropdown: true,
-      mobileNativeCamera: false,
-      // preferredVideoInput: preferredCameraId
-    };
-    console.log('preferred camera id:', preferredCameraId);
-
-    //if I'm using this, do I need multer at all?
-    const XHRUploadConfig = {
-      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
-      fieldName: 'photo',
-      formData: true
-    };
-
-    const uppyInstance = new Uppy(uppyConfig)
-    uppyInstance
-      .use(Webcam, webcamConfig)
-      .use(XHRUpload, XHRUploadConfig);
-
+    // Get the webcam plugin
     const webcamPlugin = uppyInstance.getPlugin('Webcam');
-  uppyInstance.on('plugin-added', pluginId => {
-    if (pluginId === 'Webcam') {
-      // Let's try a different approach
-      webcamPlugin.setOptions({
-        videoConstraints: {
-          deviceId: {
-            exact: preferredCameraId
-          }
-        }
-      });
+    
+    // Log available methods for debugging
+    console.log('Webcam plugin methods:', 
+      Object.getOwnPropertyNames(Object.getPrototypeOf(webcamPlugin))
+        .filter(prop => typeof webcamPlugin[prop] === 'function')
+    );
+    
+    // Try to select the device, if the method exists
+    if (typeof webcamPlugin.selectDevice === 'function') {
+      console.log('Using selectDevice method');
+      webcamPlugin.selectDevice(preferredCameraId);
+    } else if (typeof webcamPlugin.selectDeviceById === 'function') {
+      console.log('Using selectDeviceById method');
+      webcamPlugin.selectDeviceById(preferredCameraId);
+    } else {
+      console.log('No method available to select device');
     }
   });
+  
+  const handleUploadSuccess = (file, response) => {
+    const uploadedUrl = response.body.url;
+    console.log('Upload success:', uploadedUrl);
+    onPhotoUpload(uploadedUrl, activePhotoType);
+    setActivePhotoType(null);
+  };
 
-    //cleanup for upload events
-    const handleUploadSuccess = (file, response) => {
-      const uploadedUrl = response.body.url;
-      console.log('Upload success:', uploadedUrl);
-      onPhotoUpload(uploadedUrl, activePhotoType);
-      setActivePhotoType(null);
-    };
+  uppyInstance.on('upload-success', handleUploadSuccess);
 
-    uppyInstance.on('upload-success', handleUploadSuccess);
+  setUppy(uppyInstance);
 
-    setUppy(uppyInstance);
-
-    return () => {
-      uppyInstance.off('upload-success', handleUploadSuccess);
-      uppyInstance.destroy();
-    };
-  }, [hasPermission, preferredCameraId, activePhotoType, onPhotoUpload]);
-
+  return () => {
+    uppyInstance.off('upload-success', handleUploadSuccess);
+    uppyInstance.off('webcam:init');
+    uppyInstance.destroy();
+  };
+}, [hasPermission, preferredCameraId, activePhotoType, onPhotoUpload]);
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
 
