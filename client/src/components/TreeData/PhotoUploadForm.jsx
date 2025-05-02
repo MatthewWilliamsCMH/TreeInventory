@@ -15,14 +15,27 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
   const [cameraDevices, setCameraDevices] = useState([]);
   const [hasPermission, setHasPermission] = useState(false);
+  const [preferredCameraId, setPreferredCameraId] = useState(null);
 
+  //get permission to use camera before initializing Uppy
   useEffect(() => {
-    // Request camera permission before initializing Uppy
     const requestCameraPermission = async () => {
       try {
-        // Request access to the user's camera
-        await navigator.mediaDevices.getUserMedia({ video: true });
+        await navigator.mediaDevices.getUserMedia({ video: true }); //request permission
         setHasPermission(true);
+
+        const devices = await navigator.mediaDevices.enumerateDevices(); //get the list of devices
+        const videoDevices = devices.filter(device => device.kind === 'videoinput'); //filter list to just video devices
+        //why can't the line below be combined with the line above; why the second variable?
+        setCameraDevices(videoDevices);
+
+        const backCamera = videoDevices.find(device => device.label.toLowerCase().includes('back')); //find the first item with "back" in the label
+
+        if (backCamera) {
+          setPreferredCameraId(backCamera.deviceId);
+        } else if (videoDevices.length > 0) {
+          setPreferredCameraId(videoDevices[0].deviceId); //fallback if no back camera is found
+        }
       } catch (error) {
         console.error('Camera permission denied or failed:', error);
         setHasPermission(false);
@@ -32,8 +45,10 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     requestCameraPermission();
   }, []);
 
+  //initialize Uppy
   useEffect(() => {
-    if (!hasPermission) return; // Don't proceed if permission hasn't been granted yet
+    if (!hasPermission || preferredCameraId === null) return;
+
     const uppyConfig = {
       restrictions: {
         maxNumberOfFiles: 1,
@@ -46,7 +61,8 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
-      mobileNativeCamera: false
+      mobileNativeCamera: false,
+      preferredVideoInput: preferredCameraId
     };
 
     //if I'm using this, do I need multer at all?
@@ -61,26 +77,6 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       .use(Webcam, webcamConfig)
       .use(XHRUpload, XHRUploadConfig);
 
-    //select the default camera
-    const selectDefaultCamera = async () => {
-      try {
-        const devices = await navigator.mediaDevices.enumerateDevices();
-        const cameraDevices = devices.filter(device => device.kind === 'videoinput');
-
-        if (cameraDevices.length) {
-          const defaultDevice = cameraDevices.find(device => device.label.toLowerCase().includes('back')) || cameraDevices[0];
-          const webcamPlugin = uppyInstance.getPlugin('Webcam');
-          webcamPlugin.setOptions({facingMode: { exact: defaultDevice.deviceId }});
-          // webcamPlugin.selectCamera(defaultDevice.deviceId);
-
-        }
-      } catch (error) {
-        console.error('Error accessing media devices:', error);
-      }
-    };
-
-    selectDefaultCamera();
-    
     //cleanup for upload events
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
@@ -97,8 +93,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       uppyInstance.off('upload-success', handleUploadSuccess);
       uppyInstance.destroy();
     };
-  // }, [activePhotoType, onPhotoUpload]); // Add dependencies
-  }, [activePhotoType, onPhotoUpload]); // Add dependencies
+  }, [hasPermission, preferredCameraId, activePhotoType, onPhotoUpload]);
 
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
