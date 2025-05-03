@@ -17,57 +17,56 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [hasPermission, setHasPermission] = useState(false);
   const [preferredCameraId, setPreferredCameraId] = useState(null);
 
-  useEffect(() => {
-    const requestCameraPermission = async () => {
-      try {
-        // Request access to the user's camera
-        await navigator.mediaDevices.getUserMedia({ video: true });
-        setHasPermission(true);
+  // useEffect(() => {
+  //   const requestCameraPermission = async () => {
+  //     //get permission to use the camera
+  //     try {
+  //       await navigator.mediaDevices.getUserMedia({ video: true });
+  //       setHasPermission(true);
         
-        // Now that we have permission, enumerate devices
-        const devices = await navigator.mediaDevices.enumerateDevices();
-        console.log(devices)
-        const videoDevices = devices.filter(device => device.kind === 'videoinput');
+  //       //if permission granted, get the list of video devices
+  //       const devices = await navigator.mediaDevices.enumerateDevices();
+  //       const videoDevices = devices.filter(device => device.kind === 'videoinput');
         
-        // Find the back camera
-        const backCamera = videoDevices.find(device => 
-          device.label.toLowerCase().includes('back')
-        );
+  //       //identify the back cameras
+  //       const backCamera = videoDevices.find(device => 
+  //         device.label.toLowerCase().includes('back')
+  //       );
         
-        let selectedCameraId = null;
-        if (backCamera) {
-          selectedCameraId = backCamera.deviceId;
-        } else if (videoDevices.length > 0) {
-          selectedCameraId = videoDevices[0].deviceId;
-        }
+  //       let selectedCameraId = null;
+  //       if (backCamera) {
+  //         selectedCameraId = backCamera.deviceId;
+  //       } else if (videoDevices.length > 0) {
+  //         selectedCameraId = videoDevices[0].deviceId;
+  //       }
         
-        if (selectedCameraId) {
-          setPreferredCameraId(selectedCameraId);
+  //       if (selectedCameraId) {
+  //         setPreferredCameraId(selectedCameraId);
           
-          // This is the key part - open a stream with the specific camera
-          // This will make the browser "remember" this camera as the last used one
-          const stream = await navigator.mediaDevices.getUserMedia({
-            video: { deviceId: { exact: selectedCameraId } }
-          });
+  //         // This is the key part - open a stream with the specific camera
+  //         // This will make the browser "remember" this camera as the last used one
+  //         const stream = await navigator.mediaDevices.getUserMedia({
+  //           video: { deviceId: { exact: selectedCameraId } }
+  //         });
           
-          console.log('Opened stream with preferred camera:', selectedCameraId);
-          console.log('Video devices:', videoDevices);
+  //         console.log('Opened stream with preferred camera:', selectedCameraId);
+  //         console.log('Video devices:', videoDevices);
           
-          // Stop the stream right away - we just needed to set it as the default
-          stream.getTracks().forEach(track => track.stop());
-        }
-      } catch (error) {
-        console.error('Camera permission denied or failed:', error);
-        setHasPermission(false);
-      }
-    };
+  //         // Stop the stream right away - we just needed to set it as the default
+  //         stream.getTracks().forEach(track => track.stop());
+  //       }
+  //     } catch (error) {
+  //       console.error('Camera permission denied or failed:', error);
+  //       setHasPermission(false);
+  //     }
+  //   };
 
-    requestCameraPermission();
-  }, []);
+  //   requestCameraPermission();
+  // }, []);
 
   // Then, initialize Uppy with the detected camera
   useEffect(() => {
-    if (!hasPermission || preferredCameraId === null) return;
+    // if (!hasPermission || preferredCameraId === null) return;
     
     const uppyConfig = {
       restrictions: {
@@ -82,9 +81,8 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       mirror: false,
       showVideoSourceDropdown: true,
       videoConstraints: {
-        facingMode: 'environment' // Use the back camera by default
+        facingMode: 'environment'
       }
-      // preferredVideoInput: preferredCameraId  // This is the key addition
     };
 
     const XHRUploadConfig = {
