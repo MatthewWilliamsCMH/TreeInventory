@@ -81,8 +81,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
-      facingMode: 'environment', // Use the back camera by default
-
+      videoConstraints: {
+        facingMode: 'environment' // Use the back camera by default
+      }
       // preferredVideoInput: preferredCameraId  // This is the key addition
     };
 
