@@ -26,6 +26,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         
         // Now that we have permission, enumerate devices
         const devices = await navigator.mediaDevices.enumerateDevices();
+        console.log(devices)
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         
         // Find the back camera
