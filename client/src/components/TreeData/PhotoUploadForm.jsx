@@ -3,6 +3,7 @@ import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
 import Webcam from '@uppy/webcam';
+import Compressor from '@uppy/compressor';
 import '@uppy/core/dist/style.css';
 import '@uppy/dashboard/dist/style.css';
 import '@uppy/webcam/dist/style.css';
@@ -41,9 +42,19 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       formData: true
     };
 
+    const compressorConfig = {
+      quality: 0.8,
+      maxWidth: 1920,
+      maxHeight: 1080,
+      resize: true,
+      mimeType: 'image/jpeg',
+      convertToWebp: true,
+    };
+
     const uppyInstance = new Uppy(uppyConfig)
       .use(Webcam, webcamConfig)
-      .use(XHRUpload, XHRUploadConfig);
+      .use(XHRUpload, XHRUploadConfig)
+      .use(Compressor, compressorConfig);
     
     const handleUploadSuccess = (file, response) => {
       const uploadedUrl = response.body.url;
