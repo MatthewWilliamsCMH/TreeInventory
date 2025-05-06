@@ -27,7 +27,6 @@ const Footer = () => {
               autumnLeaf: updatedTree.photos.autumnLeaf,
               fruit: updatedTree.photos.fruit,
               flower: updatedTree.photos.flower,
-              bud: updatedTree.photos.bud,
               environs: updatedTree.photos.environs
             } : null,
             notes: updatedTree.notes,
@@ -82,7 +81,6 @@ const Footer = () => {
               autumnLeaf: updatedTree.photos.autumnLeaf,
               fruit: updatedTree.photos.fruit,
               flower: updatedTree.photos.flower,
-              bud: updatedTree.photos.bud,
               environs: updatedTree.photos.environs
             } : null,
             notes: updatedTree.notes,

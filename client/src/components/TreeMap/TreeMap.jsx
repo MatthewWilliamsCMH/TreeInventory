@@ -238,7 +238,6 @@ const TreeMap = () => {
         autumnLeaf: '',
         fruit: '',
         flower: '',
-        bud: '',
         environs: ''
       },
       notes: '',

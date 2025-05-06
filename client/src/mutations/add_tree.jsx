@@ -44,7 +44,6 @@ export const ADD_TREE = gql`
         autumnLeaf
         fruit
         flower
-        bud
         environs
       }
       notes

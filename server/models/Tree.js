@@ -13,7 +13,6 @@ const treeSchema = new Schema({
     autumnLeaf: { type: String },
     fruit: { type: String },
     flower: { type: String },
-    bud: { type: String },
     environs: { type: String }
   },
   lastUpdated: { type: Date, required: true }, //auto generated

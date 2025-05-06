@@ -122,25 +122,7 @@ const TreeData = () => {
       }
     }));
   };
-  //decide whether or not to open overlay
-  // const handleBlur = (field, value) => {
-  //   if ((field === 'commonName' || field === 'scientificName') && value.trim() !=='') {
-  //     try {
-  //       if (getSpeciesData && getSpeciesData.getSpecies.some(species => species.commonName === value) || getSpeciesData.getSpecies.some(species => species.scientificName === value)) {
-  //         console.log(`Species ${value} exists.`);
-  //       } 
-  //       else {
-  //         console.log(`Species ${value} does not exist.`);
-  //         setOverlayVisible(true); // Set overlay visibility to true when opening
-  //       }
-  //     } 
-  //     catch (error) {
-  //       console.error('Error checking species existence:', error);
-  //     }
-  //   }
-  // };
-
-  //render component
+  
   return (
     <>
       {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}

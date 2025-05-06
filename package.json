@@ -16,7 +16,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@uppy/compressor": "^2.2.1",
     "concurrently": "^9.1.0"
   }
 }
