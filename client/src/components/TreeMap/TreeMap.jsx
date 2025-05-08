@@ -12,13 +12,13 @@ import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 const TreeMap = () => {
   const navigate = useNavigate();
 
-  // Initialize map
+  //initialize map
   const mapRef = useRef(null);
   const map = useRef(null);
   const markersRef = useRef([]); 
   const userLocationRef = useRef(null);
 
-  // Get global states from parent component
+  //get global states from parent component
   const { 
     setSelectedTree, 
     setUpdatedTree, 
@@ -27,23 +27,25 @@ const TreeMap = () => {
     setFormStyle 
   } = useOutletContext();
 
-  // Establish local states
-  const [markerRadius, setMarkerRadius] = useState(6);
+  //establish local states
+  const [markerRadius, setMarkerRadius] = useState(6)
 
-  // Set up queries and mutations
-  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); // Fetch all trees
+  //set up queries and mutations
+  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES, {fetchPolicy: 'network-only'}); //fetch all trees
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:'no-cache'});
 
-  // Centralized code to generate markers
-  const generateTreeMarkerIcon = (tree, speciesInfo, radius) => {
-    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1'; // This is temporary to distinguish verified trees from unverified ones
-    const iconSize = (radius * 2) + parseInt(markerStrokeWidth); // parseInt converts string '3' or '1' to integer
+  //centralized code to generate marker icons
+  const generateTreeMarkerIcon = (tree, speciesInfo, radius, opacity = 1) => {
+    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1';
+    const iconSize = (radius * 2) + parseInt(markerStrokeWidth);
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
 
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
-        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${radius}' fill='${markerColor}' stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
+        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${radius}' 
+          fill='${markerColor}' fill-opacity='${opacity}' 
+          stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
       </svg>
     `;
 
@@ -54,173 +56,90 @@ const TreeMap = () => {
     });
   };
 
-  // Create the tree markers and attach popups - MODIFIED TO AVOID HOOKS INSIDE
-  const createTreeMarker = (tree, speciesMap) => {
-    const { northing, easting } = tree.location;
-    const speciesInfo = speciesMap[tree.commonName];
-    const myIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius);
-    const popupContent = `
-      Id: ${tree.id}<br>
-      <b>${tree.commonName}</b><br>
-      <i>${tree.scientificName}</i><br>
-      Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
-      DBH: ${tree.dbh} inches
-    `;
-    
-    // Create marker with draggable initially set to false
-    const marker = L.marker(
-      [northing, easting], {
-        draggable: false,
-        icon: myIcon,
-        riseOnHover: true,
-        interactive: true,
-        bubblingMouseEvents: false
-      }
-    )
-    .bindPopup(popupContent)
-    .addTo(map.current);
-    
-    // Store the marker in the markers array
-    markersRef.current.push({
-      marker,
-      tree,
-      speciesInfo
-    });
-    
-    // Initialize long press properties directly on the marker
-    marker._longPressData = {
-      pressTimer: null,
-      startPos: null,
-      longPressThreshold: 500, // 1 second
-      moveThreshold: 5 // 5 pixels
-    };
-    
-    // Start long press timer on mouse down
-    marker.on('mousedown', (event) => {
-      L.DomEvent.stopPropagation(event); // Prevent map from getting this event
-      
-      marker._longPressData.startPos = { 
-        x: event.originalEvent.clientX, 
-        y: event.originalEvent.clientY 
-      };
-      
-      // Clear any existing timer
-      if (marker._longPressData.pressTimer) {
-        clearTimeout(marker._longPressData.pressTimer);
-      }
-      
-      // Set new timer
-      marker._longPressData.pressTimer = setTimeout(() => {
-        // After threshold time, enable dragging
-        marker.dragging.enable();
-        // Visual feedback that marker is now draggable
-        map.current.getContainer().style.cursor = 'move';
-      }, marker._longPressData.longPressThreshold);
-    });
-    
-    // Cancel timer if mouse up before threshold
-    marker.on('mouseup', () => {
-      if (marker._longPressData.pressTimer) {
-        clearTimeout(marker._longPressData.pressTimer);
-        marker._longPressData.pressTimer = null;
-      }
-      
-      if (!marker.dragging._enabled) {
-        // If dragging wasn't enabled, this was just a regular click
-        // Regular click behavior is already handled by popup
-      }
-    });
-    
-    // Cancel timer if mouse moves too much before threshold
-    marker.on('mousemove', (event) => {
-      if (marker._longPressData.startPos && marker._longPressData.pressTimer) {
-        const currentPos = { 
-          x: event.originalEvent.clientX, 
-          y: event.originalEvent.clientY 
-        };
-        
-        const distance = Math.sqrt(
-          Math.pow(currentPos.x - marker._longPressData.startPos.x, 2) + 
-          Math.pow(currentPos.y - marker._longPressData.startPos.y, 2)
-        );
-        
-        if (distance > marker._longPressData.moveThreshold) {
-          // User is trying to pan, cancel the timer
-          clearTimeout(marker._longPressData.pressTimer);
-          marker._longPressData.pressTimer = null;
-          marker._longPressData.startPos = null;
-        }
-      }
-    });
-    
-    // Cancel timer if mouse leaves the marker before threshold
-    marker.on('mouseout', () => {
-      if (marker._longPressData.pressTimer) {
-        clearTimeout(marker._longPressData.pressTimer);
-        marker._longPressData.pressTimer = null;
-      }
-      marker._longPressData.startPos = null;
-      map.current.getContainer().style.cursor = 'default';
-    });
-    
-    // Handle drag end
-    marker.on('dragend', (event) => {
-      const { lat, lng } = event.target._latlng;
-      const draggedTreeId = tree.id;
-      
-      updateTreeLocation({
-        variables: {
-          id: draggedTreeId,
-          location: {
-            northing: lat,
-            easting: lng
+  useEffect(() => {
+    //if the map hasn't been initialize or tree and species data hasn't been return, abort
+    if (!mapRef.current || !getTreesData?.getTrees ||!getSpeciesData?.getSpecies) {
+      return;
+    }
+    if (!map.current) {
+      map.current = L.map(mapRef.current, {
+        zoomControl: false,
+        center: mapCenter,
+        zoom: mapZoom,
+        tapTolerance: 15,
+        tapHold: false
+      });
+
+      //tile-layer options
+      // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
+      // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+      const googleMutant = L.gridLayer.googleMutant({
+        maxZoom: 24,
+        type: 'satellite', //other tile types: 'roadmap','terrain', 'hybrid'
+        attribution: "&copy; <a href='https://www.google.com/intl/en-US_US/help/terms_maps.html'>Google</a>",
+        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
+      }).addTo(map.current);
+
+      navigator.geolocation.watchPosition(
+        ({ coords: { latitude, longitude } }) => {
+
+          if (userLocationRef.current) {
+            map.current.removeLayer (userLocationRef.current);//this is throwing an error
           }
+
+          userLocationRef.current = L.circle([latitude, longitude], {radius: 4, weight: 3, color: '#F542EF', fillOpacity: .5 }).addTo(map.current);
+        },
+        (error) => {
+          console.log("Geolocation error:", error);
         }
-      });
+      );
       
-      // Disable dragging after repositioning
-      marker.dragging.disable();
-      map.current.getContainer().style.cursor = 'default';
-    });
+     //ensure species data is ready before creating markers; not sure why this is necessary
+      const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
+        acc[species.commonName] = species;
+        return acc;
+      }, {});
+
+      getTreesData.getTrees.forEach((tree) => {
+        const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
+        if (tree.felledDate === '') {
+          createTreeMarker(completeTree, speciesMap);
+        }
+      }, []);
+
+      //handle map events
+      map.current.on('click', handleAddTree);
+      map.current.on('zoomend', () => { setMapZoom(map.current.getZoom()) });
+    }
     
-    marker.on('popupopen', (event) => {
-      const popup = event.popup;
-      const popupElement = popup.getElement();
-      
-      // Prevent navigation when clicking the close button
-      const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
-      if (closeButton) {
-        closeButton.addEventListener('click', (event) => {
-          event.stopPropagation();
-        });
+    //cleanup
+    return () => {
+      if (map.current) {
+        const leafletCenter = map.current.getCenter();
+        setMapCenter([leafletCenter.lat, leafletCenter.lng]);
+        map.current.remove();
+        map.current = null;
+        markersRef.current = [];
       }
-      
-      // Allow navigation when any part of the popup is clicked except the close button
-      popupElement.addEventListener('click', () => {
-        setSelectedTree(tree);
-        setUpdatedTree(tree);
-        setFormStyle({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-        navigate('/TreeData');
-        map.current.closePopup();
-      });
+    };
+  }, [getTreesData, getSpeciesData]);
+
+  useEffect(() => {
+    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
+    const iconSize = newRadius * 2
+    setMarkerRadius(newRadius);
+
+    markersRef.current.forEach(markerInfo => {
+      const { marker, tree, speciesInfo } = markerInfo;
+      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, newRadius);
+      marker.setIcon(updatedIcon);
     });
-    
-    // Change cursor when hovering over marker
-    marker.on('mouseover', () => {
-      map.current.getContainer().style.cursor = 'pointer';
-    });
-    
-    marker.on('mouseout', () => {
-      if (!marker.dragging._enabled) {
-        map.current.getContainer().style.cursor = 'default';
-      }
-    });
-  };
+  }, [mapZoom, getTreesData]);
   
-  // Combine add species fields to tree object, which already has tree fields
+  //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     const speciesInfo = speciesMap[tree.commonName] || {};
-    return {
+  return {
       ...tree,
       scientificName: speciesInfo.scientificName || '',
       nonnative: speciesInfo.nonnative || false,
@@ -230,7 +149,138 @@ const TreeMap = () => {
     };
   };
 
-  // Create new tree object with lat and lng complete but other fields blank
+  //create the tree markers and attach popups
+  const createTreeMarker = (tree, speciesMap) => {
+    const { northing, easting } = tree.location;
+    const speciesInfo = speciesMap[tree.commonName];
+    const myIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius);
+
+    const popupContent = `
+      Id: ${tree.id}<br>
+      <b>${tree.commonName}</b><br>
+      <i>${tree.scientificName}</i><br>
+      Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
+      DBH: ${tree.dbh} inches
+    `;
+    
+    const marker = L
+      .marker(
+        [northing, easting], {
+          icon: myIcon,
+          riseOnHover: true,
+          interactive: true,
+          bubblingMouseEvents: false
+        }
+      )
+      .addTo(map.current);
+    
+    // Store the tree's marker state (including opacity)
+    const markerInfo = {
+      marker,
+      tree,
+      speciesInfo,
+      opacity: 1,
+      draggable: false
+    };
+    
+    markersRef.current.push(markerInfo);
+
+    marker.on('dragend', function(event) {
+      const { lat, lng } = event.target._latlng;
+      const draggedTreeId = tree.id;
+      updateTreeLocation({
+        variables: {
+          id: draggedTreeId,
+          location: {
+            northing: lat,
+            easting: lng
+          }
+        }
+      });
+    });
+
+    // Add click timer to differentiate between single and double clicks
+    let clickTimer = null;
+    const clickDelay = 200; // milliseconds to wait before treating as single click
+    
+    marker.on('click', (event) => {
+      // If this is a second click within the delay, don't do anything
+      // The dblclick handler will take care of it
+      if (clickTimer) {
+        return;
+      }
+      
+      // Set a timeout - if no second click occurs within the delay,
+      // then treat as a single click
+      clickTimer = setTimeout(() => {
+        marker.bindPopup(popupContent).openPopup();
+        clickTimer = null;
+      }, clickDelay);
+    });
+
+    marker.on('dblclick', (event) => {
+            // Clear the single click timer to prevent popup from showing
+      if (clickTimer) {
+        clearTimeout(clickTimer);
+        clickTimer = null;
+      }
+      
+      // Close popup if it's open
+      if (marker.isPopupOpen()) {
+        marker.closePopup();
+      }
+      
+      // Stop the event from triggering map's double-click zoom
+      L.DomEvent.stopPropagation(event);
+      
+      // Toggle draggable state
+      markerInfo.draggable = !markerInfo.draggable;
+      if (markerInfo.draggable) {
+        marker.dragging.enable();
+      } else {
+        marker.dragging.disable();
+      }
+      
+      // Toggle opacity
+      markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
+      
+      // Generate new icon with updated opacity
+      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius, markerInfo.opacity);
+      marker.setIcon(updatedIcon);
+    });
+
+    marker.on('popupopen', (event) => {
+      const popup = event.popup;
+      const popupElement = popup.getElement();
+
+      // Prevent navigation when clicking the close button
+      const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
+      if (closeButton) {
+        closeButton.addEventListener('click', (event) => {
+          event.stopPropagation();
+        });
+      }
+
+      // Allow navigation when any part of the popup is clicked except the close button
+      popupElement.addEventListener('click', () => {
+        setSelectedTree(tree);
+        setUpdatedTree(tree);
+        setFormStyle({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
+        navigate('/TreeData');
+        map.current.closePopup();
+      });
+    });
+
+    // Change cursor when hovering over marker
+    marker.on('mouseover', () => {
+      map.current.getContainer().style.cursor = 'pointer';
+    });
+
+    marker.on('mouseout', () => {
+      map.current.getContainer().style.cursor = 'default';
+    });
+  };
+  //create new tree object with lat and lng complete but other fields blank
   const handleAddTree = (event) => {
     const { lat, lng } = event.latlng;
     const newTree = {
@@ -278,94 +328,9 @@ const TreeMap = () => {
       hidden: false
     };
     setUpdatedTree(newTree);
-    setFormStyle({ backgroundColor: 'white' });
-    navigate('/TreeData');
-  };
-
-  useEffect(() => {
-    // If the map hasn't been initialized or tree and species data hasn't been returned, abort
-    if (!mapRef.current || !getTreesData?.getTrees || !getSpeciesData?.getSpecies) {
-      return;
-    }
-    if (!map.current) {
-      map.current = L.map(mapRef.current, {
-        zoomControl: false,
-        center: mapCenter,
-        zoom: mapZoom,
-        tapTolerance: 15,
-        tapHold: false
-      });
-
-      // Tile-layer options
-      const googleMutant = L.gridLayer.googleMutant({
-        maxZoom: 24,
-        type: 'satellite', // Other tile types: 'roadmap','terrain', 'hybrid'
-        attribution: "&copy; <a href='https://www.google.com/intl/en-US_US/help/terms_maps.html'>Google</a>",
-        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
-      }).addTo(map.current);
-
-      navigator.geolocation.watchPosition(
-        ({ coords: { latitude, longitude } }) => {
-          if (userLocationRef.current) {
-            map.current.removeLayer(userLocationRef.current);
-          }
-
-          userLocationRef.current = L.circle([latitude, longitude], {radius: 4, weight: 3, color: '#F542EF', fillOpacity: .5 }).addTo(map.current);
-        },
-        (error) => {
-          console.log("Geolocation error:", error);
-        }
-      );
-      
-      // Ensure species data is ready before creating markers
-      const speciesMap = getSpeciesData.getSpecies.reduce((acc, species) => {
-        acc[species.commonName] = species;
-        return acc;
-      }, {});
-
-      getTreesData.getTrees.forEach((tree) => {
-        const completeTree = combineTreeAndSpeciesData(tree, speciesMap);
-        if (tree.felledDate === '') {
-          createTreeMarker(completeTree, speciesMap);
-        }
-      });
-
-      // Handle map events
-      map.current.on('click', handleAddTree);
-      map.current.on('zoomend', () => { setMapZoom(map.current.getZoom()) });
-    }
-    
-    // Cleanup
-    return () => {
-      if (map.current) {
-        const leafletCenter = map.current.getCenter();
-        setMapCenter([leafletCenter.lat, leafletCenter.lng]);
-        
-        // Clean up any timers attached to markers
-        markersRef.current.forEach(({ marker }) => {
-          if (marker._longPressData && marker._longPressData.pressTimer) {
-            clearTimeout(marker._longPressData.pressTimer);
-          }
-        });
-        
-        map.current.remove();
-        map.current = null;
-        markersRef.current = [];
-      }
-    };
-  }, [getTreesData, getSpeciesData]);
-
-  useEffect(() => {
-    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
-    const iconSize = newRadius * 2;
-    setMarkerRadius(newRadius);
-
-    markersRef.current.forEach(markerInfo => {
-      const { marker, tree, speciesInfo } = markerInfo;
-      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, newRadius);
-      marker.setIcon(updatedIcon);
-    });
-  }, [mapZoom, getTreesData]);
+    setFormStyle({ backgroundColor: 'white' })
+    navigate('/TreeData')
+  }
 
   if (getTreesLoading || getSpeciesLoading) {
     return <p>Wait...</p>;
@@ -376,7 +341,7 @@ const TreeMap = () => {
   }
 
   return (
-    <div id='map' ref={mapRef} style={{ height: '100vh', width: '100vw' }}></div>
+    <div id='map' ref = {mapRef} style = {{ height: '100vh', width: '100vw' }}></div>
   );
 };
 
