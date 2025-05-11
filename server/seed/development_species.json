@@ -5,7 +5,7 @@
     "scientificName": "Tilia americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#42D2D5"
+    "markerColor": "#9575cd"
   },
   {
     "family": "Ulmaceae",
@@ -13,7 +13,7 @@
     "scientificName": "Ulmus americana",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#C14890"
+    "markerColor": "#1976d2"
   },
   {
     "family": "Platanaceae",
@@ -21,7 +21,7 @@
     "scientificName": "Platanus occidentalis",
     "nonnative": false,
     "invasive": false,
-    "markerColor": "#6A5CE3"
+    "markerColor": "#3f51b5"
   },
   {
     "family": "Simaroubaceae",
@@ -29,6 +29,6 @@
     "scientificName": "Ailanthus altissima",
     "nonnative": true,
     "invasive": true,
-    "markerColor": "#C0469A"
+    "markerColor": "#42a5f5"
   }
 ]
