@@ -17,14 +17,17 @@ function App() {
 
   //the function below sets default value for lat and lng for the initial render
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      ({ coords: { latitude, longitude } }) => {
-        setMapCenter([latitude, longitude]);
-      },
-      (error) => {
-        console.log("Geolocation error:", error);
-      }
-    );
+    const useFixedLocation = process.env.FIXED_LOCATION === "true";
+    if (!useFixedLocation) {
+      navigator.geolocation.getCurrentPosition(
+        ({ coords: { latitude, longitude } }) => {
+          setMapCenter([latitude, longitude]);
+        },
+        (error) => {
+          console.log("Geolocation error:", error);
+        }
+      );
+    }
   }, []);
 
   //sync form state with selectedTree when selectedTree changes
