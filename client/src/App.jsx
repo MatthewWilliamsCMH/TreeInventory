@@ -12,7 +12,8 @@ function App() {
   const [treeLocation, setTreeLocation] = useState(null);
   const [updatedTree, setUpdatedTree] = useState(null);
   const [mapZoom, setMapZoom] = useState(18);
-  const [mapCenter, setMapCenter] = useState([39.977985303479336, -83.04964455222637]);
+  // const [mapCenter, setMapCenter] = useState([39.977985303479336, -83.04964455222637]);
+  const [mapCenter, setMapCenter] = useState([42.977985303479336, -85.04964455222637]);
   const [formStyle, setFormStyle] = useState({ backgroundColor: 'white' });
 
   //the function below sets default value for lat and lng for the initial render
