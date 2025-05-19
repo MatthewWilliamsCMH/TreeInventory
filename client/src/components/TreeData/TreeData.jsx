@@ -25,7 +25,6 @@ const TreeData = () => {
   //get current global states using context
   const { updatedTree, setUpdatedTree, formStyle, setFormStyle } = useOutletContext();
 
-
   //set local states to initial values
   const [commonToScientificList, setCommonToScientificList] = useState(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
@@ -57,7 +56,26 @@ const TreeData = () => {
     }
   }, [getSpeciesData, getTreesData]);
 
-  //handle loading and error states
+  //check if the species name exists in the database
+  useEffect(() => {
+    if (updatedSpeciesField && updatedSpeciesValue && updatedSpeciesValue.trim() !=='') {
+      try {
+        if (getSpeciesData && (getSpeciesData.getSpecies.some(species => species.commonName === updatedSpeciesValue) || getSpeciesData.getSpecies.some(species => species.scientificName === updatedSpeciesValue))) {
+          console.log('Species $updatedSpeciesValue} exists.');
+        }
+        else {
+          setOverlayVisible(true);
+        }
+        setUpdatedSpeciesField(null);
+        setUpdatedSpeciesValue('');
+      }
+      catch (error) {
+        console.error('Error checking species existence:', error);
+      }
+    }
+  }, [updatedSpeciesField, updatedSpeciesValue, getSpeciesData]);
+
+  //----------loading and error states----------
   if (getTreesLoading || getSpeciesLoading) {
     return <div>Loading species and tree data...</div>;
   }
@@ -94,25 +112,25 @@ const TreeData = () => {
     }
   };
 
-  useEffect(() => {
-    if (updatedSpeciesField && updatedSpeciesValue && updatedSpeciesValue.trim() !=='') {
-      try {
-        if (getSpeciesData && (getSpeciesData.getSpecies.some(species => species.commonName === updatedSpeciesValue) || getSpeciesData.getSpecies.some(species => species.scientificName === updatedSpeciesValue))) {
-          console.log('Species $updatedSpeciesValue} exists.');
-        }
-        else {
-          setOverlayVisible(true);
-        }
-        setUpdatedSpeciesField(null);
-        setUpdatedSpeciesValue('');
-      }
-      catch (error) {
-        console.error('Error checking species existence:', error);
-      }
-    }
-  }, [updatedSpeciesField, updatedSpeciesValue, getSpeciesData]);
+  // useEffect(() => {
+  //   if (updatedSpeciesField && updatedSpeciesValue && updatedSpeciesValue.trim() !=='') {
+  //     try {
+  //       if (getSpeciesData && (getSpeciesData.getSpecies.some(species => species.commonName === updatedSpeciesValue) || getSpeciesData.getSpecies.some(species => species.scientificName === updatedSpeciesValue))) {
+  //         console.log('Species $updatedSpeciesValue} exists.');
+  //       }
+  //       else {
+  //         setOverlayVisible(true);
+  //       }
+  //       setUpdatedSpeciesField(null);
+  //       setUpdatedSpeciesValue('');
+  //     }
+  //     catch (error) {
+  //       console.error('Error checking species existence:', error);
+  //     }
+  //   }
+  // }, [updatedSpeciesField, updatedSpeciesValue, getSpeciesData]);
 
-  //photo uploads
+  //handle photo uploads
   const handlePhotoUpload = (url, photoType) => {
     setUpdatedTree(prevValues => ({
       ...prevValues,
@@ -123,6 +141,7 @@ const TreeData = () => {
     }));
   };
   
+  //----------rendering----------
   return (
     <>
       {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}

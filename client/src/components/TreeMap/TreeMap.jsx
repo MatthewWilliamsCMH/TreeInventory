@@ -1,3 +1,5 @@
+//---------imports----------
+//external libraries
 import React, { useState, useEffect, useRef } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from '@apollo/client';
@@ -5,14 +7,14 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.gridlayer.googlemutant';
 
+//queries
 import { GET_TREES } from '../../queries/get_trees';
 import { GET_SPECIES } from '../../queries/get_species';
 import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
 const TreeMap = () => {
+  //initialize hooks
   const navigate = useNavigate();
-
-  //initialize map
   const mapRef = useRef(null);
   const map = useRef(null);
   const markersRef = useRef([]); 
@@ -27,7 +29,7 @@ const TreeMap = () => {
     setFormStyle 
   } = useOutletContext();
 
-  //establish local states
+  //set local states to initial values
   const [markerRadius, setMarkerRadius] = useState(6)
 
   //set up queries and mutations
@@ -35,9 +37,10 @@ const TreeMap = () => {
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION, {fetchPolicy:'no-cache'});
 
-  //centralized code to generate marker icons
+  //----------initialize map----------
+  //generate marker icons
   const generateTreeMarkerIcon = (tree, speciesInfo, radius, opacity = 1) => {
-    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1';
+    const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1'; //temporary; remove after existing trees are updated
     const iconSize = (radius * 2) + parseInt(markerStrokeWidth);
     const markerColor = speciesInfo.markerColor || 'FFFFFF';
 
@@ -56,11 +59,9 @@ const TreeMap = () => {
     });
   };
 
+  //----------useEffects----------
   useEffect(() => {
-    //if the map hasn't been initialize or tree and species data hasn't been return, abort
-    if (!mapRef.current || !getTreesData?.getTrees ||!getSpeciesData?.getSpecies) {
-      return;
-    }
+    if (!mapRef.current || !getTreesData?.getTrees ||!getSpeciesData?.getSpecies) { return; };
     if (!map.current) {
       map.current = L.map(mapRef.current, {
         zoomControl: false,
@@ -77,7 +78,7 @@ const TreeMap = () => {
         maxZoom: 24,
         type: 'satellite', //other tile types: 'roadmap','terrain', 'hybrid'
         attribution: "&copy; <a href='https://www.google.com/intl/en-US_US/help/terms_maps.html'>Google</a>",
-        apiKey: 'AIzaSyA5piHGoJrVT5jKhaVezZUwOoPUAAYQcJs'
+        apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
       }).addTo(map.current);
 
       navigator.geolocation.watchPosition(
