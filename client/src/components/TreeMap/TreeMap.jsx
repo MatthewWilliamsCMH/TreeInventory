@@ -125,18 +125,18 @@ const TreeMap = () => {
     };
   }, [getTreesData, getSpeciesData]);
 
-  useEffect(() => {
-    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
-    const iconSize = newRadius * 2
-    setMarkerRadius(newRadius);
+useEffect(() => {
+  const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
+  setMarkerRadius(newRadius);
 
-    markersRef.current.forEach(markerInfo => {
-      const { marker, tree, speciesInfo } = markerInfo;
-      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, newRadius);
-      marker.setIcon(updatedIcon);
-    });
-  }, [mapZoom, getTreesData]);
-  
+  markersRef.current.forEach(markerInfo => {
+    const { marker, tree, speciesInfo, opacity = 1 } = markerInfo;
+    // Use the marker's current opacity, not default
+    const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, newRadius, opacity);
+    marker.setIcon(updatedIcon);
+  });
+}, [mapZoom]);
+
   //combine add species fields to tree object, which already has tree fields
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     const speciesInfo = speciesMap[tree.commonName] || {};
@@ -220,7 +220,7 @@ const TreeMap = () => {
     });
 
     marker.on('dblclick', (event) => {
-            // Clear the single click timer to prevent popup from showing
+      // Clear the single click timer to prevent popup from showing
       if (clickTimer) {
         clearTimeout(clickTimer);
         clickTimer = null;
@@ -244,9 +244,13 @@ const TreeMap = () => {
       
       // Toggle opacity
       markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
-      
-      // Generate new icon with updated opacity
-      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, markerRadius, markerInfo.opacity);
+
+      // Calculate the current radius based on the actual zoom level
+      const currentZoom = map.current.getZoom();
+      const currentRadius = Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
+
+      // Generate new icon with updated opacity and current radius
+      const updatedIcon = generateTreeMarkerIcon(tree, speciesInfo, currentRadius, markerInfo.opacity);
       marker.setIcon(updatedIcon);
     });
 
