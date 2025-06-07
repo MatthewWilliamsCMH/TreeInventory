@@ -1,4 +1,5 @@
 const FullSizePhoto = ({ photoUrl, onClose, onEdit }) => {
+  //render component
   return (
     <div>
       <div>

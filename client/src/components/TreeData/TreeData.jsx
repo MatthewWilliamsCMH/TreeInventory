@@ -17,8 +17,8 @@ import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/co
 import { handleFieldChange, formatDateForDisplay } from '../../utils/helpers';
 
 //queries
-import { GET_TREES } from '../../queries/get_trees';
-import { GET_SPECIES } from '../../queries/get_species';
+import { GET_TREES } from '../../queries/get_trees.js';
+import { GET_SPECIES } from '../../queries/get_species.js';
 
 const TreeData = () => {
   //-----------data reception and transmission----------
@@ -112,24 +112,6 @@ const TreeData = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (updatedSpeciesField && updatedSpeciesValue && updatedSpeciesValue.trim() !=='') {
-  //     try {
-  //       if (getSpeciesData && (getSpeciesData.getSpecies.some(species => species.commonName === updatedSpeciesValue) || getSpeciesData.getSpecies.some(species => species.scientificName === updatedSpeciesValue))) {
-  //         console.log('Species $updatedSpeciesValue} exists.');
-  //       }
-  //       else {
-  //         setOverlayVisible(true);
-  //       }
-  //       setUpdatedSpeciesField(null);
-  //       setUpdatedSpeciesValue('');
-  //     }
-  //     catch (error) {
-  //       console.error('Error checking species existence:', error);
-  //     }
-  //   }
-  // }, [updatedSpeciesField, updatedSpeciesValue, getSpeciesData]);
-
   //handle photo uploads
   const handlePhotoUpload = (url, photoType) => {
     setUpdatedTree(prevValues => ({
@@ -141,7 +123,7 @@ const TreeData = () => {
     }));
   };
   
-  //----------rendering----------
+  //----------render component----------
   return (
     <>
       {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}

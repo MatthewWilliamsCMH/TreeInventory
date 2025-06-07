@@ -1,18 +1,25 @@
+//---------imports----------
+//external libraries
 import React from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_TREE } from '../../mutations/add_tree';
-import { UPDATE_TREE } from '../../mutations/update_tree';
+//mutations
+import { ADD_TREE } from '../../mutations/add_tree.js';
+import { UPDATE_TREE } from '../../mutations/update_tree.js';
 import './Footer.css';
 
 const Footer = () => {
+  //----------data reception and transmission----------
   const { updatedTree, setUpdatedTree, setSelectedTree } = useOutletContext();
   const [addTree, { loading: addTreeLoading }] = useMutation(ADD_TREE);
   const [updateTree, { loading: updateTreeLoading }] = useMutation(UPDATE_TREE);
 
+  //set up hooks
   const navigate = useNavigate();
 
+  //----------called functions----------
+  //handle OK to add or update a tree
   const handleSubmit = async () => {
     try {
       if (!updatedTree?.id) {
@@ -65,7 +72,6 @@ const Footer = () => {
         console.log('Tree added:', data.addTree);
         setUpdatedTree(null);
         setSelectedTree(null);
-        // setTreeLocation(null); //necessary?
         navigate('/')
       }
       else {
@@ -115,7 +121,6 @@ const Footer = () => {
         console.log('Tree updated:', data.updateTree);
         setUpdatedTree(null);
         setSelectedTree(null);
-        // setTreeLocation(null); //necessary?
         navigate('/')
       }
     }
@@ -124,12 +129,13 @@ const Footer = () => {
     }
   };
 
+  //handle cancel button
   const handleCancel = () => {
     setUpdatedTree(null);
-    // setTreeLocation(null); //necessary?
     navigate('/');
   };
 
+  //----------render component----------
   return (
     <div id='footer'>
       <div id = 'autodata'>

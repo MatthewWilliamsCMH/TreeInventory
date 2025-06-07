@@ -1,22 +1,32 @@
+//---------imports----------
+//external libraries
 import React, { useState } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { GET_TREES } from '../../queries/get_trees';
-import { GET_SPECIES } from '../../queries/get_species';
+//queries
+import { GET_TREES } from '../../queries/get_trees.js';
+import { GET_SPECIES } from '../../queries/get_species.js';
+
+//stylesheets
 import './TreeInventory.css';
 
 const TreeInventory = () => {
+  //set up hooks
   const navigate = useNavigate();
+
+  //get current global states using context
   const { setSelectedTree, setUpdatedTree } = useOutletContext();
+
+  //set local states to initial values
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
   //set up queries
   const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
   const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
 
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
-
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
+    //-----------data reception and transmission----------
     const speciesInfo = speciesMap[tree.commonName] || {};
     return {
       ...tree,
@@ -47,6 +57,14 @@ const TreeInventory = () => {
     return 0;
   });
 
+  //----------loading and error states----------
+  if (getTreesLoading) return <div>Loading trees...</div>;
+  if (getTreesError) return <div>Error loading trees: {error.message}</div>;
+  if (getSpeciesLoading) return <div>Error loading species...</div>;
+  if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
+
+  //----------called functions----------
+  //handle click on column headers to sort
   const handleSort = (columnKey) => {
     //if same column clicked, reverse the sort
     setSortConfig((prev) => ({
@@ -56,17 +74,14 @@ const TreeInventory = () => {
     }));
   }; 
 
+  //handle selection from table
   const handleTreeClick = (completeTree) => {
     setSelectedTree(completeTree);
     setUpdatedTree(completeTree);
     navigate('/TreeData');
   };
 
-  if (getTreesLoading) return <div>Loading trees...</div>;
-  if (getTreesError) return <div>Error loading trees: {error.message}</div>;
-  if (getSpeciesLoading) return <div>Error loading species...</div>;
-  if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
-
+  //----------render component----------
   return (
     <div>
       <table>

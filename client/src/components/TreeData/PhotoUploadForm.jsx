@@ -1,3 +1,5 @@
+//---------imports----------
+//external libraries
 import React, { useState, useEffect } from 'react';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
@@ -7,18 +9,21 @@ import Compressor from '@uppy/compressor';
 import '@uppy/core/dist/style.css';
 import '@uppy/dashboard/dist/style.css';
 import '@uppy/webcam/dist/style.css';
+
+//components
 import FullSizePhoto from './FullSizePhoto.jsx';
 
 const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
+  //set local states to initial values
   const [activePhotoType, setActivePhotoType] = useState(null);
   const [uppy, setUppy] = useState(null);
   const [showFullSize, setShowFullSize] = useState(false);
   const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
   const [cameraDevices, setCameraDevices] = useState([]);
   
+  //----------useEffects----------
   //initialize Uppy
   useEffect(() => {
-    
     const uppyConfig = {
       restrictions: {
         maxNumberOfFiles: 1,
@@ -73,11 +78,12 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     };
   }, [activePhotoType, onPhotoUpload]);
 
-
+  //----------called functions----------
+  //handle camera click
   const handlePhotoClick = (photoType) => {
     const photoUrl = updatedTree.photos[photoType];
 
-  if (photoUrl) {
+    if (photoUrl) {
     //open a new browser window
     const newWindow = window.open('', '_blank', 'width=1024,height=768');
     
@@ -114,7 +120,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       </html>
     `);
     
-    // Handle message from the new window
+    //handle message from the new window
     const handleMessage = (event) => {
       if (event.data === 'openUppy') {
         newWindow.close();
@@ -136,6 +142,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     }
   };
 
+  //----------render component----------
   return (
     <>
       <div className='photogroup'>

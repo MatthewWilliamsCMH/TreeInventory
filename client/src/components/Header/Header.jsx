@@ -1,8 +1,12 @@
+//---------imports----------
+//external libraries
 import React from 'react';
 
+//stylesheets
 import './Header.css';
 
-function Header() {
+const Header = () => {
+  //render component
   return (
     <header id='header'>
       <h1>Summit Chase Tree Inventory</h1>

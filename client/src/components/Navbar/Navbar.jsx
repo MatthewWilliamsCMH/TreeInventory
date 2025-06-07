@@ -1,11 +1,17 @@
+//---------imports----------
+//external libraries
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+
+//stylesheets
 import './Navbar.css';
 
 const Navbar = ({ selectedTree }) => {
+  //set up hooks
   const navigate = useNavigate();
   const location = useLocation();
 
+  //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
       case '/': return 'map';
@@ -15,6 +21,8 @@ const Navbar = ({ selectedTree }) => {
     }
   });
 
+  //----------called functions----------
+  //handle control changes
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
@@ -39,6 +47,8 @@ const Navbar = ({ selectedTree }) => {
     }
   };
 
+  //----------useEffects----------
+  //update selectedOption based on the current path
   useEffect(() => {
     switch (location.pathname) {
       case '/':
@@ -56,8 +66,10 @@ const Navbar = ({ selectedTree }) => {
     }
   }, [location.pathname]);
 
+  //disable TreeData option if no tree is selected
   const isDisabled = selectedTree === null;
 
+  //----------render component----------
   return (
     <nav id='navbar'>
       <div className='radiobuttonlist'>

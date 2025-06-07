@@ -1,11 +1,17 @@
+//---------imports----------
+//external libraries
 import React, { useEffect, useState } from 'react';
+
+//stylesheets
 import './Header.css';
 
-function DangerFlags({ updatedTree }) {
-  //track nonnative and invasive status
+const DangerFlags = ({ updatedTree }) => {
+  //establish nonnative and invasive status
   const [nonnativeStatus, setNonnativeStatus] = useState(false);
   const [invasiveStatus, setInvasiveStatus] = useState(false);
 
+  //----------useEffects----------
+  //get nonnative and invasvie statuses from updatedTree
   useEffect(() => {
     if (updatedTree) {
       setNonnativeStatus(updatedTree.nonnative || false);
@@ -13,6 +19,7 @@ function DangerFlags({ updatedTree }) {
     }
   }, [updatedTree]);
 
+  //----------render component----------
   return (
     <div id='reactcontainer'>
         {nonnativeStatus && <p className='danger'>Nonnative</p>}

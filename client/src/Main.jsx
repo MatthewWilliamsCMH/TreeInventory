@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Navigate, useOutletContext } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
-import App from './App';
-import TreeMap from './components/TreeMap/TreeMap';
-import TreeData from './components/TreeData/TreeData';
-import TreeInventory from './components/TreeInventory/TreeInventory';
+import App from './App.jsx';
+import TreeMap from './components/TreeMap/TreeMap.jsx';
+import TreeData from './components/TreeData/TreeData.jsx';
+import TreeInventory from './components/TreeInventory/TreeInventory.jsx';
 
 const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 

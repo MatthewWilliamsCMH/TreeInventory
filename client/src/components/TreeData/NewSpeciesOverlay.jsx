@@ -10,10 +10,10 @@ import { GithubPicker } from 'react-color'
 import { markerColorList } from '../../utils/constants.js';
 
 //queries
-import { GET_SPECIES } from '../../queries/get_species.jsx';
+import { GET_SPECIES } from '../../queries/get_species.js';
 
 //mutations
-import { ADD_SPECIES } from '../../mutations/add_species.jsx';
+import { ADD_SPECIES } from '../../mutations/add_species.js';
 
 //stylesheets
 import './NewSpeciesOverlay.css';
@@ -79,20 +79,23 @@ const Overlay = ({ setOverlayVisible }) => {
   const overlayScientificName = useRef(null);
 
   //----------useEffects----------
-  //disable interaction with the background when modal is open
+  //open the modal
   useEffect(() => {
+    //disable interaction with the background when modal is open
     const body = document.body;
     body.style.overflow = 'hidden'; //prevent scrolling on the background
     body.style.pointerEvents = 'none'; //prevent pointer events on the background
 
+    //ensure modal is active and allow pointer events on it
     const modal = document.getElementById('overlay'); //make sure modal is active
     if (modal) {
-      modal.style.pointerEvents = 'auto'; //allow pointer events on the modal
+      modal.style.pointerEvents = 'auto';
     }
 
+    //cleanup; restore normal pointer events and scrolling behavior to background
     return () => {
-      body.style.pointerEvents = 'auto'; //allow pointer events on the background
-      body.style.overflow = 'auto'; //allow scrolling on the background
+      body.style.pointerEvents = 'auto';
+      body.style.overflow = 'auto';
     };
   }, []);
 
@@ -144,7 +147,7 @@ const Overlay = ({ setOverlayVisible }) => {
     }
   };
 
-  //handle submit
+  //handle OK button
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -172,12 +175,12 @@ const Overlay = ({ setOverlayVisible }) => {
     }
   };
 
-  //handle cancel
+  //handle cancel button
   const handleCancel = () => {
     setOverlayVisible(false);
   };
 
-  //render component
+  //----------render component----------
   return (
     <div id = 'overlay' className='overlay'>
       <form onSubmit={handleSubmit}>

@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
 
 //styles
 import './reset.css';

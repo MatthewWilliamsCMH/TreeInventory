@@ -158,6 +158,7 @@ useEffect(() => {
 
     const popupContent = `
       Id: ${tree.id}<br>
+      ${tree.photos.environs ? `<img src="${tree.photos.environs}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>` : ''}
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
       Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>

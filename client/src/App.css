@@ -148,10 +148,10 @@ button:hover {
 
 .danger-flags-container {
   padding: 1rem 1rem 0px 0px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  z-index:'9999'
+  z-index: 1001;
 }
 
 /*these are here to override some of the default css settings*/

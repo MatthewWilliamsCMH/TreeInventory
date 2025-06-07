@@ -1,4 +1,4 @@
-.overlay {
+.filter {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,21 +10,22 @@
   align-items: center;
 }
 
-.overlay form {
+.dialog {
+  background-color: #000;
+  border-radius: 8px;
   padding: 20px;
-  max-width: 500px;
-  overflow-y: auto;
+  width: 400px;
 }
 
-.overlay .control label {
+.dialog .control label {
   width: 120px;
 }
 
-.overlay input[type='text'] {
+.dialog input[type='text'] {
   padding: 10px;
 }
 
-.overlay .checkboxgroup {
+.dialog .checkboxgroup {
   height: calc((21px * 2) + 5px);
   margin-left: -7px;
 }
