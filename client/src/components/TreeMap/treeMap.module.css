@@ -1,0 +1,32 @@
+/*----------map----------*/
+.map {
+  cursor: pointer;
+}
+
+/*----------filter----------*/
+.filterThumb {
+  font-size: 27px;
+  text-align: right;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 6rem;
+  height: 40px;
+  width: 35px;
+  background-color: var(--brick-red);
+  border-radius: 20px 0px 0px 20px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  z-index: 1050;
+}
+
+.filterThumbOpen {
+  right: 298px;
+  transition: right 0.3s ease-in-out;
+}
+
+.filterThumbClose {
+  right: 0px;
+  transition: right 0.3s ease-in-out;
+}

@@ -1,0 +1,144 @@
+//---------imports----------
+//external libraries
+import React, { useEffect, useMemo, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+
+import Header from './components/Header/Header.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+
+//components and helpers
+import { combineTreeAndSpeciesData } from './utils/helpers.js';
+
+//stylesheets
+import './reset.css';
+import './custom-bootstrap.scss'
+import styles from './app.module.css';
+
+//queries
+import { GET_TREES } from './queries/get_trees.js';
+import { GET_SPECIES } from './queries/get_species.js';
+
+function App() {
+  //-----------data reception and transmission----------
+  //initialize global states
+  const [allSpecies, setAllSpecies] = useState([]);
+  const [allTrees, setAllTrees] = useState([])
+  const [selectedTree, setSelectedTree] = useState(null);
+  const [treeLocation, setTreeLocation] = useState(null);
+  const [updatedTree, setUpdatedTree] = useState(null);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [filterCriteria, setFilterCriteria] = useState({
+    commonName: [],
+    dbh: null,
+    // installedDate: '',
+    // installedBy: '',
+    // felledDate: '',
+    // felledBy: '',
+    garden: null,
+    careNeeds: {
+      install: true,
+      raiseCrown: true,
+      routinePrune: true,
+      trainingPrune: true,
+      priorityPrune: true,
+      pestTreatment: true,
+      installGrate: true,
+      removeGrate: true,
+      fell: true,
+      removeStump: true
+    },
+    siteInfo: {
+      slope: true,
+      overheadLines: true,
+      treeCluster: true,
+      proximateStructure: true,
+      proximateFence: true
+    },
+    invasive: true,
+    nonnative: true,
+    hidden: false
+  });
+  const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]); //default for demo and develop modes
+  const [mapZoom, setMapZoom] = useState(18);
+  const [formColor, setFormColor] = useState({ backgroundColor: 'white' }); //default background for noninvasive trees
+  const mergedTrees = useMemo(() => {
+    if (!allTrees.length || !allSpecies.length) return [];
+    return allTrees.map(tree => combineTreeAndSpeciesData(tree, allSpecies));
+  }, [allTrees, allSpecies]);
+  //set up queries
+  const { 
+    data: getTreesData, 
+    error: getTreesError, 
+    loading: getTreesLoading, 
+    refetch: refetchTrees
+  } = useQuery(GET_TREES, {fetchPolicy: 'network-only'});
+  const { 
+    data: getSpeciesData, 
+    error: getSpeciesError, 
+    loading: getSpeciesLoading, 
+    refetch: refetchSpecies
+  } = useQuery(GET_SPECIES);
+
+  //----------useEffects----------
+  //get user location for develop and production modes
+  useEffect(() => {
+    const useFixedLocation = process.env.FIXED_LOCATION === "true";
+    if (!useFixedLocation) {
+      navigator.geolocation.getCurrentPosition(
+        ({ coords: { latitude, longitude } }) => {
+          setMapCenter([latitude, longitude]);
+        },
+        (error) => {
+          console.log("Geolocation error:", error);
+        }
+      );
+    }
+  }, []);
+
+  //get list of trees and their data
+  useEffect(() => {
+    if (getTreesData?.trees) {
+      setAllTrees(getTreesData.trees);
+    }
+  }, [getTreesData]);
+
+  //convert species array into map keyed by common name
+  useEffect(() => {
+    if (getSpeciesData?.species) {
+      setAllSpecies(getSpeciesData.species);
+    }
+  }, [getSpeciesData]);
+
+  //update selectedTree as selection changes
+  useEffect(() => {
+    if (selectedTree) {
+      setUpdatedTree(selectedTree);
+    }
+  }, [selectedTree]);
+
+  //----------rendering----------
+  return (
+    <div className='app'>
+      <Header />
+      <Navbar selectedTree={selectedTree} />
+      <Outlet context = {{ 
+        allSpecies, setAllSpecies,
+        refetchSpecies,
+        allTrees, setAllTrees,
+        refetchTrees,
+        mergedTrees,
+        selectedTree, setSelectedTree, 
+        treeLocation, setTreeLocation,
+        updatedTree, setUpdatedTree,
+        mapCenter, setMapCenter,
+        mapZoom, setMapZoom,
+        filterOpen, setFilterOpen,
+        filterCriteria, setFilterCriteria,
+        formColor, setFormColor
+      }} />
+    </div>
+  );
+}
+
+export default App;

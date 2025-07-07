@@ -1,0 +1,22 @@
+{
+  "name": "summit-chase-tree-inventory",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "build": "cd client && npm install && npm run build",
+    "build:demo": "cd client && npm install && npm run build:demo -- --mode=demo",
+    "build:production": "cd client && npm install && npm run build:production -- --mode=production",
+    "start": "cd server && node server.js",
+    "start:demo": "cd server && node server.js",
+    "start:production": "cd server && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "sass": "^1.89.2"
+  }
+}

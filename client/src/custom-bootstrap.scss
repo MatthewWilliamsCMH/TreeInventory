@@ -1,0 +1,37 @@
+
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --pale-yellow: #FFF3B0;
+  --dark-yellow: #ffde22;
+  --brick-red: #9E2A2B;
+  --blue-green: #335C67;
+  --light-blue-green: #58aaa7;
+}
+
+html, body {
+  background-color: transparent !important;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position:top;
+  background-repeat: repeat-y;
+}
+
+body {
+    background: transparent;
+}
+
+::placeholder {
+  color: #BBB !important;
+  opacity: 1; /* Firefox */
+}
+
+legend {
+  font-weight:600;
+  color: var(--blue-green) !important;
+}
+
+.offcanvas-title {
+  color: var(--pale-yellow) !important;
+  border-bottom: 1px solid var(--pale-yellow);
+}

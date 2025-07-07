@@ -1,0 +1,51 @@
+import { gql } from '@apollo/client';
+
+export const GET_TREES = gql`
+  query getTrees {
+    trees: getTrees {
+      id
+      commonName
+      variety
+      dbh
+      photos {
+        bark
+        summerLeaf
+        autumnLeaf
+        fruit
+        flower
+        environs
+      }
+      notes
+      location {
+        northing
+        easting
+      }
+      garden
+      siteInfo {
+        slope
+        overheadLines
+        treeCluster
+        proximateStructure
+        proximateFence
+      }
+      lastUpdated
+      installedDate
+      installedBy
+      felledDate
+      felledBy
+      careNeeds {
+        install
+        raiseCrown
+        routinePrune
+        trainingPrune
+        priorityPrune
+        pestTreatment
+        installGrate
+        removeGrate
+        fell
+        removeStump
+      }
+      hidden
+    }
+  }
+`;
