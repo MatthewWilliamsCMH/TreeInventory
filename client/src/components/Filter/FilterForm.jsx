@@ -61,12 +61,13 @@ const filter = ({ setfilterVisible }) => {
       <div className='dialog'> {/*the dialog is only the dialog box*/}
         {/* The combox boxes below have local styling applied to override the react-select styles; doing it in a CSS file failed */}
         <div className = 'control'>
+        {/*
           <label htmlFor='commonName'>Common</label>
+        */}
           <CreatableSelect
             id='commonName'
             value={{ label: updatedTree.commonName, value: updatedTree.commonName }}
             onChange={(selectedOption) => handleInputChange('commonName', selectedOption)}
-            // onBlur={(event) => handleBlur('commonName', updatedTree.commonName, event)}
             options={commonToScientificList ? Object.keys(commonToScientificList).map(common => ({
               label: common,
               value: common

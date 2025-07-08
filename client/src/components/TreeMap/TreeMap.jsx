@@ -363,12 +363,12 @@ const TreeMap = () => {
         <i className='bi-filter'></i>
       </div>
       <div 
-        id = 'map' 
-        className = {styles.map} 
-        ref = {mapRef} 
-        style = {{ height: '100vh', width: '100vw' }}>
+        id='map' 
+        className={styles.map} 
+        ref={mapRef} 
+        style={{ height: '100vh', width: '100vw' }}>
       </div>
-      <FilterDrawer />
+      <FilterDrawer filteredTrees={filteredTrees} />
     </>
   );
 };

@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './treeMap.module.css';
 import './react-toggle.css'
 
-const FilterDrawer = () => {
+const FilterDrawer = ({filteredTrees}) => {
   // --------- initialize hooks ----------
   //get global states from parent component
   const {
@@ -339,6 +339,17 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             <span className = 'filterToggle'>Hidden</span>
           </label>
         </Row>
+              <div 
+        style={{
+          position: 'absolute',
+          top: '15px',
+          right: '10px',
+          color: 'var(--pale-yellow)',
+          fontSize: '15px'
+        }}>
+          {filteredTrees.length} trees
+      </div>
+
       </Offcanvas.Body>
     </Offcanvas>
   )
