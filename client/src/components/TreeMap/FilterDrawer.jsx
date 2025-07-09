@@ -132,7 +132,9 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             isMulti
             onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
             options={[
-              ...allSpecies.map(species => ({
+              ...[...allSpecies]
+              .sort((a, b) => a.commonName.localeCompare(b.commonName))
+              .map(species => ({
                 label: species.commonName,
                 value: species.commonName
               }))
