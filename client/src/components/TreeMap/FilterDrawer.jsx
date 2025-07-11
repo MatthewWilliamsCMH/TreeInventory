@@ -96,6 +96,19 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
     });
   };
   
+  const allCommonNameOptions = [...allSpecies]
+  .sort((a, b) => a.commonName.localeCompare(b.commonName))
+  .map(species => ({
+    label: species.commonName,
+    value: species.commonName
+  }));
+
+// Determine what to show as the selected options
+const selectedCommonNames = filterCriteria.commonName.length > 0
+  ? allCommonNameOptions.filter(opt => filterCriteria.commonName.includes(opt.value))
+  : allCommonNameOptions;  // If none selected, show all options selected
+
+
   //----------render component----------
   {/*I locally styled this because I couldn't override the default styles of react-bootstrap*/}
   return (
@@ -132,7 +145,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             isMulti
             onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
             options={[
-              ...[...allSpecies]
+              ...[...allSpecies] //This creates a shallow copy of the array, which will be mutable where the origianl is not; similar to just writing the original array into another, new array, but idiomatic to ES6 and slightly faster.
               .sort((a, b) => a.commonName.localeCompare(b.commonName))
               .map(species => ({
                 label: species.commonName,
@@ -322,6 +335,10 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
                   checked: event.target.checked
                 }
               })}}
+              // title = {filterCriteria.invasive
+              //   ? 'Including invasive trees.'
+              //   : 'Omitting invasive trees.'}
+              // replace the above with a true tool tip and onHover
             />
             <span className = 'filterToggle'>Invasive</span>
           </label>

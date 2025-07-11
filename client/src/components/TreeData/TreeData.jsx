@@ -357,7 +357,7 @@ const TreeData = () => {
                   options={
                     commonToScientific
                       ? Object.keys(commonToScientific)
-                      .sort((a, b) => a.commonName.localeCompare(b.commonName))
+                      .sort((a, b) => a.localeCompare(b))
                       .map((common) => ({
                           label: common,
                           value: common,

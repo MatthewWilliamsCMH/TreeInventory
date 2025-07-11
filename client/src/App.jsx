@@ -30,12 +30,12 @@ function App() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [filterCriteria, setFilterCriteria] = useState({
     commonName: [],
-    dbh: null,
+    dbh: [],
     // installedDate: '',
     // installedBy: '',
     // felledDate: '',
     // felledBy: '',
-    garden: null,
+    garden: [],
     careNeeds: {
       install: true,
       raiseCrown: true,
