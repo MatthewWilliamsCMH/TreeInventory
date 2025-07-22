@@ -46,9 +46,9 @@ const TreeMap = () => {
 
     return mergedTrees.filter(tree => {
       //filter selects
-      if (filterCriteria.commonName.length > 0 && !filterCriteria.commonName.includes(tree.commonName)) return false;
-      if (filterCriteria.dbh && filterCriteria.dbh.length > 0 && !filterCriteria.dbh.includes(tree.dbh)) return false;
-      if (filterCriteria.garden && filterCriteria.garden.length > 0 && !filterCriteria.garden.includes(tree.garden)) return false;
+    if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
+      if (!filterCriteria.dbh?.includes(tree.dbh)) return false;
+      if (!filterCriteria.garden?.includes(tree.garden)) return false;
       const siteInfoKeys = Object.keys(filterCriteria.siteInfo || {});
       for (const key of siteInfoKeys) {
         if (filterCriteria.siteInfo[key] === false && tree.siteInfo?.[key] === true) return false;

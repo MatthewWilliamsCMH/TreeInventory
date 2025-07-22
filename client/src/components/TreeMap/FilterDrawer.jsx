@@ -60,18 +60,35 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
   const handleTypeaheadChange = (selectedOptions, fieldName) => {
     const selectedValues = selectedOptions.map(option => option.value);
 
-    // Optionally handle 'All' case
-    if (selectedValues.includes('All')) {
-      setFilterCriteria(prev => ({
-        ...prev,
-        [fieldName]: [] //treat as "no filter"
-      }));
-    } else {
-      setFilterCriteria(prev => ({
-        ...prev,
-        [fieldName]: selectedValues
-      }));
+    let fullOptionList;
+    if (fieldName === 'commonName') {
+      fullOptionList = allSpecies.map(species => species.commonName);
+    } else if (fieldName === 'dbh') {
+      fullOptionList = dbhList;
+    } else if (fieldName === 'garden') {
+      fullOptionList = gardenList;
     }
+
+    if (selectedValues.includes('__ALL__')) {
+      setFilterCriteria(prev => ({
+        ...prev,
+        [fieldName]: fullOptionList
+      }));
+      return;
+    }
+
+    // if (selectedValues.includes('__NONE__')) {
+    //   setFilterCriteria(prev => ({
+    //     ...prev,
+    //     [fieldName]: []
+    //   }));
+    //   return;
+    // }
+
+    setFilterCriteria(prev => ({
+      ...prev,
+      [fieldName]: selectedValues
+    }));
   };
 
   const handleFilterChange = (event, category = null) => {
@@ -124,23 +141,24 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
       <Offcanvas.Body>
         <Row>
           <Select 
-            closeMenuOnSelect={false}
+            closeMenuOnSelect = {false}
             components = {{
               ValueContainer: CustomValueContainer
             }}
-            hideSelectedOptions={false}
+            hideSelectedOptions = {false}
             isMulti
-            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
-            options={[
-              ...[...allSpecies] //This creates a shallow copy of the array, which will be mutable where the origianl is not; similar to just writing the original array into another, new array, but idiomatic to ES6 and slightly faster.
+            onChange = {(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
+            options = {[
+              {label: '[Show All]', value: '__ALL__'},
+              ...[...allSpecies] //creates a shallow copy of the array, which is mutable where the origianl is not; similar to just writing the original array into another, new array, but idiomatic to ES6 and slightly faster.
               .sort((a, b) => a.commonName.localeCompare(b.commonName))
               .map(species => ({
                 label: species.commonName,
                 value: species.commonName
               }))
             ]}
-            placeholder="All common names"
-            styles={{
+            placeholder = "Filter by species..."
+            styles = {{
               menu: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -165,24 +183,33 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               multiValueLabel: () => ({}),
               multiValueRemove: () => ({})
             }}
+            value = {allSpecies
+              .filter(species => filterCriteria.commonName?.includes(species.commonName))
+              .map(species => ({
+                label: species.commonName,
+                value: species.commonName
+              }))
+            }
           />
           <Select 
             className = 'mt-1'
-            closeMenuOnSelect={false}
+            clearButton = 'true'
+            closeMenuOnSelect = {false}
             components = {{
               ValueContainer: CustomValueContainer
             }}
-            hideSelectedOptions={false}
+            hideSelectedOptions = {false}
             isMulti
-                        onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'dbh')}
-            options={[
+            onChange = {(selectedOptions) => handleTypeaheadChange(selectedOptions, 'dbh')}
+            options = {[
+              {label: '[Show All]', value: '__ALL__'},
               ...dbhList.map(dbh => ({
                 label: dbh,
                 value: dbh
               }))
             ]}
-            placeholder="All diameters"
-            styles={{
+            placeholder = "Filter by diameter..."
+            styles = {{
               menu: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -207,24 +234,32 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               multiValueLabel: () => ({}),
               multiValueRemove: () => ({})
             }}
+            value = {dbhList
+              .filter(dbh => filterCriteria.dbh?.includes(dbh))
+              .map(dbh => ({
+                label: dbh,
+                value: dbh
+              }))
+            }
           />
           <Select 
             className = 'mt-1'
-            closeMenuOnSelect={false}
+            closeMenuOnSelect = {false}
             components = {{
               ValueContainer: CustomValueContainer
             }}
-            hideSelectedOptions={false}
+            hideSelectedOptions = {false}
             isMulti
-            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'garden')}
-            options={[
+            onChange = {(selectedOptions) => handleTypeaheadChange(selectedOptions, 'garden')}
+            options = {[
+              {label: '[Show All]', value: '__ALL__'},
               ...gardenList.map(garden => ({
                 label: garden,
                 value: garden
               }))
             ]}
-            placeholder="All gardens"
-            styles={{
+            placeholder = "Filter by garden..."
+            styles = {{
               menu: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -249,6 +284,13 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               multiValueLabel: () => ({}),
               multiValueRemove: () => ({})
             }}
+            value = {gardenList
+              .filter(garden => filterCriteria.garden?.includes(garden))
+              .map(garden => ({
+                label: garden,
+                value: garden
+              }))
+            }
           />
         </Row>
         <Row className = 'mt-3'>
@@ -258,7 +300,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               <Toggle
                 checked = {!!filterCriteria.careNeeds?.[need]}
                 icons = {false}
-                onChange={(event) => handleFilterChange({
+                onChange = {(event) => handleFilterChange({
                   target: {
                     name: need,
                     type: 'checkbox',
@@ -342,7 +384,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
           </label>
         </Row>
               <div 
-        style={{
+        style = {{
           position: 'absolute',
           top: '15px',
           right: '10px',

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 
 //components and helpers
 import { combineTreeAndSpeciesData } from './utils/helpers.js';
+import { dbhList, gardenList } from './utils/constants.js';
 
 //stylesheets
 import './reset.css';
@@ -30,12 +31,12 @@ function App() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [filterCriteria, setFilterCriteria] = useState({
     commonName: [],
-    dbh: null,
+    dbh: dbhList,
     // installedDate: '',
     // installedBy: '',
     // felledDate: '',
     // felledBy: '',
-    garden: null,
+    garden: gardenList,
     careNeeds: {
       install: true,
       raiseCrown: true,
@@ -110,6 +111,16 @@ function App() {
     }
   }, [getSpeciesData]);
 
+  //set filter criteria for initial render
+  useEffect(() => {
+    if (allSpecies.length) {
+      setFilterCriteria(prev => ({
+        ...prev,
+        commonName: allSpecies.map(species => species.commonName),
+      }));
+    }
+  }, [allSpecies]);
+  
   //update selectedTree as selection changes
   useEffect(() => {
     if (selectedTree) {
