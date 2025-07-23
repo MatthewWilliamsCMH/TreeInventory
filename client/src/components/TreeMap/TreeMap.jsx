@@ -46,9 +46,10 @@ const TreeMap = () => {
 
     return mergedTrees.filter(tree => {
       //filter selects
-    if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
-      if (!filterCriteria.dbh?.includes(tree.dbh)) return false;
-      if (!filterCriteria.garden?.includes(tree.garden)) return false;
+      //unremark these once all trees have been updated
+      if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
+      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh)) return false;
+      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden)) return false;
       const siteInfoKeys = Object.keys(filterCriteria.siteInfo || {});
       for (const key of siteInfoKeys) {
         if (filterCriteria.siteInfo[key] === false && tree.siteInfo?.[key] === true) return false;
@@ -170,7 +171,7 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
-    const species = speciesMap.find(s => s.commonName === tree.commonName);
+    const species = speciesMap.find(species => species.commonName === tree.commonName);
     const myIcon = generateTreeMarkerIcon(tree, species, markerRadius);
 
     const popupContent = `
@@ -179,6 +180,7 @@ const TreeMap = () => {
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
       Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
+      Garden: ${tree.garden}<br>
       DBH: ${tree.dbh} inches
     `;
     
