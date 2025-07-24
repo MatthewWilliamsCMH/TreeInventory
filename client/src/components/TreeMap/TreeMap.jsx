@@ -180,7 +180,6 @@ const TreeMap = () => {
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
       Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
-      Garden: ${tree.garden}<br>
       DBH: ${tree.dbh} inches
     `;
     

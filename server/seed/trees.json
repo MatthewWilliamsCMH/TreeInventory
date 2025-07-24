@@ -29,7 +29,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -78,7 +78,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -127,7 +127,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2019",
+  "installedDate": "<2019",
   "installedBy": "Landscape committe",
   "felledDate": "",
   "felledBy": "",
@@ -151,7 +151,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "",
+  "dbh": "6-12",
   "notes": "Died",
   "photos": {
     "bark": "",
@@ -176,7 +176,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2021-01-01T05:00:00.000Z",
   "felledBy": "Landscape committee",
@@ -225,8 +225,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2019",
-  "installedBy": "Landscape Committee",
+  "installedDate": "<2019",
+  "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
@@ -249,7 +249,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191894481.jpg",
@@ -274,7 +274,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "03/01/2024",
+  "installedDate": "2024-03-01T05:00:00.000Z",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -323,7 +323,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -372,7 +372,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -421,8 +421,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2019",
-  "installedBy": "Landscape committe",
+  "installedDate": "<2019",
+  "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
@@ -470,7 +470,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -519,9 +519,9 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "9/2023",
+  "felledDate": "2023-09-01T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -568,9 +568,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "1/19/2019",
+  "felledDate": "2019-01-19T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -617,7 +617,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -666,7 +666,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -715,7 +715,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -764,7 +764,7 @@
     "proximateStructure": true,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -813,7 +813,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2023-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -862,7 +862,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -911,7 +911,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -960,7 +960,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1009,7 +1009,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1058,7 +1058,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1107,7 +1107,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1156,7 +1156,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1205,7 +1205,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2020",
+  "installedDate": "<2020",
   "installedBy": "Joseph Tree Service",
   "felledDate": "",
   "felledBy": "",
@@ -1254,7 +1254,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1303,7 +1303,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1352,7 +1352,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1401,7 +1401,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1450,7 +1450,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1499,7 +1499,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1548,7 +1548,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1597,7 +1597,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1646,7 +1646,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2023-01-09T05:00:00.000Z",
   "felledBy": "Landscapes by Terra",
@@ -1695,7 +1695,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1744,7 +1744,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1768,7 +1768,7 @@
   },
   "commonName": "European beech",
   "variety": "Tricolor",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741547287989.jpg",
@@ -1793,7 +1793,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "2021-01-06T05:00:00.000Z",
+  "installedDate": "2021-06-01T05:00:00.000Z",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1817,7 +1817,7 @@
   },
   "commonName": "Siberian elm",
   "variety": "",
-  "dbh": "",
+  "dbh": "6-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -1842,7 +1842,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1891,7 +1891,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -1940,9 +1940,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "6/6/2025",
+  "felledDate": "2025-06-06T00:00:00.000Z",
   "felledBy": "Joseph tree service",
   "careNeeds": {
     "install": false,
@@ -1989,7 +1989,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2038,7 +2038,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2087,7 +2087,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2136,7 +2136,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2185,7 +2185,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2234,7 +2234,7 @@
     "proximateStructure": true,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2283,7 +2283,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2332,7 +2332,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2381,7 +2381,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2430,7 +2430,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2454,7 +2454,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Transplanted sapling from ravine",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742249717515.jpg",
@@ -2479,7 +2479,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4/1/2021",
+  "installedDate": "2021-04-01T00:00:00.000Z",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2503,7 +2503,7 @@
   },
   "commonName": "Sugar maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742413587584.jpg",
@@ -2528,7 +2528,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2577,7 +2577,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2626,7 +2626,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2675,7 +2675,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2724,7 +2724,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2773,7 +2773,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2822,7 +2822,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -2871,9 +2871,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "1/19/2015",
+  "felledDate": "2015-01-19T00:00:00.000Z",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -2895,7 +2895,7 @@
   },
   "commonName": "Weeping cherry",
   "variety": "Weeping extraordinaire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Paul Hysell and Elizabeth Chrisman in memory of Bob Chrisman; plaque:",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741632351506.jpg",
@@ -2969,7 +2969,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3018,7 +3018,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3040,7 +3040,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff6fd"
   },
-  "commonName": "Common linden",
+  "commonName": "European linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -3067,7 +3067,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3116,7 +3116,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3140,7 +3140,7 @@
   },
   "commonName": "American sycamore",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by P'Liz Koelker",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751810537135.jpg",
@@ -3165,7 +3165,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/09/2022",
+  "installedDate": "2022-01-09T00:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -3214,7 +3214,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Grandview Heights",
   "felledDate": "",
   "felledBy": "",
@@ -3263,7 +3263,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3312,7 +3312,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3361,7 +3361,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3410,7 +3410,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3459,7 +3459,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3483,7 +3483,7 @@
   },
   "commonName": "Black cherry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Seedling donated by FLOW\nBlack cherry?",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187021794.jpg",
@@ -3508,7 +3508,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "8/182024",
+  "installedDate": "2024-08-18T00:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -3557,7 +3557,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3606,7 +3606,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3655,7 +3655,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3704,7 +3704,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3753,7 +3753,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3802,7 +3802,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3851,9 +3851,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Joseph tree service",
-  "felledDate": "6/6/2025",
+  "felledDate": "2025-06-06T00:00:00.000Z",
   "felledBy": "",
   "careNeeds": {
     "install": false,
@@ -3900,7 +3900,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3949,7 +3949,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -3998,7 +3998,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4047,7 +4047,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4096,7 +4096,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4145,7 +4145,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4194,7 +4194,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4217,7 +4217,7 @@
     "$oid": "6867cb0543153949171ff715"
   },
   "commonName": "Norway maple",
-  "variety": "Crimson Kiing",
+  "variety": "Crimson King",
   "dbh": "6-12",
   "notes": "",
   "photos": {
@@ -4243,7 +4243,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4265,7 +4265,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff716"
   },
-  "commonName": "Common linden",
+  "commonName": "European linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -4292,7 +4292,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4341,7 +4341,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4390,7 +4390,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4439,7 +4439,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4488,7 +4488,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4537,7 +4537,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4586,7 +4586,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4635,7 +4635,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4684,7 +4684,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4733,7 +4733,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4782,7 +4782,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4831,7 +4831,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4855,7 +4855,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Died in 2023",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741984052771.jpg",
@@ -4882,7 +4882,7 @@
   },
   "installedDate": "2021",
   "installedBy": "Oakland Nursery",
-  "felledDate": "4/12/2025",
+  "felledDate": "2025-04-12T00:00:00.000Z",
   "felledBy": "Landscape committee",
   "careNeeds": {
     "install": false,
@@ -4929,7 +4929,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -4978,7 +4978,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5027,7 +5027,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5076,7 +5076,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5125,7 +5125,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5174,7 +5174,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5223,7 +5223,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5272,9 +5272,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Joseph tree service",
-  "felledDate": "6/6/2025",
+  "felledDate": "2025-06-06T00:00:00.000Z",
   "felledBy": "",
   "careNeeds": {
     "install": false,
@@ -5321,7 +5321,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5370,7 +5370,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5419,7 +5419,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5468,7 +5468,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5517,7 +5517,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2023-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -5541,7 +5541,7 @@
   },
   "commonName": "Siberian elm",
   "variety": "",
-  "dbh": "",
+  "dbh": "6-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -5566,7 +5566,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5615,7 +5615,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5664,7 +5664,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5713,7 +5713,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5762,7 +5762,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5811,7 +5811,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5860,7 +5860,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5909,7 +5909,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -5958,7 +5958,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6007,7 +6007,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6031,7 +6031,7 @@
   },
   "commonName": "Korean maple",
   "variety": "Final Fire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191098528.jpg",
@@ -6105,7 +6105,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6154,7 +6154,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6203,7 +6203,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6252,7 +6252,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6301,7 +6301,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6350,7 +6350,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6399,7 +6399,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6448,7 +6448,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6497,7 +6497,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6546,7 +6546,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6595,7 +6595,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6619,7 +6619,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741984143650.jpg",
@@ -6644,9 +6644,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "4/12/2026",
+  "felledDate": "2026-04-12T00:00:00.000Z",
   "felledBy": "Landscape committee",
   "careNeeds": {
     "install": false,
@@ -6693,9 +6693,9 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "01/01/2021",
+  "felledDate": "2021-01-01T00:00:00.000Z",
   "felledBy": "Landscape committee",
   "careNeeds": {
     "install": false,
@@ -6742,7 +6742,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6791,7 +6791,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6840,7 +6840,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6889,7 +6889,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6938,7 +6938,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -6987,7 +6987,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7036,7 +7036,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7085,7 +7085,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7134,7 +7134,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7183,7 +7183,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7232,7 +7232,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7281,7 +7281,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7305,7 +7305,7 @@
   },
   "commonName": "Pin oak",
   "variety": "",
-  "dbh": "> 42",
+  "dbh": ">42",
   "notes": "Calculated age to mid 18th century\n2025: JTS recommends large mulch bed, not topsoil and seed\n2025: approx. 52” dbh",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751810282320.jpg",
@@ -7330,7 +7330,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "Wed Jan 01 1862 04:56:02 GMT+0000 (Coordinated Universal Time)",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7379,7 +7379,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7428,7 +7428,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7477,7 +7477,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7526,7 +7526,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7575,7 +7575,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7599,7 +7599,7 @@
   },
   "commonName": "Korean maple",
   "variety": "Final Fire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191990987.jpg",
@@ -7673,7 +7673,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7722,7 +7722,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7771,7 +7771,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7820,7 +7820,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7869,7 +7869,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7918,7 +7918,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -7967,7 +7967,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8016,7 +8016,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2019",
+  "installedDate": "<2019",
   "installedBy": "Landscape committe",
   "felledDate": "",
   "felledBy": "",
@@ -8065,7 +8065,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2022-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -8114,7 +8114,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8138,7 +8138,7 @@
   },
   "commonName": "Siberian elm",
   "variety": "",
-  "dbh": "",
+  "dbh": "6-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -8163,7 +8163,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8212,7 +8212,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8261,7 +8261,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8285,7 +8285,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee chief",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "May have died in 2024",
   "photos": {
     "bark": "",
@@ -8312,7 +8312,7 @@
   },
   "installedDate": "2021-01-06T05:00:00.000Z",
   "installedBy": "Oakland Nursery",
-  "felledDate": "4/12/2025",
+  "felledDate": "2025-04-12T00:00:00.000Z",
   "felledBy": "Landscape committee",
   "careNeeds": {
     "install": false,
@@ -8359,7 +8359,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8408,7 +8408,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8432,7 +8432,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741983615846.jpg",
@@ -8457,7 +8457,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8506,7 +8506,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8555,7 +8555,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8604,7 +8604,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8653,7 +8653,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8702,7 +8702,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8751,7 +8751,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8800,7 +8800,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8849,7 +8849,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8898,7 +8898,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Grandview Heights",
   "felledDate": "",
   "felledBy": "",
@@ -8947,7 +8947,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -8996,7 +8996,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9045,7 +9045,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9094,7 +9094,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Grandview Heights",
   "felledDate": "",
   "felledBy": "",
@@ -9143,7 +9143,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9192,7 +9192,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2022-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -9241,7 +9241,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9290,7 +9290,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9339,7 +9339,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9388,7 +9388,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9437,7 +9437,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9486,7 +9486,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9535,9 +9535,9 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "< 2023",
+  "felledDate": "<2023",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -9584,7 +9584,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9633,7 +9633,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9682,7 +9682,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9731,7 +9731,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9780,7 +9780,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9804,7 +9804,7 @@
   },
   "commonName": "Swamp white oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Flow",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187439261.jpg",
@@ -9878,7 +9878,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9927,7 +9927,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9976,7 +9976,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10025,7 +10025,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10074,7 +10074,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10123,7 +10123,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10172,7 +10172,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10221,7 +10221,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10245,7 +10245,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191813870.jpg",
@@ -10270,7 +10270,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "03/01/2024",
+  "installedDate": "2024-03-01T05:00:00.000Z",
   "installedBy": "Joseph Tree Service",
   "felledDate": "",
   "felledBy": "",
@@ -10319,7 +10319,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10368,7 +10368,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10417,7 +10417,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10441,7 +10441,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1752609870191.jpg",
@@ -10466,8 +10466,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4/1/2019",
-  "installedBy": "Terra",
+  "installedDate": "2019-04-01T00:00:00.000Z",
+  "installedBy": "Landscapes by Terra",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
@@ -10515,7 +10515,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10564,7 +10564,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10613,7 +10613,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10662,7 +10662,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10711,7 +10711,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10760,7 +10760,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10809,7 +10809,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10858,7 +10858,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10907,7 +10907,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -10929,9 +10929,9 @@
   "_id": {
     "$oid": "6867cb0543153949171ff7a6"
   },
-  "commonName": "Sweetbay",
+  "commonName": "Sweetbay magnolia",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "2019: 1/3 of the tree lost\n2024: 1/3 of the tree lost",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191522459.jpg",
@@ -10956,7 +10956,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11005,7 +11005,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2021-01-01T05:00:00.000Z",
   "felledBy": "Brightview",
@@ -11054,7 +11054,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11103,7 +11103,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11152,7 +11152,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11201,9 +11201,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "6/1/2025",
+  "felledDate": "2025-06-01T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -11250,7 +11250,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11274,7 +11274,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "",
+  "dbh": "12-18",
   "notes": "Died",
   "photos": {
     "bark": "",
@@ -11299,7 +11299,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2021-01-01T05:00:00.000Z",
   "felledBy": "Landscape committee",
@@ -11348,7 +11348,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11397,7 +11397,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11446,7 +11446,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11470,7 +11470,7 @@
   },
   "commonName": "Pin oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by P'Liz Koelker\n2024: deer killed main leader; attempting to train new leader",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743188492523.jpg",
@@ -11495,8 +11495,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "01/09/2022",
-  "installedBy": "Landscape Committee",
+  "installedDate": "2022-01-09T05:00:00.000Z",
+  "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
@@ -11544,7 +11544,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11593,7 +11593,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11642,7 +11642,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11691,7 +11691,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2021-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -11715,7 +11715,7 @@
   },
   "commonName": "American basswood",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741982635263.jpg",
@@ -11740,7 +11740,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11789,7 +11789,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11838,7 +11838,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11862,7 +11862,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741810286744.jpg",
@@ -11887,7 +11887,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11936,7 +11936,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -11985,7 +11985,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12034,7 +12034,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12083,7 +12083,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12132,7 +12132,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12181,7 +12181,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12230,7 +12230,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "Grandview Heights",
   "felledDate": "",
   "felledBy": "",
@@ -12279,7 +12279,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12328,7 +12328,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2023-01-06T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
@@ -12377,7 +12377,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12426,7 +12426,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12450,7 +12450,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741982052902.jpg",
@@ -12475,7 +12475,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12524,7 +12524,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12573,7 +12573,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12622,7 +12622,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12671,8 +12671,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4/1/2019",
-  "installedBy": "Terra",
+  "installedDate": "2019-04-01T00:00:00.000Z",
+  "installedBy": "Landscapes by Terra",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
@@ -12720,7 +12720,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12744,7 +12744,7 @@
   },
   "commonName": "Sugar maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741983062285.jpg",
@@ -12769,7 +12769,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12793,7 +12793,7 @@
   },
   "commonName": "Siberian elm",
   "variety": "",
-  "dbh": "",
+  "dbh": "6-12",
   "notes": "12 sisters",
   "photos": {
     "bark": "",
@@ -12818,7 +12818,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12867,7 +12867,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -12916,9 +12916,9 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
-  "felledDate": "1/19/2025",
+  "felledDate": "2025-01-19T05:00:00.000Z",
   "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "install": false,
@@ -12940,7 +12940,7 @@
   },
   "commonName": "Saucer magnolia",
   "variety": "",
-  "dbh": "> 42",
+  "dbh": ">42",
   "notes": "Quadruple trunk\n2021: Poorly pruned by unauthorized person",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743188068482.jpg",
@@ -12965,7 +12965,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13014,7 +13014,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13063,7 +13063,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13112,7 +13112,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13161,7 +13161,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13185,7 +13185,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by FLOW",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743106093041.jpg",
@@ -13210,7 +13210,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "8/1/2024",
+  "installedDate": "2024-08-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -13259,7 +13259,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13308,7 +13308,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13357,7 +13357,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13406,7 +13406,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13455,7 +13455,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13504,7 +13504,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13553,7 +13553,7 @@
     "proximateStructure": true,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13602,7 +13602,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13651,7 +13651,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13700,7 +13700,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13749,7 +13749,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "2021-01-01T05:00:00.000Z",
   "felledBy": "Landscape committee",
@@ -13798,7 +13798,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13847,7 +13847,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13896,7 +13896,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -13920,7 +13920,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "May have died in 2024",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742414899315.jpg",
@@ -13947,7 +13947,7 @@
   },
   "installedDate": "2021-01-06T05:00:00.000Z",
   "installedBy": "Oakland Nursery",
-  "felledDate": "4/12/2025",
+  "felledDate": "2025-04-12T05:00:00.000Z",
   "felledBy": "Landscape committee",
   "careNeeds": {
     "install": false,
@@ -13969,7 +13969,7 @@
   },
   "commonName": "Norway maple",
   "variety": "Crimson sunset",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Lisa Doonan in honor of her mother. No plaque.",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741634785941.jpg",
@@ -14018,7 +14018,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751992026422.jpg",
@@ -14043,7 +14043,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14092,7 +14092,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14141,7 +14141,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14190,7 +14190,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14239,7 +14239,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14288,7 +14288,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14337,7 +14337,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14386,7 +14386,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14410,7 +14410,7 @@
   },
   "commonName": "Swamp white oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187580493.jpg",
@@ -14435,7 +14435,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "8/1/2024",
+  "installedDate": "2024-08-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -14484,7 +14484,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14533,7 +14533,7 @@
     "proximateStructure": true,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14582,7 +14582,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14631,7 +14631,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14680,7 +14680,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14729,7 +14729,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -14753,7 +14753,7 @@
   },
   "commonName": "Japanese maple",
   "variety": "Bloodgood",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14778,7 +14778,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4 May 2025",
+  "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -14827,7 +14827,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4 May 2025",
+  "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -14851,7 +14851,7 @@
   },
   "commonName": "Paperbark maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14876,7 +14876,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4 May 2025",
+  "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -14899,8 +14899,8 @@
     "$oid": "6867cb0543153949171ff7fb"
   },
   "commonName": "Blue spruce",
-  "variety": "Baby blue eyes",
-  "dbh": "< 3",
+  "variety": "Baby Blue Eyes",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14925,7 +14925,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "9/5/2025",
+  "installedDate": "2025-09-05T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -14949,7 +14949,7 @@
   },
   "commonName": "Blue spruce",
   "variety": "Baby blue eyes",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14974,7 +14974,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "9/5/2025",
+  "installedDate": "2025-09-05T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -14998,7 +14998,7 @@
   },
   "commonName": "Austrian pine",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15023,7 +15023,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "5/9/2025",
+  "installedDate": "2025-05-09T00:00:00.000Z",
   "installedBy": "Oakland nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -15047,7 +15047,7 @@
   },
   "commonName": "Limber pine",
   "variety": "Vanderwolf's pyramid",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15072,7 +15072,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "5/9/2025",
+  "installedDate": "2025-05-09T05:00:00.000Z",
   "installedBy": "Oakland Nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -15096,7 +15096,7 @@
   },
   "commonName": "Blue spruce",
   "variety": "Fat Albert",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15121,7 +15121,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15145,7 +15145,7 @@
   },
   "commonName": "Limber pine",
   "variety": "Vanderwolf's pyramid",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15170,7 +15170,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "5/9/2025",
+  "installedDate": "2025-05-09T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -15219,7 +15219,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15243,7 +15243,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15268,7 +15268,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15317,7 +15317,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15366,7 +15366,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15488,7 +15488,7 @@
   },
   "commonName": "Norway maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1749671836902.jpg",
@@ -15513,7 +15513,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15562,7 +15562,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15587,7 +15587,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751657869975.jpg",
@@ -15612,7 +15612,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15637,7 +15637,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Multi stem",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751658025389.jpg",
@@ -15662,7 +15662,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2024",
+  "installedDate": "<2024",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15712,7 +15712,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15762,7 +15762,7 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15812,7 +15812,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15862,7 +15862,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15912,7 +15912,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "< 2018",
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -15937,7 +15937,7 @@
   },
   "commonName": "Ginkgo",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751991808152.jpg",
@@ -15962,7 +15962,7 @@
     "proximateStructure": false,
     "proximateFence": true
   },
-  "installedDate": "6/1/2023",
+  "installedDate": "2023-06-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
   "felledDate": "",
   "felledBy": "",
@@ -15985,7 +15985,7 @@
   "_id": {
     "$oid": "6876b3945222c25b64a750d9"
   },
-  "commonName": "Sweetbay",
+  "commonName": "Sweetbay magnolia",
   "variety": "",
   "dbh": "36-42",
   "notes": "Multistem",
@@ -16012,8 +16012,8 @@
     "proximateStructure": false,
     "proximateFence": false
   },
-  "installedDate": "4/1/2019",
-  "installedBy": "Terra",
+  "installedDate": "2019-04-01T00:00:00.000Z",
+  "installedBy": "Landscapes by Terra",
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
