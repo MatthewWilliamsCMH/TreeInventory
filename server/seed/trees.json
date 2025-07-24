@@ -21,7 +21,7 @@
     "northing": 39.9780121271498,
     "easting": -83.05045947432518
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -315,7 +315,7 @@
     "northing": 39.9777438414941,
     "easting": -83.05042818711314
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -799,13 +799,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97691601114173,
     "easting": -83.05003284149106
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -903,7 +903,7 @@
     "northing": 39.97790319200712,
     "easting": -83.05047690868379
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1148,7 +1148,7 @@
     "northing": 39.97809567625855,
     "easting": -83.05044310990957
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1295,7 +1295,7 @@
     "northing": 39.9777373839004,
     "easting": -83.0502524183371
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1344,7 +1344,7 @@
     "northing": 39.97791235524,
     "easting": -83.05029373964602
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1681,13 +1681,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1749129025974.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-06-05T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977810704541355,
-    "easting": -83.05048428475858
+    "northing": 39.97781070250499,
+    "easting": -83.05047824978828
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -1736,7 +1736,7 @@
     "northing": 39.97805169358479,
     "easting": -83.05047154426576
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2373,7 +2373,7 @@
     "northing": 39.97786208804091,
     "easting": -83.05047824978828
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -2716,7 +2716,7 @@
     "northing": 39.9779612600905,
     "easting": -83.05046685039999
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3040,7 +3040,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff6fd"
   },
-  "commonName": "European linden",
+  "commonName": "Common linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -3298,13 +3298,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1752610941689.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-15T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978050536770695,
     "easting": -83.05031446740033
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -3347,13 +3347,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-10-23T12:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978028569291446,
     "easting": -83.05048160254957
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4137,7 +4137,7 @@
     "northing": 39.97791012240736,
     "easting": -83.05044046857527
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4186,7 +4186,7 @@
     "northing": 39.9778276042836,
     "easting": -83.0503548867174
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4265,7 +4265,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff716"
   },
-  "commonName": "European linden",
+  "commonName": "Common linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -4382,7 +4382,7 @@
     "northing": 39.977865426412656,
     "easting": -83.0504567921162
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4431,7 +4431,7 @@
     "northing": 39.97786068994755,
     "easting": -83.05017669510603
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4627,7 +4627,7 @@
     "northing": 39.977884687693006,
     "easting": -83.05020507574656
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4817,7 +4817,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1743189467091.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-04T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977350300570215,
@@ -4841,11 +4841,11 @@
     "routinePrune": false,
     "trainingPrune": false,
     "priorityPrune": false,
-    "pestTreatment": true,
+    "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false
+    "removeStump": true
   },
   "hidden": false
 },
@@ -5160,13 +5160,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741635654898.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-10T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97857220871834,
     "easting": -83.04867446422578
   },
-  "garden": "",
+  "garden": "Parking-lot beds and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": true,
@@ -5215,7 +5215,7 @@
     "northing": 39.97772474956322,
     "easting": -83.05034386069553
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6244,7 +6244,7 @@
     "northing": 39.97808920147873,
     "easting": -83.05047355592252
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6293,7 +6293,7 @@
     "northing": 39.97788335244315,
     "easting": -83.05024538518383
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -6783,7 +6783,7 @@
     "northing": 39.9778355325204,
     "easting": -83.05026165282541
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7126,7 +7126,7 @@
     "northing": 39.97806436074177,
     "easting": -83.05043334848008
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -7861,7 +7861,7 @@
     "northing": 39.977880070831205,
     "easting": -83.05048227310182
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -8051,13 +8051,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-01-01T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97722286734376,
     "easting": -83.04964341223241
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -9037,7 +9037,7 @@
     "northing": 39.97776886178739,
     "easting": -83.0503706413784
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -9178,13 +9178,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-01-01T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977098015097035,
     "easting": -83.05003032088283
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -9576,7 +9576,7 @@
     "northing": 39.977898826162395,
     "easting": -83.05027324599577
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10115,7 +10115,7 @@
     "northing": 39.9780193222418,
     "easting": -83.05048026144506
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10158,13 +10158,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1749843558244.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-13T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97776229612953,
     "easting": -83.05020985717239
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -10207,13 +10207,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751994701118.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-08T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977047646269355,
     "easting": -83.04951265454292
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -10360,7 +10360,7 @@
     "northing": 39.97808611867919,
     "easting": -83.05048026144506
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10605,7 +10605,7 @@
     "northing": 39.97794276076775,
     "easting": -83.05048562586308
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10850,7 +10850,7 @@
     "northing": 39.97772474956322,
     "easting": -83.05043393664161
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -10929,7 +10929,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff7a6"
   },
-  "commonName": "Sweetbay magnolia",
+  "commonName": "Sweetbay",
   "variety": "",
   "dbh": "< 3",
   "notes": "2019: 1/3 of the tree lost\n2024: 1/3 of the tree lost",
@@ -10991,13 +10991,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-01-01T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97737085429418,
     "easting": -83.04927125573158
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11242,7 +11242,7 @@
     "northing": 39.97789532109209,
     "easting": -83.05030008156326
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11530,13 +11530,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1748560373925.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-05-29T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97722903347309,
     "easting": -83.04942950606346
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11677,13 +11677,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-01-01T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97694375242614,
     "easting": -83.04976715418337
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11977,7 +11977,7 @@
     "northing": 39.978064797220604,
     "easting": -83.0504400137127
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12026,7 +12026,7 @@
     "northing": 39.97785386615867,
     "easting": -83.05048562586308
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12075,7 +12075,7 @@
     "northing": 39.97792013627921,
     "easting": -83.05023467511865
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12118,13 +12118,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751994342755.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-08T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97700551092931,
     "easting": -83.04975204169752
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -12314,13 +12314,13 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2024-12-29T05:00:00.000Z"
+    "$date": "2025-07-24T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97698944254429,
     "easting": -83.04999474679255
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12706,7 +12706,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741808403603.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-12T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978167306336154,
@@ -12733,7 +12733,7 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
   "hidden": false
@@ -13349,7 +13349,7 @@
     "northing": 39.97778911964976,
     "easting": -83.05045142769815
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -13447,7 +13447,7 @@
     "northing": 39.97781712128366,
     "easting": -83.05024485032285
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -13784,13 +13784,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751993975800.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-08T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97687242474568,
     "easting": -83.04976813495159
   },
-  "garden": "",
+  "garden": "South lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -13839,7 +13839,7 @@
     "northing": 39.977984893946086,
     "easting": -83.05049031972887
   },
-  "garden": "",
+  "garden": "Woodland garden and west lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -15205,13 +15205,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1748005583086.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-05-23T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97708130313815,
     "easting": -83.04847933351995
   },
-  "garden": "",
+  "garden": "Hosta bed and east lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15243,7 +15243,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "",
+  "dbh": "< 3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15254,7 +15254,7 @@
     "environs": ""
   },
   "lastUpdated": {
-    "$date": "2025-05-29T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97718175980065,
@@ -15306,8 +15306,8 @@
     "$date": "2025-06-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977530013760465,
-    "easting": -83.0504634976387
+    "northing": 39.97753014544517,
+    "easting": -83.05048696696758
   },
   "garden": "Woodland garden and west lawn",
   "siteInfo": {
@@ -15401,13 +15401,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1749585544379.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-10T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97792991321469,
     "easting": -83.04851420223713
   },
-  "garden": "",
+  "garden": "Hosta bed and east lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15499,13 +15499,13 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1749671858558.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-11T00:00:00.000Z"
+    "$date": "2025-07-23T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97746488750239,
     "easting": -83.04883975535633
   },
-  "garden": "",
+  "garden": "Ravine",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15985,7 +15985,7 @@
   "_id": {
     "$oid": "6876b3945222c25b64a750d9"
   },
-  "commonName": "Sweetbay magnolia",
+  "commonName": "Sweetbay",
   "variety": "",
   "dbh": "36-42",
   "notes": "Multistem",
