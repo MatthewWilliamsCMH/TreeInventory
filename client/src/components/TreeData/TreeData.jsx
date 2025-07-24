@@ -365,11 +365,12 @@ const TreeData = () => {
                     : []
                   }
                   placeholder="Common name"
+                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     commonNameInput
                       ? [{ label: commonNameInput, value: commonNameInput }]
                       : updatedTree.commonName
-                        ? [{ label: updatedTree.commonName, value: updatedTree.commonName }]
+                        ? [{ label: `Common name: ${updatedTree.commonName}`, value: updatedTree.commonName }]
                         : []
                   }
                 />
@@ -414,11 +415,12 @@ const TreeData = () => {
                       : []
                   }
                   placeholder="Scientific name"
+                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     scientificNameInput
                       ? [{ label: scientificNameInput, value: scientificNameInput }]
                       : updatedTree.scientificName
-                        ? [{ label: updatedTree.scientificName, value: updatedTree.scientificName }]
+                        ? [{ label: `Scientific name: ${updatedTree.scientificName}`, value: updatedTree.scientificName }]
                         : []
                   }
                 />
@@ -437,9 +439,10 @@ const TreeData = () => {
                     value: dbh
                   }))}
                   placeholder = 'DBH'
+                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected = {
                     updatedTree.dbh
-                      ? [{ label: updatedTree.dbh, value: updatedTree.dbh }]
+                      ? [{ label: `Diameter: ${updatedTree.dbh}`, value: updatedTree.dbh }]
                       : []
                   }
                 />
@@ -467,9 +470,10 @@ const TreeData = () => {
                   id = 'installedDate'
                   className = 'mb-1'
                   onChange = {(event) => handleDefaultInputChange('installedDate', event)}
-                  placeholder = {`Installed date ('MM/DD/YYYY,' 'YYYY,' or '< YYYY')`}
+                  placeholder = {`Installed date ('MM/DD/YYYY' or '<YYYY')`}
                   type = 'text'
-                  value = {installedDateInput}
+                  //need to make this a condition so that "Installed:" is only displayed if there is a value"
+                  value = { installedDateInput ? `Installed on: ${installedDateInput}` : '' }
                 />
                 <Form.Control
                   id = 'installedBy'
@@ -477,15 +481,15 @@ const TreeData = () => {
                   onChange = {(event) => handleDefaultInputChange('installedBy', event)}
                   placeholder = {'Installed by'}
                   type = 'text'
-                  value = {updatedTree.installedBy}
+                  value = {updatedTree.installedBy ? `Installed by: ${updatedTree.installedBy}` : ''}
                 />
                 <Form.Control
                   id = 'felledDate'
                   className = 'mb-1'
                   onChange = {(event) => handleDefaultInputChange('felledDate', event)}
-                  placeholder = {`Felled date ('MM/DD/YYYY,' 'YYYY,' or '< YYYY')`}
+                  placeholder = {`Felled date ('MM/DD/YYYY' or '<YYYY')`}
                   type = 'text'
-                  value = {felledDateInput}
+                  value = {felledDateInput ? `Felled on: ${felledDateInput}` : ''}
                 />
                 <Form.Control
                   id = 'felledBy'
@@ -493,7 +497,7 @@ const TreeData = () => {
                   onChange = {(event) => handleDefaultInputChange('felledBy', event)}
                   placeholder = {'Felled by'}
                   type = 'text'
-                  value = {updatedTree.felledBy}
+                  value = {updatedTree.felledBy ? `Felled by: ${updatedTree.felledBy}` : ''}
                 />
                 <Form.Group className = 'mt-2'>
                   <Row>
@@ -528,9 +532,10 @@ const TreeData = () => {
                     value: garden
                   }))}
                   placeholder = 'Garden'
+                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected = {
                     updatedTree.garden
-                      ? [{ label: updatedTree.garden, value: updatedTree.garden }]
+                      ? [{ label: `Garden: ${updatedTree.garden}`, value: updatedTree.garden }]
                       : []
                   }
                 />

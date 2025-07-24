@@ -249,7 +249,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191894481.jpg",
@@ -1001,7 +1001,7 @@
     "northing": 39.97703274474963,
     "easting": -83.0484585464001
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -1050,7 +1050,7 @@
     "northing": 39.977603624786454,
     "easting": -83.04826743900776
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -1768,7 +1768,7 @@
   },
   "commonName": "European beech",
   "variety": "Tricolor",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741547287989.jpg",
@@ -1883,7 +1883,7 @@
     "northing": 39.97698804017097,
     "easting": -83.04839685559273
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -1981,7 +1981,7 @@
     "northing": 39.97753477002142,
     "easting": -83.04839417338373
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -2454,7 +2454,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Transplanted sapling from ravine",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742249717515.jpg",
@@ -2503,7 +2503,7 @@
   },
   "commonName": "Sugar maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742413587584.jpg",
@@ -2895,7 +2895,7 @@
   },
   "commonName": "Weeping cherry",
   "variety": "Weeping extraordinaire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Paul Hysell and Elizabeth Chrisman in memory of Bob Chrisman; plaque:",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741632351506.jpg",
@@ -3140,7 +3140,7 @@
   },
   "commonName": "American sycamore",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by P'Liz Koelker",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751810537135.jpg",
@@ -3483,7 +3483,7 @@
   },
   "commonName": "Black cherry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Seedling donated by FLOW\nBlack cherry?",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187021794.jpg",
@@ -3794,7 +3794,7 @@
     "northing": 39.9781303100598,
     "easting": -83.04826006293298
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -3843,7 +3843,7 @@
     "northing": 39.977584612656784,
     "easting": -83.04822519421579
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -4039,7 +4039,7 @@
     "northing": 39.9776169846582,
     "easting": -83.04841965436937
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -4578,7 +4578,7 @@
     "northing": 39.977182273645084,
     "easting": -83.04849073290825
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -4676,7 +4676,7 @@
     "northing": 39.976933058637535,
     "easting": -83.04841563105585
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -4855,7 +4855,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Died in 2023",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741984052771.jpg",
@@ -5068,7 +5068,7 @@
     "northing": 39.97803525009116,
     "easting": -83.04833985865116
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -5460,7 +5460,7 @@
     "northing": 39.97777267835557,
     "easting": -83.04823458194734
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -6031,7 +6031,7 @@
   },
   "commonName": "Korean maple",
   "variety": "Final Fire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191098528.jpg",
@@ -6440,7 +6440,7 @@
     "northing": 39.97793607928023,
     "easting": -83.04826810956003
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": true,
@@ -6619,7 +6619,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741984143650.jpg",
@@ -6930,7 +6930,7 @@
     "northing": 39.977708448325394,
     "easting": -83.04822586476804
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -7175,7 +7175,7 @@
     "northing": 39.97790987349788,
     "easting": -83.04829962551594
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": true,
@@ -7224,7 +7224,7 @@
     "northing": 39.97791449804843,
     "easting": -83.04826609790327
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": true,
@@ -7305,7 +7305,7 @@
   },
   "commonName": "Pin oak",
   "variety": "",
-  "dbh": "> 42",
+  "dbh": ">42",
   "notes": "Calculated age to mid 18th century\n2025: JTS recommends large mulch bed, not topsoil and seed\n2025: approx. 52” dbh",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751810282320.jpg",
@@ -7518,7 +7518,7 @@
     "northing": 39.97766734107438,
     "easting": -83.04824061691762
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -7599,7 +7599,7 @@
   },
   "commonName": "Korean maple",
   "variety": "Final Fire",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191990987.jpg",
@@ -8106,7 +8106,7 @@
     "northing": 39.97787647395675,
     "easting": -83.04826207458974
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": true,
@@ -8285,7 +8285,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee chief",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "May have died in 2024",
   "photos": {
     "bark": "",
@@ -8432,7 +8432,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741983615846.jpg",
@@ -8939,7 +8939,7 @@
     "northing": 39.977666827233584,
     "easting": -83.04825335741045
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -9135,7 +9135,7 @@
     "northing": 39.97777987211519,
     "easting": -83.04823592305185
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -9804,7 +9804,7 @@
   },
   "commonName": "Swamp white oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Flow",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187439261.jpg",
@@ -9821,7 +9821,7 @@
     "northing": 39.97742223857701,
     "easting": -83.04833114147188
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -10245,7 +10245,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191813870.jpg",
@@ -10441,7 +10441,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1752609870191.jpg",
@@ -10899,7 +10899,7 @@
     "northing": 39.97769149158736,
     "easting": -83.04847329854967
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -10931,7 +10931,7 @@
   },
   "commonName": "Sweetbay magnolia",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "2019: 1/3 of the tree lost\n2024: 1/3 of the tree lost",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191522459.jpg",
@@ -11144,7 +11144,7 @@
     "northing": 39.977607735516514,
     "easting": -83.04825402796268
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -11291,7 +11291,7 @@
     "northing": 39.9772114166842,
     "easting": -83.04850989560663
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -11470,7 +11470,7 @@
   },
   "commonName": "Pin oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by P'Liz Koelker\n2024: deer killed main leader; attempting to train new leader",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743188492523.jpg",
@@ -11585,7 +11585,7 @@
     "northing": 39.977133972250726,
     "easting": -83.04842032492161
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -11715,7 +11715,7 @@
   },
   "commonName": "American basswood",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741982635263.jpg",
@@ -11830,7 +11830,7 @@
     "northing": 39.977807105626894,
     "easting": -83.04824061691762
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -11862,7 +11862,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741810286744.jpg",
@@ -11879,7 +11879,7 @@
     "northing": 39.97780402258837,
     "easting": -83.0482392758131
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -12450,7 +12450,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741982052902.jpg",
@@ -12712,7 +12712,7 @@
     "northing": 39.978167306336154,
     "easting": -83.04826140403749
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": false,
     "overheadLines": false,
@@ -12744,7 +12744,7 @@
   },
   "commonName": "Sugar maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741983062285.jpg",
@@ -12859,7 +12859,7 @@
     "northing": 39.97784153288089,
     "easting": -83.04843038320543
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -12940,7 +12940,7 @@
   },
   "commonName": "Saucer magnolia",
   "variety": "",
-  "dbh": "> 42",
+  "dbh": ">42",
   "notes": "Quadruple trunk\n2021: Poorly pruned by unauthorized person",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743188068482.jpg",
@@ -13185,7 +13185,7 @@
   },
   "commonName": "Common hackberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by FLOW",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743106093041.jpg",
@@ -13398,7 +13398,7 @@
     "northing": 39.97775212475247,
     "easting": -83.04823458194734
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -13643,7 +13643,7 @@
     "northing": 39.97772746042061,
     "easting": -83.0482453107834
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -13920,7 +13920,7 @@
   },
   "commonName": "Flowering dogwood",
   "variety": "Cherokee princess",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "May have died in 2024",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1742414899315.jpg",
@@ -13969,7 +13969,7 @@
   },
   "commonName": "Norway maple",
   "variety": "Crimson sunset",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Donated by Lisa Doonan in honor of her mother. No plaque.",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741634785941.jpg",
@@ -14018,7 +14018,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751992026422.jpg",
@@ -14410,7 +14410,7 @@
   },
   "commonName": "Swamp white oak",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187580493.jpg",
@@ -14427,7 +14427,7 @@
     "northing": 39.97728452861204,
     "easting": -83.04837271571161
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": true,
@@ -14753,7 +14753,7 @@
   },
   "commonName": "Japanese maple",
   "variety": "Bloodgood",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14851,7 +14851,7 @@
   },
   "commonName": "Paperbark maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14900,7 +14900,7 @@
   },
   "commonName": "Blue spruce",
   "variety": "Baby Blue Eyes",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14949,7 +14949,7 @@
   },
   "commonName": "Blue spruce",
   "variety": "Baby blue eyes",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -14998,7 +14998,7 @@
   },
   "commonName": "Austrian pine",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15047,7 +15047,7 @@
   },
   "commonName": "Limber pine",
   "variety": "Vanderwolf's pyramid",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15096,7 +15096,7 @@
   },
   "commonName": "Blue spruce",
   "variety": "Fat Albert",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15145,7 +15145,7 @@
   },
   "commonName": "Limber pine",
   "variety": "Vanderwolf's pyramid",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15211,7 +15211,7 @@
     "northing": 39.97708130313815,
     "easting": -83.04847933351995
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15243,7 +15243,7 @@
   },
   "commonName": "White mulberry",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "",
@@ -15358,7 +15358,7 @@
     "northing": 39.97785026815153,
     "easting": -83.04829157888891
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15407,7 +15407,7 @@
     "northing": 39.97792991321469,
     "easting": -83.04851420223713
   },
-  "garden": "Hosta bed and east lawn",
+  "garden": "East bed and lawn",
   "siteInfo": {
     "slope": true,
     "overheadLines": false,
@@ -15488,7 +15488,7 @@
   },
   "commonName": "Norway maple",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1749671836902.jpg",
@@ -15587,7 +15587,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751657869975.jpg",
@@ -15637,7 +15637,7 @@
   },
   "commonName": "Eastern redbud",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "Multi stem",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751658025389.jpg",
@@ -15937,7 +15937,7 @@
   },
   "commonName": "Ginkgo",
   "variety": "",
-  "dbh": "< 3",
+  "dbh": "<3",
   "notes": "",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751991808152.jpg",

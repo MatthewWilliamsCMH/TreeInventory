@@ -1,5 +1,5 @@
 export const dbhList = [
-  '< 3', 
+  '<3', 
   '3-6', 
   '6-12', 
   '12-18', 
@@ -7,7 +7,7 @@ export const dbhList = [
   '24-30', 
   '30-36', 
   '36-42', 
-  '> 42' 
+  '>42' 
 ];
 
 export const gardenList = [
@@ -17,7 +17,7 @@ export const gardenList = [
   'Fire pit',
   'Glenn garden and lawn',
   'Goodale entrance beds',
-  'Hosta bed and east lawn',
+  'East bed and lawn',
   'Main sign bed',
   'Meditation garden',
   'Parking-lot beds and lawn',
