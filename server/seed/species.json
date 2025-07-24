@@ -161,7 +161,7 @@
   "scientificName": "Ulmus americana",
   "nonnative": false,
   "invasive": false,
-  "markerColor": "#1976d2"
+  "markerColor": "#43a047"
 },
 {
   "_id": {
@@ -172,7 +172,7 @@
   "scientificName": "Ulmus rubra",
   "nonnative": false,
   "invasive": false,
-  "markerColor": "#1976d2"
+  "markerColor": "#43a047"
 },
 {
   "_id": {
@@ -346,7 +346,7 @@
   "family": "Fabaceae",
   "commonName": "Black locust",
   "scientificName": "Robinia pseudoacacia",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "markerColor": "#b71c1c"
 },
@@ -377,7 +377,7 @@
     "$oid": "682097c59b8504292e4aa25a"
   },
   "family": "Magnoliaceae",
-  "commonName": "Sweetbay",
+  "commonName": "Sweetbay magnolia",
   "scientificName": "Magnolia virginiana",
   "nonnative": false,
   "invasive": false,
@@ -402,7 +402,7 @@
   "commonName": "White mulberry",
   "scientificName": "Morus alba",
   "nonnative": true,
-  "invasive": false,
+  "invasive": true,
   "markerColor": "#9575cd"
 },
 {
@@ -500,7 +500,7 @@
   "family": "Moraceae",
   "commonName": "Osage-orange",
   "scientificName": "Maclura pomifera",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "markerColor": "#9575cd"
 },
@@ -511,7 +511,7 @@
   "family": "Pinaceae",
   "commonName": "Loblolly pine",
   "scientificName": "Pinus taeda",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "markerColor": "#81c784"
 },
@@ -586,11 +586,11 @@
     "$oid": "682097c59b8504292e4aa25d"
   },
   "family": "Malvaceae",
-  "commonName": "Common linden",
+  "commonName": "European linden",
   "scientificName": "Tilia x europaea",
   "nonnative": true,
   "invasive": false,
-  "markerColor": "#9575cd"
+  "markerColor": "#0097a7"
 },
 {
   "_id": {
@@ -656,7 +656,7 @@
   "scientificName": "Cornus florida",
   "nonnative": false,
   "invasive": false,
-  "markerColor": "#F6B060"
+  "markerColor": "#607d8b"
 },
 {
   "_id": {
@@ -698,9 +698,9 @@
   "family": "Malvaceae",
   "commonName": "Littleleaf linden",
   "scientificName": "Tilia cordata",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
-  "markerColor": "#9575cd"
+  "markerColor": "#0097a7"
 },
 {
   "_id": {
@@ -720,7 +720,7 @@
   "family": "Rosaceae",
   "commonName": "Prairie crab apple",
   "scientificName": "Malus ioensis",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "markerColor": "#304ffe"
 },
@@ -753,7 +753,7 @@
   "family": "Sapindaceae",
   "commonName": "Paperbark maple",
   "scientificName": "Acer griseum",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "markerColor": "#f9a825"
 },
@@ -832,7 +832,7 @@
   "scientificName": "Tilia americana",
   "nonnative": false,
   "invasive": false,
-  "markerColor": "#9575cd"
+  "markerColor": "#0097a7"
 },
 {
   "_id": {
@@ -952,8 +952,8 @@
   "commonName": "Siberian elm",
   "scientificName": "Ulmus pumila",
   "nonnative": true,
-  "invasive": false,
-  "markerColor": "#1976d2"
+  "invasive": true,
+  "markerColor": "#43a047"
 },
 {
   "_id": {
@@ -1007,7 +1007,7 @@
   "commonName": "Trident maple",
   "scientificName": "Acer buergerianum",
   "markerColor": "#f9a825",
-  "nonnative": false,
+  "nonnative": true,
   "invasive": false,
   "__v": 0
 },
@@ -1015,12 +1015,12 @@
   "_id": {
     "$oid": "684c85163da2608696ba1875"
   },
-  "commonName": "Apple",
   "family": "Rosaceae",
-  "invasive": false,
-  "markerColor": "#304ffe",
-  "nonnative": false,
+  "commonName": "Apple",
   "scientificName": "Malus domestica",
+  "invasive": false,
+  "nonnative": true,
+  "markerColor": "#304ffe",
   "__v": 0
 },
 {
@@ -1031,7 +1031,15 @@
   "commonName": "Rock elm",
   "family": "Ulmaceae",
   "invasive": false,
-  "markerColor": "#1976d2",
+  "markerColor": "#43a047",
   "nonnative": false,
   "scientificName": "Ulmus thomasii"
+},
+{
+  "family": "Rosaceae",
+  "commonName": "American crabapple",
+  "scientificName": "Malus coronaria",
+  "invasive": false,
+  "nonnative": false,
+  "markerColor": "#304ffe"
 }]

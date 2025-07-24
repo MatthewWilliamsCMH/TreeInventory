@@ -51,43 +51,43 @@ export const careNeedsList = [
 ];
 
 export const markerColorList = [
-  '#ffcdd2',
-  '#ef9a9a',
+  '#ffcdd2', //Betulaceae//
+  '#ef9a9a', //Bignoniaceae//
   '#e57373',
-  '#f06292',
-  '#f44336',
-  '#b71c1c',
-  '#ad1457',
-  '#e1bee7',
-  '#ce93d8',
-  '#ab47bc',
-  '#aa00ff',
-  '#6a1b9a',
-  '#9575cd',
-  '#5e35b1',
+  '#f06292', //Cupressaceae//
+  '#f44336', //Ebanaceae//
+  '#b71c1c', //Fabaceae//
+  '#ad1457', //Fagaceae//
+  '#e1bee7', //Ginkgoaceae//
+  '#ce93d8', //Hamamelidaceae//
+  '#ab47bc', //Juglandaceae//
+  '#aa00ff', //Lauraceae//
+  '#6a1b9a', //Magnoliaceae//
+  '#9575cd', //Moraceae//
+  '#5e35b1', //Nyssaceae//
   '#6200ea',
   '#311b92',
   '#7986cb',
-  '#3f51b5',
-  '#304ffe',
-  '#283593',
+  '#3f51b5', //Platanaceae//
+  '#304ffe', //Rosaceae//
+  '#283593', //Salicaceae//
   '#90caf9',
-  '#42a5f5',
+  '#42a5f5', //Simaroubaceae//
   '#1976d2',
-  '#0d47a1',
+  '#0d47a1', //Viburnaceae//
   '#4fc3f7',
   '#0288d1',
   '#01579b',
   '#80deea',
   '#26c6da',
-  '#0097a7',
+  '#0097a7', //Malvaceae//
   '#006064',
   '#80cbc4',
   '#26a69a',
   '#00695c',
   '#1de9b8',
-  '#81c784',
-  '#43a047',
+  '#81c784', //Pinaceae//
+  '#43a047', //Ulmaceae//
   '#2e7d32',
   '#c5e1a5',
   '#7cb342',
@@ -96,9 +96,9 @@ export const markerColorList = [
   '#d4e157',
   '#afb42b',
   '#827717',
-  '#fff176',
+  '#fff176', //Oleaceae//
   '#fdd835',
-  '#f9a825',
+  '#f9a825', //Sapindaceae//
   '#f57f17',
   '#ffca28',
   '#ffa000',
@@ -106,7 +106,7 @@ export const markerColorList = [
   '#e64a19',
   '#bf360c',
   '#b0bec5',
-  '#607d8b',
+  '#607d8b', //Cornaceae//
   '#455a64',
   '#bcaaa4',
   '#8d6e63',

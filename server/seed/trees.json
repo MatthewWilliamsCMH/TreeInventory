@@ -3040,7 +3040,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff6fd"
   },
-  "commonName": "Common linden",
+  "commonName": "European linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -4265,7 +4265,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff716"
   },
-  "commonName": "Common linden",
+  "commonName": "European linden",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -10929,7 +10929,7 @@
   "_id": {
     "$oid": "6867cb0543153949171ff7a6"
   },
-  "commonName": "Sweetbay",
+  "commonName": "Sweetbay magnolia",
   "variety": "",
   "dbh": "< 3",
   "notes": "2019: 1/3 of the tree lost\n2024: 1/3 of the tree lost",
@@ -15985,7 +15985,7 @@
   "_id": {
     "$oid": "6876b3945222c25b64a750d9"
   },
-  "commonName": "Sweetbay",
+  "commonName": "Sweetbay magnolia",
   "variety": "",
   "dbh": "36-42",
   "notes": "Multistem",
