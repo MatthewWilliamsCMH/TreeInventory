@@ -1,6 +1,6 @@
 // --------- imports ----------
 //external libraries
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Container, Form, Row, Stack } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useOutletContext } from 'react-router-dom';
@@ -49,14 +49,14 @@ const FilterDrawer = ({filteredTrees}) => {
     return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
   }
 
-const columnCount = 2;
+  const columnCount = 2;
 
-const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
-  siteInfoList.filter((_, i) => i % columnCount === colIndex)
-);
+  const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
+    siteInfoList.filter((_, i) => i % columnCount === colIndex)
+  );
 
   //----------called functions----------
-  //typeaheads
+  //handle changes to the typeahead controls
   const handleTypeaheadChange = (selectedOptions, fieldName) => {
     const selectedValues = selectedOptions.map(option => option.value);
 
@@ -69,6 +69,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
       fullOptionList = gardenList;
     }
 
+    //handle "Select all" option
     if (selectedValues.includes('__ALL__')) {
       setFilterCriteria(prev => ({
         ...prev,
@@ -77,25 +78,20 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
       return;
     }
 
-    // if (selectedValues.includes('__NONE__')) {
-    //   setFilterCriteria(prev => ({
-    //     ...prev,
-    //     [fieldName]: []
-    //   }));
-    //   return;
-    // }
-
+    //handle selections other than "Select all"
     setFilterCriteria(prev => ({
       ...prev,
       [fieldName]: selectedValues
     }));
   };
 
+  //handle changes to the filter criteria
   const handleFilterChange = (event, category = null) => {
     const { name, type, value, checked } = event.target;
     const newValue = type === 'checkbox' ? checked : value;
 
     setFilterCriteria(prev => {
+      //nested toggles for careNeeds and siteInfo
       if (category) {
         return {
           ...prev,
@@ -105,6 +101,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
           }
         };
       } else {
+        //top-level toggles
         return {
           ...prev,
           [name]: newValue
@@ -137,7 +134,9 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
         width: '300px'
       }}
     >
+
       <Offcanvas.Title className = 'ms-3 mb-3'>Filter</Offcanvas.Title>
+
       <Offcanvas.Body>
         <Row>
           <Select 
@@ -159,11 +158,6 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             ]}
             placeholder = "Filter by species..."
             styles = {{
-              menu: base => ({
-                ...base,
-                backgroundColor: 'white',
-                color: 'black'
-              }),
               control: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -172,16 +166,9 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               }),
               option: (base, {isSelected}) => ({
                 ...base,
-                backgroundColor: isSelected ? '#cce5ff' : 'white',
+                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
                 color: 'black'
-              }),
-              multiValueLabel: base => ({
-                ...base,
-                color: 'black'
-              }),
-              multiValue: () => ({}), //hides tokens
-              multiValueLabel: () => ({}),
-              multiValueRemove: () => ({})
+              })
             }}
             value = {allSpecies
               .filter(species => filterCriteria.commonName?.includes(species.commonName))
@@ -191,6 +178,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               }))
             }
           />
+
           <Select 
             className = 'mt-1'
             clearButton = 'true'
@@ -210,11 +198,6 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             ]}
             placeholder = "Filter by diameter..."
             styles = {{
-              menu: base => ({
-                ...base,
-                backgroundColor: 'white',
-                color: 'black'
-              }),
               control: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -223,16 +206,9 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               }),
               option: (base, {isSelected}) => ({
                 ...base,
-                backgroundColor: isSelected ? '#cce5ff' : 'white',
+                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
                 color: 'black'
-              }),
-              multiValueLabel: base => ({
-                ...base,
-                color: 'black'
-              }),
-              multiValue: () => ({}), //hides tokens
-              multiValueLabel: () => ({}),
-              multiValueRemove: () => ({})
+              })
             }}
             value = {dbhList
               .filter(dbh => filterCriteria.dbh?.includes(dbh))
@@ -242,6 +218,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               }))
             }
           />
+
           <Select 
             className = 'mt-1'
             closeMenuOnSelect = {false}
@@ -260,11 +237,6 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             ]}
             placeholder = "Filter by garden..."
             styles = {{
-              menu: base => ({
-                ...base,
-                backgroundColor: 'white',
-                color: 'black'
-              }),
               control: base => ({
                 ...base,
                 backgroundColor: 'white',
@@ -273,16 +245,9 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
               }),
               option: (base, {isSelected}) => ({
                 ...base,
-                backgroundColor: isSelected ? '#cce5ff' : 'white',
+                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
                 color: 'black'
-              }),
-              multiValueLabel: base => ({
-                ...base,
-                color: 'black'
-              }),
-              multiValue: () => ({}), //hides tokens
-              multiValueLabel: () => ({}),
-              multiValueRemove: () => ({})
+              })
             }}
             value = {gardenList
               .filter(garden => filterCriteria.garden?.includes(garden))
@@ -293,6 +258,7 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
             }
           />
         </Row>
+
         <Row className = 'mt-3'>
           <legend className = 'text-white h5'>Care Needs</legend>
           {careNeedsList.map((need) => (
@@ -393,7 +359,6 @@ const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
         }}>
           {filteredTrees.length} trees
       </div>
-
       </Offcanvas.Body>
     </Offcanvas>
   )

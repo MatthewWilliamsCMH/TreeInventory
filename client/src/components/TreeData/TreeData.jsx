@@ -24,7 +24,7 @@ import styles from './treeData.module.css';
 
 const TreeData = () => {
   //-----------data reception and transmission----------
-  //get current global states using context
+  //get current global states from parent
   const { 
     allSpecies, setAllSpecies,
     refetchSpecies,
