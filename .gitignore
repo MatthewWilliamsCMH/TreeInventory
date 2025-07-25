@@ -16,6 +16,7 @@ node_modules
 dist
 dist-ssr
 *.local
+DB_Exports
 
 package-lock.json
 # Editor directories and files

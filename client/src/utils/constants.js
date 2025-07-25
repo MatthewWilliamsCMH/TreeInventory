@@ -34,7 +34,8 @@ export const siteInfoList = [
   'overheadLines',
   'treeCluster',
   'proximateStructure',
-  'proximateFence'
+  'proximateFence',
+  'propertyLine'
 ]
 
 export const careNeedsList = [

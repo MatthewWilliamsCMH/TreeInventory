@@ -26,7 +26,8 @@ const treeSchema = new Schema({
     overheadLines: { type: Boolean, required: true, default: false },
     treeCluster: { type: Boolean, required: true, default: false },
     proximateStructure: { type: Boolean, required: true, default: false },
-    proximateFence: { type: Boolean, required: true, default: false }
+    proximateFence: { type: Boolean, required: true, default: false },
+    propertyLine: { type: Boolean, required: true, default: false }
   },
   installedDate: { type: String },
   installedBy: { type: String },

@@ -58,6 +58,7 @@ export const ADD_TREE = gql`
         treeCluster
         proximateStructure
         proximateFence
+        propertyLine
       }
       lastUpdated
       installedDate

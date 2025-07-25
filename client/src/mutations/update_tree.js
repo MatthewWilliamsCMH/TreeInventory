@@ -55,6 +55,7 @@ export const UPDATE_TREE = gql`
         treeCluster
         proximateStructure
         proximateFence
+        propertyLine
       }
       lastUpdated
       installedDate

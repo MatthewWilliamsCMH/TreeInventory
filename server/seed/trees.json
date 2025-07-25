@@ -27,7 +27,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -76,7 +77,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -125,7 +127,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2019",
   "installedBy": "Landscape committe",
@@ -174,7 +177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -223,7 +227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2019",
   "installedBy": "Landscape committee",
@@ -272,7 +277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2024-03-01T05:00:00.000Z",
   "installedBy": "",
@@ -321,7 +327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -370,7 +377,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -419,7 +427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2019",
   "installedBy": "Landscape committee",
@@ -468,7 +477,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -517,7 +527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -566,7 +577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -615,7 +627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -664,7 +677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -713,7 +727,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -762,7 +777,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -811,7 +827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -860,7 +877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -909,7 +927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -958,7 +977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1007,7 +1027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1056,7 +1077,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1105,7 +1127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1154,7 +1177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1203,7 +1227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2020",
   "installedBy": "Joseph Tree Service",
@@ -1252,7 +1277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1301,7 +1327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1350,7 +1377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1399,7 +1427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1448,7 +1477,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1497,7 +1527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1546,7 +1577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1595,7 +1627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1644,7 +1677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1693,7 +1727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1742,7 +1777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1791,7 +1827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2021-06-01T05:00:00.000Z",
   "installedBy": "",
@@ -1840,7 +1877,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1889,7 +1927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1938,7 +1977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -1987,7 +2027,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2036,7 +2077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2085,7 +2127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2134,7 +2177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2183,7 +2227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2232,7 +2277,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2281,7 +2327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2330,7 +2377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2379,7 +2427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2428,7 +2477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2477,7 +2527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2021-04-01T00:00:00.000Z",
   "installedBy": "",
@@ -2526,7 +2577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2575,7 +2627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2624,7 +2677,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2673,7 +2727,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2722,7 +2777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2771,7 +2827,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2820,7 +2877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2869,7 +2927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -2918,7 +2977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2022-01-09T05:00:00.000Z",
   "installedBy": "Joseph Tree Service",
@@ -2967,7 +3027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3016,7 +3077,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3065,7 +3127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3114,7 +3177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3163,7 +3227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2022-01-09T00:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -3212,7 +3277,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Grandview Heights",
@@ -3261,7 +3327,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3310,7 +3377,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3359,7 +3427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3408,7 +3477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3457,7 +3527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3506,7 +3577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2024-08-18T00:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -3555,7 +3627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3604,7 +3677,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3653,7 +3727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3702,7 +3777,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3751,7 +3827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3800,7 +3877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3849,7 +3927,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Joseph tree service",
@@ -3898,7 +3977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3947,7 +4027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -3996,7 +4077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4045,7 +4127,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4094,7 +4177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4143,7 +4227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4192,7 +4277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4241,7 +4327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4290,7 +4377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4339,7 +4427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4388,7 +4477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4437,7 +4527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4486,7 +4577,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4535,7 +4627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4584,7 +4677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4633,7 +4727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4682,7 +4777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4731,7 +4827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4780,7 +4877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4829,7 +4927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4878,7 +4977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2021",
   "installedBy": "Oakland Nursery",
@@ -4927,7 +5027,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -4976,7 +5077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5025,7 +5127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5074,7 +5177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5123,7 +5227,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5172,7 +5277,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5221,7 +5327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5270,7 +5377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Joseph tree service",
@@ -5319,7 +5427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5368,7 +5477,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5417,7 +5527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5466,7 +5577,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5515,7 +5627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5564,7 +5677,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5613,7 +5727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5662,7 +5777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5711,7 +5827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5760,7 +5877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5809,7 +5927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5858,7 +5977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5907,7 +6027,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -5956,7 +6077,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6005,7 +6127,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6054,7 +6177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "March 2024",
   "installedBy": "Joseph Tree Service",
@@ -6103,7 +6227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6152,7 +6277,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6201,7 +6327,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6250,7 +6377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6299,7 +6427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6348,7 +6477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6397,7 +6527,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6446,7 +6577,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6495,7 +6627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6544,7 +6677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6593,7 +6727,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6642,7 +6777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6691,7 +6827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6740,7 +6877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6789,7 +6927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6838,7 +6977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6887,7 +7027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6936,7 +7077,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -6985,7 +7127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7034,7 +7177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7083,7 +7227,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7132,7 +7277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7181,7 +7327,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7230,7 +7377,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7279,7 +7427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7328,7 +7477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7377,7 +7527,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7426,7 +7577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7475,7 +7627,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7524,7 +7677,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7573,7 +7727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7622,7 +7777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "March 2024",
   "installedBy": "Joseph Tree Service",
@@ -7671,7 +7827,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7720,7 +7877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7769,7 +7927,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7818,7 +7977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7867,7 +8027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7916,7 +8077,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -7965,7 +8127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8014,7 +8177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2019",
   "installedBy": "Landscape committe",
@@ -8063,7 +8227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8112,7 +8277,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8161,7 +8327,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8210,7 +8377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8259,7 +8427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8308,7 +8477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2021-01-06T05:00:00.000Z",
   "installedBy": "Oakland Nursery",
@@ -8357,7 +8527,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8406,7 +8577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8455,7 +8627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8504,7 +8677,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8553,7 +8727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8602,7 +8777,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8651,7 +8827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8678,7 +8855,7 @@
   "commonName": "White mulberry",
   "variety": "",
   "dbh": "18-24",
-  "notes": "One large trunk removed < 2018. One large trunk removed 2021.",
+  "notes": "2025: Large branch fell; JTS remove and pruned to reduce weight over firepit\n2021: One large trunk removed 2021\n<2018: One large trunk removed < 2018\n",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741984385991.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1749671336429.jpg",
@@ -8688,7 +8865,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741984443309.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-11T00:00:00.000Z"
+    "$date": "2025-07-25T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977460776763756,
@@ -8700,7 +8877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8749,7 +8927,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8798,7 +8977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8847,7 +9027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8896,7 +9077,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Grandview Heights",
@@ -8945,7 +9127,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -8994,7 +9177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9043,7 +9227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9092,7 +9277,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Grandview Heights",
@@ -9141,7 +9327,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9190,7 +9377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9239,7 +9427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9288,7 +9477,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9337,7 +9527,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9386,7 +9577,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9435,7 +9627,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9484,7 +9677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9533,7 +9727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9582,7 +9777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9631,7 +9827,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9680,7 +9877,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9729,7 +9927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9778,7 +9977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9827,7 +10027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2023-09-30T04:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -9876,7 +10077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9925,7 +10127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -9974,7 +10177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10023,7 +10227,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10072,7 +10277,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10121,7 +10327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10170,7 +10377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10219,7 +10427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10268,7 +10477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2024-03-01T05:00:00.000Z",
   "installedBy": "Joseph Tree Service",
@@ -10317,7 +10527,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10366,7 +10577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10415,7 +10627,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10464,7 +10677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2019-04-01T00:00:00.000Z",
   "installedBy": "Landscapes by Terra",
@@ -10513,7 +10727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10562,7 +10777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10611,7 +10827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10660,7 +10877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10709,7 +10927,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10758,7 +10977,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10807,7 +11027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10856,7 +11077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10905,7 +11127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -10954,7 +11177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11003,7 +11227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11052,7 +11277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11101,7 +11327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11150,7 +11377,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11199,7 +11427,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11248,7 +11477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11297,7 +11527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11346,7 +11577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11395,7 +11627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11444,7 +11677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11493,7 +11727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2022-01-09T05:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -11542,7 +11777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11591,7 +11827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11640,7 +11877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11689,7 +11927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11738,7 +11977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11787,7 +12027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11836,7 +12077,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11885,7 +12127,8 @@
     "overheadLines": true,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11934,7 +12177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -11983,7 +12227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12032,7 +12277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12081,7 +12327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12130,7 +12377,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12179,7 +12427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12228,7 +12477,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "Grandview Heights",
@@ -12277,7 +12527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12326,7 +12577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12375,7 +12627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12424,7 +12677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12473,7 +12727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12522,7 +12777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12571,7 +12827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12620,7 +12877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12669,7 +12927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2019-04-01T00:00:00.000Z",
   "installedBy": "Landscapes by Terra",
@@ -12718,7 +12977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12767,7 +13027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12816,7 +13077,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12865,7 +13127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12914,7 +13177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -12963,7 +13227,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13012,7 +13277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13061,7 +13327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13110,7 +13377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13159,7 +13427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13208,7 +13477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2024-08-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -13257,7 +13527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13306,7 +13577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13355,7 +13627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13404,7 +13677,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13453,7 +13727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13502,7 +13777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13551,7 +13827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13600,7 +13877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13649,7 +13927,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13698,7 +13977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13747,7 +14027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13796,7 +14077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13845,7 +14127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13894,7 +14177,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -13943,7 +14227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2021-01-06T05:00:00.000Z",
   "installedBy": "Oakland Nursery",
@@ -13992,7 +14277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2023-08-31T04:00:00.000Z",
   "installedBy": "Oakland Nurseries",
@@ -14041,7 +14327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14090,7 +14377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14139,7 +14427,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14188,7 +14477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14237,7 +14527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14286,7 +14577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14335,7 +14627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14384,7 +14677,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14433,7 +14727,8 @@
     "overheadLines": true,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2024-08-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -14482,7 +14777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14531,7 +14827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": true,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14580,7 +14877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14629,7 +14927,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14678,7 +14977,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14727,7 +15027,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -14776,7 +15077,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -14825,7 +15127,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -14874,7 +15177,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-04T05:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -14923,7 +15227,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-09-05T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
@@ -14972,7 +15277,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-09-05T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
@@ -15021,7 +15327,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-09T00:00:00.000Z",
   "installedBy": "Oakland nurseries",
@@ -15070,7 +15377,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-09T05:00:00.000Z",
   "installedBy": "Oakland Nurseries",
@@ -15119,7 +15427,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15168,7 +15477,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2025-05-09T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
@@ -15217,7 +15527,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15266,7 +15577,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15315,7 +15627,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15364,7 +15677,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15413,7 +15727,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "",
   "installedBy": "",
@@ -15462,7 +15777,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "",
   "installedBy": "",
@@ -15511,7 +15827,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15560,7 +15877,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15610,7 +15928,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15660,7 +15979,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2024",
   "installedBy": "",
@@ -15710,7 +16030,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15760,7 +16081,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15810,7 +16132,8 @@
     "overheadLines": false,
     "treeCluster": true,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15860,7 +16183,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15910,7 +16234,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "<2018",
   "installedBy": "",
@@ -15960,7 +16285,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": true
+    "proximateFence": true,
+    "propertyLine": false
   },
   "installedDate": "2023-06-01T00:00:00.000Z",
   "installedBy": "Landscape committee",
@@ -16010,7 +16336,8 @@
     "overheadLines": false,
     "treeCluster": false,
     "proximateStructure": false,
-    "proximateFence": false
+    "proximateFence": false,
+    "propertyLine": false
   },
   "installedDate": "2019-04-01T00:00:00.000Z",
   "installedBy": "Landscapes by Terra",

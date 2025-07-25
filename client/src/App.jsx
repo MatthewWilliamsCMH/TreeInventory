@@ -54,7 +54,8 @@ function App() {
       overheadLines: true,
       treeCluster: true,
       proximateStructure: true,
-      proximateFence: true
+      proximateFence: true,
+      propertyLine: true
     },
     invasive: true,
     nonnative: true,

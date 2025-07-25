@@ -12,6 +12,7 @@ const typeDefs = gql `
     treeCluster: Boolean!
     proximateStructure: Boolean!
     proximateFence: Boolean!
+    propertyLine: Boolean!
   }
 
   input careNeedsInput {
@@ -56,6 +57,7 @@ const typeDefs = gql `
     treeCluster: Boolean!
     proximateStructure: Boolean!
     proximateFence: Boolean!
+    propertyLine: Boolean!
   }
 
   type careNeeds {

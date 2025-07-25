@@ -248,6 +248,7 @@ const TreeData = () => {
           treeCluster: updatedTree.siteInfo.treeCluster,
           proximateStructure: updatedTree.siteInfo.proximateStructure,
           proximateFence: updatedTree.siteInfo.proximateFence,
+          propertyLine: updatedTree.siteInfo.propertyLine
         } : null,
         lastUpdated: new Date().toLocaleDateString('en-US'),
         installedDate: updatedTree.installedDate,

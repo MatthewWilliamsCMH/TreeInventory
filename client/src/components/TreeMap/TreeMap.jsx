@@ -329,7 +329,8 @@ const TreeMap = () => {
         overheadLines: false,
         treeCluster: false,
         proximateStructure: false,
-        proximateFence: false
+        proximateFence: false,
+        propertyLine: false
       },
       lastUpdated: '',
       installedDate: '',

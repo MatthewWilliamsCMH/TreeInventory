@@ -27,6 +27,7 @@ export const GET_TREES = gql`
         treeCluster
         proximateStructure
         proximateFence
+        propertyLine
       }
       lastUpdated
       installedDate
