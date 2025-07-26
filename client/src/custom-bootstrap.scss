@@ -1,33 +1,33 @@
-
 @import 'bootstrap/scss/bootstrap';
 
 :root {
-  --pale-yellow: #FFF3B0;
+  --pale-yellow: #fff3b0;
   --dark-yellow: #ffde22;
-  --brick-red: #9E2A2B;
-  --blue-green: #335C67;
+  --brick-red: #9e2a2b;
+  --blue-green: #335c67;
   --light-blue-green: #58aaa7;
 }
 
-html, body {
+html,
+body {
   background-color: transparent !important;
   background-image: url('/background.png');
   background-size: cover;
-  background-position:top;
+  background-position: top;
   background-repeat: repeat-y;
 }
 
 body {
-    background: transparent;
+  background: transparent;
 }
 
 ::placeholder {
-  color: #BBB !important;
+  color: #bbb !important;
   opacity: 1; /* Firefox */
 }
 
 legend {
-  font-weight:600;
+  font-weight: 600;
   color: var(--blue-green) !important;
 }
 

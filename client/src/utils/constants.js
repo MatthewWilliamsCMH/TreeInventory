@@ -1,13 +1,13 @@
 export const dbhList = [
-  '<3', 
-  '3-6', 
-  '6-12', 
-  '12-18', 
-  '18-24', 
-  '24-30', 
-  '30-36', 
-  '36-42', 
-  '>42' 
+  '<3',
+  '3-6',
+  '6-12',
+  '12-18',
+  '18-24',
+  '24-30',
+  '30-36',
+  '36-42',
+  '>42',
 ];
 
 export const gardenList = [
@@ -26,8 +26,8 @@ export const gardenList = [
   'South lawn',
   'Urlin driveway bed north',
   'Urlin driveway bed south',
-  'Woodland garden and west lawn'
-]
+  'Woodland garden and west lawn',
+];
 
 export const siteInfoList = [
   'slope',
@@ -35,8 +35,8 @@ export const siteInfoList = [
   'treeCluster',
   'proximateStructure',
   'proximateFence',
-  'propertyLine'
-]
+  'propertyLine',
+];
 
 export const careNeedsList = [
   'install',
@@ -48,7 +48,7 @@ export const careNeedsList = [
   'installGrate',
   'removeGrate',
   'fell',
-  'removeStump'
+  'removeStump',
 ];
 
 export const markerColorList = [
@@ -111,5 +111,5 @@ export const markerColorList = [
   '#455a64',
   '#bcaaa4',
   '#8d6e63',
-  '#6d4c41'
+  '#6d4c41',
 ];

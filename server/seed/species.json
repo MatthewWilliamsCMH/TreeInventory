@@ -1,1048 +1,1050 @@
-[{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa242"
-  },
-  "family": "Fagaceae",
-  "commonName": "Chestnut oak",
-  "scientificName": "Quercus montana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa244"
-  },
-  "family": "Fagaceae",
-  "commonName": "Northern red oak",
-  "scientificName": "Quercus rubra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24d"
-  },
-  "family": "Hamamelidaceae",
-  "commonName": "Sweetgum",
-  "scientificName": "Liquidambar styraciflua",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ce93d8"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa234"
-  },
-  "family": "Bignoniaceae",
-  "commonName": "Northern catalpa",
-  "scientificName": "Catalpa speciosa (Warder) Warder ex Engelm.",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ef9a9a"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23c"
-  },
-  "family": "Fabaceae",
-  "commonName": "Kentucky coffeetree",
-  "scientificName": "Gymnocladus dioicus",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#b71c1c"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa271"
-  },
-  "family": "Platanaceae",
-  "commonName": "American sycamore",
-  "scientificName": "Platanus occidentalis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#3f51b5"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa276"
-  },
-  "family": "Rosaceae",
-  "commonName": "Weeping cherry",
-  "scientificName": "Prunus pendula",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#304ffe"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa232"
-  },
-  "family": "Betulaceae",
-  "commonName": "Black birch",
-  "scientificName": "Betula nigra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ffcdd2"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa250"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Butternut",
-  "scientificName": "Juglans cinerea",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa255"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Shagbark hickory",
-  "scientificName": "Carya ovata",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa260"
-  },
-  "family": "Moraceae",
-  "commonName": "Red mulberry",
-  "scientificName": "Morus rubra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#9575cd"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa283"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Yellow buckeye",
-  "scientificName": "Aesculus flava",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa245"
-  },
-  "family": "Fagaceae",
-  "commonName": "Pin oak",
-  "scientificName": "Quercus palustris",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa284"
-  },
-  "family": "Simaroubaceae",
-  "commonName": "Tree of heaven",
-  "scientificName": "Ailanthus altissima",
-  "nonnative": true,
-  "invasive": true,
-  "markerColor": "#42a5f5"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa285"
-  },
-  "family": "Ulmaceae",
-  "commonName": "American elm",
-  "scientificName": "Ulmus americana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#43a047"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa287"
-  },
-  "family": "Ulmaceae",
-  "commonName": "Slippery elm",
-  "scientificName": "Ulmus rubra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#43a047"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa238"
-  },
-  "family": "Ebanaceae",
-  "commonName": "Common persimmon",
-  "scientificName": "Diospyros virginiana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f44336"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23e"
-  },
-  "family": "Fagaceae",
-  "commonName": "American beech",
-  "scientificName": "Fagus grandifolia",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23f"
-  },
-  "family": "Fagaceae",
-  "commonName": "American chestnut",
-  "scientificName": "Castanea dentata",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa243"
-  },
-  "family": "Fagaceae",
-  "commonName": "Chinquapin oak",
-  "scientificName": "Quercus muehlenbergii",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa246"
-  },
-  "family": "Fagaceae",
-  "commonName": "Sawtooth oak",
-  "scientificName": "Quercus acutissima",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa251"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Mockernut hickory",
-  "scientificName": "Carya tomentosa",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa254"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Scrub hickory",
-  "scientificName": "Carya floridana",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa269"
-  },
-  "family": "Pinaceae",
-  "commonName": "Eastern white pine",
-  "scientificName": "Pinus strobus",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27e"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Ohio buckeye",
-  "scientificName": "Aesculus glabra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa241"
-  },
-  "family": "Fagaceae",
-  "commonName": "Burr oak",
-  "scientificName": "Quercus macrocarpa",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24e"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Bitternut hickory",
-  "scientificName": "Carya cordiformis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26f"
-  },
-  "family": "Pinaceae",
-  "commonName": "Shortleaf pine",
-  "scientificName": "Pinus echinata",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa270"
-  },
-  "family": "Pinaceae",
-  "commonName": "Virginia pine",
-  "scientificName": "Pinus virginiana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa280"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Red maple",
-  "scientificName": "Acer rubrum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa281"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Silver maple",
-  "scientificName": "Acer saccharinum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa239"
-  },
-  "family": "Fabaceae",
-  "commonName": "Black locust",
-  "scientificName": "Robinia pseudoacacia",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#b71c1c"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa256"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Shellbark hickory",
-  "scientificName": "Carya laciniosa",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa259"
-  },
-  "family": "Magnoliaceae",
-  "commonName": "Saucer magnolia",
-  "scientificName": "Magnolia x soulangeana",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#6a1b9a"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25a"
-  },
-  "family": "Magnoliaceae",
-  "commonName": "Sweetbay magnolia",
-  "scientificName": "Magnolia virginiana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#6a1b9a"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25b"
-  },
-  "family": "Magnoliaceae",
-  "commonName": "Tulpitree",
-  "scientificName": "Liriodendron tulipifera",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#6a1b9a"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa261"
-  },
-  "family": "Moraceae",
-  "commonName": "White mulberry",
-  "scientificName": "Morus alba",
-  "nonnative": true,
-  "invasive": true,
-  "markerColor": "#9575cd"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa277"
-  },
-  "family": "Salicaceae",
-  "commonName": "Bigtooth aspen",
-  "scientificName": "Populus grandidentata",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#283593"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa279"
-  },
-  "family": "Salicaceae",
-  "commonName": "Eastern cottonwood",
-  "scientificName": "Populus deltoides",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#283593"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27c"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Japanese maple",
-  "scientificName": "Acer palmatum",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa235"
-  },
-  "family": "Ulmaceae",
-  "commonName": "Common hackberry",
-  "scientificName": "Celtis occidentalis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#43a047"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23d"
-  },
-  "family": "Fagaceae",
-  "commonName": "White oak",
-  "scientificName": "Quercus alba",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa248"
-  },
-  "family": "Fagaceae",
-  "commonName": "Shingle oak",
-  "scientificName": "Quercus imbricaria",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24f"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Black walnut",
-  "scientificName": "Juglans nigra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa257"
-  },
-  "family": "Lauraceae",
-  "commonName": "Sassafras",
-  "scientificName": "Sassafras albidum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#aa00ff"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25f"
-  },
-  "family": "Moraceae",
-  "commonName": "Osage-orange",
-  "scientificName": "Maclura pomifera",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#9575cd"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26a"
-  },
-  "family": "Pinaceae",
-  "commonName": "Loblolly pine",
-  "scientificName": "Pinus taeda",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26d"
-  },
-  "family": "Pinaceae",
-  "commonName": "Red pine",
-  "scientificName": "Pinus resinosa",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26e"
-  },
-  "family": "Pinaceae",
-  "commonName": "Scots pine",
-  "scientificName": "Pinus sylvestris",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa288"
-  },
-  "family": "Viburnaceae",
-  "commonName": "Blackhaw",
-  "scientificName": "Viburnum prunifolium",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#0d47a1"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23b"
-  },
-  "family": "Fabaceae",
-  "commonName": "Honey locust",
-  "scientificName": "Gleditsia triacanthos",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#b71c1c"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa252"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Northern pecan",
-  "scientificName": "Carya illinoinensis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa253"
-  },
-  "family": "Juglandaceae",
-  "commonName": "Pignut hickory",
-  "scientificName": "Carya glabra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ab47bc"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25d"
-  },
-  "family": "Malvaceae",
-  "commonName": "European linden",
-  "scientificName": "Tilia x europaea",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#0097a7"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa262"
-  },
-  "family": "Nyssaceae",
-  "commonName": "Blackgum",
-  "scientificName": "Myssa sylvatica",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#5e35b1"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26c"
-  },
-  "family": "Pinaceae",
-  "commonName": "Pitch pine",
-  "scientificName": "Pinus rigida",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27a"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Black maple",
-  "scientificName": "Acer nigrum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27f"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Red horse-chestnut",
-  "scientificName": "Aesculus x carnea",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa28b"
-  },
-  "family": "Pinaceae",
-  "commonName": "Limber pine",
-  "scientificName": "Pinus flexilis",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa236"
-  },
-  "family": "Cornaceae",
-  "commonName": "Flowering dogwood",
-  "scientificName": "Cornus florida",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#607d8b"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa247"
-  },
-  "family": "Fagaceae",
-  "commonName": "Scarlet oak",
-  "scientificName": "Quercus coccinea",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa249"
-  },
-  "family": "Fagaceae",
-  "commonName": "Shumard oak",
-  "scientificName": "Quercus shumardii",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24c"
-  },
-  "family": "Ginkgoaceae",
-  "commonName": "Ginkgo",
-  "scientificName": "Ginkgo biloba",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#e1bee7"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25e"
-  },
-  "family": "Malvaceae",
-  "commonName": "Littleleaf linden",
-  "scientificName": "Tilia cordata",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#0097a7"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa264"
-  },
-  "family": "Oleaceae",
-  "commonName": "Japanese tree lilac",
-  "scientificName": "Syringa reticulata",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#fff176"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa274"
-  },
-  "family": "Rosaceae",
-  "commonName": "Prairie crab apple",
-  "scientificName": "Malus ioensis",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#304ffe"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa278"
-  },
-  "family": "Salicaceae",
-  "commonName": "Black willow",
-  "scientificName": "Salix nigra",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#283593"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa263"
-  },
-  "family": "Oleaceae",
-  "commonName": "Green ash",
-  "scientificName": "Fraxinus pennsylvanica",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#fff176"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa28c"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Paperbark maple",
-  "scientificName": "Acer griseum",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa23a"
-  },
-  "family": "Fabaceae",
-  "commonName": "Eastern redbud",
-  "scientificName": "Cercis canadensis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#b71c1c"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27b"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Boxelder",
-  "scientificName": "Acer negundo",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24b"
-  },
-  "family": "Fagaceae",
-  "commonName": "European beech",
-  "scientificName": "Fagus sylvatica",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa265"
-  },
-  "family": "Oleaceae",
-  "commonName": "White ash",
-  "scientificName": "Fraxinus americana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#fff176"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa268"
-  },
-  "family": "Pinaceae",
-  "commonName": "Eastern hemlock",
-  "scientificName": "Tsuga canadensis",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa237"
-  },
-  "family": "Cupressaceae",
-  "commonName": "Eastern redcedar",
-  "scientificName": "Juniperus virginiana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f06292"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa25c"
-  },
-  "family": "Malvaceae",
-  "commonName": "American basswood",
-  "scientificName": "Tilia americana",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#0097a7"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa267"
-  },
-  "family": "Pinaceae",
-  "commonName": "Blue spruce",
-  "scientificName": "Picea pungens",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa26b"
-  },
-  "family": "Pinaceae",
-  "commonName": "Norway spruce",
-  "scientificName": "Picea abies",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa272"
-  },
-  "family": "Rosaceae",
-  "commonName": "Black cherry",
-  "scientificName": "Prunus serotina",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#304ffe"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa275"
-  },
-  "family": "Rosaceae",
-  "commonName": "Hawthorn",
-  "scientificName": "Crataegus phaenopyrum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#304ffe"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa289"
-  },
-  "family": "Unknown family",
-  "commonName": "Unknown species",
-  "scientificName": "Unknown species",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#FFFFFF"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa28a"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Korean maple",
-  "scientificName": "Acer pseudosieboldianum",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa24a"
-  },
-  "family": "Fagaceae",
-  "commonName": "Swamp white oak",
-  "scientificName": "Quercus bicolor",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa258"
-  },
-  "family": "Magnoliaceae",
-  "commonName": "Cucumber tree",
-  "scientificName": "Magnolia acuminata",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#6a1b9a"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa273"
-  },
-  "family": "Rosaceae",
-  "commonName": "Callery pear",
-  "scientificName": "Pyrus calleryana",
-  "nonnative": true,
-  "invasive": true,
-  "markerColor": "#304ffe"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa27d"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Norway maple",
-  "scientificName": "Acer platanoides",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa286"
-  },
-  "family": "Ulmaceae",
-  "commonName": "Siberian elm",
-  "scientificName": "Ulmus pumila",
-  "nonnative": true,
-  "invasive": true,
-  "markerColor": "#43a047"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa233"
-  },
-  "family": "Betulaceae",
-  "commonName": "Yellow birch",
-  "scientificName": "Betula alleghaniensis Britton",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ffcdd2"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa240"
-  },
-  "family": "Fagaceae",
-  "commonName": "Black oak",
-  "scientificName": "Quercus velutina",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#ad1457"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa266"
-  },
-  "family": "Pinaceae",
-  "commonName": "Austrian pine",
-  "scientificName": "Pinus nigra",
-  "nonnative": true,
-  "invasive": false,
-  "markerColor": "#81c784"
-},
-{
-  "_id": {
-    "$oid": "682097c59b8504292e4aa282"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Sugar maple",
-  "scientificName": "Acer saccharum",
-  "nonnative": false,
-  "invasive": false,
-  "markerColor": "#f9a825"
-},
-{
-  "_id": {
-    "$oid": "6826939d4288a32102e5250f"
-  },
-  "family": "Sapindaceae",
-  "commonName": "Trident maple",
-  "scientificName": "Acer buergerianum",
-  "markerColor": "#f9a825",
-  "nonnative": true,
-  "invasive": false,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "684c85163da2608696ba1875"
-  },
-  "family": "Rosaceae",
-  "commonName": "Apple",
-  "scientificName": "Malus domestica",
-  "invasive": false,
-  "nonnative": true,
-  "markerColor": "#304ffe",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "684c86d33da2608696ba1878"
-  },
-  "__v": 0,
-  "commonName": "Rock elm",
-  "family": "Ulmaceae",
-  "invasive": false,
-  "markerColor": "#43a047",
-  "nonnative": false,
-  "scientificName": "Ulmus thomasii"
-},
-{
-  "_id": {
-    "$oid": "688238dc22440ba252902829"
-  },
-  "family": "Rosaceae",
-  "commonName": "American crabapple",
-  "scientificName": "Malus coronaria",
-  "invasive": false,
-  "nonnative": false,
-  "markerColor": "#304ffe"
-}]
+[
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa242"
+    },
+    "family": "Fagaceae",
+    "commonName": "Chestnut oak",
+    "scientificName": "Quercus montana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa244"
+    },
+    "family": "Fagaceae",
+    "commonName": "Northern red oak",
+    "scientificName": "Quercus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24d"
+    },
+    "family": "Hamamelidaceae",
+    "commonName": "Sweetgum",
+    "scientificName": "Liquidambar styraciflua",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ce93d8"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa234"
+    },
+    "family": "Bignoniaceae",
+    "commonName": "Northern catalpa",
+    "scientificName": "Catalpa speciosa (Warder) Warder ex Engelm.",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ef9a9a"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23c"
+    },
+    "family": "Fabaceae",
+    "commonName": "Kentucky coffeetree",
+    "scientificName": "Gymnocladus dioicus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#b71c1c"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa271"
+    },
+    "family": "Platanaceae",
+    "commonName": "American sycamore",
+    "scientificName": "Platanus occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#3f51b5"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa276"
+    },
+    "family": "Rosaceae",
+    "commonName": "Weeping cherry",
+    "scientificName": "Prunus pendula",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#304ffe"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa232"
+    },
+    "family": "Betulaceae",
+    "commonName": "Black birch",
+    "scientificName": "Betula nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ffcdd2"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa250"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Butternut",
+    "scientificName": "Juglans cinerea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa255"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Shagbark hickory",
+    "scientificName": "Carya ovata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa260"
+    },
+    "family": "Moraceae",
+    "commonName": "Red mulberry",
+    "scientificName": "Morus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#9575cd"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa283"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Yellow buckeye",
+    "scientificName": "Aesculus flava",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa245"
+    },
+    "family": "Fagaceae",
+    "commonName": "Pin oak",
+    "scientificName": "Quercus palustris",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa284"
+    },
+    "family": "Simaroubaceae",
+    "commonName": "Tree of heaven",
+    "scientificName": "Ailanthus altissima",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#42a5f5"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa285"
+    },
+    "family": "Ulmaceae",
+    "commonName": "American elm",
+    "scientificName": "Ulmus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#43a047"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa287"
+    },
+    "family": "Ulmaceae",
+    "commonName": "Slippery elm",
+    "scientificName": "Ulmus rubra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#43a047"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa238"
+    },
+    "family": "Ebanaceae",
+    "commonName": "Common persimmon",
+    "scientificName": "Diospyros virginiana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f44336"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23e"
+    },
+    "family": "Fagaceae",
+    "commonName": "American beech",
+    "scientificName": "Fagus grandifolia",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23f"
+    },
+    "family": "Fagaceae",
+    "commonName": "American chestnut",
+    "scientificName": "Castanea dentata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa243"
+    },
+    "family": "Fagaceae",
+    "commonName": "Chinquapin oak",
+    "scientificName": "Quercus muehlenbergii",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa246"
+    },
+    "family": "Fagaceae",
+    "commonName": "Sawtooth oak",
+    "scientificName": "Quercus acutissima",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa251"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Mockernut hickory",
+    "scientificName": "Carya tomentosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa254"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Scrub hickory",
+    "scientificName": "Carya floridana",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa269"
+    },
+    "family": "Pinaceae",
+    "commonName": "Eastern white pine",
+    "scientificName": "Pinus strobus",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27e"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Ohio buckeye",
+    "scientificName": "Aesculus glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa241"
+    },
+    "family": "Fagaceae",
+    "commonName": "Burr oak",
+    "scientificName": "Quercus macrocarpa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24e"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Bitternut hickory",
+    "scientificName": "Carya cordiformis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26f"
+    },
+    "family": "Pinaceae",
+    "commonName": "Shortleaf pine",
+    "scientificName": "Pinus echinata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa270"
+    },
+    "family": "Pinaceae",
+    "commonName": "Virginia pine",
+    "scientificName": "Pinus virginiana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa280"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Red maple",
+    "scientificName": "Acer rubrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa281"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Silver maple",
+    "scientificName": "Acer saccharinum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa239"
+    },
+    "family": "Fabaceae",
+    "commonName": "Black locust",
+    "scientificName": "Robinia pseudoacacia",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#b71c1c"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa256"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Shellbark hickory",
+    "scientificName": "Carya laciniosa",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa259"
+    },
+    "family": "Magnoliaceae",
+    "commonName": "Saucer magnolia",
+    "scientificName": "Magnolia x soulangeana",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#6a1b9a"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25a"
+    },
+    "family": "Magnoliaceae",
+    "commonName": "Sweetbay magnolia",
+    "scientificName": "Magnolia virginiana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#6a1b9a"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25b"
+    },
+    "family": "Magnoliaceae",
+    "commonName": "Tulpitree",
+    "scientificName": "Liriodendron tulipifera",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#6a1b9a"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa261"
+    },
+    "family": "Moraceae",
+    "commonName": "White mulberry",
+    "scientificName": "Morus alba",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#9575cd"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa277"
+    },
+    "family": "Salicaceae",
+    "commonName": "Bigtooth aspen",
+    "scientificName": "Populus grandidentata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#283593"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa279"
+    },
+    "family": "Salicaceae",
+    "commonName": "Eastern cottonwood",
+    "scientificName": "Populus deltoides",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#283593"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27c"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Japanese maple",
+    "scientificName": "Acer palmatum",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa235"
+    },
+    "family": "Ulmaceae",
+    "commonName": "Common hackberry",
+    "scientificName": "Celtis occidentalis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#43a047"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23d"
+    },
+    "family": "Fagaceae",
+    "commonName": "White oak",
+    "scientificName": "Quercus alba",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa248"
+    },
+    "family": "Fagaceae",
+    "commonName": "Shingle oak",
+    "scientificName": "Quercus imbricaria",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24f"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Black walnut",
+    "scientificName": "Juglans nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa257"
+    },
+    "family": "Lauraceae",
+    "commonName": "Sassafras",
+    "scientificName": "Sassafras albidum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#aa00ff"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25f"
+    },
+    "family": "Moraceae",
+    "commonName": "Osage-orange",
+    "scientificName": "Maclura pomifera",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#9575cd"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26a"
+    },
+    "family": "Pinaceae",
+    "commonName": "Loblolly pine",
+    "scientificName": "Pinus taeda",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26d"
+    },
+    "family": "Pinaceae",
+    "commonName": "Red pine",
+    "scientificName": "Pinus resinosa",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26e"
+    },
+    "family": "Pinaceae",
+    "commonName": "Scots pine",
+    "scientificName": "Pinus sylvestris",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa288"
+    },
+    "family": "Viburnaceae",
+    "commonName": "Blackhaw",
+    "scientificName": "Viburnum prunifolium",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#0d47a1"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23b"
+    },
+    "family": "Fabaceae",
+    "commonName": "Honey locust",
+    "scientificName": "Gleditsia triacanthos",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#b71c1c"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa252"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Northern pecan",
+    "scientificName": "Carya illinoinensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa253"
+    },
+    "family": "Juglandaceae",
+    "commonName": "Pignut hickory",
+    "scientificName": "Carya glabra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ab47bc"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25d"
+    },
+    "family": "Malvaceae",
+    "commonName": "European linden",
+    "scientificName": "Tilia x europaea",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#0097a7"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa262"
+    },
+    "family": "Nyssaceae",
+    "commonName": "Blackgum",
+    "scientificName": "Myssa sylvatica",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#5e35b1"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26c"
+    },
+    "family": "Pinaceae",
+    "commonName": "Pitch pine",
+    "scientificName": "Pinus rigida",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27a"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Black maple",
+    "scientificName": "Acer nigrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27f"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Red horse-chestnut",
+    "scientificName": "Aesculus x carnea",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa28b"
+    },
+    "family": "Pinaceae",
+    "commonName": "Limber pine",
+    "scientificName": "Pinus flexilis",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa236"
+    },
+    "family": "Cornaceae",
+    "commonName": "Flowering dogwood",
+    "scientificName": "Cornus florida",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#607d8b"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa247"
+    },
+    "family": "Fagaceae",
+    "commonName": "Scarlet oak",
+    "scientificName": "Quercus coccinea",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa249"
+    },
+    "family": "Fagaceae",
+    "commonName": "Shumard oak",
+    "scientificName": "Quercus shumardii",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24c"
+    },
+    "family": "Ginkgoaceae",
+    "commonName": "Ginkgo",
+    "scientificName": "Ginkgo biloba",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#e1bee7"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25e"
+    },
+    "family": "Malvaceae",
+    "commonName": "Littleleaf linden",
+    "scientificName": "Tilia cordata",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#0097a7"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa264"
+    },
+    "family": "Oleaceae",
+    "commonName": "Japanese tree lilac",
+    "scientificName": "Syringa reticulata",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#fff176"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa274"
+    },
+    "family": "Rosaceae",
+    "commonName": "Prairie crab apple",
+    "scientificName": "Malus ioensis",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#304ffe"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa278"
+    },
+    "family": "Salicaceae",
+    "commonName": "Black willow",
+    "scientificName": "Salix nigra",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#283593"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa263"
+    },
+    "family": "Oleaceae",
+    "commonName": "Green ash",
+    "scientificName": "Fraxinus pennsylvanica",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff176"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa28c"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Paperbark maple",
+    "scientificName": "Acer griseum",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa23a"
+    },
+    "family": "Fabaceae",
+    "commonName": "Eastern redbud",
+    "scientificName": "Cercis canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#b71c1c"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27b"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Boxelder",
+    "scientificName": "Acer negundo",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24b"
+    },
+    "family": "Fagaceae",
+    "commonName": "European beech",
+    "scientificName": "Fagus sylvatica",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa265"
+    },
+    "family": "Oleaceae",
+    "commonName": "White ash",
+    "scientificName": "Fraxinus americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#fff176"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa268"
+    },
+    "family": "Pinaceae",
+    "commonName": "Eastern hemlock",
+    "scientificName": "Tsuga canadensis",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa237"
+    },
+    "family": "Cupressaceae",
+    "commonName": "Eastern redcedar",
+    "scientificName": "Juniperus virginiana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f06292"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa25c"
+    },
+    "family": "Malvaceae",
+    "commonName": "American basswood",
+    "scientificName": "Tilia americana",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#0097a7"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa267"
+    },
+    "family": "Pinaceae",
+    "commonName": "Blue spruce",
+    "scientificName": "Picea pungens",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa26b"
+    },
+    "family": "Pinaceae",
+    "commonName": "Norway spruce",
+    "scientificName": "Picea abies",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa272"
+    },
+    "family": "Rosaceae",
+    "commonName": "Black cherry",
+    "scientificName": "Prunus serotina",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#304ffe"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa275"
+    },
+    "family": "Rosaceae",
+    "commonName": "Hawthorn",
+    "scientificName": "Crataegus phaenopyrum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#304ffe"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa289"
+    },
+    "family": "Unknown family",
+    "commonName": "Unknown species",
+    "scientificName": "Unknown species",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#FFFFFF"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa28a"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Korean maple",
+    "scientificName": "Acer pseudosieboldianum",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa24a"
+    },
+    "family": "Fagaceae",
+    "commonName": "Swamp white oak",
+    "scientificName": "Quercus bicolor",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa258"
+    },
+    "family": "Magnoliaceae",
+    "commonName": "Cucumber tree",
+    "scientificName": "Magnolia acuminata",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#6a1b9a"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa273"
+    },
+    "family": "Rosaceae",
+    "commonName": "Callery pear",
+    "scientificName": "Pyrus calleryana",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#304ffe"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa27d"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Norway maple",
+    "scientificName": "Acer platanoides",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa286"
+    },
+    "family": "Ulmaceae",
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila",
+    "nonnative": true,
+    "invasive": true,
+    "markerColor": "#43a047"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa233"
+    },
+    "family": "Betulaceae",
+    "commonName": "Yellow birch",
+    "scientificName": "Betula alleghaniensis Britton",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ffcdd2"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa240"
+    },
+    "family": "Fagaceae",
+    "commonName": "Black oak",
+    "scientificName": "Quercus velutina",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#ad1457"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa266"
+    },
+    "family": "Pinaceae",
+    "commonName": "Austrian pine",
+    "scientificName": "Pinus nigra",
+    "nonnative": true,
+    "invasive": false,
+    "markerColor": "#81c784"
+  },
+  {
+    "_id": {
+      "$oid": "682097c59b8504292e4aa282"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Sugar maple",
+    "scientificName": "Acer saccharum",
+    "nonnative": false,
+    "invasive": false,
+    "markerColor": "#f9a825"
+  },
+  {
+    "_id": {
+      "$oid": "6826939d4288a32102e5250f"
+    },
+    "family": "Sapindaceae",
+    "commonName": "Trident maple",
+    "scientificName": "Acer buergerianum",
+    "markerColor": "#f9a825",
+    "nonnative": true,
+    "invasive": false,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "684c85163da2608696ba1875"
+    },
+    "family": "Rosaceae",
+    "commonName": "Apple",
+    "scientificName": "Malus domestica",
+    "invasive": false,
+    "nonnative": true,
+    "markerColor": "#304ffe",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "684c86d33da2608696ba1878"
+    },
+    "__v": 0,
+    "commonName": "Rock elm",
+    "family": "Ulmaceae",
+    "invasive": false,
+    "markerColor": "#43a047",
+    "nonnative": false,
+    "scientificName": "Ulmus thomasii"
+  },
+  {
+    "_id": {
+      "$oid": "688238dc22440ba252902829"
+    },
+    "family": "Rosaceae",
+    "commonName": "American crabapple",
+    "scientificName": "Malus coronaria",
+    "invasive": false,
+    "nonnative": false,
+    "markerColor": "#304ffe"
+  }
+]

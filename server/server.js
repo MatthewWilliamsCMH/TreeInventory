@@ -9,11 +9,12 @@ const fs = require('fs');
 const https = require('https');
 
 // Select environment-specific .env file
-const envFile = process.env.NODE_ENV === 'production'
-  ? '.env.production'
-  : process.env.NODE_ENV === 'demo'
-  ? '.env.demo'
-  : '.env.development';
+const envFile =
+  process.env.NODE_ENV === 'production'
+    ? '.env.production'
+    : process.env.NODE_ENV === 'demo'
+    ? '.env.demo'
+    : '.env.development';
 
 // Load environment variables from the appropriate file
 require('dotenv').config({ path: envFile });
@@ -22,13 +23,16 @@ require('dotenv').config({ path: envFile });
 let uploadsDir;
 if (process.env.NODE_ENV === 'production') {
   uploadsDir = '/app/public/uploads';
-  console.log('Running in PRODUCTION mode - using mapped volume path:', uploadsDir);
+  console.log(
+    'Running in PRODUCTION mode - using mapped volume path:',
+    uploadsDir
+  );
 } else if (process.env.NODE_ENV === 'demo') {
-uploadsDir = path.resolve(__dirname, '../uploads');
+  uploadsDir = path.resolve(__dirname, '../uploads');
   // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log('Running in DEMO mode - using path:', uploadsDir);
 } else {
-uploadsDir = path.resolve(__dirname, '../uploads');
+  uploadsDir = path.resolve(__dirname, '../uploads');
   // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log('Running in DEVELOPMENT mode - using path:', uploadsDir);
 }
@@ -40,14 +44,16 @@ console.log('Upload directory set to:', uploadsDir);
 // Test directory access and creation
 try {
   if (!fs.existsSync(uploadsDir)) {
-    console.log(`Directory ${uploadsDir} does not exist, trying to create it...`);
+    console.log(
+      `Directory ${uploadsDir} does not exist, trying to create it...`
+    );
     try {
       fs.mkdirSync(uploadsDir, { recursive: true });
       console.log(`Successfully created directory: ${uploadsDir}`);
     } catch (dirCreateError) {
       console.error(`ERROR creating directory ${uploadsDir}:`, dirCreateError);
       // Fallback to a directory we know will work
-uploadsDir = path.resolve(__dirname, '../uploads');
+      uploadsDir = path.resolve(__dirname, '../uploads');
       // uploadsDir = path.join(__dirname, 'public', 'uploads');
       console.log(`Falling back to container path: ${uploadsDir}`);
       if (!fs.existsSync(uploadsDir)) {
@@ -65,7 +71,7 @@ uploadsDir = path.resolve(__dirname, '../uploads');
     } catch (writeError) {
       console.error('ERROR: Directory exists but is not writable:', writeError);
       // Fallback to a directory we know will work
-uploadsDir = path.resolve(__dirname, '../uploads');
+      uploadsDir = path.resolve(__dirname, '../uploads');
       // uploadsDir = path.join(__dirname, 'public', 'uploads');
       console.log(`Falling back to container path: ${uploadsDir}`);
       if (!fs.existsSync(uploadsDir)) {
@@ -76,7 +82,7 @@ uploadsDir = path.resolve(__dirname, '../uploads');
 } catch (error) {
   console.error('ERROR checking directory:', error);
   // Fallback to a directory we know will work
-uploadsDir = path.resolve(__dirname, '../uploads');
+  uploadsDir = path.resolve(__dirname, '../uploads');
   // uploadsDir = path.join(__dirname, 'public', 'uploads');
   console.log(`Falling back to container path: ${uploadsDir}`);
   if (!fs.existsSync(uploadsDir)) {
@@ -101,7 +107,7 @@ const storage = multer.diskStorage({
     const newFilename = Date.now() + path.extname(photo.originalname);
     console.log(`New filename will be: ${newFilename}`);
     cb(null, newFilename);
-  }
+  },
 });
 
 // Initialize multer with the storage configuration
@@ -118,10 +124,12 @@ const getAllowedOrigins = () => {
   return origins;
 };
 
-app.use(cors({
-  origin: getAllowedOrigins(),
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: getAllowedOrigins(),
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
@@ -130,30 +138,28 @@ app.use('/uploads', express.static(uploadsDir));
 
 app.post('/uploads', upload.single('photo'), (req, res) => {
   console.log('File upload request received');
-  
+
   if (!req.file) {
     console.log('No file was uploaded');
     return res.status(400).json({ message: 'No file uploaded' });
   }
-  
+
   console.log('File uploaded:', req.file);
   let baseUrl;
   if (process.env.NODE_ENV === 'production') {
     baseUrl = 'https://treeinventory.clickps.synology.me';
-  }
-  else if (process.env.NODE_ENV === 'demo') {
+  } else if (process.env.NODE_ENV === 'demo') {
     baseUrl = 'https://treeinventory.onrender.com';
-  }
-  else {
+  } else {
     baseUrl = `${req.protocol}://${req.get('host')}`;
   }
-  
+
   const fileUrl = `${baseUrl}/uploads/${req.file.filename}`;
   console.log('Generated file URL:', fileUrl);
-  
+
   res.status(200).json({
     message: 'File uploaded successfully',
-    url: fileUrl
+    url: fileUrl,
   });
 });
 
@@ -163,35 +169,42 @@ connectDB();
 // Initialize apollo server
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
 });
 
 server.start().then(() => {
-  app.use('/graphql',
+  app.use(
+    '/graphql',
     express.json(),
     expressMiddleware(server, {
-      context: async ({ req }) => ({ req })
+      context: async ({ req }) => ({ req }),
     })
   );
 
-  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'demo') {
+  if (
+    process.env.NODE_ENV === 'production' ||
+    process.env.NODE_ENV === 'demo'
+  ) {
     let clientPath;
     if (process.env.NODE_ENV === 'production') {
       clientPath = path.join(__dirname, '../client/dist');
     } else {
       clientPath = path.join(__dirname, '../dist');
     }
-    
+
     app.use(express.static(clientPath));
     app.get('*', (req, res) => {
       res.sendFile(path.join(clientPath, 'index.html'));
     });
   }
-  
+
   const certPath = path.resolve(__dirname, '../localhost.pem');
   const keyPath = path.resolve(__dirname, '../localhost-key.pem');
 
-  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'demo') {
+  if (
+    process.env.NODE_ENV === 'production' ||
+    process.env.NODE_ENV === 'demo'
+  ) {
     let clientPath;
     if (process.env.NODE_ENV === 'production') {
       clientPath = path.join(__dirname, '../client/dist');
@@ -205,11 +218,12 @@ server.start().then(() => {
     });
 
     app.listen(port, '0.0.0.0', () => {
-      console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
+      console.log(
+        `Server running in ${process.env.NODE_ENV} mode on port ${port}`
+      );
       console.log(`GraphQL endpoint: https://localhost:${port}/graphql`);
       console.log(`Uploads directory: ${uploadsDir}`);
     });
-
   } else {
     // Serve with HTTPS in development
     const httpsOptions = {

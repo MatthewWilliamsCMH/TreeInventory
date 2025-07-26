@@ -2,7 +2,7 @@
 //external libraries
 import React, { useEffect, useRef, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import { CirclePicker } from 'react-color'
+import { CirclePicker } from 'react-color';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
@@ -12,20 +12,22 @@ import styles from './treeData.module.css';
 //functions and constants
 import { markerColorList } from '../../utils/constants.js';
 
-const NewSpeciesModal = ({ 
-  show, 
-  onHide, 
-  clearSpeciesTrigger, 
+const NewSpeciesModal = ({
+  show,
+  onHide,
+  clearSpeciesTrigger,
   onCancelClearSpecies,
-  onSubmitNewSpecies
+  onSubmitNewSpecies,
 }) => {
-
   //----------data reception and transmission----------
   //get current global states using context
-  const { 
-    allSpecies, setAllSpecies,
-    allTrees, setAllTrees, 
-    updatedTree, setUpdatedTree, 
+  const {
+    allSpecies,
+    setAllSpecies,
+    allTrees,
+    setAllTrees,
+    updatedTree,
+    setUpdatedTree,
   } = useOutletContext();
 
   //set local states to initial values
@@ -39,33 +41,35 @@ const NewSpeciesModal = ({
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const { familyList, usedColors } = Object.values(allSpecies).reduce((acc, species) => {
-    //add unique families
-    if (!acc.familySet.has(species.family)) {
-      acc.familySet.add(species.family);
-      acc.familyList.push({
-        label: species.family,
-        value: species.family
-      })
-    }
-    acc.familyList.sort((a, b) => a.label.localeCompare(b.label));
+  const { familyList, usedColors } = Object.values(allSpecies).reduce(
+    (acc, species) => {
+      //add unique families
+      if (!acc.familySet.has(species.family)) {
+        acc.familySet.add(species.family);
+        acc.familyList.push({
+          label: species.family,
+          value: species.family,
+        });
+      }
+      acc.familyList.sort((a, b) => a.label.localeCompare(b.label));
 
-    //add unique colors
-    if (!acc.colorSet.has(species.markerColor)) {
-      acc.colorSet.add(species.markerColor);
-      acc.usedColors.push(species.markerColor);
+      //add unique colors
+      if (!acc.colorSet.has(species.markerColor)) {
+        acc.colorSet.add(species.markerColor);
+        acc.usedColors.push(species.markerColor);
+      }
+      return acc;
+    },
+    {
+      familyList: [],
+      usedColors: [],
+      familySet: new Set(),
+      colorSet: new Set(),
     }
-    return acc;
-  },
-  {
-    familyList: [],
-    usedColors: [],
-    familySet: new Set(),
-    colorSet: new Set()
-  });
+  );
 
   const availableColors = markerColorList
-    .filter(color => !usedColors.includes(color))
+    .filter((color) => !usedColors.includes(color))
     .sort();
 
   //set local references to initial values
@@ -73,21 +77,20 @@ const NewSpeciesModal = ({
   const modalScientificName = useRef(null);
 
   useEffect(() => {
-  if (show) {
-    setCommonName(updatedTree?.commonName || '');
-    setScientificName(updatedTree?.scientificName || '');
-    
-    // Delay needed to ensure DOM elements are available
-    setTimeout(() => {
-      if (!updatedTree?.commonName) {
-        modalCommonName.current?.focus();
-      } else {
-        modalScientificName.current?.focus();
-      }
-    }, 0);
-  }
-}, [show]);
+    if (show) {
+      setCommonName(updatedTree?.commonName || '');
+      setScientificName(updatedTree?.scientificName || '');
 
+      // Delay needed to ensure DOM elements are available
+      setTimeout(() => {
+        if (!updatedTree?.commonName) {
+          modalCommonName.current?.focus();
+        } else {
+          modalScientificName.current?.focus();
+        }
+      }, 0);
+    }
+  }, [show]);
 
   //----------called functions----------
   //handle control changes
@@ -102,11 +105,11 @@ const NewSpeciesModal = ({
         break;
       case 'family':
         setFamily(value);
-        if (!familyList.some(item => item.value === value)) {
+        if (!familyList.some((item) => item.value === value)) {
           setShowColorPicker(true);
           setMarkerColor('');
         } else {
-          const existingSpecies = allSpecies.find(s => s.family === value);
+          const existingSpecies = allSpecies.find((s) => s.family === value);
           if (existingSpecies) {
             setMarkerColor(existingSpecies.markerColor);
           }
@@ -128,7 +131,12 @@ const NewSpeciesModal = ({
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!commonName.trim() || !scientificName.trim() || !family.trim() || !markerColor.trim()) {
+    if (
+      !commonName.trim() ||
+      !scientificName.trim() ||
+      !family.trim() ||
+      !markerColor.trim()
+    ) {
       alert('All fields are required to add a species to the database.');
       return;
     }
@@ -149,9 +157,9 @@ const NewSpeciesModal = ({
       family,
       markerColor,
       nonnative,
-      invasive
+      invasive,
     });
-    
+
     setCommonName('');
     setScientificName('');
     setFamily('');
@@ -174,10 +182,10 @@ const NewSpeciesModal = ({
   //----------render component----------
   return (
     <Modal
-      backdrop='static' 
-      centered 
+      backdrop='static'
+      centered
       keyboard={false}
-      onHide={handleCancel} 
+      onHide={handleCancel}
       show={show}
     >
       <Modal.Header className='pt-1 pb-1'>
@@ -187,7 +195,9 @@ const NewSpeciesModal = ({
         <Form.Control
           id='newCommonName'
           ref={modalCommonName}
-          onChange={(event) => handleInputChange('commonName', event.target.value)}
+          onChange={(event) =>
+            handleInputChange('commonName', event.target.value)
+          }
           placeholder='Common name'
           required
           type='text'
@@ -196,7 +206,9 @@ const NewSpeciesModal = ({
         <Form.Control
           className='mt-1'
           id='newScientificName'
-          onChange={(event) => handleInputChange('scientificName', event.target.value)}
+          onChange={(event) =>
+            handleInputChange('scientificName', event.target.value)
+          }
           placeholder='Scientific name'
           ref={modalScientificName}
           required
@@ -212,7 +224,7 @@ const NewSpeciesModal = ({
           multiple={false}
           onBlur={() => {
             if (familyInput.trim()) {
-              handleInputChange('family', familyInput.trim())
+              handleInputChange('family', familyInput.trim());
             }
           }}
           onChange={(selected) => {
@@ -228,11 +240,7 @@ const NewSpeciesModal = ({
           options={familyList}
           placeholder='Family'
           required
-          selected={
-            family
-              ? [{ label: family, value: family }]
-              : []
-          }
+          selected={family ? [{ label: family, value: family }] : []}
         />
         {showColorPicker && (
           <CirclePicker
@@ -253,24 +261,28 @@ const NewSpeciesModal = ({
           checked={nonnative}
           id='nonnative'
           label='Nonnative'
-          onChange={(event) => handleInputChange('nonnative', event.target.checked)}
+          onChange={(event) =>
+            handleInputChange('nonnative', event.target.checked)
+          }
         />
-        <Form.Check 
+        <Form.Check
           checked={invasive}
           id='invasive'
           label='Invasive'
-          onChange={(event) => handleInputChange('invasive', event.target.checked)}
+          onChange={(event) =>
+            handleInputChange('invasive', event.target.checked)
+          }
         />
       </Modal.Body>
       <Modal.Footer className='pt-1 pb-1'>
-        <Button 
-          variant='primary' 
+        <Button
+          variant='primary'
           size='sm'
-          onClick={(event) => handleSubmit(event)} 
-          >
-            OK
+          onClick={(event) => handleSubmit(event)}
+        >
+          OK
         </Button>
-        <Button 
+        <Button
           variant='secondary'
           size='sm'
           onClick={handleCancel}

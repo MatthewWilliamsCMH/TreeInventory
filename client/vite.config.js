@@ -2,7 +2,7 @@ import { defineConfig, loadEnv } from 'vite';
 import envCompatible from 'vite-plugin-env-compatible';
 import react from '@vitejs/plugin-react';
 import fs from 'fs';
-import path from 'path'
+import path from 'path';
 
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd());
@@ -17,12 +17,12 @@ export default defineConfig(({ command, mode }) => {
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
-      emptyOutDir: true
+      emptyOutDir: true,
     },
     resolve: {
       alias: {
-        'src': path.resolve(__dirname, './src')
-      }
+        src: path.resolve(__dirname, './src'),
+      },
     },
     server: {
       port: env.VITE_PORT || 3000,
@@ -37,9 +37,9 @@ export default defineConfig(({ command, mode }) => {
         '/graphql': {
           target: `${apiUrl}/graphql`,
           secure: false,
-          changeOrigin: true
-        }
-      }
+          changeOrigin: true,
+        },
+      },
     },
     base: env.VITE_PUBLIC_PATH || '/',
     preview: {
@@ -47,8 +47,8 @@ export default defineConfig(({ command, mode }) => {
         width: 'device-width',
         initialScale: 1,
         maximumScale: 1,
-        userScalable: false
-      }
-    }
+        userScalable: false,
+      },
+    },
   };
 });

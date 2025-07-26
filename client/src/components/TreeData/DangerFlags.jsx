@@ -21,14 +21,14 @@ const DangerFlags = ({ updatedTree }) => {
 
   //----------render component----------
   return (
-    <div 
-      id = 'danger-flags-container' 
+    <div
+      id='danger-flags-container'
       className={styles.dangerFlagsContainer}
     >
-      {nonnativeStatus && <p className = 'danger'>Nonnative</p>}
-      {invasiveStatus && <p className = 'danger'>Invasive</p>}
+      {nonnativeStatus && <p className='danger'>Nonnative</p>}
+      {invasiveStatus && <p className='danger'>Invasive</p>}
     </div>
   );
-}
+};
 
 export default DangerFlags;

@@ -22,41 +22,57 @@ const TreeMap = () => {
   const navigate = useNavigate();
   const mapRef = useRef(null);
   const map = useRef(null);
-  const markersRef = useRef([]); 
+  const markersRef = useRef([]);
   const userLocationRef = useRef(null);
 
   //get global states from parent component
   const {
-    allSpecies, setAllSpecies,
-    allTrees, setAllTrees,
+    allSpecies,
+    setAllSpecies,
+    allTrees,
+    setAllTrees,
     setSelectedTree,
     setUpdatedTree,
     mergedTrees,
-    mapCenter, setMapCenter,
-    mapZoom, setMapZoom,
-    filterOpen, setFilterOpen,
+    mapCenter,
+    setMapCenter,
+    mapZoom,
+    setMapZoom,
+    filterOpen,
+    setFilterOpen,
     filterCriteria,
-    formColor, setFormColor 
+    formColor,
+    setFormColor,
   } = useOutletContext();
 
   //set local states to initial values
-  const [markerRadius, setMarkerRadius] = useState(6)
+  const [markerRadius, setMarkerRadius] = useState(6);
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
-    return mergedTrees.filter(tree => {
+    return mergedTrees.filter((tree) => {
       //filter selects
       //unremark these once all trees have been updated
       if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
-      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh)) return false;
-      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden)) return false;
+      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh))
+        return false;
+      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden))
+        return false;
       const siteInfoKeys = Object.keys(filterCriteria.siteInfo || {});
       for (const key of siteInfoKeys) {
-        if (filterCriteria.siteInfo[key] === false && tree.siteInfo?.[key] === true) return false;
+        if (
+          filterCriteria.siteInfo[key] === false &&
+          tree.siteInfo?.[key] === true
+        )
+          return false;
       }
       const careNeedsKeys = Object.keys(filterCriteria.careNeeds || {});
       for (const key of careNeedsKeys) {
-        if (filterCriteria.careNeeds[key] === false && tree.careNeeds?.[key] === true) return false;
+        if (
+          filterCriteria.careNeeds[key] === false &&
+          tree.careNeeds?.[key] === true
+        )
+          return false;
       }
       if (!filterCriteria.nonnative && tree.nonnative) return false;
       if (!filterCriteria.invasive && tree.invasive) return false;
@@ -66,7 +82,6 @@ const TreeMap = () => {
     });
   }, [mergedTrees, filterCriteria]);
 
-
   //set up mutations
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION);
 
@@ -74,12 +89,12 @@ const TreeMap = () => {
   //generate marker icons
   const generateTreeMarkerIcon = (tree, species, radius, opacity = 1) => {
     const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1'; //temporary; remove after existing trees are updated; DO CONSIDER ADDING THICK STROKE TO SELECTED TREE FOR EASIER IDENTIFICATION
-    const iconSize = (radius * 2) + parseInt(markerStrokeWidth);
+    const iconSize = radius * 2 + parseInt(markerStrokeWidth);
     const markerColor = species.markerColor || 'FFFFFF';
 
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
-        <circle cx='${iconSize/2}' cy='${iconSize/2}' r='${radius}' 
+        <circle cx='${iconSize / 2}' cy='${iconSize / 2}' r='${radius}' 
           fill='${markerColor}' fill-opacity='${opacity}' 
           stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
       </svg>
@@ -88,7 +103,7 @@ const TreeMap = () => {
     return L.icon({
       iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
       iconSize: [iconSize, iconSize],
-      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon)
+      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
     });
   };
 
@@ -101,21 +116,26 @@ const TreeMap = () => {
       center: mapCenter,
       zoom: mapZoom,
       tapTolerance: 15,
-      tapHold: false
+      tapHold: false,
     });
-      //tile-layer options
-      // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
-      // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
-    const googleMutant = L.gridLayer.googleMutant({
-      maxZoom: 24,
-      type: 'satellite',
-      attribution: "...",
-      apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
-    }).addTo(map.current);
+    //tile-layer options
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
+    // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+    const googleMutant = L.gridLayer
+      .googleMutant({
+        maxZoom: 24,
+        type: 'satellite',
+        attribution: '...',
+        apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+      })
+      .addTo(map.current);
 
     navigator.geolocation.watchPosition(
       ({ coords: { latitude, longitude } }) => {
-        if (userLocationRef.current && map.current.hasLayer(userLocationRef.current)) {
+        if (
+          userLocationRef.current &&
+          map.current.hasLayer(userLocationRef.current)
+        ) {
           map.current.removeLayer(userLocationRef.current);
         }
 
@@ -126,7 +146,7 @@ const TreeMap = () => {
           fillOpacity: 0.3,
         }).addTo(map.current);
       },
-      error => console.log("Geolocation error:", error)
+      (error) => console.log('Geolocation error:', error)
     );
 
     map.current.on('click', handleAddTree);
@@ -149,21 +169,27 @@ const TreeMap = () => {
     markersRef.current = [];
 
     // re-add current filtered markers
-    filteredTrees.forEach(tree => {
+    filteredTrees.forEach((tree) => {
       // if (tree.felledDate === '') {
-        createTreeMarker(tree, allSpecies);
+      createTreeMarker(tree, allSpecies);
       // }
     });
   }, [filteredTrees, allSpecies]);
 
   useEffect(() => {
-    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
+    const newRadius =
+      Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
     setMarkerRadius(newRadius);
 
-    markersRef.current.forEach(markerInfo => {
+    markersRef.current.forEach((markerInfo) => {
       const { marker, tree, species, opacity = 1 } = markerInfo;
       // Use the marker's current opacity, not default
-      const updatedIcon = generateTreeMarkerIcon(tree, species, newRadius, opacity);
+      const updatedIcon = generateTreeMarkerIcon(
+        tree,
+        species,
+        newRadius,
+        opacity
+      );
       marker.setIcon(updatedIcon);
     });
   }, [mapZoom]);
@@ -171,41 +197,45 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
-    const species = speciesMap.find(species => species.commonName === tree.commonName);
+    const species = speciesMap.find(
+      (species) => species.commonName === tree.commonName
+    );
     const myIcon = generateTreeMarkerIcon(tree, species, markerRadius);
 
     const popupContent = `
-      ${tree.photos.environs ? `<img src="${tree.photos.environs}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>` : ''}
+      ${
+        tree.photos.environs
+          ? `<img src="${tree.photos.environs}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>`
+          : ''
+      }
       Id: ${tree.id}<br>
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
-      Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${tree.markerColor}; margin-right: 5px;"></span>${tree.family}<br>
+      Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${
+        tree.markerColor
+      }; margin-right: 5px;"></span>${tree.family}<br>
       DBH: ${tree.dbh} inches
     `;
-    
-    const marker = L
-      .marker(
-        [northing, easting], {
-          icon: myIcon,
-          riseOnHover: true,
-          interactive: true,
-          bubblingMouseEvents: false
-        }
-      )
-      .addTo(map.current);
-    
+
+    const marker = L.marker([northing, easting], {
+      icon: myIcon,
+      riseOnHover: true,
+      interactive: true,
+      bubblingMouseEvents: false,
+    }).addTo(map.current);
+
     // Store the tree's marker state (including opacity)
     const markerInfo = {
       marker,
       tree,
       species,
       opacity: 1,
-      draggable: false
+      draggable: false,
     };
-    
+
     markersRef.current.push(markerInfo);
 
-    marker.on('dragend', function(event) {
+    marker.on('dragend', function (event) {
       const { lat, lng } = event.target._latlng;
       const draggedTreeId = tree.id;
       updateTreeLocation({
@@ -213,22 +243,22 @@ const TreeMap = () => {
           id: draggedTreeId,
           location: {
             northing: lat,
-            easting: lng
-          }
-        }
+            easting: lng,
+          },
+        },
       });
     });
 
     //click timer to differentiate between single and double clicks
     let clickTimer = null;
     const clickDelay = 200;
-    
+
     marker.on('click', (event) => {
       //if second click within the delay run dblclick handler
       if (clickTimer) {
         return;
       }
-      
+
       //if no second click within the delay treat as single click
       clickTimer = setTimeout(() => {
         marker.bindPopup(popupContent).openPopup();
@@ -242,15 +272,15 @@ const TreeMap = () => {
         clearTimeout(clickTimer);
         clickTimer = null;
       }
-      
+
       //close popup
       if (marker.isPopupOpen()) {
         marker.closePopup();
       }
-      
+
       //stop event from triggering map's double-click zoom
       L.DomEvent.stopPropagation(event);
-      
+
       //toggle draggable state
       markerInfo.draggable = !markerInfo.draggable;
       if (markerInfo.draggable) {
@@ -258,16 +288,22 @@ const TreeMap = () => {
       } else {
         marker.dragging.disable();
       }
-      
+
       //toggle opacity
       markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
 
       //calculate current radius based on actual zoom level
       const currentZoom = map.current.getZoom();
-      const currentRadius = Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
+      const currentRadius =
+        Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
 
       //generate new icon with updated opacity and current radius
-      const updatedIcon = generateTreeMarkerIcon(tree, species, currentRadius, markerInfo.opacity);
+      const updatedIcon = generateTreeMarkerIcon(
+        tree,
+        species,
+        currentRadius,
+        markerInfo.opacity
+      );
       marker.setIcon(updatedIcon);
     });
 
@@ -276,7 +312,9 @@ const TreeMap = () => {
       const popupElement = popup.getElement();
 
       //prevent navigation when clicking close button
-      const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
+      const closeButton = popupElement.querySelector(
+        '.leaflet-popup-close-button'
+      );
       if (closeButton) {
         closeButton.addEventListener('click', (event) => {
           event.stopPropagation();
@@ -316,12 +354,12 @@ const TreeMap = () => {
         autumnLeaf: '',
         fruit: '',
         flower: '',
-        environs: ''
+        environs: '',
       },
       notes: '',
       location: {
         northing: lat,
-        easting: lng
+        easting: lng,
       },
       garden: '',
       siteInfo: {
@@ -330,7 +368,7 @@ const TreeMap = () => {
         treeCluster: false,
         proximateStructure: false,
         proximateFence: false,
-        propertyLine: false
+        propertyLine: false,
       },
       lastUpdated: '',
       installedDate: '',
@@ -347,29 +385,31 @@ const TreeMap = () => {
         installGrate: false,
         removeGrate: false,
         fell: false,
-        removeStump: false
+        removeStump: false,
       },
-      hidden: false
+      hidden: false,
     };
     setUpdatedTree(newTree);
-    setFormColor({ backgroundColor: 'white' })
-    navigate('/TreeData')
-  }
+    setFormColor({ backgroundColor: 'white' });
+    navigate('/TreeData');
+  };
   return (
     <>
-      <div 
+      <div
         id='filter-thumb'
-        className={`${styles.filterThumb} ${filterOpen ? styles.filterThumbOpen : styles.filterThumbClose}`}
-        onClick={() => setFilterOpen(prev => !prev)}
+        className={`${styles.filterThumb} ${
+          filterOpen ? styles.filterThumbOpen : styles.filterThumbClose
+        }`}
+        onClick={() => setFilterOpen((prev) => !prev)}
       >
         <i className='bi-filter'></i>
       </div>
-      <div 
-        id='map' 
-        className={styles.map} 
-        ref={mapRef} 
-        style={{ height: '100vh', width: '100vw' }}>
-      </div>
+      <div
+        id='map'
+        className={styles.map}
+        ref={mapRef}
+        style={{ height: '100vh', width: '100vw' }}
+      ></div>
       <FilterDrawer filteredTrees={filteredTrees} />
     </>
   );

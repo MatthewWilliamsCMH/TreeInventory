@@ -14,10 +14,14 @@ const Navbar = ({ selectedTree }) => {
   //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
-      case '/': return 'map';
-      case '/TreeData': return 'TreeData';
-      case '/inventory': return 'inventory';
-      default: return 'map';
+      case '/':
+        return 'map';
+      case '/TreeData':
+        return 'TreeData';
+      case '/inventory':
+        return 'inventory';
+      default:
+        return 'map';
     }
   });
 
@@ -27,9 +31,11 @@ const Navbar = ({ selectedTree }) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    if ((selectedValue === 'map' && 'location.pathname' !== '/') ||
+    if (
+      (selectedValue === 'map' && 'location.pathname' !== '/') ||
       (selectedValue === 'TreeData' && 'location.pathname' !== '/TreeData') ||
-      (selectedValue === 'inventory' && 'location.pathname' !== '/inventory')) {
+      (selectedValue === 'inventory' && 'location.pathname' !== '/inventory')
+    ) {
       switch (selectedValue) {
         case 'map':
           navigate('/');

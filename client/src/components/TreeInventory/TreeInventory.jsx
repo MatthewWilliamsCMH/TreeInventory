@@ -22,8 +22,16 @@ const TreeInventory = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
   //set up queries NEEDED NOW?
-  const { loading: getTreesLoading, error: getTreesError, data: getTreesData } = useQuery(GET_TREES);
-  const { loading: getSpeciesLoading, error: getSpeciesError, data: getSpeciesData } = useQuery(GET_SPECIES);
+  const {
+    loading: getTreesLoading,
+    error: getTreesError,
+    data: getTreesData,
+  } = useQuery(GET_TREES);
+  const {
+    loading: getSpeciesLoading,
+    error: getSpeciesError,
+    data: getSpeciesData,
+  } = useQuery(GET_SPECIES);
 
   const combineTreeAndSpeciesData = (tree, speciesMap) => {
     //-----------data reception and transmission----------
@@ -41,7 +49,9 @@ const TreeInventory = () => {
       return acc;
     }, {});
 
-    trees = getTreesData.getTrees.map(tree => combineTreeAndSpeciesData(tree, speciesMap))
+    trees = getTreesData.getTrees.map((tree) =>
+      combineTreeAndSpeciesData(tree, speciesMap)
+    );
   }
 
   //sort trees based on sortConfig
@@ -61,7 +71,8 @@ const TreeInventory = () => {
   if (getTreesLoading) return <div>Loading trees...</div>;
   if (getTreesError) return <div>Error loading trees: {error.message}</div>;
   if (getSpeciesLoading) return <div>Error loading species...</div>;
-  if (getSpeciesError) return <div>Error loading species: {getSpeciesError.message}</div>;
+  if (getSpeciesError)
+    return <div>Error loading species: {getSpeciesError.message}</div>;
 
   //----------called functions----------
   //handle click on column headers to sort
@@ -69,10 +80,14 @@ const TreeInventory = () => {
     //if same column clicked, reverse the sort
     setSortConfig((prev) => ({
       key: columnKey,
-      direction: prev.key === columnKey ? 
-      (prev.direction === 'asc' ? 'desc' : 'asc') : 'asc',
+      direction:
+        prev.key === columnKey
+          ? prev.direction === 'asc'
+            ? 'desc'
+            : 'asc'
+          : 'asc',
     }));
-  }; 
+  };
 
   //handle selection from table
   const handleTreeClick = (completeTree) => {
@@ -88,7 +103,9 @@ const TreeInventory = () => {
         <thead>
           <tr>
             <th onClick={() => handleSort('commonName')}>Common name</th>
-            <th onClick={() => handleSort('scientificName')}>Scientific name</th>
+            <th onClick={() => handleSort('scientificName')}>
+              Scientific name
+            </th>
             <th onClick={() => handleSort('garden')}>Garden</th>
             <th onClick={() => handleSort('dbh')}>DBH</th>
             <th onClick={() => handleSort('notes')}>Notes</th>
@@ -97,7 +114,10 @@ const TreeInventory = () => {
         </thead>
         <tbody>
           {sortedTrees.map((tree) => (
-            <tr key={tree?.id || 'unknown'} onClick={() => handleTreeClick(tree)}>
+            <tr
+              key={tree?.id || 'unknown'}
+              onClick={() => handleTreeClick(tree)}
+            >
               <td>{tree?.commonName || ''}</td>
               <td>{tree?.scientificName || ''}</td>
               <td>{tree?.garden || ''}</td>

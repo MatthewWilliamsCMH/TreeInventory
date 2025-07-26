@@ -23,9 +23,8 @@ tr {
 
 td {
   padding: 5px;
-
 }
 
 tr:nth-child(even) {
-    background-color: var(--pale-yellow);
+  background-color: var(--pale-yellow);
 }

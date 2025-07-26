@@ -8,12 +8,13 @@ import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 
 //components and helpers
+//use aggregation function to combine tree, species, and family data instead of the helper below (or just chagne the helper to use the aggregation function)
 import { combineTreeAndSpeciesData } from './utils/helpers.js';
 import { dbhList, gardenList } from './utils/constants.js';
 
 //stylesheets
 import './reset.css';
-import './custom-bootstrap.scss'
+import './custom-bootstrap.scss';
 import styles from './app.module.css';
 
 //queries
@@ -24,7 +25,7 @@ function App() {
   //-----------data reception and transmission----------
   //initialize global states
   const [allSpecies, setAllSpecies] = useState([]);
-  const [allTrees, setAllTrees] = useState([])
+  const [allTrees, setAllTrees] = useState([]);
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
   const [updatedTree, setUpdatedTree] = useState(null);
@@ -47,7 +48,7 @@ function App() {
       installGrate: true,
       removeGrate: true,
       fell: true,
-      removeStump: true
+      removeStump: true,
     },
     siteInfo: {
       slope: true,
@@ -55,44 +56,44 @@ function App() {
       treeCluster: true,
       proximateStructure: true,
       proximateFence: true,
-      propertyLine: true
+      propertyLine: true,
     },
     invasive: true,
     nonnative: true,
-    hidden: false
+    hidden: false,
   });
   const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]); //default for demo and develop modes
   const [mapZoom, setMapZoom] = useState(18);
   const [formColor, setFormColor] = useState({ backgroundColor: 'white' }); //default background for noninvasive trees
   const mergedTrees = useMemo(() => {
     if (!allTrees.length || !allSpecies.length) return [];
-    return allTrees.map(tree => combineTreeAndSpeciesData(tree, allSpecies));
+    return allTrees.map((tree) => combineTreeAndSpeciesData(tree, allSpecies));
   }, [allTrees, allSpecies]);
   //set up queries
-  const { 
-    data: getTreesData, 
-    error: getTreesError, 
-    loading: getTreesLoading, 
-    refetch: refetchTrees
-  } = useQuery(GET_TREES, {fetchPolicy: 'network-only'});
-  const { 
-    data: getSpeciesData, 
-    error: getSpeciesError, 
-    loading: getSpeciesLoading, 
-    refetch: refetchSpecies
+  const {
+    data: getTreesData,
+    error: getTreesError,
+    loading: getTreesLoading,
+    refetch: refetchTrees,
+  } = useQuery(GET_TREES, { fetchPolicy: 'network-only' });
+  const {
+    data: getSpeciesData,
+    error: getSpeciesError,
+    loading: getSpeciesLoading,
+    refetch: refetchSpecies,
   } = useQuery(GET_SPECIES);
 
   //----------useEffects----------
   //get user location for develop and production modes
   useEffect(() => {
-    const useFixedLocation = process.env.FIXED_LOCATION === "true";
+    const useFixedLocation = process.env.FIXED_LOCATION === 'true';
     if (!useFixedLocation) {
       navigator.geolocation.getCurrentPosition(
         ({ coords: { latitude, longitude } }) => {
           setMapCenter([latitude, longitude]);
         },
         (error) => {
-          console.log("Geolocation error:", error);
+          console.log('Geolocation error:', error);
         }
       );
     }
@@ -115,13 +116,13 @@ function App() {
   //set filter criteria for initial render
   useEffect(() => {
     if (allSpecies.length) {
-      setFilterCriteria(prev => ({
+      setFilterCriteria((prev) => ({
         ...prev,
-        commonName: allSpecies.map(species => species.commonName),
+        commonName: allSpecies.map((species) => species.commonName),
       }));
     }
   }, [allSpecies]);
-  
+
   //update selectedTree as selection changes
   useEffect(() => {
     if (selectedTree) {
@@ -134,21 +135,33 @@ function App() {
     <div className='app'>
       <Header />
       <Navbar selectedTree={selectedTree} />
-      <Outlet context = {{ 
-        allSpecies, setAllSpecies,
-        refetchSpecies,
-        allTrees, setAllTrees,
-        refetchTrees,
-        mergedTrees,
-        selectedTree, setSelectedTree, 
-        treeLocation, setTreeLocation,
-        updatedTree, setUpdatedTree,
-        mapCenter, setMapCenter,
-        mapZoom, setMapZoom,
-        filterOpen, setFilterOpen,
-        filterCriteria, setFilterCriteria,
-        formColor, setFormColor
-      }} />
+      <Outlet
+        context={{
+          allSpecies,
+          setAllSpecies,
+          refetchSpecies,
+          allTrees,
+          setAllTrees,
+          refetchTrees,
+          mergedTrees,
+          selectedTree,
+          setSelectedTree,
+          treeLocation,
+          setTreeLocation,
+          updatedTree,
+          setUpdatedTree,
+          mapCenter,
+          setMapCenter,
+          mapZoom,
+          setMapZoom,
+          filterOpen,
+          setFilterOpen,
+          filterCriteria,
+          setFilterCriteria,
+          formColor,
+          setFormColor,
+        }}
+      />
     </div>
   );
 }

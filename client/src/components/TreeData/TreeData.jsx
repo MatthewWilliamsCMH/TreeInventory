@@ -25,15 +25,20 @@ import styles from './treeData.module.css';
 const TreeData = () => {
   //-----------data reception and transmission----------
   //get current global states from parent
-  const { 
-    allSpecies, setAllSpecies,
+  const {
+    allSpecies,
+    setAllSpecies,
     refetchSpecies,
-    allTrees, setAllTrees, 
+    allTrees,
+    setAllTrees,
     refetchTrees,
-    updatedTree, setUpdatedTree, 
-    selectedTree, setSelectedTree,
-    formColor, setFormColor 
-    } = useOutletContext();
+    updatedTree,
+    setUpdatedTree,
+    selectedTree,
+    setSelectedTree,
+    formColor,
+    setFormColor,
+  } = useOutletContext();
 
   //set local states to initial values
   const [modalVisible, setModalVisible] = useState(false);
@@ -48,8 +53,12 @@ const TreeData = () => {
   const [scientificNameInput, setScientificNameInput] = useState('');
   const [scientificNameDropdownOpen, setScientificNameDropdownOpen] = useState(false);
   const [dbhInput, setDbhInput] = useState('');
-  const [installedDateInput, setInstalledDateInput] = useState(formatDateForDisplay(updatedTree.installedDate) || '');
-  const [felledDateInput, setFelledDateInput] = useState(formatDateForDisplay(updatedTree.felledDate) || '');
+  const [installedDateInput, setInstalledDateInput] = useState(
+    formatDateForDisplay(updatedTree.installedDate) || ''
+  );
+  const [felledDateInput, setFelledDateInput] = useState(
+    formatDateForDisplay(updatedTree.felledDate) || ''
+  );
 
   //set up mutations
   const [addTree] = useMutation(ADD_TREE);
@@ -64,7 +73,7 @@ const TreeData = () => {
   useEffect(() => {
     if (allSpecies && allSpecies.length) {
       const commonToScientific = {};
-      allSpecies.forEach(species => {
+      allSpecies.forEach((species) => {
         if (species.commonName && species.scientificName) {
           commonToScientific[species.commonName] = species.scientificName;
         }
@@ -85,16 +94,14 @@ const TreeData = () => {
 
     const matchesPendingSpecies =
       pendingSpecies &&
-      (
-        (updatedSpeciesField === 'commonName' && pendingSpecies.commonName === trimmedValue) ||
-        (updatedSpeciesField === 'scientificName' && pendingSpecies.scientificName === trimmedValue)
-      );
+      ((updatedSpeciesField === 'commonName' && pendingSpecies.commonName === trimmedValue) ||
+        (updatedSpeciesField === 'scientificName' &&
+          pendingSpecies.scientificName === trimmedValue));
 
     const matchesExistingSpecies =
       allSpecies &&
-      allSpecies.some(species =>
-        species.commonName === trimmedValue ||
-        species.scientificName === trimmedValue
+      allSpecies.some(
+        (species) => species.commonName === trimmedValue || species.scientificName === trimmedValue
       );
 
     if (!matchesExistingSpecies && !matchesPendingSpecies) {
@@ -104,7 +111,6 @@ const TreeData = () => {
     setUpdatedSpeciesField(null);
     setUpdatedSpeciesValue('');
   }, [updatedSpeciesField, updatedSpeciesValue, allSpecies, pendingSpecies]);
-
 
   //----------called functions----------
   //handle control changes
@@ -140,29 +146,30 @@ const TreeData = () => {
 
     if (field === 'commonName') {
       const scientific = commonToScientific?.[value] || '';
-      setUpdatedTree(prev => ({
+      setUpdatedTree((prev) => ({
         ...prev,
         commonName: value,
-        scientificName: scientific
+        scientificName: scientific,
       }));
     } else if (field === 'scientificName') {
-      const common = Object.entries(commonToScientific || {}).find(([, sci]) => sci === value)?.[0] || '';
-      setUpdatedTree(prev => ({
+      const common =
+        Object.entries(commonToScientific || {}).find(([, sci]) => sci === value)?.[0] || '';
+      setUpdatedTree((prev) => ({
         ...prev,
         scientificName: value,
-        commonName: common
+        commonName: common,
       }));
     } else {
-      setUpdatedTree(prev => ({
+      setUpdatedTree((prev) => ({
         ...prev,
-        [field]: value
+        [field]: value,
       }));
     }
   };
-  
+
   //checkbox handler
   const handleCheckboxChange = (field, checked) => {
-    setUpdatedTree(prev => handleFieldChange(prev, field, checked));
+    setUpdatedTree((prev) => handleFieldChange(prev, field, checked));
   };
 
   //default input handler
@@ -178,17 +185,17 @@ const TreeData = () => {
     }
 
     // Update the main updatedTree state
-    setUpdatedTree(prev => handleFieldChange(prev, field, value));
+    setUpdatedTree((prev) => handleFieldChange(prev, field, value));
   };
 
   //handle photo uploads
   const handlePhotoUpload = (url, photoType) => {
-    setUpdatedTree(prevValues => ({
+    setUpdatedTree((prevValues) => ({
       ...prevValues,
       photos: {
         ...prevValues.photos,
-        [photoType]: url
-      }
+        [photoType]: url,
+      },
     }));
   };
 
@@ -198,11 +205,11 @@ const TreeData = () => {
 
     setPendingSpecies(newSpecies);
 
-    setUpdatedTree(prev => {
+    setUpdatedTree((prev) => {
       const newTree = {
         ...prev,
         commonName: newSpecies.commonName,
-        scientificName: newSpecies.scientificName
+        scientificName: newSpecies.scientificName,
       };
       return newTree;
     });
@@ -218,7 +225,7 @@ const TreeData = () => {
   const handleSubmit = async () => {
     try {
       if (pendingSpecies) {
-        await addSpecies({variables: pendingSpecies});
+        await addSpecies({ variables: pendingSpecies });
         await refetchSpecies();
         console.log('Species added:', pendingSpecies);
         setPendingSpecies(null);
@@ -228,46 +235,54 @@ const TreeData = () => {
         commonName: updatedTree.commonName,
         variety: updatedTree.variety,
         dbh: updatedTree.dbh,
-        photos: updatedTree.photos ? {
-          bark: updatedTree.photos.bark,
-          summerLeaf: updatedTree.photos.summerLeaf,
-          autumnLeaf: updatedTree.photos.autumnLeaf,
-          fruit: updatedTree.photos.fruit,
-          flower: updatedTree.photos.flower,
-          environs: updatedTree.photos.environs
-        } : null,
+        photos: updatedTree.photos
+          ? {
+              bark: updatedTree.photos.bark,
+              summerLeaf: updatedTree.photos.summerLeaf,
+              autumnLeaf: updatedTree.photos.autumnLeaf,
+              fruit: updatedTree.photos.fruit,
+              flower: updatedTree.photos.flower,
+              environs: updatedTree.photos.environs,
+            }
+          : null,
         notes: updatedTree.notes,
-        location: updatedTree.location ? {
-          easting: updatedTree.location.easting,
-          northing: updatedTree.location.northing
-        } : null,
+        location: updatedTree.location
+          ? {
+              easting: updatedTree.location.easting,
+              northing: updatedTree.location.northing,
+            }
+          : null,
         garden: updatedTree.garden,
-        siteInfo: updatedTree.siteInfo ? {
-          slope: updatedTree.siteInfo.slope,
-          overheadLines: updatedTree.siteInfo.overheadLines,
-          treeCluster: updatedTree.siteInfo.treeCluster,
-          proximateStructure: updatedTree.siteInfo.proximateStructure,
-          proximateFence: updatedTree.siteInfo.proximateFence,
-          propertyLine: updatedTree.siteInfo.propertyLine
-        } : null,
+        siteInfo: updatedTree.siteInfo
+          ? {
+              slope: updatedTree.siteInfo.slope,
+              overheadLines: updatedTree.siteInfo.overheadLines,
+              treeCluster: updatedTree.siteInfo.treeCluster,
+              proximateStructure: updatedTree.siteInfo.proximateStructure,
+              proximateFence: updatedTree.siteInfo.proximateFence,
+              propertyLine: updatedTree.siteInfo.propertyLine,
+            }
+          : null,
         lastUpdated: new Date().toLocaleDateString('en-US'),
         installedDate: updatedTree.installedDate,
         installedBy: updatedTree.installedBy,
         felledDate: updatedTree.felledDate,
         felledBy: updatedTree.felledBy,
-        careNeeds: updatedTree.careNeeds ? {
-          install: updatedTree.careNeeds.install,
-          raiseCrown: updatedTree.careNeeds.raiseCrown,
-          routinePrune: updatedTree.careNeeds.routinePrune,
-          trainingPrune: updatedTree.careNeeds.trainingPrune,
-          priorityPrune: updatedTree.careNeeds.priorityPrune,
-          pestTreatment: updatedTree.careNeeds.pestTreatment,
-          installGrate: updatedTree.careNeeds.installGrate,
-          removeGrate: updatedTree.careNeeds.removeGrate,
-          fell: updatedTree.careNeeds.fell,
-          removeStump: updatedTree.careNeeds.removeStump
-        } : null,
-        hidden: updatedTree.hidden
+        careNeeds: updatedTree.careNeeds
+          ? {
+              install: updatedTree.careNeeds.install,
+              raiseCrown: updatedTree.careNeeds.raiseCrown,
+              routinePrune: updatedTree.careNeeds.routinePrune,
+              trainingPrune: updatedTree.careNeeds.trainingPrune,
+              priorityPrune: updatedTree.careNeeds.priorityPrune,
+              pestTreatment: updatedTree.careNeeds.pestTreatment,
+              installGrate: updatedTree.careNeeds.installGrate,
+              removeGrate: updatedTree.careNeeds.removeGrate,
+              fell: updatedTree.careNeeds.fell,
+              removeStump: updatedTree.careNeeds.removeStump,
+            }
+          : null,
+        hidden: updatedTree.hidden,
       };
       console.log('Submitting tree payload:', treePayload);
       if (!updatedTree?.id) {
@@ -276,7 +291,7 @@ const TreeData = () => {
         console.log('Tree added:', data.addTree);
       } else {
         const { data } = await updateTree({
-          variables: { id: updatedTree.id, ...treePayload }
+          variables: { id: updatedTree.id, ...treePayload },
         });
         await refetchTrees();
         console.log('Tree updated:', data.updateTree);
@@ -284,11 +299,11 @@ const TreeData = () => {
 
       setUpdatedTree(null);
       setSelectedTree(null);
-      navigate('/')
+      navigate('/');
     } catch (err) {
       console.error('Error saving tree or species:', err);
     }
-  }
+  };
 
   //handle cancel button
   const handleCancel = () => {
@@ -304,35 +319,38 @@ const TreeData = () => {
         onCancelClearSpecies={() => {
           setCommonNameInput('');
           setScientificNameInput('');
-          setUpdatedTree(prev => ({
+          setUpdatedTree((prev) => ({
             ...prev,
             commonName: '',
-            scientificName: ''
+            scientificName: '',
           }));
         }}
-        onHide = {() => setModalVisible(false)}
-        onSubmitNewSpecies = {handleNewSpeciesSubmit}
-        show = {modalVisible}
+        onHide={() => setModalVisible(false)}
+        onSubmitNewSpecies={handleNewSpeciesSubmit}
+        show={modalVisible}
       />
 
-      <div className = {styles.dangerFlagsContainer}>
-        <DangerFlags updatedTree = {updatedTree}/>
+      <div className={styles.dangerFlagsContainer}>
+        <DangerFlags updatedTree={updatedTree} />
       </div>
 
-      <Container className = 'pt-3' style={{ paddingLeft: '5rem' }}>
-        <Form style = {formColor}>
+      <Container
+        className='pt-3'
+        style={{ paddingLeft: '5rem' }}
+      >
+        <Form style={formColor}>
           <Row>
-            <Col md = {6}>
-              <fieldset id = 'taxonomy'>
+            <Col md={6}>
+              <fieldset id='taxonomy'>
                 <legend>Taxonomy</legend>
                 <Typeahead
                   allowNew
-                  className = 'mt-1'
-                  filterBy = {() => true}
-                  id = 'commonName'
-                  labelKey = 'label'
-                  multiple = {false}
-                  onBlur = {() => {
+                  className='mt-1'
+                  filterBy={() => true}
+                  id='commonName'
+                  labelKey='label'
+                  multiple={false}
+                  onBlur={() => {
                     if (commonNameInput.trim()) {
                       handleInputChange('commonName', [
                         { label: commonNameInput.trim(), value: commonNameInput.trim() },
@@ -358,31 +376,37 @@ const TreeData = () => {
                   options={
                     commonToScientific
                       ? Object.keys(commonToScientific)
-                      .sort((a, b) => a.localeCompare(b))
-                      .map((common) => ({
-                          label: common,
-                          value: common,
-                        }))
-                    : []
+                          .sort((a, b) => a.localeCompare(b))
+                          .map((common) => ({
+                            label: common,
+                            value: common,
+                          }))
+                      : []
                   }
-                  placeholder="Common name"
+                  placeholder='Common name'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     commonNameInput
                       ? [{ label: commonNameInput, value: commonNameInput }]
                       : updatedTree.commonName
-                        ? [{ label: `Common name: ${updatedTree.commonName}`, value: updatedTree.commonName }]
-                        : []
+                      ? [
+                          {
+                            label: `Common name: ${updatedTree.commonName}`,
+                            value: updatedTree.commonName,
+                          },
+                        ]
+                      : []
                   }
                 />
+
                 <Typeahead
                   allowNew
                   className='mt-1'
-                  filterBy = {() => true}
-                  id = 'scientificName'
-                  labelKey = 'label'
-                  multiple = {false}
-                  onBlur = {() => {
+                  filterBy={() => true}
+                  id='scientificName'
+                  labelKey='label'
+                  multiple={false}
+                  onBlur={() => {
                     if (scientificNameInput.trim()) {
                       handleInputChange('scientificName', [
                         { label: scientificNameInput.trim(), value: scientificNameInput.trim() },
@@ -415,144 +439,171 @@ const TreeData = () => {
                           }))
                       : []
                   }
-                  placeholder="Scientific name"
+                  placeholder='Scientific name'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     scientificNameInput
                       ? [{ label: scientificNameInput, value: scientificNameInput }]
                       : updatedTree.scientificName
-                        ? [{ label: `Scientific name: ${updatedTree.scientificName}`, value: updatedTree.scientificName }]
-                        : []
+                      ? [
+                          {
+                            label: `Scientific name: ${updatedTree.scientificName}`,
+                            value: updatedTree.scientificName,
+                          },
+                        ]
+                      : []
                   }
                 />
               </fieldset>
-              <fieldset id = 'physicalData' className = 'mt-2'>
+
+              <fieldset
+                id='physicalData'
+                className='mt-2'
+              >
                 <legend>Physical Data</legend>
                 <Typeahead
-                  className = 'mt-1'
-                  id = 'dbh'
-                  filterBy = {() => true}
-                  labelKey = 'label'
-                  multiple = {false}
-                  onChange = {event => handleInputChange('dbh', event)}
-                  options = {dbhList.map((dbh) => ({
+                  className='mt-1'
+                  id='dbh'
+                  filterBy={() => true}
+                  labelKey='label'
+                  multiple={false}
+                  onChange={(event) => handleInputChange('dbh', event)}
+                  options={dbhList.map((dbh) => ({
                     label: dbh,
-                    value: dbh
+                    value: dbh,
                   }))}
-                  placeholder = 'DBH'
+                  placeholder='DBH'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
-                  selected = {
+                  selected={
                     updatedTree.dbh
                       ? [{ label: `Diameter: ${updatedTree.dbh}`, value: updatedTree.dbh }]
                       : []
                   }
                 />
+
                 <PhotoUploadForm
-                  updatedTree = {updatedTree}
-                  onPhotoUpload = {handlePhotoUpload}
+                  updatedTree={updatedTree}
+                  onPhotoUpload={handlePhotoUpload}
                 />
               </fieldset>
-              <fieldset className = 'mt-2'>
+
+              <fieldset className='mt-2'>
                 <legend>Notes</legend>
-                <Form.Control 
-                  as = 'textarea'
-                  id = 'notes'
-                  placeholder = {'YYYY: Note'}
-                  onChange = {event => handleInputChange('notes', event)}
-                  rows = {2}
-                  value = {updatedTree.notes}
+                <Form.Control
+                  as='textarea'
+                  id='notes'
+                  placeholder={'YYYY: Note'}
+                  onChange={(event) => handleInputChange('notes', event)}
+                  rows={2}
+                  value={updatedTree.notes}
                 />
               </fieldset>
             </Col>
-            <Col md = {6}>
-              <fieldset id = 'care'>
+
+            <Col md={6}>
+              <fieldset id='care'>
                 <legend>Care History</legend>
                 <Form.Control
-                  id = 'installedDate'
-                  className = 'mb-1'
-                  onChange = {(event) => handleDefaultInputChange('installedDate', event)}
-                  placeholder = {`Installed date ('MM/DD/YYYY' or '<YYYY')`}
-                  type = 'text'
+                  id='installedDate'
+                  className='mb-1'
+                  onChange={(event) => handleDefaultInputChange('installedDate', event)}
+                  placeholder={`Installed date ('MM/DD/YYYY' or '<YYYY')`}
+                  type='text'
                   //need to make this a condition so that "Installed:" is only displayed if there is a value"
-                  value = { installedDateInput ? `Installed on: ${installedDateInput}` : '' }
+                  value={installedDateInput ? `Installed: ${installedDateInput}` : ''}
                 />
+
                 <Form.Control
-                  id = 'installedBy'
-                  className = 'mb-1'
-                  onChange = {(event) => handleDefaultInputChange('installedBy', event)}
-                  placeholder = {'Installed by'}
-                  type = 'text'
-                  value = {updatedTree.installedBy ? `Installed by: ${updatedTree.installedBy}` : ''}
+                  id='installedBy'
+                  className='mb-1'
+                  onChange={(event) => handleDefaultInputChange('installedBy', event)}
+                  placeholder={'Installed by'}
+                  type='text'
+                  value={updatedTree.installedBy ? `Installed by: ${updatedTree.installedBy}` : ''}
                 />
+
                 <Form.Control
-                  id = 'felledDate'
-                  className = 'mb-1'
-                  onChange = {(event) => handleDefaultInputChange('felledDate', event)}
-                  placeholder = {`Felled date ('MM/DD/YYYY' or '<YYYY')`}
-                  type = 'text'
-                  value = {felledDateInput ? `Felled on: ${felledDateInput}` : ''}
+                  id='felledDate'
+                  className='mb-1'
+                  onChange={(event) => handleDefaultInputChange('felledDate', event)}
+                  placeholder={`Felled date ('MM/DD/YYYY' or '<YYYY')`}
+                  type='text'
+                  value={felledDateInput ? `Felled: ${felledDateInput}` : ''}
                 />
+
                 <Form.Control
-                  id = 'felledBy'
-                  className = 'mb-1'
-                  onChange = {(event) => handleDefaultInputChange('felledBy', event)}
-                  placeholder = {'Felled by'}
-                  type = 'text'
-                  value = {updatedTree.felledBy ? `Felled by: ${updatedTree.felledBy}` : ''}
+                  id='felledBy'
+                  className='mb-1'
+                  onChange={(event) => handleDefaultInputChange('felledBy', event)}
+                  placeholder={'Felled by'}
+                  type='text'
+                  value={updatedTree.felledBy ? `Felled by: ${updatedTree.felledBy}` : ''}
                 />
-                <Form.Group className = 'mt-2'>
+
+                <Form.Group className='mt-2'>
                   <Row>
                     {careNeedsList.map((need) => (
-                      <Col xs = {12} sm = {6} key = {need}>
+                      <Col
+                        xs={12}
+                        sm={6}
+                        key={need}
+                      >
                         <Form.Check
-                          checked = {updatedTree.careNeeds[need] || false}
-                          id = {need}
-                          label = {need
+                          checked={updatedTree.careNeeds[need] || false}
+                          id={need}
+                          label={need
                             .replace(/([A-Z])/g, ' $1')
-                            .replace(/^./, str => str.toUpperCase())
-                          }
-                          onChange = {(event) => handleInputChange(`careNeeds.${need}`, event)}
-                          type = 'checkbox'
+                            .replace(/^./, (str) => str.toUpperCase())}
+                          onChange={(event) => handleInputChange(`careNeeds.${need}`, event)}
+                          type='checkbox'
                         />
                       </Col>
                     ))}
                   </Row>
                 </Form.Group>
               </fieldset>
-              <fieldset id = 'siteInfo' className = 'mt-2'>
+
+              <fieldset
+                id='siteInfo'
+                className='mt-2'
+              >
                 <legend>Site Info</legend>
                 <Typeahead
-                  className = 'mt-1'
-                  id = 'garden'
-                  filterBy = {() => true}
-                  labelKey = 'label'
-                  multiple = {false}
-                  onChange = {event => handleInputChange('garden', event)}
-                  options = {gardenList.map((garden) => ({
+                  className='mt-1'
+                  id='garden'
+                  filterBy={() => true}
+                  labelKey='label'
+                  multiple={false}
+                  onChange={(event) => handleInputChange('garden', event)}
+                  options={gardenList.map((garden) => ({
                     label: garden,
-                    value: garden
+                    value: garden,
                   }))}
-                  placeholder = 'Garden'
+                  placeholder='Garden'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
-                  selected = {
+                  selected={
                     updatedTree.garden
                       ? [{ label: `Garden: ${updatedTree.garden}`, value: updatedTree.garden }]
                       : []
                   }
                 />
-                <Form.Group className = 'mt-2'>
+
+                <Form.Group className='mt-2'>
                   <Row>
                     {siteInfoList.map((condition) => (
-                      <Col xs = {12} sm = {6} key = {condition}>
+                      <Col
+                        xs={12}
+                        sm={6}
+                        key={condition}
+                      >
                         <Form.Check
-                          checked = {updatedTree.siteInfo[condition] || false}
-                          id = {condition}
-                          label = {condition
+                          checked={updatedTree.siteInfo[condition] || false}
+                          id={condition}
+                          label={condition
                             .replace(/([A-Z])/g, ' $1')
-                            .replace(/^./, str => str.toUpperCase())
-                          }
-                          onChange = {(event) => handleInputChange(`siteInfo.${condition}`, event)}
-                          type = 'checkbox'
+                            .replace(/^./, (str) => str.toUpperCase())}
+                          onChange={(event) => handleInputChange(`siteInfo.${condition}`, event)}
+                          type='checkbox'
                         />
                       </Col>
                     ))}
@@ -561,40 +612,47 @@ const TreeData = () => {
               </fieldset>
             </Col>
           </Row>
-          <Row className = 'mt-1'>
-            <Col md = {6}>
-              <div id = 'autodata' className = 'mt-1'>
-                <p>Last updated: { 
-                  updatedTree.lastUpdated 
-                      ? new Date(parseInt(updatedTree.lastUpdated)).toLocaleDateString('en-US') 
-                  : new Date().toLocaleDateString('en-US')
-                }</p>
+
+          <Row className='mt-1'>
+            <Col md={6}>
+              <div
+                id='autodata'
+                className='mt-1'
+              >
+                <p>
+                  Last updated:{' '}
+                  {updatedTree.lastUpdated
+                    ? new Date(parseInt(updatedTree.lastUpdated)).toLocaleDateString('en-US')
+                    : new Date().toLocaleDateString('en-US')}
+                </p>
               </div>
             </Col>
-            <Col className = 'd-flex gap-1 pt-1 pb-1 justify-content-end'>
+
+            <Col className='d-flex gap-1 pt-1 pb-1 justify-content-end'>
               <Button
-                className = 'pull-right'
+                className='pull-right'
                 variant='primary'
-                size = 'sm'
+                size='sm'
                 type='button'
-                onClick={ handleSubmit }
+                onClick={handleSubmit}
               >
                 OK
               </Button>
+
               <Button
                 variant='secondary'
-                size = 'sm'
+                size='sm'
                 type='cancel'
-                onClick={ handleCancel }
+                onClick={handleCancel}
               >
-              Cancel
+                Cancel
               </Button>
             </Col>
           </Row>
         </Form>
       </Container>
     </>
-  )
+  );
 };
 
 export default TreeData;

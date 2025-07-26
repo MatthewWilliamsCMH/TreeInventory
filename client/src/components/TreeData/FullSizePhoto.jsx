@@ -4,15 +4,11 @@ const FullSizePhoto = ({ photoUrl, onClose, onEdit }) => {
     <div>
       <div>
         <div>
-          <button onClick={onEdit}>
-            Replace Photo
-          </button>
-          <button onClick={onClose}>
-            Close
-          </button>
+          <button onClick={onEdit}>Replace Photo</button>
+          <button onClick={onClose}>Close</button>
         </div>
-        <img 
-          src={photoUrl} 
+        <img
+          src={photoUrl}
           alt='Full size view'
         />
       </div>

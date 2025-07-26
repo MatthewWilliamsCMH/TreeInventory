@@ -29,7 +29,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const uppyConfig = {
       restrictions: {
         maxNumberOfFiles: 1,
-        allowedFileTypes: ['image/*']
+        allowedFileTypes: ['image/*'],
       },
       autoProceed: false,
     };
@@ -39,14 +39,18 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       mirror: false,
       showVideoSourceDropdown: true,
       videoConstraints: {
-        facingMode: 'environment'
-      }
+        facingMode: 'environment',
+      },
     };
 
     const XHRUploadConfig = {
-      endpoint: `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'}/uploads`,
+      endpoint: `${
+        import.meta.env.VITE_API_URL
+          ? import.meta.env.VITE_API_URL
+          : 'https://localhost:3001'
+      }/uploads`,
       fieldName: 'photo',
-      formData: true
+      formData: true,
     };
 
     const compressorConfig = {
@@ -86,11 +90,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     const photoUrl = updatedTree.photos[photoType];
 
     if (photoUrl) {
-    //open a new browser window
-    const newWindow = window.open('', '_blank', 'width=1024,height=768');
+      //open a new browser window
+      const newWindow = window.open('', '_blank', 'width=1024,height=768');
 
-    //write custom html for new window
-    newWindow.document.write(`
+      //write custom html for new window
+      newWindow.document.write(`
       <!DOCTYPE html>
       <html>
         <head>
@@ -122,23 +126,22 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       </html>
     `);
 
-    //handle message from the new window
-    const handleMessage = (event) => {
-      if (event.data === 'openUppy') {
-        newWindow.close();
-        setActivePhotoType(photoType);
-        uppy?.cancelAll();
-      }
-    };
+      //handle message from the new window
+      const handleMessage = (event) => {
+        if (event.data === 'openUppy') {
+          newWindow.close();
+          setActivePhotoType(photoType);
+          uppy?.cancelAll();
+        }
+      };
 
-    window.addEventListener('message', handleMessage);
+      window.addEventListener('message', handleMessage);
 
-    //cleanup
-    return () => {
-      window.removeEventListener('message', handleMessage);
-    };
-    }
-    else {
+      //cleanup
+      return () => {
+        window.removeEventListener('message', handleMessage);
+      };
+    } else {
       setActivePhotoType(photoType);
       uppy?.cancelAll();
     }
@@ -152,17 +155,24 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         className='p-0 mt-1'
       >
         <Row className='g-1'>
-          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
+          {[
+            'bark',
+            'summerLeaf',
+            'autumnLeaf',
+            'fruit',
+            'flower',
+            'environs',
+          ].map((photoType) => (
             <Col
               xs={4}
               sm={4}
               md={6}
               lg={4}
               className='text-center'
-              style={{ color:'#BBB' }}
+              style={{ color: '#BBB' }}
               key={photoType}
             >
-            <div
+              <div
                 onClick={() => handlePhotoClick(photoType)}
                 style={{
                   cursor: 'pointer',
@@ -171,23 +181,23 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
               >
                 {updatedTree.photos?.[photoType] ? (
                   <Image
-                    alt = {photoType}
-                    className = 'object-cover'
+                    alt={photoType}
+                    className='object-cover'
                     rounded
-                    src = {updatedTree.photos[photoType]}
+                    src={updatedTree.photos[photoType]}
                     style={{
                       width: '100%',
                       height: '100px',
-                      objectFit: 'cover'
+                      objectFit: 'cover',
                     }}
                   />
                 ) : (
                   <div
-                    className="photo-placeholder border rounded d-flex align-items-center justify-content-center"
+                    className='photo-placeholder border rounded d-flex align-items-center justify-content-center'
                     style={{
                       height: '100px',
                       background: '#fff',
-                      width: '100%'
+                      width: '100%',
                     }}
                   >
                     <span>
@@ -205,23 +215,23 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
       {uppy && (
         <DashboardModal
-          uppy = {uppy}
-          open = {activePhotoType !== null}
-          onRequestClose = {() => setActivePhotoType(null)}
-          plugins = {['Webcam']}
+          uppy={uppy}
+          open={activePhotoType !== null}
+          onRequestClose={() => setActivePhotoType(null)}
+          plugins={['Webcam']}
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
-          note = {`Upload or take a photo of the tree's ${activePhotoType}`}
+          note={`Upload or take a photo of the tree's ${activePhotoType}`}
         />
       )}
 
       {showFullSize && (
         <FullSizePhoto
-          photoUrl = {selectedPhotoUrl}
-          onClose = {() => setShowFullSize(false)}
-          onEdit = {() => {
-            setShowFullSize(false)
-            setActivePhotoType(activePhotoType)
+          photoUrl={selectedPhotoUrl}
+          onClose={() => setShowFullSize(false)}
+          onEdit={() => {
+            setShowFullSize(false);
+            setActivePhotoType(activePhotoType);
           }}
         />
       )}

@@ -1,0 +1,102 @@
+[
+  {
+    "family": "Betulaceae",
+    "markerColor": "#ffcdd2"
+  },
+  {
+    "family": "Bignoniaceae",
+    "markerColor": "#ef9a9a"
+  },
+  {
+    "family": "Cornaceae",
+    "markerColor": "#607d8b"
+  },
+  {
+    "family": "Cupressaceae",
+    "markerColor": "#f06292"
+  },
+  {
+    "family": "Ebanaceae",
+    "markerColor": "#f44336"
+  },
+  {
+    "family": "Fabaceae",
+    "markerColor": "#b71c1c"
+  },
+  {
+    "family": "Fagaceae",
+    "markerColor": "#ad1457"
+  },
+  {
+    "family": "Ginkgoaceae",
+    "markerColor": "#e1bee7"
+  },
+  {
+    "family": "Hamamelidaceae",
+    "markerColor": "#ce93d8"
+  },
+  {
+    "family": "Juglandaceae",
+    "markerColor": "#ab47bc"
+  },
+  {
+    "family": "Lauraceae",
+    "markerColor": "#aa00ff"
+  },
+  {
+    "family": "Magnoliaceae",
+    "markerColor": "#6a1b9a"
+  },
+  {
+    "family": "Malvaceae",
+    "markerColor": "#0097a7"
+  },
+  {
+    "family": "Moraceae",
+    "markerColor": "#9575cd"
+  },
+  {
+    "family": "Nyssaceae",
+    "markerColor": "#5e35b1"
+  },
+  {
+    "family": "Oleaceae",
+    "markerColor": "#fff176"
+  },
+  {
+    "family": "Pinaceae",
+    "markerColor": "#81c784"
+  },
+  {
+    "family": "Platanaceae",
+    "markerColor": "#3f51b5"
+  },
+  {
+    "family": "Rosaceae",
+    "markerColor": "#304ffe"
+  },
+  {
+    "family": "Salicaceae",
+    "markerColor": "#283593"
+  },
+  {
+    "family": "Sapindaceae",
+    "markerColor": "#f9a825"
+  },
+  {
+    "family": "Simaroubaceae",
+    "markerColor": "#42a5f5"
+  },
+  {
+    "family": "Ulmaceae",
+    "markerColor": "#43a047"
+  },
+  {
+    "family": "Viburnaceae",
+    "markerColor": "#0d47a1"
+  },
+  {
+    "family": "Unknown family",
+    "markerColor": "#ffffff"
+  }
+]

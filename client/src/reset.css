@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto'
+  font-family: 'Roboto';
 }
 
 /* Gives the body element a parent height to compare against */
@@ -14,24 +14,36 @@ html {
 body {
   min-height: 100%;
   line-height: 1;
-  overflow-x: hidden;  /* prevent horizontal scroll */
+  overflow-x: hidden; /* prevent horizontal scroll */
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 1rem;
   margin: 0px;
   padding: 0px;
 }
 
 /* Matches the font of special elements to the rest of the page */
-input, select, option, optgroup, textarea, button,
-pre, code {
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
   font-size: 100%;
   font-family: inherit;
 }
 
 /* Removes default bullet points from lists */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
