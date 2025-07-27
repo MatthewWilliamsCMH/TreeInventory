@@ -47,18 +47,11 @@ const TreeData = () => {
   const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);
   const [pendingSpecies, setPendingSpecies] = useState(null);
 
-  //set states for inputs with complex behaviors
-  const [commonNameInput, setCommonNameInput] = useState('');
-  const [commonNameDropdownOpen, setCommonNameDropdownOpen] = useState(false);
-  const [scientificNameInput, setScientificNameInput] = useState('');
-  const [scientificNameDropdownOpen, setScientificNameDropdownOpen] = useState(false);
-  const [dbhInput, setDbhInput] = useState('');
-  const [installedDateInput, setInstalledDateInput] = useState(
-    formatDateForDisplay(updatedTree.installedDate) || ''
-  );
-  const [felledDateInput, setFelledDateInput] = useState(
-    formatDateForDisplay(updatedTree.felledDate) || ''
-  );
+  //initialize keys for controlled inputs
+  const [commonNameKey, setCommonNameKey] = useState('commonName-0');
+  const [scientificNameKey, setScientificNameKey] = useState('scientificName-0');
+  const [dbhKey, setDbhKey] = useState('dbh-0');
+  const [gardenKey, setGardenKey] = useState('garden-0');
 
   //set up mutations
   const [addTree] = useMutation(ADD_TREE);
@@ -176,14 +169,6 @@ const TreeData = () => {
   const handleDefaultInputChange = (field, event) => {
     const value = event.target.value;
 
-    // Update local input states for date fields so input stays editable
-    if (field === 'installedDate') {
-      setInstalledDateInput(value);
-    }
-    if (field === 'felledDate') {
-      setFelledDateInput(value);
-    }
-
     // Update the main updatedTree state
     setUpdatedTree((prev) => handleFieldChange(prev, field, value));
   };
@@ -199,7 +184,7 @@ const TreeData = () => {
     }));
   };
 
-  // //handle adding a new species
+  //handle adding a new species
   const handleNewSpeciesSubmit = (newSpecies) => {
     console.log('handleNewSpeciesSubmit called with:', newSpecies);
 
@@ -284,7 +269,7 @@ const TreeData = () => {
           : null,
         hidden: updatedTree.hidden,
       };
-      console.log('Submitting tree payload:', treePayload);
+
       if (!updatedTree?.id) {
         const { data } = await addTree({ variables: treePayload });
         await refetchTrees();
@@ -317,8 +302,6 @@ const TreeData = () => {
       <NewSpeciesModal
         clearSpeciesTrigger={clearSpeciesTrigger}
         onCancelClearSpecies={() => {
-          setCommonNameInput('');
-          setScientificNameInput('');
           setUpdatedTree((prev) => ({
             ...prev,
             commonName: '',
@@ -348,15 +331,19 @@ const TreeData = () => {
                   className='mt-1'
                   filterBy={() => true}
                   id='commonName'
+                  key={commonNameKey}
                   labelKey='label'
                   multiple={false}
                   onBlur={() => {
-                    if (commonNameInput.trim()) {
+                    if (updatedTree.commonName.trim()) {
                       handleInputChange('commonName', [
-                        { label: commonNameInput.trim(), value: commonNameInput.trim() },
+                        {
+                          label: updatedTree.commonName.trim(),
+                          value: updatedTree.commonName.trim(),
+                        },
                       ]);
                       setUpdatedSpeciesField('commonName');
-                      setUpdatedSpeciesValue(commonNameInput.trim());
+                      setUpdatedSpeciesValue(updatedTree.commonName.trim());
                     }
                   }}
                   onChange={(selected) => {
@@ -366,12 +353,16 @@ const TreeData = () => {
 
                     if (value) {
                       handleInputChange('commonName', [{ label: value, value }]);
-                      setCommonNameDropdownOpen(false);
                     }
                   }}
                   onInputChange={(text) => {
-                    setCommonNameInput(text);
-                    setCommonNameDropdownOpen(true);
+                    const rawValue = text.replace(/^Common name:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Common name: ') {
+                      setUpdatedTree((prev) => ({ ...prev, commonName: '' }));
+                      setCommonNameKey((k) => k + 1); //force re-mount to clear input
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, commonName: rawValue }));
                   }}
                   options={
                     commonToScientific
@@ -383,12 +374,10 @@ const TreeData = () => {
                           }))
                       : []
                   }
-                  placeholder='Common name'
+                  placeholder='Select or add a common name'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
-                    commonNameInput
-                      ? [{ label: commonNameInput, value: commonNameInput }]
-                      : updatedTree.commonName
+                    updatedTree.commonName
                       ? [
                           {
                             label: `Common name: ${updatedTree.commonName}`,
@@ -404,15 +393,19 @@ const TreeData = () => {
                   className='mt-1'
                   filterBy={() => true}
                   id='scientificName'
+                  key={scientificNameKey}
                   labelKey='label'
                   multiple={false}
                   onBlur={() => {
-                    if (scientificNameInput.trim()) {
+                    if (updatedTree.scientificName.trim()) {
                       handleInputChange('scientificName', [
-                        { label: scientificNameInput.trim(), value: scientificNameInput.trim() },
+                        {
+                          label: updatedTree.scientificName.trim(),
+                          value: updatedTree.scientificName.trim(),
+                        },
                       ]);
                       setUpdatedSpeciesField('scientificName');
-                      setUpdatedSpeciesValue(scientificNameInput.trim());
+                      setUpdatedSpeciesValue(updatedTree.scientificName.trim());
                     }
                   }}
                   onChange={(selected) => {
@@ -422,12 +415,16 @@ const TreeData = () => {
 
                     if (value) {
                       handleInputChange('scientificName', [{ label: value, value }]);
-                      setScientificNameDropdownOpen(false);
                     }
                   }}
                   onInputChange={(text) => {
-                    setScientificNameInput(text);
-                    setScientificNameDropdownOpen(!!text.trim());
+                    const rawValue = text.replace(/^Scientific name:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Scientific name: ') {
+                      setUpdatedTree((prev) => ({ ...prev, scientificName: '' }));
+                      setScientificNameKey((k) => k + 1); //force re-mount to clear input
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, scientificName: rawValue }));
                   }}
                   options={
                     commonToScientific
@@ -439,12 +436,10 @@ const TreeData = () => {
                           }))
                       : []
                   }
-                  placeholder='Scientific name'
+                  placeholder='Select or add a scientific name'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
-                    scientificNameInput
-                      ? [{ label: scientificNameInput, value: scientificNameInput }]
-                      : updatedTree.scientificName
+                    updatedTree.scientificName
                       ? [
                           {
                             label: `Scientific name: ${updatedTree.scientificName}`,
@@ -463,16 +458,29 @@ const TreeData = () => {
                 <legend>Physical Data</legend>
                 <Typeahead
                   className='mt-1'
-                  id='dbh'
                   filterBy={() => true}
+                  id='dbh'
+                  key={dbhKey}
                   labelKey='label'
                   multiple={false}
-                  onChange={(event) => handleInputChange('dbh', event)}
+                  onChange={(selected) => {
+                    const value = selected?.[0]?.value || '';
+                    setUpdatedTree((prev) => ({ ...prev, dbh: value }));
+                  }}
+                  onInputChange={(text) => {
+                    const rawValue = text.replace(/^Diameter:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Diameter: ') {
+                      setUpdatedTree((prev) => ({ ...prev, dbh: '' }));
+                      setDbhKey((k) => k + 1); //force re-mount to clear input
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, dbh: rawValue }));
+                  }}
                   options={dbhList.map((dbh) => ({
                     label: dbh,
                     value: dbh,
                   }))}
-                  placeholder='DBH'
+                  placeholder='Select a diameter at breast height (DBH)'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.dbh
@@ -504,40 +512,71 @@ const TreeData = () => {
               <fieldset id='care'>
                 <legend>Care History</legend>
                 <Form.Control
+                  className='mb-1'
                   id='installedDate'
-                  className='mb-1'
-                  onChange={(event) => handleDefaultInputChange('installedDate', event)}
-                  placeholder={`Installed date ('MM/DD/YYYY' or '<YYYY')`}
+                  onChange={(event) => {
+                    const text = event.target.value;
+                    const rawValue = text.replace(/^Installed:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Installed: ') {
+                      setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, installedDate: rawValue }));
+                  }}
+                  placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
                   type='text'
-                  //need to make this a condition so that "Installed:" is only displayed if there is a value"
-                  value={installedDateInput ? `Installed: ${installedDateInput}` : ''}
+                  value={updatedTree.installedDate ? `Installed: ${updatedTree.installedDate}` : ''}
                 />
 
                 <Form.Control
+                  className='mb-1'
                   id='installedBy'
-                  className='mb-1'
-                  onChange={(event) => handleDefaultInputChange('installedBy', event)}
-                  placeholder={'Installed by'}
+                  onChange={(event) => {
+                    const text = event.target.value;
+                    const rawValue = text.replace(/^Installer:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Installer: ') {
+                      setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, installedBy: rawValue }));
+                  }}
+                  placeholder={'Supply installer name'}
                   type='text'
-                  value={updatedTree.installedBy ? `Installed by: ${updatedTree.installedBy}` : ''}
+                  value={updatedTree.installedBy ? `Installer: ${updatedTree.installedBy}` : ''}
                 />
 
                 <Form.Control
+                  className='mb-1'
                   id='felledDate'
-                  className='mb-1'
-                  onChange={(event) => handleDefaultInputChange('felledDate', event)}
-                  placeholder={`Felled date ('MM/DD/YYYY' or '<YYYY')`}
+                  onChange={(event) => {
+                    const text = event.target.value;
+                    const rawValue = text.replace(/^Felled:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Felled: ') {
+                      setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, felledDate: rawValue }));
+                  }}
+                  placeholder={`Record felling date ('MM/DD/YYYY' or '<YYYY')`}
                   type='text'
-                  value={felledDateInput ? `Felled: ${felledDateInput}` : ''}
+                  value={updatedTree.felledDate ? `Felled: ${updatedTree.felledDate}` : ''}
                 />
 
                 <Form.Control
-                  id='felledBy'
                   className='mb-1'
-                  onChange={(event) => handleDefaultInputChange('felledBy', event)}
-                  placeholder={'Felled by'}
+                  id='felledBy'
+                  onChange={(event) => {
+                    const text = event.target.value;
+                    const rawValue = text.replace(/^Feller:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Feller: ') {
+                      setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, felledBy: rawValue }));
+                  }}
+                  placeholder={'Supply feller name'}
                   type='text'
-                  value={updatedTree.felledBy ? `Felled by: ${updatedTree.felledBy}` : ''}
+                  value={updatedTree.felledBy ? `Feller: ${updatedTree.felledBy}` : ''}
                 />
 
                 <Form.Group className='mt-2'>
@@ -569,17 +608,30 @@ const TreeData = () => {
               >
                 <legend>Site Info</legend>
                 <Typeahead
+                  key={gardenKey}
                   className='mt-1'
                   id='garden'
                   filterBy={() => true}
                   labelKey='label'
                   multiple={false}
-                  onChange={(event) => handleInputChange('garden', event)}
+                  onChange={(selected) => {
+                    const value = selected?.[0]?.value || '';
+                    setUpdatedTree((prev) => ({ ...prev, garden: value }));
+                  }}
+                  onInputChange={(text) => {
+                    const rawValue = text.replace(/^Garden:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Garden: ') {
+                      setUpdatedTree((prev) => ({ ...prev, garden: '' }));
+                      setGardenKey((k) => k + 1); //force re-mount to clear input
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, garden: rawValue }));
+                  }}
                   options={gardenList.map((garden) => ({
                     label: garden,
                     value: garden,
                   }))}
-                  placeholder='Garden'
+                  placeholder='Select a garden'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.garden
