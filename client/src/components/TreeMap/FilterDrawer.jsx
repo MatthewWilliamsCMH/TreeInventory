@@ -8,12 +8,7 @@ import Select, { components } from 'react-select';
 import Toggle from 'react-toggle';
 
 //local helpers, constants, queries, and mutations
-import {
-  careNeedsList,
-  dbhList,
-  gardenList,
-  siteInfoList,
-} from '../../utils/constants.js';
+import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
 
 //stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,41 +18,26 @@ import './react-toggle.css';
 const FilterDrawer = ({ filteredTrees }) => {
   // --------- initialize hooks ----------
   //get global states from parent component
-  const {
-    filterOpen,
-    setFilterOpen,
-    filterCriteria,
-    setFilterCriteria,
-    mergedTrees,
-    allSpecies,
-  } = useOutletContext();
+  const { filterOpen, setFilterOpen, filterCriteria, setFilterCriteria, mergedTrees, allSpecies } =
+    useOutletContext();
 
   const CustomValueContainer = ({ children, ...props }) => {
     const selectedOptions = props.getValue();
+    const fieldName = props.selectProps.fieldName;
     //one selection
     if (selectedOptions.length === 1) {
       return (
-        <components.ValueContainer {...props}>
-          {selectedOptions[0].label}
-        </components.ValueContainer>
+        <components.ValueContainer {...props}>{selectedOptions[0].label}</components.ValueContainer>
       );
     }
 
     //more than one selection
     if (selectedOptions.length > 1) {
-      return (
-        <components.ValueContainer {...props}>
-          Multiple selections
-        </components.ValueContainer>
-      );
+      return <components.ValueContainer {...props}>Multiple {fieldName}</components.ValueContainer>;
     }
 
     //no selections
-    return (
-      <components.ValueContainer {...props}>
-        {children}
-      </components.ValueContainer>
-    );
+    return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
   };
 
   const columnCount = 2;
@@ -158,11 +138,10 @@ const FilterDrawer = ({ filteredTrees }) => {
             components={{
               ValueContainer: CustomValueContainer,
             }}
+            fieldName='names'
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) =>
-              handleTypeaheadChange(selectedOptions, 'commonName')
-            }
+            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
             options={[
               { label: '[Show All]', value: '__ALL__' },
               ...[...allSpecies] //creates a shallow copy of the array, which is mutable where the origianl is not; similar to just writing the original array into another, new array, but idiomatic to ES6 and slightly faster.
@@ -187,9 +166,7 @@ const FilterDrawer = ({ filteredTrees }) => {
               }),
             }}
             value={allSpecies
-              .filter((species) =>
-                filterCriteria.commonName?.includes(species.commonName)
-              )
+              .filter((species) => filterCriteria.commonName?.includes(species.commonName))
               .map((species) => ({
                 label: species.commonName,
                 value: species.commonName,
@@ -203,11 +180,10 @@ const FilterDrawer = ({ filteredTrees }) => {
             components={{
               ValueContainer: CustomValueContainer,
             }}
+            fieldName='diameters'
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) =>
-              handleTypeaheadChange(selectedOptions, 'dbh')
-            }
+            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'dbh')}
             options={[
               { label: '[Show All]', value: '__ALL__' },
               ...dbhList.map((dbh) => ({
@@ -243,11 +219,10 @@ const FilterDrawer = ({ filteredTrees }) => {
             components={{
               ValueContainer: CustomValueContainer,
             }}
+            fieldName='gardens'
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) =>
-              handleTypeaheadChange(selectedOptions, 'garden')
-            }
+            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'garden')}
             options={[
               { label: '[Show All]', value: '__ALL__' },
               ...gardenList.map((garden) => ({
@@ -299,9 +274,7 @@ const FilterDrawer = ({ filteredTrees }) => {
                 }
               />
               <span className='filterToggle'>
-                {need
-                  .replace(/([A-Z])/g, ' $1')
-                  .replace(/^./, (str) => str.toUpperCase())}
+                {need.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
               </span>
             </label>
           ))}
@@ -327,9 +300,7 @@ const FilterDrawer = ({ filteredTrees }) => {
                 }
               />
               <span className='filterToggle'>
-                {condition
-                  .replace(/([A-Z])/g, ' $1')
-                  .replace(/^./, (str) => str.toUpperCase())}
+                {condition.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
               </span>
             </label>
           ))}
