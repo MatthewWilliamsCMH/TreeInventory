@@ -38,10 +38,10 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
-      // videoConstraints: {
-      //   facingMode: 'environment',
-      // },
-      mobileNativeCamera: true,
+      videoConstraints: {
+        facingMode: 'environment',
+      },
+      mobileNativeCamera: false,
     };
 
     const XHRUploadConfig = {
