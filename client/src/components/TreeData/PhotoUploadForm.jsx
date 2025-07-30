@@ -64,7 +64,22 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
 
     const uppyInstance = new Uppy(uppyConfig)
       .use(FileInput, {
-        target: DashboardModal, // tell FileInput to work with the DashboardModal
+        //   target: DashboardModal, // tell FileInput to work with the DashboardModal
+        //   pretty: true,
+        //   locale: {
+        //     strings: {
+        //       chooseFiles: 'Take or select a photo',
+        //     },
+        //   },
+        //   multiple: false,
+        //   inputName: 'photo',
+        //   // 👇👇 This triggers the native camera app on mobile like iPad
+        //   attributes: {
+        //     accept: 'image/*',
+        //     capture: 'environment',
+        //   },
+        // })
+        // .use(Webcam, webcamConfig)
         pretty: true,
         locale: {
           strings: {
@@ -73,13 +88,11 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         },
         multiple: false,
         inputName: 'photo',
-        // 👇👇 This triggers the native camera app on mobile like iPad
         attributes: {
           accept: 'image/*',
           capture: 'environment',
         },
       })
-      // .use(Webcam, webcamConfig)
       .use(XHRUpload, XHRUploadConfig)
       .use(Compressor, compressorConfig);
 
