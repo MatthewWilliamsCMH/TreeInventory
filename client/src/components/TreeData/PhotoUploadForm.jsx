@@ -41,13 +41,12 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       videoConstraints: {
         facingMode: 'environment',
       },
+      mobileNativeCamera: true,
     };
 
     const XHRUploadConfig = {
       endpoint: `${
-        import.meta.env.VITE_API_URL
-          ? import.meta.env.VITE_API_URL
-          : 'https://localhost:3001'
+        import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'
       }/uploads`,
       fieldName: 'photo',
       formData: true,
@@ -155,14 +154,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         className='p-0 mt-1'
       >
         <Row className='g-1'>
-          {[
-            'bark',
-            'summerLeaf',
-            'autumnLeaf',
-            'fruit',
-            'flower',
-            'environs',
-          ].map((photoType) => (
+          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
             <Col
               xs={4}
               sm={4}
