@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
-import Webcam from '@uppy/webcam';
+// import Webcam from '@uppy/webcam';
+import FileInput from '@uppy/file-input';
 import Compressor from '@uppy/compressor';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import '@uppy/core/dist/style.css';
 import '@uppy/dashboard/dist/style.css';
-import '@uppy/webcam/dist/style.css';
+// import '@uppy/webcam/dist/style.css';
 
 //components
 import FullSizePhoto from './FullSizePhoto.jsx';
@@ -34,15 +35,15 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       autoProceed: false,
     };
 
-    const webcamConfig = {
-      modes: ['picture'],
-      mirror: false,
-      showVideoSourceDropdown: true,
-      videoConstraints: {
-        facingMode: 'environment',
-      },
-      mobileNativeCamera: false,
-    };
+    // const webcamConfig = {
+    //   modes: ['picture'],
+    //   mirror: false,
+    //   showVideoSourceDropdown: true,
+    //   videoConstraints: {
+    //     facingMode: 'environment',
+    //   },
+    //   mobileNativeCamera: false,
+    // };
 
     const XHRUploadConfig = {
       endpoint: `${
@@ -62,7 +63,23 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     };
 
     const uppyInstance = new Uppy(uppyConfig)
-      .use(Webcam, webcamConfig)
+      .use(FileInput, {
+        target: DashboardModal, // tell FileInput to work with the DashboardModal
+        pretty: true,
+        locale: {
+          strings: {
+            chooseFiles: 'Take or select a photo',
+          },
+        },
+        multiple: false,
+        inputName: 'photo',
+        // 👇👇 This triggers the native camera app on mobile like iPad
+        attributes: {
+          accept: 'image/*',
+          capture: 'environment',
+        },
+      })
+      // .use(Webcam, webcamConfig)
       .use(XHRUpload, XHRUploadConfig)
       .use(Compressor, compressorConfig);
 
@@ -210,7 +227,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
           uppy={uppy}
           open={activePhotoType !== null}
           onRequestClose={() => setActivePhotoType(null)}
-          plugins={['Webcam']}
+          // plugins={['Webcam']}
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
           note={`Upload or take a photo of the tree's ${activePhotoType}`}
