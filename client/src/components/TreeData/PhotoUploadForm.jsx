@@ -45,6 +45,21 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     //   mobileNativeCamera: false,
     // };
 
+    const fileInputConfig = {
+      pretty: true,
+      locale: {
+        strings: {
+          chooseFiles: 'Take or select a photo',
+        },
+      },
+      multiple: false,
+      inputName: 'photo',
+      attributes: {
+        accept: 'image/*',
+        capture: 'environment',
+      },
+    };
+
     const XHRUploadConfig = {
       endpoint: `${
         import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'
@@ -63,36 +78,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
     };
 
     const uppyInstance = new Uppy(uppyConfig)
-      .use(FileInput, {
-        //   target: DashboardModal, // tell FileInput to work with the DashboardModal
-        //   pretty: true,
-        //   locale: {
-        //     strings: {
-        //       chooseFiles: 'Take or select a photo',
-        //     },
-        //   },
-        //   multiple: false,
-        //   inputName: 'photo',
-        //   // 👇👇 This triggers the native camera app on mobile like iPad
-        //   attributes: {
-        //     accept: 'image/*',
-        //     capture: 'environment',
-        //   },
-        // })
-        // .use(Webcam, webcamConfig)
-        pretty: true,
-        locale: {
-          strings: {
-            chooseFiles: 'Take or select a photo',
-          },
-        },
-        multiple: false,
-        inputName: 'photo',
-        attributes: {
-          accept: 'image/*',
-          capture: 'environment',
-        },
-      })
+      .use(FileInput, fileInputConfig)
       .use(XHRUpload, XHRUploadConfig)
       .use(Compressor, compressorConfig);
 
