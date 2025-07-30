@@ -24,7 +24,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   const [cameraDevices, setCameraDevices] = useState([]);
 
   //----------useEffects----------
-  //initialize Uppy
+  //create prop variables for Uppy.use below
   useEffect(() => {
     const uppyConfig = {
       restrictions: {
@@ -38,9 +38,9 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       modes: ['picture'],
       mirror: false,
       showVideoSourceDropdown: true,
-      videoConstraints: {
-        facingMode: 'environment',
-      },
+      // videoConstraints: {
+      //   facingMode: 'environment',
+      // },
       mobileNativeCamera: true,
     };
 
