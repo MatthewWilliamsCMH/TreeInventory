@@ -449,11 +449,27 @@ const TreeData = () => {
                       : []
                   }
                 />
+                <Form.Control
+                  className='mt-1'
+                  id='variety'
+                  onChange={(event) => {
+                    const text = event.target.value;
+                    const rawValue = text.replace(/^Variety:\s*/, '');
+                    if (rawValue.trim() === '' || text === 'Variety: ') {
+                      setUpdatedTree((prev) => ({ ...prev, variety: '' }));
+                      return;
+                    }
+                    setUpdatedTree((prev) => ({ ...prev, variety: rawValue }));
+                  }}
+                  placeholder={'Provide the variety name'}
+                  type='text'
+                  value={updatedTree.variety ? `Variety: ${updatedTree.variety}` : ''}
+                />
               </fieldset>
 
               <fieldset
-                id='physicalData'
                 className='mt-2'
+                id='physicalData'
               >
                 <legend>Physical Data</legend>
                 <Typeahead
@@ -540,7 +556,7 @@ const TreeData = () => {
                     }
                     setUpdatedTree((prev) => ({ ...prev, installedBy: rawValue }));
                   }}
-                  placeholder={'Supply installer name'}
+                  placeholder={`Provide the installer's name`}
                   type='text'
                   value={updatedTree.installedBy ? `Installer: ${updatedTree.installedBy}` : ''}
                 />
@@ -574,7 +590,7 @@ const TreeData = () => {
                     }
                     setUpdatedTree((prev) => ({ ...prev, felledBy: rawValue }));
                   }}
-                  placeholder={'Supply feller name'}
+                  placeholder={`Provide the feller's name`}
                   type='text'
                   value={updatedTree.felledBy ? `Feller: ${updatedTree.felledBy}` : ''}
                 />

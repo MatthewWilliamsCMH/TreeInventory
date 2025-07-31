@@ -12,7 +12,7 @@ import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import '@uppy/core/dist/style.css';
 import '@uppy/dashboard/dist/style.css';
 // import '@uppy/webcam/dist/style.css';
-
+import '@uppy/file-input/dist/style.css';
 //components
 import FullSizePhoto from './FullSizePhoto.jsx';
 
@@ -35,21 +35,12 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
       autoProceed: false,
     };
 
-    // const webcamConfig = {
-    //   modes: ['picture'],
-    //   mirror: false,
-    //   showVideoSourceDropdown: true,
-    //   videoConstraints: {
-    //     facingMode: 'environment',
-    //   },
-    //   mobileNativeCamera: false,
-    // };
-
     const fileInputConfig = {
+      id: 'Add a Photo',
       pretty: true,
       locale: {
         strings: {
-          chooseFiles: 'Take or select a photo',
+          chooseFiles: 'Load a Photo',
         },
       },
       multiple: false,
@@ -58,6 +49,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
         accept: 'image/*',
         capture: 'environment',
       },
+      title: 'Load a Photo',
     };
 
     const XHRUploadConfig = {
