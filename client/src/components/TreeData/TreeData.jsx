@@ -331,6 +331,7 @@ const TreeData = () => {
                   className='mt-1'
                   filterBy={() => true}
                   id='commonName'
+                  isSearchable={true}
                   key={commonNameKey}
                   labelKey='label'
                   multiple={false}
@@ -355,6 +356,7 @@ const TreeData = () => {
                       handleInputChange('commonName', [{ label: value, value }]);
                     }
                   }}
+                  //This is now preventing the typeahead from selecting an option as I type
                   onInputChange={(text) => {
                     const rawValue = text.replace(/^Common name:\s*/, '');
                     if (rawValue.trim() === '' || text === 'Common name: ') {
@@ -386,6 +388,7 @@ const TreeData = () => {
                         ]
                       : []
                   }
+                  showSoftInputOnFocus={false}
                 />
 
                 <Typeahead
