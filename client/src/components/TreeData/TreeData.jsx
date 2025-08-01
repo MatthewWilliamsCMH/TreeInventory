@@ -356,15 +356,12 @@ const TreeData = () => {
                       handleInputChange('commonName', [{ label: value, value }]);
                     }
                   }}
-                  //This is now preventing the typeahead from selecting an option as I type
                   onInputChange={(text) => {
-                    const rawValue = text.replace(/^Common name:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Common name: ') {
+                    if (text.trim() === '') {
                       setUpdatedTree((prev) => ({ ...prev, commonName: '' }));
-                      setCommonNameKey((k) => k + 1); //force re-mount to clear input
                       return;
                     }
-                    setUpdatedTree((prev) => ({ ...prev, commonName: rawValue }));
+                    setUpdatedTree((prev) => ({ ...prev, commonName: text }));
                   }}
                   options={
                     commonToScientific
@@ -377,18 +374,16 @@ const TreeData = () => {
                       : []
                   }
                   placeholder='Select or add a common name'
-                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.commonName
                       ? [
                           {
-                            label: `Common name: ${updatedTree.commonName}`,
+                            label: updatedTree.commonName,
                             value: updatedTree.commonName,
                           },
                         ]
                       : []
                   }
-                  showSoftInputOnFocus={false}
                 />
 
                 <Typeahead
@@ -421,13 +416,11 @@ const TreeData = () => {
                     }
                   }}
                   onInputChange={(text) => {
-                    const rawValue = text.replace(/^Scientific name:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Scientific name: ') {
+                    if (text.trim() === '') {
                       setUpdatedTree((prev) => ({ ...prev, scientificName: '' }));
-                      setScientificNameKey((k) => k + 1); //force re-mount to clear input
                       return;
                     }
-                    setUpdatedTree((prev) => ({ ...prev, scientificName: rawValue }));
+                    setUpdatedTree((prev) => ({ ...prev, scientificName: text }));
                   }}
                   options={
                     commonToScientific
@@ -440,12 +433,11 @@ const TreeData = () => {
                       : []
                   }
                   placeholder='Select or add a scientific name'
-                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.scientificName
                       ? [
                           {
-                            label: `Scientific name: ${updatedTree.scientificName}`,
+                            label: updatedTree.scientificName,
                             value: updatedTree.scientificName,
                           },
                         ]
@@ -479,6 +471,11 @@ const TreeData = () => {
                   className='mt-1'
                   filterBy={() => true}
                   id='dbh'
+                  inputProps={{
+                    //this suppresses the keyboard on mobile devices
+                    readOnly: true,
+                    inputMode: 'none',
+                  }}
                   key={dbhKey}
                   labelKey='label'
                   multiple={false}
@@ -487,13 +484,11 @@ const TreeData = () => {
                     setUpdatedTree((prev) => ({ ...prev, dbh: value }));
                   }}
                   onInputChange={(text) => {
-                    const rawValue = text.replace(/^Diameter:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Diameter: ') {
+                    if (text.trim() === '') {
                       setUpdatedTree((prev) => ({ ...prev, dbh: '' }));
-                      setDbhKey((k) => k + 1); //force re-mount to clear input
                       return;
                     }
-                    setUpdatedTree((prev) => ({ ...prev, dbh: rawValue }));
+                    setUpdatedTree((prev) => ({ ...prev, dbh: text }));
                   }}
                   options={dbhList.map((dbh) => ({
                     label: dbh,
@@ -502,9 +497,7 @@ const TreeData = () => {
                   placeholder='Select a diameter at breast height (DBH)'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
-                    updatedTree.dbh
-                      ? [{ label: `Diameter: ${updatedTree.dbh}`, value: updatedTree.dbh }]
-                      : []
+                    updatedTree.dbh ? [{ label: updatedTree.dbh, value: updatedTree.dbh }] : []
                   }
                 />
 
@@ -530,73 +523,158 @@ const TreeData = () => {
             <Col md={6}>
               <fieldset id='care'>
                 <legend>Care History</legend>
-                <Form.Control
-                  className='mb-1'
-                  id='installedDate'
-                  onChange={(event) => {
-                    const text = event.target.value;
-                    const rawValue = text.replace(/^Installed:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Installed: ') {
-                      setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
-                      return;
-                    }
-                    setUpdatedTree((prev) => ({ ...prev, installedDate: rawValue }));
-                  }}
-                  placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
-                  type='text'
-                  value={updatedTree.installedDate ? `Installed: ${updatedTree.installedDate}` : ''}
-                />
+                {/*add tool tips to these four fields or add labels to the left */}
+                <Form.Group
+                  as={Row}
+                  className='g-0'
+                  controlId='installedDate'
+                >
+                  <Form.Label
+                    column
+                    xs={4} // small phones
+                    sm={3} // tablets in portrait
+                    md={3} // tablets in landscape or small desktops
+                    lg={3} // larger screens
+                    className='text-start'
+                  >
+                    Installed on:
+                  </Form.Label>
+                  <Col
+                    xs={8} // small phones
+                    sm={9} // tablets in portrait
+                    md={9} // tablets in landscape or small desktops
+                    lg={9} // larger screens
+                  >
+                    <Form.Control
+                      id='installedDate'
+                      onChange={(event) => {
+                        const text = event.target.value;
+                        if (text.trim() === '') {
+                          setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
+                          return;
+                        }
+                        setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
+                      }}
+                      placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
+                      type='text'
+                      value={updatedTree.installedDate || ''}
+                    />
+                  </Col>
+                </Form.Group>
 
-                <Form.Control
-                  className='mb-1'
-                  id='installedBy'
-                  onChange={(event) => {
-                    const text = event.target.value;
-                    const rawValue = text.replace(/^Installer:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Installer: ') {
-                      setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
-                      return;
-                    }
-                    setUpdatedTree((prev) => ({ ...prev, installedBy: rawValue }));
-                  }}
-                  placeholder={`Provide the installer's name`}
-                  type='text'
-                  value={updatedTree.installedBy ? `Installer: ${updatedTree.installedBy}` : ''}
-                />
+                <Form.Group
+                  as={Row}
+                  className='mt-1 g-0'
+                  controlId='installedBy'
+                >
+                  <Form.Label
+                    column
+                    xs={4} // small phones
+                    sm={3} // tablets in portrait
+                    md={3} // tablets in landscape or small desktops
+                    lg={3} // larger screens
+                    className='text-start'
+                  >
+                    Installed by:
+                  </Form.Label>
+                  <Col
+                    xs={8} // small phones
+                    sm={9} // tablets in portrait
+                    md={9} // tablets in landscape or small desktops
+                    lg={9} // larger screens
+                  >
+                    <Form.Control
+                      id='installedBy'
+                      onChange={(event) => {
+                        const text = event.target.value;
+                        if (text.trim() === '') {
+                          setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
+                          return;
+                        }
+                        setUpdatedTree((prev) => ({ ...prev, installedBy: text }));
+                      }}
+                      placeholder={`Provide the installer's name`}
+                      type='text'
+                      value={updatedTree.installedBy ? updatedTree.installedBy : ''}
+                    />
+                  </Col>
+                </Form.Group>
 
-                <Form.Control
-                  className='mb-1'
-                  id='felledDate'
-                  onChange={(event) => {
-                    const text = event.target.value;
-                    const rawValue = text.replace(/^Felled:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Felled: ') {
-                      setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
-                      return;
-                    }
-                    setUpdatedTree((prev) => ({ ...prev, felledDate: rawValue }));
-                  }}
-                  placeholder={`Record felling date ('MM/DD/YYYY' or '<YYYY')`}
-                  type='text'
-                  value={updatedTree.felledDate ? `Felled: ${updatedTree.felledDate}` : ''}
-                />
+                <Form.Group
+                  as={Row}
+                  className='mt-1 g-0'
+                  controlId='felledDate'
+                >
+                  <Form.Label
+                    column
+                    xs={4} // small phones
+                    sm={3} // tablets in portrait
+                    md={3} // tablets in landscape or small desktops
+                    lg={3} // larger screens
+                    className='text-start'
+                  >
+                    Felled on:
+                  </Form.Label>
+                  <Col
+                    xs={8} // small phones
+                    sm={9} // tablets in portrait
+                    md={9} // tablets in landscape or small desktops
+                    lg={9} // larger screens
+                  >
+                    <Form.Control
+                      id='felledDate'
+                      onChange={(event) => {
+                        const text = event.target.value;
+                        if (text.trim() === '') {
+                          setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
+                          return;
+                        }
+                        setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
+                      }}
+                      placeholder={`Record fell date ('MM/DD/YYYY' or '<YYYY')`}
+                      type='text'
+                      value={updatedTree.felledDate || ''}
+                    />
+                  </Col>
+                </Form.Group>
 
-                <Form.Control
-                  className='mb-1'
-                  id='felledBy'
-                  onChange={(event) => {
-                    const text = event.target.value;
-                    const rawValue = text.replace(/^Feller:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Feller: ') {
-                      setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
-                      return;
-                    }
-                    setUpdatedTree((prev) => ({ ...prev, felledBy: rawValue }));
-                  }}
-                  placeholder={`Provide the feller's name`}
-                  type='text'
-                  value={updatedTree.felledBy ? `Feller: ${updatedTree.felledBy}` : ''}
-                />
+                <Form.Group
+                  as={Row}
+                  className='mt-1 g-0'
+                  controlId='felledBy'
+                >
+                  <Form.Label
+                    column
+                    xs={4} // small phones
+                    sm={3} // tablets in portrait
+                    md={3} // tablets in landscape or small desktops
+                    lg={3} // larger screens
+                    className='text-start'
+                  >
+                    Felled on:
+                  </Form.Label>
+                  <Col
+                    xs={8} // small phones
+                    sm={9} // tablets in portrait
+                    md={9} // tablets in landscape or small desktops
+                    lg={9} // larger screens
+                  >
+                    <Form.Control
+                      id='felledBy'
+                      onChange={(event) => {
+                        const text = event.target.value;
+                        if (text.trim() === '') {
+                          setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
+                          return;
+                        }
+                        setUpdatedTree((prev) => ({ ...prev, felledBy: text }));
+                      }}
+                      placeholder={`Provide the feller's name`}
+                      type='text'
+                      value={updatedTree.felledBy ? updatedTree.felledBy : ''}
+                    />
+                  </Col>
+                </Form.Group>
 
                 <Form.Group className='mt-2'>
                   <Row>
@@ -630,6 +708,11 @@ const TreeData = () => {
                   key={gardenKey}
                   className='mt-1'
                   id='garden'
+                  inputProps={{
+                    //this suppresses the keyboard on mobile devices
+                    readOnly: true,
+                    inputMode: 'none',
+                  }}
                   filterBy={() => true}
                   labelKey='label'
                   multiple={false}
