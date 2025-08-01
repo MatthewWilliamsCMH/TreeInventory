@@ -23,10 +23,7 @@ require('dotenv').config({ path: envFile });
 let uploadsDir;
 if (process.env.NODE_ENV === 'production') {
   uploadsDir = '/app/public/uploads';
-  console.log(
-    'Running in PRODUCTION mode - using mapped volume path:',
-    uploadsDir
-  );
+  console.log('Running in PRODUCTION mode - using mapped volume path:', uploadsDir);
 } else if (process.env.NODE_ENV === 'demo') {
   uploadsDir = path.resolve(__dirname, '../uploads');
   // uploadsDir = path.join(__dirname, 'public', 'uploads');
@@ -44,9 +41,7 @@ console.log('Upload directory set to:', uploadsDir);
 // Test directory access and creation
 try {
   if (!fs.existsSync(uploadsDir)) {
-    console.log(
-      `Directory ${uploadsDir} does not exist, trying to create it...`
-    );
+    console.log(`Directory ${uploadsDir} does not exist, trying to create it...`);
     try {
       fs.mkdirSync(uploadsDir, { recursive: true });
       console.log(`Successfully created directory: ${uploadsDir}`);
@@ -181,10 +176,7 @@ server.start().then(() => {
     })
   );
 
-  if (
-    process.env.NODE_ENV === 'production' ||
-    process.env.NODE_ENV === 'demo'
-  ) {
+  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'demo') {
     let clientPath;
     if (process.env.NODE_ENV === 'production') {
       clientPath = path.join(__dirname, '../client/dist');
@@ -201,10 +193,7 @@ server.start().then(() => {
   const certPath = path.resolve(__dirname, '../localhost.pem');
   const keyPath = path.resolve(__dirname, '../localhost-key.pem');
 
-  if (
-    process.env.NODE_ENV === 'production' ||
-    process.env.NODE_ENV === 'demo'
-  ) {
+  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'demo') {
     let clientPath;
     if (process.env.NODE_ENV === 'production') {
       clientPath = path.join(__dirname, '../client/dist');
@@ -218,9 +207,7 @@ server.start().then(() => {
     });
 
     app.listen(port, '0.0.0.0', () => {
-      console.log(
-        `Server running in ${process.env.NODE_ENV} mode on port ${port}`
-      );
+      console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
       console.log(`GraphQL endpoint: https://localhost:${port}/graphql`);
       console.log(`Uploads directory: ${uploadsDir}`);
     });
