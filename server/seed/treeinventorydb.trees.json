@@ -1,8 +1,5 @@
 [
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6bb"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -50,9 +47,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6bc"
-    },
     "commonName": "Honey locust",
     "variety": "",
     "dbh": "12-18",
@@ -100,9 +94,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6bd"
-    },
     "commonName": "Japanese tree lilac",
     "variety": "",
     "dbh": "3-6",
@@ -150,9 +141,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6be"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -200,9 +188,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6bf"
-    },
     "commonName": "Japanese maple",
     "variety": "Bloodgood",
     "dbh": "3-6",
@@ -250,9 +235,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c0"
-    },
     "commonName": "Flowering dogwood",
     "variety": "Cherokee princess",
     "dbh": "<3",
@@ -300,9 +282,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c1"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "12-18",
@@ -350,9 +329,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c2"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -400,9 +376,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c3"
-    },
     "commonName": "Japanese tree lilac",
     "variety": "",
     "dbh": "3-6",
@@ -450,9 +423,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c5"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "36-42",
@@ -500,9 +470,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c6"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "12-18",
@@ -550,9 +517,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c7"
-    },
     "commonName": "Black birch",
     "variety": "",
     "dbh": "6-12",
@@ -600,9 +564,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c8"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -650,9 +611,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6c9"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -700,9 +658,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ca"
-    },
     "commonName": "Red mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -750,9 +705,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6cb"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -800,9 +752,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6cc"
-    },
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "18-24",
@@ -850,9 +799,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6cd"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -900,9 +846,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ce"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -950,9 +893,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6cf"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -1000,9 +940,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d0"
-    },
     "commonName": "Littleleaf linden",
     "variety": "",
     "dbh": "18-24",
@@ -1050,9 +987,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d1"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -1100,9 +1034,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d2"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -1150,9 +1081,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d3"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "18-24",
@@ -1200,9 +1128,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d4"
-    },
     "commonName": "Chinquapin oak",
     "variety": "",
     "dbh": "3-6",
@@ -1250,9 +1175,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d5"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -1300,9 +1222,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d6"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "24-30",
@@ -1350,9 +1269,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d7"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "6-12",
@@ -1400,9 +1316,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6d9"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -1450,9 +1363,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6da"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -1500,9 +1410,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6db"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -1550,9 +1457,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6dc"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -1600,9 +1504,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6dd"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -1650,9 +1551,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6de"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -1700,9 +1598,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6df"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "24-30",
@@ -1750,9 +1645,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e0"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -1800,9 +1692,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e1"
-    },
     "commonName": "European beech",
     "variety": "Tricolor",
     "dbh": "<3",
@@ -1850,9 +1739,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e2"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -1900,9 +1786,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e3"
-    },
     "commonName": "Littleleaf linden",
     "variety": "",
     "dbh": "18-24",
@@ -1950,9 +1833,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e4"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "12-18",
@@ -2000,9 +1880,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e5"
-    },
     "commonName": "Callery pear",
     "variety": "",
     "dbh": "12-18",
@@ -2050,9 +1927,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e6"
-    },
     "commonName": "Honey locust",
     "variety": "",
     "dbh": "12-18",
@@ -2100,9 +1974,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e7"
-    },
     "commonName": "Weeping cherry",
     "variety": "Subhirtella",
     "dbh": "3-6",
@@ -2150,9 +2021,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6e8"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "12-18",
@@ -2200,9 +2068,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ea"
-    },
     "commonName": "Mockernut hickory",
     "variety": "",
     "dbh": "18-24",
@@ -2250,9 +2115,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6eb"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "18-24",
@@ -2300,9 +2162,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ec"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "24-30",
@@ -2350,9 +2209,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ed"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "6-12",
@@ -2400,9 +2256,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ee"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "3-6",
@@ -2450,9 +2303,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ef"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -2500,9 +2350,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f1"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "<3",
@@ -2550,9 +2397,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f2"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "<3",
@@ -2600,9 +2444,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f3"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -2650,9 +2491,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f4"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -2700,9 +2538,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f5"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "12-18",
@@ -2750,9 +2585,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f6"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -2800,9 +2632,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f7"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "24-30",
@@ -2850,9 +2679,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f8"
-    },
     "commonName": "Honey locust",
     "variety": "",
     "dbh": "18-24",
@@ -2900,9 +2726,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6f9"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -2950,9 +2773,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6fa"
-    },
     "commonName": "Weeping cherry",
     "variety": "Weeping extraordinaire",
     "dbh": "<3",
@@ -3000,9 +2820,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6fb"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "30-36",
@@ -3050,9 +2867,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6fc"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -3100,9 +2914,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6fd"
-    },
     "commonName": "European linden",
     "variety": "",
     "dbh": "12-18",
@@ -3150,9 +2961,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6fe"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -3200,9 +3008,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff6ff"
-    },
     "commonName": "American sycamore",
     "variety": "",
     "dbh": "<3",
@@ -3250,9 +3055,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff700"
-    },
     "commonName": "Red horse-chestnut",
     "variety": "",
     "dbh": "3-6",
@@ -3300,9 +3102,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff701"
-    },
     "commonName": "Sassafras",
     "variety": "",
     "dbh": "18-24",
@@ -3350,9 +3149,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff702"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -3400,9 +3196,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff703"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -3450,9 +3243,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff704"
-    },
     "commonName": "Burr oak",
     "variety": "",
     "dbh": "30-36",
@@ -3500,9 +3290,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff705"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "6-12",
@@ -3550,9 +3337,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff706"
-    },
     "commonName": "Black cherry",
     "variety": "",
     "dbh": "<3",
@@ -3600,9 +3384,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff707"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -3650,9 +3431,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff708"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "18-24",
@@ -3700,9 +3478,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff709"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -3750,9 +3525,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70a"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "18-24",
@@ -3800,9 +3572,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70b"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "30-36",
@@ -3850,9 +3619,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70c"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -3900,9 +3666,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70d"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "12-18",
@@ -3950,9 +3713,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70e"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -4000,9 +3760,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff70f"
-    },
     "commonName": "Pin oak",
     "variety": "",
     "dbh": "24-30",
@@ -4050,9 +3807,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff710"
-    },
     "commonName": "Blackhaw",
     "variety": "",
     "dbh": "3-6",
@@ -4100,9 +3854,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff711"
-    },
     "commonName": "Prairie crab apple",
     "variety": "",
     "dbh": "3-6",
@@ -4150,9 +3901,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff712"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -4200,9 +3948,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff714"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -4250,9 +3995,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff715"
-    },
     "commonName": "Norway maple",
     "variety": "Crimson King",
     "dbh": "6-12",
@@ -4300,9 +4042,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff716"
-    },
     "commonName": "European linden",
     "variety": "",
     "dbh": "12-18",
@@ -4350,9 +4089,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff717"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -4400,9 +4136,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff718"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -4450,9 +4183,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff719"
-    },
     "commonName": "Common horse-chestnut",
     "variety": "",
     "dbh": "6-12",
@@ -4500,9 +4230,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71a"
-    },
     "commonName": "Sassafras",
     "variety": "",
     "dbh": "24-30",
@@ -4550,9 +4277,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71b"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -4600,9 +4324,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71c"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "36-42",
@@ -4650,9 +4371,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71d"
-    },
     "commonName": "Black cherry",
     "variety": "",
     "dbh": "6-12",
@@ -4700,9 +4418,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71e"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -4750,9 +4465,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff71f"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -4800,9 +4512,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff721"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "6-12",
@@ -4850,9 +4559,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff722"
-    },
     "commonName": "Hawthorn",
     "variety": "",
     "dbh": "12-18",
@@ -4900,9 +4606,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff723"
-    },
     "commonName": "Flowering dogwood",
     "variety": "",
     "dbh": "<3",
@@ -4950,9 +4653,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff724"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "18-24",
@@ -5000,9 +4700,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff725"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "30-36",
@@ -5050,9 +4747,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff726"
-    },
     "commonName": "Blue spruce",
     "variety": "",
     "dbh": "6-12",
@@ -5100,9 +4794,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff727"
-    },
     "commonName": "Callery pear",
     "variety": "",
     "dbh": "30-36",
@@ -5150,9 +4841,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff728"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "6-12",
@@ -5200,9 +4888,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff729"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "12-18",
@@ -5250,9 +4935,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72a"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "12-18",
@@ -5300,9 +4982,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72b"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "6-12",
@@ -5350,9 +5029,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72c"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -5400,9 +5076,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72d"
-    },
     "commonName": "Sassafras",
     "variety": "",
     "dbh": "30-36",
@@ -5450,9 +5123,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72e"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "12-18",
@@ -5500,9 +5170,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff72f"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -5550,9 +5217,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff730"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "12-18",
@@ -5600,9 +5264,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff731"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -5650,9 +5311,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff732"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "6-12",
@@ -5700,9 +5358,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff733"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "3-6",
@@ -5750,9 +5405,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff734"
-    },
     "commonName": "Pignut hickory",
     "variety": "",
     "dbh": "12-18",
@@ -5800,9 +5452,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff735"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -5850,9 +5499,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff736"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "3-6",
@@ -5900,9 +5546,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff738"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -5950,9 +5593,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff739"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -6000,9 +5640,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73a"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -6050,9 +5687,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73b"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -6100,9 +5734,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73c"
-    },
     "commonName": "Korean maple",
     "variety": "Final Fire",
     "dbh": "<3",
@@ -6150,9 +5781,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73d"
-    },
     "commonName": "Littleleaf linden",
     "variety": "",
     "dbh": "12-18",
@@ -6200,9 +5828,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73e"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -6250,9 +5875,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff73f"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -6300,9 +5922,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff740"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -6350,9 +5969,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff741"
-    },
     "commonName": "Prairie crab apple",
     "variety": "Elk river",
     "dbh": "3-6",
@@ -6400,9 +6016,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff742"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "18-24",
@@ -6450,9 +6063,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff743"
-    },
     "commonName": "Sassafras",
     "variety": "",
     "dbh": "18-24",
@@ -6500,9 +6110,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff744"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "12-18",
@@ -6550,9 +6157,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff745"
-    },
     "commonName": "Silver maple",
     "variety": "",
     "dbh": "12-18",
@@ -6600,9 +6204,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff746"
-    },
     "commonName": "Eastern white pine",
     "variety": "",
     "dbh": "18-24",
@@ -6650,9 +6251,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff748"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "<3",
@@ -6700,9 +6298,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff749"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "3-6",
@@ -6750,9 +6345,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff74a"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "6-12",
@@ -6800,9 +6392,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff74b"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -6850,9 +6439,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff74c"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "3-6",
@@ -6900,9 +6486,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff74e"
-    },
     "commonName": "Eastern redbud",
     "variety": "Forest Pansy",
     "dbh": "6-12",
@@ -6950,9 +6533,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff74f"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -7000,9 +6580,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff750"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -7050,9 +6627,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff751"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "12-18",
@@ -7100,9 +6674,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff752"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -7150,9 +6721,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff755"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -7200,9 +6768,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff756"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -7250,9 +6815,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff757"
-    },
     "commonName": "American sycamore",
     "variety": "",
     "dbh": "18-24",
@@ -7300,9 +6862,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff758"
-    },
     "commonName": "Pin oak",
     "variety": "",
     "dbh": ">42",
@@ -7350,9 +6909,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff759"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "24-30",
@@ -7400,9 +6956,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75a"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "12-18",
@@ -7450,9 +7003,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75b"
-    },
     "commonName": "Sassafras",
     "variety": "",
     "dbh": "18-24",
@@ -7500,9 +7050,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75c"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -7550,9 +7097,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75d"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "12-18",
@@ -7600,9 +7144,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75e"
-    },
     "commonName": "Korean maple",
     "variety": "Final Fire",
     "dbh": "<3",
@@ -7650,9 +7191,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff75f"
-    },
     "commonName": "Prairie crab apple",
     "variety": "",
     "dbh": "12-18",
@@ -7700,9 +7238,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff760"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "3-6",
@@ -7750,9 +7285,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff761"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -7800,9 +7332,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff762"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "12-18",
@@ -7850,9 +7379,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff764"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -7900,9 +7426,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff765"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "18-24",
@@ -7950,9 +7473,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff766"
-    },
     "commonName": "Japanese tree lilac",
     "variety": "",
     "dbh": "3-6",
@@ -8000,9 +7520,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff767"
-    },
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "6-12",
@@ -8050,9 +7567,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff768"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -8100,9 +7614,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff769"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -8150,9 +7661,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff76a"
-    },
     "commonName": "American sycamore",
     "variety": "",
     "dbh": "12-18",
@@ -8200,9 +7708,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff76b"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -8250,9 +7755,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff76c"
-    },
     "commonName": "Flowering dogwood",
     "variety": "Cherokee chief",
     "dbh": "<3",
@@ -8300,9 +7802,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff76e"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -8350,9 +7849,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff76f"
-    },
     "commonName": "Norway spruce",
     "variety": "",
     "dbh": "12-18",
@@ -8400,9 +7896,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff770"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "<3",
@@ -8450,9 +7943,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff771"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -8500,9 +7990,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff772"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "6-12",
@@ -8550,9 +8037,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff774"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -8600,9 +8084,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff775"
-    },
     "commonName": "Black birch",
     "variety": "",
     "dbh": "24-30",
@@ -8650,9 +8131,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff776"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "18-24",
@@ -8700,9 +8178,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff777"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "12-18",
@@ -8750,9 +8225,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff778"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "18-24",
@@ -8800,9 +8272,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff779"
-    },
     "commonName": "Ginkgo",
     "variety": "",
     "dbh": "6-12",
@@ -8850,9 +8319,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77a"
-    },
     "commonName": "Red horse-chestnut",
     "variety": "",
     "dbh": "3-6",
@@ -8900,9 +8366,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77b"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "12-18",
@@ -8950,9 +8413,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77c"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -9000,9 +8460,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77d"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "6-12",
@@ -9050,9 +8507,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77e"
-    },
     "commonName": "Red horse-chestnut",
     "variety": "",
     "dbh": "3-6",
@@ -9100,9 +8554,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff77f"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -9150,9 +8601,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff780"
-    },
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "12-18",
@@ -9200,9 +8648,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff781"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -9250,9 +8695,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff782"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -9300,9 +8742,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff783"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "3-6",
@@ -9350,9 +8789,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff784"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -9400,9 +8836,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff785"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -9450,9 +8883,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff786"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "12-18",
@@ -9500,9 +8930,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff787"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -9550,9 +8977,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff788"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "18-24",
@@ -9600,9 +9024,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff789"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "12-18",
@@ -9650,9 +9071,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff78a"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -9700,9 +9118,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff78c"
-    },
     "commonName": "Littleleaf linden",
     "variety": "",
     "dbh": "24-30",
@@ -9750,9 +9165,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff78d"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -9800,9 +9212,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff78e"
-    },
     "commonName": "Swamp white oak",
     "variety": "",
     "dbh": "<3",
@@ -9850,9 +9259,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff78f"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "30-36",
@@ -9900,9 +9306,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff790"
-    },
     "commonName": "Rock elm",
     "variety": "",
     "dbh": "3-6",
@@ -9950,9 +9353,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff791"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -10000,9 +9400,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff792"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -10050,9 +9447,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff793"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -10100,9 +9494,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff794"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -10150,9 +9541,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff795"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -10200,9 +9588,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff796"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "24-30",
@@ -10250,9 +9635,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff797"
-    },
     "commonName": "Flowering dogwood",
     "variety": "Cherokee princess",
     "dbh": "<3",
@@ -10300,9 +9682,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff798"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -10350,9 +9729,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff799"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -10400,9 +9776,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79a"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "12-18",
@@ -10450,9 +9823,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79b"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "<3",
@@ -10500,9 +9870,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79c"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "30-36",
@@ -10550,9 +9917,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79d"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -10600,9 +9964,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79e"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "6-12",
@@ -10650,9 +10011,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff79f"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -10700,9 +10058,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a0"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -10750,9 +10105,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a1"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -10800,9 +10152,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a2"
-    },
     "commonName": "Hawthorn",
     "variety": "",
     "dbh": "12-18",
@@ -10850,9 +10199,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a4"
-    },
     "commonName": "Callery pear",
     "variety": "",
     "dbh": "12-18",
@@ -10900,9 +10246,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a6"
-    },
     "commonName": "Sweetbay magnolia",
     "variety": "",
     "dbh": "<3",
@@ -10950,9 +10293,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a7"
-    },
     "commonName": "Norway spruce",
     "variety": "",
     "dbh": "3-6",
@@ -11000,9 +10340,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a8"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -11050,9 +10387,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7a9"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "12-18",
@@ -11100,9 +10434,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7aa"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -11150,9 +10481,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ab"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "6-12",
@@ -11200,9 +10528,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ac"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "6-12",
@@ -11250,9 +10575,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ad"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -11300,9 +10622,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ae"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -11350,9 +10669,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7af"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -11400,9 +10716,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b0"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "3-6",
@@ -11450,9 +10763,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b1"
-    },
     "commonName": "Pin oak",
     "variety": "",
     "dbh": "<3",
@@ -11500,9 +10810,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b2"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "6-12",
@@ -11550,9 +10857,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b3"
-    },
     "commonName": "Pignut hickory",
     "variety": "",
     "dbh": "18-24",
@@ -11600,9 +10904,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b4"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -11650,9 +10951,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b5"
-    },
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "12-18",
@@ -11700,9 +10998,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b7"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "<3",
@@ -11750,9 +11045,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b8"
-    },
     "commonName": "Honey locust",
     "variety": "",
     "dbh": "24-30",
@@ -11800,9 +11092,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7b9"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -11850,9 +11139,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ba"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "<3",
@@ -11900,9 +11186,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7bb"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -11950,9 +11233,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7bc"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -12000,9 +11280,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7bd"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "3-6",
@@ -12050,9 +11327,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7be"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "6-12",
@@ -12100,9 +11374,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7bf"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "18-24",
@@ -12150,9 +11421,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c0"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "18-24",
@@ -12200,9 +11468,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c2"
-    },
     "commonName": "Red horse-chestnut",
     "variety": "",
     "dbh": "3-6",
@@ -12250,9 +11515,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c3"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -12300,9 +11562,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c4"
-    },
     "commonName": "Tree of heaven",
     "variety": "",
     "dbh": "18-24",
@@ -12350,9 +11609,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c5"
-    },
     "commonName": "Northern pecan",
     "variety": "",
     "dbh": "30-36",
@@ -12400,9 +11656,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c6"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "18-24",
@@ -12450,9 +11703,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c7"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "<3",
@@ -12500,9 +11750,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c8"
-    },
     "commonName": "White ash",
     "variety": "",
     "dbh": "12-18",
@@ -12550,9 +11797,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7c9"
-    },
     "commonName": "Hawthorn",
     "variety": "",
     "dbh": "24-30",
@@ -12600,9 +11844,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ca"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "18-24",
@@ -12650,9 +11891,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7cb"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "36-42",
@@ -12700,9 +11938,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7cc"
-    },
     "commonName": "Callery pear",
     "variety": "",
     "dbh": "3-6",
@@ -12750,9 +11985,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7cd"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "<3",
@@ -12800,9 +12032,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ce"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -12850,9 +12079,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7cf"
-    },
     "commonName": "Callery pear",
     "variety": "",
     "dbh": "12-18",
@@ -12900,9 +12126,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d0"
-    },
     "commonName": "Prairie crab apple",
     "variety": "",
     "dbh": "36-42",
@@ -12950,9 +12173,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d1"
-    },
     "commonName": "Saucer magnolia",
     "variety": "",
     "dbh": ">42",
@@ -13000,9 +12220,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d2"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "18-24",
@@ -13050,9 +12267,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d3"
-    },
     "commonName": "American sycamore",
     "variety": "",
     "dbh": "18-24",
@@ -13100,9 +12314,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d4"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -13150,9 +12361,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d5"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -13200,9 +12408,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d6"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "<3",
@@ -13250,9 +12455,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d7"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -13300,9 +12502,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7d8"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -13350,9 +12549,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7da"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -13400,9 +12596,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7db"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "12-18",
@@ -13450,9 +12643,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7dc"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -13500,9 +12690,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7dd"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "24-30",
@@ -13550,9 +12737,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7de"
-    },
     "commonName": "Prairie crab apple",
     "variety": "",
     "dbh": "3-6",
@@ -13600,9 +12784,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7df"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -13650,9 +12831,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e0"
-    },
     "commonName": "American sycamore",
     "variety": "",
     "dbh": "24-30",
@@ -13700,9 +12878,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e1"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "6-12",
@@ -13750,9 +12925,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e2"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "6-12",
@@ -13800,9 +12972,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e3"
-    },
     "commonName": "Black walnut",
     "variety": "",
     "dbh": "18-24",
@@ -13850,9 +13019,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e4"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -13900,9 +13066,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e5"
-    },
     "commonName": "Flowering dogwood",
     "variety": "Cherokee princess",
     "dbh": "<3",
@@ -13950,9 +13113,6 @@
     "hidden": true
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e6"
-    },
     "commonName": "Norway maple",
     "variety": "Crimson sunset",
     "dbh": "<3",
@@ -14000,9 +13160,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e7"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "<3",
@@ -14050,9 +13207,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e8"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "36-42",
@@ -14100,9 +13254,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7e9"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "18-24",
@@ -14150,9 +13301,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ea"
-    },
     "commonName": "Pignut hickory",
     "variety": "",
     "dbh": "6-12",
@@ -14200,9 +13348,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ec"
-    },
     "commonName": "Saucer magnolia",
     "variety": "",
     "dbh": "12-18",
@@ -14250,9 +13395,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ed"
-    },
     "commonName": "Sugar maple",
     "variety": "",
     "dbh": "6-12",
@@ -14300,9 +13442,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ee"
-    },
     "commonName": "Common hackberry",
     "variety": ".",
     "dbh": "6-12",
@@ -14350,9 +13489,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ef"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -14400,9 +13536,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f0"
-    },
     "commonName": "Swamp white oak",
     "variety": "",
     "dbh": "<3",
@@ -14450,9 +13583,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f1"
-    },
     "commonName": "Northern red oak",
     "variety": "",
     "dbh": "12-18",
@@ -14500,9 +13630,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f2"
-    },
     "commonName": "Apple",
     "variety": "Golden delicious",
     "dbh": "3-6",
@@ -14550,9 +13677,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f3"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "18-24",
@@ -14600,9 +13724,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f4"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "18-24",
@@ -14650,9 +13771,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f5"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "18-24",
@@ -14700,9 +13818,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f6"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "3-6",
@@ -14750,9 +13865,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f7"
-    },
     "commonName": "Japanese maple",
     "variety": "Bloodgood",
     "dbh": "<3",
@@ -14800,9 +13912,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f8"
-    },
     "commonName": "Black birch",
     "variety": "Heritage river birch",
     "dbh": "6-12",
@@ -14850,9 +13959,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7f9"
-    },
     "commonName": "Paperbark maple",
     "variety": "",
     "dbh": "<3",
@@ -14900,9 +14006,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7fb"
-    },
     "commonName": "Blue spruce",
     "variety": "Baby Blue Eyes",
     "dbh": "<3",
@@ -14950,9 +14053,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7fc"
-    },
     "commonName": "Blue spruce",
     "variety": "Baby blue eyes",
     "dbh": "<3",
@@ -15000,9 +14100,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7fd"
-    },
     "commonName": "Austrian pine",
     "variety": "",
     "dbh": "<3",
@@ -15050,9 +14147,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7fe"
-    },
     "commonName": "Limber pine",
     "variety": "Vanderwolf's pyramid",
     "dbh": "<3",
@@ -15100,9 +14194,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff7ff"
-    },
     "commonName": "Blue spruce",
     "variety": "Fat Albert",
     "dbh": "<3",
@@ -15150,9 +14241,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff800"
-    },
     "commonName": "Limber pine",
     "variety": "Vanderwolf's pyramid",
     "dbh": "<3",
@@ -15200,9 +14288,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff801"
-    },
     "commonName": "American basswood",
     "variety": "",
     "dbh": "12-18",
@@ -15250,9 +14335,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff802"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "<3",
@@ -15300,9 +14382,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff803"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "30-36",
@@ -15350,9 +14429,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff804"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -15400,9 +14476,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff805"
-    },
     "commonName": "Prairie crab apple",
     "variety": "",
     "dbh": "3-6",
@@ -15450,9 +14523,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff806"
-    },
     "commonName": "Red maple",
     "variety": "",
     "dbh": "3-6",
@@ -15500,9 +14570,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6867cb0543153949171ff807"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "<3",
@@ -15550,9 +14617,6 @@
     "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68682cbedc54f756eb69769f"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "3-6",
@@ -15597,13 +14661,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68682dacdc54f756eb6976a6"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "<3",
@@ -15648,13 +14708,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68682e33dc54f756eb6976ac"
-    },
     "commonName": "Eastern redbud",
     "variety": "",
     "dbh": "<3",
@@ -15699,13 +14755,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68682f20dc54f756eb6976c0"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -15750,13 +14802,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68683e93dc54f756eb6977be"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "3-6",
@@ -15801,13 +14849,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "686d431095500888540069ff"
-    },
     "commonName": "Northern catalpa",
     "variety": "",
     "dbh": "12-18",
@@ -15852,13 +14896,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "686d43e09550088854006a08"
-    },
     "commonName": "Trident maple",
     "variety": "",
     "dbh": "6-12",
@@ -15903,13 +14943,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "686d45b69550088854006a14"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -15954,13 +14990,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "686d46669550088854006a18"
-    },
     "commonName": "Ginkgo",
     "variety": "",
     "dbh": "<3",
@@ -16005,13 +15037,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "6876b3945222c25b64a750d9"
-    },
     "commonName": "Sweetbay magnolia",
     "variety": "",
     "dbh": "36-42",
@@ -16056,13 +15084,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68893987c0fa2ccbb1c4b4c6"
-    },
     "commonName": "Black maple",
     "variety": "",
     "dbh": "18-24",
@@ -16107,13 +15131,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "68893a73c0fa2ccbb1c4b4d2"
-    },
     "commonName": "Boxelder",
     "variety": "",
     "dbh": "12-18",
@@ -16158,13 +15178,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bbddbc0fa2ccbb1c4b50b"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -16209,13 +15225,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bc80bc0fa2ccbb1c4b5a3"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "6-12",
@@ -16260,13 +15272,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bc85ac0fa2ccbb1c4b5a8"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -16311,13 +15319,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bc8e7c0fa2ccbb1c4b5ae"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -16362,13 +15366,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bc92dc0fa2ccbb1c4b5b2"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "24-30",
@@ -16413,13 +15413,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bca0fc0fa2ccbb1c4b5b8"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "12-18",
@@ -16464,13 +15460,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcaedc0fa2ccbb1c4b5cf"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "18-24",
@@ -16515,13 +15507,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcb4cc0fa2ccbb1c4b5d3"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -16566,13 +15554,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcbe9c0fa2ccbb1c4b5df"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "12-18",
@@ -16617,13 +15601,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcc9ec0fa2ccbb1c4b5e8"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "18-24",
@@ -16668,13 +15648,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcce1c0fa2ccbb1c4b5ec"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "12-18",
@@ -16719,13 +15695,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bcd1ec0fa2ccbb1c4b5f0"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "12-18",
@@ -16770,13 +15742,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bce02c0fa2ccbb1c4b601"
-    },
     "commonName": "Black locust",
     "variety": "",
     "dbh": "12-18",
@@ -16821,13 +15789,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bce46c0fa2ccbb1c4b605"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -16872,13 +15836,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688bceb5c0fa2ccbb1c4b609"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -16923,13 +15883,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cab9ec0fa2ccbb1c4b6b9"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -16974,13 +15930,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cac50c0fa2ccbb1c4b6bd"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -17025,13 +15977,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cad53c0fa2ccbb1c4b6ca"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -17076,13 +16024,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cadeec0fa2ccbb1c4b6ce"
-    },
     "commonName": "Ohio buckeye",
     "variety": "",
     "dbh": "6-12",
@@ -17127,13 +16071,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cae6fc0fa2ccbb1c4b6d7"
-    },
     "commonName": "American elm",
     "variety": "",
     "dbh": "6-12",
@@ -17178,13 +16118,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688caed3c0fa2ccbb1c4b6db"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "3-6",
@@ -17229,13 +16165,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688caf7cc0fa2ccbb1c4b6df"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "12-18",
@@ -17280,13 +16212,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb017c0fa2ccbb1c4b6e8"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -17331,13 +16259,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb104c0fa2ccbb1c4b6ec"
-    },
     "commonName": "White mulberry",
     "variety": "",
     "dbh": "6-12",
@@ -17382,13 +16306,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb2fac0fa2ccbb1c4b6fb"
-    },
     "commonName": "Slippery elm",
     "variety": "",
     "dbh": "12-18",
@@ -17433,13 +16353,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb3e8c0fa2ccbb1c4b706"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "6-12",
@@ -17484,13 +16400,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb47dc0fa2ccbb1c4b70a"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -17535,13 +16447,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb4f6c0fa2ccbb1c4b714"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "6-12",
@@ -17586,13 +16494,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb55ec0fa2ccbb1c4b71a"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -17637,13 +16541,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb5d4c0fa2ccbb1c4b71f"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "12-18",
@@ -17688,13 +16588,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb5ebc0fa2ccbb1c4b723"
-    },
     "commonName": "Common hackberry",
     "variety": "",
     "dbh": "12-18",
@@ -17739,13 +16635,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb6c2c0fa2ccbb1c4b72a"
-    },
     "commonName": "Siberian elm",
     "variety": "",
     "dbh": "6-12",
@@ -17790,13 +16682,9 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   },
   {
-    "_id": {
-      "$oid": "688cb7eec0fa2ccbb1c4b736"
-    },
     "commonName": "Norway maple",
     "variety": "",
     "dbh": "3-6",
@@ -17841,7 +16729,6 @@
       "fell": false,
       "removeStump": false
     },
-    "hidden": false,
-    "__v": 0
+    "hidden": false
   }
 ]
