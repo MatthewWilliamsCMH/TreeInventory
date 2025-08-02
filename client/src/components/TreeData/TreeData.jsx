@@ -526,7 +526,6 @@ const TreeData = () => {
                 <Form.Group
                   as={Row}
                   className='g-0'
-                  controlId='installedDate'
                 >
                   <Form.Label
                     column
@@ -556,7 +555,7 @@ const TreeData = () => {
                       }}
                       placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={updatedTree.installedDate || ''}
+                      value={formatDateForDisplay(updatedTree.installedDate) || ''}
                     />
                   </Col>
                 </Form.Group>
@@ -564,7 +563,6 @@ const TreeData = () => {
                 <Form.Group
                   as={Row}
                   className='mt-1 g-0'
-                  controlId='installedBy'
                 >
                   <Form.Label
                     column
@@ -602,7 +600,6 @@ const TreeData = () => {
                 <Form.Group
                   as={Row}
                   className='mt-1 g-0'
-                  controlId='felledDate'
                 >
                   <Form.Label
                     column
@@ -632,7 +629,7 @@ const TreeData = () => {
                       }}
                       placeholder={`Record fell date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={updatedTree.felledDate || ''}
+                      value={formatDateForDisplay(updatedTree.felledDate) || ''}
                     />
                   </Col>
                 </Form.Group>
@@ -640,7 +637,6 @@ const TreeData = () => {
                 <Form.Group
                   as={Row}
                   className='mt-1 g-0'
-                  controlId='felledBy'
                 >
                   <Form.Label
                     column

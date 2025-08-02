@@ -50,25 +50,30 @@ const TreeMap = () => {
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
-    return mergedTrees.filter((tree) => {
-      //filter selects
-      //unremark these once all trees have been updated
-      if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
-      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh)) return false;
-      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden)) return false;
-      const siteInfoKeys = Object.keys(filterCriteria.siteInfo || {});
-      for (const key of siteInfoKeys) {
-        if (filterCriteria.siteInfo[key] === false && tree.siteInfo?.[key] === true) return false;
-      }
-      const careNeedsKeys = Object.keys(filterCriteria.careNeeds || {});
-      for (const key of careNeedsKeys) {
-        if (filterCriteria.careNeeds[key] === false && tree.careNeeds?.[key] === true) return false;
-      }
-      if (!filterCriteria.nonnative && tree.nonnative) return false;
-      if (!filterCriteria.invasive && tree.invasive) return false;
-      if (!filterCriteria.hidden && tree.hidden) return false;
+    // PHASE 1: Apply multiselect filters
+    const baseFiltered = mergedTrees.filter((tree) => {
+      return (
+        filterCriteria.commonName?.includes(tree.commonName) &&
+        (!tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh)) &&
+        (!tree.garden?.trim() || filterCriteria.garden?.includes(tree.garden))
+      );
+    });
 
-      return true;
+    // PHASE 2: Apply toggle filters only when toggled "on"
+    return baseFiltered.filter((tree) => {
+      const careNeedsPass = Object.entries(filterCriteria.careNeeds || {}).every(
+        ([key, isActive]) => !isActive || tree.careNeeds?.[key] === true
+      );
+
+      const siteInfoPass = Object.entries(filterCriteria.siteInfo || {}).every(
+        ([key, isActive]) => !isActive || tree.siteInfo?.[key] === true
+      );
+
+      const nonnativePass = !filterCriteria.nonnative || tree.nonnative === true;
+      const invasivePass = !filterCriteria.invasive || tree.invasive === true;
+      const hiddenPass = !filterCriteria.hidden || tree.hidden === false;
+
+      return careNeedsPass && siteInfoPass && nonnativePass && invasivePass && hiddenPass;
     });
   }, [mergedTrees, filterCriteria]);
 
