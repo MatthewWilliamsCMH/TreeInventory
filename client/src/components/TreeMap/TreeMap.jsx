@@ -54,25 +54,15 @@ const TreeMap = () => {
       //filter selects
       //unremark these once all trees have been updated
       if (!filterCriteria.commonName?.includes(tree.commonName)) return false;
-      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh))
-        return false;
-      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden))
-        return false;
+      if (tree.dbh?.trim() && !filterCriteria.dbh?.includes(tree.dbh)) return false;
+      if (tree.garden?.trim() && !filterCriteria.garden?.includes(tree.garden)) return false;
       const siteInfoKeys = Object.keys(filterCriteria.siteInfo || {});
       for (const key of siteInfoKeys) {
-        if (
-          filterCriteria.siteInfo[key] === false &&
-          tree.siteInfo?.[key] === true
-        )
-          return false;
+        if (filterCriteria.siteInfo[key] === false && tree.siteInfo?.[key] === true) return false;
       }
       const careNeedsKeys = Object.keys(filterCriteria.careNeeds || {});
       for (const key of careNeedsKeys) {
-        if (
-          filterCriteria.careNeeds[key] === false &&
-          tree.careNeeds?.[key] === true
-        )
-          return false;
+        if (filterCriteria.careNeeds[key] === false && tree.careNeeds?.[key] === true) return false;
       }
       if (!filterCriteria.nonnative && tree.nonnative) return false;
       if (!filterCriteria.invasive && tree.invasive) return false;
@@ -132,10 +122,7 @@ const TreeMap = () => {
 
     navigator.geolocation.watchPosition(
       ({ coords: { latitude, longitude } }) => {
-        if (
-          userLocationRef.current &&
-          map.current.hasLayer(userLocationRef.current)
-        ) {
+        if (userLocationRef.current && map.current.hasLayer(userLocationRef.current)) {
           map.current.removeLayer(userLocationRef.current);
         }
 
@@ -177,19 +164,13 @@ const TreeMap = () => {
   }, [filteredTrees, allSpecies]);
 
   useEffect(() => {
-    const newRadius =
-      Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
+    const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
     setMarkerRadius(newRadius);
 
     markersRef.current.forEach((markerInfo) => {
       const { marker, tree, species, opacity = 1 } = markerInfo;
       // Use the marker's current opacity, not default
-      const updatedIcon = generateTreeMarkerIcon(
-        tree,
-        species,
-        newRadius,
-        opacity
-      );
+      const updatedIcon = generateTreeMarkerIcon(tree, species, newRadius, opacity);
       marker.setIcon(updatedIcon);
     });
   }, [mapZoom]);
@@ -197,9 +178,7 @@ const TreeMap = () => {
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
-    const species = speciesMap.find(
-      (species) => species.commonName === tree.commonName
-    );
+    const species = speciesMap.find((species) => species.commonName === tree.commonName);
     const myIcon = generateTreeMarkerIcon(tree, species, markerRadius);
 
     const popupContent = `
@@ -294,16 +273,10 @@ const TreeMap = () => {
 
       //calculate current radius based on actual zoom level
       const currentZoom = map.current.getZoom();
-      const currentRadius =
-        Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
+      const currentRadius = Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
 
       //generate new icon with updated opacity and current radius
-      const updatedIcon = generateTreeMarkerIcon(
-        tree,
-        species,
-        currentRadius,
-        markerInfo.opacity
-      );
+      const updatedIcon = generateTreeMarkerIcon(tree, species, currentRadius, markerInfo.opacity);
       marker.setIcon(updatedIcon);
     });
 
@@ -312,9 +285,7 @@ const TreeMap = () => {
       const popupElement = popup.getElement();
 
       //prevent navigation when clicking close button
-      const closeButton = popupElement.querySelector(
-        '.leaflet-popup-close-button'
-      );
+      const closeButton = popupElement.querySelector('.leaflet-popup-close-button');
       if (closeButton) {
         closeButton.addEventListener('click', (event) => {
           event.stopPropagation();
@@ -376,7 +347,7 @@ const TreeMap = () => {
       felledDate: '',
       felledBy: '',
       careNeeds: {
-        install: false,
+        multistem: false,
         raiseCrown: false,
         routinePrune: false,
         trainingPrune: false,

@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server-express');
 
-const typeDefs = gql `
+const typeDefs = gql`
   input LocationInput {
     northing: Float!
     easting: Float!
@@ -16,7 +16,7 @@ const typeDefs = gql `
   }
 
   input careNeedsInput {
-    install: Boolean!
+    multistem: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
     trainingPrune: Boolean!
@@ -61,7 +61,7 @@ const typeDefs = gql `
   }
 
   type careNeeds {
-    install: Boolean!
+    multistem: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
     trainingPrune: Boolean!
@@ -121,7 +121,7 @@ const typeDefs = gql `
   }
 
   type Mutation {
-    addTree (
+    addTree(
       commonName: String!
       variety: String
       dbh: String
@@ -139,7 +139,7 @@ const typeDefs = gql `
       hidden: Boolean
     ): Tree
 
-    updateTree (
+    updateTree(
       id: ID!
       commonName: String!
       variety: String
@@ -158,12 +158,9 @@ const typeDefs = gql `
       hidden: Boolean
     ): Tree
 
-    updateTreeLocation (
-      id: ID!
-      location: LocationInput
-    ): Tree
+    updateTreeLocation(id: ID!, location: LocationInput): Tree
 
-    addSpecies (
+    addSpecies(
       family: String!
       commonName: String!
       scientificName: String!
@@ -172,7 +169,7 @@ const typeDefs = gql `
       markerColor: String!
     ): Species
 
-    updateSpecies (
+    updateSpecies(
       id: ID!
       family: String!
       commonName: String!

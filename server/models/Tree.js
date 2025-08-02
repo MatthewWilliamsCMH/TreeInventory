@@ -35,7 +35,7 @@ const treeSchema = new Schema({
   felledDate: { type: String },
   felledBy: { type: String },
   careNeeds: {
-    install: { type: Boolean, required: true, default: false },
+    multistem: { type: Boolean, required: true, default: false },
     raiseCrown: { type: Boolean, required: true, default: false },
     routinePrune: { type: Boolean, required: true, default: false },
     trainingPrune: { type: Boolean, required: true, default: false },

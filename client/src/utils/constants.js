@@ -1,14 +1,4 @@
-export const dbhList = [
-  '<3',
-  '3-6',
-  '6-12',
-  '12-18',
-  '18-24',
-  '24-30',
-  '30-36',
-  '36-42',
-  '>42',
-];
+export const dbhList = ['<3', '3-6', '6-12', '12-18', '18-24', '24-30', '30-36', '36-42', '>42'];
 
 export const gardenList = [
   'Community garden and lawn',
@@ -39,7 +29,7 @@ export const siteInfoList = [
 ];
 
 export const careNeedsList = [
-  'install',
+  'multistem',
   'raiseCrown',
   'routinePrune',
   'trainingPrune',

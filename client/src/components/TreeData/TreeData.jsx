@@ -255,7 +255,7 @@ const TreeData = () => {
         felledBy: updatedTree.felledBy,
         careNeeds: updatedTree.careNeeds
           ? {
-              install: updatedTree.careNeeds.install,
+              multistem: updatedTree.careNeeds.multistem,
               raiseCrown: updatedTree.careNeeds.raiseCrown,
               routinePrune: updatedTree.careNeeds.routinePrune,
               trainingPrune: updatedTree.careNeeds.trainingPrune,
@@ -449,16 +449,15 @@ const TreeData = () => {
                   id='variety'
                   onChange={(event) => {
                     const text = event.target.value;
-                    const rawValue = text.replace(/^Variety:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Variety: ') {
+                    if (text.trim() === '') {
                       setUpdatedTree((prev) => ({ ...prev, variety: '' }));
                       return;
                     }
-                    setUpdatedTree((prev) => ({ ...prev, variety: rawValue }));
+                    setUpdatedTree((prev) => ({ ...prev, variety: text }));
                   }}
                   placeholder={'Provide the variety name'}
                   type='text'
-                  value={updatedTree.variety ? `Variety: ${updatedTree.variety}` : ''}
+                  value={updatedTree.variety ? updatedTree.variety : ''}
                 />
               </fieldset>
 
@@ -522,7 +521,7 @@ const TreeData = () => {
 
             <Col md={6}>
               <fieldset id='care'>
-                <legend>Care History</legend>
+                <legend>Care</legend>
                 {/*add tool tips to these four fields or add labels to the left */}
                 <Form.Group
                   as={Row}
@@ -703,7 +702,7 @@ const TreeData = () => {
                 id='siteInfo'
                 className='mt-2'
               >
-                <legend>Site Info</legend>
+                <legend>Site Conditions</legend>
                 <Typeahead
                   key={gardenKey}
                   className='mt-1'
@@ -721,23 +720,20 @@ const TreeData = () => {
                     setUpdatedTree((prev) => ({ ...prev, garden: value }));
                   }}
                   onInputChange={(text) => {
-                    const rawValue = text.replace(/^Garden:\s*/, '');
-                    if (rawValue.trim() === '' || text === 'Garden: ') {
+                    if (text.trim() === '') {
                       setUpdatedTree((prev) => ({ ...prev, garden: '' }));
-                      setGardenKey((k) => k + 1); //force re-mount to clear input
                       return;
                     }
-                    setUpdatedTree((prev) => ({ ...prev, garden: rawValue }));
+                    setUpdatedTree((prev) => ({ ...prev, garden: text }));
                   }}
                   options={gardenList.map((garden) => ({
                     label: garden,
                     value: garden,
                   }))}
                   placeholder='Select a garden'
-                  renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.garden
-                      ? [{ label: `Garden: ${updatedTree.garden}`, value: updatedTree.garden }]
+                      ? [{ label: updatedTree.garden, value: updatedTree.garden }]
                       : []
                   }
                 />

@@ -39,7 +39,7 @@ function App() {
     // felledBy: '',
     garden: gardenList,
     careNeeds: {
-      install: true,
+      multistem: true,
       raiseCrown: true,
       routinePrune: true,
       trainingPrune: true,

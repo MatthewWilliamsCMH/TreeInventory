@@ -66,7 +66,7 @@ export const ADD_TREE = gql`
       felledDate
       felledBy
       careNeeds {
-        install
+        multistem
         raiseCrown
         routinePrune
         trainingPrune
