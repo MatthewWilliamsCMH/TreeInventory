@@ -1057,4 +1057,16 @@
   "nonnative": true,
   "invasive": false,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688ec53d7c04359fb5577704"
+  },
+  "family": "Betulaceae",
+  "commonName": "Eastern hophornbeam",
+  "scientificName": "Ostrya viginiana",
+  "markerColor": "#ffcdd2",
+  "nonnative": false,
+  "invasive": false,
+  "__v": 0
 }]

@@ -283,7 +283,7 @@ const TreeData = () => {
       }
 
       setUpdatedTree(null);
-      setSelectedTree(null);
+      // setSelectedTree(null);
       navigate('/');
     } catch (err) {
       console.error('Error saving tree or species:', err);
