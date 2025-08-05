@@ -6,7 +6,6 @@ import { useOutletContext, useNavigate } from 'react-router-dom';
 
 //stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../../custom-bootstrap.scss';
 
 const TreeInventory = () => {
