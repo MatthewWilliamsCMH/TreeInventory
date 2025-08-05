@@ -35,3 +35,12 @@ legend {
   color: var(--pale-yellow) !important;
   border-bottom: 1px solid var(--pale-yellow);
 }
+table {
+  margin-left: calc(3rem + 40px);
+  margin-top: 5rem;
+  max-width: calc(100% - 3rem - 40px - 40px);
+}
+table th {
+  background-color: var(--light-blue-green) !important;
+  color: white !important;
+}

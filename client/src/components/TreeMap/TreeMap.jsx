@@ -85,7 +85,6 @@ const TreeMap = () => {
   //generate marker icons
   const generateTreeMarkerIcon = (tree, species, radius, opacity = 1) => {
     const markerStrokeWidth = selectedTree && tree.id === selectedTree.id ? '3' : '1';
-    // const markerStrokeWidth = tree.lastUpdated > '1741132800' ? '3' : '1'; //temporary; remove after existing trees are updated; DO CONSIDER ADDING THICK STROKE TO SELECTED TREE FOR EASIER IDENTIFICATION
     const iconSize = radius * 2 + parseInt(markerStrokeWidth);
     const markerColor = species.markerColor || 'FFFFFF';
 

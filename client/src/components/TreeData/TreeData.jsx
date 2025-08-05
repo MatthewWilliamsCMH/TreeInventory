@@ -58,7 +58,7 @@ const TreeData = () => {
   const [updateTree] = useMutation(UPDATE_TREE);
   const [addSpecies] = useMutation(ADD_SPECIES);
 
-  //set up hooks
+  //initialize hooks
   const navigate = useNavigate();
 
   //----------useEffects----------

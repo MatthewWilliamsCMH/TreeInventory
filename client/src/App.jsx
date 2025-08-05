@@ -33,10 +33,6 @@ function App() {
   const [filterCriteria, setFilterCriteria] = useState({
     commonName: [],
     dbh: dbhList,
-    // installedDate: '',
-    // installedBy: '',
-    // felledDate: '',
-    // felledBy: '',
     garden: gardenList,
     careNeeds: {
       multistem: false,

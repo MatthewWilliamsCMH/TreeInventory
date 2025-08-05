@@ -1,0 +1,30 @@
+table {
+  /* background-color: white; */
+  /* width: 100%; */
+  /* max-width: calc(100% - 3rem - 60px); */
+  margin-left: calc(3rem + 40px);
+  margin-top: 5rem;
+  /* padding: 1rem; */
+  /* border: 1px solid black; */
+  /* border-radius: 1rem; */
+  /* border-spacing: 0px; */
+}
+
+/* th {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid black;
+} */
+
+/* tr {
+  height: 2rem;
+  border-style: none;
+}
+
+td {
+  padding: 5px;
+} */
+
+/* tr:nth-child(even) {
+  background-color: var(--pale-yellow);
+} */
