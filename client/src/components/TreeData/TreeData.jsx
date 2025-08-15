@@ -449,15 +449,15 @@ const TreeData = () => {
                   id='variety'
                   onChange={(event) => {
                     const text = event.target.value;
-                    if (text.trim() === '') {
-                      setUpdatedTree((prev) => ({ ...prev, variety: '' }));
-                      return;
-                    }
+                    // if (text.trim() === '') {
+                    //   setUpdatedTree((prev) => ({ ...prev, variety: '' }));
+                    //   return;
+                    // }
                     setUpdatedTree((prev) => ({ ...prev, variety: text }));
                   }}
                   placeholder={'Provide the variety name'}
                   type='text'
-                  value={updatedTree.variety ? updatedTree.variety : ''}
+                  value={updatedTree.variety}
                 />
               </fieldset>
 
@@ -545,17 +545,21 @@ const TreeData = () => {
                   >
                     <Form.Control
                       id='installedDate'
+                      onBlur={(event) => {
+                        const text = formatDateforDisplay(event.target.value);
+                        setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
+                      }}
                       onChange={(event) => {
                         const text = event.target.value;
-                        if (text.trim() === '') {
-                          setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
-                          return;
-                        }
+                        // if (text.trim() === '') {
+                        //   setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
+                        //   return;
+                        // }
                         setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
                       }}
                       placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={formatDateForDisplay(updatedTree.installedDate) || ''}
+                      value={updatedTree.installedDate}
                     />
                   </Col>
                 </Form.Group>
@@ -584,15 +588,15 @@ const TreeData = () => {
                       id='installedBy'
                       onChange={(event) => {
                         const text = event.target.value;
-                        if (text.trim() === '') {
-                          setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
-                          return;
-                        }
+                        // if (text.trim() === '') {
+                        //   setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
+                        //   return;
+                        // }
                         setUpdatedTree((prev) => ({ ...prev, installedBy: text }));
                       }}
                       placeholder={`Provide the installer's name`}
                       type='text'
-                      value={updatedTree.installedBy ? updatedTree.installedBy : ''}
+                      value={updatedTree.installedBy}
                     />
                   </Col>
                 </Form.Group>
@@ -619,17 +623,21 @@ const TreeData = () => {
                   >
                     <Form.Control
                       id='felledDate'
+                      onBlur={(event) => {
+                        const text = formatDateforDisplay(event.target.value);
+                        setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
+                      }}
                       onChange={(event) => {
                         const text = event.target.value;
-                        if (text.trim() === '') {
-                          setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
-                          return;
-                        }
+                        // if (text.trim() === '') {
+                        //   setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
+                        //   return;
+                        // }
                         setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
                       }}
                       placeholder={`Record fell date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={formatDateForDisplay(updatedTree.felledDate) || ''}
+                      value={updatedTree.felledDate}
                     />
                   </Col>
                 </Form.Group>
@@ -646,7 +654,7 @@ const TreeData = () => {
                     lg={3} // larger screens
                     className='text-start'
                   >
-                    Felled on:
+                    Felled by:
                   </Form.Label>
                   <Col
                     xs={8} // small phones
@@ -658,10 +666,10 @@ const TreeData = () => {
                       id='felledBy'
                       onChange={(event) => {
                         const text = event.target.value;
-                        if (text.trim() === '') {
-                          setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
-                          return;
-                        }
+                        // if (text.trim() === '') {
+                        //   setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
+                        //   return;
+                        // }
                         setUpdatedTree((prev) => ({ ...prev, felledBy: text }));
                       }}
                       placeholder={`Provide the feller's name`}
