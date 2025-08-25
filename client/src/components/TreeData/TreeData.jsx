@@ -546,7 +546,7 @@ const TreeData = () => {
                     <Form.Control
                       id='installedDate'
                       onBlur={(event) => {
-                        const text = formatDateforDisplay(event.target.value);
+                        const text = formatDateForDisplay(event.target.value);
                         setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
                       }}
                       onChange={(event) => {
@@ -559,7 +559,7 @@ const TreeData = () => {
                       }}
                       placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={updatedTree.installedDate}
+                      value={formatDateForDisplay(updatedTree.installedDate)}
                     />
                   </Col>
                 </Form.Group>
@@ -637,7 +637,7 @@ const TreeData = () => {
                       }}
                       placeholder={`Record fell date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={updatedTree.felledDate}
+                      value={formatDateForDisplay(updatedTree.felledDate)}
                     />
                   </Col>
                 </Form.Group>

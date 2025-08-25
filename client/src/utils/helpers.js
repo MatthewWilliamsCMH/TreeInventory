@@ -6,36 +6,41 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
       ...updatedTree,
       [parentField]: {
         ...updatedTree[parentField],
-        [childField]: value
-      }
+        [childField]: value,
+      },
     };
   }
 
   //if field not nested
-  if (field === 'commonName') {  //common and scientific names sync'd here
-    const scientificFromCommon = commonToScientific[value]; 
+  if (field === 'commonName') {
+    //common and scientific names sync'd here
+    const scientificFromCommon = commonToScientific[value];
     updatedTree = {
       ...updatedTree,
       commonName: value,
-      scientificName: scientificFromCommon || ''
+      scientificName: scientificFromCommon || '',
     };
-  };
+  }
 
   if (field === 'scientificName') {
-    const commonFromScientific =  Object.keys(commonToScientific).find(common => commonToScientific[common] === value);
+    const commonFromScientific = Object.keys(commonToScientific).find(
+      (common) => commonToScientific[common] === value
+    );
     updatedTree = {
       ...updatedTree,
       scientificName: value,
-      commonName: commonFromScientific || ''
-    }
+      commonName: commonFromScientific || '',
+    };
   }
 
   updatedTree = {
     ...updatedTree,
-    [field]: value
+    [field]: value,
   };
 
-  if (updatedTree.felledDate) {updatedTree.hidden = true};
+  if (updatedTree.felledDate) {
+    updatedTree.hidden = true;
+  }
 
   return updatedTree;
 };
@@ -69,17 +74,17 @@ export const formatDateForDisplay = (dateStr) => {
 //validate input
 export const validateDateField = (dateStr) => {
   if (!dateStr) return true;
-  
+
   //'before'
   if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
     return true;
   }
-  
+
   //'Unix timestamp'
   if (/^\d{13}$/.test(String(dateStr))) {
     return true;
   }
-  
+
   //'mm/dd/yyy'
   const date = new Date(dateStr);
   return !isNaN(date.getTime());
@@ -87,13 +92,13 @@ export const validateDateField = (dateStr) => {
 
 //combine tree and species data
 export const combineTreeAndSpeciesData = (tree, speciesMap) => {
-  const species = speciesMap.find(s => s.commonName === tree.commonName) || {};
+  const species = speciesMap.find((s) => s.commonName === tree.commonName) || {};
   return {
     ...tree,
     scientificName: species.scientificName || '',
     nonnative: species.nonnative || false,
     invasive: species.invasive || false,
     markerColor: species.markerColor || 'FFFFFF',
-    family: species.family || ''
+    family: species.family || '',
   };
 };
