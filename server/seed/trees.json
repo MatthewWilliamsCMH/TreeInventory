@@ -1715,7 +1715,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751657717360.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-04T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977405281767936,
@@ -1735,7 +1735,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": false,
+    "multistem": true,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -2915,7 +2915,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741633149634.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-10T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97822896675226,
@@ -2939,7 +2939,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -5955,7 +5955,7 @@
   "commonName": "Limber pine",
   "variety": "Vanderwolf's pyramid",
   "dbh": "<3",
-  "notes": "2025: browning tips and interior; per Oakland Nursery, too much or too little water; probably too little; added topsoil berm to downhill side and root-growth stimulator; removed some of the burlap to allow water to reach root ball",
+  "notes": "2025: died; warrantee replacement",
   "photos": {
     "bark": "",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1746905809466.jpeg",
@@ -5965,7 +5965,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1746905785872.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-08-05T00:00:00.000Z"
+    "$date": "2025-08-22T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97723006116125,
@@ -5993,7 +5993,7 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
   "hidden": false
@@ -6565,7 +6565,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1743189055100.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-28T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97719871666517,
@@ -6585,7 +6585,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": true,
+    "multistem": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -7415,7 +7415,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1753821657602.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-29T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978000822934774,
@@ -7439,7 +7439,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -8052,7 +8052,7 @@
   "_id": {
     "$oid": "688e7d495267e6251f209c1f"
   },
-  "commonName": "Slippery elm",
+  "commonName": "Siberian elm",
   "variety": "",
   "dbh": "12-18",
   "notes": "12 sisters",
@@ -8065,7 +8065,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1753989376434.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-05T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977831769930035,
@@ -8089,7 +8089,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -8215,7 +8215,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741634423289.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-10T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978274184355385,
@@ -8239,7 +8239,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -10165,7 +10165,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1753820642645.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-29T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97809567625855,
@@ -10189,7 +10189,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -10765,7 +10765,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741984443309.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-25T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977460776763756,
@@ -10785,7 +10785,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": true,
+    "multistem": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -11115,7 +11115,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1753821461925.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-29T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97801983494864,
@@ -11139,7 +11139,7 @@
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
-    "priorityPrune": false,
+    "priorityPrune": true,
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
@@ -11315,7 +11315,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751658013444.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-04T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977333343743304,
@@ -11615,7 +11615,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741808600103.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-12T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97803525009116,
@@ -11635,7 +11635,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": true,
+    "multistem": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -12265,7 +12265,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751657860448.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-04T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97733154529171,
@@ -12285,7 +12285,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": false,
+    "multistem": true,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -12915,7 +12915,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1743105176819.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-13T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97725421182874,
@@ -12935,7 +12935,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": true,
+    "multistem": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -13115,7 +13115,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1746717399442.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-05-08T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97697647309375,
@@ -13615,7 +13615,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1753823099407.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-29T00:00:00.000Z"
+    "$date": "2025-08-15T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977941217667755,
@@ -13635,7 +13635,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
-    "multistem": true,
+    "multistem": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -15305,7 +15305,7 @@
   "commonName": "Weeping cherry",
   "variety": "Weeping extraordinaire",
   "dbh": "<3",
-  "notes": "donated by Paul Hysell and Elizabeth Chrisman in memory of Bob Chrisman; plaque:",
+  "notes": "2025: Plaque: In Memory Of // Robert \"Bob\" Chrisman // Summig Chase beloved home // Missed by Betsy [Chrisman] and Paul [Hysell]",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741632351506.jpg",
     "summerLeaf": "",
@@ -15315,7 +15315,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741632399986.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-10T00:00:00.000Z"
+    "$date": "2025-08-22T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97818092301617,
@@ -18268,17 +18268,17 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1754416202918.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1754416273473.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1755345439205.jpg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1754416220827.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-05T00:00:00.000Z"
+    "$date": "2025-08-16T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97814880820048,
-    "easting": -83.0494737625122
+    "northing": 39.978149835874795,
+    "easting": -83.04949924349788
   },
   "garden": "Urlin driveway bed north",
   "siteInfo": {
@@ -18328,8 +18328,8 @@
     "$date": "2025-08-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97814675285175,
-    "easting": -83.0494375526905
+    "northing": 39.97814366982855,
+    "easting": -83.04946102201939
   },
   "garden": "Urlin driveway bed north",
   "siteInfo": {
@@ -18379,8 +18379,8 @@
     "$date": "2025-08-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97815060663055,
-    "easting": -83.04943235591055
+    "northing": 39.978152405060584,
+    "easting": -83.04945901036263
   },
   "garden": "Urlin driveway bed north",
   "siteInfo": {
@@ -18392,6 +18392,1026 @@
     "propertyLine": true
   },
   "installedDate": "< 2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5b4eb4e3c03e3bb87bc2"
+  },
+  "commonName": "Eastern redbud",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756324334465.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756322612283.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97748415658648,
+    "easting": -83.04858494549991
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2024",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5bd6b4e3c03e3bb87bc9"
+  },
+  "commonName": "Norway maple",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756324380397.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756322765359.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977485441191874,
+    "easting": -83.04855912923814
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2025",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5caab4e3c03e3bb87bcf"
+  },
+  "commonName": "Norway maple",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling; deer ate, will see if it returns in 2026",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756322984923.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97743662616928,
+    "easting": -83.04864160716535
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2015",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5cf0b4e3c03e3bb87bd3"
+  },
+  "commonName": "Ohio buckeye",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756323054688.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977387811111775,
+    "easting": -83.04863356053829
+  },
+  "garden": "",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2014",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5d8eb4e3c03e3bb87bda"
+  },
+  "commonName": "Eastern redbud",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756323194204.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756323178481.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977243421106024,
+    "easting": -83.04859936237337
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "< 2024",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5e64b4e3c03e3bb87bde"
+  },
+  "commonName": "Eastern redbud",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2925: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756323422869.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756323409160.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97718509978944,
+    "easting": -83.0486996099353
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "< 2025",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af5f08b4e3c03e3bb87be2"
+  },
+  "commonName": "Eastern redbud",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756323577378.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756323544681.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97725189953117,
+    "easting": -83.04867915809156
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2024",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6018b4e3c03e3bb87beb"
+  },
+  "commonName": "Eastern redbud",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756323903430.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756323881821.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977205910485225,
+    "easting": -83.04875358939171
+  },
+  "garden": "",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2025",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af61afb4e3c03e3bb87bfd"
+  },
+  "commonName": "Norway maple",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "2025: seedling; deer ate, see if it comes back in 2026",
+  "photos": {
+    "bark": "",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756324262072.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.977409392509905,
+    "easting": -83.04878041148187
+  },
+  "garden": "Ravine",
+  "siteInfo": {
+    "slope": true,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2025",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6319b4e3c03e3bb87c0a"
+  },
+  "commonName": "Norway maple",
+  "variety": "",
+  "dbh": "3-6",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756324596368.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756324623873.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97813904529352,
+    "easting": -83.0494073778391
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6399b4e3c03e3bb87c0e"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756324717891.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756324753125.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.978147780526115,
+    "easting": -83.04932355880739
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6399b4e3c03e3bb87c11"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756324717891.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756324753125.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.978147780526115,
+    "easting": -83.04932355880739
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af644bb4e3c03e3bb87c1a"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756324928026.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756324916009.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97814546825877,
+    "easting": -83.04932087659837
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6498b4e3c03e3bb87c22"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756324986186.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325010528.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97814739514823,
+    "easting": -83.04931316524744
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af64e4b4e3c03e3bb87c26"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "3-6",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325068125.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325089501.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.978151634304865,
+    "easting": -83.04932925850154
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6523b4e3c03e3bb87c2a"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325135222.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325150122.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.978157158053996,
+    "easting": -83.04932137951256
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af6561b4e3c03e3bb87c2e"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "<3",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325195731.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325212763.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97815600192049,
+    "easting": -83.04933412000538
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": true,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af65aeb4e3c03e3bb87c32"
+  },
+  "commonName": "Black walnut",
+  "variety": "",
+  "dbh": "12-18",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325270284.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325290709.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.9781706462768,
+    "easting": -83.04923068732025
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af65e7b4e3c03e3bb87c36"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "6-12",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325331156.jpg",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756325446953.jpg",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325348058.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97816961860276,
+    "easting": -83.0492414161563
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
+  "installedBy": "",
+  "felledDate": "",
+  "felledBy": "",
+  "careNeeds": {
+    "multistem": false,
+    "raiseCrown": false,
+    "routinePrune": false,
+    "trainingPrune": false,
+    "priorityPrune": false,
+    "pestTreatment": false,
+    "installGrate": false,
+    "removeGrate": false,
+    "fell": false,
+    "removeStump": false
+  },
+  "hidden": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68af667bb4e3c03e3bb87c3d"
+  },
+  "commonName": "Common hackberry",
+  "variety": "",
+  "dbh": "3-6",
+  "notes": "",
+  "photos": {
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1756325483166.jpg",
+    "summerLeaf": "",
+    "autumnLeaf": "",
+    "fruit": "",
+    "flower": "",
+    "environs": "https://treeinventory.clickps.synology.me/uploads/1756325495641.jpg"
+  },
+  "lastUpdated": {
+    "$date": "2025-08-27T00:00:00.000Z"
+  },
+  "location": {
+    "northing": 39.97817835383147,
+    "easting": -83.0492414161563
+  },
+  "garden": "Meditation garden",
+  "siteInfo": {
+    "slope": false,
+    "overheadLines": false,
+    "treeCluster": false,
+    "proximateStructure": false,
+    "proximateFence": false,
+    "propertyLine": false
+  },
+  "installedDate": "<2018",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
