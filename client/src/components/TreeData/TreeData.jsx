@@ -329,7 +329,7 @@ const TreeData = () => {
                 <Typeahead
                   allowNew
                   className='mt-1'
-                  filterBy={() => true}
+                  // filterBy={() => true}
                   id='commonName'
                   isSearchable={true}
                   key={commonNameKey}
@@ -389,7 +389,7 @@ const TreeData = () => {
                 <Typeahead
                   allowNew
                   className='mt-1'
-                  filterBy={() => true}
+                  // filterBy={() => true}
                   id='scientificName'
                   key={scientificNameKey}
                   labelKey='label'
@@ -468,7 +468,7 @@ const TreeData = () => {
                 <legend>Physical Data</legend>
                 <Typeahead
                   className='mt-1'
-                  filterBy={() => true}
+                  // filterBy={() => true}
                   id='dbh'
                   inputProps={{
                     //this suppresses the keyboard on mobile devices
@@ -716,7 +716,7 @@ const TreeData = () => {
                     readOnly: true,
                     inputMode: 'none',
                   }}
-                  filterBy={() => true}
+                  // filterBy={() => true}
                   labelKey='label'
                   multiple={false}
                   onChange={(selected) => {
