@@ -83,8 +83,8 @@ const TreeInventory = () => {
                   />
                 ) : (
                   <img
-                    src={'../../public/ScribbleTree.png'}
-                    alt={'No image'}
+                    src='/ScribbleTree.png'
+                    alt='No image'
                     style={{ width: '3.75rem' }}
                   />
                 )}
