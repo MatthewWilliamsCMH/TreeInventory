@@ -27,15 +27,10 @@ const TreeData = () => {
   //get current global states from parent
   const {
     allSpecies,
-    setAllSpecies,
     refetchSpecies,
-    // allTrees,
-    // setAllTrees,
     refetchTrees,
     updatedTree,
     setUpdatedTree,
-    // selectedTree,
-    // setSelectedTree,
     formColor,
     setFormColor,
   } = useOutletContext();
@@ -80,25 +75,6 @@ const TreeData = () => {
       setCommonToScientific(commonToScientific);
     }
   }, [allSpecies]);
-
-  //convert value for installed and felled dates to strings for display on the form
-  // useEffect(() => {
-  //   if (!updatedTree?.id) return;
-  //   setUpdatedTree((prev) => ({
-  //     ...prev,
-  //     installedDate: prev.installedDate ? formatDateForDisplay(prev.installedDate) : '',
-  //   }));
-  // }, [updatedTree?.id]);
-  // // useEffect(() => {
-  //   if (!updatedTree?.id) return;
-
-  //   setUpdatedTree((prev) => ({
-  //     ...prev,
-  //     installedDate: prev?.installedDate ? formatDateForDisplay(prev.installedDate) : '',
-  //     felledDate: prev?.felledDate ? formatDateForDisplay(prev.felledDate) : '',
-  //   }));
-  //   // }, [updatedTree?.id]);
-  // }, []);
 
   //set form color
   useEffect(() => {
@@ -194,7 +170,7 @@ const TreeData = () => {
   const handleDefaultInputChange = (field, event) => {
     const value = event.target.value;
 
-    // Update the main updatedTree state
+    //pdate the main updatedTree state
     setUpdatedTree((prev) => handleFieldChange(prev, field, value));
   };
 
@@ -308,7 +284,6 @@ const TreeData = () => {
       }
 
       setUpdatedTree(null);
-      // setSelectedTree(null);
       navigate('/');
     } catch (err) {
       console.error('Error saving tree or species:', err);
@@ -354,7 +329,6 @@ const TreeData = () => {
                 <Typeahead
                   allowNew
                   className='mt-1'
-                  // filterBy={() => true}
                   id='commonName'
                   isSearchable={true}
                   key={commonNameKey}
@@ -414,7 +388,6 @@ const TreeData = () => {
                 <Typeahead
                   allowNew
                   className='mt-1'
-                  // filterBy={() => true}
                   id='scientificName'
                   key={scientificNameKey}
                   labelKey='label'
@@ -474,10 +447,6 @@ const TreeData = () => {
                   id='variety'
                   onChange={(event) => {
                     const text = event.target.value;
-                    // if (text.trim() === '') {
-                    //   setUpdatedTree((prev) => ({ ...prev, variety: '' }));
-                    //   return;
-                    // }
                     setUpdatedTree((prev) => ({ ...prev, variety: text }));
                   }}
                   placeholder={'Provide the variety name'}
@@ -493,7 +462,6 @@ const TreeData = () => {
                 <legend>Physical Data</legend>
                 <Typeahead
                   className='mt-1'
-                  // filterBy={() => true}
                   id='dbh'
                   isSearchable={true}
                   key={dbhKey}
@@ -658,10 +626,6 @@ const TreeData = () => {
                       id='installedBy'
                       onChange={(event) => {
                         const text = event.target.value;
-                        // if (text.trim() === '') {
-                        //   setUpdatedTree((prev) => ({ ...prev, installedBy: '' }));
-                        //   return;
-                        // }
                         setUpdatedTree((prev) => ({ ...prev, installedBy: text }));
                       }}
                       placeholder={`Provide the installer's name`}
@@ -695,19 +659,15 @@ const TreeData = () => {
                       id='felledDate'
                       onBlur={(event) => {
                         const text = event.target.value;
-                        setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
+                        setUpdatedTree((prev) => ({
+                          ...prev,
+                          felledDate: formatDateForDb(text),
+                        }));
                       }}
-                      onChange={(event) => {
-                        const text = event.target.value;
-                        // if (text.trim() === '') {
-                        //   setUpdatedTree((prev) => ({ ...prev, felledDate: '' }));
-                        //   return;
-                        // }
-                        setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
-                      }}
-                      placeholder={`Record fell date ('MM/DD/YYYY' or '<YYYY')`}
+                      onChange={(event) => setFelledDateField(event.target.value)}
+                      placeholder={`Record felling date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={formatDateForDisplay(updatedTree.felledDate)}
+                      value={felledDateField}
                     />
                   </Col>
                 </Form.Group>
@@ -736,10 +696,6 @@ const TreeData = () => {
                       id='felledBy'
                       onChange={(event) => {
                         const text = event.target.value;
-                        // if (text.trim() === '') {
-                        //   setUpdatedTree((prev) => ({ ...prev, felledBy: '' }));
-                        //   return;
-                        // }
                         setUpdatedTree((prev) => ({ ...prev, felledBy: text }));
                       }}
                       placeholder={`Provide the feller's name`}
@@ -782,7 +738,6 @@ const TreeData = () => {
                   className='mt-1'
                   id='garden'
                   isSearchable={true}
-                  // filterBy={() => true}
                   labelKey='label'
                   multiple={false}
                   onChange={(selected) => {
