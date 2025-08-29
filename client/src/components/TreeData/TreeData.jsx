@@ -8,7 +8,7 @@ import { useNavigate, useOutletContext } from 'react-router-dom';
 
 //local helpers, constants, queries, and mutations
 import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/constants.js';
-import { handleFieldChange, formatDateForDisplay } from '../../utils/helpers.js';
+import { handleFieldChange, formatDateForDisplay, formatDateForDb } from '../../utils/helpers.js';
 import { ADD_TREE } from '../../mutations/add_tree.js';
 import { UPDATE_TREE } from '../../mutations/update_tree.js';
 import { ADD_SPECIES } from '../../mutations/add_species.js';
@@ -29,13 +29,13 @@ const TreeData = () => {
     allSpecies,
     setAllSpecies,
     refetchSpecies,
-    allTrees,
-    setAllTrees,
+    // allTrees,
+    // setAllTrees,
     refetchTrees,
     updatedTree,
     setUpdatedTree,
-    selectedTree,
-    setSelectedTree,
+    // selectedTree,
+    // setSelectedTree,
     formColor,
     setFormColor,
   } = useOutletContext();
@@ -45,6 +45,12 @@ const TreeData = () => {
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
   const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);
+  const [installedDateField, setInstalledDateField] = useState(
+    formatDateForDisplay(updatedTree.installedDate)
+  );
+  const [felledDateField, setFelledDateField] = useState(
+    formatDateForDisplay(updatedTree.felledDate)
+  );
   const [pendingSpecies, setPendingSpecies] = useState(null);
 
   //initialize keys for controlled inputs
@@ -74,6 +80,25 @@ const TreeData = () => {
       setCommonToScientific(commonToScientific);
     }
   }, [allSpecies]);
+
+  //convert value for installed and felled dates to strings for display on the form
+  // useEffect(() => {
+  //   if (!updatedTree?.id) return;
+  //   setUpdatedTree((prev) => ({
+  //     ...prev,
+  //     installedDate: prev.installedDate ? formatDateForDisplay(prev.installedDate) : '',
+  //   }));
+  // }, [updatedTree?.id]);
+  // // useEffect(() => {
+  //   if (!updatedTree?.id) return;
+
+  //   setUpdatedTree((prev) => ({
+  //     ...prev,
+  //     installedDate: prev?.installedDate ? formatDateForDisplay(prev.installedDate) : '',
+  //     felledDate: prev?.felledDate ? formatDateForDisplay(prev.felledDate) : '',
+  //   }));
+  //   // }, [updatedTree?.id]);
+  // }, []);
 
   //set form color
   useEffect(() => {
@@ -470,11 +495,7 @@ const TreeData = () => {
                   className='mt-1'
                   // filterBy={() => true}
                   id='dbh'
-                  inputProps={{
-                    //this suppresses the keyboard on mobile devices
-                    readOnly: true,
-                    inputMode: 'none',
-                  }}
+                  isSearchable={true}
                   key={dbhKey}
                   labelKey='label'
                   multiple={false}
@@ -505,6 +526,59 @@ const TreeData = () => {
                   onPhotoUpload={handlePhotoUpload}
                 />
               </fieldset>
+
+              {/*
+        <Row className='g-1'>
+          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
+            <Col
+              xs={4}
+              sm={4}
+              md={6}
+              lg={4}
+              className='text-center'
+              style={{ color: '#BBB' }}
+              key={photoType}
+            >
+              <div
+                onClick={() => handlePhotoClick(photoType)}
+                style={{
+                  cursor: 'pointer',
+                  width: '100%',
+                }}
+              >
+                {updatedTree.photos?.[photoType] ? (
+                  <Image
+                    alt={photoType}
+                    className='object-cover'
+                    rounded
+                    src={updatedTree.photos[photoType]}
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'cover',
+                    }}
+                  />
+                ) : (
+                  <div
+                    className='photo-placeholder border rounded d-flex align-items-center justify-content-center'
+                    style={{
+                      height: '100px',
+                      background: '#fff',
+                      width: '100%',
+                    }}
+                  >
+                    <span>
+                      {photoType
+                        .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+                        .replace(/^([a-z])/g, (match) => match.toUpperCase())}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </Col>
+          ))}
+        </Row>
+*/}
 
               <fieldset className='mt-2'>
                 <legend>Notes</legend>
@@ -546,20 +620,16 @@ const TreeData = () => {
                     <Form.Control
                       id='installedDate'
                       onBlur={(event) => {
-                        const text = formatDateForDisplay(event.target.value);
-                        setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
-                      }}
-                      onChange={(event) => {
                         const text = event.target.value;
-                        // if (text.trim() === '') {
-                        //   setUpdatedTree((prev) => ({ ...prev, installedDate: '' }));
-                        //   return;
-                        // }
-                        setUpdatedTree((prev) => ({ ...prev, installedDate: text }));
+                        setUpdatedTree((prev) => ({
+                          ...prev,
+                          installedDate: formatDateForDb(text),
+                        }));
                       }}
+                      onChange={(event) => setInstalledDateField(event.target.value)}
                       placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
                       type='text'
-                      value={formatDateForDisplay(updatedTree.installedDate)}
+                      value={installedDateField}
                     />
                   </Col>
                 </Form.Group>
@@ -624,7 +694,7 @@ const TreeData = () => {
                     <Form.Control
                       id='felledDate'
                       onBlur={(event) => {
-                        const text = formatDateforDisplay(event.target.value);
+                        const text = event.target.value;
                         setUpdatedTree((prev) => ({ ...prev, felledDate: text }));
                       }}
                       onChange={(event) => {
@@ -711,11 +781,7 @@ const TreeData = () => {
                   key={gardenKey}
                   className='mt-1'
                   id='garden'
-                  inputProps={{
-                    //this suppresses the keyboard on mobile devices
-                    readOnly: true,
-                    inputMode: 'none',
-                  }}
+                  isSearchable={true}
                   // filterBy={() => true}
                   labelKey='label'
                   multiple={false}

@@ -45,12 +45,11 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
   return updatedTree;
 };
 
+//convert unix timestamps to locale date strings for display on a form; ignore nonstandard date strings
 export const formatDateForDisplay = (dateStr) => {
-  if (!dateStr || typeof dateStr !== 'string') {
-    dateStr = String(dateStr || '').trim();
-  }
+  if (!dateStr || typeof dateStr !== 'string') dateStr = String(dateStr || '').trim();
 
-  //'before'
+  //'< yyyy'  or 'before yyyy'
   const beforeMatch = dateStr.match(/^(?:<\s*|before\s+)(\d{4})$/i);
   if (beforeMatch) {
     return `< ${beforeMatch[1]}`;
@@ -59,16 +58,42 @@ export const formatDateForDisplay = (dateStr) => {
   //'Unix timestamp'
   if (/^\d{13}$/.test(dateStr)) {
     const date = new Date(Number(dateStr));
-    return date.toLocaleDateString('en-US');
+    return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
+      2,
+      '0'
+    )}/${date.getUTCFullYear()}`;
   }
 
-  //'mm/dd/yyyy'
+  //'mm/dd/yyyy' or ISO string
   const date = new Date(dateStr);
   if (!isNaN(date.getTime())) {
-    return date.toLocaleDateString('en-US');
+    return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
+      2,
+      '0'
+    )}/${date.getUTCFullYear()}`;
   }
 
   return dateStr;
+};
+
+//convert time strings to ISO strings for DB storage
+export const formatDateForDb = (dateStr) => {
+  if (!dateStr) return '';
+
+  //'< yyyy' or 'before yyyy'
+  if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) return dateStr;
+
+  //'mm/dd/yyyy'
+  const match = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(dateStr);
+  if (match) {
+    const [, mm, dd, yyyy] = match.map(Number);
+    return new Date(Date.UTC(yyyy, mm - 1, dd)).toISOString();
+  }
+
+  //ISO string
+  if (!isNaN(Date.parse(dateStr))) return new Date(dateStr).toISOString();
+
+  return dateStr; // fallback (leave unchanged)
 };
 
 //validate input
