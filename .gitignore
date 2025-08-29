@@ -17,6 +17,7 @@ dist
 dist-ssr
 *.local
 DB_Exports
+Uploads
 
 package-lock.json
 # Editor directories and files
