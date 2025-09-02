@@ -163,7 +163,6 @@ const TreeMap = () => {
 
     // re-add current filtered markers
     filteredTrees.forEach((tree) => {
-      // if (tree.felledDate === '') {
       createTreeMarker(tree, allSpecies);
       // }
     });

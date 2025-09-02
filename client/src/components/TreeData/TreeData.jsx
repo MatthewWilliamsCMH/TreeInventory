@@ -235,6 +235,7 @@ const TreeData = () => {
         updatedTree.installedDate = formatDateForDb(normalized);
       }
     }
+
     if (felledDateField?.trim()) {
       const normalized = validateDateField(felledDateField);
       if (!normalized) {
@@ -243,6 +244,7 @@ const TreeData = () => {
         updatedTree.felledDate = formatDateForDb(normalized);
       }
     }
+
     if (!updatedTree.photos?.environs?.trim()) {
       newErrors.environs = 'An environs photo is required.';
     }
@@ -718,10 +720,11 @@ const TreeData = () => {
                     <Form.Control
                       id='felledDate'
                       onBlur={(event) => {
-                        const text = event.target.value;
+                        // const text = event.target.value;
                         setUpdatedTree((prev) => ({
                           ...prev,
-                          felledDate: formatDateForDb(text),
+                          // felledDate: formatDateForDb(tree),
+                          felledDate: formatDateForDb(event.target.value),
                         }));
                       }}
                       onChange={(event) => setFelledDateField(event.target.value)}

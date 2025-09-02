@@ -38,8 +38,11 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
     [field]: value,
   };
 
+  //Should I move this into handleSubmit?
   if (updatedTree.felledDate) {
     updatedTree.hidden = true;
+  } else {
+    updatedTree.hidden = false;
   }
 
   return updatedTree;

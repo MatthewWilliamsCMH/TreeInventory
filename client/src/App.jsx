@@ -65,6 +65,7 @@ function App() {
     if (!allTrees.length || !allSpecies.length) return [];
     return allTrees.map((tree) => combineTreeAndSpeciesData(tree, allSpecies));
   }, [allTrees, allSpecies]);
+
   //set up queries
   const {
     data: getTreesData,
