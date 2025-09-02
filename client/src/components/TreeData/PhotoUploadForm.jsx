@@ -13,8 +13,9 @@ import '@uppy/core/dist/style.css';
 import '@uppy/dashboard/dist/style.css';
 // import '@uppy/webcam/dist/style.css';
 import '@uppy/file-input/dist/style.css';
+
 //components
-import FullSizePhoto from './FullSizePhoto.jsx';
+//import FullSizePhoto from './FullSizePhoto.jsx';
 
 const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   //set local states to initial values

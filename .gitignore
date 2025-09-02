@@ -30,3 +30,6 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+
+# React Component Preview
+previewConfig.json

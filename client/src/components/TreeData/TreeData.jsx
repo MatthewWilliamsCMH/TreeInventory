@@ -1,14 +1,20 @@
 //---------imports----------
 //external libraries
 import { useMutation } from '@apollo/client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 
 //local helpers, constants, queries, and mutations
 import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/constants.js';
-import { handleFieldChange, formatDateForDisplay, formatDateForDb } from '../../utils/helpers.js';
+import {
+  handleFieldChange,
+  formatDateForDisplay,
+  formatDateForDb,
+  // normalizeYear,
+  validateDateField,
+} from '../../utils/helpers.js';
 import { ADD_TREE } from '../../mutations/add_tree.js';
 import { UPDATE_TREE } from '../../mutations/update_tree.js';
 import { ADD_SPECIES } from '../../mutations/add_species.js';
@@ -47,6 +53,8 @@ const TreeData = () => {
     formatDateForDisplay(updatedTree.felledDate)
   );
   const [pendingSpecies, setPendingSpecies] = useState(null);
+  const [errors, setErrors] = useState({});
+  const commonNameRef = useRef(null);
 
   //initialize keys for controlled inputs
   const [commonNameKey, setCommonNameKey] = useState('commonName-0');
@@ -209,6 +217,43 @@ const TreeData = () => {
 
   //handle OK to add or update a tree and/or species
   const handleSubmit = async () => {
+    const newErrors = {};
+    if (!updatedTree.commonName?.trim()) {
+      newErrors.commonName = 'Common name is required.';
+    }
+    if (!updatedTree.scientificName?.trim()) {
+      newErrors.scientificName = 'Scientific name is required.';
+    }
+    if (!updatedTree.garden?.trim()) {
+      newErrors.garden = 'Garden is required.';
+    }
+    if (installedDateField?.trim()) {
+      const normalized = validateDateField(installedDateField);
+      if (!normalized) {
+        newErrors.installedDate = 'Installed date must be in MM/DD/YYYY or < YYYY format.';
+      } else {
+        updatedTree.installedDate = formatDateForDb(normalized);
+      }
+    }
+    if (felledDateField?.trim()) {
+      const normalized = validateDateField(felledDateField);
+      if (!normalized) {
+        newErrors.felledDate = 'Felled date must be in MM/DD/YYYY or < YYYY format.';
+      } else {
+        updatedTree.felledDate = formatDateForDb(normalized);
+      }
+    }
+    if (!updatedTree.photos?.environs?.trim()) {
+      newErrors.environs = 'An environs photo is required.';
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return; // stop submission
+    }
+
+    setErrors({}); // clear errors if valid
+
     try {
       if (pendingSpecies) {
         await addSpecies({ variables: pendingSpecies });
@@ -373,6 +418,7 @@ const TreeData = () => {
                       : []
                   }
                   placeholder='Select or add a common name'
+                  ref={commonNameRef}
                   selected={
                     updatedTree.commonName
                       ? [
@@ -384,6 +430,7 @@ const TreeData = () => {
                       : []
                   }
                 />
+                {errors.commonName && <div className='text-danger mt-1'>{errors.commonName}</div>}
 
                 <Typeahead
                   allowNew
@@ -393,16 +440,22 @@ const TreeData = () => {
                   labelKey='label'
                   multiple={false}
                   onBlur={() => {
-                    if (updatedTree.scientificName.trim()) {
-                      handleInputChange('scientificName', [
-                        {
-                          label: updatedTree.scientificName.trim(),
-                          value: updatedTree.scientificName.trim(),
-                        },
-                      ]);
-                      setUpdatedSpeciesField('scientificName');
-                      setUpdatedSpeciesValue(updatedTree.scientificName.trim());
-                    }
+                    const value = updatedTree.scientificName?.trim?.() || '';
+                    value === ''
+                      ? commonNameRef.current?.focus()
+                      : (handleInputChange('scientificName', [{ label: value, value }]),
+                        setUpdatedSpeciesField('scientificName'),
+                        setUpdatedSpeciesValue(value));
+                    //   if (updatedTree.scientificName.trim()) {
+                    //     handleInputChange('scientificName', [
+                    //       {
+                    //         label: updatedTree.scientificName.trim(),
+                    //         value: updatedTree.scientificName.trim(),
+                    //       },
+                    //     ]);
+                    //     setUpdatedSpeciesField('scientificName');
+                    //     setUpdatedSpeciesValue(updatedTree.scientificName.trim());
+                    //   }
                   }}
                   onChange={(selected) => {
                     const value = selected?.[0]?.customOption
@@ -442,6 +495,10 @@ const TreeData = () => {
                       : []
                   }
                 />
+                {errors.scientificName && (
+                  <div className='text-danger mt-1'>{errors.scientificName}</div>
+                )}
+
                 <Form.Control
                   className='mt-1'
                   id='variety'
@@ -482,7 +539,7 @@ const TreeData = () => {
                     label: dbh,
                     value: dbh,
                   }))}
-                  placeholder='Select a diameter at breast height (DBH)'
+                  placeholder='Select a dbh (multistem: √(a^2 + b^2 + … + n^2))'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.dbh ? [{ label: updatedTree.dbh, value: updatedTree.dbh }] : []
@@ -493,6 +550,7 @@ const TreeData = () => {
                   updatedTree={updatedTree}
                   onPhotoUpload={handlePhotoUpload}
                 />
+                {errors.environs && <div className='text-danger mt-1'>{errors.environs}</div>}
               </fieldset>
 
               {/*
@@ -588,19 +646,21 @@ const TreeData = () => {
                     <Form.Control
                       id='installedDate'
                       onBlur={(event) => {
-                        const text = event.target.value;
                         setUpdatedTree((prev) => ({
                           ...prev,
-                          installedDate: formatDateForDb(text),
+                          installedDate: formatDateForDb(event.target.value),
                         }));
                       }}
                       onChange={(event) => setInstalledDateField(event.target.value)}
-                      placeholder={`Record installation date ('MM/DD/YYYY' or '<YYYY')`}
+                      placeholder={`Record install date ('MM/DD/YYYY' or '< YYYY')`}
                       type='text'
                       value={installedDateField}
                     />
                   </Col>
                 </Form.Group>
+                {errors.installedDate && (
+                  <div className='text-danger mt-1'>{errors.installedDate}</div>
+                )}
 
                 <Form.Group
                   as={Row}
@@ -665,12 +725,13 @@ const TreeData = () => {
                         }));
                       }}
                       onChange={(event) => setFelledDateField(event.target.value)}
-                      placeholder={`Record felling date ('MM/DD/YYYY' or '<YYYY')`}
+                      placeholder={`Record felling date ('MM/DD/YYYY' or '< YYYY')`}
                       type='text'
                       value={felledDateField}
                     />
                   </Col>
                 </Form.Group>
+                {errors.felledDate && <div className='text-danger mt-1'>{errors.felledDate}</div>}
 
                 <Form.Group
                   as={Row}
@@ -762,6 +823,7 @@ const TreeData = () => {
                       : []
                   }
                 />
+                {errors.garden && <div className='text-danger mt-1'>{errors.garden}</div>}
 
                 <Form.Group className='mt-2'>
                   <Row>

@@ -45,6 +45,47 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
   return updatedTree;
 };
 
+//normalize a 2-digit year into 4-digit
+const normalizeYear = (yy) => {
+  const num = parseInt(yy, 10);
+  if (yy.length === 2) {
+    const currentYear = new Date().getFullYear();
+    const currentCentury = Math.floor(currentYear / 100) * 100;
+    return currentCentury + num;
+  }
+  return num;
+};
+
+//validate date input
+export const validateDateField = (dateStr) => {
+  if (!dateStr) return true;
+
+  let cleaned = String(dateStr).trim();
+
+  //standardize separators
+  cleaned = cleaned.replace(/\./g, '/');
+
+  //"<YY" or "< YYYY" or "before YYYY"
+  const beforeMatch = cleaned.match(/^(?:<\s*|before\s+)(\d{2,4})$/i);
+  if (beforeMatch) {
+    const year = normalizeYear(beforeMatch[1]);
+    return `< ${year}`;
+  }
+
+  //MM/DD/YYYY or MM/DD/YY
+  const match = cleaned.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+  if (match) {
+    const [, mm, dd, yy] = match;
+    const year = normalizeYear(yy);
+    const date = new Date(`${year}-${mm}-${dd}`);
+    if (!isNaN(date.getTime())) {
+      return `${String(mm).padStart(2, '0')}/${String(dd).padStart(2, '0')}/${year}`;
+    }
+  }
+
+  return false; // invalid format
+};
+
 //convert unix timestamps to locale date strings for display on a form; ignore nonstandard date strings
 export const formatDateForDisplay = (dateStr) => {
   if (!dateStr || typeof dateStr !== 'string') dateStr = String(dateStr || '').trim();
@@ -80,40 +121,48 @@ export const formatDateForDisplay = (dateStr) => {
 export const formatDateForDb = (dateStr) => {
   if (!dateStr) return '';
 
-  //'< yyyy' or 'before yyyy'
-  if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) return dateStr;
+  let cleaned = String(dateStr).trim();
+  cleaned = cleaned.replace(/\./g, '/');
 
-  //'mm/dd/yyyy'
-  const match = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(dateStr);
-  if (match) {
-    const [, mm, dd, yyyy] = match.map(Number);
-    return new Date(Date.UTC(yyyy, mm - 1, dd)).toISOString();
+  //< YY, < YYYY, <YY, <YYYY, before YY, before YYYY
+  const beforeMatch = cleaned.match(/^(?:<\s*|before\s+)(\d{2,4})$/i);
+  if (beforeMatch) {
+    const year = normalizeYear(beforeMatch[1]);
+    return `< ${year}`;
   }
 
-  //ISO string
-  if (!isNaN(Date.parse(dateStr))) return new Date(dateStr).toISOString();
+  //MM/DD/YYYY or MM/DD/YY
+  const match = cleaned.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+  if (match) {
+    const [, mm, dd, yy] = match;
+    const year = normalizeYear(yy);
+    return new Date(Date.UTC(year, mm - 1, dd)).toISOString();
+  }
 
-  return dateStr; // fallback (leave unchanged)
+  // fallback: try native Date
+  if (!isNaN(Date.parse(cleaned))) return new Date(cleaned).toISOString();
+
+  return cleaned;
 };
 
 //validate input
-export const validateDateField = (dateStr) => {
-  if (!dateStr) return true;
+// export const validateDateField = (dateStr) => {
+//   if (!dateStr) return true;
 
-  //'before'
-  if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
-    return true;
-  }
+//   //'before'
+//   if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
+//     return true;
+//   }
 
-  //'Unix timestamp'
-  if (/^\d{13}$/.test(String(dateStr))) {
-    return true;
-  }
+//   //'Unix timestamp'
+//   if (/^\d{13}$/.test(String(dateStr))) {
+//     return true;
+//   }
 
-  //'mm/dd/yyy'
-  const date = new Date(dateStr);
-  return !isNaN(date.getTime());
-};
+//   //'mm/dd/yyy'
+//   const date = new Date(dateStr);
+//   return !isNaN(date.getTime());
+// };
 
 //combine tree and species data
 export const combineTreeAndSpeciesData = (tree, speciesMap) => {
