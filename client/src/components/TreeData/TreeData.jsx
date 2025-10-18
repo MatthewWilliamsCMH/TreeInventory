@@ -199,14 +199,18 @@ const TreeData = () => {
 
     setPendingSpecies(newSpecies);
 
-    setUpdatedTree((prev) => {
-      const newTree = {
-        ...prev,
-        commonName: newSpecies.commonName,
-        scientificName: newSpecies.scientificName,
-      };
-      return newTree;
-    });
+    setUpdatedTree((prev) => ({
+      ...prev,
+      commonName: newSpecies.commonName,
+      scientificName: newSpecies.scientificName,
+    }));
+    //   return newTree;
+    // });
+
+    setCommonToScientific((prev) => ({
+      ...prev,
+      [newSpecies.commonName]: newSpecies.scientificName,
+    }));
   };
 
   //cleanup
@@ -354,6 +358,7 @@ const TreeData = () => {
             commonName: '',
             scientificName: '',
           }));
+          setPendingSpecies(null);
         }}
         onHide={() => setModalVisible(false)}
         onSubmitNewSpecies={handleNewSpeciesSubmit}
@@ -382,17 +387,24 @@ const TreeData = () => {
                   labelKey='label'
                   multiple={false}
                   onBlur={() => {
-                    if (updatedTree.commonName.trim()) {
-                      handleInputChange('commonName', [
-                        {
-                          label: updatedTree.commonName.trim(),
-                          value: updatedTree.commonName.trim(),
-                        },
-                      ]);
-                      setUpdatedSpeciesField('commonName');
-                      setUpdatedSpeciesValue(updatedTree.commonName.trim());
-                    }
+                    const value = (updatedTree.commonName || '').trim();
+                    if (!value) return;
+                    handleInputChange('commonName', [{ label: value, value }]);
+                    setUpdatedSpeciesField('commonName');
+                    setUpdatedSpeciesValue(value);
                   }}
+                  // onBlur={() => {
+                  //   if (updatedTree.commonName.trim()) {
+                  //     handleInputChange('commonName', [
+                  //       {
+                  //         label: updatedTree.commonName.trim(),
+                  //         value: updatedTree.commonName.trim(),
+                  //       },
+                  //     ]);
+                  //     setUpdatedSpeciesField('commonName');
+                  //     setUpdatedSpeciesValue(updatedTree.commonName.trim());
+                  //   }
+                  // }}
                   onChange={(selected) => {
                     const value = selected?.[0]?.customOption
                       ? selected[0].label
@@ -442,23 +454,29 @@ const TreeData = () => {
                   labelKey='label'
                   multiple={false}
                   onBlur={() => {
-                    const value = updatedTree.scientificName?.trim?.() || '';
-                    value === ''
-                      ? commonNameRef.current?.focus()
-                      : (handleInputChange('scientificName', [{ label: value, value }]),
-                        setUpdatedSpeciesField('scientificName'),
-                        setUpdatedSpeciesValue(value));
-                    //   if (updatedTree.scientificName.trim()) {
-                    //     handleInputChange('scientificName', [
-                    //       {
-                    //         label: updatedTree.scientificName.trim(),
-                    //         value: updatedTree.scientificName.trim(),
-                    //       },
-                    //     ]);
-                    //     setUpdatedSpeciesField('scientificName');
-                    //     setUpdatedSpeciesValue(updatedTree.scientificName.trim());
-                    //   }
-                  }}
+                    const value = (updatedTree.scientificName || '').trim();
+                    if (!value) return;
+                    handleInputChange('scientificName', [{ label: value, value }]);
+                    setUpdatedSpeciesField('scientificName');
+                    setUpdatedSpeciesValue(value);
+                  }} // onBlur={() => {
+                  //   const value = updatedTree.scientificName?.trim?.() || '';
+                  //   value === ''
+                  //     ? commonNameRef.current?.focus()
+                  //     : (handleInputChange('scientificName', [{ label: value, value }]),
+                  //       setUpdatedSpeciesField('scientificName'),
+                  //       setUpdatedSpeciesValue(value));
+                  //   //   if (updatedTree.scientificName.trim()) {
+                  //   //     handleInputChange('scientificName', [
+                  //   //       {
+                  //   //         label: updatedTree.scientificName.trim(),
+                  //   //         value: updatedTree.scientificName.trim(),
+                  //   //       },
+                  //   //     ]);
+                  //   //     setUpdatedSpeciesField('scientificName');
+                  //   //     setUpdatedSpeciesValue(updatedTree.scientificName.trim());
+                  //   //   }
+                  // }}
                   onChange={(selected) => {
                     const value = selected?.[0]?.customOption
                       ? selected[0].label

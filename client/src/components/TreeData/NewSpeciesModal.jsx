@@ -21,14 +21,8 @@ const NewSpeciesModal = ({
 }) => {
   //----------data reception and transmission----------
   //get current global states using context
-  const {
-    allSpecies,
-    setAllSpecies,
-    allTrees,
-    setAllTrees,
-    updatedTree,
-    setUpdatedTree,
-  } = useOutletContext();
+  const { allSpecies, setAllSpecies, allTrees, setAllTrees, updatedTree, setUpdatedTree } =
+    useOutletContext();
 
   //set local states to initial values
   const [commonName, setCommonName] = useState('');
@@ -68,9 +62,7 @@ const NewSpeciesModal = ({
     }
   );
 
-  const availableColors = markerColorList
-    .filter((color) => !usedColors.includes(color))
-    .sort();
+  const availableColors = markerColorList.filter((color) => !usedColors.includes(color)).sort();
 
   //set local references to initial values
   const modalCommonName = useRef(null);
@@ -131,12 +123,7 @@ const NewSpeciesModal = ({
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (
-      !commonName.trim() ||
-      !scientificName.trim() ||
-      !family.trim() ||
-      !markerColor.trim()
-    ) {
+    if (!commonName.trim() || !scientificName.trim() || !family.trim() || !markerColor.trim()) {
       alert('All fields are required to add a species to the database.');
       return;
     }
@@ -151,14 +138,8 @@ const NewSpeciesModal = ({
     };
 
     // Let parent handle the update
-    onSubmitNewSpecies({
-      commonName,
-      scientificName,
-      family,
-      markerColor,
-      nonnative,
-      invasive,
-    });
+    onSubmitNewSpecies(newSpecies);
+    setAllSpecies((prev) => [...prev, newSpecies]);
 
     setCommonName('');
     setScientificName('');
@@ -195,9 +176,7 @@ const NewSpeciesModal = ({
         <Form.Control
           id='newCommonName'
           ref={modalCommonName}
-          onChange={(event) =>
-            handleInputChange('commonName', event.target.value)
-          }
+          onChange={(event) => handleInputChange('commonName', event.target.value)}
           placeholder='Common name'
           required
           type='text'
@@ -206,9 +185,7 @@ const NewSpeciesModal = ({
         <Form.Control
           className='mt-1'
           id='newScientificName'
-          onChange={(event) =>
-            handleInputChange('scientificName', event.target.value)
-          }
+          onChange={(event) => handleInputChange('scientificName', event.target.value)}
           placeholder='Scientific name'
           ref={modalScientificName}
           required
@@ -218,22 +195,21 @@ const NewSpeciesModal = ({
         <Typeahead
           allowNew
           className='mt-1'
-          filterBy={() => true}
+          // filterBy={() => true}
           id='family'
           labelKey='label'
           multiple={false}
           onBlur={() => {
-            if (familyInput.trim()) {
-              handleInputChange('family', familyInput.trim());
-            }
+            const value = familyInput.trim();
+            if (!value) return;
+            handleInputChange('family', value);
           }}
           onChange={(selected) => {
-            const value = selected?.[0]?.customOption
-              ? selected[0].label
-              : selected?.[0]?.value;
+            const value = selected?.[0]?.customOption ? selected[0].label : selected?.[0]?.value;
 
             if (value) {
               handleInputChange('family', value);
+              setFamilyInput(value);
             }
           }}
           onInputChange={(text) => setFamilyInput(text)}
@@ -261,17 +237,13 @@ const NewSpeciesModal = ({
           checked={nonnative}
           id='nonnative'
           label='Nonnative'
-          onChange={(event) =>
-            handleInputChange('nonnative', event.target.checked)
-          }
+          onChange={(event) => handleInputChange('nonnative', event.target.checked)}
         />
         <Form.Check
           checked={invasive}
           id='invasive'
           label='Invasive'
-          onChange={(event) =>
-            handleInputChange('invasive', event.target.checked)
-          }
+          onChange={(event) => handleInputChange('invasive', event.target.checked)}
         />
       </Modal.Body>
       <Modal.Footer className='pt-1 pb-1'>

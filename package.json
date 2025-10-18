@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "install": "cd server && npm i && cd ../client && npm i",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "build": "cd client && npm install && npm run build",
     "build:demo": "cd client && npm install && npm run build:demo -- --mode=demo",
     "build:production": "cd client && npm install && npm run build:production -- --mode=production",

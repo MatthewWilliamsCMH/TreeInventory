@@ -1069,4 +1069,50 @@
   "nonnative": false,
   "invasive": false,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f2c987c2a9f3cbcda7d7d2"
+  },
+  "family": "Cupressaceae",
+  "commonName": "Bald cypress",
+  "scientificName": "Taxodium distichum",
+  "markerColor": "#f06292",
+  "nonnative": true,
+  "invasive": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f2cac35f2f3f22214cfdaa"
+  },
+  "family": "Ulmaceae",
+  "commonName": "Japanese zelkova",
+  "scientificName": "Zelkova serrata",
+  "nonnative": true,
+  "invasive": false,
+  "markerColor": "#43a047"
+},
+{
+  "_id": {
+    "$oid": "68f2cc785f2f3f22214cfdab"
+  },
+  "family": "Cupressaceae",
+  "commonName": "Dawn redwood",
+  "scientificName": "Metasequoia glyptostroboides",
+  "markerColor": "#f06292",
+  "nonnative": true,
+  "invasive": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f2cd8b5f2f3f22214cfdad"
+  },
+  "family": "Caprifoliaceae",
+  "commonName": "Seven sons tree",
+  "scientificName": "Heptacodium miconioides",
+  "nonnative": true,
+  "invasive": false,
+  "markerColor": "#fff176"
 }]
