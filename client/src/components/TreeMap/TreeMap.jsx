@@ -128,6 +128,7 @@ const TreeMap = () => {
 
     navigator.geolocation.watchPosition(
       ({ coords: { latitude, longitude } }) => {
+        if (!map.current) return;
         if (userLocationRef.current && map.current.hasLayer(userLocationRef.current)) {
           map.current.removeLayer(userLocationRef.current);
         }

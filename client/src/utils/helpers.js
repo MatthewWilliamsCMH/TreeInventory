@@ -38,7 +38,7 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
     [field]: value,
   };
 
-  //Should I move this into handleSubmit?
+  //should I move this into handleSubmit?
   if (updatedTree.felledDate) {
     updatedTree.hidden = true;
   } else {
@@ -46,6 +46,22 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
   }
 
   return updatedTree;
+};
+
+//return today's date in MM/DD/YYYY format
+export const getTodayFormatted = () => {
+  const today = new Date();
+  return `${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(
+    2,
+    '0'
+  )}/${today.getFullYear()}`;
+};
+
+//on focus, if field is empty, populate with today's date
+export const handleDateFocus = (fieldValue, setFieldValue) => {
+  if (!fieldValue?.trim()) {
+    setFieldValue(getTodayFormatted());
+  }
 };
 
 //normalize a 2-digit year into 4-digit

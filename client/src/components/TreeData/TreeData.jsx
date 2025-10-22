@@ -12,6 +12,7 @@ import {
   handleFieldChange,
   formatDateForDisplay,
   formatDateForDb,
+  handleDateFocus,
   // normalizeYear,
   validateDateField,
 } from '../../utils/helpers.js';
@@ -36,6 +37,7 @@ const TreeData = () => {
     refetchSpecies,
     refetchTrees,
     updatedTree,
+    selectedTree,
     setUpdatedTree,
     formColor,
     setFormColor,
@@ -343,6 +345,16 @@ const TreeData = () => {
 
   //handle cancel button
   const handleCancel = () => {
+    const updatedTreeString = JSON.stringify(updatedTree);
+    const selectedTreeString = JSON.stringify(selectedTree);
+
+    if (updatedTreeString !== selectedTreeString) {
+      const userConfirmed = window.confirm(
+        'Are you sure you want to cancel? All unsaved changes will be lost.'
+      );
+      if (!userConfirmed) return;
+    }
+
     setUpdatedTree(null);
     navigate('/');
   };
@@ -672,6 +684,7 @@ const TreeData = () => {
                         }));
                       }}
                       onChange={(event) => setInstalledDateField(event.target.value)}
+                      onFocus={() => handleDateFocus(installedDateField, setInstalledDateField)}
                       placeholder={`Record install date ('MM/DD/YYYY' or '< YYYY')`}
                       type='text'
                       value={installedDateField}
@@ -746,6 +759,7 @@ const TreeData = () => {
                         }));
                       }}
                       onChange={(event) => setFelledDateField(event.target.value)}
+                      onFocus={() => handleDateFocus(felledDateField, setFelledDateField)}
                       placeholder={`Record felling date ('MM/DD/YYYY' or '< YYYY')`}
                       type='text'
                       value={felledDateField}
@@ -900,7 +914,8 @@ const TreeData = () => {
               <Button
                 variant='secondary'
                 size='sm'
-                type='cancel'
+                type='button'
+                // type='cancel'
                 onClick={handleCancel}
               >
                 Cancel
