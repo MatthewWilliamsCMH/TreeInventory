@@ -9,7 +9,7 @@ export const UPDATE_TREE = gql`
     $photos: PhotosInput
     $notes: String
     $garden: String
-    $siteInfo: SiteInfoInput
+    $siteInfo: siteInfoInput
     $lastUpdated: String!
     $installedDate: String
     $installedBy: String

@@ -1,8 +1,58 @@
+// export const handleFieldChange = (updatedTree, field, value, commonToScientific) => {
+//   //if field nested (e.g., 'siteInfo.slope')
+//   if (field.includes('.')) {
+//     const [parentField, childField] = field.split('.'); //split field into parent & child
+//     updatedTree = {
+//       ...updatedTree,
+//       [parentField]: {
+//         ...updatedTree[parentField],
+//         [childField]: value,
+//       },
+//     };
+//   }
+
+//   //if field not nested
+//   if (field === 'commonName') {
+//     //common and scientific names sync'd here
+//     const scientificFromCommon = commonToScientific[value];
+//     updatedTree = {
+//       ...updatedTree,
+//       commonName: value,
+//       scientificName: scientificFromCommon || '',
+//     };
+//   }
+
+//   if (field === 'scientificName') {
+//     const commonFromScientific = Object.keys(commonToScientific).find(
+//       (common) => commonToScientific[common] === value
+//     );
+//     updatedTree = {
+//       ...updatedTree,
+//       scientificName: value,
+//       commonName: commonFromScientific || '',
+//     };
+//   }
+
+//   updatedTree = {
+//     ...updatedTree,
+//     [field]: value,
+//   };
+
+//   //should I move this into handleSubmit?
+//   if (updatedTree.felledDate) {
+//     updatedTree.hidden = true;
+//   } else {
+//     updatedTree.hidden = false;
+//   }
+
+//   return updatedTree;
+// };
+
 export const handleFieldChange = (updatedTree, field, value, commonToScientific) => {
   //if field nested (e.g., 'siteInfo.slope')
   if (field.includes('.')) {
     const [parentField, childField] = field.split('.'); //split field into parent & child
-    updatedTree = {
+    return {
       ...updatedTree,
       [parentField]: {
         ...updatedTree[parentField],
@@ -15,7 +65,7 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
   if (field === 'commonName') {
     //common and scientific names sync'd here
     const scientificFromCommon = commonToScientific[value];
-    updatedTree = {
+    return {
       ...updatedTree,
       commonName: value,
       scientificName: scientificFromCommon || '',
@@ -26,14 +76,14 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
     const commonFromScientific = Object.keys(commonToScientific).find(
       (common) => commonToScientific[common] === value
     );
-    updatedTree = {
+    return {
       ...updatedTree,
       scientificName: value,
       commonName: commonFromScientific || '',
     };
   }
 
-  updatedTree = {
+  return {
     ...updatedTree,
     [field]: value,
   };
@@ -194,4 +244,18 @@ export const combineTreeAndSpeciesData = (tree, speciesMap) => {
     markerColor: species.markerColor || 'FFFFFF',
     family: species.family || '',
   };
+};
+
+//confirm navigation away from the data form if there are unsaved changes
+export const confirmDiscardChanges = (updatedTree, selectedTree) => {
+  const updatedTreeString = JSON.stringify(updatedTree);
+  const selectedTreeString = JSON.stringify(selectedTree);
+  console.log(`updatedTree = ${updatedTreeString}`);
+  console.log(`selectedTree = ${selectedTreeString}`);
+
+  if (updatedTreeString !== selectedTreeString) {
+    return window.confirm('Are you sure you want to leave the form? Unsaved changes will be lost.');
+  }
+
+  return true; // no unsaved changes, so okay to proceed
 };

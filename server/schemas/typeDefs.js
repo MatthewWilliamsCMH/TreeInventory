@@ -6,7 +6,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  input SiteInfoInput {
+  input siteInfoInput {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -51,7 +51,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  type SiteInfo {
+  type siteInfo {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -102,7 +102,7 @@ const typeDefs = gql`
     notes: String
     location: Location!
     garden: String
-    siteInfo: SiteInfo
+    siteInfo: siteInfo
     lastUpdated: String!
     installedDate: String
     installedBy: String
@@ -129,7 +129,7 @@ const typeDefs = gql`
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: SiteInfoInput
+      siteInfo: siteInfoInput
       lastUpdated: String!
       installedDate: String
       installedBy: String
@@ -148,7 +148,7 @@ const typeDefs = gql`
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: SiteInfoInput
+      siteInfo: siteInfoInput
       lastUpdated: String!
       installedDate: String
       installedBy: String

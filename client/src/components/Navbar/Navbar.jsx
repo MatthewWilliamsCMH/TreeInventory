@@ -1,12 +1,15 @@
 //---------imports----------
 //external libraries
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate, useOutletContext } from 'react-router-dom';
+
+//local helpers, constants, queries, and mutations
+import { confirmDiscardChanges } from '../../utils/helpers.js';
 
 //stylesheets
 import './Navbar.css';
 
-const Navbar = ({ selectedTree }) => {
+const Navbar = ({ selectedTree, updatedTree }) => {
   //set up hooks
   const navigate = useNavigate();
   const location = useLocation();
@@ -29,6 +32,10 @@ const Navbar = ({ selectedTree }) => {
   //handle control changes
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
+
+    const userConfirmed = confirmDiscardChanges(updatedTree, selectedTree);
+    if (!userConfirmed) return;
+
     setSelectedOption(selectedValue);
 
     if (

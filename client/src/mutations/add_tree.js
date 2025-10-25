@@ -9,7 +9,7 @@ export const ADD_TREE = gql`
     $notes: String
     $location: LocationInput
     $garden: String
-    $siteInfo: SiteInfoInput
+    $siteInfo: siteInfoInput
     $lastUpdated: String!
     $installedDate: String
     $installedBy: String

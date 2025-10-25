@@ -9,6 +9,7 @@ import { useNavigate, useOutletContext } from 'react-router-dom';
 //local helpers, constants, queries, and mutations
 import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/constants.js';
 import {
+  confirmDiscardChanges,
   handleFieldChange,
   formatDateForDisplay,
   formatDateForDb,
@@ -345,15 +346,8 @@ const TreeData = () => {
 
   //handle cancel button
   const handleCancel = () => {
-    const updatedTreeString = JSON.stringify(updatedTree);
-    const selectedTreeString = JSON.stringify(selectedTree);
-
-    if (updatedTreeString !== selectedTreeString) {
-      const userConfirmed = window.confirm(
-        'Are you sure you want to cancel? All unsaved changes will be lost.'
-      );
-      if (!userConfirmed) return;
-    }
+    const userConfirmed = confirmDiscardChanges(updatedTree, selectedTree);
+    if (!userConfirmed) return;
 
     setUpdatedTree(null);
     navigate('/');
@@ -571,7 +565,7 @@ const TreeData = () => {
                     label: dbh,
                     value: dbh,
                   }))}
-                  placeholder='Select a dbh (multistem: √(a^2 + b^2 + … + n^2))'
+                  placeholder='Select a dbh (multistem: √(a² + b² + … + n²))'
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
                     updatedTree.dbh ? [{ label: updatedTree.dbh, value: updatedTree.dbh }] : []
