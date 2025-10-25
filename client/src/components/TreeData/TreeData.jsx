@@ -346,6 +346,13 @@ const TreeData = () => {
 
   //handle cancel button
   const handleCancel = () => {
+    //if there's no id, it's a new tree, so don't compare updatedTree to selectedTree
+    if (!updatedTree?.id && !updatedTree?._id) {
+      setUpdatedTree(null);
+      navigate('/');
+      return;
+    }
+
     const userConfirmed = confirmDiscardChanges(updatedTree, selectedTree);
     if (!userConfirmed) return;
 

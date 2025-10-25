@@ -1,9 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Navigate, useOutletContext } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+  useOutletContext,
+  Outlet,
+} from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
 import App from './App.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
 import TreeMap from './components/TreeMap/TreeMap.jsx';
 import TreeData from './components/TreeData/TreeData.jsx';
 import TreeInventory from './components/TreeInventory/TreeInventory.jsx';
@@ -29,22 +36,30 @@ const TreeDataRoute = () => {
   return <TreeData updatedTree={updatedTree} />;
 };
 
+const TreeLayout = () => {
+  // Pull the global context from App.jsx
+  const context = useOutletContext();
+
+  return (
+    <>
+      <Navbar /> {/* Navbar can now use useOutletContext() */}
+      <Outlet context={context} /> {/* Pass context to nested routes */}
+    </>
+  );
+};
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
       {
-        path: '/',
-        element: <TreeMap />,
-      },
-      {
-        path: '/TreeData',
-        element: <TreeDataRoute />,
-      },
-      {
-        path: '/inventory',
-        element: <TreeInventory />,
+        element: <TreeLayout />, // 👈 This layout wraps all the tree-related routes
+        children: [
+          { path: '/', element: <TreeMap /> },
+          { path: '/TreeData', element: <TreeDataRoute /> },
+          { path: '/inventory', element: <TreeInventory /> },
+        ],
       },
     ],
   },

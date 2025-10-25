@@ -9,10 +9,14 @@ import { confirmDiscardChanges } from '../../utils/helpers.js';
 //stylesheets
 import './Navbar.css';
 
-const Navbar = ({ selectedTree, updatedTree }) => {
+const Navbar = () => {
   //set up hooks
   const navigate = useNavigate();
   const location = useLocation();
+
+  //get current global states from parent
+  const context = useOutletContext() || {};
+  const { selectedTree, updatedTree } = context;
 
   //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {
@@ -33,30 +37,22 @@ const Navbar = ({ selectedTree, updatedTree }) => {
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
 
-    const userConfirmed = confirmDiscardChanges(updatedTree, selectedTree);
-    if (!userConfirmed) return;
+    if (!confirmDiscardChanges(updatedTree, selectedTree)) return;
 
     setSelectedOption(selectedValue);
-
-    if (
-      (selectedValue === 'map' && 'location.pathname' !== '/') ||
-      (selectedValue === 'TreeData' && 'location.pathname' !== '/TreeData') ||
-      (selectedValue === 'inventory' && 'location.pathname' !== '/inventory')
-    ) {
-      switch (selectedValue) {
-        case 'map':
-          navigate('/');
-          break;
-        case 'TreeData':
-          navigate('/TreeData');
-          break;
-        case 'inventory':
-          navigate('/inventory');
-          break;
-        default:
-          navigate('/');
-          break;
-      }
+    switch (selectedValue) {
+      case 'map':
+        navigate('/');
+        break;
+      case 'TreeData':
+        navigate('/TreeData');
+        break;
+      case 'inventory':
+        navigate('/inventory');
+        break;
+      default:
+        navigate('/');
+        break;
     }
   };
 

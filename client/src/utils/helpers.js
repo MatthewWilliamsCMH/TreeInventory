@@ -250,8 +250,6 @@ export const combineTreeAndSpeciesData = (tree, speciesMap) => {
 export const confirmDiscardChanges = (updatedTree, selectedTree) => {
   const updatedTreeString = JSON.stringify(updatedTree);
   const selectedTreeString = JSON.stringify(selectedTree);
-  console.log(`updatedTree = ${updatedTreeString}`);
-  console.log(`selectedTree = ${selectedTreeString}`);
 
   if (updatedTreeString !== selectedTreeString) {
     return window.confirm('Are you sure you want to leave the form? Unsaved changes will be lost.');

@@ -131,7 +131,6 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      <Navbar selectedTree={selectedTree} />
       <Outlet
         context={{
           allSpecies,
