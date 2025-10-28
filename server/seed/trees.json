@@ -22398,7 +22398,7 @@
   "dbh": "< 3",
   "notes": "2025: By bequest from Bruce Barbour",
   "photos": {
-    "bark": "",
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1760819445348.jpeg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1760741042263.jpeg",
     "autumnLeaf": "",
     "fruit": "",
@@ -22406,7 +22406,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1760740576504.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-10-17T00:00:00.000Z"
+    "$date": "2025-10-18T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97736520069119,
@@ -22449,7 +22449,7 @@
   "dbh": "< 3",
   "notes": "2025: By bequest from Bruce Barbour",
   "photos": {
-    "bark": "",
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1760819423665.jpeg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1760740964874.jpeg",
     "autumnLeaf": "",
     "fruit": "",
@@ -22457,7 +22457,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1760740754637.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-10-17T00:00:00.000Z"
+    "$date": "2025-10-18T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977237820102815,
@@ -22500,15 +22500,15 @@
   "dbh": "< 3",
   "notes": "2025: By bequest of Bruce Barbour",
   "photos": {
-    "bark": "",
-    "summerLeaf": "",
+    "bark": "https://treeinventory.clickps.synology.me/uploads/1760819486965.jpeg",
+    "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1760819505632.jpeg",
     "autumnLeaf": "",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1760741766839.jpeg"
   },
   "lastUpdated": {
-    "$date": "2025-10-17T00:00:00.000Z"
+    "$date": "2025-10-18T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978073835667075,
