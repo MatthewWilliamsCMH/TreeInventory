@@ -3,6 +3,7 @@ require('dotenv').config();
 
 const connectDB = async () => {
   try {
+    console.log('Connecting to MongoDB with URI:', process.env.MONGODB_URI);
     const conn = await mongoose.connect(
       process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/treeinventorydb'
     ); //use environment variable (production) or local (development)

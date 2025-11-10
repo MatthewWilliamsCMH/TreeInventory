@@ -1,0 +1,7 @@
+[{
+  "_id": {
+    "$oid": "690e554b851dc891a5fe038c"
+  },
+  "username": "Matthew Williams",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$B2B8iBqLk48QhAQOk6r9sw$ya+ZatZKKP+6IN+UbqTb82u0aG7Xzdn8BVQxJODsxGM"
+}]

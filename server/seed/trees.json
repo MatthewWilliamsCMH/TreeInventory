@@ -1259,13 +1259,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751810282320.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1751810314565.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1762363149629.jpeg",
     "fruit": "https://treeinventory.clickps.synology.me/uploads/1758032760255.jpeg",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751810299891.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-16T00:00:00.000Z"
+    "$date": "2025-11-05T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97708515697705,
@@ -4752,7 +4752,7 @@
   "_id": {
     "$oid": "688e7d495267e6251f209cf6"
   },
-  "commonName": "Red maple",
+  "commonName": "Sugar maple",
   "variety": "",
   "dbh": "12-18",
   "notes": "",
@@ -4765,7 +4765,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741191294362.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2025-11-01T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97801212737608,
@@ -6009,13 +6009,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743191231754.jpg",
     "summerLeaf": "",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761576223689.jpeg",
     "fruit": "https://treeinventory.clickps.synology.me/uploads/1746277372208.jpeg",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1743191216188.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-10T00:00:00.000Z"
+    "$date": "2025-10-27T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97678198765444,
@@ -7559,13 +7559,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741634785941.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756559087745.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761945165504.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741634799457.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-30T00:00:00.000Z"
+    "$date": "2025-10-31T00:00:00.000Z"
   },
   "location": {
     "northing": 39.978293710129286,
@@ -7580,7 +7580,7 @@
     "proximateFence": false,
     "propertyLine": false
   },
-  "installedDate": "2023-08-31T04:00:00.000Z",
+  "installedDate": "2023-08-31T00:00:00.000Z",
   "installedBy": "Oakland Nurseries",
   "felledDate": "",
   "felledBy": "",
@@ -7759,13 +7759,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1746226755427.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1746226803779.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761945059724.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1746226768322.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-03T00:00:00.000Z"
+    "$date": "2025-10-31T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97688989553361,
@@ -11709,13 +11709,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1746225760201.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1746226052382.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761576304139.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1746225826597.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-08T00:00:00.000Z"
+    "$date": "2025-10-27T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97692586478878,
@@ -11809,13 +11809,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741547922817.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1749585297689.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761847699057.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741547942112.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-06-10T00:00:00.000Z"
+    "$date": "2025-10-30T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97806685112243,
@@ -12309,13 +12309,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1743187741764.jpg",
     "summerLeaf": "",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1762007204982.jpg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1743187750203.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-02T00:00:00.000Z"
+    "$date": "2025-11-01T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977012190923986,
@@ -13709,13 +13709,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751808866218.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1751808876398.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761576255069.jpeg",
     "fruit": "https://treeinventory.clickps.synology.me/uploads/1751808882403.jpg",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751808852295.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-06T00:00:00.000Z"
+    "$date": "2025-10-27T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97675423988657,
@@ -13809,13 +13809,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741634683867.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1756559062202.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1761945121078.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741634700571.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-30T00:00:00.000Z"
+    "$date": "2025-10-31T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97823667430037,
@@ -15109,13 +15109,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751991311842.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1751991404965.jpg",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1762570272564.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751991345720.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-10T00:00:00.000Z"
+    "$date": "2025-11-07T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97735184209973,
@@ -16160,12 +16160,12 @@
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741549729150.jpg",
     "summerLeaf": "",
     "autumnLeaf": "",
-    "fruit": "",
+    "fruit": "https://treeinventory.clickps.synology.me/uploads/1762706742095.jpeg",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741549742499.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-09T00:00:00.000Z"
+    "$date": "2025-11-09T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97806145582544,
