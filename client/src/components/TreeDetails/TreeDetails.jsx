@@ -8,7 +8,7 @@ import { formatDateForDisplay, handleDateFocus } from '../../utils/helpers.js';
 
 //stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../TreeData/treeData.module.css';
+import styles from './treeDetails.module.css';
 
 const TreeDetails = () => {
   //-----------data reception and transmission----------

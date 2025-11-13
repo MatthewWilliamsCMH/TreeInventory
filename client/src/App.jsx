@@ -4,18 +4,19 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
+//components and helpers
 import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 
-//components and helpers
-//use aggregation function to combine tree, species, and family data instead of the helper below (or just chagne the helper to use the aggregation function)
+//use aggregation function to combine tree, species, and family data instead of the helper below (or just change the helper to use the aggregation function)
 import { combineTreeAndSpeciesData } from './utils/helpers.js';
 import { dbhList, gardenList } from './utils/constants.js';
 
 //stylesheets
 import './reset.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom-bootstrap.scss';
-import styles from './app.module.css';
+// import styles from './app.module.css';
 
 //queries
 import { GET_TREES } from './queries/get_trees.js';

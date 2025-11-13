@@ -1,0 +1,49 @@
+legend {
+  border-bottom: 2px solid var(--blue-green);
+}
+
+.detailsColumn {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Parent grid: handles switching between one column (narrow) and two columns (wide) */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* default: single column */
+  column-gap: 20px; /* fixed gutter between A and B */
+  row-gap: 5px;
+}
+
+/* Each “column” (A or B) */
+.detailsBlock {
+  display: grid;
+  gap: 0.5rem; /* vertical spacing between rows */
+}
+
+/* Individual label/value pair rows */
+.detailsRow {
+  display: grid;
+  grid-template-columns: 12ch 1fr; /* A1/B1 fixed, A2/B2 flexible */
+  column-gap: 20px; /* gutter between label and value */
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.label {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Two columns layout for wide screens */
+@media (min-width: 992px) {
+  .detailsGrid {
+    grid-template-columns: 1fr 1fr; /* Column A and Column B side by side */
+  }
+}

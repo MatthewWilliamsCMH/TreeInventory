@@ -8,3 +8,18 @@
   top: 0;
   z-index: 1000;
 }
+.longTitle {
+  display: inline;
+}
+.shortTitle {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .longTitle {
+    display: none;
+  }
+  .shortTitle {
+    display: inline;
+  }
+}

@@ -10,7 +10,7 @@
 
 html,
 body {
-  background-color: transparent !important;
+  // background-color: transparent !important;
   background-image: url('/background.png');
   background-size: cover;
   background-position: top;
@@ -21,12 +21,22 @@ body {
   background: transparent;
 }
 
+.card {
+  margin: 4.5rem 1rem 1rem 5rem !important;
+  padding: 1rem !important;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: calc(100% - 10px - 3rem - 20px - 10px) !important;
+  min-width: calc(100% - 10px - 3rem - 20px - 10px) !important;
+}
+
 ::placeholder {
   color: #bbb !important;
   opacity: 1; /* Firefox */
 }
 
-legend {
+legend,
+.legend {
   font-weight: 600;
   color: var(--blue-green) !important;
 }
@@ -35,6 +45,7 @@ legend {
   color: var(--pale-yellow) !important;
   border-bottom: 1px solid var(--pale-yellow);
 }
+
 table {
   margin-left: calc(3rem + 40px);
   margin-top: 5rem;

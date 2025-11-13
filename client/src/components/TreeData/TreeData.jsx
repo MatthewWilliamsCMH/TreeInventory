@@ -14,7 +14,6 @@ import {
   formatDateForDisplay,
   formatDateForDb,
   handleDateFocus,
-  // normalizeYear,
   validateDateField,
 } from '../../utils/helpers.js';
 import { ADD_TREE } from '../../mutations/add_tree.js';
@@ -27,7 +26,6 @@ import PhotoUploadForm from './PhotoUploadForm.jsx';
 import NewSpeciesModal from './NewSpeciesModal.jsx';
 
 //stylesheets
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './treeData.module.css';
 
 const TreeData = () => {
@@ -181,7 +179,7 @@ const TreeData = () => {
   const handleDefaultInputChange = (field, event) => {
     const value = event.target.value;
 
-    //pdate the main updatedTree state
+    //update the main updatedTree state
     setUpdatedTree((prev) => handleFieldChange(prev, field, value));
   };
 
@@ -207,8 +205,6 @@ const TreeData = () => {
       commonName: newSpecies.commonName,
       scientificName: newSpecies.scientificName,
     }));
-    //   return newTree;
-    // });
 
     setCommonToScientific((prev) => ({
       ...prev,
@@ -258,10 +254,10 @@ const TreeData = () => {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      return; // stop submission
+      return; //stop submission
     }
 
-    setErrors({}); // clear errors if valid
+    setErrors({}); //clear errors if valid
 
     try {
       if (pendingSpecies) {
@@ -382,10 +378,7 @@ const TreeData = () => {
         <DangerFlags updatedTree={updatedTree} />
       </div>
 
-      <Container
-        className='pt-3'
-        style={{ paddingLeft: '5rem' }}
-      >
+      <Container className='pt-3 ps-5 card'>
         <Form style={formColor}>
           <Row>
             <Col md={6}>
@@ -406,18 +399,6 @@ const TreeData = () => {
                     setUpdatedSpeciesField('commonName');
                     setUpdatedSpeciesValue(value);
                   }}
-                  // onBlur={() => {
-                  //   if (updatedTree.commonName.trim()) {
-                  //     handleInputChange('commonName', [
-                  //       {
-                  //         label: updatedTree.commonName.trim(),
-                  //         value: updatedTree.commonName.trim(),
-                  //       },
-                  //     ]);
-                  //     setUpdatedSpeciesField('commonName');
-                  //     setUpdatedSpeciesValue(updatedTree.commonName.trim());
-                  //   }
-                  // }}
                   onChange={(selected) => {
                     const value = selected?.[0]?.customOption
                       ? selected[0].label
@@ -472,24 +453,7 @@ const TreeData = () => {
                     handleInputChange('scientificName', [{ label: value, value }]);
                     setUpdatedSpeciesField('scientificName');
                     setUpdatedSpeciesValue(value);
-                  }} // onBlur={() => {
-                  //   const value = updatedTree.scientificName?.trim?.() || '';
-                  //   value === ''
-                  //     ? commonNameRef.current?.focus()
-                  //     : (handleInputChange('scientificName', [{ label: value, value }]),
-                  //       setUpdatedSpeciesField('scientificName'),
-                  //       setUpdatedSpeciesValue(value));
-                  //   //   if (updatedTree.scientificName.trim()) {
-                  //   //     handleInputChange('scientificName', [
-                  //   //       {
-                  //   //         label: updatedTree.scientificName.trim(),
-                  //   //         value: updatedTree.scientificName.trim(),
-                  //   //       },
-                  //   //     ]);
-                  //   //     setUpdatedSpeciesField('scientificName');
-                  //   //     setUpdatedSpeciesValue(updatedTree.scientificName.trim());
-                  //   //   }
-                  // }}
+                  }}
                   onChange={(selected) => {
                     const value = selected?.[0]?.customOption
                       ? selected[0].label
@@ -586,59 +550,6 @@ const TreeData = () => {
                 {errors.environs && <div className='text-danger mt-1'>{errors.environs}</div>}
               </fieldset>
 
-              {/*
-        <Row className='g-1'>
-          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
-            <Col
-              xs={4}
-              sm={4}
-              md={6}
-              lg={4}
-              className='text-center'
-              style={{ color: '#BBB' }}
-              key={photoType}
-            >
-              <div
-                onClick={() => handlePhotoClick(photoType)}
-                style={{
-                  cursor: 'pointer',
-                  width: '100%',
-                }}
-              >
-                {updatedTree.photos?.[photoType] ? (
-                  <Image
-                    alt={photoType}
-                    className='object-cover'
-                    rounded
-                    src={updatedTree.photos[photoType]}
-                    style={{
-                      width: '100%',
-                      height: '100px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                ) : (
-                  <div
-                    className='photo-placeholder border rounded d-flex align-items-center justify-content-center'
-                    style={{
-                      height: '100px',
-                      background: '#fff',
-                      width: '100%',
-                    }}
-                  >
-                    <span>
-                      {photoType
-                        .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
-                        .replace(/^([a-z])/g, (match) => match.toUpperCase())}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </Col>
-          ))}
-        </Row>
-*/}
-
               <fieldset className='mt-2'>
                 <legend>Notes</legend>
                 <Form.Control
@@ -662,19 +573,19 @@ const TreeData = () => {
                 >
                   <Form.Label
                     column
-                    xs={4} // small phones
-                    sm={3} // tablets in portrait
-                    md={3} // tablets in landscape or small desktops
-                    lg={3} // larger screens
+                    xs={4} //small phones
+                    sm={3} //tablets in portrait
+                    md={3} //tablets in landscape or small desktops
+                    lg={3} //larger screens
                     className='text-start'
                   >
                     Installed on:
                   </Form.Label>
                   <Col
-                    xs={8} // small phones
-                    sm={9} // tablets in portrait
-                    md={9} // tablets in landscape or small desktops
-                    lg={9} // larger screens
+                    xs={8} //small phones
+                    sm={9} //tablets in portrait
+                    md={9} //tablets in landscape or small desktops
+                    lg={9} //larger screens
                   >
                     <Form.Control
                       id='installedDate'
@@ -702,19 +613,19 @@ const TreeData = () => {
                 >
                   <Form.Label
                     column
-                    xs={4} // small phones
-                    sm={3} // tablets in portrait
-                    md={3} // tablets in landscape or small desktops
-                    lg={3} // larger screens
+                    xs={4} //small phones
+                    sm={3} //tablets in portrait
+                    md={3} //tablets in landscape or small desktops
+                    lg={3} //larger screens
                     className='text-start'
                   >
                     Installed by:
                   </Form.Label>
                   <Col
-                    xs={8} // small phones
-                    sm={9} // tablets in portrait
-                    md={9} // tablets in landscape or small desktops
-                    lg={9} // larger screens
+                    xs={8} //small phones
+                    sm={9} //tablets in portrait
+                    md={9} //tablets in landscape or small desktops
+                    lg={9} //larger screens
                   >
                     <Form.Control
                       id='installedBy'
@@ -735,27 +646,25 @@ const TreeData = () => {
                 >
                   <Form.Label
                     column
-                    xs={4} // small phones
-                    sm={3} // tablets in portrait
-                    md={3} // tablets in landscape or small desktops
-                    lg={3} // larger screens
+                    xs={4} //small phones
+                    sm={3} //tablets in portrait
+                    md={3} //tablets in landscape or small desktops
+                    lg={3} //larger screens
                     className='text-start'
                   >
                     Felled on:
                   </Form.Label>
                   <Col
-                    xs={8} // small phones
-                    sm={9} // tablets in portrait
-                    md={9} // tablets in landscape or small desktops
-                    lg={9} // larger screens
+                    xs={8} //small phones
+                    sm={9} //tablets in portrait
+                    md={9} //tablets in landscape or small desktops
+                    lg={9} //larger screens
                   >
                     <Form.Control
                       id='felledDate'
                       onBlur={(event) => {
-                        // const text = event.target.value;
                         setUpdatedTree((prev) => ({
                           ...prev,
-                          // felledDate: formatDateForDb(tree),
                           felledDate: formatDateForDb(event.target.value),
                         }));
                       }}
@@ -775,19 +684,19 @@ const TreeData = () => {
                 >
                   <Form.Label
                     column
-                    xs={4} // small phones
-                    sm={3} // tablets in portrait
-                    md={3} // tablets in landscape or small desktops
-                    lg={3} // larger screens
+                    xs={4} //small phones
+                    sm={3} //tablets in portrait
+                    md={3} //tablets in landscape or small desktops
+                    lg={3} //larger screens
                     className='text-start'
                   >
                     Felled by:
                   </Form.Label>
                   <Col
-                    xs={8} // small phones
-                    sm={9} // tablets in portrait
-                    md={9} // tablets in landscape or small desktops
-                    lg={9} // larger screens
+                    xs={8} //small phones
+                    sm={9} //tablets in portrait
+                    md={9} //tablets in landscape or small desktops
+                    lg={9} //larger screens
                   >
                     <Form.Control
                       id='felledBy'
@@ -916,7 +825,6 @@ const TreeData = () => {
                 variant='secondary'
                 size='sm'
                 type='button'
-                // type='cancel'
                 onClick={handleCancel}
               >
                 Cancel
