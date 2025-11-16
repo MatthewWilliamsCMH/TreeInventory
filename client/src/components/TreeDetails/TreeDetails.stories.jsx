@@ -1,6 +1,6 @@
 import React from 'react';
 import TreeDetails from './TreeDetails';
-import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 import '../../custom-bootstrap.scss';
 import styles from './treeDetails.module.css';
@@ -48,7 +48,6 @@ const TreeDetailsMock = () => {
             className={styles.detailsColumn}
           >
             <div className={styles.detailsGrid}>
-              {/* Column A */}
               <div className={styles.detailsBlock}>
                 <div className={styles.detailsRow}>
                   <div className={styles.label}>Scientific name:</div>
@@ -66,7 +65,6 @@ const TreeDetailsMock = () => {
                 </div>
               </div>
 
-              {/* Column B */}
               <div className={styles.detailsBlock}>
                 <div className={styles.detailsRow}>
                   <div className={styles.label}>Garden:</div>
@@ -84,17 +82,15 @@ const TreeDetailsMock = () => {
             </div>
           </Col>
         </Row>
-        <Row className='mt-4 gx-2'>
-          {' '}
-          {/* mt-4 adds spacing from details */}
+        <Row className='mt-3 g-2'>
           {photoTypes.map((type) => {
             const src = selectedTree.photos[type];
             if (!src) return null;
             return (
               <Col
                 key={type}
-                xs={6} // 2 per row on narrow screens
-                lg={4} // 3 per row on wide screens
+                xs={6}
+                lg={4}
                 className={styles.photoItem}
               >
                 <img

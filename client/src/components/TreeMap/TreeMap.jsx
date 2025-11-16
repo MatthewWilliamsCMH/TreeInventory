@@ -28,22 +28,23 @@ const TreeMap = () => {
   //get global states from parent component
   const {
     allSpecies,
-    setAllSpecies,
     allTrees,
-    setAllTrees,
+    filterCriteria,
+    filterOpen,
+    formColor,
+    isLoggedIn,
+    mapCenter,
+    mapZoom,
+    mergedTrees,
     selectedTree,
+    setAllSpecies,
+    setAllTrees,
+    setFilterOpen,
+    setFormColor,
+    setMapCenter,
+    setMapZoom,
     setSelectedTree,
     setUpdatedTree,
-    mergedTrees,
-    mapCenter,
-    setMapCenter,
-    mapZoom,
-    setMapZoom,
-    filterOpen,
-    setFilterOpen,
-    filterCriteria,
-    formColor,
-    setFormColor,
   } = useOutletContext();
 
   //set local states to initial values
@@ -239,6 +240,7 @@ const TreeMap = () => {
     const clickDelay = 200;
 
     marker.on('click', (event) => {
+      //this needs to happen ONLY if the user is logged in.
       //if second click within the delay run dblclick handler
       if (clickTimer) {
         return;
@@ -301,9 +303,13 @@ const TreeMap = () => {
       //allow navigation when any part of popup except close button is clicked
       popupElement.addEventListener('click', () => {
         setSelectedTree(tree);
-        setUpdatedTree(tree);
-        setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-        navigate('/TreeData');
+        if (isLoggedIn) {
+          setUpdatedTree(tree);
+          setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
+          navigate('/TreeData');
+        } else {
+          navigate('/TreeDetails');
+        }
         map.current.closePopup();
       });
     });

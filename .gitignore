@@ -18,6 +18,7 @@ dist-ssr
 *.local
 DB_Exports
 Uploads
+Do_Not_Upload
 
 package-lock.json
 # Editor directories and files
@@ -33,3 +34,5 @@ package-lock.json
 
 # React Component Preview
 previewConfig.json
+*storybook.log
+storybook-static

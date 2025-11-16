@@ -16,19 +16,21 @@ const Navbar = () => {
 
   //get current global states from parent
   const context = useOutletContext() || {};
-  const { selectedTree, updatedTree } = context;
+  const { isLoggedIn, selectedTree, updatedTree } = context;
 
   //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
       case '/':
-        return 'map';
+        return 'TreeMap';
       case '/TreeData':
         return 'TreeData';
-      case '/inventory':
-        return 'inventory';
+      case '/TreeDetails':
+        return 'TreeData';
+      case '/TreeInventory':
+        return 'TreeInventory';
       default:
-        return 'map';
+        return 'TreeMap';
     }
   });
 
@@ -41,14 +43,17 @@ const Navbar = () => {
 
     setSelectedOption(selectedValue);
     switch (selectedValue) {
-      case 'map':
+      case 'TreeMap':
         navigate('/');
         break;
       case 'TreeData':
         navigate('/TreeData');
         break;
-      case 'inventory':
-        navigate('/inventory');
+      case 'TreeDetails':
+        navigate('/TreeData');
+        break;
+      case 'TreeInventory':
+        navigate('/TreeInventory');
         break;
       default:
         navigate('/');
@@ -61,16 +66,19 @@ const Navbar = () => {
   useEffect(() => {
     switch (location.pathname) {
       case '/':
-        setSelectedOption('map');
+        setSelectedOption('TreeMap');
         break;
       case '/TreeData':
         setSelectedOption('TreeData');
         break;
-      case '/inventory':
-        setSelectedOption('inventory');
+      case '/TreeDetails':
+        setSelectedOption('TreeData');
+        break;
+      case '/TreeInventory':
+        setSelectedOption('TreeInventory');
         break;
       default:
-        setSelectedOption('map');
+        setSelectedOption('TreeMap');
         break;
     }
   }, [location.pathname]);
@@ -86,8 +94,8 @@ const Navbar = () => {
           <input
             type='radio'
             name='nav'
-            value='map'
-            checked={selectedOption === 'map'}
+            value='TreeMap'
+            checked={selectedOption === 'TreeMap'}
             onChange={handleRadioChange}
           />
           <span className='tooltip'>Map</span>
@@ -107,8 +115,8 @@ const Navbar = () => {
           <input
             type='radio'
             name='nav'
-            value='inventory'
-            checked={selectedOption === 'inventory'}
+            value='TreeInventory'
+            checked={selectedOption === 'TreeInventory'}
             onChange={handleRadioChange}
           />
           <span className='tooltip'>Inventory</span>

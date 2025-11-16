@@ -11,9 +11,10 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@ap
 
 import App from './App.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
-import TreeMap from './components/TreeMap/TreeMap.jsx';
 import TreeData from './components/TreeData/TreeData.jsx';
+import TreeDetails from './components/TreeDetails/TreeDetails.jsx';
 import TreeInventory from './components/TreeInventory/TreeInventory.jsx';
+import TreeMap from './components/TreeMap/TreeMap.jsx';
 
 const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 
@@ -34,6 +35,16 @@ const TreeDataRoute = () => {
   }
 
   return <TreeData updatedTree={updatedTree} />;
+};
+
+const TreeDetailsRoute = () => {
+  const { selectedTree } = useOutletContext(); // Using context passed from App.jsx
+
+  if (!selectedTree) {
+    return <Navigate to='/' />;
+  }
+
+  return <TreeDetails selectedTree={selectedTree} />;
 };
 
 const TreeLayout = () => {
@@ -58,7 +69,8 @@ const router = createBrowserRouter([
         children: [
           { path: '/', element: <TreeMap /> },
           { path: '/TreeData', element: <TreeDataRoute /> },
-          { path: '/inventory', element: <TreeInventory /> },
+          { path: '/TreeDetails', element: <TreeDetailsRoute /> },
+          { path: '/TreeInventory', element: <TreeInventory /> },
         ],
       },
     ],

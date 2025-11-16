@@ -33,13 +33,13 @@ const TreeData = () => {
   //get current global states from parent
   const {
     allSpecies,
+    formColor,
     refetchSpecies,
     refetchTrees,
-    updatedTree,
     selectedTree,
-    setUpdatedTree,
-    formColor,
+    updatedTree,
     setFormColor,
+    setUpdatedTree,
   } = useOutletContext();
 
   //set local states to initial values

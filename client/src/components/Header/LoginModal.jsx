@@ -1,6 +1,7 @@
 //---------imports----------
 //external libraries
 import React, { useEffect, useState } from 'react';
+import { useOutletContext } from 'react-router-dom';
 import { Modal, Button, Form } from 'react-bootstrap';
 
 //stylesheets
@@ -10,11 +11,11 @@ import { Modal, Button, Form } from 'react-bootstrap';
 const LoginModal = () => {
   //----------data reception and transmission----------
   //get current global states using context
+  const { isLoggedIn, setIsLoggedIn } = useOutletContext();
 
   //set local states to initial values
   const [userName, setUserName] = useState('');
   const [userPassword, setUserPassword] = useState('');
-  const [userLoggedIn, setUserLoggedIn] = useState(false);
 
   //set local references to initial values
 
@@ -110,4 +111,4 @@ const LoginModal = () => {
   );
 };
 
-export default userLoginModal;
+export default LoginModal;

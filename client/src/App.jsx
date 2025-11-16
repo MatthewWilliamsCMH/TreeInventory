@@ -27,10 +27,6 @@ function App() {
   //initialize global states
   const [allSpecies, setAllSpecies] = useState([]);
   const [allTrees, setAllTrees] = useState([]);
-  const [selectedTree, setSelectedTree] = useState(null);
-  const [treeLocation, setTreeLocation] = useState(null);
-  const [updatedTree, setUpdatedTree] = useState(null);
-  const [filterOpen, setFilterOpen] = useState(false);
   const [filterCriteria, setFilterCriteria] = useState({
     commonName: [],
     dbh: dbhList,
@@ -59,9 +55,15 @@ function App() {
     nonnative: false,
     hidden: true,
   });
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [formColor, setFormColor] = useState({ backgroundColor: 'white' }); //default background for noninvasive trees
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]); //default for demo and develop modes
   const [mapZoom, setMapZoom] = useState(18);
-  const [formColor, setFormColor] = useState({ backgroundColor: 'white' }); //default background for noninvasive trees
+  const [selectedTree, setSelectedTree] = useState(null);
+  const [treeLocation, setTreeLocation] = useState(null);
+  const [updatedTree, setUpdatedTree] = useState(null);
+
   const mergedTrees = useMemo(() => {
     if (!allTrees.length || !allSpecies.length) return [];
     return allTrees.map((tree) => combineTreeAndSpeciesData(tree, allSpecies));
@@ -131,32 +133,34 @@ function App() {
   //----------rendering----------
   return (
     <div className='app'>
-      <Header />
+      {/*      <Header /> */}
       <Outlet
         context={{
           allSpecies,
-          setAllSpecies,
-          refetchSpecies,
           allTrees,
-          setAllTrees,
-          refetchTrees,
-          mergedTrees,
-          selectedTree,
-          setSelectedTree,
-          treeLocation,
-          setTreeLocation,
-          updatedTree,
-          setUpdatedTree,
-          mapCenter,
-          setMapCenter,
-          mapZoom,
-          setMapZoom,
-          filterOpen,
-          setFilterOpen,
           filterCriteria,
-          setFilterCriteria,
+          filterOpen,
           formColor,
+          isLoggedIn,
+          mapCenter,
+          mapZoom,
+          mergedTrees,
+          refetchSpecies,
+          refetchTrees,
+          selectedTree,
+          treeLocation,
+          updatedTree,
+          setAllSpecies,
+          setAllTrees,
+          setFilterOpen,
+          setFilterCriteria,
           setFormColor,
+          setIsLoggedIn,
+          setMapCenter,
+          setMapZoom,
+          setSelectedTree,
+          setTreeLocation,
+          setUpdatedTree,
         }}
       />
     </div>
