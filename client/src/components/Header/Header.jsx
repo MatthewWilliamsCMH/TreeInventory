@@ -1,6 +1,7 @@
 //---------imports----------
 //external libraries
 import React from 'react';
+import { useOutletContext } from 'react-router-dom';
 
 //components
 import LoginModal from './LoginModal.jsx';
@@ -9,22 +10,15 @@ import LoginModal from './LoginModal.jsx';
 import styles from './header.module.css';
 
 const Header = () => {
+  //get current global states using context
+  // const { isLoggedIn, setIsLoggedIn } = useOutletContext();
+
+  //----------called functions----------
+  //handle click on the lock icon
+
   //render component
   return (
     <>
-      <LoginModal
-      //set loggedin to false?
-      //on submit, verify credentials
-      //if verified, go to treedata
-      //if not verified, warn user: Username not found
-      //on cancel, return to map
-      />
-
-      {/*    <header
-      id='header'
-      className={styles.header}
-    >
-*/}
       <header
         id='header'
         className={styles.header}
@@ -33,8 +27,12 @@ const Header = () => {
           <span className={styles.longTitle}>Summit Chase Tree Inventory</span>
           <span className={styles.shortTitle}>Tree Inventory</span>
         </h1>
+        <img
+          className={styles.login}
+          src='../../../public/loggedout.svg'
+          alt='Login'
+        />
       </header>
-      {/*      </header> */}
     </>
   );
 };

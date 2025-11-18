@@ -157,6 +157,19 @@ const TreeMap = () => {
   }, []);
 
   useEffect(() => {
+    if (!map.current) return;
+
+    if (isLoggedIn) {
+      map.current.on('click', handleAddTree);
+      return () => {
+        if (map.current) map.current.off('click', handleAddTree);
+      };
+    }
+
+    map.current.off('click', handleAddTree);
+  }, [isLoggedIn]);
+
+  useEffect(() => {
     if (!map.current || !filteredTrees || !allSpecies) return;
 
     // clear all existing markers

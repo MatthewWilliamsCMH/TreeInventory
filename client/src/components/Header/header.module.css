@@ -11,8 +11,17 @@
 .longTitle {
   display: inline;
 }
+
 .shortTitle {
   display: none;
+}
+
+.login {
+  height: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline;
 }
 
 @media (max-width: 575.98px) {

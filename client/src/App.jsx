@@ -133,7 +133,7 @@ function App() {
   //----------rendering----------
   return (
     <div className='app'>
-      {/*      <Header /> */}
+      <Header />
       <Outlet
         context={{
           allSpecies,

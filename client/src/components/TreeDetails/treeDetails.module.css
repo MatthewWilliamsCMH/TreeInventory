@@ -1,4 +1,4 @@
-legend {
+.legend {
   border-bottom: 2px solid var(--blue-green);
 }
 
@@ -38,15 +38,14 @@ legend {
 }
 
 .label {
-  font-weight: bold;
-  white-space: nowrap;
+  width: 8rem;
+  padding-top: 4px;
 }
 
-.value {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+/* .value {
+  min-width: 100%;
+  padding-top: 6px;
+} */
 
 /* Two columns layout for wide screens */
 @media (min-width: 992px) {

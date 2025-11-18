@@ -378,8 +378,11 @@ const TreeData = () => {
         <DangerFlags updatedTree={updatedTree} />
       </div>
 
-      <Container className='pt-3 ps-5 card'>
-        <Form style={formColor}>
+      <Container
+        className='pt-3 ps-5 card'
+        style={formColor}
+      >
+        <Form>
           <Row>
             <Col md={6}>
               <fieldset id='taxonomy'>
@@ -566,7 +569,6 @@ const TreeData = () => {
             <Col md={6}>
               <fieldset id='care'>
                 <legend>Care</legend>
-                {/*add tool tips to these four fields or add labels to the left */}
                 <Form.Group
                   as={Row}
                   className='g-0'

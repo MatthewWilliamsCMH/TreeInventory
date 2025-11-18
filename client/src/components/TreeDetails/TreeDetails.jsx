@@ -2,7 +2,7 @@
 //external libraries
 import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 //local helpers, constants, queries, and mutations
 import { formatDateForDisplay, handleDateFocus } from '../../utils/helpers.js';
@@ -14,7 +14,7 @@ import styles from './treeDetails.module.css';
 const TreeDetails = () => {
   //-----------data reception and transmission----------
   //get current global states from parent
-  const { selectedTree } = useOutletContext();
+  const { formColor, selectedTree, setFormColor, setSelectedTree } = useOutletContext();
 
   //set local states to initial values
   const [commonToScientific, setCommonToScientific] = useState(null);
@@ -25,13 +25,17 @@ const TreeDetails = () => {
   //set local variables to initial values
   let friendlyNonnative = 'No';
   let friendlyInvasive = 'No';
-  const photoTypes = ['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'];
 
   if (selectedTree.nonnative === true) friendlyNonnative = 'Yes';
   if (selectedTree.invasive === true) friendlyInvasive = 'Yes';
 
   //initialize hooks
   const navigate = useNavigate();
+
+  //----------useEffects----------
+  useEffect(() => {
+    setFormColor({ backgroundColor: selectedTree?.invasive ? '#FFDEDE' : 'white' });
+  }, [selectedTree?.invasive]);
 
   //----------called functions----------
   //handle done button
@@ -41,112 +45,115 @@ const TreeDetails = () => {
   };
 
   //----------render component----------
-  //       <div>
-  //         {/*for each photo whose value is not "" or null, display in 1 x 1 box. the boxes can be clicked to open a larger version.*/}
-  //       </div>
-  //       <div>
-  //         {/*this shoudld be at the bottom of the form*/}
-  //         <p>
-  //           {' '}
-  //           Last updated: {new Date(parseInt(selectedTree.lastUpdated)).toLocaleDateString(
-  //             'en-US'
-  //           )}{' '}
-  //         </p>
-  //       </div>
-  //       <Button
-  //         variant='primary'
-  //         size='sm'
-  //         type='button'
-  //         onClick={handleCancel}
-  //       >
-  //         Done
-  //       </Button>
-  //     </>
-  //   );
-  // };
   return (
     <>
       <Container
         fluid
         className='pt-3 ps-5 card'
+        style={formColor}
       >
-        <legend>{selectedTree.commonName}</legend>
+        <legend className={styles.legend}>{selectedTree.commonName}</legend>
         <Row className='gx-2'>
-          <Col
-            xs={12}
-            className={styles.detailsColumn}
-          >
-            <div className={styles.detailsGrid}>
-              <div className={styles.detailsBlock}>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Scientific name:</div>{' '}
-                  {/*cross reference species table using common name*/}
-                  <div className={styles.value}>{selectedTree.scientificName}</div>
-                </div>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Family:</div>
-                  {/*cross reference species table using common name*/}
-                  <div className={styles.value}>{selectedTree.family || 'Unknown'}</div>
-                </div>
-
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Variety:</div>
-                  <div className={styles.value}>{selectedTree.variety || 'Unknown'}</div>
-                </div>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Diameter:</div>
-                  <div className={styles.value}>
-                    {selectedTree.dbh ? `${selectedTree.dbh} inches` : 'Unknown'}
-                  </div>
-                </div>
+          <Col md={6}>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Scientific name:</b>
               </div>
+              {/*cross reference species table using common name*/}
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {selectedTree.scientificName}
+              </div>
+            </div>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Family:</b>
+              </div>
+              {/*cross reference species table using common name*/}
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {selectedTree.family || 'Unknown'}
+              </div>
+            </div>
 
-              <div className={styles.detailsBlock}>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Garden:</div>
-                  <div className={styles.value}>{selectedTree.garden}</div>
-                </div>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Nonnative:</div>{' '}
-                  {/*cross reference species table using common name*/}
-                  <div className={styles.value}>{friendlyNonnative}</div>
-                </div>
-                <div className={styles.detailsRow}>
-                  <div className={styles.label}>Invasive:</div>{' '}
-                  {/*cross reference species table using common name*/}
-                  <div className={styles.value}>{friendlyInvasive}</div>
-                </div>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Variety:</b>
+              </div>
+              {/*cross reference species table using common name*/}
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {selectedTree.variety || 'Unknown'}
+              </div>
+            </div>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Diameter:</b>
+              </div>
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {selectedTree.dbh ? `${selectedTree.dbh} inches` : 'Unknown'}
+              </div>
+            </div>
+          </Col>
+          <Col md={6}>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Garden:</b>
+              </div>
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {selectedTree.garden}
+              </div>
+            </div>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Nonnative:</b>
+                {/*cross reference species table using common name*/}
+              </div>
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {friendlyNonnative}
+              </div>
+            </div>
+            <div className='d-flex align-items-left'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Invasive:</b>
+                {/*cross reference species table using common name*/}
+              </div>
+              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+                {friendlyInvasive}
               </div>
             </div>
           </Col>
         </Row>
-        <Row className='mt-3 g-2'>
-          {photoTypes.map((type) => {
-            const src = selectedTree.photos[type];
-            if (!src) return null;
+        <Row className='mt-2 g-1'>
+          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
+            const src = selectedTree.photos?.[photoType];
+            if (!src) return null; // skip empty photos
             return (
               <Col
-                key={type}
                 xs={6}
-                lg={4}
-                className={styles.photoItem}
+                sm={6}
+                md={4}
+                lg={2}
+                style={{ color: '#BBB' }}
+                // key={photoType}
               >
-                <img
-                  src={src}
-                  alt={type}
+                <Image
+                  alt={photoType}
+                  className='object-cover'
+                  rounded
+                  src={selectedTree.photos[photoType]}
+                  style={{
+                    width: '100%',
+                    height: '200px',
+                    objectFit: 'cover',
+                  }}
                 />
               </Col>
             );
           })}
         </Row>
-        <div>
+        <Row className='mt-2'>
           <p>
-            {' '}
-            Last updated: {new Date(parseInt(selectedTree.lastUpdated)).toLocaleDateString(
-              'en-US'
-            )}{' '}
+            Last updated: {new Date(parseInt(selectedTree.lastUpdated)).toLocaleDateString('en-US')}
           </p>
-        </div>
+        </Row>
         <Button
           variant='primary'
           size='sm'
