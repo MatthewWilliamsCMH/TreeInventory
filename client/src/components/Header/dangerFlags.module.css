@@ -1,0 +1,14 @@
+.dangerFlagsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  color: white;
+  z-index: 1001;
+}
+
+.dangerFlagsContainer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}

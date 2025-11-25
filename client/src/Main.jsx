@@ -1,14 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { createRoot } from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-  useOutletContext,
-  Outlet,
-} from 'react-router-dom';
+import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
+import AppContext from './AppContext';
 import App from './App.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import TreeData from './components/TreeData/TreeData.jsx';
@@ -28,7 +23,7 @@ const client = new ApolloClient({
 });
 
 const TreeDataRoute = () => {
-  const { updatedTree } = useOutletContext(); // Using context passed from App.jsx
+  const { updatedTree } = useContext(AppContext); // Using context passed from App.jsx
 
   if (!updatedTree) {
     return <Navigate to='/' />;
@@ -38,7 +33,7 @@ const TreeDataRoute = () => {
 };
 
 const TreeDetailsRoute = () => {
-  const { selectedTree } = useOutletContext(); // Using context passed from App.jsx
+  const { selectedTree } = useContext(AppContext); // Using context passed from App.jsx
 
   if (!selectedTree) {
     return <Navigate to='/' />;
@@ -49,12 +44,12 @@ const TreeDetailsRoute = () => {
 
 const TreeLayout = () => {
   // Pull the global context from App.jsx
-  const context = useOutletContext();
+  const context = useContext(AppContext);
 
   return (
     <>
-      <Navbar /> {/* Navbar can now use useOutletContext() */}
-      <Outlet context={context} /> {/* Pass context to nested routes */}
+      <Navbar />
+      <Outlet />
     </>
   );
 };

@@ -1,8 +1,8 @@
 //---------imports----------
 //external libraries
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Table from 'react-bootstrap/Table';
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 //stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +12,7 @@ const TreeInventory = () => {
   const navigate = useNavigate();
 
   //get current global states from parent
-  const { mergedTrees, setSelectedTree, setUpdatedTree } = useOutletContext();
+  const { mergedTrees, setSelectedTree, setUpdatedTree } = useContext(AppContext);
 
   //set local states to initial values
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });

@@ -1,10 +1,10 @@
 //---------imports----------
 //external libraries
 import { useMutation } from '@apollo/client';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
-import { useNavigate, useOutletContext } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 //local helpers, constants, queries, and mutations
 import { dbhList, gardenList, siteInfoList, careNeedsList } from '../../utils/constants.js';
@@ -21,7 +21,8 @@ import { UPDATE_TREE } from '../../mutations/update_tree.js';
 import { ADD_SPECIES } from '../../mutations/add_species.js';
 
 //components
-import DangerFlags from './DangerFlags.jsx';
+// import DangerFlags from './DangerFlags.jsx';
+import AppContext from '../../AppContext';
 import PhotoUploadForm from './PhotoUploadForm.jsx';
 import NewSpeciesModal from './NewSpeciesModal.jsx';
 
@@ -40,7 +41,7 @@ const TreeData = () => {
     updatedTree,
     setFormColor,
     setUpdatedTree,
-  } = useOutletContext();
+  } = useContext(AppContext);
 
   //set local states to initial values
   const [modalVisible, setModalVisible] = useState(false);
@@ -344,7 +345,7 @@ const TreeData = () => {
   const handleCancel = () => {
     //if there's no id, it's a new tree, so don't compare updatedTree to selectedTree
     if (!updatedTree?.id && !updatedTree?._id) {
-      setUpdatedTree(null);
+      // setUpdatedTree(21  null);
       navigate('/');
       return;
     }
@@ -373,10 +374,11 @@ const TreeData = () => {
         onSubmitNewSpecies={handleNewSpeciesSubmit}
         show={modalVisible}
       />
-
+      {/*
       <div className={styles.dangerFlagsContainer}>
         <DangerFlags updatedTree={updatedTree} />
       </div>
+      */}
 
       <Container
         className='pt-3 ps-5 card'

@@ -1,7 +1,10 @@
 //---------imports----------
 //external libraries
-import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate, useOutletContext } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+//components
+import AppContext from '../../AppContext';
 
 //local helpers, constants, queries, and mutations
 import { confirmDiscardChanges } from '../../utils/helpers.js';
@@ -15,8 +18,7 @@ const Navbar = () => {
   const location = useLocation();
 
   //get current global states from parent
-  const context = useOutletContext() || {};
-  const { isLoggedIn, selectedTree, updatedTree } = context;
+  const { isLoggedIn, selectedTree, updatedTree } = useContext(AppContext);
 
   //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {

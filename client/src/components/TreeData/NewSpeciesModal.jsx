@@ -1,10 +1,12 @@
 //---------imports----------
 //external libraries
-import React, { useEffect, useRef, useState } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import React, { useEffect, useContext, useRef, useState } from 'react';
 import { CirclePicker } from 'react-color';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+
+//components
+import AppContext from '../../AppContext';
 
 //stylesheets
 import styles from './treeData.module.css';
@@ -22,7 +24,7 @@ const NewSpeciesModal = ({
   //----------data reception and transmission----------
   //get current global states using context
   const { allSpecies, setAllSpecies, allTrees, setAllTrees, updatedTree, setUpdatedTree } =
-    useOutletContext();
+    useContext(AppContext);
 
   //set local states to initial values
   const [commonName, setCommonName] = useState('');

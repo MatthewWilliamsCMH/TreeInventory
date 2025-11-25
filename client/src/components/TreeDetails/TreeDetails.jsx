@@ -1,8 +1,11 @@
 //---------imports----------
 //external libraries
-import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useOutletContext } from 'react-router-dom';
+import React, { useContext, useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+
+//components
+import AppContext from '../../AppContext';
 
 //local helpers, constants, queries, and mutations
 import { formatDateForDisplay, handleDateFocus } from '../../utils/helpers.js';
@@ -14,7 +17,7 @@ import styles from './treeDetails.module.css';
 const TreeDetails = () => {
   //-----------data reception and transmission----------
   //get current global states from parent
-  const { formColor, selectedTree, setFormColor, setSelectedTree } = useOutletContext();
+  const { formColor, selectedTree, setFormColor, setSelectedTree } = useContext(AppContext);
 
   //set local states to initial values
   const [commonToScientific, setCommonToScientific] = useState(null);
@@ -48,75 +51,98 @@ const TreeDetails = () => {
   return (
     <>
       <Container
-        fluid
+        // fluid
         className='pt-3 ps-5 card'
         style={formColor}
       >
         <legend className={styles.legend}>{selectedTree.commonName}</legend>
-        <Row className='gx-2'>
+        <Row>
           <Col md={6}>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Scientific name:</b>
               </div>
               {/*cross reference species table using common name*/}
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {selectedTree.scientificName}
               </div>
             </div>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Family:</b>
               </div>
               {/*cross reference species table using common name*/}
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {selectedTree.family || 'Unknown'}
               </div>
             </div>
-
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Variety:</b>
               </div>
               {/*cross reference species table using common name*/}
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {selectedTree.variety || 'Unknown'}
               </div>
             </div>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Diameter:</b>
               </div>
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {selectedTree.dbh ? `${selectedTree.dbh} inches` : 'Unknown'}
               </div>
             </div>
           </Col>
           <Col md={6}>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Garden:</b>
               </div>
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {selectedTree.garden}
               </div>
             </div>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Nonnative:</b>
                 {/*cross reference species table using common name*/}
               </div>
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {friendlyNonnative}
               </div>
             </div>
-            <div className='d-flex align-items-left'>
+            <div className='d-flex align-items-center mt-1'>
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Invasive:</b>
                 {/*cross reference species table using common name*/}
               </div>
-              <div className='border border-black rounded p-1 text-nowrap text-truncate flex-grow-1'>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
                 {friendlyInvasive}
+              </div>
+            </div>
+            <div className='d-flex align-items-center mt-1'>
+              <div className={`text-nowrap ${styles.label}`}>
+                <b>Last updated:</b>
+              </div>
+              <div
+                className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
+              >
+                {new Date(parseInt(selectedTree.lastUpdated)).toLocaleDateString('en-US')}
               </div>
             </div>
           </Col>
@@ -130,7 +156,7 @@ const TreeDetails = () => {
                 xs={6}
                 sm={6}
                 md={4}
-                lg={2}
+                lg={3}
                 style={{ color: '#BBB' }}
                 // key={photoType}
               >
@@ -149,19 +175,17 @@ const TreeDetails = () => {
             );
           })}
         </Row>
-        <Row className='mt-2'>
-          <p>
-            Last updated: {new Date(parseInt(selectedTree.lastUpdated)).toLocaleDateString('en-US')}
-          </p>
-        </Row>
-        <Button
-          variant='primary'
-          size='sm'
-          type='button'
-          onClick={handleCancel}
-        >
-          Done
-        </Button>
+        <Col className='d-flex gap-1 pt-1 pb-1 justify-content-end'>
+          <Button
+            className='pull-right'
+            variant='primary'
+            size='sm'
+            type='button'
+            onClick={handleCancel}
+          >
+            Done
+          </Button>
+        </Col>
       </Container>
     </>
   );

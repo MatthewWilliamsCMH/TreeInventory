@@ -22,12 +22,12 @@ body {
 }
 
 .card {
-  margin: 4.5rem 1rem 1rem 5rem !important;
+  margin: 4.5rem 1rem 1rem 5rem;
   padding: 1rem !important;
   border: 1px solid black;
   border-radius: 1rem;
-  width: calc(100% - 10px - 3rem - 20px - 10px) !important;
-  min-width: calc(100% - 10px - 3rem - 20px - 10px) !important;
+  width: calc(100% - 10px - 3rem - 20px - 10px);
+  min-width: calc(100% - 10px - 3rem - 20px - 10px);
 }
 
 ::placeholder {
@@ -37,11 +37,11 @@ body {
 
 legend {
   font-weight: 600;
-  color: var(--blue-green) !important;
+  color: var(--blue-green);
 }
 
 .offcanvas-title {
-  color: var(--pale-yellow) !important;
+  color: var(--pale-yellow);
   border-bottom: 1px solid var(--pale-yellow);
 }
 
@@ -53,4 +53,8 @@ table {
 table th {
   background-color: var(--light-blue-green) !important;
   color: white !important;
+}
+
+button {
+  width: 72px;
 }

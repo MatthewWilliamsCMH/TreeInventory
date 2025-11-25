@@ -1,11 +1,13 @@
 // --------- imports ----------
 //external libraries
-import React from 'react';
+import React, { useContext } from 'react';
 import { Col, Container, Form, Row, Stack } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { useOutletContext } from 'react-router-dom';
 import Select, { components } from 'react-select';
 import Toggle from 'react-toggle';
+
+//components
+import AppContext from '../../AppContext';
 
 //local helpers, constants, queries, and mutations
 import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
@@ -19,7 +21,7 @@ const FilterDrawer = ({ filteredTrees }) => {
   // --------- initialize hooks ----------
   //get global states from parent component
   const { filterOpen, setFilterOpen, filterCriteria, setFilterCriteria, mergedTrees, allSpecies } =
-    useOutletContext();
+    useContext(AppContext);
 
   const CustomValueContainer = ({ children, ...props }) => {
     const selectedOptions = props.getValue();

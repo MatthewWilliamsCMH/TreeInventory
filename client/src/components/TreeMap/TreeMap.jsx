@@ -1,13 +1,14 @@
 //---------imports----------
 //external libraries
-import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { useOutletContext, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import L from 'leaflet';
 import 'leaflet.gridlayer.googlemutant';
 
 //components
 import FilterDrawer from './FilterDrawer.jsx';
+import AppContext from '../../AppContext';
 
 //stylesheets
 import 'leaflet/dist/leaflet.css';
@@ -45,7 +46,7 @@ const TreeMap = () => {
     setMapZoom,
     setSelectedTree,
     setUpdatedTree,
-  } = useOutletContext();
+  } = useContext(AppContext);
 
   //set local states to initial values
   const [markerRadius, setMarkerRadius] = useState(6);
@@ -105,6 +106,12 @@ const TreeMap = () => {
   };
 
   //----------useEffects----------
+
+  useEffect(() => {
+    console.log('Merged trees:', mergedTrees.length);
+    console.log('Filtered trees:', filteredTrees.length);
+  }, [mergedTrees, filteredTrees]);
+
   useEffect(() => {
     if (!mapRef.current || map.current) return;
 

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 
 //stylesheets
-import styles from './treeData.module.css';
+import styles from './dangerFlags.module.css';
 
 const DangerFlags = ({ updatedTree }) => {
   //establish nonnative and invasive status
@@ -21,12 +21,9 @@ const DangerFlags = ({ updatedTree }) => {
 
   //----------render component----------
   return (
-    <div
-      id='danger-flags-container'
-      className={styles.dangerFlagsContainer}
-    >
-      {nonnativeStatus && <p className='danger'>Nonnative</p>}
-      {invasiveStatus && <p className='danger'>Invasive</p>}
+    <div className={styles.dangerFlagsContainer}>
+      {nonnativeStatus && <p>Nonnative</p>}
+      {invasiveStatus && <p>Invasive</p>}
     </div>
   );
 };
