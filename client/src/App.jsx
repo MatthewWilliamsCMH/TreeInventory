@@ -57,7 +57,7 @@ function App() {
   });
   const [filterOpen, setFilterOpen] = useState(false);
   const [formColor, setFormColor] = useState({ backgroundColor: 'white' });
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]);
   const [mapZoom, setMapZoom] = useState(18);
   const [selectedTree, setSelectedTree] = useState(null);
