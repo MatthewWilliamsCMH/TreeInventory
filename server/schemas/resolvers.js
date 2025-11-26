@@ -1,24 +1,25 @@
 const Tree = require('../models/Tree');
 const Species = require('../models/Species');
+const User = require('../models/User');
+
+const argon2 = require('argon2');
 
 //need to add a query resolver for retrieving hidden trees
 const resolvers = {
   Query: {
     getTrees: async () => {
-    try {
-      return await Tree.find({}).sort({ 'commonName': 1 });
-    }
-    catch (err) {
-      console.error(err);
-      return [];
-    }
-  },
+      try {
+        return await Tree.find({}).sort({ commonName: 1 });
+      } catch (err) {
+        console.error(err);
+        return [];
+      }
+    },
 
     getTree: async (_, { id }) => {
       try {
-        return await Tree.findById(id)
-      }
-      catch (err) {
+        return await Tree.findById(id);
+      } catch (err) {
         console.error(err);
         return null;
       }
@@ -26,9 +27,8 @@ const resolvers = {
 
     getSpecies: async () => {
       try {
-        return await Species.find().sort({ 'scientificName': 1 });
-      }
-      catch (err) {
+        return await Species.find().sort({ scientificName: 1 });
+      } catch (err) {
         console.error(err);
         return null;
       }
@@ -37,8 +37,7 @@ const resolvers = {
     getSpeciesByCommonName: async (_, { commonName }) => {
       try {
         return await Species.findOne({ commonName });
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
@@ -47,28 +46,45 @@ const resolvers = {
     getSpeciesByScientificName: async (_, { scientificName }) => {
       try {
         return await Species.findOne({ scientificName });
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
-    }
+    },
   },
 
   Tree: {
     species: async (parent) => {
       try {
         return await Species.findOne({ commonName: parent.commonName });
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
-    }
+    },
   },
 
   Mutation: {
-    addTree: async (_, { commonName, variety, dbh, photos, notes, location, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, careNeeds, hidden }) => {
+    addTree: async (
+      _,
+      {
+        commonName,
+        variety,
+        dbh,
+        photos,
+        notes,
+        location,
+        garden,
+        siteInfo,
+        lastUpdated,
+        installedDate,
+        installedBy,
+        felledDate,
+        felledBy,
+        careNeeds,
+        hidden,
+      }
+    ) => {
       try {
         const speciesExists = await Species.findOne({ commonName });
         if (!speciesExists) {
@@ -89,16 +105,34 @@ const resolvers = {
           felledDate,
           felledBy,
           careNeeds,
-          hidden: hidden || false
+          hidden: hidden || false,
         });
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
-        return null
+        return null;
       }
     },
 
-    updateTree: async (_, { id, commonName, variety, dbh, photos, notes, garden, siteInfo, lastUpdated, installedDate, installedBy, felledDate, felledBy, careNeeds, hidden }) => {
+    updateTree: async (
+      _,
+      {
+        id,
+        commonName,
+        variety,
+        dbh,
+        photos,
+        notes,
+        garden,
+        siteInfo,
+        lastUpdated,
+        installedDate,
+        installedBy,
+        felledDate,
+        felledBy,
+        careNeeds,
+        hidden,
+      }
+    ) => {
       try {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
@@ -122,12 +156,11 @@ const resolvers = {
             felledDate,
             felledBy,
             careNeeds,
-            hidden
+            hidden,
           },
           { new: true }
         );
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
@@ -142,20 +175,19 @@ const resolvers = {
           },
           { new: true }
         );
-      }
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
     },
 
-    addSpecies: async (_, { family, commonName, scientificName, nonnative, invasive, markerColor }) => {
+    addSpecies: async (
+      _,
+      { family, commonName, scientificName, nonnative, invasive, markerColor }
+    ) => {
       try {
         const existingSpecies = await Species.findOne({
-          $or: [
-            { commonName },
-            { scientificName }
-          ]
+          $or: [{ commonName }, { scientificName }],
         });
 
         if (existingSpecies) {
@@ -170,23 +202,22 @@ const resolvers = {
           scientificName,
           nonnative,
           invasive,
-          markerColor
+          markerColor,
         });
-      } 
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
     },
 
-    updateSpecies: async (_, { id, family, commonName, scientificName, nonnative, invasive, markerColor }) => {
+    updateSpecies: async (
+      _,
+      { id, family, commonName, scientificName, nonnative, invasive, markerColor }
+    ) => {
       try {
         const existingSpecies = await Species.findOne({
           _id: { $ne: id },
-          $or: [
-            { commonName },
-            { scientificName }
-          ]
+          $or: [{ commonName }, { scientificName }],
         });
 
         if (existingSpecies) {
@@ -203,17 +234,37 @@ const resolvers = {
             scientificName,
             nonnative,
             invasive,
-            markerColor
+            markerColor,
           },
           { new: true }
         );
-      } 
-      catch (err) {
+      } catch (err) {
         console.error(err);
         return null;
       }
-    }
-  }
+    },
+
+    loginUser: async (_, { username, password }) => {
+      try {
+        const user = await User.findOne({ userName: username });
+        if (!user) {
+          throw new Error('Invalid username or password');
+        }
+
+        const isValid = await argon2.verify(user.passwordHash, password);
+        if (!isValid) {
+          throw new Error('Invalid username or password');
+        }
+
+        return {
+          userName: user.userName,
+        };
+      } catch (err) {
+        console.error(err);
+        return null;
+      }
+    },
+  },
 };
 
-module.exports = { resolvers } ;
+module.exports = { resolvers };

@@ -178,6 +178,11 @@ const typeDefs = gql`
       invasive: Boolean!
       markerColor: String!
     ): Species
+
+    loginUser(username: String!, password: String!): LoginUserResponse
+  }
+  type LoginUserResponse {
+    userName: String!
   }
 `;
 
