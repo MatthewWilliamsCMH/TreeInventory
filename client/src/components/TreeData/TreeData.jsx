@@ -329,7 +329,6 @@ const TreeData = () => {
           variables: { id: updatedTree.id, ...treePayload },
         });
         await refetchTrees();
-        console.log('Tree updated:', data.updateTree);
       }
 
       setUpdatedTree(null);

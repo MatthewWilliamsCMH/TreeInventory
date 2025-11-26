@@ -244,14 +244,15 @@ const resolvers = {
       }
     },
 
-    loginUser: async (_, { username, password }) => {
+    loginUser: async (_, { userName, userPassword }) => {
       try {
-        const user = await User.findOne({ userName: username });
+        console.log('Resolver received:', userName, userPassword);
+        const user = await User.findOne({ userName: userName });
         if (!user) {
           throw new Error('Invalid username or password');
         }
 
-        const isValid = await argon2.verify(user.passwordHash, password);
+        const isValid = await argon2.verify(user.userPassword, userPassword);
         if (!isValid) {
           throw new Error('Invalid username or password');
         }

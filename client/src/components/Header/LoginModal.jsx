@@ -29,36 +29,66 @@ const LoginModal = ({ show, onClose }) => {
 
   //----------called functions----------
   //handle OK button
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   if (!userName.trim() || !userPassword.trim()) {
+  //     alert('Username and password are required to log in.');
+  //     //make sure icon is close lock
+  //     return;
+  //   }
+
+  //   try {
+  //     const { data } = await loginUser({
+  //       variables: { userName: userName, userPassword: userPassword },
+  //     });
+  //     console.log('Login data:', data);
+
+  //     if (!data.loginUser) {
+  //       alert('Invalid username or password. Only registered users can modify the data.');
+  //       setUserName('');
+  //       setUserPassword('');
+  //       setIsLoggedIn(false);
+  //       //change icon to open lock
+  //       return;
+  //     }
+  //   } catch (err) {
+  //     console.error(err);
+  //     alert('Server error. Please try again later.');
+  //   }
+  //   setIsLoggedIn(true);
+  //   onClose();
+  // };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!userName.trim() || !userPassword.trim()) {
       alert('Username and password are required to log in.');
-      //make sure icon is close lock
       return;
     }
 
     try {
       const { data } = await loginUser({
-        variables: { username: userName, password: userPassword },
+        variables: { userName, userPassword }, // must match mutation & resolver
       });
-      if (!data.loginUser) {
+
+      if (!data?.loginUser) {
         alert('Invalid username or password. Only registered users can modify the data.');
-        setUserName('');
-        setUserPassword('');
         setIsLoggedIn(false);
-        //change icon to open lock
-        return;
       }
-      localStorage.setItem('treeInventoryUserToken', data.loginUser.token);
+
+      // Login successful
       setIsLoggedIn(true);
-      onClose();
     } catch (err) {
-      console.error(err);
+      console.error('Login error:', err);
       alert('Server error. Please try again later.');
+      setIsLoggedIn(false);
+    } finally {
+      onClose();
+      setUserName('');
+      setUserPassword('');
     }
-    setIsLoggedIn(true);
-    onClose();
   };
 
   //handle Cancel button

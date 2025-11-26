@@ -179,10 +179,12 @@ const typeDefs = gql`
       markerColor: String!
     ): Species
 
-    loginUser(username: String!, password: String!): LoginUserResponse
+    loginUser(userName: String!, userPassword: String!): LoginUserResponse
   }
+
   type LoginUserResponse {
-    userName: String!
+    userName: String
+    # no password returned
   }
 `;
 
