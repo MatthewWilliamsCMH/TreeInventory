@@ -6,7 +6,7 @@ import { Modal, Button, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
 //components
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 //stylesheets
 import styles from './treeData.module.css';

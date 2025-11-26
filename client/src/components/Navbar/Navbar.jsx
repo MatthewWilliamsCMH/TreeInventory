@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 //components
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 //local helpers, constants, queries, and mutations
 import { confirmDiscardChanges } from '../../utils/helpers.js';

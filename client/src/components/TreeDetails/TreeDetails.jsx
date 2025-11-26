@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 //components
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 //local helpers, constants, queries, and mutations
 import { formatDateForDisplay, handleDateFocus } from '../../utils/helpers.js';

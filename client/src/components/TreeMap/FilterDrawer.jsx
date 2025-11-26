@@ -7,7 +7,7 @@ import Select, { components } from 'react-select';
 import Toggle from 'react-toggle';
 
 //components
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 //local helpers, constants, queries, and mutations
 import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';

@@ -12,7 +12,7 @@ import { LOGIN_USER } from '../../mutations/login_user';
 //functions and constants
 
 //compponents
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 const LoginModal = ({ show, onClose }) => {
   //----------data reception and transmission----------

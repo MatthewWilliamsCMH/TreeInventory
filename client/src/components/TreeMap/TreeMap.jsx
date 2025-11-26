@@ -8,7 +8,7 @@ import 'leaflet.gridlayer.googlemutant';
 
 //components
 import FilterDrawer from './FilterDrawer.jsx';
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 
 //stylesheets
 import 'leaflet/dist/leaflet.css';

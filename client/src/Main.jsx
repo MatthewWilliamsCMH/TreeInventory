@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
-import AppContext from './appContext';
+import AppContext from './appContext.js';
 import App from './App.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import TreeData from './components/TreeData/TreeData.jsx';

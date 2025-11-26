@@ -3,7 +3,7 @@
 import React, { useContext, useState } from 'react';
 
 //components
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 import DangerFlags from './DangerFlags.jsx';
 import LoginModal from './LoginModal.jsx';
 

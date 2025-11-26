@@ -22,7 +22,7 @@ import { ADD_SPECIES } from '../../mutations/add_species.js';
 
 //components
 // import DangerFlags from './DangerFlags.jsx';
-import AppContext from '../../AppContext';
+import AppContext from '../../appContext';
 import PhotoUploadForm from './PhotoUploadForm.jsx';
 import NewSpeciesModal from './NewSpeciesModal.jsx';
 

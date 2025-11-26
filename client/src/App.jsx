@@ -5,7 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 //components and helpers
-import AppContext from './AppContext.js';
+import AppContext from './appContext.js';
 import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 
