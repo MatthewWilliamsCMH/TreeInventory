@@ -107,10 +107,10 @@ const TreeMap = () => {
 
   //----------useEffects----------
 
-  useEffect(() => {
-    console.log('Merged trees:', mergedTrees.length);
-    console.log('Filtered trees:', filteredTrees.length);
-  }, [mergedTrees, filteredTrees]);
+  // useEffect(() => {
+  //   console.log('Merged trees:', mergedTrees.length);
+  //   console.log('Filtered trees:', filteredTrees.length);
+  // }, [mergedTrees, filteredTrees]);
 
   useEffect(() => {
     if (!mapRef.current || map.current) return;

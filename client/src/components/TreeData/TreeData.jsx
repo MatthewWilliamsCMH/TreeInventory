@@ -44,7 +44,7 @@ const TreeData = () => {
   } = useContext(AppContext);
 
   //set local states to initial values
-  const [modalVisible, setModalVisible] = useState(false);
+  const [showSpeciesModal, setsetShowSpeciesModal] = useState(false);
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
   const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);
@@ -109,7 +109,7 @@ const TreeData = () => {
       );
 
     if (!matchesExistingSpecies && !matchesPendingSpecies) {
-      setModalVisible(true);
+      setsetShowSpeciesModal(true);
     }
 
     setUpdatedSpeciesField(null);
@@ -197,8 +197,6 @@ const TreeData = () => {
 
   //handle adding a new species
   const handleNewSpeciesSubmit = (newSpecies) => {
-    console.log('handleNewSpeciesSubmit called with:', newSpecies);
-
     setPendingSpecies(newSpecies);
 
     setUpdatedTree((prev) => ({
@@ -370,9 +368,9 @@ const TreeData = () => {
           }));
           setPendingSpecies(null);
         }}
-        onHide={() => setModalVisible(false)}
+        onHide={() => setsetShowSpeciesModal(false)}
         onSubmitNewSpecies={handleNewSpeciesSubmit}
-        show={modalVisible}
+        show={showSpeciesModal}
       />
       {/*
       <div className={styles.dangerFlagsContainer}>

@@ -1,22 +1,29 @@
 //---------imports----------
 //external libraries
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
+import { useMutation } from '@apollo/client';
 
 //stylesheets
 
+//mutations
+import { LOGIN_USER } from '../../mutations/login_user';
+
 //functions and constants
 
-const LoginModal = () => {
+//compponents
+import AppContext from '../../AppContext';
+
+const LoginModal = ({ show, onClose }) => {
   //----------data reception and transmission----------
   //get current global states using context
-  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
+  const { setIsLoggedIn } = useContext(AppContext);
 
   //set local states to initial values
   const [userName, setUserName] = useState('');
   const [userPassword, setUserPassword] = useState('');
 
-  //set local references to initial values
+  const [loginUser] = useMutation(LOGIN_USER);
 
   //----------useEffects----------
 
@@ -25,33 +32,41 @@ const LoginModal = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!userLoginName.trim() || !userPassword.trim()) {
+    if (!userName.trim() || !userPassword.trim()) {
       alert('Username and password are required to log in.');
+      //make sure icon is close lock
       return;
     }
 
-    //check username and password in mongoDB, users collection
-    //if verified
-    //set userLoggedIn to true
-    //(at a future date, allow new users, so hash passwords here)
-    //send token
-    //change locked lock icon in navbar to unlocked
-    //make fields and okay button active on treeData page
-    //close modal
-    //if not
-    //set userName to ''
-    //set userPassword to ''
-    //set userLoggedIn to false
-    //alert user that only registered users can modify the data
-    //close modal
+    try {
+      const { data } = await loginUser({
+        variables: { username: userName, password: userPassword },
+      });
+      if (!data.loginUser) {
+        alert('Invalid username or password. Only registered users can modify the data.');
+        setUserName('');
+        setUserPassword('');
+        setIsLoggedIn(false);
+        //change icon to open lock
+        return;
+      }
+      localStorage.setItem('treeInventoryUserToken', data.loginUser.token);
+      setIsLoggedIn(true);
+      onClose();
+    } catch (err) {
+      console.error(err);
+      alert('Server error. Please try again later.');
+    }
+    setIsLoggedIn(true);
+    onClose();
   };
 
   //handle Cancel button
   const handleCancel = () => {
     setUserName('');
     setUserPassword('');
-    setUserLoggedIn(false);
-    //close modal
+    setIsLoggedIn(false);
+    onClose();
   };
 
   //----------render component----------
@@ -59,7 +74,7 @@ const LoginModal = () => {
     <Modal
       backdrop='static'
       centered
-      keyboard={false}
+      // keyboard={false}
       onHide={handleCancel}
       show={show}
     >
@@ -69,11 +84,8 @@ const LoginModal = () => {
       <Modal.Body>
         <Form.Control
           id='username'
-          onBlur={(event) => {
-            //see if user is even in db before allowing user to proceed
-            //if not, alert user that only registered users can log in
-            //clear control (if necessary)
-            //close modal
+          onChange={(event) => {
+            setUserName(event.target.value);
           }}
           placeholder='Username'
           required
@@ -83,10 +95,12 @@ const LoginModal = () => {
         <Form.Control
           className='mt-1'
           id='userpassword'
+          onChange={(event) => {
+            setUserPassword(event.target.value);
+          }}
           placeholder='Password'
-          ref={modalScientificName}
           required
-          type='password'
+          type='text'
           value={userPassword}
         />
       </Modal.Body>
