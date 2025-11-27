@@ -1,6 +1,6 @@
 //---------imports----------
 //external libraries
-import React, { useContext, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -66,7 +66,6 @@ function App() {
 
   //initialize hooks
   const location = useLocation();
-  // const { setUpdatedTree } = useContext(AppContext);
 
   const mergedTrees = useMemo(() => {
     if (!allTrees.length || !allSpecies.length) return [];

@@ -4,6 +4,9 @@ import React, { useContext, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { useNavigate } from 'react-router-dom';
 
+//components
+import AppContext from '../../appContext';
+
 //stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
 

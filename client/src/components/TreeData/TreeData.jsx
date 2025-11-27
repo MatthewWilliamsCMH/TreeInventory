@@ -44,7 +44,7 @@ const TreeData = () => {
   } = useContext(AppContext);
 
   //set local states to initial values
-  const [showSpeciesModal, setsetShowSpeciesModal] = useState(false);
+  const [showSpeciesModal, setShowSpeciesModal] = useState(false);
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
   const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);

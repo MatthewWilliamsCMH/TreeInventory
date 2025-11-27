@@ -10,7 +10,7 @@ import AppContext from '../../appContext';
 import { confirmDiscardChanges } from '../../utils/helpers.js';
 
 //stylesheets
-import './Navbar.css';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   //set up hooks
@@ -28,7 +28,7 @@ const Navbar = () => {
       case '/TreeData':
         return 'TreeData';
       case '/TreeDetails':
-        return 'TreeData';
+        return 'TreeData'; //is TreeData so middle dot on navbar will be filled when app showing either TreeData (logged-in user) or TreeDetails
       case '/TreeInventory':
         return 'TreeInventory';
       default:
@@ -52,7 +52,7 @@ const Navbar = () => {
         navigate('/TreeData');
         break;
       case 'TreeDetails':
-        navigate('/TreeData');
+        navigate('/TreeDetails');
         break;
       case 'TreeInventory':
         navigate('/TreeInventory');
@@ -74,7 +74,7 @@ const Navbar = () => {
         setSelectedOption('TreeData');
         break;
       case '/TreeDetails':
-        setSelectedOption('TreeData');
+        setSelectedOption('TreeData'); //is TreeData so middle dot on navbar will be filled when app showing either TreeData (logged-in user) or TreeDetails
         break;
       case '/TreeInventory':
         setSelectedOption('TreeInventory');
@@ -85,14 +85,14 @@ const Navbar = () => {
     }
   }, [location.pathname]);
 
-  //disable TreeData option if no tree is selected
+  //don't allow manual navigation to TreeData/TreeDetails if no tree is selected
   const isDisabled = selectedTree === null;
 
   //----------render component----------
   return (
-    <nav id='navbar'>
-      <div className='radiobuttonlist'>
-        <label className='radiooption'>
+    <nav className={styles.navbar}>
+      <div className={styles.radiobuttonlist}>
+        <label className={styles.radiooption}>
           <input
             type='radio'
             name='nav'
@@ -100,9 +100,9 @@ const Navbar = () => {
             checked={selectedOption === 'TreeMap'}
             onChange={handleRadioChange}
           />
-          <span className='tooltip'>Map</span>
+          <span className={styles.tooltip}>Map</span>
         </label>
-        <label className='radiooption'>
+        <label className={styles.radiooption}>
           <input
             type='radio'
             name='nav'
@@ -111,9 +111,9 @@ const Navbar = () => {
             onChange={handleRadioChange}
             disabled={isDisabled}
           />
-          <span className='tooltip'>Physical data</span>
+          <span className={styles.tooltip}>Physical data</span>
         </label>
-        <label className='radiooption'>
+        <label className={styles.radiooption}>
           <input
             type='radio'
             name='nav'

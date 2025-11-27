@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
 import AppContext from './appContext.js';
 import App from './App.jsx';
-import Navbar from './components/Navbar/Navbar.jsx';
 import TreeData from './components/TreeData/TreeData.jsx';
 import TreeDetails from './components/TreeDetails/TreeDetails.jsx';
 import TreeInventory from './components/TreeInventory/TreeInventory.jsx';
@@ -42,32 +41,15 @@ const TreeDetailsRoute = () => {
   return <TreeDetails selectedTree={selectedTree} />;
 };
 
-const TreeLayout = () => {
-  // Pull the global context from App.jsx
-  const context = useContext(AppContext);
-
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-    </>
-  );
-};
-
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
-      {
-        element: <TreeLayout />, // 👈 This layout wraps all the tree-related routes
-        children: [
-          { path: '/', element: <TreeMap /> },
-          { path: '/TreeData', element: <TreeDataRoute /> },
-          { path: '/TreeDetails', element: <TreeDetailsRoute /> },
-          { path: '/TreeInventory', element: <TreeInventory /> },
-        ],
-      },
+      { index: true, element: <TreeMap /> },
+      { path: 'TreeData', element: <TreeDataRoute /> },
+      { path: 'TreeDetails', element: <TreeDetailsRoute /> },
+      { path: 'TreeInventory', element: <TreeInventory /> },
     ],
   },
 ]);
