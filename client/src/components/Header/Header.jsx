@@ -12,7 +12,7 @@ import styles from './header.module.css';
 
 //get current global states using context
 const Header = () => {
-  const { isLoggedIn, setIsLoggedIn, updatedTree } = useContext(AppContext);
+  const { isLoggedIn, setIsLoggedIn, selectedTree } = useContext(AppContext);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   //----------called functions----------
@@ -26,7 +26,7 @@ const Header = () => {
     }
   };
   // const showDangerFlags = updatedTree && (updatedTree.nonnative || updatedTree.invasive);
-  const showDangerFlags = updatedTree?.nonnative || updatedTree?.invasive;
+  const showDangerFlags = selectedTree?.nonnative || selectedTree?.invasive;
 
   //render component
   return (
@@ -42,7 +42,7 @@ const Header = () => {
         </h1>
 
         <div className={styles.flushRightContainer}>
-          {showDangerFlags && <DangerFlags updatedTree={updatedTree} />}
+          {showDangerFlags && <DangerFlags selectedTree={selectedTree} />}
           <img
             className={styles.login}
             src={`/${isLoggedIn ? 'loggedin.svg' : 'loggedout.svg'}`}

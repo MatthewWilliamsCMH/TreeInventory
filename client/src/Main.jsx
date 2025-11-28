@@ -22,13 +22,13 @@ const client = new ApolloClient({
 });
 
 const TreeDataRoute = () => {
-  const { updatedTree } = useContext(AppContext); // Using context passed from App.jsx
+  const { selectedTree } = useContext(AppContext); // Using context passed from App.jsx
 
-  if (!updatedTree) {
+  if (!selectedTree) {
     return <Navigate to='/' />;
   }
 
-  return <TreeData updatedTree={updatedTree} />;
+  return <TreeData selectedTree={selectedTree} />;
 };
 
 const TreeDetailsRoute = () => {

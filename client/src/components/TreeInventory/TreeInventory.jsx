@@ -15,7 +15,7 @@ const TreeInventory = () => {
   const navigate = useNavigate();
 
   //get current global states from parent
-  const { mergedTrees, setSelectedTree, setUpdatedTree } = useContext(AppContext);
+  const { mergedTrees, setSelectedTree, setWorkingTree } = useContext(AppContext);
 
   //set local states to initial values
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
@@ -46,8 +46,12 @@ const TreeInventory = () => {
   //handle selection from table
   const handleTreeClick = (tree) => {
     setSelectedTree(tree);
-    setUpdatedTree(tree);
-    navigate('/TreeData');
+    setWorkingTree(tree);
+    if (isLoggedIn) {
+      navigate('/TreeData');
+    } else {
+      navigate('/TreeDetails');
+    }
   };
 
   //----------render component----------

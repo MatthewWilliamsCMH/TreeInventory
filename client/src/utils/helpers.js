@@ -1,61 +1,11 @@
-// export const handleFieldChange = (updatedTree, field, value, commonToScientific) => {
-//   //if field nested (e.g., 'siteInfo.slope')
-//   if (field.includes('.')) {
-//     const [parentField, childField] = field.split('.'); //split field into parent & child
-//     updatedTree = {
-//       ...updatedTree,
-//       [parentField]: {
-//         ...updatedTree[parentField],
-//         [childField]: value,
-//       },
-//     };
-//   }
-
-//   //if field not nested
-//   if (field === 'commonName') {
-//     //common and scientific names sync'd here
-//     const scientificFromCommon = commonToScientific[value];
-//     updatedTree = {
-//       ...updatedTree,
-//       commonName: value,
-//       scientificName: scientificFromCommon || '',
-//     };
-//   }
-
-//   if (field === 'scientificName') {
-//     const commonFromScientific = Object.keys(commonToScientific).find(
-//       (common) => commonToScientific[common] === value
-//     );
-//     updatedTree = {
-//       ...updatedTree,
-//       scientificName: value,
-//       commonName: commonFromScientific || '',
-//     };
-//   }
-
-//   updatedTree = {
-//     ...updatedTree,
-//     [field]: value,
-//   };
-
-//   //should I move this into handleSubmit?
-//   if (updatedTree.felledDate) {
-//     updatedTree.hidden = true;
-//   } else {
-//     updatedTree.hidden = false;
-//   }
-
-//   return updatedTree;
-// };
-
-export const handleFieldChange = (updatedTree, field, value, commonToScientific) => {
+export const handleFieldChange = (workingTree, field, value, commonToScientific) => {
   //if field nested (e.g., 'siteInfo.slope')
   if (field.includes('.')) {
     const [parentField, childField] = field.split('.'); //split field into parent & child
     return {
-      ...updatedTree,
+      ...workingTree,
       [parentField]: {
-        ...updatedTree[parentField],
+        ...workingTree[parentField],
         [childField]: value,
       },
     };
@@ -66,7 +16,7 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
     //common and scientific names sync'd here
     const scientificFromCommon = commonToScientific[value];
     return {
-      ...updatedTree,
+      ...workingTree,
       commonName: value,
       scientificName: scientificFromCommon || '',
     };
@@ -77,25 +27,25 @@ export const handleFieldChange = (updatedTree, field, value, commonToScientific)
       (common) => commonToScientific[common] === value
     );
     return {
-      ...updatedTree,
+      ...workingTree,
       scientificName: value,
       commonName: commonFromScientific || '',
     };
   }
 
   return {
-    ...updatedTree,
+    ...workingTree,
     [field]: value,
   };
 
   //should I move this into handleSubmit?
-  if (updatedTree.felledDate) {
-    updatedTree.hidden = true;
+  if (workingTree.felledDate) {
+    workingTree.hidden = true;
   } else {
-    updatedTree.hidden = false;
+    workingTree.hidden = false;
   }
 
-  return updatedTree;
+  return workingTree;
 };
 
 //return today's date in MM/DD/YYYY format
@@ -213,26 +163,6 @@ export const formatDateForDb = (dateStr) => {
 
   return cleaned;
 };
-
-//validate input
-// export const validateDateField = (dateStr) => {
-//   if (!dateStr) return true;
-
-//   //'before'
-//   if (/^(?:<\s*|before\s+)\d{4}$/i.test(dateStr)) {
-//     return true;
-//   }
-
-//   //'Unix timestamp'
-//   if (/^\d{13}$/.test(String(dateStr))) {
-//     return true;
-//   }
-
-//   //'mm/dd/yyy'
-//   const date = new Date(dateStr);
-//   return !isNaN(date.getTime());
-// };
-
 //combine tree and species data
 export const combineTreeAndSpeciesData = (tree, speciesMap) => {
   const species = speciesMap.find((s) => s.commonName === tree.commonName) || {};
@@ -247,11 +177,11 @@ export const combineTreeAndSpeciesData = (tree, speciesMap) => {
 };
 
 //confirm navigation away from the data form if there are unsaved changes
-export const confirmDiscardChanges = (updatedTree, selectedTree) => {
-  const updatedTreeString = JSON.stringify(updatedTree);
+export const confirmDiscardChanges = (workingTree, selectedTree) => {
+  const workingTreeString = JSON.stringify(workingTree);
   const selectedTreeString = JSON.stringify(selectedTree);
 
-  if (updatedTreeString !== selectedTreeString) {
+  if (workingTree && workingTreeString !== selectedTreeString) {
     return window.confirm('Are you sure you want to leave the form? Unsaved changes will be lost.');
   }
 

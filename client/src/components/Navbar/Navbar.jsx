@@ -18,7 +18,7 @@ const Navbar = () => {
   const location = useLocation();
 
   //get current global states from parent
-  const { isLoggedIn, selectedTree, updatedTree } = useContext(AppContext);
+  const { isLoggedIn, selectedTree, workingTree } = useContext(AppContext);
 
   //set local states to initial values
   const [selectedOption, setSelectedOption] = useState(() => {
@@ -26,9 +26,8 @@ const Navbar = () => {
       case '/':
         return 'TreeMap';
       case '/TreeData':
+      case '/TreeDetails': // middle dot for both
         return 'TreeData';
-      case '/TreeDetails':
-        return 'TreeData'; //is TreeData so middle dot on navbar will be filled when app showing either TreeData (logged-in user) or TreeDetails
       case '/TreeInventory':
         return 'TreeInventory';
       default:
@@ -41,18 +40,20 @@ const Navbar = () => {
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
 
-    if (!confirmDiscardChanges(updatedTree, selectedTree)) return;
+    if (!confirmDiscardChanges(workingTree, selectedTree)) return;
 
     setSelectedOption(selectedValue);
+
     switch (selectedValue) {
       case 'TreeMap':
         navigate('/');
         break;
       case 'TreeData':
-        navigate('/TreeData');
-        break;
-      case 'TreeDetails':
-        navigate('/TreeDetails');
+        if (isLoggedIn) {
+          navigate('/TreeData');
+        } else {
+          navigate('/TreeDetails');
+        }
         break;
       case 'TreeInventory':
         navigate('/TreeInventory');
@@ -71,10 +72,8 @@ const Navbar = () => {
         setSelectedOption('TreeMap');
         break;
       case '/TreeData':
+      case '/TreeDetails': // IMPORTANT FIX: both map to middle dot
         setSelectedOption('TreeData');
-        break;
-      case '/TreeDetails':
-        setSelectedOption('TreeData'); //is TreeData so middle dot on navbar will be filled when app showing either TreeData (logged-in user) or TreeDetails
         break;
       case '/TreeInventory':
         setSelectedOption('TreeInventory');
@@ -121,7 +120,7 @@ const Navbar = () => {
             checked={selectedOption === 'TreeInventory'}
             onChange={handleRadioChange}
           />
-          <span className='tooltip'>Inventory</span>
+          <span className={styles.tooltip}>Inventory</span>
         </label>
       </div>
     </nav>

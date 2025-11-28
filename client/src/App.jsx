@@ -62,7 +62,8 @@ function App() {
   const [mapZoom, setMapZoom] = useState(18);
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
-  const [updatedTree, setUpdatedTree] = useState(null);
+  const [workingTree, setWorkingTree] = useState(null);
+  // const [updatedTree, setUpdatedTree] = useState(null);
 
   //initialize hooks
   const location = useLocation();
@@ -123,17 +124,17 @@ function App() {
     }
   }, [allSpecies]);
 
-  useEffect(() => {
-    if (selectedTree) {
-      setUpdatedTree(selectedTree);
-    }
-  }, [selectedTree]);
+  // useEffect(() => {
+  //   if (selectedTree) {
+  //     setUpdatedTree(selectedTree);
+  //   }
+  // }, [selectedTree]);
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      setUpdatedTree(null);
-    }
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   if (location.pathname === '/') {
+  //     setUpdatedTree(null);
+  //   }
+  // }, [location.pathname]);
 
   //----------rendering----------
   return (
@@ -152,7 +153,6 @@ function App() {
         refetchTrees,
         selectedTree,
         treeLocation,
-        updatedTree,
         setAllSpecies,
         setAllTrees,
         setFilterOpen,
@@ -163,7 +163,8 @@ function App() {
         setMapZoom,
         setSelectedTree,
         setTreeLocation,
-        setUpdatedTree,
+        setWorkingTree,
+        workingTree,
       }}
     >
       <div className='app'>

@@ -5,19 +5,19 @@ import React, { useEffect, useState } from 'react';
 //stylesheets
 import styles from './dangerFlags.module.css';
 
-const DangerFlags = ({ updatedTree }) => {
+const DangerFlags = ({ workingTree }) => {
   //establish nonnative and invasive status
   const [nonnativeStatus, setNonnativeStatus] = useState(false);
   const [invasiveStatus, setInvasiveStatus] = useState(false);
 
   //----------useEffects----------
-  //get nonnative and invasvie statuses from updatedTree
+  //get nonnative and invasvie statuses from workingTree
   useEffect(() => {
-    if (updatedTree) {
-      setNonnativeStatus(updatedTree.nonnative || false);
-      setInvasiveStatus(updatedTree.invasive || false);
+    if (workingTree) {
+      setNonnativeStatus(workingTree.nonnative || false);
+      setInvasiveStatus(workingTree.invasive || false);
     }
-  }, [updatedTree]);
+  }, [workingTree]);
 
   //----------render component----------
   return (

@@ -7,8 +7,8 @@ import L from 'leaflet';
 import 'leaflet.gridlayer.googlemutant';
 
 //components
-import FilterDrawer from './FilterDrawer.jsx';
 import AppContext from '../../appContext';
+import FilterDrawer from './FilterDrawer.jsx';
 
 //stylesheets
 import 'leaflet/dist/leaflet.css';
@@ -45,7 +45,7 @@ const TreeMap = () => {
     setMapCenter,
     setMapZoom,
     setSelectedTree,
-    setUpdatedTree,
+    setWorkingTree,
   } = useContext(AppContext);
 
   //set local states to initial values
@@ -323,9 +323,9 @@ const TreeMap = () => {
       //allow navigation when any part of popup except close button is clicked
       popupElement.addEventListener('click', () => {
         setSelectedTree(tree);
+        setWorkingTree(tree);
+        setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
         if (isLoggedIn) {
-          setUpdatedTree(tree);
-          setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
           navigate('/TreeData');
         } else {
           navigate('/TreeDetails');
@@ -392,9 +392,10 @@ const TreeMap = () => {
       },
       hidden: false,
     };
-    setUpdatedTree(newTree);
+    setSelectedTree(newTree);
+    setWorkingTree(newTree);
     setFormColor({ backgroundColor: 'white' });
-    navigate('/TreeData');
+    navigate('/TreeData'); //only logged-in users can add trees, so no need to check isLoggedIn or to allow navigation to TreeDetails
   };
   return (
     <>

@@ -23,7 +23,7 @@ const NewSpeciesModal = ({
 }) => {
   //----------data reception and transmission----------
   //get current global states using context
-  const { allSpecies, setAllSpecies, allTrees, setAllTrees, updatedTree, setUpdatedTree } =
+  const { allSpecies, setAllSpecies, allTrees, setAllTrees, workingTree, setWorkingTree } =
     useContext(AppContext);
 
   //set local states to initial values
@@ -72,12 +72,12 @@ const NewSpeciesModal = ({
 
   useEffect(() => {
     if (show) {
-      setCommonName(updatedTree?.commonName || '');
-      setScientificName(updatedTree?.scientificName || '');
+      setCommonName(workingTree?.commonName || '');
+      setScientificName(workingTree?.scientificName || '');
 
       // Delay needed to ensure DOM elements are available
       setTimeout(() => {
-        if (!updatedTree?.commonName) {
+        if (!workingTree?.commonName) {
           modalCommonName.current?.focus();
         } else {
           modalScientificName.current?.focus();

@@ -153,6 +153,7 @@ const TreeDetails = () => {
             if (!src) return null; // skip empty photos
             return (
               <Col
+                key={photoType}
                 xs={6}
                 sm={6}
                 md={4}

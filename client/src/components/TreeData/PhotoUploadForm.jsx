@@ -17,7 +17,7 @@ import '@uppy/file-input/dist/style.css';
 //components
 //import FullSizePhoto from './FullSizePhoto.jsx';
 
-const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
+const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
   //set local states to initial values
   const [activePhotoType, setActivePhotoType] = useState(null);
   const [uppy, setUppy] = useState(null);
@@ -95,7 +95,7 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
   //----------called functions----------
   //handle camera click
   const handlePhotoClick = (photoType) => {
-    const photoUrl = updatedTree.photos[photoType];
+    const photoUrl = workingTree.photos[photoType];
 
     if (photoUrl) {
       //open a new browser window
@@ -180,12 +180,12 @@ const PhotoUploadForm = ({ updatedTree, onPhotoUpload }) => {
                   width: '100%',
                 }}
               >
-                {updatedTree.photos?.[photoType] ? (
+                {workingTree.photos?.[photoType] ? (
                   <Image
                     alt={photoType}
                     className='object-cover'
                     rounded
-                    src={updatedTree.photos[photoType]}
+                    src={workingTree.photos[photoType]}
                     style={{
                       width: '100%',
                       height: '100px',
