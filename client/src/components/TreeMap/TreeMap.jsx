@@ -24,6 +24,7 @@ const TreeMap = () => {
   const mapRef = useRef(null);
   const map = useRef(null);
   const markersRef = useRef([]);
+  const previousSelectedTreeRef = useRef(null);
   const userLocationRef = useRef(null);
 
   //get global states from parent component
@@ -85,11 +86,10 @@ const TreeMap = () => {
 
   //----------initialize map----------
   //generate marker icons
-  const generateTreeMarkerIcon = (tree, species, radius, opacity = 1) => {
-    const markerStrokeWidth = selectedTree && tree.id === selectedTree.id ? '3' : '1';
-    const iconSize = radius * 2 + parseInt(markerStrokeWidth);
+  const generateTreeMarkerIcon = ({ tree, species, radius, opacity = 1, isSelected = false }) => {
+    const markerStrokeWidth = isSelected ? 3 : 1; //if the marker is selected, use a thicker stroke; do not move this line below iconSize calculation
+    const iconSize = radius * 2 + markerStrokeWidth;
     const markerColor = species.markerColor || 'FFFFFF';
-
     const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
         <circle cx='${iconSize / 2}' cy='${iconSize / 2}' r='${radius}' 
@@ -97,7 +97,6 @@ const TreeMap = () => {
           stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
       </svg>
     `;
-
     return L.icon({
       iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
       iconSize: [iconSize, iconSize],
@@ -106,12 +105,6 @@ const TreeMap = () => {
   };
 
   //----------useEffects----------
-
-  // useEffect(() => {
-  //   console.log('Merged trees:', mergedTrees.length);
-  //   console.log('Filtered trees:', filteredTrees.length);
-  // }, [mergedTrees, filteredTrees]);
-
   useEffect(() => {
     if (!mapRef.current || map.current) return;
 
@@ -186,7 +179,6 @@ const TreeMap = () => {
     // re-add current filtered markers
     filteredTrees.forEach((tree) => {
       createTreeMarker(tree, allSpecies);
-      // }
     });
   }, [filteredTrees, allSpecies]);
 
@@ -196,8 +188,15 @@ const TreeMap = () => {
 
     markersRef.current.forEach((markerInfo) => {
       const { marker, tree, species, opacity = 1 } = markerInfo;
+      const isSelected = selectedTree?.id === tree.id;
       // Use the marker's current opacity, not default
-      const updatedIcon = generateTreeMarkerIcon(tree, species, newRadius, opacity);
+      const updatedIcon = generateTreeMarkerIcon({
+        tree,
+        species,
+        radius: newRadius,
+        opacity,
+        isSelected,
+      });
       marker.setIcon(updatedIcon);
     });
   }, [mapZoom]);
@@ -206,8 +205,14 @@ const TreeMap = () => {
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
     const species = speciesMap.find((species) => species.commonName === tree.commonName);
-    const myIcon = generateTreeMarkerIcon(tree, species, markerRadius);
-
+    const isSelected = selectedTree?.id === tree.id;
+    const myIcon = generateTreeMarkerIcon({
+      tree,
+      species,
+      radius: markerRadius,
+      opacity: 1,
+      isSelected,
+    });
     const popupContent = `
       ${
         tree.photos.environs
@@ -260,11 +265,43 @@ const TreeMap = () => {
     const clickDelay = 200;
 
     marker.on('click', (event) => {
-      //this needs to happen ONLY if the user is logged in.
       //if second click within the delay run dblclick handler
       if (clickTimer) {
         return;
       }
+
+      if (previousSelectedTreeRef.current) {
+        const prevMarkerInfo = markersRef.current.find(
+          (m) => m.tree.id === previousSelectedTreeRef.current.id
+        );
+        if (prevMarkerInfo) {
+          prevMarkerInfo.marker.setIcon(
+            generateTreeMarkerIcon({
+              tree: prevMarkerInfo.tree,
+              species: prevMarkerInfo.species,
+              radius: markerRadius,
+              opacity: prevMarkerInfo.opacity,
+              isSelected: false,
+            })
+          );
+        }
+      }
+
+      const markerInfo = markersRef.current.find((m) => m.tree.id === tree.id);
+      if (markerInfo) {
+        markerInfo.marker.setIcon(
+          generateTreeMarkerIcon({
+            tree,
+            species,
+            radius: markerRadius,
+            opacity: markerInfo.opacity,
+            isSelected: true,
+          })
+        );
+      }
+
+      previousSelectedTreeRef.current = tree;
+      setSelectedTree(tree);
 
       //if no second click within the delay treat as single click
       clickTimer = setTimeout(() => {
@@ -302,9 +339,16 @@ const TreeMap = () => {
       //calculate current radius based on actual zoom level
       const currentZoom = map.current.getZoom();
       const currentRadius = Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
+      const isSelected = selectedTree?.id === tree.id;
 
       //generate new icon with updated opacity and current radius
-      const updatedIcon = generateTreeMarkerIcon(tree, species, currentRadius, markerInfo.opacity);
+      const updatedIcon = generateTreeMarkerIcon({
+        tree,
+        species,
+        radius: currentRadius,
+        opacity: markerInfo.opacity,
+        isSelected,
+      });
       marker.setIcon(updatedIcon);
     });
 
@@ -322,6 +366,36 @@ const TreeMap = () => {
 
       //allow navigation when any part of popup except close button is clicked
       popupElement.addEventListener('click', () => {
+        if (previousSelectedTreeRef.current) {
+          const prevMarkerInfo = markersRef.current.find(
+            (m) => m.tree.id === previousSelectedTreeRef.current.id
+          );
+          if (prevMarkerInfo) {
+            prevMarkerInfo.marker.setIcon(
+              generateTreeMarkerIcon({
+                tree: prevMarkerInfo.tree,
+                species: prevMarkerInfo.species,
+                radius: markerRadius,
+                opacity: prevMarkerInfo.opacity,
+                isSelected: false,
+              })
+            );
+          }
+        }
+
+        const isSelected = true;
+        const newIcon = generateTreeMarkerIcon({
+          tree,
+          species,
+          radius: markerRadius,
+          opacity: 1,
+          isSelected,
+        });
+        const markerInfo = markersRef.current.find((m) => m.tree.id === tree.id);
+        if (markerInfo) {
+          markerInfo.marker.setIcon(newIcon);
+        }
+        previousSelectedTreeRef.current = tree;
         setSelectedTree(tree);
         setWorkingTree(tree);
         setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
