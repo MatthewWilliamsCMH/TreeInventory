@@ -54,12 +54,13 @@ const LoginModal = ({ show, onClose }) => {
 
     try {
       const { data } = await loginUser({
-        variables: { userName, userPassword }, // must match mutation & resolver
+        variables: { userName, userPassword },
       });
 
       if (!data?.loginUser) {
         alert('Invalid username or password. Only registered users can modify the data.');
         setIsLoggedIn(false);
+        return;
       }
 
       // Login successful

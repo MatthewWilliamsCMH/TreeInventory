@@ -3,6 +3,9 @@
   "main": "/src/main.jsx",
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@apollo/client": "^3.11.8",
     "@uppy/compressor": "^2.2.1",

@@ -1,5 +1,8 @@
 FROM node:20-alpine
 
+# Install build tools required for argon2
+RUN apk add --no-cache g++ make python3
+
 # Set working directory
 WORKDIR /app
 
