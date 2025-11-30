@@ -1,3 +1,6 @@
+import leaflet from 'leaflet';
+
+//handle changes to form fields
 export const handleFieldChange = (workingTree, field, value, commonToScientific) => {
   //if field nested (e.g., 'siteInfo.slope')
   if (field.includes('.')) {
@@ -39,13 +42,13 @@ export const handleFieldChange = (workingTree, field, value, commonToScientific)
   };
 
   //should I move this into handleSubmit?
-  if (workingTree.felledDate) {
-    workingTree.hidden = true;
-  } else {
-    workingTree.hidden = false;
-  }
+  // if (workingTree.felledDate) {
+  //   workingTree.hidden = true;
+  // } else {
+  //   workingTree.hidden = false;
+  // }
 
-  return workingTree;
+  // return workingTree;
 };
 
 //return today's date in MM/DD/YYYY format
@@ -174,6 +177,31 @@ export const combineTreeAndSpeciesData = (tree, speciesMap) => {
     markerColor: species.markerColor || 'FFFFFF',
     family: species.family || '',
   };
+};
+
+//generate marker icons
+export const generateTreeMarkerIcon = ({
+  tree,
+  species,
+  radius,
+  opacity = 1,
+  isSelected = false,
+}) => {
+  const markerStrokeWidth = isSelected ? 3 : 1; //if the marker is selected, use a thicker stroke; do not move this line below iconSize calculation
+  const iconSize = radius * 2 + markerStrokeWidth;
+  const markerColor = species.markerColor || 'FFFFFF';
+  const svgIcon = `
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
+        <circle cx='${iconSize / 2}' cy='${iconSize / 2}' r='${radius}' 
+          fill='${markerColor}' fill-opacity='${opacity}' 
+          stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
+      </svg>
+    `;
+  return leaflet.icon({
+    iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+    iconSize: [iconSize, iconSize],
+    iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+  });
 };
 
 //confirm navigation away from the data form if there are unsaved changes

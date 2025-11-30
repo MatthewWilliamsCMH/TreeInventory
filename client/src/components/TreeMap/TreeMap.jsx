@@ -3,31 +3,36 @@
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import L from 'leaflet';
+import leaflet from 'leaflet';
 import 'leaflet.gridlayer.googlemutant';
 
-//components
+//local components
 import AppContext from '../../appContext';
 import FilterDrawer from './FilterDrawer.jsx';
 
-//stylesheets
+//project-specific helpers
+import { generateTreeMarkerIcon } from '../../utils/helpers.js';
+
+//project-specific mutations
+import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
+
+//styles
 import 'leaflet/dist/leaflet.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './treeMap.module.css';
 
-//mutations
-import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
-
+//----------Create Component----------
 const TreeMap = () => {
   //initialize hooks
   const navigate = useNavigate();
+
   const mapRef = useRef(null);
   const map = useRef(null);
   const markersRef = useRef([]);
   const previousSelectedTreeRef = useRef(null);
   const userLocationRef = useRef(null);
 
-  //get global states from parent component
+  //access global states from parent (using Context)
   const {
     allSpecies,
     allTrees,
@@ -49,12 +54,12 @@ const TreeMap = () => {
     setWorkingTree,
   } = useContext(AppContext);
 
-  //set local states to initial values
+  //define local states and set initial values
   const [markerRadius, setMarkerRadius] = useState(6);
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
-    // PHASE 1: Apply multiselect filters
+    //create subset of trees from multi-select controls in filter drawer
     const baseFiltered = mergedTrees.filter((tree) => {
       return (
         filterCriteria.commonName?.includes(tree.commonName) &&
@@ -63,52 +68,30 @@ const TreeMap = () => {
       );
     });
 
-    // PHASE 2: Apply toggle filters only when toggled "on"
+    //create subset of trees from toggle controls in filter drawer
     return baseFiltered.filter((tree) => {
       const careNeedsPass = Object.entries(filterCriteria.careNeeds || {}).every(
         ([key, isActive]) => !isActive || tree.careNeeds?.[key] === true
       );
-
       const siteInfoPass = Object.entries(filterCriteria.siteInfo || {}).every(
         ([key, isActive]) => !isActive || tree.siteInfo?.[key] === true
       );
-
       const nonnativePass = !filterCriteria.nonnative || tree.nonnative === true;
       const invasivePass = !filterCriteria.invasive || tree.invasive === true;
       const hiddenPass = !filterCriteria.hidden || tree.hidden === false;
-
       return careNeedsPass && siteInfoPass && nonnativePass && invasivePass && hiddenPass;
     });
   }, [mergedTrees, filterCriteria]);
 
-  //set up mutations
+  //define mutations (using Apollo Client)
   const [updateTreeLocation] = useMutation(UPDATE_TREE_LOCATION);
 
-  //----------initialize map----------
-  //generate marker icons
-  const generateTreeMarkerIcon = ({ tree, species, radius, opacity = 1, isSelected = false }) => {
-    const markerStrokeWidth = isSelected ? 3 : 1; //if the marker is selected, use a thicker stroke; do not move this line below iconSize calculation
-    const iconSize = radius * 2 + markerStrokeWidth;
-    const markerColor = species.markerColor || 'FFFFFF';
-    const svgIcon = `
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
-        <circle cx='${iconSize / 2}' cy='${iconSize / 2}' r='${radius}' 
-          fill='${markerColor}' fill-opacity='${opacity}' 
-          stroke='lightgray' stroke-width='${markerStrokeWidth}'/>
-      </svg>
-    `;
-    return L.icon({
-      iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-      iconSize: [iconSize, iconSize],
-      iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
-    });
-  };
-
-  //----------useEffects----------
+  //useEffects
+  //create map
   useEffect(() => {
     if (!mapRef.current || map.current) return;
 
-    map.current = L.map(mapRef.current, {
+    map.current = leaflet.map(mapRef.current, {
       zoomControl: false,
       center: mapCenter,
       zoom: mapZoom,
@@ -116,9 +99,9 @@ const TreeMap = () => {
       tapHold: false,
     });
     //tile-layer options
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
-    // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
-    const googleMutant = L.gridLayer
+    // leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:23}).addTo(map.current);
+    // leaflet.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg', {maxZoom:23}).addTo(map.current);
+    const googleMutant = leaflet.gridLayer
       .googleMutant({
         maxZoom: 24,
         type: 'satellite',
@@ -134,12 +117,14 @@ const TreeMap = () => {
           map.current.removeLayer(userLocationRef.current);
         }
 
-        userLocationRef.current = L.circle([latitude, longitude], {
-          radius: 8,
-          weight: 4,
-          color: '#FFFF00',
-          fillOpacity: 0.3,
-        }).addTo(map.current);
+        userLocationRef.current = leaflet
+          .circle([latitude, longitude], {
+            radius: 8,
+            weight: 4,
+            color: '#FFFF00',
+            fillOpacity: 0.3,
+          })
+          .addTo(map.current);
       },
       (error) => console.log('Geolocation error:', error)
     );
@@ -156,6 +141,7 @@ const TreeMap = () => {
     };
   }, []);
 
+  //add a new tree on map click for logged-in users
   useEffect(() => {
     if (!map.current) return;
 
@@ -169,19 +155,18 @@ const TreeMap = () => {
     map.current.off('click', handleAddTree);
   }, [isLoggedIn]);
 
+  //update markers when filteredTrees or allSpecies change
   useEffect(() => {
     if (!map.current || !filteredTrees || !allSpecies) return;
 
-    // clear all existing markers
     markersRef.current.forEach(({ marker }) => map.current.removeLayer(marker));
     markersRef.current = [];
-
-    // re-add current filtered markers
     filteredTrees.forEach((tree) => {
       createTreeMarker(tree, allSpecies);
     });
   }, [filteredTrees, allSpecies]);
 
+  //update marker radius and icons on zoom change
   useEffect(() => {
     const newRadius = Math.min(Math.max(Math.floor((mapZoom - 18) * 3 + 6), 6), 24) || 6;
     setMarkerRadius(newRadius);
@@ -189,7 +174,6 @@ const TreeMap = () => {
     markersRef.current.forEach((markerInfo) => {
       const { marker, tree, species, opacity = 1 } = markerInfo;
       const isSelected = selectedTree?.id === tree.id;
-      // Use the marker's current opacity, not default
       const updatedIcon = generateTreeMarkerIcon({
         tree,
         species,
@@ -201,6 +185,7 @@ const TreeMap = () => {
     });
   }, [mapZoom]);
 
+  //handlers and callback functions
   //create the tree markers and attach popups
   const createTreeMarker = (tree, speciesMap) => {
     const { northing, easting } = tree.location;
@@ -228,14 +213,15 @@ const TreeMap = () => {
       DBH: ${tree.dbh} inches
     `;
 
-    const marker = L.marker([northing, easting], {
-      icon: myIcon,
-      riseOnHover: true,
-      interactive: true,
-      bubblingMouseEvents: false,
-    }).addTo(map.current);
+    const marker = leaflet
+      .marker([northing, easting], {
+        icon: myIcon,
+        riseOnHover: true,
+        interactive: true,
+        bubblingMouseEvents: false,
+      })
+      .addTo(map.current);
 
-    // Store the tree's marker state (including opacity)
     const markerInfo = {
       marker,
       tree,
@@ -323,7 +309,7 @@ const TreeMap = () => {
       }
 
       //stop event from triggering map's double-click zoom
-      L.DomEvent.stopPropagation(event);
+      leaflet.DomEvent.stopPropagation(event);
 
       //toggle draggable state
       markerInfo.draggable = !markerInfo.draggable;
@@ -471,6 +457,8 @@ const TreeMap = () => {
     setFormColor({ backgroundColor: 'white' });
     navigate('/TreeData'); //only logged-in users can add trees, so no need to check isLoggedIn or to allow navigation to TreeDetails
   };
+
+  //----------Render Component----------
   return (
     <>
       <div
