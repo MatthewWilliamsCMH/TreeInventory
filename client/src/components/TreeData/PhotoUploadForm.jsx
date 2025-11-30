@@ -16,6 +16,7 @@ import '@uppy/file-input/dist/style.css';
 
 //components
 //import FullSizePhoto from './FullSizePhoto.jsx';
+import { handlePhotoClick } from '../../utils/helpers.js';
 
 const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
   //set local states to initial values
@@ -94,66 +95,66 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
 
   //----------called functions----------
   //handle camera click
-  const handlePhotoClick = (photoType) => {
-    const photoUrl = workingTree.photos[photoType];
+  // const handlePhotoClick = (photoType) => {
+  //   const photoUrl = workingTree.photos[photoType];
 
-    if (photoUrl) {
-      //open a new browser window
-      const newWindow = window.open('', '_blank', 'width=1024,height=768');
+  //   if (photoUrl) {
+  //     //open a new browser window
+  //     const newWindow = window.open('', '_blank', 'width=1024,height=768');
 
-      //write custom html for new window
-      newWindow.document.write(`
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <title>Tree Photo</title>
-          <style>
-            body {
-              margin: 0;
-              background: black;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              min-height: 100vh;
-            }
-            img {
-              max-width: 100%;
-              max-height: 100vh;
-              object-fit: contain;
-              cursor: pointer;
-            }
-          </style>
-        </head>
-        <body>
-          <img
-            alt='Full size view'
-            onclick='window.opener.postMessage('openUppy', '*')'
-            src='${photoUrl}'
-          />
-        </body>
-      </html>
-    `);
+  //     //write custom html for new window
+  //     newWindow.document.write(`
+  //     <!DOCTYPE html>
+  //     <html>
+  //       <head>
+  //         <title>Tree Photo</title>
+  //         <style>
+  //           body {
+  //             margin: 0;
+  //             background: black;
+  //             display: flex;
+  //             justify-content: center;
+  //             align-items: center;
+  //             min-height: 100vh;
+  //           }
+  //           img {
+  //             max-width: 100%;
+  //             max-height: 100vh;
+  //             object-fit: contain;
+  //             cursor: pointer;
+  //           }
+  //         </style>
+  //       </head>
+  //       <body>
+  //         <img
+  //           alt='Full size view'
+  //           onclick='window.opener.postMessage('openUppy', '*')'
+  //           src='${photoUrl}'
+  //         />
+  //       </body>
+  //     </html>
+  //   `);
 
-      //handle message from the new window
-      const handleMessage = (event) => {
-        if (event.data === 'openUppy') {
-          newWindow.close();
-          setActivePhotoType(photoType);
-          uppy?.cancelAll();
-        }
-      };
+  //     //handle message from the new window
+  //     const handleMessage = (event) => {
+  //       if (event.data === 'openUppy') {
+  //         newWindow.close();
+  //         setActivePhotoType(photoType);
+  //         uppy?.cancelAll();
+  //       }
+  //     };
 
-      window.addEventListener('message', handleMessage);
+  //     window.addEventListener('message', handleMessage);
 
-      //cleanup
-      return () => {
-        window.removeEventListener('message', handleMessage);
-      };
-    } else {
-      setActivePhotoType(photoType);
-      uppy?.cancelAll();
-    }
-  };
+  //     //cleanup
+  //     return () => {
+  //       window.removeEventListener('message', handleMessage);
+  //     };
+  //   } else {
+  //     setActivePhotoType(photoType);
+  //     uppy?.cancelAll();
+  //   }
+  // };
 
   //----------render component----------
   return (
@@ -163,54 +164,64 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
         className='p-0 mt-1'
       >
         <Row className='g-1'>
-          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => (
-            <Col
-              xs={4}
-              sm={4}
-              md={6}
-              lg={4}
-              className='text-center'
-              style={{ color: '#BBB' }}
-              key={photoType}
-            >
-              <div
-                onClick={() => handlePhotoClick(photoType)}
-                style={{
-                  cursor: 'pointer',
-                  width: '100%',
-                }}
+          {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
+            const src = workingTree.photos?.[photoType];
+            return (
+              <Col
+                xs={4}
+                sm={4}
+                md={6}
+                lg={4}
+                className='text-center'
+                style={{ color: '#BBB' }}
+                key={photoType}
               >
-                {workingTree.photos?.[photoType] ? (
-                  <Image
-                    alt={photoType}
-                    className='object-cover'
-                    rounded
-                    src={workingTree.photos[photoType]}
-                    style={{
-                      width: '100%',
-                      height: '100px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                ) : (
-                  <div
-                    className='photo-placeholder border rounded d-flex align-items-center justify-content-center'
-                    style={{
-                      height: '100px',
-                      background: '#fff',
-                      width: '100%',
-                    }}
-                  >
-                    <span>
-                      {photoType
-                        .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
-                        .replace(/^([a-z])/g, (match) => match.toUpperCase())}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </Col>
-          ))}
+                <div
+                  onClick={() => {
+                    if (src) {
+                      handlePhotoClick(src);
+                    } else {
+                      setActivePhotoType(photoType);
+                      uppy?.cancelAll();
+                    }
+                  }}
+                  style={{
+                    cursor: 'pointer',
+                    width: '100%',
+                  }}
+                >
+                  {src ? (
+                    <Image
+                      alt={photoType}
+                      className='object-cover'
+                      rounded
+                      src={src}
+                      style={{
+                        width: '100%',
+                        height: '100px',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className='photo-placeholder border rounded d-flex align-items-center justify-content-center'
+                      style={{
+                        height: '100px',
+                        background: '#fff',
+                        width: '100%',
+                      }}
+                    >
+                      <span>
+                        {photoType
+                          .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+                          .replace(/^([a-z])/g, (match) => match.toUpperCase())}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
 

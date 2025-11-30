@@ -40,15 +40,6 @@ export const handleFieldChange = (workingTree, field, value, commonToScientific)
     ...workingTree,
     [field]: value,
   };
-
-  //should I move this into handleSubmit?
-  // if (workingTree.felledDate) {
-  //   workingTree.hidden = true;
-  // } else {
-  //   workingTree.hidden = false;
-  // }
-
-  // return workingTree;
 };
 
 //return today's date in MM/DD/YYYY format
@@ -214,4 +205,39 @@ export const confirmDiscardChanges = (workingTree, selectedTree) => {
   }
 
   return true; // no unsaved changes, so okay to proceed
+};
+
+export const handlePhotoClick = (photoUrl) => {
+  if (!photoUrl) return;
+
+  //open a new browser window
+  const newWindow = window.open('', '_blank', 'width=1024,height=768');
+  if (!newWindow) return;
+
+  //clear any default content
+  newWindow.document.body.innerHTML = '';
+
+  //style the body
+  Object.assign(newWindow.document.body.style, {
+    margin: '0',
+    background: 'black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100vh',
+  });
+
+  //create image element
+  const img = newWindow.document.createElement('img');
+  img.src = photoUrl;
+  img.alt = 'Full size view';
+  Object.assign(img.style, {
+    maxWidth: '100%',
+    maxHeight: '100vh',
+    objectFit: 'contain',
+    cursor: 'pointer',
+  });
+
+  //append to body
+  newWindow.document.body.appendChild(img);
 };

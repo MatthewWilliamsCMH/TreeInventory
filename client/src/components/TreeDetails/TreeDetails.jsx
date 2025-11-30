@@ -8,7 +8,7 @@ import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import AppContext from '../../appContext';
 
 //local helpers, constants, queries, and mutations
-import { formatDateForDisplay, handleDateFocus } from '../../utils/helpers.js';
+import { formatDateForDisplay, handleDateFocus, handlePhotoClick } from '../../utils/helpers.js';
 
 //stylesheets
 import '../../custom-bootstrap.scss';
@@ -150,7 +150,8 @@ const TreeDetails = () => {
         <Row className='mt-2 g-1'>
           {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
             const src = selectedTree.photos?.[photoType];
-            if (!src) return null; // skip empty photos
+            if (!src) return null; //skip empty photos
+
             return (
               <Col
                 key={photoType}
@@ -165,7 +166,8 @@ const TreeDetails = () => {
                   alt={photoType}
                   className='object-cover'
                   rounded
-                  src={selectedTree.photos[photoType]}
+                  onClick={() => handlePhotoClick(src)}
+                  src={src}
                   style={{
                     width: '100%',
                     height: '200px',
