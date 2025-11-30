@@ -1409,13 +1409,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1741191591687.jpg",
     "summerLeaf": "",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://treeinventory.clickps.synology.me/uploads/1762894123660.jpeg",
     "fruit": "",
     "flower": "",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741191614500.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-03-05T00:00:00.000Z"
+    "$date": "2025-11-11T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97803909980355,
@@ -1465,7 +1465,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741191141685.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2025-11-13T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977857988639244,
@@ -1480,7 +1480,7 @@
     "proximateFence": false,
     "propertyLine": false
   },
-  "installedDate": "2024-03-01T00:00:00.000Z",
+  "installedDate": "2024-05-09T00:00:00.000Z",
   "installedBy": "Joseph Tree Service",
   "felledDate": "",
   "felledBy": "",
@@ -1715,7 +1715,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741191834272.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2025-11-13T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97793452758215,
@@ -1730,7 +1730,7 @@
     "proximateFence": false,
     "propertyLine": false
   },
-  "installedDate": "2024-03-01T00:00:00.000Z",
+  "installedDate": "2024-05-09T00:00:00.000Z",
   "installedBy": "Joseph Tree Service",
   "felledDate": "",
   "felledBy": "",
@@ -5415,7 +5415,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741191914705.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2025-11-13T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977988494208724,
@@ -5430,7 +5430,7 @@
     "proximateFence": false,
     "propertyLine": false
   },
-  "installedDate": "2024-03-01T00:00:00.000Z",
+  "installedDate": "2024-05-09T00:00:00.000Z",
   "installedBy": "",
   "felledDate": "",
   "felledBy": "",
@@ -9715,7 +9715,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1741192007521.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2025-11-13T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977915015055025,
@@ -9730,7 +9730,7 @@
     "proximateFence": false,
     "propertyLine": false
   },
-  "installedDate": "2024-03-01T00:00:00.000Z",
+  "installedDate": "2024-05-09T00:00:00.000Z",
   "installedBy": "Joseph Tree Service",
   "felledDate": "",
   "felledBy": "",

@@ -15,7 +15,7 @@ const TreeInventory = () => {
   const navigate = useNavigate();
 
   //get current global states from parent
-  const { mergedTrees, setSelectedTree, setWorkingTree } = useContext(AppContext);
+  const { isLoggedIn, mergedTrees, setSelectedTree, setWorkingTree } = useContext(AppContext);
 
   //set local states to initial values
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
