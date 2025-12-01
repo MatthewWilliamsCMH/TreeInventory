@@ -1,32 +1,36 @@
-//---------imports----------
+//---------Import----------
 //external libraries
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
 import XHRUpload from '@uppy/xhr-upload';
-// import Webcam from '@uppy/webcam';
 import FileInput from '@uppy/file-input';
 import Compressor from '@uppy/compressor';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
-import '@uppy/core/dist/style.css';
-import '@uppy/dashboard/dist/style.css';
-// import '@uppy/webcam/dist/style.css';
-import '@uppy/file-input/dist/style.css';
 
-//components
-//import FullSizePhoto from './FullSizePhoto.jsx';
+import AppContext from '../../appContext';
+
+//project-specific helpers
 import { handlePhotoClick } from '../../utils/helpers.js';
 
-const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
-  //set local states to initial values
-  const [activePhotoType, setActivePhotoType] = useState(null);
-  const [uppy, setUppy] = useState(null);
-  const [showFullSize, setShowFullSize] = useState(false);
-  const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
-  const [cameraDevices, setCameraDevices] = useState([]);
+//styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@uppy/core/dist/style.css';
+import '@uppy/dashboard/dist/style.css';
+import '@uppy/file-input/dist/style.css';
 
-  //----------useEffects----------
+//----------Create Component----------
+const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
+  const { setWorkingTree } = useContext(AppContext);
+
+  //define local states and set initial values
+  const [activePhotoType, setActivePhotoType] = useState(null);
+  const [cameraDevices, setCameraDevices] = useState([]);
+  const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
+  const [showFullSize, setShowFullSize] = useState(false);
+  const [uppy, setUppy] = useState(null);
+
+  //useEffects
   //create prop variables for Uppy.use below
   useEffect(() => {
     const uppyConfig = {
@@ -93,70 +97,26 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
     };
   }, [activePhotoType, onPhotoUpload]);
 
-  //----------called functions----------
-  //handle camera click
-  // const handlePhotoClick = (photoType) => {
-  //   const photoUrl = workingTree.photos[photoType];
+  //handlers and callback functions
+  const handleDeletePhoto = (photoType) => {
+    if (photoType === 'environs') {
+      const confirmed = confirm(
+        'Environs photos are required. You will need to replace this photo before saving the updates to this tree.'
+      );
+      if (!confirmed) {
+        return;
+      }
+    }
+    setWorkingTree((prev) => ({
+      ...prev,
+      photos: {
+        ...prev.photos,
+        [photoType]: null,
+      },
+    }));
+  };
 
-  //   if (photoUrl) {
-  //     //open a new browser window
-  //     const newWindow = window.open('', '_blank', 'width=1024,height=768');
-
-  //     //write custom html for new window
-  //     newWindow.document.write(`
-  //     <!DOCTYPE html>
-  //     <html>
-  //       <head>
-  //         <title>Tree Photo</title>
-  //         <style>
-  //           body {
-  //             margin: 0;
-  //             background: black;
-  //             display: flex;
-  //             justify-content: center;
-  //             align-items: center;
-  //             min-height: 100vh;
-  //           }
-  //           img {
-  //             max-width: 100%;
-  //             max-height: 100vh;
-  //             object-fit: contain;
-  //             cursor: pointer;
-  //           }
-  //         </style>
-  //       </head>
-  //       <body>
-  //         <img
-  //           alt='Full size view'
-  //           onclick='window.opener.postMessage('openUppy', '*')'
-  //           src='${photoUrl}'
-  //         />
-  //       </body>
-  //     </html>
-  //   `);
-
-  //     //handle message from the new window
-  //     const handleMessage = (event) => {
-  //       if (event.data === 'openUppy') {
-  //         newWindow.close();
-  //         setActivePhotoType(photoType);
-  //         uppy?.cancelAll();
-  //       }
-  //     };
-
-  //     window.addEventListener('message', handleMessage);
-
-  //     //cleanup
-  //     return () => {
-  //       window.removeEventListener('message', handleMessage);
-  //     };
-  //   } else {
-  //     setActivePhotoType(photoType);
-  //     uppy?.cancelAll();
-  //   }
-  // };
-
-  //----------render component----------
+  //----------Render Component----------
   return (
     <>
       <Container
@@ -191,17 +151,35 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
                   }}
                 >
                   {src ? (
-                    <Image
-                      alt={photoType}
-                      className='object-cover'
-                      rounded
-                      src={src}
-                      style={{
-                        width: '100%',
-                        height: '100px',
-                        objectFit: 'cover',
-                      }}
-                    />
+                    <div style={{ position: 'relative' }}>
+                      <Image
+                        alt={photoType}
+                        className='object-cover'
+                        rounded
+                        src={src}
+                        style={{
+                          width: '100%',
+                          height: '100px',
+                          objectFit: 'cover',
+                        }}
+                      />
+                      <Button
+                        alt={`Delete ${photoType} Photo`}
+                        className='trashButton'
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          handleDeletePhoto(photoType);
+                        }}
+                        style={{
+                          position: 'absolute',
+                          top: '5px',
+                          right: '5px',
+                        }}
+                        variant='danger'
+                      >
+                        <i className='bi-trash3'></i>
+                      </Button>
+                    </div>
                   ) : (
                     <div
                       className='photo-placeholder border rounded d-flex align-items-center justify-content-center'

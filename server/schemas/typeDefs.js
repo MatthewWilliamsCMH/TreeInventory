@@ -180,6 +180,8 @@ const typeDefs = gql`
     ): Species
 
     loginUser(userName: String!, userPassword: String!): LoginUserResponse
+
+    deletePhoto(fileName: String!): Boolean!
   }
 
   type LoginUserResponse {

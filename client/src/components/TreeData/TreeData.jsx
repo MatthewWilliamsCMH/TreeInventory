@@ -19,6 +19,7 @@ import {
 import { ADD_TREE } from '../../mutations/add_tree.js';
 import { ADD_SPECIES } from '../../mutations/add_species.js';
 import { UPDATE_TREE } from '../../mutations/update_tree.js';
+import { DELETE_PHOTO } from '../../mutations/delete_photo.js';
 
 //components
 //import DangerFlags from './DangerFlags.jsx';
@@ -66,8 +67,9 @@ const TreeData = () => {
   const [gardenKey, setGardenKey] = useState('garden-0');
 
   //set up mutations
-  const [addTree] = useMutation(ADD_TREE);
   const [addSpecies] = useMutation(ADD_SPECIES);
+  const [addTree] = useMutation(ADD_TREE);
+  const [deletePhoto] = useMutation(DELETE_PHOTO);
   const [updateTree] = useMutation(UPDATE_TREE);
 
   //initialize hooks
@@ -251,9 +253,39 @@ const TreeData = () => {
       newErrors.environs = 'An environs photo is required.';
     }
 
+    //build list of filenames to delete
+    const filesToDelete = [];
+
+    for (const photoType in selectedTree.photos) {
+      const originalUrl = selectedTree.photos?.[photoType] || null;
+      const updatedUrl = workingTree.photos?.[photoType] || null;
+
+      if (originalUrl && !updatedUrl) {
+        //extract filename from URL
+        const parts = originalUrl.split('/uploads/');
+        const fileName = parts[1] || null;
+        if (fileName) filesToDelete.push(fileName);
+        else console.warn('Could not extract filename for deletion from URL:', originalUrl);
+      }
+    }
+
+    //delete files
+    for (const fileName of filesToDelete) {
+      try {
+        const { data } = await deletePhoto({ variables: { fileName } });
+        if (!data?.deletePhoto) {
+          console.warn('Server reported failure deleting file:', fileName);
+        } else {
+          console.log('Deleted file:', fileName);
+        }
+      } catch (err) {
+        console.error('Error deleting file on server:', fileName, err);
+      }
+    }
+
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      return; //stop submission
+      return;
     }
 
     setErrors({}); //clear errors if valid

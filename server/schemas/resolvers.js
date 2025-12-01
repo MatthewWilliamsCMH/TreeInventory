@@ -265,6 +265,20 @@ const resolvers = {
         return null;
       }
     },
+
+    deletePhoto: async (_, { fileName }) => {
+      const path = require('path');
+      const fs = require('fs');
+      const filePath = path.join(__dirname, '../../uploads', fileName);
+
+      try {
+        await fs.promises.unlink(filePath);
+        return true;
+      } catch (err) {
+        console.error('Error deleting photo:', err);
+        return false;
+      }
+    },
   },
 };
 
