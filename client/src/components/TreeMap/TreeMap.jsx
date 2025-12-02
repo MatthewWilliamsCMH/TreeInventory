@@ -59,27 +59,24 @@ const TreeMap = () => {
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
-    //create subset of trees from multi-select controls in filter drawer
-    const baseFiltered = mergedTrees.filter((tree) => {
-      return (
-        filterCriteria.commonName?.includes(tree.commonName) &&
-        (!tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh)) &&
-        (!tree.garden?.trim() || filterCriteria.garden?.includes(tree.garden))
-      );
-    });
+    return mergedTrees.filter((tree) => {
+      if (!filterCriteria.hidden && tree.hidden) return false;
+      if (!filterCriteria.nonnative && tree.nonnative) return false;
+      if (!filterCriteria.invasive && tree.invasive) return false;
 
-    //create subset of trees from toggle controls in filter drawer
-    return baseFiltered.filter((tree) => {
-      const careNeedsPass = Object.entries(filterCriteria.careNeeds || {}).every(
-        ([key, isActive]) => !isActive || tree.careNeeds?.[key] === true
-      );
-      const siteInfoPass = Object.entries(filterCriteria.siteInfo || {}).every(
-        ([key, isActive]) => !isActive || tree.siteInfo?.[key] === true
-      );
-      const nonnativePass = !filterCriteria.nonnative || tree.nonnative === true;
-      const invasivePass = !filterCriteria.invasive || tree.invasive === true;
-      const hiddenPass = !filterCriteria.hidden || tree.hidden === false;
-      return careNeedsPass && siteInfoPass && nonnativePass && invasivePass && hiddenPass;
+      for (const [key, isOn] of Object.entries(filterCriteria.careNeeds || {})) {
+        if (!isOn && tree.careNeeds?.[key]) return false;
+      }
+
+      for (const [key, isOn] of Object.entries(filterCriteria.siteInfo || {})) {
+        if (!isOn && tree.siteInfo?.[key]) return false;
+      }
+
+      const speciesMatch = filterCriteria.commonName?.includes(tree.commonName);
+      const dbhMatch = !tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh);
+      const gardenMatch = !tree.garden?.trim() || filterCriteria.garden?.includes(tree.garden);
+
+      return speciesMatch && dbhMatch && gardenMatch;
     });
   }, [mergedTrees, filterCriteria]);
 

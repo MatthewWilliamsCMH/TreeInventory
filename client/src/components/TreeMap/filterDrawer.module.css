@@ -1,0 +1,13 @@
+.drawer {
+  background-color: var(--brick-red);
+  border-bottom: 2px solid white;
+  border-left: 2px solid white !important;
+  border-radius: 10px 0 0 10px;
+  border-top: 2px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+  color: white;
+  margin-bottom: 4.5rem;
+  margin-top: 4.5rem;
+  padding: 10px;
+  max-width: 306px;
+}

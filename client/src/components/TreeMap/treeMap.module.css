@@ -1,9 +1,7 @@
-/*----------map----------*/
 .map {
   cursor: pointer;
 }
 
-/*----------filter----------*/
 .filterThumb {
   font-size: 27px;
   text-align: right;
@@ -22,7 +20,7 @@
 }
 
 .filterThumbOpen {
-  right: 298px;
+  right: 304px;
   transition: right 0.3s ease-in-out;
 }
 

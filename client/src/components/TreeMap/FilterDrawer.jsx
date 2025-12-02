@@ -1,4 +1,4 @@
-// --------- imports ----------
+//----------Import----------
 //external libraries
 import React, { useContext } from 'react';
 import { Col, Container, Form, Row, Stack } from 'react-bootstrap';
@@ -6,34 +6,34 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Select, { components } from 'react-select';
 import Toggle from 'react-toggle';
 
-//components
+//local components
 import AppContext from '../../appContext';
 
-//local helpers, constants, queries, and mutations
+//project-specific constants
 import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
 
-//stylesheets
+//styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './treeMap.module.css';
 import './react-toggle.css';
+import styles from './filterDrawer.module.css';
 
+//----------Create Component----------
 const FilterDrawer = ({ filteredTrees }) => {
-  // --------- initialize hooks ----------
-  //get global states from parent component
-  const { filterOpen, setFilterOpen, filterCriteria, setFilterCriteria, mergedTrees, allSpecies } =
+  //access global states from parent (using Context)
+  const { allSpecies, filterCriteria, filterOpen, mergedTrees, setFilterCriteria, setFilterOpen } =
     useContext(AppContext);
 
+  //define local states and set initial values
   const CustomValueContainer = ({ children, ...props }) => {
     const selectedOptions = props.getValue();
     const fieldName = props.selectProps.fieldName;
-    //one selection
+
     if (selectedOptions.length === 1) {
       return (
         <components.ValueContainer {...props}>{selectedOptions[0].label}</components.ValueContainer>
       );
     }
 
-    //more than one selection
     if (selectedOptions.length > 1) {
       return <components.ValueContainer {...props}>Multiple {fieldName}</components.ValueContainer>;
     }
@@ -41,18 +41,15 @@ const FilterDrawer = ({ filteredTrees }) => {
     //no selections
     return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
   };
-
   const columnCount = 2;
-
   const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
     siteInfoList.filter((_, i) => i % columnCount === colIndex)
   );
 
-  //----------called functions----------
-  //handle changes to the typeahead controls
+  //handlers and callback functions
+  //handle changes to typeaheads
   const handleTypeaheadChange = (selectedOptions, fieldName) => {
     const selectedValues = selectedOptions.map((option) => option.value);
-
     let fullOptionList;
     if (fieldName === 'commonName') {
       fullOptionList = allSpecies.map((species) => species.commonName);
@@ -62,7 +59,7 @@ const FilterDrawer = ({ filteredTrees }) => {
       fullOptionList = gardenList;
     }
 
-    //handle "Select all" option
+    //handle "select all" option
     if (selectedValues.includes('__ALL__')) {
       setFilterCriteria((prev) => ({
         ...prev,
@@ -71,14 +68,14 @@ const FilterDrawer = ({ filteredTrees }) => {
       return;
     }
 
-    //handle selections other than "Select all"
+    //handle individual options
     setFilterCriteria((prev) => ({
       ...prev,
       [fieldName]: selectedValues,
     }));
   };
 
-  //handle changes to the filter criteria
+  //handle changes to filter criteria
   const handleFilterChange = (event, category = null) => {
     const { name, type, value, checked } = event.target;
     const newValue = type === 'checkbox' ? checked : value;
@@ -103,13 +100,11 @@ const FilterDrawer = ({ filteredTrees }) => {
     });
   };
 
-  //----------render component----------
-  {
-    /*I locally styled this because I couldn't override the default styles of react-bootstrap*/
-  }
+  //----------Render Component----------
   return (
     <Offcanvas
       backdrop={false}
+      className={styles.drawer}
       id='filter-drawer'
       onHide={() => {
         setFilterOpen(false);
@@ -117,19 +112,6 @@ const FilterDrawer = ({ filteredTrees }) => {
       placement='end'
       scroll={true}
       show={filterOpen}
-      style={{
-        backgroundColor: 'var(--brick-red)',
-        borderBottom: '2px solid white',
-        borderLeft: '2px solid white',
-        borderRadius: '10px 0px 0px 10px',
-        borderTop: '2px solid white',
-        boxShadow: '10px 10px 10px rgba(0, 0, 0, 1)',
-        color: 'white',
-        marginBottom: '4.5rem',
-        marginTop: '4.5rem',
-        padding: '10px',
-        width: '300px',
-      }}
     >
       <Offcanvas.Title className='ms-3 mb-3'>Filter</Offcanvas.Title>
 
@@ -146,7 +128,7 @@ const FilterDrawer = ({ filteredTrees }) => {
             onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
             options={[
               { label: '[Show All]', value: '__ALL__' },
-              ...[...allSpecies] //creates a shallow copy of the array, which is mutable where the origianl is not; similar to just writing the original array into another, new array, but idiomatic to ES6 and slightly faster.
+              ...[...allSpecies]
                 .sort((a, b) => a.commonName.localeCompare(b.commonName))
                 .map((species) => ({
                   label: species.commonName,
