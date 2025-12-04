@@ -57,7 +57,7 @@ function App() {
   });
   const [filterOpen, setFilterOpen] = useState(false);
   const [formColor, setFormColor] = useState({ backgroundColor: 'white' });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(import.meta.env.VITE_LOGGED_IN === 'true');
   const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]);
   const [mapZoom, setMapZoom] = useState(18);
   const [selectedTree, setSelectedTree] = useState(null);
@@ -90,7 +90,7 @@ function App() {
 
   //----------useEffects----------
   useEffect(() => {
-    const useFixedLocation = process.env.FIXED_LOCATION === 'true';
+    const useFixedLocation = import.meta.env.VITE_FIXED_LOCATION === 'true';
     if (!useFixedLocation) {
       navigator.geolocation.getCurrentPosition(
         ({ coords: { latitude, longitude } }) => {
