@@ -34,25 +34,15 @@
     "vite-plugin-env-compatible": "^2.0.1"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^4.1.2",
-    "@storybook/addon-a11y": "^10.0.6",
-    "@storybook/addon-docs": "^10.0.6",
-    "@storybook/addon-onboarding": "^10.0.6",
-    "@storybook/addon-vitest": "^10.0.6",
-    "@storybook/react-vite": "^10.0.6",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^5.1.0",
-    "@vitest/coverage-v8": "^4.0.8",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "eslint-plugin-storybook": "^10.0.6",
-    "prop-types": "^15.8.1",
     "sass": "^1.89.2",
     "sass-embedded": "^1.89.2",
-    "storybook": "^10.0.6",
     "vite": "^7.2.2"
   },
   "scripts": {
@@ -61,13 +51,6 @@
     "build:demo": "vite build --mode demo",
     "build": "vite build --mode production",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
+    "preview": "vite preview"
   }
 }
