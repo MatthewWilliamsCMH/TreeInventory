@@ -1,35 +1,33 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-//stylesheets
-
-//mutations
-import { LOGIN_USER } from '../../mutations/login_user';
-
-//functions and constants
-
-//compponents
+//local components
 import AppContext from '../../appContext';
 
+//project-specific mutations
+import { LOGIN_USER } from '../../mutations/login_user';
+
+//----------Create Component----------
 const LoginModal = ({ show, onClose }) => {
-  //----------data reception and transmission----------
-  //get current global states using context
-  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
-
-  //set local states to initial values
-  const [userName, setUserName] = useState('');
-  const [userPassword, setUserPassword] = useState('');
-
-  const [loginUser] = useMutation(LOGIN_USER);
-  //initialze hooks
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  //----------useEffects----------
+  //access global states from parent (using Context)
+  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
+
+  //define local states and set initial values
+  const [userName, setUserName] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+
+  //define queries (using Apollo Client)
+  const [loginUser] = useMutation(LOGIN_USER);
+
+  //useEffects
   useEffect(() => {
     if (isLoggedIn) {
       if (pathname === '/TreeDetails') {
@@ -42,7 +40,7 @@ const LoginModal = ({ show, onClose }) => {
     }
   }, [isLoggedIn, location.pathname, navigate]);
 
-  //----------handlers and callback functions----------
+  //handlers and callback functions
   //handle Submit button
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -63,9 +61,9 @@ const LoginModal = ({ show, onClose }) => {
         return;
       }
 
-      // Login successful
+      //if login successful
       setIsLoggedIn(true);
-      //if currently displayed component is details, change to data
+      //if currently displayed component is TreeDetails, change to TreeData
     } catch (err) {
       console.error('Login error:', err);
       alert('Server error. Please try again later.');
@@ -85,12 +83,11 @@ const LoginModal = ({ show, onClose }) => {
     onClose();
   };
 
-  //----------render component----------
+  //----------Render Component----------
   return (
     <Modal
       backdrop='static'
       centered
-      // keyboard={false}
       onHide={handleCancel}
       show={show}
     >

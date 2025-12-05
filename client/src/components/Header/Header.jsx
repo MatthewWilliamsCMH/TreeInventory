@@ -1,21 +1,24 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useState } from 'react';
 
-//components
+//local components
 import AppContext from '../../appContext';
 import DangerFlags from './DangerFlags.jsx';
 import LoginModal from './LoginModal.jsx';
 
-//stylesheets
+//styles (load order is important)
 import styles from './header.module.css';
 
-//get current global states using context
+//----------Create Component----------
 const Header = () => {
+  //access global states from parent (using Context)
   const { isLoggedIn, setIsLoggedIn, selectedTree } = useContext(AppContext);
+
+  //define local states and set initial values
   const [showLoginModal, setShowLoginModal] = useState(false);
 
-  //----------called functions----------
+  //handlers and callback functions
   //handle click on the lock icon
   const handleLoginClick = () => {
     if (isLoggedIn) {
@@ -25,10 +28,9 @@ const Header = () => {
       setShowLoginModal(true);
     }
   };
-  // const showDangerFlags = updatedTree && (updatedTree.nonnative || updatedTree.invasive);
   const showDangerFlags = selectedTree?.nonnative || selectedTree?.invasive;
 
-  //render component
+  //----------Render Component----------
   return (
     <>
       <LoginModal

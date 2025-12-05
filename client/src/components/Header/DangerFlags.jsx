@@ -1,10 +1,11 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useEffect, useState } from 'react';
 
-//stylesheets
+//styles (load order is important)
 import styles from './dangerFlags.module.css';
 
+//----------Create Component----------
 const DangerFlags = ({ selectedTree }) => {
   //establish nonnative and invasive status
   const [nonnativeStatus, setNonnativeStatus] = useState(false);
