@@ -1,4 +1,4 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import { useMutation } from '@apollo/client';
 import React, { useContext, useEffect, useRef, useState } from 'react';
@@ -6,8 +6,12 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { useNavigate } from 'react-router-dom';
 
-//local helpers, constants, queries, and mutations
-import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
+//local components
+import AppContext from '../../appContext';
+import NewSpeciesModal from './NewSpeciesModal.jsx';
+import PhotoUploadForm from './PhotoUploadForm.jsx';
+
+//project-specific helpers
 import {
   confirmDiscardChanges,
   handleFieldChange,
@@ -16,23 +20,26 @@ import {
   handleDateFocus,
   validateDateField,
 } from '../../utils/helpers.js';
+
+//project-specific constants
+import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
+
+//project-specific mutations
 import { ADD_TREE } from '../../mutations/add_tree.js';
 import { ADD_SPECIES } from '../../mutations/add_species.js';
 import { UPDATE_TREE } from '../../mutations/update_tree.js';
 import { DELETE_PHOTO } from '../../mutations/delete_photo.js';
 
-//components
-//import DangerFlags from './DangerFlags.jsx';
-import AppContext from '../../appContext';
-import NewSpeciesModal from './NewSpeciesModal.jsx';
-import PhotoUploadForm from './PhotoUploadForm.jsx';
-
-//stylesheets
+//styles (load order is important)
 import styles from './treeData.module.css';
 
+//----------Create Component----------
 const TreeData = () => {
-  //-----------data reception and transmission----------
-  //get current global states from parent
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
+  const commonNameRef = useRef(null);
+  const navigate = useNavigate();
+
+  //access global states from parent (using Context)
   const {
     allSpecies,
     formColor,
@@ -44,7 +51,7 @@ const TreeData = () => {
     workingTree,
   } = useContext(AppContext);
 
-  //set local states to initial values
+  //define local states and set initial values
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [errors, setErrors] = useState({});
   const [installedDateField, setInstalledDateField] = useState(
@@ -57,25 +64,18 @@ const TreeData = () => {
   const [felledDateField, setFelledDateField] = useState(
     formatDateForDisplay(selectedTree.felledDate)
   );
-
-  const commonNameRef = useRef(null);
-
-  //initialize keys for controlled inputs
   const [commonNameKey, setCommonNameKey] = useState('commonName-0');
   const [scientificNameKey, setScientificNameKey] = useState('scientificName-0');
   const [dbhKey, setDbhKey] = useState('dbh-0');
   const [gardenKey, setGardenKey] = useState('garden-0');
 
-  //set up mutations
+  //define mutations (using Apollo Client)
   const [addSpecies] = useMutation(ADD_SPECIES);
   const [addTree] = useMutation(ADD_TREE);
   const [deletePhoto] = useMutation(DELETE_PHOTO);
   const [updateTree] = useMutation(UPDATE_TREE);
 
-  //initialize hooks
-  const navigate = useNavigate();
-
-  //----------useEffects----------
+  //useEffects
   //get list of species names for combo boxes
   useEffect(() => {
     if (allSpecies && allSpecies.length) {
@@ -112,13 +112,13 @@ const TreeData = () => {
       );
 
     if (!matchesExistingSpecies && !matchesPendingSpecies) {
-      setsetShowSpeciesModal(true);
+      setShowSpeciesModal(true);
     }
     setUpdatedSpeciesField(null);
     setUpdatedSpeciesValue('');
   }, [allSpecies, pendingSpecies, updatedSpeciesField, updatedSpeciesValue]);
 
-  //----------called functions----------
+  //handlers and callback functions
   //handle control changes
   const handleInputChange = (field, event) => {
     //typeahead inputs; special case that behaves differently than vanilla form inputs
@@ -143,7 +143,7 @@ const TreeData = () => {
     }
   };
 
-  //typeahead handler
+  //handle typeahead controls
   const handleTypeaheadChange = (field, selectionArray) => {
     const selection = selectionArray[0];
     if (!selection) return;
@@ -173,12 +173,12 @@ const TreeData = () => {
     }
   };
 
-  //checkbox handler
+  //handle checkbox controls
   const handleCheckboxChange = (field, checked) => {
     setWorkingTree((prev) => handleFieldChange(prev, field, checked));
   };
 
-  //default input handler
+  //handle default input controls
   const handleDefaultInputChange = (field, event) => {
     const value = event.target.value;
 
@@ -197,7 +197,7 @@ const TreeData = () => {
     }));
   };
 
-  //handle adding a new species
+  //handle new species
   const handleNewSpeciesSubmit = (newSpecies) => {
     setPendingSpecies(newSpecies);
 
@@ -219,7 +219,7 @@ const TreeData = () => {
     setUpdatedSpeciesValue('');
   };
 
-  //handle OK to add or update a tree and/or species
+  //handle Submit button
   const handleSubmit = async () => {
     const newErrors = {};
     if (!workingTree.commonName?.trim()) {
@@ -370,7 +370,7 @@ const TreeData = () => {
     }
   };
 
-  //handle cancel button
+  //handle Cancel button
   const handleCancel = () => {
     //if no id, it's a new tree
     if (!workingTree?.id && !workingTree?._id) {
@@ -384,7 +384,7 @@ const TreeData = () => {
     navigate('/');
   };
 
-  //----------render component----------
+  //----------Render Component----------
   return (
     <>
       <NewSpeciesModal
@@ -397,7 +397,7 @@ const TreeData = () => {
           }));
           setPendingSpecies(null);
         }}
-        onHide={() => setsetShowSpeciesModal(false)}
+        onHide={() => setShowSpeciesModal(false)}
         onSubmitNewSpecies={handleNewSpeciesSubmit}
         show={showSpeciesModal}
       />

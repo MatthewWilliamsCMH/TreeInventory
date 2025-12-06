@@ -1,19 +1,20 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useEffect, useContext, useRef, useState } from 'react';
 import { CirclePicker } from 'react-color';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
-//components
+//local components
 import AppContext from '../../appContext';
 
-//stylesheets
-import styles from './treeData.module.css';
-
-//functions and constants
+//project-specific constants
 import { markerColorList } from '../../utils/constants.js';
 
+//styles (load order is important)
+import styles from './treeData.module.css';
+
+//----------Create Component----------
 const NewSpeciesModal = ({
   show,
   onHide,
@@ -21,12 +22,15 @@ const NewSpeciesModal = ({
   onCancelClearSpecies,
   onSubmitNewSpecies,
 }) => {
-  //----------data reception and transmission----------
-  //get current global states using context
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
+  const modalCommonName = useRef(null);
+  const modalScientificName = useRef(null);
+
+  //access global states from parent (using Context)
   const { allSpecies, setAllSpecies, allTrees, setAllTrees, workingTree, setWorkingTree } =
     useContext(AppContext);
 
-  //set local states to initial values
+  //define local states and set initial values
   const [commonName, setCommonName] = useState('');
   const [scientificName, setScientificName] = useState('');
   const [family, setFamily] = useState('');
@@ -36,7 +40,6 @@ const NewSpeciesModal = ({
   const [invasive, setInvasive] = useState(false);
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [errors, setErrors] = useState({});
-
   const { familyList, usedColors } = Object.values(allSpecies).reduce(
     (acc, species) => {
       //add unique families
@@ -63,19 +66,14 @@ const NewSpeciesModal = ({
       colorSet: new Set(),
     }
   );
-
   const availableColors = markerColorList.filter((color) => !usedColors.includes(color)).sort();
-
-  //set local references to initial values
-  const modalCommonName = useRef(null);
-  const modalScientificName = useRef(null);
 
   useEffect(() => {
     if (show) {
       setCommonName(workingTree?.commonName || '');
       setScientificName(workingTree?.scientificName || '');
 
-      // Delay needed to ensure DOM elements are available
+      //delay needed to ensure DOM elements are available
       setTimeout(() => {
         if (!workingTree?.commonName) {
           modalCommonName.current?.focus();
@@ -86,7 +84,7 @@ const NewSpeciesModal = ({
     }
   }, [show]);
 
-  //----------called functions----------
+  //handlers and callback functions
   //handle control changes
   const handleInputChange = (field, value) => {
     switch (field) {
@@ -162,7 +160,7 @@ const NewSpeciesModal = ({
     onCancelClearSpecies();
   };
 
-  //----------render component----------
+  //----------Render Component----------
   return (
     <Modal
       backdrop='static'

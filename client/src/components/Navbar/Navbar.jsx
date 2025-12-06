@@ -1,26 +1,29 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-//components
+//local components
 import AppContext from '../../appContext';
 
-//local helpers, constants, queries, and mutations
+//project-specific helpers
 import { confirmDiscardChanges } from '../../utils/helpers.js';
 
-//stylesheets
+//styles (load order is important)
 import styles from './navbar.module.css';
 
+//----------Create Component----------
 const Navbar = () => {
-  //set up hooks
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
   const navigate = useNavigate();
   const location = useLocation();
 
-  //get current global states from parent
+  //access global states from parent (using Context)
   const { isLoggedIn, selectedTree, workingTree } = useContext(AppContext);
+  //don't allow manual navigation to TreeData/TreeDetails if no tree is selected
+  const isDisabled = selectedTree === null;
 
-  //set local states to initial values
+  //define local states and set initial values
   const [selectedOption, setSelectedOption] = useState(() => {
     switch (location.pathname) {
       case '/':
@@ -35,7 +38,27 @@ const Navbar = () => {
     }
   });
 
-  //----------called functions----------
+  //useEffects
+  //update selectedOption based on the current path
+  useEffect(() => {
+    switch (location.pathname) {
+      case '/':
+        setSelectedOption('TreeMap');
+        break;
+      case '/TreeData':
+      case '/TreeDetails':
+        setSelectedOption('TreeData');
+        break;
+      case '/TreeInventory':
+        setSelectedOption('TreeInventory');
+        break;
+      default:
+        setSelectedOption('TreeMap');
+        break;
+    }
+  }, [location.pathname]);
+
+  //handlers and callback functions
   //handle control changes
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
@@ -64,30 +87,7 @@ const Navbar = () => {
     }
   };
 
-  //----------useEffects----------
-  //update selectedOption based on the current path
-  useEffect(() => {
-    switch (location.pathname) {
-      case '/':
-        setSelectedOption('TreeMap');
-        break;
-      case '/TreeData':
-      case '/TreeDetails': // IMPORTANT FIX: both map to middle dot
-        setSelectedOption('TreeData');
-        break;
-      case '/TreeInventory':
-        setSelectedOption('TreeInventory');
-        break;
-      default:
-        setSelectedOption('TreeMap');
-        break;
-    }
-  }, [location.pathname]);
-
-  //don't allow manual navigation to TreeData/TreeDetails if no tree is selected
-  const isDisabled = selectedTree === null;
-
-  //----------render component----------
+  //----------Render Component----------
   return (
     <nav className={styles.navbar}>
       <div className={styles.radiobuttonlist}>

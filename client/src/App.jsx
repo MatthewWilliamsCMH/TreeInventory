@@ -1,30 +1,33 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useEffect, useMemo, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-//components and helpers
+//local components
 import AppContext from './appContext.js';
 import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 
-//use aggregation function to combine tree, species, and family data
+//project-specific helpers
 import { combineTreeAndSpeciesData } from './utils/helpers.js';
 import { dbhList, gardenList } from './utils/constants.js';
 
-//stylesheets
+//project-specific queries
+import { GET_TREES } from './queries/get_trees.js';
+import { GET_SPECIES } from './queries/get_species.js';
+
+//styles (load order is important)
 import './reset.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom-bootstrap.scss';
 
-//queries
-import { GET_TREES } from './queries/get_trees.js';
-import { GET_SPECIES } from './queries/get_species.js';
-
-function App() {
+const App = () => {
   //-----------data reception and transmission----------
-  //initialize global states
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
+  const location = useLocation();
+
+  //access global states from parent (using Context)
   const [allSpecies, setAllSpecies] = useState([]);
   const [allTrees, setAllTrees] = useState([]);
   const [filterCriteria, setFilterCriteria] = useState({
@@ -55,6 +58,8 @@ function App() {
     nonnative: true,
     hidden: false,
   });
+
+  //define local states and set initial values
   const [filterOpen, setFilterOpen] = useState(false);
   const [formColor, setFormColor] = useState({ backgroundColor: 'white' });
   const [isLoggedIn, setIsLoggedIn] = useState(import.meta.env.VITE_LOGGED_IN === 'true');
@@ -63,17 +68,13 @@ function App() {
   const [selectedTree, setSelectedTree] = useState(null);
   const [treeLocation, setTreeLocation] = useState(null);
   const [workingTree, setWorkingTree] = useState(null);
-  // const [updatedTree, setUpdatedTree] = useState(null);
-
-  //initialize hooks
-  const location = useLocation();
 
   const mergedTrees = useMemo(() => {
     if (!allTrees.length || !allSpecies.length) return [];
     return allTrees.map((tree) => combineTreeAndSpeciesData(tree, allSpecies));
   }, [allTrees, allSpecies]);
 
-  //set up queries
+  //define queries (using Apollo Client)
   const {
     data: getTreesData,
     error: getTreesError,
@@ -88,7 +89,7 @@ function App() {
     refetch: refetchSpecies,
   } = useQuery(GET_SPECIES);
 
-  //----------useEffects----------
+  //useEffects
   useEffect(() => {
     const useFixedLocation = import.meta.env.VITE_FIXED_LOCATION === 'true';
     if (!useFixedLocation) {
@@ -124,19 +125,7 @@ function App() {
     }
   }, [allSpecies]);
 
-  // useEffect(() => {
-  //   if (selectedTree) {
-  //     setUpdatedTree(selectedTree);
-  //   }
-  // }, [selectedTree]);
-
-  // useEffect(() => {
-  //   if (location.pathname === '/') {
-  //     setUpdatedTree(null);
-  //   }
-  // }, [location.pathname]);
-
-  //----------rendering----------
+  //----------Render Component----------
   return (
     <AppContext.Provider
       value={{
@@ -174,6 +163,6 @@ function App() {
       </div>
     </AppContext.Provider>
   );
-}
+};
 
 export default App;

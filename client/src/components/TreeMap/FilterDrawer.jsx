@@ -47,7 +47,7 @@ const FilterDrawer = ({ filteredTrees }) => {
   );
 
   //handlers and callback functions
-  //handle changes to typeaheads
+  //handle typeahead controls
   const handleTypeaheadChange = (selectedOptions, fieldName) => {
     const selectedValues = selectedOptions.map((option) => option.value);
     let fullOptionList;

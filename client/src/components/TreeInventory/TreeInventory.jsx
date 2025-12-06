@@ -1,25 +1,27 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { useNavigate } from 'react-router-dom';
 
-//components
+//local components
 import AppContext from '../../appContext';
 
-//stylesheets
+//styles (load order is important)
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//----------Create Component----------
 const TreeInventory = () => {
-  //initialize hooks
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
   const navigate = useNavigate();
 
   //get current global states from parent
   const { isLoggedIn, mergedTrees, setSelectedTree, setWorkingTree } = useContext(AppContext);
 
-  //set local states to initial values
+  //access global states from parent (using Context)
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
+  //define local states and set initial values
   //sort trees based on sortConfig
   const sortedTrees = [...mergedTrees].sort((a, b) => {
     if (sortConfig.key === null) return 0;
@@ -33,7 +35,7 @@ const TreeInventory = () => {
     return 0;
   });
 
-  //----------called functions----------
+  //handlers and callback functions
   //handle click on column headers to sort
   const handleSort = (columnKey) => {
     //if same column clicked, reverse the sort
@@ -54,7 +56,7 @@ const TreeInventory = () => {
     }
   };
 
-  //----------render component----------
+  //----------Render Component----------
   return (
     <div>
       <Table

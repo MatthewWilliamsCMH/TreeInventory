@@ -1,53 +1,52 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
-//components
+//local components
 import AppContext from '../../appContext';
 
-//local helpers, constants, queries, and mutations
+//project-specific helpers
 import { formatDateForDisplay, handleDateFocus, handlePhotoClick } from '../../utils/helpers.js';
 
-//stylesheets
+//styles (load order is important)
 import '../../custom-bootstrap.scss';
 import styles from './treeDetails.module.css';
 
+//----------Create Component----------
 const TreeDetails = () => {
-  //-----------data reception and transmission----------
-  //get current global states from parent
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
+  const commonNameRef = useRef(null);
+  const navigate = useNavigate();
+
+  //access global states from parent (using Context)
   const { formColor, selectedTree, setFormColor, setSelectedTree } = useContext(AppContext);
 
   //set local states to initial values
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
 
-  const commonNameRef = useRef(null);
-
-  //set local variables to initial values
+  //define local states and set initial values
   let friendlyNonnative = 'No';
   let friendlyInvasive = 'No';
 
   if (selectedTree.nonnative === true) friendlyNonnative = 'Yes';
   if (selectedTree.invasive === true) friendlyInvasive = 'Yes';
 
-  //initialize hooks
-  const navigate = useNavigate();
-
-  //----------useEffects----------
+  //useEffects
   useEffect(() => {
     setFormColor({ backgroundColor: selectedTree?.invasive ? '#FFDEDE' : 'white' });
   }, [selectedTree?.invasive]);
 
-  //----------called functions----------
-  //handle done button
+  //handlers and callback functions
+  //handle Done button
   const handleCancel = () => {
     setSelectedTree(null);
     navigate('/');
   };
 
-  //----------render component----------
+  //----------Render Component----------
   return (
     <>
       <Container
@@ -84,7 +83,6 @@ const TreeDetails = () => {
               <div className={`text-nowrap ${styles.label}`}>
                 <b>Variety:</b>
               </div>
-              {/*cross reference species table using common name*/}
               <div
                 className={`border border-black-subtle bg-white rounded text-nowrap text-truncate flex-grow-1 ${styles.value}`}
               >
@@ -160,7 +158,6 @@ const TreeDetails = () => {
                 md={4}
                 lg={3}
                 style={{ color: '#BBB' }}
-                // key={photoType}
               >
                 <Image
                   alt={photoType}

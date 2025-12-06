@@ -1,4 +1,4 @@
-//---------imports----------
+//----------Import----------
 //external libraries
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -16,16 +16,15 @@ import { generateTreeMarkerIcon } from '../../utils/helpers.js';
 //project-specific mutations
 import { UPDATE_TREE_LOCATION } from '../../mutations/update_tree_location';
 
-//styles
+//styles (load order is important)
 import 'leaflet/dist/leaflet.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './treeMap.module.css';
 
 //----------Create Component----------
 const TreeMap = () => {
-  //initialize hooks
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
   const navigate = useNavigate();
-
   const mapRef = useRef(null);
   const map = useRef(null);
   const markersRef = useRef([]);
@@ -138,7 +137,7 @@ const TreeMap = () => {
     };
   }, []);
 
-  //add a new tree on map click for logged-in users
+  //add a new tree if user logged in
   useEffect(() => {
     if (!map.current) return;
 
@@ -452,7 +451,7 @@ const TreeMap = () => {
     setSelectedTree(newTree);
     setWorkingTree(newTree);
     setFormColor({ backgroundColor: 'white' });
-    navigate('/TreeData'); //only logged-in users can add trees, so no need to check isLoggedIn or to allow navigation to TreeDetails
+    navigate('/TreeData');
   };
 
   //----------Render Component----------
