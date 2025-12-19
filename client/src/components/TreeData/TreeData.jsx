@@ -689,9 +689,17 @@ const TreeData = () => {
                     <Form.Control
                       id='felledDate'
                       onBlur={(event) => {
+                        const formattedDate = formatDateForDb(event.target.value);
+                        const hasFelledDate = event.target.value.trim() !== ''; //this returns a boolean, not a value
+
                         setWorkingTree((prev) => ({
                           ...prev,
                           felledDate: formatDateForDb(event.target.value),
+                          hidden: hasFelledDate ? true : prev.hidden,
+                          careNeeds: {
+                            ...prev.careNeeds,
+                            fell: hasFelledDate ? false : prev.careNeeds.fell,
+                          },
                         }));
                       }}
                       onChange={(event) => setFelledDateField(event.target.value)}
@@ -751,7 +759,25 @@ const TreeData = () => {
                           label={need
                             .replace(/([A-Z])/g, ' $1')
                             .replace(/^./, (str) => str.toUpperCase())}
-                          onChange={(event) => handleInputChange(`careNeeds.${need}`, event)}
+                          onChange={(event) => {
+                            const checked = event.target.checked;
+
+                            if (need === 'fell' && checked) {
+                              // User says: "this tree needs to be felled"
+                              setWorkingTree((prev) => ({
+                                ...prev,
+                                felledDate: '',
+                                careNeeds: {
+                                  ...prev.careNeeds,
+                                  fell: true,
+                                },
+                                hidden: false,
+                              }));
+                              setFelledDateField('');
+                            } else {
+                              handleInputChange(`careNeeds.${need}`, event);
+                            }
+                          }}
                           type='checkbox'
                         />
                       </Col>

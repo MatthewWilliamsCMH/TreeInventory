@@ -99,14 +99,18 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
 
   //handlers and callback functions
   const handleDeletePhoto = (photoType) => {
+    let confirmMessage = 'Are you sure you want to delete the photo?';
     if (photoType === 'environs') {
-      const confirmed = confirm(
-        'Environs photos are required. You will need to replace this photo before saving the updates to this tree.'
-      );
-      if (!confirmed) {
-        return;
-      }
+      confirmMessage =
+        confirmMessage +
+        '\n\nAn environs photo is required. It must be replaced to update the tree.';
     }
+
+    const userConfirmed = window.confirm(confirmMessage);
+    if (!userConfirmed) {
+      return;
+    }
+
     setWorkingTree((prev) => ({
       ...prev,
       photos: {
