@@ -1,120 +1,68 @@
-//this works for production; test uploading photos on localhost and render
-const express = require('express');
+//----------Import----------
+//external libraries
 const { ApolloServer } = require('@apollo/server');
+const express = require('express');
 const { expressMiddleware } = require('@apollo/server/express4');
-const multer = require('multer');
-const path = require('path');
+const cloudinary = require('cloudinary').v2;
 const cors = require('cors');
 const fs = require('fs');
 const https = require('https');
+const multer = require('multer');
+const path = require('path');
 
-// Select environment-specific .env file
-const envFile =
-  process.env.NODE_ENV === 'production'
-    ? '.env.production'
-    : process.env.NODE_ENV === 'demo'
-    ? '.env.demo'
-    : '.env.development';
+//local components
+const { connectDB } = require('./config/connection');
+const { typeDefs } = require('./schemas/typeDefs');
+const { resolvers } = require('./schemas/resolvers');
 
-// Load environment variables from the appropriate file
+//establish environment and load environment variables
+const envFile = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development';
 require('dotenv').config({ path: envFile });
 
-// Define the uploads directory based on environment - use explicit paths
-let uploadsDir;
-if (process.env.NODE_ENV === 'production') {
-  uploadsDir = '/app/public/uploads';
-  console.log('Running in PRODUCTION mode - using mapped volume path:', uploadsDir);
-} else if (process.env.NODE_ENV === 'demo') {
-  uploadsDir = path.resolve(__dirname, '../uploads');
-  // uploadsDir = path.join(__dirname, 'public', 'uploads');
-  console.log('Running in DEMO mode - using path:', uploadsDir);
-} else {
-  uploadsDir = path.resolve(__dirname, '../uploads');
-  // uploadsDir = path.join(__dirname, 'public', 'uploads');
-  console.log('Running in DEVELOPMENT mode - using path:', uploadsDir);
-}
+//initialize Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
-// Diagnostic logging - check environment variables
-console.log('NODE_ENV value:', process.env.NODE_ENV);
-console.log('Upload directory set to:', uploadsDir);
+//initialize express instance and localhost port
+const app = express();
+const port = process.env.PORT || 3001;
 
-// Test directory access and creation
-try {
-  if (!fs.existsSync(uploadsDir)) {
-    console.log(`Directory ${uploadsDir} does not exist, trying to create it...`);
-    try {
-      fs.mkdirSync(uploadsDir, { recursive: true });
-      console.log(`Successfully created directory: ${uploadsDir}`);
-    } catch (dirCreateError) {
-      console.error(`ERROR creating directory ${uploadsDir}:`, dirCreateError);
-      // Fallback to a directory we know will work
-      uploadsDir = path.resolve(__dirname, '../uploads');
-      // uploadsDir = path.join(__dirname, 'public', 'uploads');
-      console.log(`Falling back to container path: ${uploadsDir}`);
-      if (!fs.existsSync(uploadsDir)) {
-        fs.mkdirSync(uploadsDir, { recursive: true });
-      }
-    }
-  } else {
-    // Test write permissions by creating a test file
-    try {
-      const testFile = path.join(uploadsDir, 'test-permissions.txt');
-      fs.writeFileSync(testFile, 'Testing write permissions');
-      console.log(`Successfully wrote test file to ${testFile}`);
-      fs.unlinkSync(testFile); // Clean up the test file
-      console.log('Directory is writable!');
-    } catch (writeError) {
-      console.error('ERROR: Directory exists but is not writable:', writeError);
-      // Fallback to a directory we know will work
-      uploadsDir = path.resolve(__dirname, '../uploads');
-      // uploadsDir = path.join(__dirname, 'public', 'uploads');
-      console.log(`Falling back to container path: ${uploadsDir}`);
-      if (!fs.existsSync(uploadsDir)) {
-        fs.mkdirSync(uploadsDir, { recursive: true });
-      }
-    }
-  }
-} catch (error) {
-  console.error('ERROR checking directory:', error);
-  // Fallback to a directory we know will work
+//configure multer storage
+const isDev = process.env.NODE_ENV === 'development';
+
+// Define uploads directory ONLY for development
+let uploadsDir = null;
+
+if (isDev) {
   uploadsDir = path.resolve(__dirname, '../uploads');
-  // uploadsDir = path.join(__dirname, 'public', 'uploads');
-  console.log(`Falling back to container path: ${uploadsDir}`);
+
   if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
   }
 }
 
-const { connectDB } = require('./config/connection');
-const { typeDefs } = require('./schemas/typeDefs');
-const { resolvers } = require('./schemas/resolvers');
+const storage = isDev
+  ? multer.diskStorage({
+      destination: (req, file, cb) => {
+        cb(null, uploadsDir);
+      },
+      filename: (req, file, cb) => {
+        const newFilename = Date.now() + path.extname(file.originalname);
+        cb(null, newFilename);
+      },
+    })
+  : multer.memoryStorage();
 
-const app = express();
-const port = process.env.PORT || 3001;
-
-// Configure multer storage with explicit logging
-const storage = multer.diskStorage({
-  destination: (req, photo, cb) => {
-    console.log(`Multer saving file to: ${uploadsDir}`);
-    cb(null, uploadsDir);
-  },
-  filename: (req, photo, cb) => {
-    const newFilename = Date.now() + path.extname(photo.originalname);
-    console.log(`New filename will be: ${newFilename}`);
-    cb(null, newFilename);
-  },
-});
-
-// Initialize multer with the storage configuration
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
 const getAllowedOrigins = () => {
   const origins = [];
   origins.push('https://localhost:3000');
   if (process.env.NODE_ENV === 'production') {
     origins.push('https://treeinventory.clickps.synology.me');
-  } else if (process.env.NODE_ENV === 'demo') {
-    origins.push('https://treeinventory.onrender.com');
   }
   return origins;
 };
@@ -128,34 +76,50 @@ app.use(
 
 app.use(express.json());
 
-// Serve static files from the uploads directory
-app.use('/uploads', express.static(uploadsDir));
+//set up uploads route
+if (isDev) {
+  app.use('/uploads', express.static(uploadsDir));
+}
 
-app.post('/uploads', upload.single('photo'), (req, res) => {
+app.post('/uploads', upload.single('photo'), async (req, res) => {
   console.log('File upload request received');
 
   if (!req.file) {
-    console.log('No file was uploaded');
     return res.status(400).json({ message: 'No file uploaded' });
   }
 
-  console.log('File uploaded:', req.file);
-  let baseUrl;
-  if (process.env.NODE_ENV === 'production') {
-    baseUrl = 'https://treeinventory.clickps.synology.me';
-  } else if (process.env.NODE_ENV === 'demo') {
-    baseUrl = 'https://treeinventory.onrender.com';
-  } else {
-    baseUrl = `${req.protocol}://${req.get('host')}`;
+  //development endpoint for file uploads (disk)
+  if (isDev) {
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    const fileUrl = `${baseUrl}/uploads/${req.file.filename}`;
+
+    return res.status(200).json({
+      message: 'File uploaded successfully',
+      url: fileUrl,
+    });
   }
 
-  const fileUrl = `${baseUrl}/uploads/${req.file.filename}`;
-  console.log('Generated file URL:', fileUrl);
+  //production endpoint for file uploads (Cloudinary)
+  try {
+    const result = await new Promise((resolve, reject) => {
+      const stream = cloudinary.uploader.upload_stream(
+        { folder: 'tree-inventory' },
+        (error, result) => {
+          if (error) reject(error);
+          else resolve(result);
+        }
+      );
+      stream.end(req.file.buffer);
+    });
 
-  res.status(200).json({
-    message: 'File uploaded successfully',
-    url: fileUrl,
-  });
+    res.status(200).json({
+      message: 'File uploaded successfully',
+      url: result.secure_url,
+    });
+  } catch (err) {
+    console.error('Cloudinary upload failed:', err);
+    res.status(500).json({ message: 'Upload failed' });
+  }
 });
 
 // Connect to db
@@ -212,7 +176,7 @@ server.start().then(() => {
       console.log(`Uploads directory: ${uploadsDir}`);
     });
   } else {
-    // Serve with HTTPS in development
+    //serve with HTTPS in development
     const httpsOptions = {
       key: fs.readFileSync(keyPath),
       cert: fs.readFileSync(certPath),
