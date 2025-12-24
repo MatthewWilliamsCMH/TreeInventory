@@ -35,7 +35,7 @@ async function createApp() {
   const upload = multer({ storage: multer.memoryStorage() }); // Always memory (Cloudinary only)
 
   // ---------- UPLOAD ROUTE ----------
-  app.post('/uploads', upload.single('photo'), async (req, res) => {
+  app.post('/api/uploads', upload.single('photo'), async (req, res) => {
     if (!req.file) return res.status(400).json({ message: 'No file uploaded' });
 
     try {
