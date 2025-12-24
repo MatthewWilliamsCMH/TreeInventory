@@ -1,0 +1,15 @@
+// server/api/graphql.js
+const { createApp } = require('../createApp');
+
+let appPromise = null;
+
+// For serverless, we reuse the same instance if possible
+module.exports = async (req, res) => {
+  if (!appPromise) {
+    appPromise = createApp();
+  }
+  const app = await appPromise;
+
+  // Express apps can be called directly as functions in Vercel
+  app(req, res);
+};
