@@ -15,7 +15,9 @@ import TreeMap from './components/TreeMap/TreeMap.jsx';
 
 //----------Initialize Global Environment----------
 //define GraphQL endpoint
-const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
+const graphqlUrl =
+  import.meta.env.MODE === 'development' ? 'http://localhost:3001/graphql' : '/graphql';
+// const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 
 //configure Apollo Client link
 const httpLink = createHttpLink({
