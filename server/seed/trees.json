@@ -13659,13 +13659,13 @@
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1751992971995.jpg",
     "summerLeaf": "",
-    "autumnLeaf": "",
+    "autumnLeaf": "https://res.cloudinary.com/dlnh9mcwv/image/upload/v1766345210/tree-inventory/pztxbnntqqgsunmvnpfo.jpg",
     "fruit": "",
-    "flower": "",
+    "flower": "https://res.cloudinary.com/dlnh9mcwv/image/upload/v1766345470/tree-inventory/dochiewjpt0vsha9gi0z.jpg",
     "environs": "https://treeinventory.clickps.synology.me/uploads/1751992984939.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-07-08T00:00:00.000Z"
+    "$date": "2025-12-21T05:00:00.000Z"
   },
   "location": {
     "northing": 39.97681590157767,
@@ -17229,7 +17229,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1756648710232.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-08-31T00:00:00.000Z"
+    "$date": "2025-12-19T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97861485692606,
@@ -17246,8 +17246,8 @@
   },
   "installedDate": "< 2018",
   "installedBy": "",
-  "felledDate": "",
-  "felledBy": "",
+  "felledDate": "2025-12-19T00:00:00.000Z",
+  "felledBy": "Joseph Tree Service",
   "careNeeds": {
     "multistem": false,
     "raiseCrown": false,
@@ -17257,10 +17257,10 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": true,
+    "fell": false,
     "removeStump": false
   },
-  "hidden": false,
+  "hidden": true,
   "__v": 0
 },
 {
@@ -22651,7 +22651,7 @@
   "commonName": "Seven sons tree",
   "variety": "'Tianshan'",
   "dbh": "< 3",
-  "notes": "2025: By bequest of Bruce Barbour",
+  "notes": "2025: By bequest of Bruce Barbour\n2025: Damaged by deer rutting (?); may not survive; evaluate in 2026",
   "photos": {
     "bark": "https://treeinventory.clickps.synology.me/uploads/1760743087219.jpg",
     "summerLeaf": "https://treeinventory.clickps.synology.me/uploads/1760743080939.jpg",
@@ -22661,7 +22661,7 @@
     "environs": "https://treeinventory.clickps.synology.me/uploads/1760743074898.jpg"
   },
   "lastUpdated": {
-    "$date": "2025-10-17T00:00:00.000Z"
+    "$date": "2025-12-10T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977648380876,
