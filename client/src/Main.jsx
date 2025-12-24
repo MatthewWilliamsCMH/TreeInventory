@@ -18,7 +18,7 @@ import TreeMap from './components/TreeMap/TreeMap.jsx';
 const graphqlUrl =
   import.meta.env.VITE_GRAPHQL_URL ||
   (import.meta.env.NODE_ENV === 'production'
-    ? 'https://tree-inventory-gilt.vercel.app/api/graphql'
+    ? 'https://sctrees.vercel.app/api/graphql'
     : 'http://localhost:3001/graphql');
 // const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 
