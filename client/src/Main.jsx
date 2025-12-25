@@ -20,7 +20,6 @@ const graphqlUrl =
   (import.meta.env.NODE_ENV === 'production'
     ? 'https://sctrees.vercel.app/api/graphql'
     : 'http://localhost:3001/graphql');
-// const graphqlUrl = import.meta.env.VITE_GRAPHQL_URL || 'https://localhost:3001/graphql';
 
 //configure Apollo Client link
 const httpLink = createHttpLink({
