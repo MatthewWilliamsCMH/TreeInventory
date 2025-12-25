@@ -1,5 +1,5 @@
 // server/api/graphql.js
-const { createApp } = require('../createApp');
+const { createApp } = require('../server/createApp');
 
 let appPromise = null;
 
