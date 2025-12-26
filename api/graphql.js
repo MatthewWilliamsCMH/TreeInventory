@@ -1,15 +1,15 @@
-// server/api/graphql.js
+//used ONLY for production/Vercel serverless entry
+//----------Import----------
+//local components
 const { createApp } = require('../server/createApp');
 
+//define appPromise so that it can be reused across requests rather than recreating the app each time
 let appPromise = null;
 
-// For serverless, we reuse the same instance if possible
 module.exports = async (req, res) => {
   if (!appPromise) {
     appPromise = createApp();
   }
   const app = await appPromise;
-
-  // Express apps can be called directly as functions in Vercel
   app(req, res);
 };

@@ -1,17 +1,22 @@
-const { createApp } = require('./createApp');
-// const fs = require('fs');
+//used ONLY for development/localhost express server
+//----------Import----------
+//external libraries
 const path = require('path');
 
-const envFile = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development';
-require('dotenv').config({ path: path.resolve(__dirname, envFile) });
+//local components
+const { createApp } = require('./createApp');
 
-const PORT = process.env.PORT || 3001;
+require('dotenv').config({ path: path.resolve(__dirname, '.env.development') });
 
+//define local variables and set to default values
+const PORT = 3001; //this can be set to an environment variable with 3001 as a fallback if needed in the future
+
+//----------Initialize and Start Server----------
 (async () => {
   const app = await createApp();
 
   app.listen(PORT, () => {
     console.log(`🚀 Dev server running at http://localhost:${PORT}`);
-    console.log(`GraphQL: http://localhost:${PORT}/graphql`);
+    console.log(`🚀 GraphQL ready at http://localhost:${PORT}`);
   });
 })();
