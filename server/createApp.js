@@ -60,7 +60,7 @@ async function createApp() {
     apolloServerStarted = true;
   }
 
-  app.use('/graphql', expressMiddleware(apolloServer, { context: async ({ req }) => ({ req }) }));
+  app.use('/', expressMiddleware(apolloServer, { context: async ({ req }) => ({ req }) }));
 
   console.log('createApp initialized');
 
