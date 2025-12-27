@@ -29,8 +29,8 @@ const typeDefs = gql`
   }
 
   input PhotoInput {
-    url: String!
-    publicId: String!
+    url: String
+    publicId: String
   }
 
   input TreePhotosInput {
@@ -79,8 +79,8 @@ const typeDefs = gql`
   }
 
   type Photo {
-    url: String!
-    publicId: String!
+    url: String
+    publicId: String
   }
 
   type TreePhotos {
