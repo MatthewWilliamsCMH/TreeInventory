@@ -34,12 +34,12 @@ const typeDefs = gql`
   }
 
   input TreePhotosInput {
-    bark: String
-    summerLeaf: String
-    autumnLeaf: String
-    fruit: String
-    flower: String
-    environs: String
+    bark: PhotoInput
+    summerLeaf: PhotoInput
+    autumnLeaf: PhotoInput
+    fruit: PhotoInput
+    flower: PhotoInput
+    environs: PhotoInput
   }
 
   input SpeciesInput {
@@ -84,12 +84,12 @@ const typeDefs = gql`
   }
 
   type TreePhotos {
-    bark: String
-    summerLeaf: String
-    autumnLeaf: String
-    fruit: String
-    flower: String
-    environs: String
+    bark: Photo
+    summerLeaf: Photo
+    autumnLeaf: Photo
+    fruit: Photo
+    flower: Photo
+    environs: Photo
   }
 
   type Species {
@@ -191,7 +191,7 @@ const typeDefs = gql`
 
     loginUser(userName: String!, userPassword: String!): LoginUserResponse
 
-    deletePhoto(fileName: String!): Boolean!
+    deletePhoto(publicId: String!): Boolean!
   }
 
   type LoginUserResponse {

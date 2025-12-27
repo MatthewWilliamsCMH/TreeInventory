@@ -196,8 +196,8 @@ const TreeMap = () => {
     });
     const popupContent = `
       ${
-        tree.photos.environs
-          ? `<img src="${tree.photos.environs}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>`
+        tree.photos.environs?.url
+          ? `<img src="${tree.photos.environs?.url}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>`
           : ''
       }
       Id: ${tree.id}<br>
@@ -408,12 +408,12 @@ const TreeMap = () => {
       variety: '',
       dbh: '',
       photos: {
-        bark: '',
-        summerLeaf: '',
-        autumnLeaf: '',
-        fruit: '',
-        flower: '',
-        environs: '',
+        bark: { url: '', publicId: '' },
+        summerLeaf: { url: '', publicId: '' },
+        autumnLeaf: { url: '', publicId: '' },
+        fruit: { url: '', publicId: '' },
+        flower: { url: '', publicId: '' },
+        environs: { url: '', publicId: '' },
       },
       notes: '',
       location: {

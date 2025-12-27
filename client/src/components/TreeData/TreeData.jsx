@@ -187,12 +187,12 @@ const TreeData = () => {
   };
 
   //handle photo uploads
-  const handlePhotoUpload = (url, photoType) => {
+  const handlePhotoUpload = (photo, photoType) => {
     setWorkingTree((prevValues) => ({
       ...prevValues,
       photos: {
         ...prevValues.photos,
-        [photoType]: url,
+        [photoType]: photo,
       },
     }));
   };
@@ -249,46 +249,35 @@ const TreeData = () => {
       }
     }
 
-    if (!workingTree.photos?.environs?.trim()) {
+    if (!workingTree.photos?.environs?.url) {
       newErrors.environs = 'An environs photo is required.';
     }
 
-    //build list of filenames to delete
-    const filesToDelete = [];
+    // build list of publicIds to delete
+    const photosToDelete = [];
 
     for (const photoType in selectedTree.photos) {
-      const originalUrl = selectedTree.photos?.[photoType] || null;
-      const updatedUrl = workingTree.photos?.[photoType] || null;
+      const originalPhoto = selectedTree.photos?.[photoType];
+      const updatedPhoto = workingTree.photos?.[photoType];
 
-      if (originalUrl && !updatedUrl) {
-        //extract filename from URL
-        const parts = originalUrl.split('/uploads/');
-        const fileName = parts[1] || null;
-        if (fileName) filesToDelete.push(fileName);
-        else console.warn('Could not extract filename for deletion from URL:', originalUrl);
+      if (originalPhoto?.publicId && !updatedPhoto) {
+        photosToDelete.push(originalPhoto.publicId);
       }
     }
 
-    //delete files
-    for (const fileName of filesToDelete) {
+    // delete photos
+    for (const publicId of photosToDelete) {
       try {
-        const { data } = await deletePhoto({ variables: { fileName } });
+        const { data } = await deletePhoto({ variables: { publicId } });
         if (!data?.deletePhoto) {
-          console.warn('Server reported failure deleting file:', fileName);
+          console.warn('Failed to delete photo:', publicId);
         } else {
-          console.log('Deleted file:', fileName);
+          console.log('Deleted photo:', publicId);
         }
       } catch (err) {
-        console.error('Error deleting file on server:', fileName, err);
+        console.error('Error deleting photo:', publicId, err);
       }
     }
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
-    setErrors({}); //clear errors if valid
 
     try {
       if (pendingSpecies) {

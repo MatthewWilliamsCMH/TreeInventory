@@ -266,10 +266,10 @@ const resolvers = {
       }
     },
 
-    deletePhoto: async (_, { fileName }) => {
+    deletePhoto: async (_, { publicId }) => {
       const path = require('path');
       const fs = require('fs');
-      const filePath = path.join(__dirname, '../../uploads', fileName);
+      const filePath = path.join(__dirname, '../../uploads', publicId);
 
       try {
         await fs.promises.unlink(filePath);

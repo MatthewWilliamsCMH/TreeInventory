@@ -80,9 +80,12 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
       .use(Compressor, compressorConfig);
 
     const handleUploadSuccess = (file, response) => {
-      const uploadedUrl = response.body.url;
-      console.log('Upload success:', uploadedUrl);
-      onPhotoUpload(uploadedUrl, activePhotoType);
+      const uploadedPhoto = {
+        url: response.body.url,
+        publicId: response.body.publicId,
+      };
+      console.log('Upload success:', uploadedPhoto);
+      onPhotoUpload(uploadedPhoto, activePhotoType);
       setActivePhotoType(null);
     };
 
@@ -141,8 +144,8 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
               >
                 <div
                   onClick={() => {
-                    if (src) {
-                      handlePhotoClick(src);
+                    if (src?.url) {
+                      handlePhotoClick(src.url);
                     } else {
                       setActivePhotoType(photoType);
                       uppy?.cancelAll();
@@ -153,13 +156,13 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
                     width: '100%',
                   }}
                 >
-                  {src ? (
+                  {src?.url ? (
                     <div style={{ position: 'relative' }}>
                       <Image
                         alt={photoType}
                         className='object-cover'
                         rounded
-                        src={src}
+                        src={src.url}
                         style={{
                           width: '100%',
                           height: '100px',
