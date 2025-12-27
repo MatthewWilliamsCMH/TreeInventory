@@ -59,12 +59,11 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
     };
 
     const XHRUploadConfig = {
-      endpoint: `${
-        import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'https://localhost:3001'
-      }/uploads`,
+      endpoint: import.meta.env.DEV ? 'http://localhost:3001/api/uploads' : '/api/uploads',
       fieldName: 'photo',
       formData: true,
     };
+    console.log('Upload endpoint:', XHRUploadConfig.endpoint);
 
     const compressorConfig = {
       quality: 0.8,

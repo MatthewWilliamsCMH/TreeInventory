@@ -6,16 +6,16 @@ export const UPDATE_TREE = gql`
     $commonName: String!
     $variety: String
     $dbh: String
-    $photos: PhotosInput
+    $photos: TreePhotosInput
     $notes: String
     $garden: String
-    $siteInfo: siteInfoInput
+    $siteInfo: SiteInfoInput
     $lastUpdated: String!
     $installedDate: String
     $installedBy: String
     $felledDate: String
     $felledBy: String
-    $careNeeds: careNeedsInput
+    $careNeeds: CareNeedsInput
     $hidden: Boolean
   ) {
     updateTree(
