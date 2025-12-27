@@ -6,7 +6,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  input siteInfoInput {
+  input SiteInfoInput {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -15,7 +15,7 @@ const typeDefs = gql`
     propertyLine: Boolean!
   }
 
-  input careNeedsInput {
+  input CareNeedsInput {
     multistem: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
@@ -28,7 +28,12 @@ const typeDefs = gql`
     removeStump: Boolean!
   }
 
-  input PhotosInput {
+  input PhotoInput {
+    url: String!
+    publicId: String!
+  }
+
+  input TreePhotosInput {
     bark: String
     summerLeaf: String
     autumnLeaf: String
@@ -37,7 +42,7 @@ const typeDefs = gql`
     environs: String
   }
 
-  input Species {
+  input SpeciesInput {
     family: String!
     commonName: String!
     scientificName: String!
@@ -51,7 +56,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  type siteInfo {
+  type SiteInfo {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -60,7 +65,7 @@ const typeDefs = gql`
     propertyLine: Boolean!
   }
 
-  type careNeeds {
+  type CareNeeds {
     multistem: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
@@ -73,7 +78,12 @@ const typeDefs = gql`
     removeStump: Boolean!
   }
 
-  type Photos {
+  type Photo {
+    url: String!
+    publicId: String!
+  }
+
+  type TreePhotos {
     bark: String
     summerLeaf: String
     autumnLeaf: String
@@ -98,17 +108,17 @@ const typeDefs = gql`
     species: Species!
     variety: String
     dbh: String
-    photos: Photos
+    photos: TreePhotos
     notes: String
     location: Location!
     garden: String
-    siteInfo: siteInfo
+    siteInfo: SiteInfo
     lastUpdated: String!
     installedDate: String
     installedBy: String
     felledDate: String
     felledBy: String
-    careNeeds: careNeeds
+    careNeeds: CareNeeds
     hidden: Boolean
   }
 
@@ -125,17 +135,17 @@ const typeDefs = gql`
       commonName: String!
       variety: String
       dbh: String
-      photos: PhotosInput
+      photos: TreePhotosInput
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: siteInfoInput
+      siteInfo: SiteInfoInput
       lastUpdated: String!
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
-      careNeeds: careNeedsInput
+      careNeeds: CareNeedsInput
       hidden: Boolean
     ): Tree
 
@@ -144,17 +154,17 @@ const typeDefs = gql`
       commonName: String!
       variety: String
       dbh: String
-      photos: PhotosInput
+      photos: TreePhotosInput
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: siteInfoInput
+      siteInfo: SiteInfoInput
       lastUpdated: String!
       installedDate: String
       installedBy: String
       felledDate: String
       felledBy: String
-      careNeeds: careNeedsInput
+      careNeeds: CareNeedsInput
       hidden: Boolean
     ): Tree
 
