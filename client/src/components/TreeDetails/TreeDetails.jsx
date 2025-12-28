@@ -23,11 +23,10 @@ const TreeDetails = () => {
   //access global states from parent (using Context)
   const { formColor, selectedTree, setFormColor, setSelectedTree } = useContext(AppContext);
 
-  //set local states to initial values
+  //define local states and set initial values
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
 
-  //define local states and set initial values
   let friendlyNonnative = 'No';
   let friendlyInvasive = 'No';
 
@@ -36,6 +35,7 @@ const TreeDetails = () => {
 
   //useEffects
   useEffect(() => {
+    //determine form background color based on invasive status
     setFormColor({ backgroundColor: selectedTree?.invasive ? '#FFDEDE' : 'white' });
   }, [selectedTree?.invasive]);
 
@@ -164,7 +164,7 @@ const TreeDetails = () => {
                   className='object-cover'
                   rounded
                   onClick={() => handlePhotoClick(src)}
-                  src={src}
+                  src={src.url}
                   style={{
                     width: '100%',
                     height: '200px',

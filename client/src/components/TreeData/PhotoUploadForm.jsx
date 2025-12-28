@@ -21,6 +21,7 @@ import '@uppy/file-input/dist/style.css';
 
 //----------Create Component----------
 const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
+  //access global states from parent (using Context)
   const { setWorkingTree } = useContext(AppContext);
 
   //define local states and set initial values
