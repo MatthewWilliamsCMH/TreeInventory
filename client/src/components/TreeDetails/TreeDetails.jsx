@@ -148,7 +148,7 @@ const TreeDetails = () => {
         <Row className='mt-2 g-1'>
           {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
             const src = selectedTree.photos?.[photoType];
-            if (!src) return null; //skip empty photos
+            if (!src?.url) return null; //skip empty photos
 
             return (
               <Col
