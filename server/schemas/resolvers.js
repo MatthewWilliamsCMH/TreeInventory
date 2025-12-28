@@ -267,12 +267,20 @@ const resolvers = {
     },
 
     deletePhoto: async (_, { publicId }) => {
-      const path = require('path');
-      const fs = require('fs');
-      const filePath = path.join(__dirname, '../../uploads', publicId);
+      const cloudinary = require('../config/cloudinary');
 
       try {
-        await fs.promises.unlink(filePath);
+        // 1. Delete the image from Cloudinary
+        const result = await cloudinary.uploader.destroy(publicId);
+
+        if (result.result !== 'ok' && result.result !== 'not found') {
+          console.error('Cloudinary deletion failed:', result);
+          return false;
+        }
+
+        // 2. Remove the photo reference from any tree that has it
+        await Tree.updateOne({ 'photos.publicId': publicId }, { $pull: { photos: { publicId } } });
+
         return true;
       } catch (err) {
         console.error('Error deleting photo:', err);
