@@ -4,7 +4,6 @@ const User = require('../models/User');
 
 const argon2 = require('argon2');
 
-//need to add a query resolver for retrieving hidden trees
 const resolvers = {
   Query: {
     getTrees: async () => {

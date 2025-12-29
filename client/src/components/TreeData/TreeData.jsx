@@ -18,6 +18,7 @@ import {
   formatDateForDisplay,
   formatDateForDb,
   handleDateFocus,
+  stripTypename,
   validateDateField,
 } from '../../utils/helpers.js';
 
@@ -68,6 +69,8 @@ const TreeData = () => {
   const [scientificNameKey, setScientificNameKey] = useState('scientificName-0');
   const [dbhKey, setDbhKey] = useState('dbh-0');
   const [gardenKey, setGardenKey] = useState('garden-0');
+  const [stagedPhotos, setStagedPhotos] = useState({});
+  const [activePhotoType, setActivePhotoType] = useState(null);
 
   //define mutations (using Apollo Client)
   const [addSpecies] = useMutation(ADD_SPECIES);
@@ -187,7 +190,7 @@ const TreeData = () => {
   };
 
   //handle photo uploads
-  const handlePhotoUpload = (photo, photoType) => {
+  const stagePhoto = (photo, photoType) => {
     setWorkingTree((prevValues) => ({
       ...prevValues,
       photos: {
@@ -211,6 +214,36 @@ const TreeData = () => {
       ...prev,
       [newSpecies.commonName]: newSpecies.scientificName,
     }));
+  };
+
+  //upload a single file to Cloudinary
+  const handlePhotoUpload = async (file) => {
+    try {
+      const formData = new FormData();
+      formData.append('photo', file);
+
+      // choose endpoint depending on dev vs prod
+      const endpoint = import.meta.env.DEV ? 'http://localhost:3001/api/uploads' : '/api/uploads';
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (!data?.url || !data?.publicId) {
+        throw new Error('Invalid upload response from server');
+      }
+
+      return {
+        url: data.url,
+        publicId: data.publicId,
+      };
+    } catch (err) {
+      console.error('Error uploading photo:', err);
+      throw err;
+    }
   };
 
   //cleanup
@@ -249,7 +282,7 @@ const TreeData = () => {
       }
     }
 
-    if (!workingTree.photos?.environs?.url) {
+    if (!workingTree.photos?.environs?.url && !stagedPhotos.environs) {
       newErrors.environs = 'An environs photo is required.';
     }
 
@@ -258,7 +291,7 @@ const TreeData = () => {
 
     for (const photoType in selectedTree.photos) {
       const originalPhoto = selectedTree.photos?.[photoType];
-      const updatedPhoto = workingTree.photos?.[photoType];
+      const updatedPhoto = stagedPhotos[photoType] || workingTree.photos?.[photoType];
 
       if (originalPhoto?.publicId && !updatedPhoto) {
         photosToDelete.push(originalPhoto.publicId);
@@ -280,6 +313,7 @@ const TreeData = () => {
     }
 
     try {
+      // Handle pending species
       if (pendingSpecies) {
         await addSpecies({ variables: pendingSpecies });
         await refetchSpecies();
@@ -287,20 +321,40 @@ const TreeData = () => {
         setPendingSpecies(null);
       }
 
+      // Upload staged photos to Cloudinary
+      const uploadedPhotos = {};
+      for (const photoType in stagedPhotos) {
+        const file = stagedPhotos[photoType];
+        if (file) {
+          // Use the handlePhotoUpload helper
+          const uploaded = await handlePhotoUpload(file); // returns { url, publicId }
+          uploadedPhotos[photoType] = uploaded;
+        }
+      }
+
+      // Merge uploaded photos with existing ones and normalize
+      const normalizePhoto = (photo) => ({
+        url: photo?.url ?? '',
+        publicId: photo?.publicId ?? '',
+      });
+
+      const photosPayload = {
+        bark: normalizePhoto(uploadedPhotos.bark || workingTree.photos?.bark),
+        summerLeaf: normalizePhoto(uploadedPhotos.summerLeaf || workingTree.photos?.summerLeaf),
+        autumnLeaf: normalizePhoto(uploadedPhotos.autumnLeaf || workingTree.photos?.autumnLeaf),
+        fruit: normalizePhoto(uploadedPhotos.fruit || workingTree.photos?.fruit),
+        flower: normalizePhoto(uploadedPhotos.flower || workingTree.photos?.flower),
+        environs: normalizePhoto(uploadedPhotos.environs || workingTree.photos?.environs),
+      };
+
+      // update workingTree.photos for DB submission
+      workingTree.photos = photosPayload;
+
       const treePayload = {
         commonName: workingTree.commonName,
         variety: workingTree.variety,
         dbh: workingTree.dbh,
-        photos: workingTree.photos
-          ? {
-              bark: workingTree.photos.bark,
-              summerLeaf: workingTree.photos.summerLeaf,
-              autumnLeaf: workingTree.photos.autumnLeaf,
-              fruit: workingTree.photos.fruit,
-              flower: workingTree.photos.flower,
-              environs: workingTree.photos.environs,
-            }
-          : null,
+        photos: photosPayload,
         notes: workingTree.notes,
         location: workingTree.location
           ? {
@@ -340,18 +394,37 @@ const TreeData = () => {
           : null,
         hidden: workingTree.hidden,
       };
+      const cleanedPayload = stripTypename({
+        id: workingTree.id,
+        ...treePayload,
+      });
 
       if (!workingTree?.id) {
-        const { data } = await addTree({ variables: treePayload });
+        const { data } = await addTree({ variables: cleanedPayload });
         await refetchTrees();
         console.log('Tree added:', data.addTree);
       } else {
-        const { data } = await updateTree({
-          variables: { id: workingTree.id, ...treePayload },
-        });
+        const { data } = await updateTree({ variables: cleanedPayload });
         await refetchTrees();
+        try {
+          console.log('Sending treePayload to updateTree:', cleanedPayload);
+
+          const result = await updateTree({
+            variables: cleanedPayload, // make sure this matches your mutation variable names
+          });
+
+          console.log('updateTree result:', result);
+          await refetchTrees();
+        } catch (err) {
+          console.error('Apollo updateTree error:', err);
+          if (err.networkError) {
+            console.error('Network error details:', err.networkError.result || err.networkError);
+          }
+        }
       }
 
+      // Clear stagedPhotos after successful submission
+      setStagedPhotos({});
       setWorkingTree(null);
       navigate('/');
     } catch (err) {
@@ -561,7 +634,11 @@ const TreeData = () => {
 
                 <PhotoUploadForm
                   workingTree={workingTree}
-                  onPhotoUpload={handlePhotoUpload}
+                  onPhotoUpload={stagePhoto}
+                  stagedPhotos={stagedPhotos}
+                  setStagedPhotos={setStagedPhotos}
+                  activePhotoType={activePhotoType}
+                  setActivePhotoType={setActivePhotoType}
                 />
                 {errors.environs && <div className='text-danger mt-1'>{errors.environs}</div>}
               </fieldset>

@@ -54,7 +54,10 @@ async function createApp() {
         stream.end(req.file.buffer);
       });
 
-      res.json({ url: result.secure_url });
+      res.json({
+        url: result.secure_url,
+        publicId: result.public_id,
+      });
     } catch (err) {
       console.error('Cloudinary upload error:', err);
       res.status(500).json({ message: 'Upload failed' });

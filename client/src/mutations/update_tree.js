@@ -40,12 +40,30 @@ export const UPDATE_TREE = gql`
       variety
       dbh
       photos {
-        bark
-        summerLeaf
-        autumnLeaf
-        fruit
-        flower
-        environs
+        bark {
+          url
+          publicId
+        }
+        summerLeaf {
+          url
+          publicId
+        }
+        autumnLeaf {
+          url
+          publicId
+        }
+        fruit {
+          url
+          publicId
+        }
+        flower {
+          url
+          publicId
+        }
+        environs {
+          url
+          publicId
+        }
       }
       notes
       garden

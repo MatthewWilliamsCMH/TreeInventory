@@ -241,3 +241,21 @@ export const handlePhotoClick = (photoUrl) => {
   //append to body
   newWindow.document.body.appendChild(img);
 };
+
+//remove GraphQL added "__typename" fields from an object recursively
+export const stripTypename = (obj) => {
+  if (Array.isArray(obj)) {
+    return obj.map((item) => stripTypename(item));
+  }
+
+  if (obj !== null && typeof obj === 'object') {
+    const newObj = {};
+    for (const key in obj) {
+      if (key !== '__typename' && Object.prototype.hasOwnProperty.call(obj, key)) {
+        newObj[key] = stripTypename(obj[key]);
+      }
+    }
+    return newObj;
+  }
+  return obj;
+};

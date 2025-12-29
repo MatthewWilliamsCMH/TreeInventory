@@ -1,14 +1,12 @@
 //---------Import----------
 //external libraries
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import Uppy from '@uppy/core';
 import { DashboardModal } from '@uppy/react';
-import XHRUpload from '@uppy/xhr-upload';
+// import XHRUpload from '@uppy/xhr-upload';
 import FileInput from '@uppy/file-input';
 import Compressor from '@uppy/compressor';
-
-import AppContext from '../../appContext';
 
 //project-specific helpers
 import { handlePhotoClick } from '../../utils/helpers.js';
@@ -20,19 +18,11 @@ import '@uppy/dashboard/dist/style.css';
 import '@uppy/file-input/dist/style.css';
 
 //----------Create Component----------
-const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
-  //access global states from parent (using Context)
-  const { setWorkingTree } = useContext(AppContext);
-
-  //define local states and set initial values
+const PhotoUploadForm = ({ workingTree, stagedPhotos, setStagedPhotos }) => {
   const [activePhotoType, setActivePhotoType] = useState(null);
-  const [cameraDevices, setCameraDevices] = useState([]);
-  const [selectedPhotoUrl, setSelectedPhotoUrl] = useState(null);
-  const [showFullSize, setShowFullSize] = useState(false);
   const [uppy, setUppy] = useState(null);
 
   //useEffects
-  //create prop variables for Uppy.use below
   useEffect(() => {
     const uppyConfig = {
       restrictions: {
@@ -59,13 +49,6 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
       title: 'Load a Photo',
     };
 
-    const XHRUploadConfig = {
-      endpoint: import.meta.env.DEV ? 'http://localhost:3001/api/uploads' : '/api/uploads',
-      fieldName: 'photo',
-      formData: true,
-    };
-    console.log('Upload endpoint:', XHRUploadConfig.endpoint);
-
     const compressorConfig = {
       quality: 0.8,
       maxWidth: 1920,
@@ -77,28 +60,23 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
 
     const uppyInstance = new Uppy(uppyConfig)
       .use(FileInput, fileInputConfig)
-      .use(XHRUpload, XHRUploadConfig)
+      // .use(XHRUpload, XHRUploadConfig)
       .use(Compressor, compressorConfig);
 
-    const handleUploadSuccess = (file, response) => {
-      const uploadedPhoto = {
-        url: response.body.url,
-        publicId: response.body.publicId,
-      };
-      console.log('Upload success:', uploadedPhoto);
-      onPhotoUpload(uploadedPhoto, activePhotoType);
-      setActivePhotoType(null);
-    };
-
-    uppyInstance.on('upload-success', handleUploadSuccess);
+    // add file to stagedPhotos and close dashboard immediately
+    uppyInstance.on('file-added', (file) => {
+      if (activePhotoType) {
+        setStagedPhotos((prev) => ({ ...prev, [activePhotoType]: file.data }));
+        setActivePhotoType(null);
+      }
+    });
 
     setUppy(uppyInstance);
 
     return () => {
-      uppyInstance.off('upload-success', handleUploadSuccess);
       uppyInstance.destroy();
     };
-  }, [activePhotoType, onPhotoUpload]);
+  }, [activePhotoType, setStagedPhotos]);
 
   //handlers and callback functions
   const handleDeletePhoto = (photoType) => {
@@ -114,13 +92,7 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
       return;
     }
 
-    setWorkingTree((prev) => ({
-      ...prev,
-      photos: {
-        ...prev.photos,
-        [photoType]: null,
-      },
-    }));
+    setStagedPhotos((prev) => ({ ...prev, [photoType]: null }));
   };
 
   //----------Render Component----------
@@ -132,7 +104,10 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
       >
         <Row className='g-1'>
           {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
-            const src = workingTree.photos?.[photoType];
+            const saved = workingTree.photos?.[photoType];
+            const staged = stagedPhotos[photoType];
+            const src = staged ? URL.createObjectURL(staged) : saved?.url;
+
             return (
               <Col
                 xs={4}
@@ -145,25 +120,21 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
               >
                 <div
                   onClick={() => {
-                    if (src?.url) {
-                      handlePhotoClick(src.url);
-                    } else {
-                      setActivePhotoType(photoType);
-                      uppy?.cancelAll();
-                    }
+                    if (src) handlePhotoClick(src);
+                    else setActivePhotoType(photoType);
                   }}
                   style={{
                     cursor: 'pointer',
                     width: '100%',
                   }}
                 >
-                  {src?.url ? (
+                  {src ? (
                     <div style={{ position: 'relative' }}>
                       <Image
                         alt={photoType}
                         className='object-cover'
                         rounded
-                        src={src.url}
+                        src={src}
                         style={{
                           width: '100%',
                           height: '100px',
@@ -215,21 +186,10 @@ const PhotoUploadForm = ({ workingTree, onPhotoUpload }) => {
           uppy={uppy}
           open={activePhotoType !== null}
           onRequestClose={() => setActivePhotoType(null)}
-          // plugins={['Webcam']}
+          hideUploadButton={true}
           proudlyDisplayPoweredByUppy={false}
           showProgressDetails={true}
-          note={`Upload or take a photo of the tree's ${activePhotoType}`}
-        />
-      )}
-
-      {showFullSize && (
-        <FullSizePhoto
-          photoUrl={selectedPhotoUrl}
-          onClose={() => setShowFullSize(false)}
-          onEdit={() => {
-            setShowFullSize(false);
-            setActivePhotoType(activePhotoType);
-          }}
+          note={`Select or take a photo of the tree's ${activePhotoType}`}
         />
       )}
     </>
