@@ -286,12 +286,12 @@ const TreeData = () => {
       newErrors.environs = 'An environs photo is required.';
     }
 
-    // build list of publicIds to delete
+    //build list of publicIds to delete
     const photosToDelete = [];
 
     for (const photoType in selectedTree.photos) {
       const originalPhoto = selectedTree.photos?.[photoType];
-      const updatedPhoto = stagedPhotos[photoType] || workingTree.photos?.[photoType];
+      const updatedPhoto = workingTree.photos?.[photoType];
 
       if (originalPhoto?.publicId && !updatedPhoto) {
         photosToDelete.push(originalPhoto.publicId);
@@ -633,12 +633,13 @@ const TreeData = () => {
                 />
 
                 <PhotoUploadForm
-                  workingTree={workingTree}
-                  onPhotoUpload={stagePhoto}
-                  stagedPhotos={stagedPhotos}
-                  setStagedPhotos={setStagedPhotos}
                   activePhotoType={activePhotoType}
+                  onPhotoUpload={stagePhoto}
                   setActivePhotoType={setActivePhotoType}
+                  setStagedPhotos={setStagedPhotos}
+                  setWorkingTree={setWorkingTree}
+                  stagedPhotos={stagedPhotos}
+                  workingTree={workingTree}
                 />
                 {errors.environs && <div className='text-danger mt-1'>{errors.environs}</div>}
               </fieldset>

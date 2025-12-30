@@ -18,7 +18,7 @@ import '@uppy/dashboard/dist/style.css';
 import '@uppy/file-input/dist/style.css';
 
 //----------Create Component----------
-const PhotoUploadForm = ({ workingTree, stagedPhotos, setStagedPhotos }) => {
+const PhotoUploadForm = ({ setStagedPhotos, setWorkingTree, stagedPhotos, workingTree }) => {
   const [activePhotoType, setActivePhotoType] = useState(null);
   const [uppy, setUppy] = useState(null);
 
@@ -78,21 +78,41 @@ const PhotoUploadForm = ({ workingTree, stagedPhotos, setStagedPhotos }) => {
     };
   }, [activePhotoType, setStagedPhotos]);
 
+  useEffect(() => {
+    return () => {
+      Object.values(stagedPhotos).forEach((file) => {
+        if (file instanceof File) {
+          URL.revokeObjectURL(file);
+        }
+      });
+    };
+  }, [stagedPhotos]);
+
   //handlers and callback functions
   const handleDeletePhoto = (photoType) => {
     let confirmMessage = 'Are you sure you want to delete the photo?';
     if (photoType === 'environs') {
-      confirmMessage =
-        confirmMessage +
+      confirmMessage +=
         '\n\nAn environs photo is required. It must be replaced to update the tree.';
     }
 
-    const userConfirmed = window.confirm(confirmMessage);
-    if (!userConfirmed) {
-      return;
-    }
+    if (!window.confirm(confirmMessage)) return;
 
-    setStagedPhotos((prev) => ({ ...prev, [photoType]: null }));
+    // 1️⃣ Remove any newly staged upload
+    setStagedPhotos((prev) => {
+      const next = { ...prev };
+      delete next[photoType];
+      return next;
+    });
+
+    // 2️⃣ Remove the existing photo from the working tree
+    setWorkingTree((prev) => ({
+      ...prev,
+      photos: {
+        ...prev.photos,
+        [photoType]: null,
+      },
+    }));
   };
 
   //----------Render Component----------

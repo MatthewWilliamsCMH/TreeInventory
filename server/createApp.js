@@ -1,7 +1,8 @@
 // server/createApp.js
-const express = require('express');
 const cors = require('cors');
+const express = require('express');
 const multer = require('multer');
+const path = require('path');
 
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
@@ -46,11 +47,18 @@ async function createApp() {
     }
 
     try {
+      const originalName = path.parse(req.file.originalname).name;
+
       const result = await new Promise((resolve, reject) => {
         const stream = cloudinary.uploader.upload_stream(
-          { folder: `${baseFolder}` },
+          {
+            folder: baseFolder,
+            public_id: originalName,
+            overwrite: true,
+          },
           (err, result) => (err ? reject(err) : resolve(result))
         );
+
         stream.end(req.file.buffer);
       });
 
