@@ -146,7 +146,7 @@ const TreeMap = () => {
   useEffect(() => {
     if (!mapRef.current) return;
 
-    if (isLoggedIn) {
+    if (isLoggedInRef.current) {
       mapRef.current.on('click', handleAddTree);
       return () => {
         if (mapRef.current) mapRef.current.off('click', handleAddTree);
@@ -274,7 +274,7 @@ const TreeMap = () => {
       setSelectedTree(tree);
       setWorkingTree(tree);
       setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-      if (isLoggedIn) {
+      if (isLoggedInRef.current) {
         navigate('/TreeData');
       } else {
         navigate('/TreeDetails');

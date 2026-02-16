@@ -90,20 +90,20 @@ const App = () => {
   } = useQuery(GET_SPECIES);
 
   //useEffects
-  useEffect(() => {
-    const useFixedLocation = import.meta.env.VITE_FIXED_LOCATION === 'true';
-    if (!useFixedLocation) {
-      console.log(mapCenter);
-      navigator.geolocation.getCurrentPosition(
-        ({ coords: { latitude, longitude } }) => {
-          setMapCenter([latitude, longitude]);
-        },
-        (error) => {
-          console.log('Geolocation error:', error);
-        },
-      );
-    }
-  }, []);
+  //commented this out for now because it's not working; the center remains at Summit Chase no matter what. I'll add it back when I actually need it.
+  // useEffect(() => {
+  //   const useFixedLocation = import.meta.env.VITE_FIXED_LOCATION === 'true';
+  //   if (!useFixedLocation) {
+  //     navigator.geolocation.getCurrentPosition(
+  //       ({ coords: { latitude, longitude } }) => {
+  //         setMapCenter([latitude, longitude]);
+  //       },
+  //       (error) => {
+  //         console.log('Geolocation error:', error);
+  //       },
+  //     );
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (getTreesData?.trees) {
