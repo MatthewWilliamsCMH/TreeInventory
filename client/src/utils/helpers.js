@@ -27,7 +27,7 @@ export const handleFieldChange = (workingTree, field, value, commonToScientific)
 
   if (field === 'scientificName') {
     const commonFromScientific = Object.keys(commonToScientific).find(
-      (common) => commonToScientific[common] === value
+      (common) => commonToScientific[common] === value,
     );
     return {
       ...workingTree,
@@ -47,7 +47,7 @@ export const getTodayFormatted = () => {
   const today = new Date();
   return `${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(
     2,
-    '0'
+    '0',
   )}/${today.getFullYear()}`;
 };
 
@@ -114,7 +114,7 @@ export const formatDateForDisplay = (dateStr) => {
     const date = new Date(Number(dateStr));
     return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
       2,
-      '0'
+      '0',
     )}/${date.getUTCFullYear()}`;
   }
 
@@ -123,7 +123,7 @@ export const formatDateForDisplay = (dateStr) => {
   if (!isNaN(date.getTime())) {
     return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
       2,
-      '0'
+      '0',
     )}/${date.getUTCFullYear()}`;
   }
 
@@ -208,6 +208,7 @@ export const confirmDiscardChanges = (workingTree, selectedTree) => {
 };
 
 export const handlePhotoClick = (photoUrl) => {
+  console.log('photoUrl:', photoUrl); // <-- check this on Vercel
   if (!photoUrl) return;
 
   //open a new browser window
