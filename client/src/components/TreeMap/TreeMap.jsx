@@ -196,10 +196,9 @@ const TreeMap = () => {
     const popupContent = `
       ${
         tree.photos.environs?.url
-          ? `<img src="${tree.photos.environs?.url}" alt="Environs" style="max-width: 100px; max-height: 100px;"><br>`
+          ? `<img src="${tree.photos.environs?.url}" alt="Environs" style="max-width: 100px; max-height: 100px; padding-bottom: 10px;"><br>`
           : ''
       }
-      Id: ${tree.id}<br>
       <b>${tree.commonName}</b><br>
       <i>${tree.scientificName}</i><br>
       Family: <span style="display: inline-block; width: 12px; height: 12px; background-color: ${
@@ -278,36 +277,39 @@ const TreeMap = () => {
     });
 
     marker.on('contextmenu', (event) => {
-      //close popup
-      if (marker.isPopupOpen()) {
-        marker.closePopup();
+      if (isLoggedIn) {
+        //close popup
+        if (marker.isPopupOpen()) {
+          marker.closePopup();
+        }
+
+        //toggle draggable state
+        markerInfo.draggable = !markerInfo.draggable;
+        if (markerInfo.draggable) {
+          marker.dragging.enable();
+        } else {
+          marker.dragging.disable();
+        }
+
+        //toggle opacity
+        markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
+
+        //calculate current radius based on actual zoom level
+        const currentZoom = mapRef.current.getZoom();
+        const currentRadius =
+          Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
+        const isSelected = selectedTree?.id === tree.id;
+
+        //generate new icon with updated opacity and current radius
+        const updatedIcon = generateTreeMarkerIcon({
+          tree,
+          species,
+          radius: currentRadius,
+          opacity: markerInfo.opacity,
+          isSelected,
+        });
+        marker.setIcon(updatedIcon);
       }
-
-      //toggle draggable state
-      markerInfo.draggable = !markerInfo.draggable;
-      if (markerInfo.draggable) {
-        marker.dragging.enable();
-      } else {
-        marker.dragging.disable();
-      }
-
-      //toggle opacity
-      markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
-
-      //calculate current radius based on actual zoom level
-      const currentZoom = mapRef.current.getZoom();
-      const currentRadius = Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
-      const isSelected = selectedTree?.id === tree.id;
-
-      //generate new icon with updated opacity and current radius
-      const updatedIcon = generateTreeMarkerIcon({
-        tree,
-        species,
-        radius: currentRadius,
-        opacity: markerInfo.opacity,
-        isSelected,
-      });
-      marker.setIcon(updatedIcon);
     });
   };
 
