@@ -148,22 +148,23 @@ const TreeDetails = () => {
         <Row className='mt-2 g-1'>
           {['bark', 'summerLeaf', 'autumnLeaf', 'fruit', 'flower', 'environs'].map((photoType) => {
             const src = selectedTree.photos?.[photoType];
+            // const src = selectedTree.photos?.[photoType].url;
             if (!src?.url) return null; //skip empty photos
 
             return (
               <Col
-                key={photoType}
                 xs={6}
                 sm={6}
                 md={4}
                 lg={3}
                 style={{ color: '#BBB' }}
+                key={photoType}
               >
                 <Image
                   alt={photoType}
                   className='object-cover'
                   rounded
-                  onClick={() => handlePhotoClick(src)}
+                  onClick={() => handlePhotoClick(src.url)}
                   src={src.url}
                   style={{
                     width: '100%',

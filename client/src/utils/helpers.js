@@ -208,7 +208,6 @@ export const confirmDiscardChanges = (workingTree, selectedTree) => {
 };
 
 export const handlePhotoClick = (photoUrl) => {
-  console.log('photoUrl:', photoUrl); // <-- check this on Vercel
   if (!photoUrl) return;
 
   //open a new browser window
