@@ -93,13 +93,14 @@ const App = () => {
   useEffect(() => {
     const useFixedLocation = import.meta.env.VITE_FIXED_LOCATION === 'true';
     if (!useFixedLocation) {
+      console.log(mapCenter);
       navigator.geolocation.getCurrentPosition(
         ({ coords: { latitude, longitude } }) => {
           setMapCenter([latitude, longitude]);
         },
         (error) => {
           console.log('Geolocation error:', error);
-        }
+        },
       );
     }
   }, []);

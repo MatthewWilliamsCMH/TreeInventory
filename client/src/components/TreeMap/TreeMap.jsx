@@ -23,13 +23,6 @@ import styles from './treeMap.module.css';
 
 //----------Create Component----------
 const TreeMap = () => {
-  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
-  const navigate = useNavigate();
-  const mapContainerRef = useRef(null);
-  const mapRef = useRef(null);
-  const markersRef = useRef({});
-  const userLocationRef = useRef(null);
-
   //access global states from parent (using Context)
   const {
     allSpecies,
@@ -51,6 +44,14 @@ const TreeMap = () => {
     setSelectedTree,
     setWorkingTree,
   } = useContext(AppContext);
+
+  //initialize React hooks (e.g., useRef, useNavigate, custom hooks)
+  const navigate = useNavigate();
+  const mapContainerRef = useRef(null);
+  const mapRef = useRef(null);
+  const markersRef = useRef({});
+  const userLocationRef = useRef(null);
+  const isLoggedInRef = useRef(isLoggedIn);
 
   //define local states and set initial values
   const [markerRadius, setMarkerRadius] = useState(6);
@@ -135,6 +136,11 @@ const TreeMap = () => {
       markersRef.current = {};
     };
   }, []);
+
+  //keep isLoggedInRef updated with latest value of isLoggedIn so it can be accessed in event handlers without stale closure issues
+  useEffect(() => {
+    isLoggedInRef.current = isLoggedIn;
+  }, [isLoggedIn]);
 
   //add a new tree if user logged in
   useEffect(() => {
@@ -277,7 +283,7 @@ const TreeMap = () => {
     });
 
     marker.on('contextmenu', (event) => {
-      if (isLoggedIn) {
+      if (isLoggedInRef.current) {
         //close popup
         if (marker.isPopupOpen()) {
           marker.closePopup();
