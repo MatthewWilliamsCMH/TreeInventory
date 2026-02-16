@@ -34,7 +34,7 @@ const TreeInventory = () => {
     if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1;
     return 0;
   });
-
+  console.log(sortedTrees);
   //handlers and callback functions
   //handle click on column headers to sort
   const handleSort = (columnKey) => {
@@ -85,7 +85,7 @@ const TreeInventory = () => {
               <td>
                 {tree?.photos.environs ? (
                   <img
-                    src={`${tree.photos.environs}`}
+                    src={`${tree.photos.environs.url}`}
                     alt={`Environment surrounding ${tree.commonName}`}
                     style={{ width: '3.75rem' }}
                   />
