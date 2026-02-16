@@ -83,7 +83,7 @@ const TreeInventory = () => {
               onClick={() => handleTreeClick(tree)}
             >
               <td>
-                {tree?.photos.environs ? (
+                {tree?.photos?.environs?.url ? (
                   <img
                     src={`${tree.photos.environs.url}`}
                     alt={`Environment surrounding ${tree.commonName}`}
@@ -101,7 +101,6 @@ const TreeInventory = () => {
               <td>{tree?.garden || ''}</td>
               <td>{tree?.dbh ? `${tree.dbh} inches` : ''}</td>
               <td style={{ maxWidth: '20rem' }}>{tree?.notes || ''}</td>
-              <td>{tree?.id || ''}</td>
             </tr>
           ))}
         </tbody>
