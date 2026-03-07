@@ -301,6 +301,7 @@ const TreeMap = () => {
         clickTimer = null;
       }
 
+      if (isLoggedInRef.current) {
       //close popup
       if (marker.isPopupOpen()) {
         marker.closePopup();
@@ -334,6 +335,7 @@ const TreeMap = () => {
         isSelected,
       });
       marker.setIcon(updatedIcon);
+      }
     });
 
     marker.on('popupopen', (event) => {
