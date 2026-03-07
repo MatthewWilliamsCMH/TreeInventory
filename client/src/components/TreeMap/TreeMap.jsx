@@ -248,82 +248,7 @@ const TreeMap = () => {
       });
     });
 
-//BEGIN HOVER CODE
-  //   //I removed the "event" parameter in the mouseover and click below because I don't need the data it carries. If I need this data later, put it "event" back in parens
-  //   marker.on('mouseover', () => {
-  //     mapRef.current.getContainer().style.cursor = 'pointer';
-  //     marker.bindPopup(popupContent).openPopup();
-  //   });
-
-  //   marker.on('mouseout', () => {
-  //     mapRef.current.getContainer().style.cursor = 'default';
-  //     mapRef.current.closePopup();
-  //   });
-
-  //   marker.on('click', () => {
-  //     //if a tree was already selected, find its id and set its marker back to normal
-  //     if (selectedTree && markersRef.current[selectedTree.id]) {
-  //       markersRef.current[selectedTree.id].marker.setIcon(
-  //         generateTreeMarkerIcon({
-  //           tree: selectedTree,
-  //           species: markersRef.current[selectedTree.id].species,
-  //           isSelected: false,
-  //         }),
-  //       );
-  //     }
-
-  //     //establish newly selected tree
-  //     const isSelected = true;
-  //     setSelectedTree(tree);
-  //     setWorkingTree(tree);
-  //     setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-  //     if (isLoggedInRef.current) {
-  //       navigate('/TreeData');
-  //     } else {
-  //       navigate('/TreeDetails');
-  //     }
-  //     mapRef.current.closePopup();
-  //   });
-
-  //   marker.on('contextmenu', (event) => {
-  //     if (isLoggedInRef.current) {
-  //       //close popup
-  //       if (marker.isPopupOpen()) {
-  //         marker.closePopup();
-  //       }
-
-  //       //toggle draggable state
-  //       markerInfo.draggable = !markerInfo.draggable;
-  //       if (markerInfo.draggable) {
-  //         marker.dragging.enable();
-  //       } else {
-  //         marker.dragging.disable();
-  //       }
-
-  //       //toggle opacity
-  //       markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
-
-  //       //calculate current radius based on actual zoom level
-  //       const currentZoom = mapRef.current.getZoom();
-  //       const currentRadius =
-  //         Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) || 6;
-  //       const isSelected = selectedTree?.id === tree.id;
-
-  //       //generate new icon with updated opacity and current radius
-  //       const updatedIcon = generateTreeMarkerIcon({
-  //         tree,
-  //         species,
-  //         radius: currentRadius,
-  //         opacity: markerInfo.opacity,
-  //         isSelected,
-  //       });
-  //       marker.setIcon(updatedIcon);
-  //     }
-  //   });
-  // };
-//END HOVER CODE
-//BEGIN CLICK CODE
-//click timer to differentiate between single and double clicks
+    //click timer to differentiate between single and double clicks
     let clickTimer = null;
     const clickDelay = 200;
 
@@ -332,8 +257,6 @@ const TreeMap = () => {
       if (clickTimer) {
         return;
       }
-//THE PROBLEM IS HERE. ONCLICK, THE POP UP SHOULD OPEN. ON CLICK FOR THE POPUP SHOULD DO THE NEXT BIT  
-//SALVAGE THE POPUP EVENTS FROM THE BACK UP
 
       mapRef.current.getContainer().style.cursor = 'pointer';
       marker.bindPopup(popupContent).openPopup();
@@ -353,14 +276,6 @@ const TreeMap = () => {
       const isSelected = true;
       setSelectedTree(tree);
       setWorkingTree(tree);
-      // setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-      // if (isLoggedInRef.current) {
-      //   navigate('/TreeData');
-      // } else {
-      //   navigate('/TreeDetails');
-      // }
-      // mapRef.current.closePopup();
-
       //if no second click within the delay treat as single click
       clickTimer = setTimeout(() => {
         marker.bindPopup(popupContent).openPopup();
@@ -426,45 +341,28 @@ const TreeMap = () => {
 
       //allow navigation when any part of popup except close button is clicked
       popupElement.addEventListener('click', () => {
-        if (previousSelectedTreeRef.current) {
-          const prevMarkerInfo = markersRef.current.find(
-            (m) => m.tree.id === previousSelectedTreeRef.current.id,
+        if (selectedTree && markersRef.current[selectedTree.id]) {
+          markersRef.current[selectedTree.id].marker.setIcon(
+            generateTreeMarkerIcon({
+              tree: selectedTree,
+              species: markersRef.current[selectedTree.id].species,
+              isSelected: false,
+            }),
           );
-          if (prevMarkerInfo) {
-            prevMarkerInfo.marker.setIcon(
-              generateTreeMarkerIcon({
-                tree: prevMarkerInfo.tree,
-                species: prevMarkerInfo.species,
-                radius: markerRadius,
-                opacity: prevMarkerInfo.opacity,
-                isSelected: false,
-              }),
-            );
-          }
         }
 
-        const isSelected = true;
-        const newIcon = generateTreeMarkerIcon({
-          tree,
-          species,
-          radius: markerRadius,
-          opacity: 1,
-          isSelected,
-        });
-        const markerInfo = markersRef.current.find((m) => m.tree.id === tree.id);
-        if (markerInfo) {
-          markerInfo.marker.setIcon(newIcon);
-        }
-        previousSelectedTreeRef.current = tree;
-        setSelectedTree(tree);
-        setWorkingTree(tree);
-        setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
-        if (isLoggedIn) {
-          navigate('/TreeData');
-        } else {
-          navigate('/TreeDetails');
-        }
-        mapRef.current.closePopup();
+     //establish newly selected tree
+      const isSelected = true;
+      setSelectedTree(tree);
+      setWorkingTree(tree);
+      setFormColor({ backgroundColor: tree.invasive ? '#FFDEDE' : 'white' });
+      if (isLoggedInRef.current) {
+        navigate('/TreeData');
+      } else {
+        navigate('/TreeDetails');
+      }
+      mapRef.current.closePopup();
+
       });
     });
 
@@ -477,7 +375,6 @@ const TreeMap = () => {
       mapRef.current.getContainer().style.cursor = 'default';
     });
   };
-//END CLICK CODE
 
   //create new tree object with lat and lng complete but other fields blank
   const handleAddTree = (event) => {
