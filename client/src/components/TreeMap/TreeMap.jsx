@@ -107,24 +107,25 @@ const TreeMap = () => {
       })
       .addTo(mapRef.current);
 
-    navigator.geolocation.watchPosition(
-      ({ coords: { latitude, longitude } }) => {
-        if (!mapRef.current) return;
-        if (userLocationRef.current && mapRef.current.hasLayer(userLocationRef.current)) {
-          mapRef.current.removeLayer(userLocationRef.current);
-        }
+    //commented out because it's not centering on user location, and right now, I don't need it; I'll reactivate it when I do
+    // navigator.geolocation.watchPosition(
+    //   ({ coords: { latitude, longitude } }) => {
+    //     if (!mapRef.current) return;
+    //     if (userLocationRef.current && mapRef.current.hasLayer(userLocationRef.current)) {
+    //       mapRef.current.removeLayer(userLocationRef.current);
+    //     }
 
-        userLocationRef.current = leaflet
-          .circle([latitude, longitude], {
-            radius: 8,
-            weight: 4,
-            color: '#FFFF00',
-            fillOpacity: 0.3,
-          })
-          .addTo(mapRef.current);
-      },
-      (error) => console.log('Geolocation error:', error),
-    );
+    //     userLocationRef.current = leaflet
+    //       .circle([latitude, longitude], {
+    //         radius: 8,
+    //         weight: 4,
+    //         color: '#FFFF00',
+    //         fillOpacity: 0.3,
+    //       })
+    //       .addTo(mapRef.current);
+    //   },
+    //   (error) => console.log('Geolocation error:', error),
+    // );
 
     mapRef.current.on('click', handleAddTree);
     mapRef.current.on('zoomend', () => setMapZoom(mapRef.current.getZoom()));

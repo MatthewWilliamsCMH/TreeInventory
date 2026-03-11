@@ -157,6 +157,7 @@ export const formatDateForDb = (dateStr) => {
 
   return cleaned;
 };
+
 //combine tree and species data
 export const combineTreeAndSpeciesData = (tree, speciesMap) => {
   const species = speciesMap.find((s) => s.commonName === tree.commonName) || {};
@@ -207,6 +208,7 @@ export const confirmDiscardChanges = (workingTree, selectedTree) => {
   return true; // no unsaved changes, so okay to proceed
 };
 
+//open a new window to display the full-size photo when a thumbnail is clicked
 export const handlePhotoClick = (photoUrl) => {
   if (!photoUrl) return;
 
