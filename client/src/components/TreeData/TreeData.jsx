@@ -643,47 +643,52 @@ const TreeData = () => {
                   type="text"
                   value={workingTree.variety}
                 />
-
-                <Form.Check
-                  className="mt-2 mb-2"
-                  checked={workingTree.multistem}
-                  id="multistem"
-                  label="Multistem"
-                  onChange={(event) => handleInputChange(`${multistem}`, event)}
-                  type="checkbox"
-                />
-
-                <Typeahead
-                  className="mt-1"
-                  id="dbh"
-                  isSearchable={true}
-                  key={dbhKey}
-                  labelKey="label"
-                  multiple={false}
-                  onChange={(selected) => {
-                    const value = selected?.[0]?.value || "";
-                    setWorkingTree((prev) => ({ ...prev, dbh: value }));
-                  }}
-                  onInputChange={(text) => {
-                    if (text.trim() === "") {
-                      setWorkingTree((prev) => ({ ...prev, dbh: "" }));
-                      return;
-                    }
-                    setWorkingTree((prev) => ({ ...prev, dbh: text }));
-                  }}
-                  options={dbhList.map((dbh) => ({
-                    label: dbh,
-                    value: dbh,
-                  }))}
-                  placeholder="Select a dbh (multistem: √(a² + b² + … + n²))"
-                  renderMenuItemChildren={(option) => <>{option.label}</>}
-                  selected={
-                    workingTree.dbh
-                      ? [{ label: workingTree.dbh, value: workingTree.dbh }]
-                      : []
-                  }
-                />
-
+                <Row>
+                  <Col md={8}>
+                    <Typeahead
+                      className="mt-1"
+                      id="dbh"
+                      isSearchable={true}
+                      key={dbhKey}
+                      labelKey="label"
+                      multiple={false}
+                      onChange={(selected) => {
+                        const value = selected?.[0]?.value || "";
+                        setWorkingTree((prev) => ({ ...prev, dbh: value }));
+                      }}
+                      onInputChange={(text) => {
+                        if (text.trim() === "") {
+                          setWorkingTree((prev) => ({ ...prev, dbh: "" }));
+                          return;
+                        }
+                        setWorkingTree((prev) => ({ ...prev, dbh: text }));
+                      }}
+                      options={dbhList.map((dbh) => ({
+                        label: dbh,
+                        value: dbh,
+                      }))}
+                      placeholder="Select a dbh (multistem: √(a² + b² + … + n²))"
+                      renderMenuItemChildren={(option) => <>{option.label}</>}
+                      selected={
+                        workingTree.dbh
+                          ? [{ label: workingTree.dbh, value: workingTree.dbh }]
+                          : []
+                      }
+                    />
+                  </Col>
+                  <Col md={4}>
+                    <Form.Check
+                      className="mt-2 mb-2"
+                      checked={workingTree.multistem}
+                      id="multistem"
+                      label="Multistem"
+                      onChange={(event) =>
+                        handleInputChange(`${multistem}`, event)
+                      }
+                      type="checkbox"
+                    />
+                  </Col>
+                </Row>
                 <PhotoUploadForm
                   activePhotoType={activePhotoType}
                   onPhotoUpload={stagePhoto}
