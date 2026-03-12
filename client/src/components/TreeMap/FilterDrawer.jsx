@@ -141,6 +141,9 @@ const FilterDrawer = ({ filteredTrees }) => {
       <Offcanvas.Body>
         <Row>
           <legend className="text-white h6">Tree Profile</legend>
+          <p style={{ fontSize: "0.8rem" }}>
+            Hide/show trees with these characteristics
+          </p>
           <Select
             closeMenuOnSelect={false}
             components={{
@@ -340,6 +343,7 @@ const FilterDrawer = ({ filteredTrees }) => {
 
         <Row className="mt-3">
           <legend className="text-white h6">Care Needs</legend>
+          <p style={{ fontSize: "0.8rem" }}>Hide/show trees with these needs</p>
           {careNeedsList.map((need) => (
             <label key={need}>
               <Toggle
@@ -368,6 +372,9 @@ const FilterDrawer = ({ filteredTrees }) => {
         </Row>
         <Row className="mt-3">
           <legend className="text-white h6">Site Info</legend>
+          <p style={{ fontSize: "0.8rem" }}>
+            Hide/show trees with site conditions
+          </p>
           {siteConditionsList.map((condition) => (
             <label key={condition}>
               <Toggle

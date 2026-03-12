@@ -60,6 +60,7 @@ const TreeMap = () => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
     return mergedTrees.filter((tree) => {
+      if (!filterCriteria.multistem && tree.multistem) return false;
       if (!filterCriteria.hidden && tree.hidden) return false;
       if (!filterCriteria.nonnative && tree.nonnative) return false;
       if (!filterCriteria.invasive && tree.invasive) return false;
