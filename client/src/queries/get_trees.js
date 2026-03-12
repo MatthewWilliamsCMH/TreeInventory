@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const GET_TREES = gql`
   query getTrees {
@@ -7,6 +7,7 @@ export const GET_TREES = gql`
       commonName
       variety
       dbh
+      multistem
       photos {
         bark {
           url
@@ -39,7 +40,7 @@ export const GET_TREES = gql`
         easting
       }
       garden
-      siteInfo {
+      siteConditions {
         slope
         overheadLines
         treeCluster
@@ -53,7 +54,7 @@ export const GET_TREES = gql`
       felledDate
       felledBy
       careNeeds {
-        multistem
+        structuralSupport
         raiseCrown
         routinePrune
         trainingPrune

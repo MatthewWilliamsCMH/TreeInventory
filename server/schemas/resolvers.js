@@ -1,8 +1,8 @@
-const Tree = require('../models/Tree');
-const Species = require('../models/Species');
-const User = require('../models/User');
+const Tree = require("../models/Tree");
+const Species = require("../models/Species");
+const User = require("../models/User");
 
-const argon2 = require('argon2');
+const argon2 = require("argon2");
 
 const resolvers = {
   Query: {
@@ -74,7 +74,7 @@ const resolvers = {
         notes,
         location,
         garden,
-        siteInfo,
+        siteConditions,
         lastUpdated,
         installedDate,
         installedBy,
@@ -82,12 +82,14 @@ const resolvers = {
         felledBy,
         careNeeds,
         hidden,
-      }
+      },
     ) => {
       try {
         const speciesExists = await Species.findOne({ commonName });
         if (!speciesExists) {
-          throw new Error(`Species with common name '${commonName}' not found.`);
+          throw new Error(
+            `Species with common name '${commonName}' not found.`,
+          );
         }
         return await Tree.create({
           commonName,
@@ -97,7 +99,7 @@ const resolvers = {
           notes,
           location,
           garden,
-          siteInfo,
+          siteConditions,
           lastUpdated,
           installedDate,
           installedBy,
@@ -122,7 +124,7 @@ const resolvers = {
         photos,
         notes,
         garden,
-        siteInfo,
+        siteConditions,
         lastUpdated,
         installedDate,
         installedBy,
@@ -130,13 +132,15 @@ const resolvers = {
         felledBy,
         careNeeds,
         hidden,
-      }
+      },
     ) => {
       try {
         if (commonName) {
           const speciesExists = await Species.findOne({ commonName });
           if (!speciesExists) {
-            throw new Error(`Species with common name '${commonName}' not found.`);
+            throw new Error(
+              `Species with common name '${commonName}' not found.`,
+            );
           }
         }
         return await Tree.findByIdAndUpdate(
@@ -148,7 +152,7 @@ const resolvers = {
             photos,
             notes,
             garden,
-            siteInfo,
+            siteConditions,
             lastUpdated,
             installedDate,
             installedBy,
@@ -157,7 +161,7 @@ const resolvers = {
             careNeeds,
             hidden,
           },
-          { new: true }
+          { new: true },
         );
       } catch (err) {
         console.error(err);
@@ -172,7 +176,7 @@ const resolvers = {
           {
             location,
           },
-          { new: true }
+          { new: true },
         );
       } catch (err) {
         console.error(err);
@@ -182,7 +186,7 @@ const resolvers = {
 
     addSpecies: async (
       _,
-      { family, commonName, scientificName, nonnative, invasive, markerColor }
+      { family, commonName, scientificName, nonnative, invasive, markerColor },
     ) => {
       try {
         const existingSpecies = await Species.findOne({
@@ -191,7 +195,7 @@ const resolvers = {
 
         if (existingSpecies) {
           throw new Error(
-            `Species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`
+            `Species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`,
           );
         }
 
@@ -211,7 +215,15 @@ const resolvers = {
 
     updateSpecies: async (
       _,
-      { id, family, commonName, scientificName, nonnative, invasive, markerColor }
+      {
+        id,
+        family,
+        commonName,
+        scientificName,
+        nonnative,
+        invasive,
+        markerColor,
+      },
     ) => {
       try {
         const existingSpecies = await Species.findOne({
@@ -221,7 +233,7 @@ const resolvers = {
 
         if (existingSpecies) {
           throw new Error(
-            `Another species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`
+            `Another species already exists with common name '${existingSpecies.commonName}' or scientific name '${existingSpecies.scientificName}'`,
           );
         }
 
@@ -235,7 +247,7 @@ const resolvers = {
             invasive,
             markerColor,
           },
-          { new: true }
+          { new: true },
         );
       } catch (err) {
         console.error(err);
@@ -245,15 +257,15 @@ const resolvers = {
 
     loginUser: async (_, { userName, userPassword }) => {
       try {
-        console.log('Resolver received:', userName, userPassword);
+        console.log("Resolver received:", userName, userPassword);
         const user = await User.findOne({ userName: userName });
         if (!user) {
-          throw new Error('Invalid username or password');
+          throw new Error("Invalid username or password");
         }
 
         const isValid = await argon2.verify(user.userPassword, userPassword);
         if (!isValid) {
-          throw new Error('Invalid username or password');
+          throw new Error("Invalid username or password");
         }
 
         return {
@@ -266,23 +278,26 @@ const resolvers = {
     },
 
     deletePhoto: async (_, { publicId }) => {
-      const cloudinary = require('../config/cloudinary');
+      const cloudinary = require("../config/cloudinary");
 
       try {
         // 1. Delete the image from Cloudinary
         const result = await cloudinary.uploader.destroy(publicId);
 
-        if (result.result !== 'ok' && result.result !== 'not found') {
-          console.error('Cloudinary deletion failed:', result);
+        if (result.result !== "ok" && result.result !== "not found") {
+          console.error("Cloudinary deletion failed:", result);
           return false;
         }
 
         // 2. Remove the photo reference from any tree that has it
-        await Tree.updateOne({ 'photos.publicId': publicId }, { $pull: { photos: { publicId } } });
+        await Tree.updateOne(
+          { "photos.publicId": publicId },
+          { $pull: { photos: { publicId } } },
+        );
 
         return true;
       } catch (err) {
-        console.error('Error deleting photo:', err);
+        console.error("Error deleting photo:", err);
         return false;
       }
     },

@@ -1,27 +1,38 @@
 //----------Import----------
 //external libraries
-import React, { useContext } from 'react';
-import { Col, Container, Form, Row, Stack } from 'react-bootstrap';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Select, { components } from 'react-select';
-import Toggle from 'react-toggle';
+import React, { useContext } from "react";
+import { Col, Container, Form, Row, Stack } from "react-bootstrap";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Select, { components } from "react-select";
+import Toggle from "react-toggle";
 
 //local components
-import AppContext from '../../appContext';
+import AppContext from "../../appContext";
 
 //project-specific constants
-import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
+import {
+  careNeedsList,
+  dbhList,
+  gardenList,
+  siteConditionsList,
+} from "../../utils/constants.js";
 
 //styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './react-toggle.css';
-import styles from './filterDrawer.module.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./react-toggle.css";
+import styles from "./filterDrawer.module.css";
 
 //----------Create Component----------
 const FilterDrawer = ({ filteredTrees }) => {
   //access global states from parent (using Context)
-  const { allSpecies, filterCriteria, filterOpen, mergedTrees, setFilterCriteria, setFilterOpen } =
-    useContext(AppContext);
+  const {
+    allSpecies,
+    filterCriteria,
+    filterOpen,
+    mergedTrees,
+    setFilterCriteria,
+    setFilterOpen,
+  } = useContext(AppContext);
 
   //define local states and set initial values
   const CustomValueContainer = ({ children, ...props }) => {
@@ -30,20 +41,32 @@ const FilterDrawer = ({ filteredTrees }) => {
 
     if (selectedOptions.length === 1) {
       return (
-        <components.ValueContainer {...props}>{selectedOptions[0].label}</components.ValueContainer>
+        <components.ValueContainer {...props}>
+          {selectedOptions[0].label}
+        </components.ValueContainer>
       );
     }
 
     if (selectedOptions.length > 1) {
-      return <components.ValueContainer {...props}>Multiple {fieldName}</components.ValueContainer>;
+      return (
+        <components.ValueContainer {...props}>
+          Multiple {fieldName}
+        </components.ValueContainer>
+      );
     }
 
     //no selections
-    return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
+    return (
+      <components.ValueContainer {...props}>
+        {children}
+      </components.ValueContainer>
+    );
   };
   const columnCount = 2;
-  const siteInfoColumns = Array.from({ length: columnCount }, (_, colIndex) =>
-    siteInfoList.filter((_, i) => i % columnCount === colIndex)
+  const siteConditionsColumns = Array.from(
+    { length: columnCount },
+    (_, colIndex) =>
+      siteConditionsList.filter((_, i) => i % columnCount === colIndex),
   );
 
   //handlers and callback functions
@@ -51,16 +74,16 @@ const FilterDrawer = ({ filteredTrees }) => {
   const handleTypeaheadChange = (selectedOptions, fieldName) => {
     const selectedValues = selectedOptions.map((option) => option.value);
     let fullOptionList;
-    if (fieldName === 'commonName') {
+    if (fieldName === "commonName") {
       fullOptionList = allSpecies.map((species) => species.commonName);
-    } else if (fieldName === 'dbh') {
+    } else if (fieldName === "dbh") {
       fullOptionList = dbhList;
-    } else if (fieldName === 'garden') {
+    } else if (fieldName === "garden") {
       fullOptionList = gardenList;
     }
 
     //handle "select all" option
-    if (selectedValues.includes('__ALL__')) {
+    if (selectedValues.includes("__ALL__")) {
       setFilterCriteria((prev) => ({
         ...prev,
         [fieldName]: fullOptionList,
@@ -78,10 +101,10 @@ const FilterDrawer = ({ filteredTrees }) => {
   //handle changes to filter criteria
   const handleFilterChange = (event, category = null) => {
     const { name, type, value, checked } = event.target;
-    const newValue = type === 'checkbox' ? checked : value;
+    const newValue = type === "checkbox" ? checked : value;
 
     setFilterCriteria((prev) => {
-      //nested toggles for careNeeds and siteInfo
+      //nested toggles for careNeeds and siteConditions
       if (category) {
         return {
           ...prev,
@@ -105,29 +128,32 @@ const FilterDrawer = ({ filteredTrees }) => {
     <Offcanvas
       backdrop={false}
       className={styles.drawer}
-      id='filter-drawer'
+      id="filter-drawer"
       onHide={() => {
         setFilterOpen(false);
       }}
-      placement='end'
+      placement="end"
       scroll={true}
       show={filterOpen}
     >
-      <Offcanvas.Title className='ms-3 mb-3'>Filter</Offcanvas.Title>
+      <Offcanvas.Title className="ms-3 mb-3">Filter</Offcanvas.Title>
 
       <Offcanvas.Body>
         <Row>
+          <legend className="text-white h6">Tree Profile</legend>
           <Select
             closeMenuOnSelect={false}
             components={{
               ValueContainer: CustomValueContainer,
             }}
-            fieldName='names'
+            fieldName="names"
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'commonName')}
+            onChange={(selectedOptions) =>
+              handleTypeaheadChange(selectedOptions, "commonName")
+            }
             options={[
-              { label: '[Show All]', value: '__ALL__' },
+              { label: "[Show All]", value: "__ALL__" },
               ...[...allSpecies]
                 .sort((a, b) => a.commonName.localeCompare(b.commonName))
                 .map((species) => ({
@@ -135,22 +161,24 @@ const FilterDrawer = ({ filteredTrees }) => {
                   value: species.commonName,
                 })),
             ]}
-            placeholder='Filter by species...'
+            placeholder="Filter by species..."
             styles={{
               control: (base) => ({
                 ...base,
-                backgroundColor: 'white',
-                borderColor: '#ccc',
-                color: 'black',
+                backgroundColor: "white",
+                borderColor: "#ccc",
+                color: "black",
               }),
               option: (base, { isSelected }) => ({
                 ...base,
-                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
-                color: 'black',
+                backgroundColor: isSelected ? "var(--pale-yellow)" : "white",
+                color: "black",
               }),
             }}
             value={allSpecies
-              .filter((species) => filterCriteria.commonName?.includes(species.commonName))
+              .filter((species) =>
+                filterCriteria.commonName?.includes(species.commonName),
+              )
               .map((species) => ({
                 label: species.commonName,
                 value: species.commonName,
@@ -158,35 +186,37 @@ const FilterDrawer = ({ filteredTrees }) => {
           />
 
           <Select
-            className='mt-1'
-            clearButton='true'
+            className="mt-1"
+            clearButton="true"
             closeMenuOnSelect={false}
             components={{
               ValueContainer: CustomValueContainer,
             }}
-            fieldName='diameters'
+            fieldName="diameters"
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'dbh')}
+            onChange={(selectedOptions) =>
+              handleTypeaheadChange(selectedOptions, "dbh")
+            }
             options={[
-              { label: '[Show All]', value: '__ALL__' },
+              { label: "[Show All]", value: "__ALL__" },
               ...dbhList.map((dbh) => ({
                 label: dbh,
                 value: dbh,
               })),
             ]}
-            placeholder='Filter by diameter...'
+            placeholder="Filter by diameter..."
             styles={{
               control: (base) => ({
                 ...base,
-                backgroundColor: 'white',
-                borderColor: '#ccc',
-                color: 'black',
+                backgroundColor: "white",
+                borderColor: "#ccc",
+                color: "black",
               }),
               option: (base, { isSelected }) => ({
                 ...base,
-                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
-                color: 'black',
+                backgroundColor: isSelected ? "var(--pale-yellow)" : "white",
+                color: "black",
               }),
             }}
             value={dbhList
@@ -198,34 +228,36 @@ const FilterDrawer = ({ filteredTrees }) => {
           />
 
           <Select
-            className='mt-1'
+            className="mt-1"
             closeMenuOnSelect={false}
             components={{
               ValueContainer: CustomValueContainer,
             }}
-            fieldName='gardens'
+            fieldName="gardens"
             hideSelectedOptions={false}
             isMulti
-            onChange={(selectedOptions) => handleTypeaheadChange(selectedOptions, 'garden')}
+            onChange={(selectedOptions) =>
+              handleTypeaheadChange(selectedOptions, "garden")
+            }
             options={[
-              { label: '[Show All]', value: '__ALL__' },
+              { label: "[Show All]", value: "__ALL__" },
               ...gardenList.map((garden) => ({
                 label: garden,
                 value: garden,
               })),
             ]}
-            placeholder='Filter by garden...'
+            placeholder="Filter by garden..."
             styles={{
               control: (base) => ({
                 ...base,
-                backgroundColor: 'white',
-                borderColor: '#ccc',
-                color: 'black',
+                backgroundColor: "white",
+                borderColor: "#ccc",
+                color: "black",
               }),
               option: (base, { isSelected }) => ({
                 ...base,
-                backgroundColor: isSelected ? 'var(--pale-yellow)' : 'white',
-                color: 'black',
+                backgroundColor: isSelected ? "var(--pale-yellow)" : "white",
+                color: "black",
               }),
             }}
             value={gardenList
@@ -235,10 +267,79 @@ const FilterDrawer = ({ filteredTrees }) => {
                 value: garden,
               }))}
           />
+
+          <label key="multistem">
+            <Toggle
+              className="mt-2"
+              checked={!!filterCriteria.multistem}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange({
+                  target: {
+                    name: "multistem",
+                    type: "checkbox",
+                    checked: event.target.checked,
+                  },
+                });
+              }}
+            />
+            <span className="filterToggle">Multistem</span>
+          </label>
+
+          <label key="nonnative">
+            <Toggle
+              checked={!!filterCriteria.nonnative}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange({
+                  target: {
+                    name: "nonnative",
+                    type: "checkbox",
+                    checked: event.target.checked,
+                  },
+                });
+              }}
+            />
+            <span className="filterToggle">Nonnative</span>
+          </label>
+
+          <label key="invasive">
+            <Toggle
+              checked={!!filterCriteria.invasive}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange({
+                  target: {
+                    name: "invasive",
+                    type: "checkbox",
+                    checked: event.target.checked,
+                  },
+                });
+              }}
+            />
+            <span className="filterToggle">Invasive</span>
+          </label>
+
+          <label key="hidden">
+            <Toggle
+              checked={!!filterCriteria.hidden}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange({
+                  target: {
+                    name: "hidden",
+                    type: "checkbox",
+                    checked: event.target.checked,
+                  },
+                });
+              }}
+            />
+            <span className="filterToggle">Hidden</span>
+          </label>
         </Row>
 
-        <Row className='mt-3'>
-          <legend className='text-white h5'>Care Needs</legend>
+        <Row className="mt-3">
+          <legend className="text-white h6">Care Needs</legend>
           {careNeedsList.map((need) => (
             <label key={need}>
               <Toggle
@@ -249,108 +350,60 @@ const FilterDrawer = ({ filteredTrees }) => {
                     {
                       target: {
                         name: need,
-                        type: 'checkbox',
+                        type: "checkbox",
                         checked: event.target.checked,
                       },
                     },
-                    'careNeeds'
+                    "careNeeds",
                   )
                 }
               />
-              <span className='filterToggle'>
-                {need.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
+              <span className="filterToggle">
+                {need
+                  .replace(/([A-Z])/g, " $1")
+                  .replace(/^./, (str) => str.toUpperCase())}
               </span>
             </label>
           ))}
         </Row>
-        <Row className='mt-3'>
-          <legend className='text-white h5'>Site Info</legend>
-          {siteInfoList.map((condition) => (
+        <Row className="mt-3">
+          <legend className="text-white h6">Site Info</legend>
+          {siteConditionsList.map((condition) => (
             <label key={condition}>
               <Toggle
-                checked={!!filterCriteria.siteInfo?.[condition]}
+                checked={!!filterCriteria.siteConditions?.[condition]}
                 icons={false}
                 onChange={(event) =>
                   handleFilterChange(
                     {
                       target: {
                         name: condition,
-                        type: 'checkbox',
+                        type: "checkbox",
                         checked: event.target.checked,
                       },
                     },
-                    'siteInfo'
+                    "siteConditions",
                   )
                 }
               />
-              <span className='filterToggle'>
-                {condition.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
+              <span className="filterToggle">
+                {condition
+                  .replace(/([A-Z])/g, " $1")
+                  .replace(/^./, (str) => str.toUpperCase())}
               </span>
             </label>
           ))}
         </Row>
-        <Row className='mt-3'>
-          <label key='nonnative'>
-            <Toggle
-              checked={!!filterCriteria.nonnative}
-              icons={false}
-              onChange={(event) => {
-                handleFilterChange({
-                  target: {
-                    name: 'nonnative',
-                    type: 'checkbox',
-                    checked: event.target.checked,
-                  },
-                });
-              }}
-            />
-            <span className='filterToggle'>Nonnative</span>
-          </label>
-
-          <label key='invasive'>
-            <Toggle
-              checked={!!filterCriteria.invasive}
-              icons={false}
-              onChange={(event) => {
-                handleFilterChange({
-                  target: {
-                    name: 'invasive',
-                    type: 'checkbox',
-                    checked: event.target.checked,
-                  },
-                });
-              }}
-            />
-            <span className='filterToggle'>Invasive</span>
-          </label>
-
-          <label key='hidden'>
-            <Toggle
-              checked={!!filterCriteria.hidden}
-              icons={false}
-              onChange={(event) => {
-                handleFilterChange({
-                  target: {
-                    name: 'hidden',
-                    type: 'checkbox',
-                    checked: event.target.checked,
-                  },
-                });
-              }}
-            />
-            <span className='filterToggle'>Hidden</span>
-          </label>
-        </Row>
         <div
           style={{
-            position: 'absolute',
-            top: '15px',
-            right: '10px',
-            color: 'var(--pale-yellow)',
-            fontSize: '15px',
+            position: "absolute",
+            top: "15px",
+            right: "10px",
+            color: "var(--pale-yellow)",
+            fontSize: "12px",
           }}
         >
-          {filteredTrees.length} trees
+          {filteredTrees.length} / {mergedTrees.length}
         </div>
       </Offcanvas.Body>
     </Offcanvas>

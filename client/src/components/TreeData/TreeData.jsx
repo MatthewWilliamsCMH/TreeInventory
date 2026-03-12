@@ -1,15 +1,15 @@
 //----------Import----------
 //external libraries
-import { useMutation } from '@apollo/client';
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import { Typeahead } from 'react-bootstrap-typeahead';
-import { useNavigate } from 'react-router-dom';
+import { useMutation } from "@apollo/client";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Typeahead } from "react-bootstrap-typeahead";
+import { useNavigate } from "react-router-dom";
 
 //local components
-import AppContext from '../../appContext';
-import NewSpeciesModal from './NewSpeciesModal.jsx';
-import PhotoUploadForm from './PhotoUploadForm.jsx';
+import AppContext from "../../appContext";
+import NewSpeciesModal from "./NewSpeciesModal.jsx";
+import PhotoUploadForm from "./PhotoUploadForm.jsx";
 
 //project-specific helpers
 import {
@@ -20,19 +20,24 @@ import {
   handleDateFocus,
   stripTypename,
   validateDateField,
-} from '../../utils/helpers.js';
+} from "../../utils/helpers.js";
 
 //project-specific constants
-import { careNeedsList, dbhList, gardenList, siteInfoList } from '../../utils/constants.js';
+import {
+  careNeedsList,
+  dbhList,
+  gardenList,
+  siteConditionsList,
+} from "../../utils/constants.js";
 
 //project-specific mutations
-import { ADD_TREE } from '../../mutations/add_tree.js';
-import { ADD_SPECIES } from '../../mutations/add_species.js';
-import { UPDATE_TREE } from '../../mutations/update_tree.js';
-import { DELETE_PHOTO } from '../../mutations/delete_photo.js';
+import { ADD_TREE } from "../../mutations/add_tree.js";
+import { ADD_SPECIES } from "../../mutations/add_species.js";
+import { UPDATE_TREE } from "../../mutations/update_tree.js";
+import { DELETE_PHOTO } from "../../mutations/delete_photo.js";
 
 //styles (load order is important)
-import styles from './treeData.module.css';
+import styles from "./treeData.module.css";
 
 //----------Create Component----------
 const TreeData = () => {
@@ -56,19 +61,20 @@ const TreeData = () => {
   const [commonToScientific, setCommonToScientific] = useState(null);
   const [errors, setErrors] = useState({});
   const [installedDateField, setInstalledDateField] = useState(
-    formatDateForDisplay(selectedTree.installedDate)
+    formatDateForDisplay(selectedTree.installedDate),
   );
   const [pendingSpecies, setPendingSpecies] = useState(null);
   const [showSpeciesModal, setShowSpeciesModal] = useState(false);
   const [updatedSpeciesField, setUpdatedSpeciesField] = useState(null);
   const [updatedSpeciesValue, setUpdatedSpeciesValue] = useState(null);
   const [felledDateField, setFelledDateField] = useState(
-    formatDateForDisplay(selectedTree.felledDate)
+    formatDateForDisplay(selectedTree.felledDate),
   );
-  const [commonNameKey, setCommonNameKey] = useState('commonName-0');
-  const [scientificNameKey, setScientificNameKey] = useState('scientificName-0');
-  const [dbhKey, setDbhKey] = useState('dbh-0');
-  const [gardenKey, setGardenKey] = useState('garden-0');
+  const [commonNameKey, setCommonNameKey] = useState("commonName-0");
+  const [scientificNameKey, setScientificNameKey] =
+    useState("scientificName-0");
+  const [dbhKey, setDbhKey] = useState("dbh-0");
+  const [gardenKey, setGardenKey] = useState("garden-0");
   const [stagedPhotos, setStagedPhotos] = useState({});
   const [activePhotoType, setActivePhotoType] = useState(null);
 
@@ -94,7 +100,9 @@ const TreeData = () => {
 
   //set form color
   useEffect(() => {
-    setFormColor({ backgroundColor: selectedTree?.invasive ? '#FFDEDE' : 'white' });
+    setFormColor({
+      backgroundColor: selectedTree?.invasive ? "#FFDEDE" : "white",
+    });
   }, [selectedTree?.invasive]);
 
   //check if the species name exists in the database
@@ -104,21 +112,24 @@ const TreeData = () => {
 
     const matchesPendingSpecies =
       pendingSpecies &&
-      ((updatedSpeciesField === 'commonName' && pendingSpecies.commonName === trimmedValue) ||
-        (updatedSpeciesField === 'scientificName' &&
+      ((updatedSpeciesField === "commonName" &&
+        pendingSpecies.commonName === trimmedValue) ||
+        (updatedSpeciesField === "scientificName" &&
           pendingSpecies.scientificName === trimmedValue));
 
     const matchesExistingSpecies =
       allSpecies &&
       allSpecies.some(
-        (species) => species.commonName === trimmedValue || species.scientificName === trimmedValue
+        (species) =>
+          species.commonName === trimmedValue ||
+          species.scientificName === trimmedValue,
       );
 
     if (!matchesExistingSpecies && !matchesPendingSpecies) {
       setShowSpeciesModal(true);
     }
     setUpdatedSpeciesField(null);
-    setUpdatedSpeciesValue('');
+    setUpdatedSpeciesValue("");
   }, [allSpecies, pendingSpecies, updatedSpeciesField, updatedSpeciesValue]);
 
   //handlers and callback functions
@@ -137,7 +148,7 @@ const TreeData = () => {
     //checkboxes and other inputs
     const { type, value, checked } = target;
     switch (type) {
-      case 'checkbox':
+      case "checkbox":
         handleCheckboxChange(field, checked);
         break;
       default:
@@ -153,16 +164,18 @@ const TreeData = () => {
     const isCustom = selection.customOption;
     const value = isCustom ? selection.label : selection.value;
 
-    if (field === 'commonName') {
-      const scientific = commonToScientific?.[value] || '';
+    if (field === "commonName") {
+      const scientific = commonToScientific?.[value] || "";
       setWorkingTree((prev) => ({
         ...prev,
         commonName: value,
         scientificName: scientific,
       }));
-    } else if (field === 'scientificName') {
+    } else if (field === "scientificName") {
       const common =
-        Object.entries(commonToScientific || {}).find(([, sci]) => sci === value)?.[0] || '';
+        Object.entries(commonToScientific || {}).find(
+          ([, sci]) => sci === value,
+        )?.[0] || "";
       setWorkingTree((prev) => ({
         ...prev,
         scientificName: value,
@@ -220,20 +233,22 @@ const TreeData = () => {
   const handlePhotoUpload = async (file) => {
     try {
       const formData = new FormData();
-      formData.append('photo', file);
+      formData.append("photo", file);
 
       // choose endpoint depending on dev vs prod
-      const endpoint = import.meta.env.DEV ? 'http://localhost:3001/api/uploads' : '/api/uploads';
+      const endpoint = import.meta.env.DEV
+        ? "http://localhost:3001/api/uploads"
+        : "/api/uploads";
 
       const response = await fetch(endpoint, {
-        method: 'POST',
+        method: "POST",
         body: formData,
       });
 
       const data = await response.json();
 
       if (!data?.url || !data?.publicId) {
-        throw new Error('Invalid upload response from server');
+        throw new Error("Invalid upload response from server");
       }
 
       return {
@@ -241,7 +256,7 @@ const TreeData = () => {
         publicId: data.publicId,
       };
     } catch (err) {
-      console.error('Error uploading photo:', err);
+      console.error("Error uploading photo:", err);
       throw err;
     }
   };
@@ -249,25 +264,26 @@ const TreeData = () => {
   //cleanup
   const clearSpeciesTrigger = () => {
     setUpdatedSpeciesField(null);
-    setUpdatedSpeciesValue('');
+    setUpdatedSpeciesValue("");
   };
 
   //handle Submit button
   const handleSubmit = async () => {
     const newErrors = {};
     if (!workingTree.commonName?.trim()) {
-      newErrors.commonName = 'Common name is required.';
+      newErrors.commonName = "Common name is required.";
     }
     if (!workingTree.scientificName?.trim()) {
-      newErrors.scientificName = 'Scientific name is required.';
+      newErrors.scientificName = "Scientific name is required.";
     }
     if (!workingTree.garden?.trim()) {
-      newErrors.garden = 'Garden is required.';
+      newErrors.garden = "Garden is required.";
     }
     if (installedDateField?.trim()) {
       const normalized = validateDateField(installedDateField);
       if (!normalized) {
-        newErrors.installedDate = 'Installed date must be in MM/DD/YYYY or < YYYY format.';
+        newErrors.installedDate =
+          "Installed date must be in MM/DD/YYYY or < YYYY format.";
       } else {
         workingTree.installedDate = formatDateForDb(normalized);
       }
@@ -276,14 +292,15 @@ const TreeData = () => {
     if (felledDateField?.trim()) {
       const normalized = validateDateField(felledDateField);
       if (!normalized) {
-        newErrors.felledDate = 'Felled date must be in MM/DD/YYYY or < YYYY format.';
+        newErrors.felledDate =
+          "Felled date must be in MM/DD/YYYY or < YYYY format.";
       } else {
         workingTree.felledDate = formatDateForDb(normalized);
       }
     }
 
     if (!workingTree.photos?.environs?.url && !stagedPhotos.environs) {
-      newErrors.environs = 'An environs photo is required.';
+      newErrors.environs = "An environs photo is required.";
     }
 
     //build list of publicIds to delete
@@ -303,12 +320,12 @@ const TreeData = () => {
       try {
         const { data } = await deletePhoto({ variables: { publicId } });
         if (!data?.deletePhoto) {
-          console.warn('Failed to delete photo:', publicId);
+          console.warn("Failed to delete photo:", publicId);
         } else {
-          console.log('Deleted photo:', publicId);
+          console.log("Deleted photo:", publicId);
         }
       } catch (err) {
-        console.error('Error deleting photo:', publicId, err);
+        console.error("Error deleting photo:", publicId, err);
       }
     }
 
@@ -317,7 +334,7 @@ const TreeData = () => {
       if (pendingSpecies) {
         await addSpecies({ variables: pendingSpecies });
         await refetchSpecies();
-        console.log('Species added:', pendingSpecies);
+        console.log("Species added:", pendingSpecies);
         setPendingSpecies(null);
       }
 
@@ -334,17 +351,27 @@ const TreeData = () => {
 
       // Merge uploaded photos with existing ones and normalize
       const normalizePhoto = (photo) => ({
-        url: photo?.url ?? '',
-        publicId: photo?.publicId ?? '',
+        url: photo?.url ?? "",
+        publicId: photo?.publicId ?? "",
       });
 
       const photosPayload = {
         bark: normalizePhoto(uploadedPhotos.bark || workingTree.photos?.bark),
-        summerLeaf: normalizePhoto(uploadedPhotos.summerLeaf || workingTree.photos?.summerLeaf),
-        autumnLeaf: normalizePhoto(uploadedPhotos.autumnLeaf || workingTree.photos?.autumnLeaf),
-        fruit: normalizePhoto(uploadedPhotos.fruit || workingTree.photos?.fruit),
-        flower: normalizePhoto(uploadedPhotos.flower || workingTree.photos?.flower),
-        environs: normalizePhoto(uploadedPhotos.environs || workingTree.photos?.environs),
+        summerLeaf: normalizePhoto(
+          uploadedPhotos.summerLeaf || workingTree.photos?.summerLeaf,
+        ),
+        autumnLeaf: normalizePhoto(
+          uploadedPhotos.autumnLeaf || workingTree.photos?.autumnLeaf,
+        ),
+        fruit: normalizePhoto(
+          uploadedPhotos.fruit || workingTree.photos?.fruit,
+        ),
+        flower: normalizePhoto(
+          uploadedPhotos.flower || workingTree.photos?.flower,
+        ),
+        environs: normalizePhoto(
+          uploadedPhotos.environs || workingTree.photos?.environs,
+        ),
       };
 
       // update workingTree.photos for DB submission
@@ -354,6 +381,7 @@ const TreeData = () => {
         commonName: workingTree.commonName,
         variety: workingTree.variety,
         dbh: workingTree.dbh,
+        multistem: workingTree.multistem,
         photos: photosPayload,
         notes: workingTree.notes,
         location: workingTree.location
@@ -363,24 +391,24 @@ const TreeData = () => {
             }
           : null,
         garden: workingTree.garden,
-        siteInfo: workingTree.siteInfo
+        siteConditions: workingTree.siteConditions
           ? {
-              slope: workingTree.siteInfo.slope,
-              overheadLines: workingTree.siteInfo.overheadLines,
-              treeCluster: workingTree.siteInfo.treeCluster,
-              proximateStructure: workingTree.siteInfo.proximateStructure,
-              proximateFence: workingTree.siteInfo.proximateFence,
-              propertyLine: workingTree.siteInfo.propertyLine,
+              slope: workingTree.siteConditions.slope,
+              overheadLines: workingTree.siteConditions.overheadLines,
+              treeCluster: workingTree.siteConditions.treeCluster,
+              proximateStructure: workingTree.siteConditions.proximateStructure,
+              proximateFence: workingTree.siteConditions.proximateFence,
+              propertyLine: workingTree.siteConditions.propertyLine,
             }
           : null,
-        lastUpdated: new Date().toLocaleDateString('en-US'),
+        lastUpdated: new Date().toLocaleDateString("en-US"),
         installedDate: workingTree.installedDate,
         installedBy: workingTree.installedBy,
         felledDate: workingTree.felledDate,
         felledBy: workingTree.felledBy,
         careNeeds: workingTree.careNeeds
           ? {
-              multistem: workingTree.careNeeds.multistem,
+              structuralSupport: workingTree.careNeeds.structuralSupport,
               raiseCrown: workingTree.careNeeds.raiseCrown,
               routinePrune: workingTree.careNeeds.routinePrune,
               trainingPrune: workingTree.careNeeds.trainingPrune,
@@ -402,23 +430,26 @@ const TreeData = () => {
       if (!workingTree?.id) {
         const { data } = await addTree({ variables: cleanedPayload });
         await refetchTrees();
-        console.log('Tree added:', data.addTree);
+        console.log("Tree added:", data.addTree);
       } else {
         const { data } = await updateTree({ variables: cleanedPayload });
         await refetchTrees();
         try {
-          console.log('Sending treePayload to updateTree:', cleanedPayload);
+          console.log("Sending treePayload to updateTree:", cleanedPayload);
 
           const result = await updateTree({
             variables: cleanedPayload, // make sure this matches your mutation variable names
           });
 
-          console.log('updateTree result:', result);
+          console.log("updateTree result:", result);
           await refetchTrees();
         } catch (err) {
-          console.error('Apollo updateTree error:', err);
+          console.error("Apollo updateTree error:", err);
           if (err.networkError) {
-            console.error('Network error details:', err.networkError.result || err.networkError);
+            console.error(
+              "Network error details:",
+              err.networkError.result || err.networkError,
+            );
           }
         }
       }
@@ -426,9 +457,9 @@ const TreeData = () => {
       // Clear stagedPhotos after successful submission
       setStagedPhotos({});
       setWorkingTree(null);
-      navigate('/');
+      navigate("/");
     } catch (err) {
-      console.error('Error saving tree or species:', err);
+      console.error("Error saving tree or species:", err);
     }
   };
 
@@ -436,14 +467,14 @@ const TreeData = () => {
   const handleCancel = () => {
     //if no id, it's a new tree
     if (!workingTree?.id && !workingTree?._id) {
-      navigate('/');
+      navigate("/");
       return;
     }
 
     const userConfirmed = confirmDiscardChanges(workingTree, selectedTree);
     if (!userConfirmed) return;
     setWorkingTree(null);
-    navigate('/');
+    navigate("/");
   };
 
   //----------Render Component----------
@@ -454,8 +485,8 @@ const TreeData = () => {
         onCancelClearSpecies={() => {
           setWorkingTree((prev) => ({
             ...prev,
-            commonName: '',
-            scientificName: '',
+            commonName: "",
+            scientificName: "",
           }));
           setPendingSpecies(null);
         }}
@@ -465,27 +496,27 @@ const TreeData = () => {
       />
 
       <Container
-        className='pt-3 ps-5 card'
+        className="pt-3 ps-5 card"
         style={formColor}
       >
         <Form>
           <Row>
             <Col md={6}>
-              <fieldset id='taxonomy'>
-                <legend>Taxonomy</legend>
+              <fieldset id="taxonomy">
+                <legend>Tree Profile</legend>
                 <Typeahead
                   allowNew
-                  className='mt-1'
-                  id='commonName'
+                  className="mt-1"
+                  id="commonName"
                   isSearchable={true}
                   key={commonNameKey}
-                  labelKey='label'
+                  labelKey="label"
                   multiple={false}
                   onBlur={() => {
-                    const value = (workingTree.commonName || '').trim();
+                    const value = (workingTree.commonName || "").trim();
                     if (!value) return;
-                    handleInputChange('commonName', [{ label: value, value }]);
-                    setUpdatedSpeciesField('commonName');
+                    handleInputChange("commonName", [{ label: value, value }]);
+                    setUpdatedSpeciesField("commonName");
                     setUpdatedSpeciesValue(value);
                   }}
                   onChange={(selected) => {
@@ -494,12 +525,14 @@ const TreeData = () => {
                       : selected?.[0]?.value;
 
                     if (value) {
-                      handleInputChange('commonName', [{ label: value, value }]);
+                      handleInputChange("commonName", [
+                        { label: value, value },
+                      ]);
                     }
                   }}
                   onInputChange={(text) => {
-                    if (text.trim() === '') {
-                      setWorkingTree((prev) => ({ ...prev, commonName: '' }));
+                    if (text.trim() === "") {
+                      setWorkingTree((prev) => ({ ...prev, commonName: "" }));
                       return;
                     }
                     setWorkingTree((prev) => ({ ...prev, commonName: text }));
@@ -514,7 +547,7 @@ const TreeData = () => {
                           }))
                       : []
                   }
-                  placeholder='Select or add a common name'
+                  placeholder="Select or add a common name"
                   ref={commonNameRef}
                   selected={
                     workingTree.commonName
@@ -527,20 +560,24 @@ const TreeData = () => {
                       : []
                   }
                 />
-                {errors.commonName && <div className='text-danger mt-1'>{errors.commonName}</div>}
+                {errors.commonName && (
+                  <div className="text-danger mt-1">{errors.commonName}</div>
+                )}
 
                 <Typeahead
                   allowNew
-                  className='mt-1'
-                  id='scientificName'
+                  className="mt-1"
+                  id="scientificName"
                   key={scientificNameKey}
-                  labelKey='label'
+                  labelKey="label"
                   multiple={false}
                   onBlur={() => {
-                    const value = (workingTree.scientificName || '').trim();
+                    const value = (workingTree.scientificName || "").trim();
                     if (!value) return;
-                    handleInputChange('scientificName', [{ label: value, value }]);
-                    setUpdatedSpeciesField('scientificName');
+                    handleInputChange("scientificName", [
+                      { label: value, value },
+                    ]);
+                    setUpdatedSpeciesField("scientificName");
                     setUpdatedSpeciesValue(value);
                   }}
                   onChange={(selected) => {
@@ -549,15 +586,23 @@ const TreeData = () => {
                       : selected?.[0]?.value;
 
                     if (value) {
-                      handleInputChange('scientificName', [{ label: value, value }]);
+                      handleInputChange("scientificName", [
+                        { label: value, value },
+                      ]);
                     }
                   }}
                   onInputChange={(text) => {
-                    if (text.trim() === '') {
-                      setWorkingTree((prev) => ({ ...prev, scientificName: '' }));
+                    if (text.trim() === "") {
+                      setWorkingTree((prev) => ({
+                        ...prev,
+                        scientificName: "",
+                      }));
                       return;
                     }
-                    setWorkingTree((prev) => ({ ...prev, scientificName: text }));
+                    setWorkingTree((prev) => ({
+                      ...prev,
+                      scientificName: text,
+                    }));
                   }}
                   options={
                     commonToScientific
@@ -569,7 +614,7 @@ const TreeData = () => {
                           }))
                       : []
                   }
-                  placeholder='Select or add a scientific name'
+                  placeholder="Select or add a scientific name"
                   selected={
                     workingTree.scientificName
                       ? [
@@ -582,41 +627,46 @@ const TreeData = () => {
                   }
                 />
                 {errors.scientificName && (
-                  <div className='text-danger mt-1'>{errors.scientificName}</div>
+                  <div className="text-danger mt-1">
+                    {errors.scientificName}
+                  </div>
                 )}
 
                 <Form.Control
-                  className='mt-1'
-                  id='variety'
+                  className="mt-1"
+                  id="variety"
                   onChange={(event) => {
                     const text = event.target.value;
                     setWorkingTree((prev) => ({ ...prev, variety: text }));
                   }}
-                  placeholder={'Provide the variety name'}
-                  type='text'
+                  placeholder={"Provide the variety name"}
+                  type="text"
                   value={workingTree.variety}
                 />
-              </fieldset>
 
-              <fieldset
-                className='mt-2'
-                id='physicalData'
-              >
-                <legend>Physical Data</legend>
+                <Form.Check
+                  className="mt-2 mb-2"
+                  checked={workingTree.multistem}
+                  id="multistem"
+                  label="Multistem"
+                  onChange={(event) => handleInputChange(`${multistem}`, event)}
+                  type="checkbox"
+                />
+
                 <Typeahead
-                  className='mt-1'
-                  id='dbh'
+                  className="mt-1"
+                  id="dbh"
                   isSearchable={true}
                   key={dbhKey}
-                  labelKey='label'
+                  labelKey="label"
                   multiple={false}
                   onChange={(selected) => {
-                    const value = selected?.[0]?.value || '';
+                    const value = selected?.[0]?.value || "";
                     setWorkingTree((prev) => ({ ...prev, dbh: value }));
                   }}
                   onInputChange={(text) => {
-                    if (text.trim() === '') {
-                      setWorkingTree((prev) => ({ ...prev, dbh: '' }));
+                    if (text.trim() === "") {
+                      setWorkingTree((prev) => ({ ...prev, dbh: "" }));
                       return;
                     }
                     setWorkingTree((prev) => ({ ...prev, dbh: text }));
@@ -625,10 +675,12 @@ const TreeData = () => {
                     label: dbh,
                     value: dbh,
                   }))}
-                  placeholder='Select a dbh (multistem: √(a² + b² + … + n²))'
+                  placeholder="Select a dbh (multistem: √(a² + b² + … + n²))"
                   renderMenuItemChildren={(option) => <>{option.label}</>}
                   selected={
-                    workingTree.dbh ? [{ label: workingTree.dbh, value: workingTree.dbh }] : []
+                    workingTree.dbh
+                      ? [{ label: workingTree.dbh, value: workingTree.dbh }]
+                      : []
                   }
                 />
 
@@ -641,16 +693,18 @@ const TreeData = () => {
                   stagedPhotos={stagedPhotos}
                   workingTree={workingTree}
                 />
-                {errors.environs && <div className='text-danger mt-1'>{errors.environs}</div>}
+                {errors.environs && (
+                  <div className="text-danger mt-1">{errors.environs}</div>
+                )}
               </fieldset>
 
-              <fieldset className='mt-2'>
+              <fieldset className="mt-2">
                 <legend>Notes</legend>
                 <Form.Control
-                  as='textarea'
-                  id='notes'
-                  placeholder={'YYYY: Note'}
-                  onChange={(event) => handleInputChange('notes', event)}
+                  as="textarea"
+                  id="notes"
+                  placeholder={"YYYY: Note"}
+                  onChange={(event) => handleInputChange("notes", event)}
                   rows={2}
                   value={workingTree.notes}
                 />
@@ -658,11 +712,11 @@ const TreeData = () => {
             </Col>
 
             <Col md={6}>
-              <fieldset id='care'>
-                <legend>Care</legend>
+              <fieldset id="care">
+                <legend>Care needs</legend>
                 <Form.Group
                   as={Row}
-                  className='g-0'
+                  className="g-0"
                 >
                   <Form.Label
                     column
@@ -670,7 +724,7 @@ const TreeData = () => {
                     sm={3} //tablets in portrait
                     md={3} //tablets in landscape or small desktops
                     lg={3} //larger screens
-                    className='text-start'
+                    className="text-start"
                   >
                     Installed on:
                   </Form.Label>
@@ -681,28 +735,35 @@ const TreeData = () => {
                     lg={9} //larger screens
                   >
                     <Form.Control
-                      id='installedDate'
+                      id="installedDate"
                       onBlur={(event) => {
                         setWorkingTree((prev) => ({
                           ...prev,
                           installedDate: formatDateForDb(event.target.value),
                         }));
                       }}
-                      onChange={(event) => setInstalledDateField(event.target.value)}
-                      onFocus={() => handleDateFocus(installedDateField, setInstalledDateField)}
+                      onChange={(event) =>
+                        setInstalledDateField(event.target.value)
+                      }
+                      onFocus={() =>
+                        handleDateFocus(
+                          installedDateField,
+                          setInstalledDateField,
+                        )
+                      }
                       placeholder={`Record install date ('MM/DD/YYYY' or '< YYYY')`}
-                      type='text'
+                      type="text"
                       value={installedDateField}
                     />
                   </Col>
                 </Form.Group>
                 {errors.installedDate && (
-                  <div className='text-danger mt-1'>{errors.installedDate}</div>
+                  <div className="text-danger mt-1">{errors.installedDate}</div>
                 )}
 
                 <Form.Group
                   as={Row}
-                  className='mt-1 g-0'
+                  className="mt-1 g-0"
                 >
                   <Form.Label
                     column
@@ -710,7 +771,7 @@ const TreeData = () => {
                     sm={3} //tablets in portrait
                     md={3} //tablets in landscape or small desktops
                     lg={3} //larger screens
-                    className='text-start'
+                    className="text-start"
                   >
                     Installed by:
                   </Form.Label>
@@ -721,13 +782,16 @@ const TreeData = () => {
                     lg={9} //larger screens
                   >
                     <Form.Control
-                      id='installedBy'
+                      id="installedBy"
                       onChange={(event) => {
                         const text = event.target.value;
-                        setWorkingTree((prev) => ({ ...prev, installedBy: text }));
+                        setWorkingTree((prev) => ({
+                          ...prev,
+                          installedBy: text,
+                        }));
                       }}
                       placeholder={`Provide the installer's name`}
-                      type='text'
+                      type="text"
                       value={workingTree.installedBy}
                     />
                   </Col>
@@ -735,7 +799,7 @@ const TreeData = () => {
 
                 <Form.Group
                   as={Row}
-                  className='mt-1 g-0'
+                  className="mt-1 g-0"
                 >
                   <Form.Label
                     column
@@ -743,7 +807,7 @@ const TreeData = () => {
                     sm={3} //tablets in portrait
                     md={3} //tablets in landscape or small desktops
                     lg={3} //larger screens
-                    className='text-start'
+                    className="text-start"
                   >
                     Felled on:
                   </Form.Label>
@@ -754,10 +818,12 @@ const TreeData = () => {
                     lg={9} //larger screens
                   >
                     <Form.Control
-                      id='felledDate'
+                      id="felledDate"
                       onBlur={(event) => {
-                        const formattedDate = formatDateForDb(event.target.value);
-                        const hasFelledDate = event.target.value.trim() !== ''; //this returns a boolean, not a value
+                        const formattedDate = formatDateForDb(
+                          event.target.value,
+                        );
+                        const hasFelledDate = event.target.value.trim() !== ""; //this returns a boolean, not a value
 
                         setWorkingTree((prev) => ({
                           ...prev,
@@ -769,19 +835,25 @@ const TreeData = () => {
                           },
                         }));
                       }}
-                      onChange={(event) => setFelledDateField(event.target.value)}
-                      onFocus={() => handleDateFocus(felledDateField, setFelledDateField)}
+                      onChange={(event) =>
+                        setFelledDateField(event.target.value)
+                      }
+                      onFocus={() =>
+                        handleDateFocus(felledDateField, setFelledDateField)
+                      }
                       placeholder={`Record felling date ('MM/DD/YYYY' or '< YYYY')`}
-                      type='text'
+                      type="text"
                       value={felledDateField}
                     />
                   </Col>
                 </Form.Group>
-                {errors.felledDate && <div className='text-danger mt-1'>{errors.felledDate}</div>}
+                {errors.felledDate && (
+                  <div className="text-danger mt-1">{errors.felledDate}</div>
+                )}
 
                 <Form.Group
                   as={Row}
-                  className='mt-1 g-0'
+                  className="mt-1 g-0"
                 >
                   <Form.Label
                     column
@@ -789,7 +861,7 @@ const TreeData = () => {
                     sm={3} //tablets in portrait
                     md={3} //tablets in landscape or small desktops
                     lg={3} //larger screens
-                    className='text-start'
+                    className="text-start"
                   >
                     Felled by:
                   </Form.Label>
@@ -800,19 +872,19 @@ const TreeData = () => {
                     lg={9} //larger screens
                   >
                     <Form.Control
-                      id='felledBy'
+                      id="felledBy"
                       onChange={(event) => {
                         const text = event.target.value;
                         setWorkingTree((prev) => ({ ...prev, felledBy: text }));
                       }}
                       placeholder={`Provide the feller's name`}
-                      type='text'
-                      value={workingTree.felledBy ? workingTree.felledBy : ''}
+                      type="text"
+                      value={workingTree.felledBy ? workingTree.felledBy : ""}
                     />
                   </Col>
                 </Form.Group>
 
-                <Form.Group className='mt-2'>
+                <Form.Group className="mt-2">
                   <Row>
                     {careNeedsList.map((need) => (
                       <Col
@@ -824,28 +896,28 @@ const TreeData = () => {
                           checked={workingTree.careNeeds[need] || false}
                           id={need}
                           label={need
-                            .replace(/([A-Z])/g, ' $1')
+                            .replace(/([A-Z])/g, " $1")
                             .replace(/^./, (str) => str.toUpperCase())}
                           onChange={(event) => {
                             const checked = event.target.checked;
 
-                            if (need === 'fell' && checked) {
+                            if (need === "fell" && checked) {
                               // User says: "this tree needs to be felled"
                               setWorkingTree((prev) => ({
                                 ...prev,
-                                felledDate: '',
+                                felledDate: "",
                                 careNeeds: {
                                   ...prev.careNeeds,
                                   fell: true,
                                 },
                                 hidden: false,
                               }));
-                              setFelledDateField('');
+                              setFelledDateField("");
                             } else {
                               handleInputChange(`careNeeds.${need}`, event);
                             }
                           }}
-                          type='checkbox'
+                          type="checkbox"
                         />
                       </Col>
                     ))}
@@ -854,24 +926,24 @@ const TreeData = () => {
               </fieldset>
 
               <fieldset
-                id='siteInfo'
-                className='mt-2'
+                id="siteConditions"
+                className="mt-2"
               >
                 <legend>Site Conditions</legend>
                 <Typeahead
                   key={gardenKey}
-                  className='mt-1'
-                  id='garden'
+                  className="mt-1"
+                  id="garden"
                   isSearchable={true}
-                  labelKey='label'
+                  labelKey="label"
                   multiple={false}
                   onChange={(selected) => {
-                    const value = selected?.[0]?.value || '';
+                    const value = selected?.[0]?.value || "";
                     setWorkingTree((prev) => ({ ...prev, garden: value }));
                   }}
                   onInputChange={(text) => {
-                    if (text.trim() === '') {
-                      setWorkingTree((prev) => ({ ...prev, garden: '' }));
+                    if (text.trim() === "") {
+                      setWorkingTree((prev) => ({ ...prev, garden: "" }));
                       return;
                     }
                     setWorkingTree((prev) => ({ ...prev, garden: text }));
@@ -880,31 +952,45 @@ const TreeData = () => {
                     label: garden,
                     value: garden,
                   }))}
-                  placeholder='Select a garden'
+                  placeholder="Select a garden"
                   selected={
                     workingTree.garden
-                      ? [{ label: workingTree.garden, value: workingTree.garden }]
+                      ? [
+                          {
+                            label: workingTree.garden,
+                            value: workingTree.garden,
+                          },
+                        ]
                       : []
                   }
                 />
-                {errors.garden && <div className='text-danger mt-1'>{errors.garden}</div>}
+                {errors.garden && (
+                  <div className="text-danger mt-1">{errors.garden}</div>
+                )}
 
-                <Form.Group className='mt-2'>
+                <Form.Group className="mt-2">
                   <Row>
-                    {siteInfoList.map((condition) => (
+                    {siteConditionsList.map((condition) => (
                       <Col
                         xs={12}
                         sm={6}
                         key={condition}
                       >
                         <Form.Check
-                          checked={workingTree.siteInfo[condition] || false}
+                          checked={
+                            workingTree.siteConditions[condition] || false
+                          }
                           id={condition}
                           label={condition
-                            .replace(/([A-Z])/g, ' $1')
+                            .replace(/([A-Z])/g, " $1")
                             .replace(/^./, (str) => str.toUpperCase())}
-                          onChange={(event) => handleInputChange(`siteInfo.${condition}`, event)}
-                          type='checkbox'
+                          onChange={(event) =>
+                            handleInputChange(
+                              `siteConditions.${condition}`,
+                              event,
+                            )
+                          }
+                          type="checkbox"
                         />
                       </Col>
                     ))}
@@ -914,36 +1000,38 @@ const TreeData = () => {
             </Col>
           </Row>
 
-          <Row className='mt-1'>
+          <Row className="mt-1">
             <Col md={6}>
               <div
-                id='autodata'
-                className='mt-1'
+                id="autodata"
+                className="mt-1"
               >
                 <p>
-                  Last updated:{' '}
+                  Last updated:{" "}
                   {workingTree.lastUpdated
-                    ? new Date(parseInt(workingTree.lastUpdated)).toLocaleDateString('en-US')
-                    : new Date().toLocaleDateString('en-US')}
+                    ? new Date(
+                        parseInt(workingTree.lastUpdated),
+                      ).toLocaleDateString("en-US")
+                    : new Date().toLocaleDateString("en-US")}
                 </p>
               </div>
             </Col>
 
-            <Col className='d-flex gap-1 pt-1 pb-1 justify-content-end'>
+            <Col className="d-flex gap-1 pt-1 pb-1 justify-content-end">
               <Button
-                className='pull-right'
-                variant='primary'
-                size='sm'
-                type='button'
+                className="pull-right"
+                variant="primary"
+                size="sm"
+                type="button"
                 onClick={handleSubmit}
               >
                 OK
               </Button>
 
               <Button
-                variant='secondary'
-                size='sm'
-                type='button'
+                variant="secondary"
+                size="sm"
+                type="button"
                 onClick={handleCancel}
               >
                 Cancel

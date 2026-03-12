@@ -1,10 +1,15 @@
-import leaflet from 'leaflet';
+import leaflet from "leaflet";
 
 //handle changes to form fields
-export const handleFieldChange = (workingTree, field, value, commonToScientific) => {
-  //if field nested (e.g., 'siteInfo.slope')
-  if (field.includes('.')) {
-    const [parentField, childField] = field.split('.'); //split field into parent & child
+export const handleFieldChange = (
+  workingTree,
+  field,
+  value,
+  commonToScientific,
+) => {
+  //if field nested (e.g., 'siteConditions.slope')
+  if (field.includes(".")) {
+    const [parentField, childField] = field.split("."); //split field into parent & child
     return {
       ...workingTree,
       [parentField]: {
@@ -15,24 +20,24 @@ export const handleFieldChange = (workingTree, field, value, commonToScientific)
   }
 
   //if field not nested
-  if (field === 'commonName') {
+  if (field === "commonName") {
     //common and scientific names sync'd here
     const scientificFromCommon = commonToScientific[value];
     return {
       ...workingTree,
       commonName: value,
-      scientificName: scientificFromCommon || '',
+      scientificName: scientificFromCommon || "",
     };
   }
 
-  if (field === 'scientificName') {
+  if (field === "scientificName") {
     const commonFromScientific = Object.keys(commonToScientific).find(
       (common) => commonToScientific[common] === value,
     );
     return {
       ...workingTree,
       scientificName: value,
-      commonName: commonFromScientific || '',
+      commonName: commonFromScientific || "",
     };
   }
 
@@ -45,10 +50,9 @@ export const handleFieldChange = (workingTree, field, value, commonToScientific)
 //return today's date in MM/DD/YYYY format
 export const getTodayFormatted = () => {
   const today = new Date();
-  return `${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(
-    2,
-    '0',
-  )}/${today.getFullYear()}`;
+  return `${String(today.getMonth() + 1).padStart(2, "0")}/${String(
+    today.getDate(),
+  ).padStart(2, "0")}/${today.getFullYear()}`;
 };
 
 //on focus, if field is empty, populate with today's date
@@ -76,7 +80,7 @@ export const validateDateField = (dateStr) => {
   let cleaned = String(dateStr).trim();
 
   //standardize separators
-  cleaned = cleaned.replace(/\./g, '/');
+  cleaned = cleaned.replace(/\./g, "/");
 
   //"<YY" or "< YYYY" or "before YYYY"
   const beforeMatch = cleaned.match(/^(?:<\s*|before\s+)(\d{2,4})$/i);
@@ -92,7 +96,7 @@ export const validateDateField = (dateStr) => {
     const year = normalizeYear(yy);
     const date = new Date(`${year}-${mm}-${dd}`);
     if (!isNaN(date.getTime())) {
-      return `${String(mm).padStart(2, '0')}/${String(dd).padStart(2, '0')}/${year}`;
+      return `${String(mm).padStart(2, "0")}/${String(dd).padStart(2, "0")}/${year}`;
     }
   }
 
@@ -101,7 +105,8 @@ export const validateDateField = (dateStr) => {
 
 //convert unix timestamps to locale date strings for display on a form; ignore nonstandard date strings
 export const formatDateForDisplay = (dateStr) => {
-  if (!dateStr || typeof dateStr !== 'string') dateStr = String(dateStr || '').trim();
+  if (!dateStr || typeof dateStr !== "string")
+    dateStr = String(dateStr || "").trim();
 
   //'< yyyy'  or 'before yyyy'
   const beforeMatch = dateStr.match(/^(?:<\s*|before\s+)(\d{4})$/i);
@@ -112,19 +117,17 @@ export const formatDateForDisplay = (dateStr) => {
   //'Unix timestamp'
   if (/^\d{13}$/.test(dateStr)) {
     const date = new Date(Number(dateStr));
-    return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
-      2,
-      '0',
-    )}/${date.getUTCFullYear()}`;
+    return `${String(date.getUTCMonth() + 1).padStart(2, "0")}/${String(
+      date.getUTCDate(),
+    ).padStart(2, "0")}/${date.getUTCFullYear()}`;
   }
 
   //'mm/dd/yyyy' or ISO string
   const date = new Date(dateStr);
   if (!isNaN(date.getTime())) {
-    return `${String(date.getUTCMonth() + 1).padStart(2, '0')}/${String(date.getUTCDate()).padStart(
-      2,
-      '0',
-    )}/${date.getUTCFullYear()}`;
+    return `${String(date.getUTCMonth() + 1).padStart(2, "0")}/${String(
+      date.getUTCDate(),
+    ).padStart(2, "0")}/${date.getUTCFullYear()}`;
   }
 
   return dateStr;
@@ -132,10 +135,10 @@ export const formatDateForDisplay = (dateStr) => {
 
 //convert time strings to ISO strings for DB storage
 export const formatDateForDb = (dateStr) => {
-  if (!dateStr) return '';
+  if (!dateStr) return "";
 
   let cleaned = String(dateStr).trim();
-  cleaned = cleaned.replace(/\./g, '/');
+  cleaned = cleaned.replace(/\./g, "/");
 
   //< YY, < YYYY, <YY, <YYYY, before YY, before YYYY
   const beforeMatch = cleaned.match(/^(?:<\s*|before\s+)(\d{2,4})$/i);
@@ -160,14 +163,15 @@ export const formatDateForDb = (dateStr) => {
 
 //combine tree and species data
 export const combineTreeAndSpeciesData = (tree, speciesMap) => {
-  const species = speciesMap.find((s) => s.commonName === tree.commonName) || {};
+  const species =
+    speciesMap.find((s) => s.commonName === tree.commonName) || {};
   return {
     ...tree,
-    scientificName: species.scientificName || '',
+    scientificName: species.scientificName || "",
     nonnative: species.nonnative || false,
     invasive: species.invasive || false,
-    markerColor: species.markerColor || 'FFFFFF',
-    family: species.family || '',
+    markerColor: species.markerColor || "FFFFFF",
+    family: species.family || "",
   };
 };
 
@@ -181,7 +185,7 @@ export const generateTreeMarkerIcon = ({
 }) => {
   const markerStrokeWidth = isSelected ? 3 : 1; //if the marker is selected, use a thicker stroke; do not move this line below iconSize calculation
   const iconSize = radius * 2 + markerStrokeWidth;
-  const markerColor = species.markerColor || 'FFFFFF';
+  const markerColor = species.markerColor || "FFFFFF";
   const svgIcon = `
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${iconSize} ${iconSize}'>
         <circle cx='${iconSize / 2}' cy='${iconSize / 2}' r='${radius}' 
@@ -190,9 +194,9 @@ export const generateTreeMarkerIcon = ({
       </svg>
     `;
   return leaflet.icon({
-    iconUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+    iconUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
     iconSize: [iconSize, iconSize],
-    iconRetinaUrl: 'data:image/svg+xml;base64,' + btoa(svgIcon),
+    iconRetinaUrl: "data:image/svg+xml;base64," + btoa(svgIcon),
   });
 };
 
@@ -202,7 +206,9 @@ export const confirmDiscardChanges = (workingTree, selectedTree) => {
   const selectedTreeString = JSON.stringify(selectedTree);
 
   if (workingTree && workingTreeString !== selectedTreeString) {
-    return window.confirm('Are you sure you want to leave the form? Unsaved changes will be lost.');
+    return window.confirm(
+      "Are you sure you want to leave the form? Unsaved changes will be lost.",
+    );
   }
 
   return true; // no unsaved changes, so okay to proceed
@@ -213,31 +219,31 @@ export const handlePhotoClick = (photoUrl) => {
   if (!photoUrl) return;
 
   //open a new browser window
-  const newWindow = window.open('', '_blank', 'width=1024,height=768');
+  const newWindow = window.open("", "_blank", "width=1024,height=768");
   if (!newWindow) return;
 
   //clear any default content
-  newWindow.document.body.innerHTML = '';
+  newWindow.document.body.innerHTML = "";
 
   //style the body
   Object.assign(newWindow.document.body.style, {
-    margin: '0',
-    background: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '100vh',
+    margin: "0",
+    background: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
   });
 
   //create image element
-  const img = newWindow.document.createElement('img');
+  const img = newWindow.document.createElement("img");
   img.src = photoUrl;
-  img.alt = 'Full size view';
+  img.alt = "Full size view";
   Object.assign(img.style, {
-    maxWidth: '100%',
-    maxHeight: '100vh',
-    objectFit: 'contain',
-    cursor: 'pointer',
+    maxWidth: "100%",
+    maxHeight: "100vh",
+    objectFit: "contain",
+    cursor: "pointer",
   });
 
   //append to body
@@ -250,10 +256,13 @@ export const stripTypename = (obj) => {
     return obj.map((item) => stripTypename(item));
   }
 
-  if (obj !== null && typeof obj === 'object') {
+  if (obj !== null && typeof obj === "object") {
     const newObj = {};
     for (const key in obj) {
-      if (key !== '__typename' && Object.prototype.hasOwnProperty.call(obj, key)) {
+      if (
+        key !== "__typename" &&
+        Object.prototype.hasOwnProperty.call(obj, key)
+      ) {
         newObj[key] = stripTypename(obj[key]);
       }
     }

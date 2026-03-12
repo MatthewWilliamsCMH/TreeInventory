@@ -1,10 +1,11 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 //define the schema for the Tree model
 const treeSchema = new Schema({
   commonName: { type: String, required: true },
   variety: { type: String },
   dbh: { type: String }, //require once all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
+  multistem: { type: Boolean, required: true, default: false },
   notes: { type: String },
   photos: {
     bark: { url: String, publicId: String },
@@ -20,7 +21,7 @@ const treeSchema = new Schema({
     easting: { type: Number, required: true }, //always negative at SC
   },
   garden: { type: String }, //require when all trees have a value; use 'enum' to validate input?; create a file of constants for lists?
-  siteInfo: {
+  siteConditions: {
     slope: { type: Boolean, required: true, default: false },
     overheadLines: { type: Boolean, required: true, default: false },
     treeCluster: { type: Boolean, required: true, default: false },
@@ -33,7 +34,7 @@ const treeSchema = new Schema({
   felledDate: { type: String },
   felledBy: { type: String },
   careNeeds: {
-    multistem: { type: Boolean, required: true, default: false },
+    structuralSupport: { type: Boolean, required: true, default: false },
     raiseCrown: { type: Boolean, required: true, default: false },
     routinePrune: { type: Boolean, required: true, default: false },
     trainingPrune: { type: Boolean, required: true, default: false },
@@ -47,6 +48,6 @@ const treeSchema = new Schema({
   hidden: { type: Boolean, required: true, default: false },
 });
 
-const Tree = model('Tree', treeSchema);
+const Tree = model("Tree", treeSchema);
 
 module.exports = Tree;

@@ -1,26 +1,26 @@
 //----------Import----------
 //external libraries
-import React, { useEffect, useMemo, useState } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import React, { useEffect, useMemo, useState } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
 //local components
-import AppContext from './appContext.js';
-import Header from './components/Header/Header.jsx';
-import Navbar from './components/Navbar/Navbar.jsx';
+import AppContext from "./appContext.js";
+import Header from "./components/Header/Header.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 //project-specific helpers
-import { combineTreeAndSpeciesData } from './utils/helpers.js';
-import { dbhList, gardenList } from './utils/constants.js';
+import { combineTreeAndSpeciesData } from "./utils/helpers.js";
+import { dbhList, gardenList } from "./utils/constants.js";
 
 //project-specific queries
-import { GET_TREES } from './queries/get_trees.js';
-import { GET_SPECIES } from './queries/get_species.js';
+import { GET_TREES } from "./queries/get_trees.js";
+import { GET_SPECIES } from "./queries/get_species.js";
 
 //styles (load order is important)
-import './reset.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './custom-bootstrap.scss';
+import "./reset.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./custom-bootstrap.scss";
 
 const App = () => {
   //-----------data reception and transmission----------
@@ -34,8 +34,12 @@ const App = () => {
     commonName: [],
     dbh: dbhList,
     garden: gardenList,
+    multistem: true,
+    invasive: true,
+    nonnative: true,
+    hidden: false,
     careNeeds: {
-      multistem: true,
+      structuralSupport: true,
       raiseCrown: true,
       routinePrune: true,
       trainingPrune: true,
@@ -46,7 +50,7 @@ const App = () => {
       fell: true,
       removeStump: true,
     },
-    siteInfo: {
+    siteConditions: {
       slope: true,
       overheadLines: true,
       treeCluster: true,
@@ -54,15 +58,14 @@ const App = () => {
       proximateFence: true,
       propertyLine: true,
     },
-    invasive: true,
-    nonnative: true,
-    hidden: false,
   });
 
   //define local states and set initial values
   const [filterOpen, setFilterOpen] = useState(false);
-  const [formColor, setFormColor] = useState({ backgroundColor: 'white' });
-  const [isLoggedIn, setIsLoggedIn] = useState(import.meta.env.VITE_LOGGED_IN === 'true');
+  const [formColor, setFormColor] = useState({ backgroundColor: "white" });
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    import.meta.env.VITE_LOGGED_IN === "true",
+  );
   const [mapCenter, setMapCenter] = useState([39.97757, -83.04937]);
   const [mapZoom, setMapZoom] = useState(18);
   const [selectedTree, setSelectedTree] = useState(null);
@@ -80,7 +83,7 @@ const App = () => {
     error: getTreesError,
     loading: getTreesLoading,
     refetch: refetchTrees,
-  } = useQuery(GET_TREES, { fetchPolicy: 'network-only' });
+  } = useQuery(GET_TREES, { fetchPolicy: "network-only" });
 
   const {
     data: getSpeciesData,
@@ -157,7 +160,7 @@ const App = () => {
         workingTree,
       }}
     >
-      <div className='app'>
+      <div className="app">
         <Header />
         <Navbar />
         <Outlet />

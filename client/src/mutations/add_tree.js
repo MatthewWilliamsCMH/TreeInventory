@@ -1,15 +1,16 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const ADD_TREE = gql`
   mutation addTree(
     $commonName: String!
     $variety: String
     $dbh: String
+    $multistem: Boolean
     $photos: TreePhotosInput
     $notes: String
     $location: LocationInput
     $garden: String
-    $siteInfo: SiteInfoInput
+    $siteConditions: siteConditionsInput
     $lastUpdated: String!
     $installedDate: String
     $installedBy: String
@@ -22,11 +23,12 @@ export const ADD_TREE = gql`
       commonName: $commonName
       variety: $variety
       dbh: $dbh
+      multistem: $multistem
       photos: $photos
       notes: $notes
       location: $location
       garden: $garden
-      siteInfo: $siteInfo
+      siteConditions: $siteConditions
       lastUpdated: $lastUpdated
       installedDate: $installedDate
       installedBy: $installedBy
@@ -38,6 +40,7 @@ export const ADD_TREE = gql`
       commonName
       variety
       dbh
+      multistem
       photos {
         bark
         summerLeaf
@@ -52,7 +55,7 @@ export const ADD_TREE = gql`
         easting
       }
       garden
-      siteInfo {
+      siteConditions {
         slope
         overheadLines
         treeCluster
@@ -66,7 +69,7 @@ export const ADD_TREE = gql`
       felledDate
       felledBy
       careNeeds {
-        multistem
+        structuralSupport
         raiseCrown
         routinePrune
         trainingPrune

@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   input LocationInput {
@@ -6,7 +6,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  input SiteInfoInput {
+  input siteConditionsInput {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -16,7 +16,7 @@ const typeDefs = gql`
   }
 
   input CareNeedsInput {
-    multistem: Boolean!
+    structuralSupport: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
     trainingPrune: Boolean!
@@ -56,7 +56,7 @@ const typeDefs = gql`
     easting: Float!
   }
 
-  type SiteInfo {
+  type siteConditions {
     slope: Boolean!
     overheadLines: Boolean!
     treeCluster: Boolean!
@@ -66,7 +66,7 @@ const typeDefs = gql`
   }
 
   type CareNeeds {
-    multistem: Boolean!
+    structuralSupport: Boolean!
     raiseCrown: Boolean!
     routinePrune: Boolean!
     trainingPrune: Boolean!
@@ -108,11 +108,12 @@ const typeDefs = gql`
     species: Species!
     variety: String
     dbh: String
+    multistem: Boolean
     photos: TreePhotos
     notes: String
     location: Location!
     garden: String
-    siteInfo: SiteInfo
+    siteConditions: siteConditions
     lastUpdated: String!
     installedDate: String
     installedBy: String
@@ -135,11 +136,12 @@ const typeDefs = gql`
       commonName: String!
       variety: String
       dbh: String
+      multistem: Boolean
       photos: TreePhotosInput
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: SiteInfoInput
+      siteConditions: siteConditionsInput
       lastUpdated: String!
       installedDate: String
       installedBy: String
@@ -154,11 +156,12 @@ const typeDefs = gql`
       commonName: String!
       variety: String
       dbh: String
+      multistem: Boolean
       photos: TreePhotosInput
       notes: String
       location: LocationInput
       garden: String
-      siteInfo: SiteInfoInput
+      siteConditions: siteConditionsInput
       lastUpdated: String!
       installedDate: String
       installedBy: String
