@@ -49,6 +49,7 @@ const App = () => {
       removeGrate: true,
       fell: true,
       removeStump: true,
+      noCareNeedFlags: true,
     },
     siteConditions: {
       slope: true,
@@ -57,6 +58,7 @@ const App = () => {
       proximateStructure: true,
       proximateFence: true,
       propertyLine: true,
+      noSiteConditionFlags: true,
     },
   });
 

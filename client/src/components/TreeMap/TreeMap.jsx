@@ -56,27 +56,83 @@ const TreeMap = () => {
 
   //define local states and set initial values
   const [markerRadius, setMarkerRadius] = useState(6);
+  // const filteredTrees = useMemo(() => {
+  //   if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
+
+  //   return mergedTrees.filter((tree) => {
+  //     if (!filterCriteria.multistem && tree.multistem) return false;
+  //     if (!filterCriteria.hidden && tree.hidden) return false;
+  //     if (!filterCriteria.nonnative && tree.nonnative) return false;
+  //     if (!filterCriteria.invasive && tree.invasive) return false;
+
+  //     for (const [key, isOn] of Object.entries(
+  //       filterCriteria.careNeeds || {},
+  //     )) {
+  //       if (!isOn && tree.careNeeds?.[key]) return false;
+  //     }
+
+  //     for (const [key, isOn] of Object.entries(
+  //       filterCriteria.siteConditions || {},
+  //     )) {
+  //       if (!isOn && tree.siteConditions?.[key]) return false;
+  //     }
+
+  //     const speciesMatch = filterCriteria.commonName?.includes(tree.commonName);
+  //     const dbhMatch =
+  //       !tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh);
+  //     const gardenMatch =
+  //       !tree.garden?.trim() || filterCriteria.garden?.includes(tree.garden);
+
+  //     return speciesMatch && dbhMatch && gardenMatch;
+  //   });
+  // }, [mergedTrees, filterCriteria]);
+
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
     return mergedTrees.filter((tree) => {
+      // top-level toggles
       if (!filterCriteria.multistem && tree.multistem) return false;
       if (!filterCriteria.hidden && tree.hidden) return false;
       if (!filterCriteria.nonnative && tree.nonnative) return false;
       if (!filterCriteria.invasive && tree.invasive) return false;
 
+      // careNeeds nested toggles
       for (const [key, isOn] of Object.entries(
         filterCriteria.careNeeds || {},
       )) {
-        if (!isOn && tree.careNeeds?.[key]) return false;
+        if (key === "noCareNeedFlags") continue; // skip pseudo-toggle here
+        if (!isOn && tree.careNeeds?.[key]) return false; // exclude tree if toggle off
       }
 
+      // pseudo-toggle for trees with no care-need flags
+      const hasAnyFlag = Object.keys(filterCriteria.careNeeds || {})
+        .filter((k) => k !== "noCareNeedFlags")
+        .some((k) => tree.careNeeds?.[k]);
+      if (!filterCriteria.careNeeds?.noCareNeedFlags && !hasAnyFlag) {
+        return false; // remove tree with no flags
+      }
+
+      // siteConditions nested toggles
       for (const [key, isOn] of Object.entries(
         filterCriteria.siteConditions || {},
       )) {
+        if (key === "noSiteConditionFlags") continue;
         if (!isOn && tree.siteConditions?.[key]) return false;
       }
 
+      // pseudo-toggle for trees with no site-condition flags
+      const hasAnySiteFlag = Object.keys(filterCriteria.siteConditions || {})
+        .filter((k) => k !== "noSiteConditionFlags")
+        .some((k) => tree.siteConditions?.[k]);
+      if (
+        !filterCriteria.siteConditions?.noSiteConditionFlags &&
+        !hasAnySiteFlag
+      ) {
+        return false;
+      }
+
+      // typeahead filters
       const speciesMatch = filterCriteria.commonName?.includes(tree.commonName);
       const dbhMatch =
         !tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh);

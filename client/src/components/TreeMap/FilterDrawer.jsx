@@ -142,7 +142,7 @@ const FilterDrawer = ({ filteredTrees }) => {
         <Row>
           <legend className="text-white h6">Tree Profile</legend>
           <p style={{ fontSize: "0.8rem" }}>
-            Hide/show trees with these characteristics
+            Toggle trees with these characteristics
           </p>
           <Select
             closeMenuOnSelect={false}
@@ -343,7 +343,9 @@ const FilterDrawer = ({ filteredTrees }) => {
 
         <Row className="mt-3">
           <legend className="text-white h6">Care Needs</legend>
-          <p style={{ fontSize: "0.8rem" }}>Hide/show trees with these needs</p>
+          <p style={{ fontSize: "0.8rem" }}>
+            Toggle trees with care-need flags
+          </p>
           {careNeedsList.map((need) => (
             <label key={need}>
               <Toggle
@@ -369,11 +371,30 @@ const FilterDrawer = ({ filteredTrees }) => {
               </span>
             </label>
           ))}
+          <label key="noCareNeedFlags">
+            <Toggle
+              checked={!!filterCriteria.careNeeds?.noCareNeedFlags}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange(
+                  {
+                    target: {
+                      name: "noCareNeedFlags",
+                      type: "checkbox",
+                      checked: event.target.checked,
+                    },
+                  },
+                  "careNeeds",
+                );
+              }}
+            />
+            <span className="filterToggle">No Care-Need Flags</span>
+          </label>
         </Row>
         <Row className="mt-3">
           <legend className="text-white h6">Site Info</legend>
           <p style={{ fontSize: "0.8rem" }}>
-            Hide/show trees with site conditions
+            Toggle trees with site-condition flags
           </p>
           {siteConditionsList.map((condition) => (
             <label key={condition}>
@@ -400,6 +421,25 @@ const FilterDrawer = ({ filteredTrees }) => {
               </span>
             </label>
           ))}
+          <label key="noSiteConditionFlags">
+            <Toggle
+              checked={!!filterCriteria.siteConditions?.noSiteConditionFlags}
+              icons={false}
+              onChange={(event) => {
+                handleFilterChange(
+                  {
+                    target: {
+                      name: "noSiteConditionFlags",
+                      type: "checkbox",
+                      checked: event.target.checked,
+                    },
+                  },
+                  "siteConditions",
+                );
+              }}
+            />
+            <span className="filterToggle">No Site-Condition Flags</span>
+          </label>
         </Row>
         <div
           style={{

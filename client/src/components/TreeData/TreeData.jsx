@@ -678,7 +678,7 @@ const TreeData = () => {
                   </Col>
                   <Col md={4}>
                     <Form.Check
-                      className="mt-2 mb-2"
+                      className="mt-2"
                       checked={workingTree.multistem}
                       id="multistem"
                       label="Multistem"
