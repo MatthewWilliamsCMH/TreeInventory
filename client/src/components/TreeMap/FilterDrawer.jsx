@@ -142,7 +142,7 @@ const FilterDrawer = ({ filteredTrees }) => {
         <Row>
           <legend className="text-white h6">Tree Profile</legend>
           <p style={{ fontSize: "0.8rem" }}>
-            Toggle trees with these characteristics
+            Include trees with these characteristics
           </p>
           <Select
             closeMenuOnSelect={false}
@@ -344,7 +344,7 @@ const FilterDrawer = ({ filteredTrees }) => {
         <Row className="mt-3">
           <legend className="text-white h6">Care Needs</legend>
           <p style={{ fontSize: "0.8rem" }}>
-            Toggle trees with care-need flags
+            Include trees with care-need flags
           </p>
           {careNeedsList.map((need) => (
             <label key={need}>
@@ -394,7 +394,7 @@ const FilterDrawer = ({ filteredTrees }) => {
         <Row className="mt-3">
           <legend className="text-white h6">Site Info</legend>
           <p style={{ fontSize: "0.8rem" }}>
-            Toggle trees with site-condition flags
+            Include trees with site-condition flags
           </p>
           {siteConditionsList.map((condition) => (
             <label key={condition}>

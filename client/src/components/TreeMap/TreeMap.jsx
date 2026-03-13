@@ -91,25 +91,47 @@ const TreeMap = () => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
     return mergedTrees.filter((tree) => {
+      // determine if tree matches any enabled flags
+      const matchesEnabledCareFlag = Object.entries(
+        filterCriteria.careNeeds || {},
+      )
+        .filter(([k, v]) => k !== "noCareNeedFlags" && v)
+        .some(([k]) => tree.careNeeds?.[k]);
+
+      const matchesEnabledSiteFlag = Object.entries(
+        filterCriteria.siteConditions || {},
+      )
+        .filter(([k, v]) => k !== "noSiteConditionFlags" && v)
+        .some(([k]) => tree.siteConditions?.[k]);
+
+      const protectedTree = matchesEnabledCareFlag || matchesEnabledSiteFlag;
+
       // top-level toggles
-      if (!filterCriteria.multistem && tree.multistem) return false;
-      if (!filterCriteria.hidden && tree.hidden) return false;
-      if (!filterCriteria.nonnative && tree.nonnative) return false;
-      if (!filterCriteria.invasive && tree.invasive) return false;
+      if (!filterCriteria.multistem && tree.multistem && !protectedTree)
+        return false;
+      if (!filterCriteria.hidden && tree.hidden && !protectedTree) return false;
+      if (!filterCriteria.nonnative && tree.nonnative && !protectedTree)
+        return false;
+      if (!filterCriteria.invasive && tree.invasive && !protectedTree)
+        return false;
 
       // careNeeds nested toggles
       for (const [key, isOn] of Object.entries(
         filterCriteria.careNeeds || {},
       )) {
         if (key === "noCareNeedFlags") continue; // skip pseudo-toggle here
-        if (!isOn && tree.careNeeds?.[key]) return false; // exclude tree if toggle off
+        if (!isOn && tree.careNeeds?.[key] && !protectedTree) return false; // exclude tree if toggle off
       }
 
       // pseudo-toggle for trees with no care-need flags
       const hasAnyFlag = Object.keys(filterCriteria.careNeeds || {})
         .filter((k) => k !== "noCareNeedFlags")
         .some((k) => tree.careNeeds?.[k]);
-      if (!filterCriteria.careNeeds?.noCareNeedFlags && !hasAnyFlag) {
+      if (
+        !filterCriteria.careNeeds?.noCareNeedFlags &&
+        !hasAnyFlag &&
+        !protectedTree
+      ) {
         return false; // remove tree with no flags
       }
 
@@ -118,7 +140,7 @@ const TreeMap = () => {
         filterCriteria.siteConditions || {},
       )) {
         if (key === "noSiteConditionFlags") continue;
-        if (!isOn && tree.siteConditions?.[key]) return false;
+        if (!isOn && tree.siteConditions?.[key] && !protectedTree) return false;
       }
 
       // pseudo-toggle for trees with no site-condition flags
@@ -127,7 +149,8 @@ const TreeMap = () => {
         .some((k) => tree.siteConditions?.[k]);
       if (
         !filterCriteria.siteConditions?.noSiteConditionFlags &&
-        !hasAnySiteFlag
+        !hasAnySiteFlag &&
+        !protectedTree
       ) {
         return false;
       }
