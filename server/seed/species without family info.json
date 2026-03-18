@@ -1,0 +1,667 @@
+[
+  {
+    "commonName": "Chestnut oak",
+    "scientificName": "Quercus montana",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Northern red oak",
+    "scientificName": "Quercus rubra",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Sweetgum",
+    "scientificName": "Liquidambar styraciflua",
+    "family": "Hamamelidaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Northern catalpa",
+    "scientificName": "Catalpa speciosa (Warder) Warder ex Engelm.",
+    "family": "Bignoniaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Kentucky coffeetree",
+    "scientificName": "Gymnocladus dioicus",
+    "family": "Fabaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "American sycamore",
+    "scientificName": "Platanus occidentalis",
+    "family": "Platanaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Weeping cherry",
+    "scientificName": "Prunus pendula",
+    "family": "Rosaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Black birch",
+    "scientificName": "Betula nigra",
+    "family": "Betulaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Butternut",
+    "scientificName": "Juglans cinerea",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Shagbark hickory",
+    "scientificName": "Carya ovata",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Red mulberry",
+    "scientificName": "Morus rubra",
+    "family": "Moraceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Yellow buckeye",
+    "scientificName": "Aesculus flava",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Pin oak",
+    "scientificName": "Quercus palustris",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Tree of heaven",
+    "scientificName": "Ailanthus altissima",
+    "family": "Simaroubaceae",
+    "nonnative": true,
+    "invasive": true
+  },
+  {
+    "commonName": "American elm",
+    "scientificName": "Ulmus americana",
+    "family": "Ulmaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Slippery elm",
+    "scientificName": "Ulmus rubra",
+    "family": "Ulmaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Common persimmon",
+    "scientificName": "Diospyros virginiana",
+    "family": "Ebanaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "American beech",
+    "scientificName": "Fagus grandifolia",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "American chestnut",
+    "scientificName": "Castanea dentata",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Chinquapin oak",
+    "scientificName": "Quercus muehlenbergii",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Sawtooth oak",
+    "scientificName": "Quercus acutissima",
+    "family": "Fagaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Mockernut hickory",
+    "scientificName": "Carya tomentosa",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Scrub hickory",
+    "scientificName": "Carya floridana",
+    "family": "Juglandaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Eastern white pine",
+    "scientificName": "Pinus strobus",
+    "family": "Pinaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Ohio buckeye",
+    "scientificName": "Aesculus glabra",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Burr oak",
+    "scientificName": "Quercus macrocarpa",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Bitternut hickory",
+    "scientificName": "Carya cordiformis",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Shortleaf pine",
+    "scientificName": "Pinus echinata",
+    "family": "Pinaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Virginia pine",
+    "scientificName": "Pinus virginiana",
+    "family": "Pinaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Red maple",
+    "scientificName": "Acer rubrum",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Silver maple",
+    "scientificName": "Acer saccharinum",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Black locust",
+    "scientificName": "Robinia pseudoacacia",
+    "family": "Fabaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Shellbark hickory",
+    "scientificName": "Carya laciniosa",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Saucer magnolia",
+    "scientificName": "Magnolia x soulangeana",
+    "family": "Magnoliaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Sweetbay magnolia",
+    "scientificName": "Magnolia virginiana",
+    "family": "Magnoliaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Tulpitree",
+    "scientificName": "Liriodendron tulipifera",
+    "family": "Magnoliaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "White mulberry",
+    "scientificName": "Morus alba",
+    "family": "Moraceae",
+    "nonnative": true,
+    "invasive": true
+  },
+  {
+    "commonName": "Bigtooth aspen",
+    "scientificName": "Populus grandidentata",
+    "family": "Salicaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Eastern cottonwood",
+    "scientificName": "Populus deltoides",
+    "family": "Salicaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Japanese maple",
+    "scientificName": "Acer palmatum",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Common hackberry",
+    "scientificName": "Celtis occidentalis",
+    "family": "Ulmaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "White oak",
+    "scientificName": "Quercus alba",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Shingle oak",
+    "scientificName": "Quercus imbricaria",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Black walnut",
+    "scientificName": "Juglans nigra",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Sassafras",
+    "scientificName": "Sassafras albidum",
+    "family": "Lauraceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Osage-orange",
+    "scientificName": "Maclura pomifera",
+    "family": "Moraceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Loblolly pine",
+    "scientificName": "Pinus taeda",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Red pine",
+    "scientificName": "Pinus resinosa",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Scots pine",
+    "scientificName": "Pinus sylvestris",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Blackhaw",
+    "scientificName": "Viburnum prunifolium",
+    "family": "Viburnaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Honey locust",
+    "scientificName": "Gleditsia triacanthos",
+    "family": "Fabaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Northern pecan",
+    "scientificName": "Carya illinoinensis",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Pignut hickory",
+    "scientificName": "Carya glabra",
+    "family": "Juglandaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "European linden",
+    "scientificName": "Tilia x europaea",
+    "family": "Malvaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Blackgum",
+    "scientificName": "Myssa sylvatica",
+    "family": "Nyssaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Pitch pine",
+    "scientificName": "Pinus rigida",
+    "family": "Pinaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Black maple",
+    "scientificName": "Acer nigrum",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Red horse-chestnut",
+    "scientificName": "Aesculus x carnea",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Limber pine",
+    "scientificName": "Pinus flexilis",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Flowering dogwood",
+    "scientificName": "Cornus florida",
+    "family": "Cornaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Scarlet oak",
+    "scientificName": "Quercus coccinea",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Shumard oak",
+    "scientificName": "Quercus shumardii",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Ginkgo",
+    "scientificName": "Ginkgo biloba",
+    "family": "Ginkgoaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Littleleaf linden",
+    "scientificName": "Tilia cordata",
+    "family": "Malvaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Japanese tree lilac",
+    "scientificName": "Syringa reticulata",
+    "family": "Oleaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Prairie crab apple",
+    "scientificName": "Malus ioensis",
+    "family": "Rosaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Black willow",
+    "scientificName": "Salix nigra",
+    "family": "Salicaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Green ash",
+    "scientificName": "Fraxinus pennsylvanica",
+    "family": "Oleaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Paperbark maple",
+    "scientificName": "Acer griseum",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Eastern redbud",
+    "scientificName": "Cercis canadensis",
+    "family": "Fabaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Boxelder",
+    "scientificName": "Acer negundo",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "European beech",
+    "scientificName": "Fagus sylvatica",
+    "family": "Fagaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "White ash",
+    "scientificName": "Fraxinus americana",
+    "family": "Oleaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Eastern hemlock",
+    "scientificName": "Tsuga canadensis",
+    "family": "Pinaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Eastern redcedar",
+    "scientificName": "Juniperus virginiana",
+    "family": "Cupressaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "American basswood",
+    "scientificName": "Tilia americana",
+    "family": "Malvaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Blue spruce",
+    "scientificName": "Picea pungens",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Norway spruce",
+    "scientificName": "Picea abies",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Black cherry",
+    "scientificName": "Prunus serotina",
+    "family": "Rosaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Hawthorn",
+    "scientificName": "Crataegus phaenopyrum",
+    "family": "Rosaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Unknown species",
+    "scientificName": "Unknown species",
+    "family": "Unknown family",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Korean maple",
+    "scientificName": "Acer pseudosieboldianum",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Swamp white oak",
+    "scientificName": "Quercus bicolor",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Cucumber tree",
+    "scientificName": "Magnolia acuminata",
+    "family": "Magnoliaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Callery pear",
+    "scientificName": "Pyrus calleryana",
+    "family": "Rosaceae",
+    "nonnative": true,
+    "invasive": true
+  },
+  {
+    "commonName": "Norway maple",
+    "scientificName": "Acer platanoides",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Siberian elm",
+    "scientificName": "Ulmus pumila",
+    "family": "Ulmaceae",
+    "nonnative": true,
+    "invasive": true
+  },
+  {
+    "commonName": "Yellow birch",
+    "scientificName": "Betula alleghaniensis Britton",
+    "family": "Betulaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Black oak",
+    "scientificName": "Quercus velutina",
+    "family": "Fagaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Austrian pine",
+    "scientificName": "Pinus nigra",
+    "family": "Pinaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Sugar maple",
+    "scientificName": "Acer saccharum",
+    "family": "Sapindaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "Trident maple",
+    "scientificName": "Acer buergerianum",
+    "family": "Sapindaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Apple",
+    "scientificName": "Malus domestica",
+    "family": "Rosaceae",
+    "nonnative": true,
+    "invasive": false
+  },
+  {
+    "commonName": "Rock elm",
+    "scientificName": "Ulmus thomasii",
+    "family": "Ulmaceae",
+    "nonnative": false,
+    "invasive": false
+  },
+  {
+    "commonName": "American crabapple",
+    "scientificName": "Malus coronaria",
+    "family": "Rosaceae",
+    "nonnative": false,
+    "invasive": false
+  }
+]

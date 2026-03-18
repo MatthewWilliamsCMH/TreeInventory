@@ -323,7 +323,7 @@ const FilterDrawer = ({ filteredTrees }) => {
             <span className="filterToggle">Invasive</span>
           </label>
 
-          <label key="hidden">
+          {/*}          <label key="hidden">
             <Toggle
               checked={!!filterCriteria.hidden}
               icons={false}
@@ -339,6 +339,7 @@ const FilterDrawer = ({ filteredTrees }) => {
             />
             <span className="filterToggle">Hidden</span>
           </label>
+*/}
         </Row>
 
         <Row className="mt-3">

@@ -56,42 +56,15 @@ const TreeMap = () => {
 
   //define local states and set initial values
   const [markerRadius, setMarkerRadius] = useState(6);
-  // const filteredTrees = useMemo(() => {
-  //   if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
-
-  //   return mergedTrees.filter((tree) => {
-  //     if (!filterCriteria.multistem && tree.multistem) return false;
-  //     if (!filterCriteria.hidden && tree.hidden) return false;
-  //     if (!filterCriteria.nonnative && tree.nonnative) return false;
-  //     if (!filterCriteria.invasive && tree.invasive) return false;
-
-  //     for (const [key, isOn] of Object.entries(
-  //       filterCriteria.careNeeds || {},
-  //     )) {
-  //       if (!isOn && tree.careNeeds?.[key]) return false;
-  //     }
-
-  //     for (const [key, isOn] of Object.entries(
-  //       filterCriteria.siteConditions || {},
-  //     )) {
-  //       if (!isOn && tree.siteConditions?.[key]) return false;
-  //     }
-
-  //     const speciesMatch = filterCriteria.commonName?.includes(tree.commonName);
-  //     const dbhMatch =
-  //       !tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh);
-  //     const gardenMatch =
-  //       !tree.garden?.trim() || filterCriteria.garden?.includes(tree.garden);
-
-  //     return speciesMatch && dbhMatch && gardenMatch;
-  //   });
-  // }, [mergedTrees, filterCriteria]);
-
   const filteredTrees = useMemo(() => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
     return mergedTrees.filter((tree) => {
-      // determine if tree matches any enabled flags
+      console.log(tree.felledDate);
+      //automatically exclude felled trees
+      if (!!tree.careNeeds.felledDate || !!tree.felledBy) return false;
+
+      //determine if tree matches any enabled flags
       const matchesEnabledCareFlag = Object.entries(
         filterCriteria.careNeeds || {},
       )
@@ -106,16 +79,16 @@ const TreeMap = () => {
 
       const protectedTree = matchesEnabledCareFlag || matchesEnabledSiteFlag;
 
-      // top-level toggles
+      //top-level toggles
       if (!filterCriteria.multistem && tree.multistem && !protectedTree)
         return false;
-      if (!filterCriteria.hidden && tree.hidden && !protectedTree) return false;
+      // if (!filterCriteria.hidden && tree.hidden && !protectedTree) return false; //making hidden status a calculated value; will remove field from db if this work
       if (!filterCriteria.nonnative && tree.nonnative && !protectedTree)
         return false;
       if (!filterCriteria.invasive && tree.invasive && !protectedTree)
         return false;
 
-      // careNeeds nested toggles
+      //careNeeds nested toggles
       for (const [key, isOn] of Object.entries(
         filterCriteria.careNeeds || {},
       )) {
@@ -123,7 +96,7 @@ const TreeMap = () => {
         if (!isOn && tree.careNeeds?.[key] && !protectedTree) return false; // exclude tree if toggle off
       }
 
-      // pseudo-toggle for trees with no care-need flags
+      //pseudo-toggle for trees with no care-need flags
       const hasAnyFlag = Object.keys(filterCriteria.careNeeds || {})
         .filter((k) => k !== "noCareNeedFlags")
         .some((k) => tree.careNeeds?.[k]);
@@ -135,7 +108,7 @@ const TreeMap = () => {
         return false; // remove tree with no flags
       }
 
-      // siteConditions nested toggles
+      //siteConditions nested toggles
       for (const [key, isOn] of Object.entries(
         filterCriteria.siteConditions || {},
       )) {
@@ -143,7 +116,7 @@ const TreeMap = () => {
         if (!isOn && tree.siteConditions?.[key] && !protectedTree) return false;
       }
 
-      // pseudo-toggle for trees with no site-condition flags
+      //pseudo-toggle for trees with no site-condition flags
       const hasAnySiteFlag = Object.keys(filterCriteria.siteConditions || {})
         .filter((k) => k !== "noSiteConditionFlags")
         .some((k) => tree.siteConditions?.[k]);
@@ -155,7 +128,7 @@ const TreeMap = () => {
         return false;
       }
 
-      // typeahead filters
+      //typeahead filters
       const speciesMatch = filterCriteria.commonName?.includes(tree.commonName);
       const dbhMatch =
         !tree.dbh?.trim() || filterCriteria.dbh?.includes(tree.dbh);
