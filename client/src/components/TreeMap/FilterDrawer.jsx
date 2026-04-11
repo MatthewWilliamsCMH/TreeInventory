@@ -322,24 +322,6 @@ const FilterDrawer = ({ filteredTrees }) => {
             />
             <span className="filterToggle">Invasive</span>
           </label>
-
-          {/*}          <label key="hidden">
-            <Toggle
-              checked={!!filterCriteria.hidden}
-              icons={false}
-              onChange={(event) => {
-                handleFilterChange({
-                  target: {
-                    name: "hidden",
-                    type: "checkbox",
-                    checked: event.target.checked,
-                  },
-                });
-              }}
-            />
-            <span className="filterToggle">Hidden</span>
-          </label>
-*/}
         </Row>
 
         <Row className="mt-3">
