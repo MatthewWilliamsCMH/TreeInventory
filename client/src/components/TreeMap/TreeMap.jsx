@@ -62,7 +62,7 @@ const TreeMap = () => {
     return mergedTrees.filter((tree) => {
       console.log(tree.felledDate);
       //automatically exclude felled trees
-      if (!!tree.careNeeds.felledDate || !!tree.felledBy) return false;
+      if (!!tree.felledDate || !!tree.felledBy) return false;
 
       //determine if tree matches any enabled flags
       const matchesEnabledCareFlag = Object.entries(
