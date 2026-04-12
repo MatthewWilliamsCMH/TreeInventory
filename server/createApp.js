@@ -17,9 +17,7 @@ const isProd = process.env.NODE_ENV === "production";
 const baseFolder = isProd ? "tree-inventory/prod" : "tree-inventory/dev";
 
 // Cache ApolloServer instance to avoid double-starts (dev + serverless)
-//let apolloServer;
-const apolloServer = new ApolloServer({ typeDefs, resolvers });
-await apolloServer.start();
+let apolloServer;
 
 async function createApp() {
   console.log("Environment:", process.env.NODE_ENV);

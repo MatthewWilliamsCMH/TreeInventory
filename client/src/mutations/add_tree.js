@@ -42,12 +42,30 @@ export const ADD_TREE = gql`
       dbh
       multistem
       photos {
-        bark
-        summerLeaf
-        autumnLeaf
-        fruit
-        flower
-        environs
+        bark {
+          url
+          publicId
+        }
+        summerLeaf {
+          url
+          publicId
+        }
+        autumnLeaf {
+          url
+          publicId
+        }
+        fruit {
+          url
+          publicId
+        }
+        flower {
+          url
+          publicId
+        }
+        environs {
+          url
+          publicId
+        }
       }
       notes
       location {

@@ -441,7 +441,6 @@ const TreeData = () => {
             variables: cleanedPayload, // make sure this matches your mutation variable names
           });
 
-          console.log("updateTree result:", result);
           await refetchTrees();
         } catch (err) {
           console.error("Apollo updateTree error:", err);

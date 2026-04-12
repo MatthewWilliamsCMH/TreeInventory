@@ -60,7 +60,6 @@ const TreeMap = () => {
     if (!mergedTrees || !Array.isArray(mergedTrees)) return [];
 
     return mergedTrees.filter((tree) => {
-      console.log(tree.felledDate);
       //automatically exclude felled trees
       if (!!tree.felledDate || !!tree.felledBy) return false;
 
