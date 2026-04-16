@@ -233,12 +233,16 @@ const TreeData = () => {
   const handlePhotoUpload = async (file) => {
     try {
       const formData = new FormData();
-      formData.append("photo", file);
+      formData.append("file", file);
 
       // choose endpoint depending on dev vs prod
-      const endpoint = import.meta.env.DEV
-        ? "http://localhost:3001/api/uploads"
-        : "/api/uploads";
+      // const endpoint = import.meta.env.DEV
+      //   ? "http://localhost:3001/api/uploads"
+      //   : "/api/uploads";
+
+      formData.append("upload_preset", "ml_default");
+
+      const endpoint = "https://api.cloudinary.com/v1_1/dlnh9mcwv/image/upload";
 
       const response = await fetch(endpoint, {
         method: "POST",
@@ -247,13 +251,13 @@ const TreeData = () => {
 
       const data = await response.json();
 
-      if (!data?.url || !data?.publicId) {
-        throw new Error("Invalid upload response from server");
+      if (!data?.secure_url || !data?.public_id) {
+        throw new Error("Invalid Cloudinary response");
       }
 
       return {
-        url: data.url,
-        publicId: data.publicId,
+        url: data.secure_url,
+        publicId: data.public_id,
       };
     } catch (err) {
       console.error("Error uploading photo:", err);
