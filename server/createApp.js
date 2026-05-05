@@ -13,8 +13,7 @@ const { typeDefs } = require("./schemas/typeDefs");
 const { resolvers } = require("./schemas/resolvers");
 
 //determine which folder received uploaded images based on environment
-const isProd = process.env.NODE_ENV === "production";
-const baseFolder = isProd ? "tree-inventory/prod" : "tree-inventory/dev";
+//const isProd = process.env.NODE_ENV === "production";
 
 // Cache ApolloServer instance to avoid double-starts (dev + serverless)
 let apolloServer;
@@ -48,14 +47,14 @@ async function createApp() {
     }
 
     try {
-      const originalName = path.parse(req.file.originalname).name;
+      //      const originalName = path.parse(req.file.originalname).name;
 
       const result = await new Promise((resolve, reject) => {
         const stream = cloudinary.uploader.upload_stream(
           {
-            folder: baseFolder,
-            public_id: originalName,
-            overwrite: true,
+            folder: "tree-inventory",
+            public_id: Date.now().toString(),
+            overwrite: false,
           },
           (err, result) => (err ? reject(err) : resolve(result)),
         );
