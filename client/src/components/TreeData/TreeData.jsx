@@ -258,7 +258,7 @@ const TreeData = () => {
 
       return {
         url: data.secure_url,
-        publicId: data.public_id,
+        publicId: data.cleanPublicId,
       };
     } catch (err) {
       console.error("Error uploading photo:", err);
