@@ -253,13 +253,9 @@ const TreeData = () => {
         throw new Error("Invalid Cloudinary response");
       }
 
-      //removes folder path from publicId
-      const cleanPublicId = data.public_id.split("/").pop();
-      console.log(cleanPublicId);
-
       return {
         url: data.secure_url,
-        publicId: data.cleanPublicId,
+        publicId: data.public_id,
       };
     } catch (err) {
       console.error("Error uploading photo:", err);
