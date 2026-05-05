@@ -253,6 +253,9 @@ const TreeData = () => {
         throw new Error("Invalid Cloudinary response");
       }
 
+      //removes folder path from publicId to get just the unique identifier, which is used for deletion; this is necessary because the deletePhoto mutation expects just the publicId without the folder path
+      const cleanPublicId = data.public_id.split("/").pop();
+
       return {
         url: data.secure_url,
         publicId: data.public_id,
