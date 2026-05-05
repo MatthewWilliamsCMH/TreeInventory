@@ -45,7 +45,7 @@ async function createApp() {
     if (!req.file) {
       return res.status(400).json({ message: "No file uploaded" });
     }
-
+    /* I think this is now all handled by the client-side direct upload to Cloudinary, so this route is no longer needed; keeping it here for reference in case we want to use it for some reason in the future, but it's not currently being used in production or development
     try {
       //      const originalName = path.parse(req.file.originalname).name;
 
@@ -73,6 +73,7 @@ async function createApp() {
       console.error("Cloudinary upload error:", err);
       res.status(500).json({ message: "Upload failed" });
     }
+      */
   });
 
   // ---------- APOLLO SERVER ----------
