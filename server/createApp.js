@@ -55,6 +55,9 @@ async function createApp() {
             folder: "tree-inventory",
             public_id: Date.now().toString(),
             overwrite: false,
+            //            folder: "baseFolder",
+            //            public_id: originalName,
+            //            overwrite: true,
           },
           (err, result) => (err ? reject(err) : resolve(result)),
         );
