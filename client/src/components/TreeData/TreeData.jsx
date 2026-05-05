@@ -236,9 +236,9 @@ const TreeData = () => {
       const timeStamp = Date.now().toString();
 
       formData.append("file", file);
-      formData.append("upload_preset", "ml_default");
+      formData.append("upload_preset", "tree-inventory-upload");
       formData.append("folder", "tree-inventory");
-      formData.append("public_id", timeStamp);
+      //      formData.append("public_id", timeStamp);
 
       const endpoint = "https://api.cloudinary.com/v1_1/dlnh9mcwv/image/upload";
 
