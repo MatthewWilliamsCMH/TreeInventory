@@ -53,6 +53,7 @@ const TreeMap = () => {
   const userLocationRef = useRef(null);
   const previousSelectedTreeRef = useRef(null);
   const isLoggedInRef = useRef(isLoggedIn);
+  const activeDraggableMarkerRef = useRef(null);
 
   //define local states and set initial values
   const [markerRadius, setMarkerRadius] = useState(6);
@@ -363,6 +364,27 @@ const TreeMap = () => {
         //stop event from triggering map's double-click zoom
         leaflet.DomEvent.stopPropagation(event);
 
+        if (
+          activeDraggableMarkerRef.current &&
+          activeDraggableMarkerRef.current !== markerInfo
+        ) {
+          const previousMarkerInfo = activeDraggableMarkerRef.current;
+
+          previousMarkerInfo.draggable = false;
+          previousMarkerInfo.opacity = 1;
+          previousMarkerInfo.marker.dragging.disable();
+
+          const resetIcon = generateTreeMarkerIcon({
+            tree: previousMarkerInfo.tree,
+            species: previousMarkerInfo.species,
+            radius: markerRadius,
+            opacity: 1,
+            isSelected: selectedTree?.id === previousMarkerInfo.tree.id,
+          });
+
+          previousMarkerInfo.marker.setIcon(resetIcon);
+        }
+
         //toggle draggable state
         markerInfo.draggable = !markerInfo.draggable;
         if (markerInfo.draggable) {
@@ -391,6 +413,9 @@ const TreeMap = () => {
           isSelected,
         });
         marker.setIcon(updatedIcon);
+        activeDraggableMarkerRef.current = markerInfo.draggable
+          ? markerInfo
+          : null;
       }
     });
 
