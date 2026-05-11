@@ -375,7 +375,8 @@ const TreeMap = () => {
         markerInfo.opacity = markerInfo.opacity === 1 ? 0.5 : 1;
 
         //calculate current radius based on actual zoom level
-        const currentZoom = map.current.getZoom();
+        //const currentZoom = map.current.getZoom();
+        const currentZoom = mapRef.current.getZoom();
         const currentRadius =
           Math.min(Math.max(Math.floor((currentZoom - 18) * 3 + 6), 6), 24) ||
           6;
