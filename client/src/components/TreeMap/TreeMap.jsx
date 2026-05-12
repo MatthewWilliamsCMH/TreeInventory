@@ -363,7 +363,6 @@ const TreeMap = () => {
 
         //stop event from triggering map's double-click zoom
         leaflet.DomEvent.stopPropagation(event);
-
         if (
           activeDraggableMarkerRef.current &&
           activeDraggableMarkerRef.current !== markerInfo
@@ -373,11 +372,15 @@ const TreeMap = () => {
           previousMarkerInfo.draggable = false;
           previousMarkerInfo.opacity = 1;
           previousMarkerInfo.marker.dragging.disable();
-
+          const myNewRadius =
+            Math.min(
+              Math.max(Math.floor((mapRef.current.getZoom() - 18) * 3 + 6), 6),
+              24,
+            ) || 6;
           const resetIcon = generateTreeMarkerIcon({
             tree: previousMarkerInfo.tree,
             species: previousMarkerInfo.species,
-            radius: markerRadius,
+            radius: myNewRadius,
             opacity: 1,
             isSelected: selectedTree?.id === previousMarkerInfo.tree.id,
           });

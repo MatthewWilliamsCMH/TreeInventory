@@ -7902,8 +7902,8 @@
     "$date": "2026-03-26T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97803525009116,
-    "easting": -83.04833985865116
+    "northing": 39.97803268087708,
+    "easting": -83.04833918809891
   },
   "garden": "East bed and lawn",
   "installedDate": "< 2018",
@@ -10524,8 +10524,8 @@
     "$date": "2026-05-08T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97782354849665,
-    "easting": -83.04825805127622
+    "northing": 39.97782200696345,
+    "easting": -83.04825939238073
   },
   "garden": "Parking-lot beds and lawn",
   "installedDate": "< 2018",
@@ -16941,8 +16941,8 @@
     "$date": "2025-03-12T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.9781303100598,
-    "easting": -83.04826006293298
+    "northing": 39.97813133774394,
+    "easting": -83.04825335741045
   },
   "garden": "East bed and lawn",
   "installedDate": "< 2018",
@@ -27079,8 +27079,8 @@
     "$date": "2026-05-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97690428323794,
-    "easting": -83.04862953722477
+    "northing": 39.9769058247775,
+    "easting": -83.04863020777704
   },
   "garden": "Goodale entrance beds",
   "installedDate": "< 2019",
