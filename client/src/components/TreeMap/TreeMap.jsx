@@ -50,7 +50,7 @@ const TreeMap = () => {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef({});
-  const userLocationRef = useRef(null);
+  //const userLocationRef = useRef(null);
   const previousSelectedTreeRef = useRef(null);
   const isLoggedInRef = useRef(isLoggedIn);
   const activeDraggableMarkerRef = useRef(null);
