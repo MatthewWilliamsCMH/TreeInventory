@@ -300,7 +300,9 @@ const TreeMap = () => {
     markersRef.current[tree.id] = markerInfo;
 
     marker.on("dragend", function (event) {
-      const { lat, lng } = event.target._latlng;
+      const { lat, lng } = event.target.getLatLng();
+      console.log(markerInfo);
+
       const draggedTreeId = tree.id;
       updateTreeLocation({
         variables: {
@@ -332,6 +334,9 @@ const TreeMap = () => {
           generateTreeMarkerIcon({
             tree: selectedTree,
             species: markersRef.current[selectedTree.id].species,
+            //Added for tesing; values will need to be calculated based on current zoom level in final version
+            radius: markerRadius,
+            opacity: 1,
             isSelected: false,
           }),
         );
@@ -367,8 +372,9 @@ const TreeMap = () => {
           activeDraggableMarkerRef.current &&
           activeDraggableMarkerRef.current !== markerInfo
         ) {
-          const previousMarkerInfo = activeDraggableMarkerRef.current;
-
+          // const previousMarkerInfo = activeDraggableMarkerRef.current;
+          const previousMarkerInfo =
+            markersRef.current[activeDraggableMarkerRef.current?.tree?.id];
           previousMarkerInfo.draggable = false;
           previousMarkerInfo.opacity = 1;
           previousMarkerInfo.marker.dragging.disable();
@@ -443,6 +449,9 @@ const TreeMap = () => {
             generateTreeMarkerIcon({
               tree: selectedTree,
               species: markersRef.current[selectedTree.id].species,
+              //Added for tesing; values will need to be calculated based on current zoom level in final version
+              radius: markerRadius,
+              opacity: 1,
               isSelected: false,
             }),
           );
