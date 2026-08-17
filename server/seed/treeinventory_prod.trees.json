@@ -450,8 +450,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97736571586375,
-    "easting": -83.04875627160074
+    "northing": 39.97739224300659,
+    "easting": -83.04870966821909
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -726,8 +726,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97732460840658,
-    "easting": -83.04866038262846
+    "northing": 39.97733745448959,
+    "easting": -83.04867932572962
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -2658,8 +2658,8 @@
     "$date": "2025-03-19T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97736622970683,
-    "easting": -83.04869860410692
+    "northing": 39.97737856193908,
+    "easting": -83.04867010563613
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -3459,7 +3459,7 @@
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741981918703",
-      "publicID": "tree-inventory/1741981918703"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "",
@@ -3470,8 +3470,8 @@
       "publicId": ""
     },
     "fruit": {
-      "url": "",
-      "publicId": ""
+      "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/v1786402968/tree-inventory/lv5i9rgo9c9kzuj0eyfv.jpg",
+      "publicId": "tree-inventory/lv5i9rgo9c9kzuj0eyfv"
     },
     "flower": {
       "url": "",
@@ -3479,11 +3479,11 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741981947717",
-      "publicID": "tree-inventory/1741981947717"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-03-14T00:00:00.000Z"
+    "$date": "2026-08-10T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97764319055288,
@@ -3495,6 +3495,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -3503,8 +3504,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -4107,8 +4107,8 @@
     "$date": "2026-05-04T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977297888546175,
-    "easting": -83.04875895380975
+    "northing": 39.97732936145758,
+    "easting": -83.04876683279873
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -4383,8 +4383,8 @@
     "$date": "2025-07-08T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.9774042540824,
-    "easting": -83.04872006177904
+    "northing": 39.977433029271495,
+    "easting": -83.04872341454029
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -4797,8 +4797,8 @@
     "$date": "2025-09-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977352099021296,
-    "easting": -83.04865300655366
+    "northing": 39.9773279483884,
+    "easting": -83.04862216114999
   },
   "garden": "Ravine",
   "installedDate": "< 2024",
@@ -5142,8 +5142,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97734978672705,
-    "easting": -83.04877907037736
+    "northing": 39.977377791174625,
+    "easting": -83.04874604567885
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -5280,8 +5280,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977198202820865,
-    "easting": -83.04863389581443
+    "northing": 39.97719306437746,
+    "easting": -83.04862048476934
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -5387,11 +5387,11 @@
   "commonName": "Norway maple",
   "variety": "",
   "dbh": "12-18",
-  "notes": "",
+  "notes": "2026: west stem is dead",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1743105144931",
-      "publicID": "tree-inventory/1743105144931"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "",
@@ -5411,15 +5411,15 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1743105176819",
-      "publicID": "tree-inventory/1743105176819"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-08-15T00:00:00.000Z"
+    "$date": "2026-06-17T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97725421182874,
-    "easting": -83.04865568876268
+    "northing": 39.97725369798485,
+    "easting": -83.0486312136054
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -5427,6 +5427,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -5435,8 +5436,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -6522,8 +6522,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97721156277187,
-    "easting": -83.04864529520273
+    "northing": 39.97721426045398,
+    "easting": -83.0486312136054
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -7281,8 +7281,8 @@
     "$date": "2025-07-04T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97730097160751,
-    "easting": -83.04857254028322
+    "northing": 39.97732512224995,
+    "easting": -83.04856549948455
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -7488,8 +7488,8 @@
     "$date": "2025-08-10T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97722068350615,
-    "easting": -83.04873967543246
+    "northing": 39.97724637570886,
+    "easting": -83.04873330518603
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -8013,11 +8013,11 @@
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751993236830",
-      "publicID": "tree-inventory/1751993236830"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1758384326266",
-      "publicID": "tree-inventory/1758384326266"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -8028,16 +8028,16 @@
       "publicId": ""
     },
     "flower": {
-      "url": "",
-      "publicId": ""
+      "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/v1781385187/tree-inventory/crhetm8vicyny2b2aqwi.jpg",
+      "publicId": "tree-inventory/crhetm8vicyny2b2aqwi"
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751993253634",
-      "publicID": "tree-inventory/1751993253634"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-09-20T00:00:00.000Z"
+    "$date": "2026-06-13T00:00:00.000Z"
   },
   "location": {
     "northing": 39.976789181518356,
@@ -8049,6 +8049,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -8057,8 +8058,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -8109,8 +8109,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977224665798204,
-    "easting": -83.04874420166017
+    "northing": 39.97724894492859,
+    "easting": -83.04873665794732
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -8178,8 +8178,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97718484286726,
-    "easting": -83.04868519306184
+    "northing": 39.97721734351909,
+    "easting": -83.04867563769223
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -8975,15 +8975,15 @@
   "commonName": "Black walnut",
   "variety": "",
   "dbh": "24-30",
-  "notes": "2025: crown raise",
+  "notes": "2025: crown raise\n2026: major upper limb loss\n2026: major storm damage again\n",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751994573182",
-      "publicID": "tree-inventory/1751994573182"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751994642898",
-      "publicID": "tree-inventory/1751994642898"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -8991,7 +8991,7 @@
     },
     "fruit": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751994650629",
-      "publicID": "tree-inventory/1751994650629"
+      "publicId": ""
     },
     "flower": {
       "url": "",
@@ -8999,11 +8999,11 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751994601064",
-      "publicID": "tree-inventory/1751994601064"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-08-03T00:00:00.000Z"
+    "$date": "2026-08-17T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97702503706572,
@@ -9015,6 +9015,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -9023,8 +9024,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -9627,8 +9627,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97719409206617,
-    "easting": -83.04863624274732
+    "northing": 39.97719447744946,
+    "easting": -83.04862953722477
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -10386,8 +10386,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.9772269780967,
-    "easting": -83.04869893938303
+    "northing": 39.97724509109895,
+    "easting": -83.04869692772628
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -10562,15 +10562,15 @@
   "commonName": "White mulberry",
   "variety": "",
   "dbh": "6-12",
-  "notes": "",
+  "notes": "2026: The tree appears to be leaning over time; major branch removed",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741982141899",
-      "publicID": "tree-inventory/1741982141899"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1749587423205",
-      "publicID": "tree-inventory/1749587423205"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -10586,11 +10586,11 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741982184136",
-      "publicID": "tree-inventory/1741982184136"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-06-10T00:00:00.000Z"
+    "$date": "2026-07-19T00:00:00.000Z"
   },
   "location": {
     "northing": 39.977589237229346,
@@ -10602,6 +10602,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -10610,8 +10611,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -11076,8 +11076,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97718175980065,
-    "easting": -83.04868049919605
+    "northing": 39.97721991273991,
+    "easting": -83.0486721172929
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -11490,8 +11490,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977365202020685,
-    "easting": -83.04863221943378
+    "northing": 39.97737496503821,
+    "easting": -83.04863858968021
   },
   "garden": "Ravine",
   "installedDate": "2024-08-01T00:00:00.000Z",
@@ -11835,8 +11835,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.9772727102066,
-    "easting": -83.04860807955265
+    "northing": 39.97727887633145,
+    "easting": -83.04857522249223
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -11973,8 +11973,8 @@
     "$date": "2025-11-01T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977012190923986,
-    "easting": -83.04878108203411
+    "northing": 39.97701013552197,
+    "easting": -83.04873548448087
   },
   "garden": "South lawn",
   "installedDate": "< 2018",
@@ -12114,7 +12114,7 @@
     "northing": 39.97792991321469,
     "easting": -83.04851420223713
   },
-  "garden": "East bed and lawn",
+  "garden": "Parking-lot beds and lawn",
   "installedDate": "",
   "installedBy": "",
   "felledDate": "2026-06-03T00:00:00.000Z",
@@ -12318,8 +12318,8 @@
     "$date": "2025-03-19T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97734618982469,
-    "easting": -83.04879784584045
+    "northing": 39.97736211896225,
+    "easting": -83.04876716807486
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -13422,8 +13422,8 @@
     "$date": "2025-03-19T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97737753425313,
-    "easting": -83.04875962436199
+    "northing": 39.97739577567616,
+    "easting": -83.04871084168553
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -13560,8 +13560,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977247531857735,
-    "easting": -83.04865300655366
+    "northing": 39.977246761091806,
+    "easting": -83.04863138124347
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -13595,18 +13595,18 @@
   "_id": {
     "$oid": "688e7d495267e6251f209c7d"
   },
-  "commonName": "Siberian elm",
+  "commonName": "Slippery elm",
   "variety": "",
   "dbh": "30-36",
-  "notes": "unsure of species; need leaf and fruit",
+  "notes": "2026: Significant die off in canopy; Joseph Tree Service leans toward Dutch elm disease and recommends removal.",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1743187841282",
-      "publicID": "tree-inventory/1743187841282"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1760483091508",
-      "publicID": "tree-inventory/1760483091508"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -13622,11 +13622,11 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1743187860277",
-      "publicID": "tree-inventory/1743187860277"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-10-14T00:00:00.000Z"
+    "$date": "2026-06-16T00:00:00.000Z"
   },
   "location": {
     "northing": 39.976937169407925,
@@ -13638,6 +13638,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -13645,15 +13646,14 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "fell": true,
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
     "slope": false,
     "overheadLines": false,
-    "treeCluster": true,
+    "treeCluster": false,
     "proximateStructure": false,
     "proximateFence": false,
     "propertyLine": false
@@ -14840,7 +14840,7 @@
   "commonName": "Blue spruce",
   "variety": "",
   "dbh": "6-12",
-  "notes": "estimated diameter\n2026: wind storm has caused the root ball to start to lift",
+  "notes": "estimated diameter\n2026: wind storm has caused the root ball to start to lift; cannot be saved",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1743189947244",
@@ -14868,7 +14868,7 @@
     }
   },
   "lastUpdated": {
-    "$date": "2026-05-05T00:00:00.000Z"
+    "$date": "2026-06-18T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97728761167399,
@@ -14888,7 +14888,7 @@
     "pestTreatment": false,
     "installGrate": false,
     "removeGrate": false,
-    "fell": false,
+    "fell": true,
     "removeStump": false
   },
   "hidden": false,
@@ -15561,8 +15561,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977490579613296,
-    "easting": -83.04862953722477
+    "northing": 39.977518584003136,
+    "easting": -83.04864026606083
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -16389,8 +16389,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97725935026755,
-    "easting": -83.04875425994398
+    "northing": 39.977282730159175,
+    "easting": -83.04875660687686
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -17079,8 +17079,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97722723501875,
-    "easting": -83.04874554276468
+    "northing": 39.977254083367775,
+    "easting": -83.04873984307052
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -18259,8 +18259,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97749623187641,
-    "easting": -83.04862618446352
+    "northing": 39.977520125528855,
+    "easting": -83.04863087832929
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -18604,8 +18604,8 @@
     "$date": "2025-03-19T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97733950986268,
-    "easting": -83.04873649030925
+    "northing": 39.97735877898211,
+    "easting": -83.0487302877009
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -18812,8 +18812,8 @@
     "$date": "2025-08-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97718509978944,
-    "easting": -83.0486996099353
+    "northing": 39.977178676733914,
+    "easting": -83.04867278784515
   },
   "garden": "Ravine",
   "installedDate": "< 2025",
@@ -19231,8 +19231,8 @@
     "$date": "2025-08-29T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977387811111775,
-    "easting": -83.04863356053829
+    "northing": 39.977399115654514,
+    "easting": -83.04862685501577
   },
   "garden": "Ravine",
   "installedDate": "< 2014",
@@ -20273,8 +20273,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97722595040849,
-    "easting": -83.04869491606952
+    "northing": 39.977240787655596,
+    "easting": -83.04869181476535
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -20308,14 +20308,14 @@
   "_id": {
     "$oid": "688e7d495267e6251f209c45"
   },
-  "commonName": "Mockernut hickory",
+  "commonName": "Pignut hickory",
   "variety": "",
   "dbh": "18-24",
   "notes": "",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741983187999",
-      "publicID": "tree-inventory/1741983187999"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "",
@@ -20335,11 +20335,11 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1741983212124",
-      "publicID": "tree-inventory/1741983212124"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-06-10T00:00:00.000Z"
+    "$date": "2026-07-19T00:00:00.000Z"
   },
   "location": {
     "northing": 39.97753631154679,
@@ -20351,6 +20351,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -20359,8 +20360,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
@@ -20688,8 +20688,8 @@
     "$date": "2025-08-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.977243421106024,
-    "easting": -83.04859936237337
+    "northing": 39.97723597036791,
+    "easting": -83.04859366267921
   },
   "garden": "Ravine",
   "installedDate": "< 2024",
@@ -24584,8 +24584,8 @@
     "$date": "2025-06-13T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97723108884941,
-    "easting": -83.04869826883079
+    "northing": 39.9772481099322,
+    "easting": -83.04869080893697
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -26040,8 +26040,8 @@
     "$date": "2025-09-05T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97734952980546,
-    "easting": -83.04865870624782
+    "northing": 39.97731741459905,
+    "easting": -83.04861243814231
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -26385,8 +26385,8 @@
     "$date": "2025-07-08T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97740630945344,
-    "easting": -83.04871134459974
+    "northing": 39.977431230822525,
+    "easting": -83.04871235042812
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -27256,7 +27256,7 @@
   "commonName": "Eastern redbud",
   "variety": "",
   "dbh": "< 3",
-  "notes": "2025: seedling",
+  "notes": "2025: seedling\n2026: did not survive winter",
   "photos": {
     "bark": {
       "url": "",
@@ -27264,7 +27264,7 @@
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1756323577378",
-      "publicID": "tree-inventory/1756323577378"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -27280,15 +27280,15 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1756323544681",
-      "publicID": "tree-inventory/1756323544681"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-08-27T00:00:00.000Z"
+    "$date": "2026-06-17T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97725189953117,
-    "easting": -83.04867915809156
+    "northing": 39.97727849094865,
+    "easting": -83.04868703708053
   },
   "garden": "Ravine",
   "installedDate": "< 2024",
@@ -27296,6 +27296,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -27304,10 +27305,9 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
-  "hidden": false,
+  "hidden": true,
   "__v": 0,
   "siteConditions": {
     "slope": true,
@@ -27567,8 +27567,8 @@
     "$date": "2025-10-17T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97799373505088,
-    "easting": -83.04855427974698
+    "northing": 39.97797204778404,
+    "easting": -83.04858293384315
   },
   "garden": "Community garden and lawn",
   "installedDate": "2025-10-17T00:00:00.000Z",
@@ -29238,8 +29238,8 @@
     "$date": "2025-03-27T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97718175980065,
-    "easting": -83.04865300655366
+    "northing": 39.97719833128194,
+    "easting": -83.04865334182979
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -29619,18 +29619,18 @@
   "_id": {
     "$oid": "688e7d495267e6251f209d54"
   },
-  "commonName": "Siberian elm",
+  "commonName": "Slippery elm",
   "variety": "",
   "dbh": "3-6",
   "notes": "",
   "photos": {
     "bark": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751662183943",
-      "publicID": "tree-inventory/1751662183943"
+      "publicId": ""
     },
     "summerLeaf": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751662218650",
-      "publicID": "tree-inventory/1751662218650"
+      "publicId": ""
     },
     "autumnLeaf": {
       "url": "",
@@ -29646,15 +29646,15 @@
     },
     "environs": {
       "url": "https://res.cloudinary.com/dlnh9mcwv/image/upload/tree-inventory/1751662201955",
-      "publicID": "tree-inventory/1751662201955"
+      "publicId": ""
     }
   },
   "lastUpdated": {
-    "$date": "2025-09-05T00:00:00.000Z"
+    "$date": "2026-06-17T00:00:00.000Z"
   },
   "location": {
-    "northing": 39.97730816541678,
-    "easting": -83.04869659245016
+    "northing": 39.977336298342244,
+    "easting": -83.04870480671525
   },
   "garden": "Ravine",
   "installedDate": "< 2018",
@@ -29662,6 +29662,7 @@
   "felledDate": "",
   "felledBy": "",
   "careNeeds": {
+    "structuralSupport": false,
     "raiseCrown": false,
     "routinePrune": false,
     "trainingPrune": false,
@@ -29670,8 +29671,7 @@
     "installGrate": false,
     "removeGrate": false,
     "fell": false,
-    "removeStump": false,
-    "structuralSupport": false
+    "removeStump": false
   },
   "hidden": false,
   "siteConditions": {
